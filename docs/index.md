@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "Vitepress Obsidian"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "Kuwasidian"
+  text: "くわしでぃあん"
+  tagline: 彼の Obsidian（メモアプリ）のメモ
   actions:
     - theme: brand
       text: Markdown Examples

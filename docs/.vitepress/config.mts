@@ -4,9 +4,9 @@ import { getSidebarItems } from './utils'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: 'Vitepress Obsidian',
-  description: 'A VitePress Site',
-  base: '/vitepress-obsidian-docs/',
+  title: 'Kuwasidian',
+  description: '彼の Obsidian（メモアプリ）のメモ',
+  base: '/kuwasidian/',
   srcExclude: ['**/_*'],
   lastUpdated: true,
 
