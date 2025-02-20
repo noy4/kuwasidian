@@ -25,6 +25,7 @@ export default defineConfig({
     ],
 
     sidebar: [
+      { text: 'メモ', link: '/+memo' },
       {
         text: 'Examples',
         items: [

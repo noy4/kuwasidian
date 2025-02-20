@@ -8,8 +8,8 @@ hero:
   tagline: 彼の Obsidian（メモアプリ）のメモ
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: メモ
+      link: /+memo
     - theme: alt
       text: API Examples
       link: /api-examples
