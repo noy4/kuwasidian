@@ -1,9 +1,14 @@
 import { BiDirectionalLinks } from '@nolebase/markdown-it-bi-directional-links'
+import Inspect from 'vite-plugin-inspect'
 import { defineConfig } from 'vitepress'
 import { getSidebarItems } from './utils'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  vite: {
+    plugins: [Inspect()],
+  },
+
   title: 'Kuwasidian',
   description: '彼の Obsidian（メモアプリ）のメモ',
   base: '/kuwasidian/',
