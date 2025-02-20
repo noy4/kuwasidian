@@ -18,9 +18,9 @@ export default defineConfig({
   },
 
   // [Can I directly read the filename as title like docusaurus? Instead of needing to configure frontmatter or define Level1 Heading as title #3735](https://github.com/vuejs/vitepress/issues/3735#issuecomment-2031879231)
-  transformPageData(pageData) {
-    pageData.title = pageData.filePath.split('/').pop()!.replace(/\.md$/, '')
-  },
+  // transformPageData(pageData) {
+  //   pageData.title = pageData.filePath.split('/').pop()!.replace(/\.md$/, '')
+  // },
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -46,7 +46,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
+      { icon: 'github', link: 'https://github.com/noy4/kuwasidian' },
     ],
   },
 })
