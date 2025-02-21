@@ -22,6 +22,10 @@ export default defineConfig({
     },
   },
 
+  rewrites: {
+    '\\+memo.md': 'index.md',
+  },
+
   // [Can I directly read the filename as title like docusaurus? Instead of needing to configure frontmatter or define Level1 Heading as title #3735](https://github.com/vuejs/vitepress/issues/3735#issuecomment-2031879231)
   // transformPageData(pageData) {
   //   pageData.title = pageData.filePath.split('/').pop()!.replace(/\.md$/, '')
@@ -35,7 +39,7 @@ export default defineConfig({
     ],
 
     sidebar: [
-      { text: 'メモ', link: '/+memo' },
+      { text: 'メモ', link: '/' },
       {
         text: 'Examples',
         items: [
