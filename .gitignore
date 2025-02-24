@@ -1,9 +1,12 @@
 node_modules
 
+# vitepress
 **/.vitepress/cache
 **/.vitepress/dist
 
+# obsidian
 .obsidian
 
 # private folder/file
 _*
+daily notes
