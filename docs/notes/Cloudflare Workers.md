@@ -1,0 +1,1 @@
+[More NPM packages on Cloudflare Workers: Combining polyfills and native code to support Node.js APIs](https://blog.cloudflare.com/more-npm-packages-on-cloudflare-workers-combining-polyfills-and-native-code/?utm_campaign=cf_blog&utm_content=20240909&utm_medium=organic_social&utm_source=twitter/)

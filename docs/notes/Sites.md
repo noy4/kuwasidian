@@ -1,0 +1,10 @@
+[GitHub Copilot](https://github.com/features/copilot)
+[CodeRabbit](https://coderabbit.ai/)
+[Raycast](https://www.raycast.com/)
+[Inspira UI](https://inspira-ui.com/)
+
+[【第3弾】『本当に役に立つ』"神Webサイト"18選を発表させて頂きます──【ダウンロード不要】](https://www.youtube.com/watch?v=tPQPP0tsGlY)
+[AlternativeTo](https://alternativeto.net/)
+[VoiceTube](https://jp.voicetube.com/)
+[Slideland](https://www.slideland.tech/)
+[V-SAMUNE](https://vsamune.com/)
