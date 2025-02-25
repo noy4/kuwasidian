@@ -12,9 +12,12 @@ export default defineConfig({
   title: 'Kuwasidian',
   description: '彼の Obsidian（メモアプリ）のメモ',
   base: '/kuwasidian/',
-  srcExclude: ['**/_*', 'daily notes/**'],
   lastUpdated: true,
   ignoreDeadLinks: true,
+  srcExclude: [
+    '**/_*',
+    'daily notes/**',
+  ],
 
   markdown: {
     breaks: true,
