@@ -1,4 +1,13 @@
 
+vitepress
+save chat talk to obsidian
+research:
+ai catchup
+	research with ai
+
+app as extension
+obsidian git
+
 [Way to preserve empty newlines? · Issue #211 · markdown-it/markdown-it](https://github.com/markdown-it/markdown-it/issues/211)
 perplexity empty new lines
 
