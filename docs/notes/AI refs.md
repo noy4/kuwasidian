@@ -7,8 +7,8 @@
 
 
 prompt:
-[[roo code prompt]]
-[[roo code prompt (ja)]]
+[[_roo code prompt]]
+[[_roo code prompt (ja)]]
 
 
 [pc]
