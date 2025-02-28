@@ -1,4 +1,5 @@
 import { BiDirectionalLinks } from '@nolebase/markdown-it-bi-directional-links'
+import UnoCSS from 'unocss/vite'
 import Inspect from 'vite-plugin-inspect'
 import { defineConfig } from 'vitepress'
 import { getSidebarItems } from './utils'
@@ -6,7 +7,7 @@ import { getSidebarItems } from './utils'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   vite: {
-    plugins: [Inspect()],
+    plugins: [Inspect(), UnoCSS()],
   },
 
   title: 'Kuwasidian',

@@ -1,7 +1,8 @@
 [[+memo.archive]]
 
 
-
+watch: try mcp
+pokeapi
 
 publish notes
 	vitepress-template
