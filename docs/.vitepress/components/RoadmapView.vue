@@ -10,8 +10,7 @@ import RoadmapCard from './RoadmapCard.vue'
       <RoadmapCard
         v-for="item in section.items"
         :key="item.title"
-        :title="item.title"
-        :content="item.content"
+        :item="item"
       />
     </div>
   </div>
