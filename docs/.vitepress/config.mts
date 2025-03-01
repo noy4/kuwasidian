@@ -1,8 +1,10 @@
+import fs from 'node:fs'
+import path from 'node:path'
 import { BiDirectionalLinks } from '@nolebase/markdown-it-bi-directional-links'
 import UnoCSS from 'unocss/vite'
 import Inspect from 'vite-plugin-inspect'
 import { defineConfig } from 'vitepress'
-import { getSidebarItems } from './utils'
+import { extractDescription, getSidebarItems } from './utils'
 
 const siteBase = '/kuwasidian/'
 const siteTitle = 'Kuwasidian'
@@ -47,14 +49,18 @@ export default defineConfig({
   transformPageData(pageData) {
     pageData.title ||= pageData.filePath.split('/').pop()!.replace(/\.md$/, '')
 
+    const fullPath = path.resolve('docs', pageData.filePath)
+    if (fs.existsSync(fullPath)) {
+      const content = fs.readFileSync(fullPath, 'utf-8')
+      pageData.description ||= extractDescription(content)
+    }
+
     pageData.frontmatter.head ??= []
     pageData.frontmatter.head.push(
       ['meta', { property: 'og:title', content: pageData.title }],
       ['meta', { property: 'og:description', content: pageData.description || siteDescription }],
       ['meta', { property: 'og:url', content: `${siteUrl}${pageData.relativePath.replace(/\.md$/, '.html')}` }],
     )
-
-    return pageData
   },
 
   themeConfig: {

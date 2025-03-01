@@ -40,3 +40,14 @@ export function getSidebarItems(
 
   return items
 }
+
+export function extractDescription(content: string): string {
+  const plainText = content
+    .replace(/^---[\s\S]*?---/, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+
+  return plainText.length > 120
+    ? `${plainText.slice(0, 120)}...`
+    : plainText
+}
