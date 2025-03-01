@@ -73,8 +73,8 @@ export default defineConfig({
     ],
 
     sidebar: [
-      { text: 'ロードマップ', link: '/roadmap' },
       { text: 'メモ', link: '/' },
+      { text: 'ロードマップ', link: '/roadmap' },
       { text: '記事一覧', link: '/notes/articles' },
       {
         text: 'Notes',
