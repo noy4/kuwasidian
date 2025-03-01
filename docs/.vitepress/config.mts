@@ -45,23 +45,16 @@ export default defineConfig({
   },
 
   transformPageData(pageData) {
-    // ページタイトルがない場合はファイル名をタイトルとして使用
-    if (!pageData.title) {
-      pageData.title = pageData.filePath.split('/').pop()!.replace(/\.md$/, '')
-    }
+    pageData.title ||= pageData.filePath.split('/').pop()!.replace(/\.md$/, '')
 
-    return {
-      ...pageData,
-      frontmatter: {
-        ...pageData.frontmatter,
-        head: [
-          ...(pageData.frontmatter?.head || []),
-          ['meta', { property: 'og:title', content: pageData.title }],
-          ['meta', { property: 'og:description', content: pageData.description || siteDescription }],
-          ['meta', { property: 'og:url', content: `${siteUrl}${pageData.relativePath.replace(/\.md$/, '.html')}` }],
-        ],
-      },
-    }
+    pageData.frontmatter.head ??= []
+    pageData.frontmatter.head.push(
+      ['meta', { property: 'og:title', content: pageData.title }],
+      ['meta', { property: 'og:description', content: pageData.description || siteDescription }],
+      ['meta', { property: 'og:url', content: `${siteUrl}${pageData.relativePath.replace(/\.md$/, '.html')}` }],
+    )
+
+    return pageData
   },
 
   themeConfig: {
