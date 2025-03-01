@@ -7,7 +7,8 @@ import { getSidebarItems } from './utils'
 const siteBase = '/kuwasidian/'
 const siteTitle = 'Kuwasidian'
 const siteDescription = '彼の Obsidian（メモアプリ）のメモ'
-const siteImage = `${siteBase}obsidian.png`
+const siteUrl = 'https://noy4.github.io'
+const siteImage = 'obsidian.png'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -19,11 +20,11 @@ export default defineConfig({
   description: siteDescription,
   base: siteBase,
   head: [
-    ['link', { rel: 'icon', href: siteImage }],
+    ['link', { rel: 'icon', href: `${siteBase}${siteImage}` }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:title', content: siteTitle }],
     ['meta', { property: 'og:description', content: siteDescription }],
-    ['meta', { property: 'og:image', content: siteImage }],
+    ['meta', { property: 'og:image', content: `${siteUrl}${siteBase}${siteImage}` }],
     ['meta', { property: 'twitter:card', content: 'summary' }],
   ],
   lastUpdated: true,
@@ -65,7 +66,7 @@ export default defineConfig({
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: `/obsidian.png`,
+    logo: `/${siteImage}`,
     nav: [
       // { text: 'Home', link: '/' },
       // { text: 'Examples', link: '/markdown-examples' },
