@@ -45,6 +45,7 @@ export default defineConfig({
 
     sidebar: [
       { text: 'メモ', link: '/' },
+      { text: '記事一覧', link: '/notes/articles' },
       {
         text: 'Notes',
         items: [
