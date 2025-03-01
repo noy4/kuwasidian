@@ -1,8 +1,7 @@
 import { createContentLoader } from 'vitepress'
 
 export interface RoadmapItem {
-  title: string
-  content?: string
+  content: string
 }
 
 export interface RoadmapSection {
@@ -15,27 +14,37 @@ export { data }
 
 export default createContentLoader('+roadmap.md', {
   includeSrc: true,
+  render: true,
   transform(data) {
-    const content = data[0]?.src || ''
+    const html = data[0]?.html || ''
 
-    const sections = content
-      .split(/^## /m)
+    // HTML を各セクションごとに分割
+    const sections = html
+      .split(/<h2[^>]*>/)
       .slice(1)
-      .map((sectionContent) => {
-        const [sectionTitle, ...sectionLines] = sectionContent.split('\n')
-        const items = sectionLines.join('\n')
-          .split(/^### /m)
+      .map((section) => {
+        // セクションのタイトルと残りのコンテンツを分割
+        const [titleHtml, ...rest] = section.split('</h2>')
+        const title = titleHtml.replace(/<[^>]+>/g, '').trim()
+        const sectionContent = rest.join('</h2>')
+
+        // h3 要素で分割して各アイテムを取得
+        const items = sectionContent
+          .split(/<h3[^>]*>/)
           .slice(1)
           .map((itemContent) => {
-            const [itemTitle, ...contentLines] = itemContent.split('\n')
-            return {
-              title: itemTitle,
-              content: contentLines.filter(line => line.trim()).join('\n'),
-            }
+            // 次の h3 要素までのコンテンツを抽出
+            const endIndex = itemContent.indexOf('<h3')
+            const content = endIndex === -1
+              ? itemContent
+              : itemContent.slice(0, endIndex)
+
+            return { content }
           })
+          .filter(item => item.content.trim() !== '')
 
         return {
-          title: sectionTitle,
+          title,
           items,
         }
       })
