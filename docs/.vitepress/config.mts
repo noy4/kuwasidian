@@ -22,8 +22,6 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', href: `${siteBase}${siteImage}` }],
     ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:title', content: siteTitle }],
-    ['meta', { property: 'og:description', content: siteDescription }],
     ['meta', { property: 'og:image', content: `${siteUrl}${siteImage}` }],
     ['meta', { property: 'og:url', content: siteUrl }],
     ['meta', { property: 'twitter:card', content: 'summary' }],
