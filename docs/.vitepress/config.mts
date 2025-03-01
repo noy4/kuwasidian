@@ -25,6 +25,7 @@ export default defineConfig({
     ['meta', { property: 'og:title', content: siteTitle }],
     ['meta', { property: 'og:description', content: siteDescription }],
     ['meta', { property: 'og:image', content: `${siteUrl}${siteBase}${siteImage}` }],
+    ['meta', { property: 'og:url', content: siteUrl + siteBase }],
     ['meta', { property: 'twitter:card', content: 'summary' }],
   ],
   lastUpdated: true,
@@ -59,6 +60,7 @@ export default defineConfig({
           ...(pageData.frontmatter?.head || []),
           ['meta', { property: 'og:title', content: pageData.title }],
           ['meta', { property: 'og:description', content: pageData.description || siteDescription }],
+          ['meta', { property: 'og:url', content: `${siteUrl}${siteBase}${pageData.relativePath.replace(/\.md$/, '.html')}` }],
         ],
       },
     }
