@@ -4,6 +4,8 @@ import Inspect from 'vite-plugin-inspect'
 import { defineConfig } from 'vitepress'
 import { getSidebarItems } from './utils'
 
+const base = '/kuwasidian/'
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   vite: {
@@ -12,7 +14,10 @@ export default defineConfig({
 
   title: 'Kuwasidian',
   description: '彼の Obsidian（メモアプリ）のメモ',
-  base: '/kuwasidian/',
+  base,
+  head: [
+    ['link', { rel: 'icon', href: `${base}obsidian.png` }],
+  ],
   lastUpdated: true,
   ignoreDeadLinks: true,
   srcExclude: [
@@ -38,6 +43,7 @@ export default defineConfig({
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    logo: `/obsidian.png`,
     nav: [
       // { text: 'Home', link: '/' },
       // { text: 'Examples', link: '/markdown-examples' },
