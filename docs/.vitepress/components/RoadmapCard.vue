@@ -6,6 +6,9 @@ defineProps<{ item: RoadmapItem }>()
 
 <template>
   <div class="p-6 rounded-lg bg-[var(--vp-c-bg-alt)] border-0.5 border-[var(--vp-c-divider)]">
-    <div class="[&>h3]:mt-0 [&>*:last-child]:mb-0" v-html="item.content" />
+    <div
+      class="[&>h3]:mt-0 [&>*:last-child]:mb-0"
+      v-html="item.content"
+    />
   </div>
 </template>

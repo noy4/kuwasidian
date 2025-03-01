@@ -4,8 +4,8 @@ import RoadmapCard from './RoadmapCard.vue'
 </script>
 
 <template>
-  <div v-for="section in data" :key="section.title">
-    <h2 v-html="section.title" />
+  <template v-for="section in data" :key="section.title">
+    <div v-html="section.title" />
     <div class="space-y-4">
       <RoadmapCard
         v-for="item in section.items"
@@ -13,5 +13,5 @@ import RoadmapCard from './RoadmapCard.vue'
         :item="item"
       />
     </div>
-  </div>
+  </template>
 </template>

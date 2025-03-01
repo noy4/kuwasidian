@@ -25,12 +25,9 @@ export default createContentLoader('+roadmap.md', {
         const [titleHtml, ...contentHtmlParts] = section.split('</h2>')
         const contentHtml = contentHtmlParts.join('</h2>')
 
-        // タイトルを抽出（HTMLタグを除去）
-        const title = titleHtml
-          .replace(/^[^>]*>/, '')
-          .trim()
+        const title = `<h2${titleHtml}</h2>`
 
-        // 項目を抽出（h3タグを含むHTMLのまま）
+        // 項目を抽出
         const items = contentHtml
           .split('<h3')
           .slice(1)
