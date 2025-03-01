@@ -1,4 +1,8 @@
 
+pokeapi
+long:
+ブログ移行
+
 vitepress
 save chat talk to obsidian
 research:

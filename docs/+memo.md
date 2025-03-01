@@ -2,7 +2,6 @@
 
 
 watch: try mcp
-pokeapi
 
 publish notes
 	vitepress-template
@@ -22,11 +21,6 @@ obs
 
 
 ---
-
-
-
-long:
-ブログ移行
 
 
 core:
