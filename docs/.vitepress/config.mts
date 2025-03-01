@@ -66,12 +66,15 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: `/${siteImage}`,
+    outline: [2, 3],
     nav: [
       // { text: 'Home', link: '/' },
       // { text: 'Examples', link: '/markdown-examples' },
     ],
 
     sidebar: [
+      { text: 'ロードマップ', link: '/+roadmap' },
+      { text: '+roadmap', link: '/+roadmap' },
       { text: 'メモ', link: '/' },
       { text: '記事一覧', link: '/notes/articles' },
       {
