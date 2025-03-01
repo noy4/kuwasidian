@@ -7,7 +7,7 @@ import { getSidebarItems } from './utils'
 const siteBase = '/kuwasidian/'
 const siteTitle = 'Kuwasidian'
 const siteDescription = '彼の Obsidian（メモアプリ）のメモ'
-const siteUrl = 'https://noy4.github.io'
+const siteUrl = `https://noy4.github.io${siteBase}`
 const siteImage = 'obsidian.png'
 
 // https://vitepress.dev/reference/site-config
@@ -24,8 +24,8 @@ export default defineConfig({
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:title', content: siteTitle }],
     ['meta', { property: 'og:description', content: siteDescription }],
-    ['meta', { property: 'og:image', content: `${siteUrl}${siteBase}${siteImage}` }],
-    ['meta', { property: 'og:url', content: siteUrl + siteBase }],
+    ['meta', { property: 'og:image', content: `${siteUrl}${siteImage}` }],
+    ['meta', { property: 'og:url', content: siteUrl }],
     ['meta', { property: 'twitter:card', content: 'summary' }],
   ],
   lastUpdated: true,
@@ -60,7 +60,7 @@ export default defineConfig({
           ...(pageData.frontmatter?.head || []),
           ['meta', { property: 'og:title', content: pageData.title }],
           ['meta', { property: 'og:description', content: pageData.description || siteDescription }],
-          ['meta', { property: 'og:url', content: `${siteUrl}${siteBase}${pageData.relativePath.replace(/\.md$/, '.html')}` }],
+          ['meta', { property: 'og:url', content: `${siteUrl}${pageData.relativePath.replace(/\.md$/, '.html')}` }],
         ],
       },
     }
