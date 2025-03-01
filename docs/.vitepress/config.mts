@@ -4,7 +4,10 @@ import Inspect from 'vite-plugin-inspect'
 import { defineConfig } from 'vitepress'
 import { getSidebarItems } from './utils'
 
-const base = '/kuwasidian/'
+const siteBase = '/kuwasidian/'
+const siteTitle = 'Kuwasidian'
+const siteDescription = '彼の Obsidian（メモアプリ）のメモ'
+const siteImage = `${siteBase}obsidian.png`
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -12,15 +15,15 @@ export default defineConfig({
     plugins: [Inspect(), UnoCSS()],
   },
 
-  title: 'Kuwasidian',
-  description: '彼の Obsidian（メモアプリ）のメモ',
-  base,
+  title: siteTitle,
+  description: siteDescription,
+  base: siteBase,
   head: [
-    ['link', { rel: 'icon', href: `${base}obsidian.png` }],
+    ['link', { rel: 'icon', href: siteImage }],
     ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:title', content: 'Kuwasidian' }],
-    ['meta', { property: 'og:description', content: '彼の Obsidian（メモアプリ）のメモ' }],
-    ['meta', { property: 'og:image', content: `${base}obsidian.png` }],
+    ['meta', { property: 'og:title', content: siteTitle }],
+    ['meta', { property: 'og:description', content: siteDescription }],
+    ['meta', { property: 'og:image', content: siteImage }],
     ['meta', { property: 'twitter:card', content: 'summary' }],
   ],
   lastUpdated: true,
@@ -54,7 +57,7 @@ export default defineConfig({
         head: [
           ...(pageData.frontmatter?.head || []),
           ['meta', { property: 'og:title', content: pageData.title }],
-          ['meta', { property: 'og:description', content: pageData.description || '彼の Obsidian（メモアプリ）のメモ' }],
+          ['meta', { property: 'og:description', content: pageData.description || siteDescription }],
         ],
       },
     }
