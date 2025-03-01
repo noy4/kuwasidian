@@ -17,27 +17,13 @@ export default createContentLoader('+roadmap.md', {
   transform(data) {
     const html = data[0]?.html || ''
 
-    // HTML を各セクションごとに分割
     const sections = html
-      .split('<h2')
-      .slice(1)
+      .split(/(?=<h2)/)
       .map((section) => {
-        const [titleHtml, ...contentHtmlParts] = section.split('</h2>')
-        const contentHtml = contentHtmlParts.join('</h2>')
-
-        const title = `<h2${titleHtml}</h2>`
-
-        // 項目を抽出
-        const items = contentHtml
-          .split('<h3')
-          .slice(1)
-          .map(item => ({
-            content: `<h3${item}`,
-          }))
-
+        const [title, ...contents] = section.split(/(?=<h3)/)
         return {
           title,
-          items,
+          items: contents.map(content => ({ content })),
         }
       })
 
