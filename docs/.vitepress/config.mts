@@ -17,6 +17,11 @@ export default defineConfig({
   base,
   head: [
     ['link', { rel: 'icon', href: `${base}obsidian.png` }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:title', content: 'Kuwasidian' }],
+    ['meta', { property: 'og:description', content: '彼の Obsidian（メモアプリ）のメモ' }],
+    ['meta', { property: 'og:image', content: `${base}obsidian.png` }],
+    ['meta', { property: 'twitter:card', content: 'summary' }],
   ],
   lastUpdated: true,
   ignoreDeadLinks: true,
@@ -36,10 +41,24 @@ export default defineConfig({
     '\\+memo.md': 'index.md',
   },
 
-  // [Can I directly read the filename as title like docusaurus? Instead of needing to configure frontmatter or define Level1 Heading as title #3735](https://github.com/vuejs/vitepress/issues/3735#issuecomment-2031879231)
-  // transformPageData(pageData) {
-  //   pageData.title = pageData.filePath.split('/').pop()!.replace(/\.md$/, '')
-  // },
+  transformPageData(pageData) {
+    // ページタイトルがない場合はファイル名をタイトルとして使用
+    if (!pageData.title) {
+      pageData.title = pageData.filePath.split('/').pop()!.replace(/\.md$/, '')
+    }
+
+    return {
+      ...pageData,
+      frontmatter: {
+        ...pageData.frontmatter,
+        head: [
+          ...(pageData.frontmatter?.head || []),
+          ['meta', { property: 'og:title', content: pageData.title }],
+          ['meta', { property: 'og:description', content: pageData.description || '彼の Obsidian（メモアプリ）のメモ' }],
+        ],
+      },
+    }
+  },
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
