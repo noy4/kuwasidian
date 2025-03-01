@@ -4,6 +4,7 @@ import { h } from 'vue'
 import RoadmapCard from '../components/RoadmapCard.vue'
 import RoadmapView from '../components/RoadmapView.vue'
 import NoteTitle from './components/NoteTitle.vue'
+import '@unocss/reset/tailwind.css'
 import 'virtual:uno.css'
 
 export default {

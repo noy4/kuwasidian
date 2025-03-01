@@ -11,6 +11,9 @@ importers:
       '@nolebase/markdown-it-bi-directional-links':
         specifier: ^2.14.0
         version: 2.14.0(markdown-it@14.1.0)
+      '@unocss/reset':
+        specifier: 66.1.0-beta.3
+        version: 66.1.0-beta.3
       vue:
         specifier: ^3.5.13
         version: 3.5.13(typescript@5.7.3)
@@ -24,6 +27,9 @@ importers:
       eslint:
         specifier: ^9.20.1
         version: 9.20.1(jiti@2.4.2)
+      postcss:
+        specifier: ^8.5.3
+        version: 8.5.3
       unocss:
         specifier: 66.1.0-beta.3
         version: 66.1.0-beta.3(postcss@8.5.3)(vite@6.1.1(@types/node@22.13.4)(jiti@2.4.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.7.3))
