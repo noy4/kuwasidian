@@ -57,7 +57,7 @@ export default defineConfig({
 
     pageData.frontmatter.head ??= []
     pageData.frontmatter.head.push(
-      ['meta', { property: 'og:title', content: pageData.title }],
+      ['meta', { property: 'og:title', content: `${pageData.title} | ${siteTitle}` }],
       ['meta', { property: 'og:description', content: pageData.description || siteDescription }],
       ['meta', { property: 'og:url', content: `${siteUrl}${pageData.relativePath.replace(/\.md$/, '.html')}` }],
     )
