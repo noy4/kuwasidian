@@ -55,10 +55,14 @@ export default defineConfig({
       pageData.description ||= extractDescription(content)
     }
 
+    const home = pageData.relativePath === 'index.md'
+    const title = home ? siteTitle : `${pageData.title} | ${siteTitle}`
+    const description = home ? siteDescription : pageData.description
+
     pageData.frontmatter.head ??= []
     pageData.frontmatter.head.push(
-      ['meta', { property: 'og:title', content: `${pageData.title} | ${siteTitle}` }],
-      ['meta', { property: 'og:description', content: pageData.description || siteDescription }],
+      ['meta', { property: 'og:title', content: title }],
+      ['meta', { property: 'og:description', content: description }],
       ['meta', { property: 'og:url', content: `${siteUrl}${pageData.relativePath.replace(/\.md$/, '.html')}` }],
     )
   },
