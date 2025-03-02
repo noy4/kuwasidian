@@ -1,4 +1,5 @@
 
+	roadmap like obsidian
 pokeapi
 long:
 ブログ移行

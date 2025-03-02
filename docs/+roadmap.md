@@ -1,5 +1,4 @@
 ## Active
-### `Kuwasidian roadmap` の公開
 
 
 ## Planned
@@ -10,6 +9,8 @@
 
 
 ## Done
+### `Kuwasidian roadmap` の公開
+2025-03-02
 ### 2025-02-28 Publish Obsidian notes
 - メモを公開
 ### 桑日記アーカイブ
