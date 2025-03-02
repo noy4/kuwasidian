@@ -2,10 +2,10 @@
 
 
 ## Planned
-### `Vitepress Obsidian Template` の公開
 ### YouTube to Anki
 - Anki 周り調査
 - YouTube の字幕を Anki カード化
+### `Vitepress Obsidian Template` の公開
 
 
 ## Done
