@@ -2,6 +2,7 @@
 [OpenRouter](https://openrouter.ai/)
 [Infinite Worlds](https://infiniteworlds.app/)
 [goose](https://github.com/block/goose)
+manus
 
 [Teach Me Anything](https://tma.live/)
 
@@ -9,6 +10,13 @@
 prompt:
 [[_roo code prompt]]
 [[_roo code prompt (ja)]]
+
+protocol:
+[llms-txt](https://llmstxt.org/)
+
+concept:
+[[memory bank]]
+
 
 
 [pc]

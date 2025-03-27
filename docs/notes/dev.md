@@ -19,6 +19,7 @@ refs:
 [[state]]
 [[native]]
 [[local first]]
+[[uuid]]
 
 features:
 [[file upload]]

@@ -1,4 +1,56 @@
 
+flashcard gen
+youtube to anki
+
+
+subs2srs
+LINE App 
+DAO
+
+- 日本語話者、英語を学びたい
+- 欲しいフォーマット
+- YouTube の動画から
+- .srt ファイルなどを用意・編集することなく
+
+https://www.youtube.com/watch?v=GfF2e0vyGM4
+- Principles for Success: "The Call to Adventure" | Episode 1 - YouTube https://www.youtube.com/watch?v=dKz095P7LdU
+
+
+
+youtube
+srt
+anki
+
+video.mp4, video.en.vtt, video.ja.vtt
+core
+	chrome ext. & NativeMessaging
+	CLI
+	Anki addon
+
+タスク開始時は、以下のことを行うこと。
+- `README.md` を読み、プロジェクトの概要を把握する
+- `docs/dev/docs.md` を読み、プロジェクトの開発方法を理解する
+
+[Support llms.txt generation · Issue #4590 · vuejs/vitepress](https://github.com/vuejs/vitepress/issues/4590)
+[Create `llms.txt` for vite.dev · Issue #19400 · vitejs/vite](https://github.com/vitejs/vite/issues/19400)
+
+
+vitepress llm.text
+sentence mining
+amoji
+ようこそfactへ
+肩をすくめるアトラス
+quotes notification
+[[loading screen tips]]
+
+[哲学の歴史を俯瞰できて哲学者どうしのつながりもインタラクティブに把握できる「The History of Philosophy」 - GIGAZINE](https://gigazine.net/news/20181002-history-of-philosophy/)
+
+[plasmo](https://github.com/PlasmoHQ/plasmo)
+blockchain 納得感ある実例
+株式の発行
+不動産ブローカー
+
+watch: try mcp
 	roadmap like obsidian
 pokeapi
 long:

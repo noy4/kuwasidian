@@ -1,20 +1,38 @@
 [[+memo.archive]]
 
 
-watch: try mcp
+browser use
+https://www.youtube.com/watch?v=vFW_TxKLyrE
+openai agents
+toland vlog
+
+youtube:
+news
+tech
+cooking
+conversation
+宿案内
+説明
+相槌
+
+Accommodations
+
+
 
 publish notes
 	vitepress-template
 	posts
 	
-youtube to anki
 
 obs
 	show trackpad motion
-	zunda reading
+	comment zunda reading
 
 
 ---
+[[youtube flashcard]]
+
+
 
 
 
