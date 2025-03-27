@@ -47,7 +47,14 @@ export function extractDescription(content: string): string {
     .replace(/\s+/g, ' ')
     .trim()
 
-  return plainText.length > 120
-    ? `${plainText.slice(0, 120)}...`
-    : plainText
+  const escapedText = plainText
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;')
+
+  return escapedText.length > 120
+    ? `${escapedText.slice(0, 120)}...`
+    : escapedText
 }
