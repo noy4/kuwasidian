@@ -1,0 +1,25 @@
+<script setup lang="ts">
+import type { Quest } from '../theme/quest.data'
+import { md } from '../utils'
+
+defineProps<{ quest: Quest }>()
+</script>
+
+<template>
+  <div class="p-(t-2 x-4 y-4) bg-[var(--vp-c-bg-alt)] border-0.5 border-[var(--vp-c-divider)] rounded-lg">
+    <div>
+      <div class="text-6xl py-3">
+        {{ quest.icon }}
+      </div>
+      <div class="font-semibold">
+        {{ quest.title }}
+      </div>
+      <div class="text-[var(--vp-c-text-2)] text-xs mt-1">
+        {{ quest.target }}
+      </div>
+    </div>
+    <div class="mt-4 text-sm bg-[var(--vp-c-bg)] border-0.5 border-[var(--vp-c-divider)] p-(x-4 y-1) rounded-lg">
+      <div v-html="md.render(quest.description || '')" />
+    </div>
+  </div>
+</template>

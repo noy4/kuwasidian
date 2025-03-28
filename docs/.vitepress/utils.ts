@@ -2,6 +2,7 @@ import type { DefaultTheme } from 'vitepress'
 import fs from 'node:fs'
 import path from 'node:path'
 import process from 'node:process'
+import markdownit from 'markdown-it'
 
 export function getSidebarItems(
   targetDir: string,
@@ -58,3 +59,5 @@ export function extractDescription(content: string): string {
     ? `${escapedText.slice(0, 120)}...`
     : escapedText
 }
+
+export const md = markdownit({ breaks: true })
