@@ -4,7 +4,7 @@ import QuestCard from './QuestCard.vue'
 </script>
 
 <template>
-  <div class="grid cols-2 gap-2 mt-4">
+  <div class="grid sm:cols-2 gap-2 mt-4">
     <QuestCard
       v-for="quest in data"
       :key="quest.title"

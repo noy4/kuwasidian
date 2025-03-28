@@ -6,19 +6,23 @@ defineProps<{ quest: Quest }>()
 </script>
 
 <template>
-  <div class="p-(t-2 x-4 y-4) bg-[var(--vp-c-bg-alt)] border-0.5 border-[var(--vp-c-divider)] rounded-lg">
+  <div class="p-4 bg-[var(--vp-c-bg-alt)] border-0.5 border-[var(--vp-c-divider)] rounded-lg flex flex-col gap-4">
     <div>
       <div class="text-6xl py-3">
         {{ quest.icon }}
       </div>
-      <div class="font-semibold">
+      <div class="font-semibold text-lg">
         {{ quest.title }}
       </div>
       <div class="text-[var(--vp-c-text-2)] text-xs mt-1">
         {{ quest.target }}
       </div>
     </div>
-    <div class="mt-4 text-sm bg-[var(--vp-c-bg)] border-0.5 border-[var(--vp-c-divider)] p-(x-4 y-1) rounded-lg">
+
+    <div
+      v-if="quest.description"
+      class="flex-1 text-sm bg-[var(--vp-c-bg)] border-0.5 border-[var(--vp-c-divider)] p-(x-4 y-1) rounded-lg"
+    >
       <div v-html="md.render(quest.description || '')" />
     </div>
   </div>
