@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { Quest } from '../theme/quest.data'
-import { md } from '../utils'
 
 defineProps<{ quest: Quest }>()
 </script>
@@ -35,7 +34,7 @@ defineProps<{ quest: Quest }>()
       v-if="quest.description"
       class="flex-1 text-sm bg-[var(--vp-c-bg)] border-0.5 border-[var(--vp-c-divider)] px-4 rounded-lg"
     >
-      <div v-html="md.render(quest.description || '')" />
+      <div v-html="quest.description" />
     </div>
   </div>
 </template>

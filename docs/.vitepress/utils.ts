@@ -1,5 +1,3 @@
-import markdownit from 'markdown-it'
-
 export function extractDescription(content: string): string {
   const plainText = content
     .replace(/^---[\s\S]*?---/, '')
@@ -17,5 +15,3 @@ export function extractDescription(content: string): string {
     ? `${escapedText.slice(0, 120)}...`
     : escapedText
 }
-
-export const md = markdownit({ breaks: true })

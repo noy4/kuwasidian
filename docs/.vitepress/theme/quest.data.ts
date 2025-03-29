@@ -1,4 +1,5 @@
 import { createContentLoader } from 'vitepress'
+import { createMd } from '../utils.server'
 
 export interface Section {
   title: string
@@ -26,8 +27,9 @@ export { data }
 
 export default createContentLoader('+quest.md', {
   includeSrc: true,
-  transform(data) {
+  async transform(data) {
     const src = data[0]?.src || ''
+    const md = await createMd()
 
     // ## で始まるセクションで分割
     // 1行目：タイトル
@@ -55,7 +57,7 @@ export default createContentLoader('+quest.md', {
             const [_title, target, ..._description] = itemLines
             const [icon, ...__title] = _title.split(/\s+/)
             const title = __title.join(' ')
-            const description = _description.join('\n')
+            const description = md.render(_description.join('\n'))
 
             return {
               icon,
