@@ -10,6 +10,15 @@ export interface Quest {
   title: string
   target?: string
   description?: string
+  status?: Status
+}
+
+export type Status = 'active' | 'cleared'
+
+const statusMap = {
+  0: 'active',
+  1: undefined,
+  2: 'cleared',
 }
 
 declare const data: Section[]
@@ -27,7 +36,7 @@ export default createContentLoader('+quest.md', {
 
     const sections = src
       .split(/(?=^##)/m)
-      .map((section) => {
+      .map((section, sectionIdx) => {
         let sectionTitle = ''
         let sectionContent = section
 
@@ -53,6 +62,7 @@ export default createContentLoader('+quest.md', {
               title,
               target,
               description,
+              status: statusMap[sectionIdx],
             }
           })
 

@@ -7,7 +7,7 @@ defineProps<{ quest: Quest }>()
 
 <template>
   <div class="p-4 bg-[var(--vp-c-bg-alt)] border-0.5 border-[var(--vp-c-divider)] rounded-lg flex flex-col gap-4">
-    <div>
+    <div class="relative">
       <div class="text-6xl py-3">
         {{ quest.icon }}
       </div>
@@ -17,6 +17,10 @@ defineProps<{ quest: Quest }>()
       <div class="text-[var(--vp-c-text-2)] text-xs mt-1">
         {{ quest.target }}
       </div>
+      <img
+        v-if="quest.status === 'cleared'"
+        src="../theme/quest_cleared.png" class="absolute top-0 right-0 w-30"
+      >
     </div>
 
     <div
