@@ -2,7 +2,6 @@
 
 
 browser use
-https://www.youtube.com/watch?v=vFW_TxKLyrE
 openai agents
 toland vlog
 
@@ -17,6 +16,9 @@ conversation
 
 Accommodations
 
+
+daily:
+anki
 
 
 publish notes

@@ -1,4 +1,5 @@
 
+https://www.youtube.com/watch?v=vFW_TxKLyrE
 flashcard gen
 youtube to anki
 

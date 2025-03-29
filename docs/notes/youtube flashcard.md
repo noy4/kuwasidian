@@ -1,3 +1,7 @@
+[youtube-flashcard](https://github.com/noy4/youtube-flashcard)
+
+---
+
 - [Anki Decks](https://anki-decks.com/)
 - [Voracious](https://voracious.app/)
 - [Ajatt-Tools/mpvacious: 🍜 Adds mpv keybindings to create Anki cards from movies and TV shows.](https://github.com/Ajatt-Tools/mpvacious)
