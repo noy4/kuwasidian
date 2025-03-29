@@ -25,7 +25,7 @@ defineProps<{ quest: Quest }>()
 
     <div
       v-if="quest.description"
-      class="flex-1 text-sm bg-[var(--vp-c-bg)] border-0.5 border-[var(--vp-c-divider)] p-(x-4 y-1) rounded-lg"
+      class="flex-1 text-sm bg-[var(--vp-c-bg)] border-0.5 border-[var(--vp-c-divider)] px-4 rounded-lg"
     >
       <div v-html="md.render(quest.description || '')" />
     </div>
