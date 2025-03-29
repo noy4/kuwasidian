@@ -27,12 +27,17 @@ export default createContentLoader('+quest.md', {
 
     const sections = src
       .split(/(?=^##)/m)
-      .slice(1)
       .map((section) => {
-        const [sectionTitle, ..._sectionContent] = section.split(/\n/)
+        let sectionTitle = ''
+        let sectionContent = section
 
-        const items = _sectionContent
-          .join('\n')
+        if (section.startsWith('## ')) {
+          const chunks = section.split(/\n/)
+          sectionTitle = chunks[0].replace(/^## /, '')
+          sectionContent = chunks.slice(1).join('\n')
+        }
+
+        const items = sectionContent
           .trim()
           .split(/\n\n\n/)
           .map(v => v.trim())
@@ -40,9 +45,7 @@ export default createContentLoader('+quest.md', {
             const itemLines = item.split(/\n/)
 
             const [_title, target, ..._description] = itemLines
-            const [icon, ...__title] = _title
-              .replace(/^## /, '')
-              .split(/\s+/)
+            const [icon, ...__title] = _title.split(/\s+/)
             const title = __title.join(' ')
             const description = _description.join('\n')
             return {
@@ -54,7 +57,7 @@ export default createContentLoader('+quest.md', {
           })
 
         return {
-          title: sectionTitle.replace(/^## /, ''),
+          title: sectionTitle,
           items,
         }
       })

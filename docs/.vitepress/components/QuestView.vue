@@ -5,7 +5,10 @@ import QuestCard from './QuestCard.vue'
 
 <template>
   <div v-for="section in data" :key="section.title">
-    <div class="text-2xl font-semibold mt-8 mb-4">
+    <div
+      v-if="section.title"
+      class="text-2xl font-semibold mt-8 mb-4"
+    >
       {{ section.title }}
     </div>
 
