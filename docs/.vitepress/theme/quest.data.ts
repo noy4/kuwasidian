@@ -52,11 +52,11 @@ export default createContentLoader('+quest.md', {
           .map(v => v.trim())
           .map((item) => {
             const itemLines = item.split(/\n/)
-
             const [_title, target, ..._description] = itemLines
             const [icon, ...__title] = _title.split(/\s+/)
             const title = __title.join(' ')
             const description = _description.join('\n')
+
             return {
               icon,
               title,
