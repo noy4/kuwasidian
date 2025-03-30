@@ -41,6 +41,24 @@ YouTube 字幕の Anki カード化
 [[連載再開しろ冨樫]]
 
 
+🇬🇧 ニューロンを繋げ
+英語ができるようになれそうに思わせる言語化
+[YouCanSpeak](https://youcanspeak.net/)
+
+
+🎼 奏でましょうや
+音楽を簡単に思わせる言語化
+[SoundQuest](https://soundquest.jp/quest/)
+
+
+🖥️ 集まれ叡智
+Web プログラミングの面白さを言語化
+
+
+🤔 In this complecated world
+「説明」について言語化
+
+
 🎹 音の鳴る方へ
 「♪ピアノがこんな簡単だなんて知らなかったんだ」の作成
 [[ピアノがこんな簡単だなんて知らなかったんだ]]
