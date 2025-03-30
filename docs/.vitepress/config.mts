@@ -65,22 +65,27 @@ export default defineConfig({
   },
 
   transformPageData(pageData) {
-    pageData.title ||= pageData.filePath.split('/').pop()!.replace(/\.md$/, '')
-
-    const fullPath = path.resolve('docs', pageData.filePath)
-    if (fs.existsSync(fullPath)) {
-      const content = fs.readFileSync(fullPath, 'utf-8')
-      pageData.description ||= extractDescription(content)
-    }
-
     const home = pageData.relativePath === 'index.md'
-    const title = home ? siteTitle : `${pageData.title} | ${siteTitle}`
-    const description = home ? siteDescription : pageData.description
+    const fullPath = path.resolve('docs', pageData.filePath)
+    let ogTitle = siteTitle
+    let ogDescription = siteDescription
+
+    if (!home) {
+      pageData.title ||= pageData.filePath.split('/').pop()!.replace(/\.md$/, '')
+
+      if (fs.existsSync(fullPath)) {
+        const content = fs.readFileSync(fullPath, 'utf-8')
+        pageData.description ||= extractDescription(content)
+      }
+
+      ogTitle = `${pageData.title} | ${siteTitle}`
+      ogDescription = pageData.description
+    }
 
     pageData.frontmatter.head ??= []
     pageData.frontmatter.head.push(
-      ['meta', { property: 'og:title', content: title }],
-      ['meta', { property: 'og:description', content: description }],
+      ['meta', { property: 'og:title', content: ogTitle }],
+      ['meta', { property: 'og:description', content: ogDescription }],
       ['meta', { property: 'og:url', content: `${siteUrl}${pageData.relativePath.replace(/\.md$/, '.html')}` }],
     )
   },
