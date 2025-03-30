@@ -1,5 +1,4 @@
-🌄 冒険の幕開け
-Kuwasidian Quest の公開
+
 
 
 ⚖️ 豊かさと正しさの相反
@@ -61,13 +60,21 @@ YouTube 字幕の Anki カード化
 
 ## Cleared
 
+🌄 冒険の幕開け
+Kuwasidian Quest の公開
+[Quest | Kuwasidian](https://noy4.github.io/kuwasidian/quest.html)
+2025/03/30
+
+
 📝 手記の行く末
 Kuwasidian の公開
 Obsidian のメモを公開
+[Kuwasidian](https://noy4.github.io/kuwasidian/)
 2025/02/28
 
 
 📚 学徒の遺産
 桑日記のアーカイブ化
 WordPress ブログのデータを移行
+[伝説のサイト「桑日記」が復活しました。 | 桑日記](https://noy4.github.io/wordpress-archive/posts/kuwanikki-again.html)
 2025-02-27

@@ -1,3 +1,4 @@
+import type { DefaultTheme } from 'vitepress'
 import fs from 'node:fs'
 import path from 'node:path'
 import { BiDirectionalLinks } from '@nolebase/markdown-it-bi-directional-links'
@@ -12,6 +13,22 @@ const siteTitle = 'Kuwasidian'
 const siteDescription = '彼の Obsidian（メモアプリ）のメモ'
 const siteUrl = `https://noy4.github.io${siteBase}`
 const siteImage = 'obsidian.png'
+
+const sidebar: DefaultTheme.Sidebar = [
+  { text: 'メモ', link: '/' },
+  { text: 'クエスト', link: '/quest' },
+  { text: '記事一覧', link: '/posts' },
+  {
+    text: 'Notes',
+    items: [
+      {
+        text: 'notes',
+        collapsed: true,
+        items: getSidebarItems('notes'),
+      },
+    ],
+  },
+]
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -72,27 +89,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     logo: `/${siteImage}`,
     outline: [2, 3],
-    nav: [
-      // { text: 'Home', link: '/' },
-      // { text: 'Examples', link: '/markdown-examples' },
-    ],
-
-    sidebar: [
-      { text: 'メモ', link: '/' },
-      { text: 'クエスト', link: '/quest' },
-      { text: '記事一覧', link: '/notes/articles' },
-      {
-        text: 'Notes',
-        items: [
-          {
-            text: 'notes',
-            collapsed: true,
-            items: getSidebarItems('notes'),
-          },
-        ],
-      },
-    ],
-
+    sidebar,
     socialLinks: [
       { icon: 'github', link: 'https://github.com/noy4/kuwasidian' },
     ],
