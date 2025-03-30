@@ -94,6 +94,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     logo: `/${siteImage}`,
     outline: [2, 3],
+    externalLinkIcon: true,
     sidebar,
     socialLinks: [
       { icon: 'github', link: 'https://github.com/noy4/kuwasidian' },
