@@ -10,7 +10,7 @@ import { getSidebarItems } from './utils.server'
 
 const siteBase = '/kuwasidian/'
 const siteTitle = 'Kuwasidian'
-const siteDescription = '彼の Obsidian（メモアプリ）のメモ'
+const siteDescription = 'クワシディアン - 彼の Obsidian（メモアプリ）のメモ'
 const siteUrl = `https://noy4.github.io${siteBase}`
 const siteImage = 'obsidian.png'
 
