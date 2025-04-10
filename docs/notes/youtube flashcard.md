@@ -30,3 +30,5 @@ tool
 - [asbplayer](https://github.com/killergerbah/asbplayer)
 - [OpenSubtitles](https://www.opensubtitles.org/)
 
+[netflix-to-anki](https://github.com/demonlexe/netflix-to-anki)
+[Language Reactor最強の使い方｜Netflix海外ドラマスクリプトをAnkiカードにダウンロードしよう！](https://warmankaede.com/language-reactor-howto-anki/)

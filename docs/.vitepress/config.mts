@@ -100,4 +100,8 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/noy4/kuwasidian' },
     ],
   },
+
+  sitemap: {
+    hostname: siteUrl,
+  },
 })

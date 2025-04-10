@@ -1,4 +1,29 @@
 
+transcribe as srt
+ずれる時がある
+check srt
+string
+
+array
+
+
+workspace
+input
+	input.txt
+	https://
+
+workspace が指定されている
+- input.txt がある
+- .txt path
+- url
+
+workspace がない
+- .txt path
+- url
+
+/default
+/VitePress uses Inter as the default font, and will...
+
 https://www.youtube.com/watch?v=vFW_TxKLyrE
 flashcard gen
 youtube to anki
