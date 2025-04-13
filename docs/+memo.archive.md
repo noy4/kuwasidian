@@ -1,4 +1,5 @@
 
+toland vlog
 transcribe as srt
 ずれる時がある
 check srt
