@@ -10,4 +10,5 @@ node_modules
 
 # private folder/file
 _*
+!_config.yml
 daily notes
