@@ -101,7 +101,7 @@ export default defineConfig({
     ],
   },
 
-  // sitemap: {
-  //   hostname: siteUrl,
-  // },
+  sitemap: {
+    hostname: siteUrl,
+  },
 })
