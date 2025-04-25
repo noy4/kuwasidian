@@ -6,9 +6,17 @@ import { createMarkdownRenderer } from 'vitepress'
 
 export function getSidebarItems(
   targetDir: string,
-  rootDir = 'docs',
-  exclude: string[] = ['_.*'],
+  options: {
+    rootDir?: string
+    exclude?: string[]
+    desc?: boolean
+  } = {},
 ): DefaultTheme.SidebarItem[] {
+  const {
+    rootDir = 'docs',
+    exclude = ['_.*'],
+    desc = false,
+  } = options
   const rootPath = path.join(process.cwd(), rootDir)
   const dirPath = path.join(rootPath, targetDir)
 
@@ -16,6 +24,9 @@ export function getSidebarItems(
     return []
 
   const files = fs.readdirSync(dirPath)
+  if (desc)
+    files.sort((a, b) => b.localeCompare(a))
+
   const items: DefaultTheme.SidebarItem[] = []
 
   for (const file of files) {
@@ -29,7 +40,11 @@ export function getSidebarItems(
       items.push({
         text: file,
         collapsed: true,
-        items: getSidebarItems(path.join(targetDir, file), rootDir, exclude),
+        items: getSidebarItems(path.join(targetDir, file), {
+          rootDir,
+          exclude,
+          desc,
+        }),
       })
     }
     else if (file.endsWith('.md') && file !== 'index.md') {
