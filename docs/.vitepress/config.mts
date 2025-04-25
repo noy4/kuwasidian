@@ -19,14 +19,19 @@ const sidebar: DefaultTheme.Sidebar = [
   { text: 'クエスト', link: '/quest' },
   { text: '記事一覧', link: '/posts' },
   {
-    text: 'Notes',
-    items: [
-      {
-        text: 'notes',
-        collapsed: true,
-        items: getSidebarItems('notes'),
-      },
-    ],
+    text: 'プロンプト',
+    collapsed: true,
+    items: getSidebarItems('prompts'),
+  },
+  {
+    text: 'レポート',
+    collapsed: true,
+    items: getSidebarItems('reports'),
+  },
+  {
+    text: 'notes',
+    collapsed: true,
+    items: getSidebarItems('notes'),
   },
 ]
 
