@@ -1,3 +1,15 @@
+
+
+コマンド例：
+
+```bash
+
+sqlite3 ./tmp/history.db "SELECT DISTINCT title FROM urls WHERE title != '' AND datetime(last_visit_time / 1000000 - 11644473600, 'unixepoch') >= '2025-04-01' AND datetime(last_visit_time / 1000000 - 11644473600, 'unixepoch') < '2025-05-01';" > ./tmp/browser-history-2025-04.txt
+
+```
+
+
+
 agent vs mcp
 
 obs
