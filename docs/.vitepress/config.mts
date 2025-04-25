@@ -19,19 +19,27 @@ const sidebar: DefaultTheme.Sidebar = [
   { text: 'クエスト', link: '/quest' },
   { text: '記事一覧', link: '/posts' },
   {
-    text: 'プロンプト',
-    collapsed: true,
-    items: getSidebarItems('prompts'),
+    items: [
+      {
+        text: 'プロンプト',
+        collapsed: true,
+        items: getSidebarItems('prompts'),
+      },
+      {
+        text: '検索履歴レポート',
+        collapsed: true,
+        items: getSidebarItems('reports'),
+      },
+    ],
   },
   {
-    text: 'レポート',
-    collapsed: true,
-    items: getSidebarItems('reports'),
-  },
-  {
-    text: 'notes',
-    collapsed: true,
-    items: getSidebarItems('notes'),
+    items: [
+      {
+        text: 'notes',
+        collapsed: true,
+        items: getSidebarItems('notes'),
+      },
+    ],
   },
 ]
 
