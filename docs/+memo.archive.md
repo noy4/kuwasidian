@@ -1,3 +1,50 @@
+agent vs mcp
+
+obs
+	show trackpad motion
+	comment zunda reading
+
+check browser bookmark
+[GitHubコードのチュートリアルをAIで自動作成する「Tutorial-Codebase-Knowledge」 - GIGAZINE](https://gigazine.net/news/20250422-tutorial-codebase-knowledge/)
+
+ai payed
+browser use
+
+
+[[ai video]]
+[[ai card]]
+openai agents
+ai video 字幕
+
+物語：
+
+
+以下の物語から動画を作りたいです。
+
+{{物語を書く}}
+
+この物語を動画化するときにあるといいシーンを書き出してください
+
+
+
+次のテーマで歌詞を作ってください。
+
+
+登場人物：
+女子高生
+工場で働く人
+
+
+
+ある動画配信者に励まされる人、応援する人、というテーマで動画を作りたいです。
+
+動画の各シーン案を提案してください
+
+
+agent
+workflow
+background job
+
 
 toland vlog
 transcribe as srt

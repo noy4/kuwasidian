@@ -1,3 +1,28 @@
+
+[TextAlive | リリックビデオを楽しもう！ | textalive.jp](https://textalive.jp/)
+
+1 - Kling 2 - Runway 3 - Luma ai 4 - Minimax 5 - Sora 6 - Hedra 7 - invideo 8 - Vidu ai
+
+[Pika](https://pika.art/)
+[Luma AI](https://lumalabs.ai/)
+[Synthesia](https://www.synthesia.io/)
+
+- [無料の InVideo AI 代替品 - これらの競合製品をお試しください! - YouTube](https://www.youtube.com/watch?v=qcPKlm-M3p8)
+- [I Tried 5 AI Video Generators for Faceless Channels (Here’s the BEST!) - YouTube](https://www.youtube.com/watch?v=MUyJXmdjOEU)
+- [Best AI Video Generators for YouTube in 2025 - YouTube](https://www.youtube.com/watch?v=S131Lt08si0)
+- [5 AI Tools to Create YouTube Videos You’ve Never Seen Before - YouTube](https://www.youtube.com/watch?v=03cChsHHGy0)
+- [BEST AI Video Generator in 2025: Invideo AI V3 - Generative AI - YouTube](https://www.youtube.com/watch?v=xjveLQ-FHXg)
+
+- [jianzhnie/awesome-text-to-video: A Survey on Text-to-Video Generation/Synthesis.](https://github.com/jianzhnie/awesome-text-to-video?tab=readme-ov-file)
+- [SamurAIGPT/Text-To-Video-AI: Generate video from text using AI](https://github.com/SamurAIGPT/Text-To-Video-AI?tab=readme-ov-file)
+
+
+[FramePack](https://github.com/lllyasviel/FramePack)
+[VEED.IO](https://www.veed.io/)
+[SkyReels](https://www.skyreels.ai/home)
+
+---
+
 - [【AI動画】いま大人気の『架空アニメOP』動画の作り方【初心者向け】 - YouTube](https://www.youtube.com/watch?v=bP5v_1Z1upE)
 - [初心者がAI動画で100万再生を狙ってみたけど....最後まで見ないで - YouTube](https://www.youtube.com/watch?v=Gu1dw7zvdMI)
 

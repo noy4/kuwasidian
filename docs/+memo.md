@@ -1,12 +1,7 @@
 [[+memo.archive]]
 
 
-browser use
-openai agents
-[[ai video]]
-[[ai card]]
 
-ai video 字幕
 
 
 
@@ -19,10 +14,6 @@ publish notes
 	posts
 	
 
-obs
-	show trackpad motion
-	comment zunda reading
-
 
 
 
@@ -31,27 +22,24 @@ obs
 
 
 
+  
 
-歌詞生成
-歌詞のフレーズごとに脚本生成
-歌詞から曲生成
-脚本から画像生成
-画像から動画生成
+コマンド例：
 
-を自動化したい。どんなツールを使って再現すべき？AIエージェント構築なのか、n8n などを使うのか。
+```bash
 
+sqlite3 ./tmp/history.db "SELECT DISTINCT title FROM urls WHERE title != '' AND datetime(last_visit_time / 1000000 - 11644473600, 'unixepoch') >= '2025-04-01' AND datetime(last_visit_time / 1000000 - 11644473600, 'unixepoch') < '2025-05-01';" > ./tmp/browser-history-2025-04.txt
 
-アニメ生成
-エージェント
-
-deep research
-deep research clone
+```
 
 
-[導入したMCP](https://zenn.dev/mozumasu/scraps/9b59b516a03ebd)
+
+
+
 
 ---
 
 
 core:
 visuallize
+
