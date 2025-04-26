@@ -1,4 +1,28 @@
 
+ヒーローまだ隣の席かいな
+github pages にデプロイしたサイトを検索ヒットさすグッドな方法ないか聞いてみてくれん？
+
+
+https://qiita.com/r_saiki/items/9ab3be34fa255724c9dd
+github pages でデプロイしたサイトはデフォで検索ヒットしない？
+google search console への登録が必要？
+
+https://noy4.github.io/kuwasidian/
+色々やってみた（4/10くらいに）けどまだ検索引っかからない（kuwasidian で検索）
+
+デプロイしたら余分な作業することなく検索引っかかる状態にしたい。
+今後脳死で github pages にデプロイするのやめて cloudflare pages にデプロイしようかと考えている。
+
+https://noy4.github.io/bingo-anke-site/ 
+桑の卒業研究についてのサイト。登録作業？をしてないから bingo anke で検索ヒットしない。悲しい。
+
+https://noy4.github.io/
+桑の自己紹介サイト。確か3年前くらいに登録作業をした。'noy4 qwerty' でヒットする。
+
+
+
+アタマプラス
+
 
 コマンド例：
 

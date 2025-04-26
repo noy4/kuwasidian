@@ -27,6 +27,7 @@ const sidebar: DefaultTheme.Sidebar = [
       },
       {
         text: '検索履歴レポート',
+        link: '/search-history-reports/',
         collapsed: true,
         items: getSidebarItems('search-history-reports', {
           desc: true,

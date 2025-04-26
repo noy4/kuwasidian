@@ -21,10 +21,9 @@ publish notes
 [[youtube flashcard]]
 
 
-
-
-
-
+Roo vs cline
+[DeepWiki](https://deepwiki.com/)
+Devin
 
 
 ---
