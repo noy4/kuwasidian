@@ -56,7 +56,7 @@ export default defineConfig({
   description: siteDescription,
   base: siteBase,
   head: [
-    ['link', { rel: 'icon', href: `${siteBase}${siteImage}` }],
+    ['link', { rel: 'icon', type: 'image/png', href: `${siteBase}${siteImage}` }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:image', content: `${siteUrl}${siteImage}` }],
     ['meta', { property: 'og:url', content: siteUrl }],
