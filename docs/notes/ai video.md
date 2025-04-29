@@ -1,4 +1,8 @@
 
+## Projects
+[[♪再開の祈り 〜Dear Togashi〜]]
+
+## Research
 [TextAlive | リリックビデオを楽しもう！ | textalive.jp](https://textalive.jp/)
 
 1 - Kling 2 - Runway 3 - Luma ai 4 - Minimax 5 - Sora 6 - Hedra 7 - invideo 8 - Vidu ai
@@ -36,8 +40,7 @@
 
 添付画像を Vidu AI で動画を作りたいので、英語のプロンプトを超シンプルに書いてください。
 
-## Projects
-[[♪再開の祈り 〜Dear Togashi〜]]
+
 
 
 

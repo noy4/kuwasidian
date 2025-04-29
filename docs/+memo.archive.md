@@ -1,4 +1,18 @@
 
+core:
+visuallize
+
+
+[地理院地図3D](https://maps.gsi.go.jp/index_3d.html?z=15&lat=34.02639726000327&lon=133.8120779581368&pxsize=1024&ls=ort#&cpx=-101.070&cpy=-30.348&cpz=38.916&cux=-0.413&cuy=0.096&cuz=0.906&ctx=2.503&cty=6.427&ctz=-12.465&a=1.6&b=0&dd=0)
+
+
+Glama market map agent
+Sign up with Cline
+Roo vs cline
+
+[Exa | Web Search API | AI Web Researcher](https://exa.ai/)
+
+
 ヒーローまだ隣の席かいな
 github pages にデプロイしたサイトを検索ヒットさすグッドな方法ないか聞いてみてくれん？
 

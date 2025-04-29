@@ -2,11 +2,10 @@
 
 
 
-
-
-
-daily:
+[daily]
 anki
+work out
+en writing
 
 
 publish notes
@@ -21,14 +20,6 @@ publish notes
 [[youtube flashcard]]
 
 
-Roo vs cline
-[DeepWiki](https://deepwiki.com/)
 Devin
-
-
----
-
-
-core:
-visuallize
+朝ドラ RAD
 

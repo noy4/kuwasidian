@@ -17,3 +17,5 @@ https://chatgpt.com/share/67f91479-5238-8013-9192-490a6ae2e23d
 4秒生成 x 20シーン = 80s
 曲 200s
 →スッカスカ
+
+[AI動画　♪再開の祈り 〜Dear Togashi〜 - YouTube](https://www.youtube.com/watch?v=c3MnMtsSsmk)

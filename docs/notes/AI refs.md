@@ -1,4 +1,47 @@
 
+
+
+[DeepWiki](https://deepwiki.com/)
+[🙌 OpenHands](https://github.com/All-Hands-AI/OpenHands)
+
+
+video:
+[Animon](https://www.animon.ai/explore)
+[Director](https://github.com/video-db/Director)
+[Keytake](https://www.keytake.ai/)
+
+
+[MagicLight](https://magiclight.ai/)
+[This AI Tool Creates 30-Minute Videos from Just ONE Prompt! 🚀 - YouTube](https://www.youtube.com/watch?v=7GfjL-3IoS4&t=149s)
+[AI Bunny - YouTube](https://www.youtube.com/@AIBunnyOfficial)
+
+
+agent framework:
+[AgentKit - AgentKit by Inngest](https://agentkit.inngest.com/overview)
+
+
+curation:
+[AI Agents Directory](https://aiagentsdirectory.com/)
+[There's An AI For That®](https://theresanaiforthat.com/)
+[Powerusers AI](https://powerusers.ai/)
+
+mcp:
+[MCP servers | Glama](https://glama.ai/mcp/servers)
+[Glama](https://glama.ai/chat)
+[Smithery - Model Context Protocol Registry](https://smithery.ai/)
+
+nsfw:
+[MyBunny AI - AI Girlfriend Chat](https://mybunny.ai/)
+[NSFW AI Tools - Explore The Top Adults AI Tools & Apps on NSFW.tools](https://nsfw.tools/)
+
+other:
+[Yourware: 1-Click Deployment for Vibe Coding & AI HTML Creators](https://www.yourware.so/)
+
+
+
+
+---
+
 [OpenRouter](https://openrouter.ai/)
 [Infinite Worlds](https://infiniteworlds.app/)
 [goose](https://github.com/block/goose)
