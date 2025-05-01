@@ -1,4 +1,13 @@
 
+Upload this video [https://www.youtube.com/watch?v=C25g53PC5QQ](https://www.youtube.com/watch?v=C25g53PC5QQ) and create a clip focusing on AI features in the browser.
+text to movie の部分のクリップを作って
+radwimps のメンバーについて紹介する動画を作って
+踊る猫とウサギの動画を作って
+
+https://github-production-user-asset-6210df.s3.amazonaws.com/5406975/388832605-33e0e7b4-9eb2-4a26-8274-f96c2c1c3a48.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA/20250429/us-east-1/s3/aws4_request&X-Amz-Date=20250429T094720Z&X-Amz-Expires=300&X-Amz-Signature=b37ecdabfaa9a4eff4b9eff4eee4910cc2a5e68df06be5a7e6a7b53122bbd831&X-Amz-SignedHeaders=host
+
+このビデオでやってる例を全部まとめてくれ
+
 core:
 visuallize
 

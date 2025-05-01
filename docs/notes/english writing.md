@@ -1,12 +1,14 @@
-前の案件をやっていた時、AIの勉強にもっと時間を割きたいと思っていた
+[[english writing archive]]
 
-前の案件にキリをつけ、最近はAI周りの調査をしている。今どんなことがAIでできるのか、どんなツールがあるのかなど。
+雑談英会話勉強中。文章変なら教えて。
+カジュアルな口語の英語にして
 
-ワークスペース料金確認
+
+以下は英語学習のメモです。文章をそれぞれ Anki カードにして保存してください。文章は音声読み上げされるので文章以外の文言は含めないでください。
+表：日本語文
+裏：英文
 
 
-When I was working on my previous project, I often felt like I wanted to spend more time learning about AI.  
+Twitter の自分の投稿を英訳
 
-Now that I’ve stepped away from that project, I’ve been looking into AI more seriously.  
-
-Lately, I’ve been exploring what AI can do these days and what kinds of tools are out there.
+---

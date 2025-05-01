@@ -1,14 +1,14 @@
 x Cody
-OpenRouter
-GitHub Copilot
+x OpenRouter
+GitHub Copilot $11
 x Cline $5
 
 
-Genspark
+x Genspark $27.49
 
 
-Vidu
-Kling
-Runway 4/10
+x Vidu $10
+x Kling $8.8
+x Runway 4/10 $16.5
 invideo $35 4/24
 MagicLight $10
