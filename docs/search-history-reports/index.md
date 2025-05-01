@@ -9,7 +9,7 @@
 - プロンプト（AIへの指示文） - https://raw.githubusercontent.com/noy4/kuwasidian/main/docs/prompts/search-history-report.md
 
 ## 手順
-Roo Code のチャットに以下の様に入力する。
+Roo Code のチャットに以下のように入力する。
 
 例1）今月分のレポートを作成
 ```sh
