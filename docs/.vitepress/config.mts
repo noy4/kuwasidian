@@ -1,4 +1,4 @@
-import type { DefaultTheme } from 'vitepress'
+import type { DefaultTheme, MarkdownRenderer } from 'vitepress'
 import fs from 'node:fs'
 import path from 'node:path'
 import { BiDirectionalLinks } from '@nolebase/markdown-it-bi-directional-links'
@@ -73,6 +73,7 @@ export default defineConfig({
     breaks: true,
     config(md) {
       md.use(BiDirectionalLinks({ dir: 'docs' }))
+      md.use(insertH1IfMissing())
     },
   },
 
@@ -121,3 +122,31 @@ export default defineConfig({
     hostname: siteUrl,
   },
 })
+
+// [title · Issue #4629 · vuejs/vitepress](https://github.com/vuejs/vitepress/issues/4629)
+function insertH1IfMissing() {
+  return (md: MarkdownRenderer) => {
+    md.core.ruler.after('block', 'insert_h1_if_missing', (state) => {
+      const { env, tokens, Token } = state
+
+      const hasH1 = tokens.some(token =>
+        token.type === 'heading_open' && token.tag === 'h1',
+      )
+
+      // BiDirectionalLinks によって [[]] ごとに markdown-it が走る？
+      // [[]] の tokens.length は 1 なので、そうでない時だけ実行する
+
+      if (!hasH1 && tokens.length > 1 && env.path) {
+        const title = env.frontmatter?.title
+          || path.basename(env.path, path.extname(env.path))
+        const h1Open = new Token('heading_open', 'h1', 1)
+        const h1Text = new Token('inline', '', 0)
+        const h1Close = new Token('heading_close', 'h1', -1)
+        h1Text.content = title
+        h1Text.children = []
+
+        tokens.unshift(h1Open, h1Text, h1Close)
+      }
+    })
+  }
+}
