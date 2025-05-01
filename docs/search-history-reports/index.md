@@ -1,22 +1,16 @@
 # 検索履歴レポートを作成する
 
-ある月に何をしていたか（調査、学習、娯楽など）について、ブラウザ検索履歴からレポートを自動作成する手順を説明します。パソコンでAIを使って作成します。
+ブラウザ検索履歴からレポートを自動作成する手順を説明します。ある月に何をしていたか（調査、学習、娯楽など）を振り返ることができます。
 
 ## 準備
-以下をインストールしておく。
-- [VSCode](https://code.visualstudio.com/) - テキストエディタ
-- [Cline](https://cline.bot/) - VSCode の拡張機能。AI にパソコンを操作させる。
+- [[Roo Code のセットアップ]]
 
-プロンプト（AIに送る指示文）：
-- https://raw.githubusercontent.com/noy4/kuwasidian/main/docs/prompts/search-history-report.md
+## 使うもの
+- プロンプト（AIへの指示文） - https://raw.githubusercontent.com/noy4/kuwasidian/main/docs/prompts/search-history-report.md
 
 ## 手順
-1. VSCode で適当な作業用フォルダを開く。
-2. Cline のパネルを開き、チャットに**チャット入力例**（後述）のように入力して送信する。
-3. チャットの指示に従っていく。（ファイル操作などの承認を求められるので都度許可する。）
-4. レポートが書き出される。
+Roo Code のチャットに以下の様に入力する。
 
-### チャット入力例
 例1）今月分のレポートを作成
 ```sh
 @https://raw.githubusercontent.com/noy4/kuwasidian/main/docs/prompts/search-history-report.md
