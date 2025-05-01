@@ -1,3 +1,4 @@
+朝ドラ RAD
 
 Upload this video [https://www.youtube.com/watch?v=C25g53PC5QQ](https://www.youtube.com/watch?v=C25g53PC5QQ) and create a clip focusing on AI features in the browser.
 text to movie の部分のクリップを作って

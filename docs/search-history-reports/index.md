@@ -26,6 +26,8 @@ output: レポート/検索履歴レポート/
 exclude: YouTube, 筋トレ関連、ニュースサイト
 ```
 
+*パラメータの詳細はプロンプト原文を参照してください。
+
 例3）文章でパラメータを指定して作成
 ```sh
 @https://raw.githubusercontent.com/noy4/kuwasidian/main/docs/prompts/search-history-report.md
@@ -33,7 +35,17 @@ exclude: YouTube, 筋トレ関連、ニュースサイト
 去年の各月のレポート、年次レポート
 ```
 
-*パラメータの詳細はプロンプト原文を参照してください。
+例4）[Maki さん](https://x.com/hAru_mAki_ch) さんの [グラレコプロンプト](https://github.com/Sunwood-ai-labs/MysticLibrary/blob/main/prompts/documentation/Graphic-recording-infographic-anim-v3.md) でグラレコ化
+
+```sh
+@https://raw.githubusercontent.com/noy4/kuwasidian/main/docs/prompts/search-history-report.md
+
+対象：4月
+
+レポート作成後、以下を適用
+
+@https://raw.githubusercontent.com/Sunwood-ai-labs/MysticLibrary/refs/heads/main/prompts/documentation/Graphic-recording-infographic-anim-v3.md
+```
 
 ## その他
 プロンプト改善案受付中

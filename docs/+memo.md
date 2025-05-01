@@ -22,7 +22,11 @@ publish notes
 
 
 Devin
-朝ドラ RAD
+
+
+[[prompt miniture diorama]]
+
+パラメータを参考に、レポートを画像化してください。
 
 
 
