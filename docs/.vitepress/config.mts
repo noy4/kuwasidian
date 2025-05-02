@@ -10,9 +10,10 @@ import { getSidebarItems, insertH1IfMissing } from './utils.server'
 
 const siteBase = '/kuwasidian/'
 const siteTitle = 'Kuwasidian'
-const siteDescription = 'クワシディアン - 彼の Obsidian（メモアプリ）のメモ'
+const siteDescription = '彼の Obsidian（メモアプリ）のメモ'
 const siteUrl = `https://noy4.github.io${siteBase}`
 const siteImage = 'obsidian.png'
+const homeTitle = 'Kuwasidian（クワシディアン） | 彼の Obsidian（メモアプリ）のメモ'
 
 const sidebar: DefaultTheme.Sidebar = [
   { text: 'メモ', link: '/' },
@@ -53,6 +54,7 @@ export default defineConfig({
   },
 
   title: siteTitle,
+  titleTemplate: false,
   description: siteDescription,
   base: siteBase,
   head: [
@@ -84,22 +86,19 @@ export default defineConfig({
   transformPageData(pageData) {
     const home = pageData.relativePath === 'index.md'
     const fullPath = path.resolve('docs', pageData.filePath)
-    let ogTitle = siteTitle
-    let ogDescription = siteDescription
 
-    if (!home) {
-      if (fs.existsSync(fullPath)) {
-        const content = fs.readFileSync(fullPath, 'utf-8')
-        pageData.description ||= extractDescription(content)
-      }
+    pageData.title = home
+      ? homeTitle
+      : `${pageData.title} | ${siteTitle}`
 
-      ogTitle = `${pageData.title} | ${siteTitle}`
-      ogDescription = pageData.description
+    if (fs.existsSync(fullPath)) {
+      const content = fs.readFileSync(fullPath, 'utf-8')
+      pageData.description ||= extractDescription(content)
     }
 
     ;((pageData.frontmatter.head ??= []) as HeadConfig[]).push(
-      ['meta', { property: 'og:title', content: ogTitle }],
-      ['meta', { property: 'og:description', content: ogDescription }],
+      ['meta', { property: 'og:title', content: pageData.title }],
+      ['meta', { property: 'og:description', content: pageData.description }],
       ['meta', { property: 'og:url', content: `${siteUrl}${pageData.relativePath.replace(/\.md$/, '.html')}` }],
     )
   },
