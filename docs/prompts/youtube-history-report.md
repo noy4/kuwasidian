@@ -19,7 +19,7 @@
 ## フォーマット
 ### 月時レポート
 ```md 2025-04.md
-# 検索履歴レポート 2025-04
+# YouTube履歴レポート 2025-04
 閲覧数：2129件
 
 {要約を記述。見出しは不要。}
@@ -31,7 +31,7 @@
 
 ### 年次レポート
 ```md 2025.md
-# 検索履歴レポート 2025
+# YouTube履歴レポート 2025
 閲覧数：2129件
 
 {要約を記述。見出しは不要}
@@ -40,54 +40,56 @@
 ```
 
 ## サムネタイル
-- div,a,img,span でタイル表示
-- img.alt は不要
-- タイトル末尾の '- YouTube' は不要
+<div class="thumbnail-tiles">
+  <a href="https://www.youtube.com/watch?v=0UC1vvHprq8" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.youtube.com/vi/0UC1vvHprq8/mqdefault.jpg">
+    <span class="video-title">15 in 1 AI VIDEO Generator : Let's CREATE YOUR Own Cinematic AI MOVIE - YouTube</span>
+  </a>
+</div>
 
 <style>
 .thumbnail-tiles {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px; /* サムネイル間の隙間 */
-  margin-bottom: 1em; /* 下部のマージン */
-}
+  gap: 10px;
+  margin-bottom: 1em;
 
-.thumbnail-tiles a {
-  position: relative; /* タイトル表示位置の基準にする */
-  color: inherit; /* 親要素の色を継承 */
-  display: block; /* 画像のサイズに合わせる */
-  border-radius: 4px; /* 角を少し丸める（任意） */
-  overflow: hidden; /* 角丸を画像に適用（任意） */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 影をつける（任意） */
-  transition: transform 0.2s ease; /* ホバー効果（任意） */
-}
+  a {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
 
-.thumbnail-tiles a:hover {
-    transform: scale(1.05); /* ホバー時に少し拡大（任意） */
-}
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
 
-.thumbnail-tiles img {
-  display: block; /* 画像下の余白を消す */
-  width: 160px; /* サムネイルの幅 */
-}
+  img {
+    display: block; /* 画像下の余白を消す */
+    width: 160px;
+  }
 
-.thumbnail-tiles .video-title {
-  position: absolute;
-  inset: 0; /* 上下左右の余白を0に */
-  background-color: rgba(0, 0, 0, 0.7); /* 半透明の黒背景 */
-  color: white;
-  padding: 4px 6px; /* 内側の余白 */
-  font-size: 11px; /* 文字サイズ */
-  line-height: 1.3; /* 行間 */
-  opacity: 0; /* 通常時は非表示 */
-  transition: opacity 0.2s ease; /* フェードイン効果 */
-  pointer-events: none; /* タイトルがホバーの邪魔をしないように */
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+  .video-title {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 4px 6px;
+    font-size: 11px;
+    line-height: 1.3;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
 
-/* ホバー時にタイトルを表示 */
-.thumbnail-tiles a:hover .video-title {
-  opacity: 1;
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
 </style>
