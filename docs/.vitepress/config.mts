@@ -126,6 +126,15 @@ function insertH1IfMissing() {
     md.core.ruler.after('block', 'insert_h1_if_missing', (state) => {
       const { env, tokens, Token } = state
 
+      if (!env.path)
+        return
+
+      const fileName = path.basename(env.path, path.extname(env.path))
+
+      // index はタイトルを表示しない
+      if (fileName === 'index')
+        return
+
       const hasH1 = tokens.some(token =>
         token.type === 'heading_open' && token.tag === 'h1',
       )
@@ -133,9 +142,8 @@ function insertH1IfMissing() {
       // BiDirectionalLinks によって [[]] ごとに markdown-it が走る？
       // [[]] の tokens.length は 1 なので、そうでない時だけ実行する
 
-      if (!hasH1 && tokens.length > 1 && env.path) {
-        const title = env.frontmatter?.title
-          || path.basename(env.path, path.extname(env.path))
+      if (!hasH1 && tokens.length > 1) {
+        const title = env.frontmatter?.title || fileName
         const h1Open = new Token('heading_open', 'h1', 1)
         const h1Text = new Token('inline', '', 0)
         const h1Close = new Token('heading_close', 'h1', -1)
