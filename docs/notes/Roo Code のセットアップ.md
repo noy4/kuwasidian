@@ -32,3 +32,4 @@ Roo Code に戻り、「こんにちは」すると使えるはず。
 
 ## 余談
 - Roo Code は [Cline](https://cline.bot/) の高機能版。参考：[RooCode vs Cline **UPDATED*** March 29 : r/RooCode](https://www.reddit.com/r/RooCode/comments/1jn372q/roocode_vs_cline_updated_march_29/?share_id=8QGnCavUI2VCyv7oNIryz&utm_content=2&utm_medium=ios_app&utm_name=ioscss&utm_source=share&utm_term=1)
+- 拡張子が `.md` のファイルは Markdown と呼ばれる形式で書かれており、VSCode で開いて右上の「Open Preview」ボタンを押すと綺麗に表示される。
