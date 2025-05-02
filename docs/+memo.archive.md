@@ -1,3 +1,9 @@
+
+
+4/26-5/3 (7泊) 三好
+5/3-5/10 (7泊) 琴平　→おかえりハブサイトで予約リクエストを送ったらメールが来て、3,4 は埋まってるので 5/5-10 ならいけますよと言われたのでそうした。予約確定メールが届いた。
+三好で2泊延長することに。おかえりハブサイトで2泊追加予約した
+
 朝ドラ RAD
 
 Upload this video [https://www.youtube.com/watch?v=C25g53PC5QQ](https://www.youtube.com/watch?v=C25g53PC5QQ) and create a clip focusing on AI features in the browser.

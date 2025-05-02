@@ -1,4 +1,4 @@
-import type { DefaultTheme, MarkdownRenderer } from 'vitepress'
+import type { DefaultTheme, HeadConfig, MarkdownRenderer } from 'vitepress'
 import fs from 'node:fs'
 import path from 'node:path'
 import { BiDirectionalLinks } from '@nolebase/markdown-it-bi-directional-links'
@@ -88,8 +88,6 @@ export default defineConfig({
     let ogDescription = siteDescription
 
     if (!home) {
-      pageData.title ||= pageData.filePath.split('/').pop()!.replace(/\.md$/, '')
-
       if (fs.existsSync(fullPath)) {
         const content = fs.readFileSync(fullPath, 'utf-8')
         pageData.description ||= extractDescription(content)
@@ -99,8 +97,7 @@ export default defineConfig({
       ogDescription = pageData.description
     }
 
-    pageData.frontmatter.head ??= []
-    pageData.frontmatter.head.push(
+    ;((pageData.frontmatter.head ??= []) as HeadConfig[]).push(
       ['meta', { property: 'og:title', content: ogTitle }],
       ['meta', { property: 'og:description', content: ogDescription }],
       ['meta', { property: 'og:url', content: `${siteUrl}${pageData.relativePath.replace(/\.md$/, '.html')}` }],
