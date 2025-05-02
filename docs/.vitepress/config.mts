@@ -36,7 +36,6 @@ const sidebar: DefaultTheme.Sidebar = [
       },
       {
         text: 'YouTube履歴レポート',
-        link: '/youtube-history-reports/',
         collapsed: true,
         items: getSidebarItems('youtube-history-reports', {
           desc: true,
