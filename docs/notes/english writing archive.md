@@ -1,4 +1,13 @@
 
+なんかわかるわ
+I can see that.
+That makes sense
+
+お礼
+glad you're home safe
+glad you made it back safely
+welcome back
+
 僕ら以外にここに長期滞在してる人はいる？
 **"Is there anyone else staying here long-term besides us?"**
 **"Are we the only ones staying here long-term?"**  

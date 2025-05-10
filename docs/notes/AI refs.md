@@ -1,6 +1,28 @@
 
 
 
+
+Devin
+[VoltAgent - Open Source TypeScript AI Agent Framework](https://voltagent.dev/)
+
+[GlobalGPT](https://glbgpt.com/)
+[Pollo AI](https://pollo.ai/ja)
+[Tenak AI](https://tenak.ai/ja)
+[MimicPC](https://www.mimicpc.com/ja)
+	[[MimicPC checkpoints]]
+[Shakker - Generative AI design tool with diverse models](https://www.shakker.ai/)
+
+
+[Fooocus](https://github.com/lllyasviel/Fooocus)
+[Gradio](https://www.gradio.app/)
+[Civitai: The Home of Open-Source Generative AI](https://civitai.com/)
+
+
+[【AI動画】今海外で流行っている歴史POV動画。Tenak AIで初心者でも簡単に作れる - YouTube](https://www.youtube.com/watch?v=I2bGbFjUGQw)
+
+
+---
+
 [DeepWiki](https://deepwiki.com/)
 [🙌 OpenHands](https://github.com/All-Hands-AI/OpenHands)
 
@@ -29,6 +51,8 @@ mcp:
 [MCP servers | Glama](https://glama.ai/mcp/servers)
 [Glama](https://glama.ai/chat)
 [Smithery - Model Context Protocol Registry](https://smithery.ai/)
+[MCP Servers](https://mcp.so/)
+
 
 nsfw:
 [MyBunny AI - AI Girlfriend Chat](https://mybunny.ai/)

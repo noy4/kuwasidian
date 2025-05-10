@@ -7,3 +7,4 @@ curation of curation sites
 麻雀AI（ロジック調査）
 
 [[figure]]
+[[explanation]]
