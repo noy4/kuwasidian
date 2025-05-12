@@ -18,8 +18,8 @@ const homeTitle = 'Kuwasidian（クワシディアン） | 彼の Obsidian（メ
 const sidebar: DefaultTheme.Sidebar = [
   { text: 'メモ', link: '/' },
   { text: 'クエスト', link: '/quest' },
-  { text: '最近の更新', link: '/recent-updates' },
   { text: '記事一覧', link: '/posts' },
+  { text: '最近の更新', link: '/recent-updates' },
   {
     items: [
       {
