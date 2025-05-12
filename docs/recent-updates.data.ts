@@ -3,8 +3,8 @@ import { defineLoader } from 'vitepress'
 
 export interface DataEntry {
   path: string // 元のフルパス (例: docs/notes/example.md)
-  displayPath: string // 表示用のパス (例: notes/example.md)
-  linkPath: string // リンク生成用のパス (例: /notes/example)
+  label: string // 表示用のパス (例: notes/example.md)
+  link: string // リンク生成用のパス (例: /notes/example)
   lastUpdated: string // コミット日時
   status: string // 変更の種類 (A: 追加, M: 変更, D: 削除など)
 }
@@ -55,9 +55,9 @@ export default defineLoader({
 
       const processedFiles: DataEntry[] = Array.from(fileUpdatesMap.entries())
         .map(([path, { lastUpdated, status }]) => {
-          const displayPath = path.replace(/^docs\//, '')
-          const linkPath = `/${displayPath.replace(/\.md$/, '')}`
-          return { path, displayPath, linkPath, lastUpdated, status }
+          const label = path.replace(/^docs\//, '')
+          const link = `/${label.replace(/\.md$/, '')}`
+          return { path, label, link, lastUpdated, status }
         })
         .sort((a, b) => new Date(b.lastUpdated).getTime() - new Date(a.lastUpdated).getTime())
         .slice(0, 15)
