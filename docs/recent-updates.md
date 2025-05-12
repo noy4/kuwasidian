@@ -14,10 +14,12 @@ function formatDate(dateString) {
 </script>
 
 <ul>
-  <li v-for="file in fileUpdates" :key="file.path">
+  <li v-for="(file, index) in fileUpdates" :key="file.path">
     <a :href="withBase(file.url)">{{ file.title }}</a>
     <Badge v-if="file.status === 'A'" type="tip" text="Added" />
     <Badge v-else-if="file.status === 'D'" type="danger" text="Deleted" />
-    - {{ formatDate(file.lastUpdated) }}
+    <span v-if="index === 0 || formatDate(file.lastUpdated) !== formatDate(fileUpdates[index - 1].lastUpdated)">
+      - {{ formatDate(file.lastUpdated) }}
+    </span>
   </li>
 </ul>
