@@ -16,11 +16,9 @@ piano:
 progressions:
   456:
     - 春よ、来い（松任谷由実）
-    - U.S.A（DA PUMP）
-    - 小さな恋の歌（MONGOL800）
-    - 紅蓮華（LiSA）
     - 怪獣の花唄（Vaundy）
     - 打上花火（米津玄師 x DAOKO）
+    - 紅蓮華（LiSA）
   4536（王道進行）:
     - 君はロックを聴かない（あいみょん）
     - 夜に駆ける（YOASOBI）
@@ -75,11 +73,15 @@ key:
 
 ---
 
+[J-POPを席巻！定番コード進行5選をまとめて紹介～コード特徴、使用楽曲など～ - YouTube](https://www.youtube.com/watch?v=RdQC3A8RqPc)
+
 - [4-5-6-\*](https://open.spotify.com/playlist/4W3o4gDDrRMmyoEDdUH4pf?go=1&sp_cid=3ff1cbcc1728c2deb5d6d1d1d754e766&utm_source=embed_player_p&utm_medium=desktop&nd=1&dlsi=d8c55af196504262)
 - [456進行はとりあえず最強進行！～456進行、4561進行、4563進行の使用楽曲と特徴を紹介～ - YouTube](https://www.youtube.com/watch?v=gyMTbE_86EQ)
-- [おしゃれコード進行の定番！『Just The Two Of Us 』進行について紹介します。 - YouTube](https://www.youtube.com/watch?v=d3uqqoBMh34)
 - [J-pop、アニソン、ボカロ制覇！？『王道進行』ってなんだ？ - YouTube](https://www.youtube.com/watch?v=OOa2ghV1_Pc)
+- [定番コード進行！『小室進行（6451進行）』について紹介！～コード特徴・使用楽曲などの解説～ - YouTube](https://www.youtube.com/watch?v=yVpVqSDwx-c)
+- [おしゃれコード進行の定番！『Just The Two Of Us 』進行について紹介します。 - YouTube](https://www.youtube.com/watch?v=d3uqqoBMh34)
 - [定番コード進行！『カノン進行』について紹介！～コード特徴・アレンジ・使用楽曲などの解説～ - YouTube](https://www.youtube.com/watch?v=tD-0G9c4MBU)
+
 
 [接続系理論 ❸ 2度上行/下行の用法 - SoundQuest](https://soundquest.jp/quest/nexus-system/nx-2nd/)
 
