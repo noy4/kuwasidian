@@ -14,7 +14,7 @@ function formatDate(dateString) {
 </script>
 
 <ul>
-  <li v-for="(file, index) in fileUpdates" :key="file.path">
+  <li v-for="(file, index) in fileUpdates" :key="file.filePath">
     <a :href="withBase(file.url)">{{ file.title }}</a>
     <Badge v-if="file.status === 'A'" type="tip" text="Added" />
     <Badge v-else-if="file.status === 'D'" type="danger" text="Deleted" />
