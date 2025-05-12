@@ -4,5 +4,6 @@ export default createRecentUpdatesLoader({
   dir: 'docs',
   rewrites: [
     { from: /^docs\//, to: '' },
+    { from: /^\+memo.html/, to: '' },
   ],
 })
