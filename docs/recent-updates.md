@@ -1,7 +1,7 @@
 # 最近の更新
 
 <script setup>
-import { data as fileUpdates } from './recent-updates.data.ts'
+import { data as fileUpdates } from './recent-updates-2.data.ts'
 import { withBase } from 'vitepress'
 
 function formatDate(dateString) {
@@ -15,7 +15,7 @@ function formatDate(dateString) {
 
 <ul>
   <li v-for="file in fileUpdates" :key="file.path">
-    <a :href="withBase(file.link)">{{ file.label }}</a>
+    <a :href="withBase(file.url)">{{ file.title }}</a>
     <Badge v-if="file.status === 'A'" type="tip" text="Added" />
     <Badge v-else-if="file.status === 'D'" type="danger" text="Deleted" />
     - {{ formatDate(file.lastUpdated) }}
