@@ -15,6 +15,6 @@ function formatDate(dateString) {
 
 <ul>
   <li v-for="file in fileUpdates" :key="file.path">
-    <a :href="withBase(file.linkPath)">{{ file.displayPath }}</a> - 最終更新: {{ formatDate(file.lastUpdated) }}
+    <a :href="withBase(file.linkPath)">{{ file.displayPath }}</a> ({{ file.status }}) - 最終更新: {{ formatDate(file.lastUpdated) }}
   </li>
 </ul>
