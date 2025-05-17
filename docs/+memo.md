@@ -17,9 +17,6 @@ How did you end up here?
 
 [[projects/Miyajima Tide/index|Miyajima Tide]]
 
-#### Miyajima Tide
-Miyajima Tide
-attachments
 
 
 ---
