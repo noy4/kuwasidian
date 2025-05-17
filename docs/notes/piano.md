@@ -74,6 +74,12 @@ key:
 ---
 
 [J-POPを席巻！定番コード進行5選をまとめて紹介～コード特徴、使用楽曲など～ - YouTube](https://www.youtube.com/watch?v=RdQC3A8RqPc)
+- カノン進行
+- 小室進行（6451進行）
+- 王道進行
+- ポップパンク進行
+- Just The Two Of Us進行
+
 
 - [4-5-6-\*](https://open.spotify.com/playlist/4W3o4gDDrRMmyoEDdUH4pf?go=1&sp_cid=3ff1cbcc1728c2deb5d6d1d1d754e766&utm_source=embed_player_p&utm_medium=desktop&nd=1&dlsi=d8c55af196504262)
 - [456進行はとりあえず最強進行！～456進行、4561進行、4563進行の使用楽曲と特徴を紹介～ - YouTube](https://www.youtube.com/watch?v=gyMTbE_86EQ)

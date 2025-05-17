@@ -25,6 +25,10 @@ YouTube 字幕の Anki カード化
 [ベーシックインカムちゃんねる](https://www.youtube.com/@basicincom)
 
 ## クエスト一覧
+🌊 干満の知らせ
+宮島の干潮・満潮お知らせサイトの作成
+[[Miyajima Tide]]
+
 
 🪲 甲虫王者は何処
 ヘラクレスオオカブトの捕獲
