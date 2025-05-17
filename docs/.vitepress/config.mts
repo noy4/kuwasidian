@@ -31,22 +31,23 @@ const sidebar: DefaultTheme.Sidebar = [
         text: '検索履歴レポート',
         link: '/search-history-reports/',
         collapsed: true,
-        items: getSidebarItems('search-history-reports', {
-          desc: true,
-        }),
+        items: getSidebarItems('search-history-reports', { desc: true }),
       },
       {
         text: 'YouTube履歴レポート',
         link: '/youtube-history-reports/',
         collapsed: true,
-        items: getSidebarItems('youtube-history-reports', {
-          desc: true,
-        }),
+        items: getSidebarItems('youtube-history-reports', { desc: true }),
       },
     ],
   },
   {
     items: [
+      {
+        text: 'プロジェクト',
+        collapsed: true,
+        items: getSidebarItems('projects'),
+      },
       {
         text: 'notes',
         collapsed: true,
@@ -90,6 +91,7 @@ export default defineConfig({
 
   rewrites: {
     '\\+memo.md': 'index.md',
+    'projects/:path/:path.md': 'projects/:path/index.md',
   },
 
   transformPageData(pageData) {
