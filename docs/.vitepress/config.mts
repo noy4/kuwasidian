@@ -91,7 +91,6 @@ export default defineConfig({
 
   rewrites: {
     '\\+memo.md': 'index.md',
-    'projects/:path/:path.md': 'projects/:path/index.md',
   },
 
   transformPageData(pageData) {

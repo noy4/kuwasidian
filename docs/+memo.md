@@ -15,7 +15,11 @@ How did you end up here?
 24x30=720
 4x30=120
 
-[[Miyajima Tide]]
+[[projects/Miyajima Tide/index|Miyajima Tide]]
+
+#### Miyajima Tide
+Miyajima Tide
+attachments
 
 
 ---

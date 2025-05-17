@@ -14,7 +14,7 @@ export function getSidebarItems(
 ): DefaultTheme.SidebarItem[] {
   const {
     rootDir = 'docs',
-    exclude = ['_.*'],
+    exclude = ['_.*', 'attachments'],
     desc = false,
   } = options
   const rootPath = path.join(process.cwd(), rootDir)
@@ -39,6 +39,7 @@ export function getSidebarItems(
     if (stat.isDirectory()) {
       items.push({
         text: file,
+        link: `/${path.join(targetDir, file)}/`,
         collapsed: true,
         items: getSidebarItems(path.join(targetDir, file), {
           rootDir,
