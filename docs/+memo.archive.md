@@ -1,3 +1,21 @@
+
+30
+24x30=720
+4x30=120
+
+ipad color
+[CorsProxy | Fix CORS Errors in Seconds](https://corsproxy.io/)
+ipad fullscreen
+
+https://maps.app.goo.gl/vWQAuWvD9CQsz3oSA
+34.297370, 132.318430
+34.296052, 132.320124
+[Itsukushima Jinja - Google Maps](https://www.google.com/maps/place/Itsukushima+Jinja/@34.2980613,132.3198936,558m/data=!3m1!1e3!4m6!3m5!1s0x601ae3047ec76d8f:0x357228f7d0b5d590!8m2!3d34.2959896!4d132.3198285!16zL20vMDJycnJm?entry=ttu&g_ep=EgoyMDI1MDUxMS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D)
+https://api.openweathermap.org/data/2.5/weather?lat=34.295&lon=132.319&appid=YOUR_API_KEY&units=metric&lang=ja
+
+
+[TIDES4FISHING | Tides times, tide table & solunar charts for fishing](https://tides4fishing.com/)
+
 最近の項目
 大学生活
 Roo image
