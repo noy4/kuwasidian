@@ -123,6 +123,9 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/noy4/kuwasidian' },
     ],
+    search: {
+      provider: 'local',
+    },
   },
 
   sitemap: {
