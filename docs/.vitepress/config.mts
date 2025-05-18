@@ -110,7 +110,7 @@ export default defineConfig({
     ;((pageData.frontmatter.head ??= []) as HeadConfig[]).push(
       ['meta', { property: 'og:title', content: pageData.title }],
       ['meta', { property: 'og:description', content: pageData.description }],
-      ['meta', { property: 'og:url', content: `${siteUrl}${pageData.relativePath.replace(/\.md$/, '.html')}` }],
+      ['meta', { property: 'og:url', content: `${siteUrl}${pageData.relativePath.replace(/\.md$/, '')}` }],
     )
   },
 
