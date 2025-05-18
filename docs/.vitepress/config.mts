@@ -76,6 +76,7 @@ export default defineConfig({
   ],
   lastUpdated: true,
   ignoreDeadLinks: true,
+  cleanUrls: true,
   srcExclude: [
     '**/_*',
     'daily notes/**',
