@@ -1,4 +1,40 @@
 
+ICL
+ICLという目の手術をした
+目の中にレンズを入れる
+こめかみらへんがよく凝るようになった
+多分メガネをかけてた時はそれが遠近の調整をやってくれてた
+今はそれを自分の筋肉がやるようなった
+だから凝るんだと予想している
+I got ICL surgery — they put lenses inside my eyes.  
+Lately, I’ve been getting tension around my temples a lot.  
+I’m guessing it’s because back when I wore glasses, they did the focusing for me.  
+Now my eye muscles have to do that work, so they get tired and stiff.
+
+
+サブスクテスター
+
+宿のサブスクサービスが何個かある
+1つ新しく始まろうとしている
+拠点はいくつかあって、その一つにテスターとして来た。
+There are some stay-subscription services out there.
+A new one is just starting up.
+They have some locations, and I came here as a tester.
+
+> **There are a few subscription services for places to stay. One of them is just getting started. They’ve got a few locations, and I came to this one as a beta tester.**
+
+I'm staying here as a trial user of a new subscription service.
+I'm helping them test the service before it officially launches.
+
+昨日の残り
+I'm eating yesterday's leftovers
+20日に出る
+I'm leaving here on the 20th.
+別れた後走った？
+Did you run after I gave up?
+How did you end up here?
+What brought you here?
+
 30
 24x30=720
 4x30=120

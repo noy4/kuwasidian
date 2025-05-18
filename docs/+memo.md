@@ -4,12 +4,15 @@
 
 [daily]
 anki
+[[english writing]]
 
 [[piano]]
 youtube jasrac
+local search
+クエスト単体ページ
 
-How did you end up here?
-別れた後走った？
+
+ドロピザ巡礼
 
 
 [[projects/Miyajima Tide/index|Miyajima Tide]]
@@ -17,7 +20,6 @@ How did you end up here?
 
 
 ---
-
 
 
 
