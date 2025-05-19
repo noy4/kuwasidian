@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { Quest } from './quest.data'
+import { withBase } from 'vitepress'
 
 defineProps<{ quest: Quest }>()
 </script>
@@ -10,9 +11,9 @@ defineProps<{ quest: Quest }>()
       <div class="text-6xl pt-3">
         {{ quest.icon }}
       </div>
-      <div class="font-semibold text-lg mt-3">
+      <a :href="withBase(`/quests/${quest.title}`)" class="font-semibold text-lg mt-3 decoration-none! block text-inherit!">
         {{ quest.title }}
-      </div>
+      </a>
       <div class="text-[var(--vp-c-text-2)] text-xs mt-1">
         {{ quest.target }}
       </div>
