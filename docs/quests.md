@@ -1,5 +1,5 @@
 ---
-title: Quest
+title: Quests
 description: 男の冒険を待ち受けるクエスト
 lastUpdated: false
 ---
