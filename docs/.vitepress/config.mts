@@ -49,7 +49,7 @@ const sidebar: DefaultTheme.Sidebar = [
         items: getSidebarItems('projects'),
       },
       {
-        text: 'notes',
+        text: 'その他メモ',
         collapsed: true,
         items: getSidebarItems('notes'),
       },
