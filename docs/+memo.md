@@ -8,11 +8,13 @@ anki
 
 [[piano]]
 youtube jasrac
-local search
 クエスト単体ページ
+クエスト整理
 
 
 ドロピザ巡礼
+最初バラバラで飯食ってた
+ピアノ
 
 
 [[projects/Miyajima Tide/index|Miyajima Tide]]

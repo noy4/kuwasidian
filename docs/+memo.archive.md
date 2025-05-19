@@ -1,4 +1,23 @@
 
+前本島の方に飯食い行った時傘を忘れた
+When I went over to the main island to have dinner with my friends, I forgot my umbrella at the restaurant
+それを取りに行って帰って来た
+I went back to get it and then came back
+その時終電があるので僕だけ先に店を出た
+At the time, I had to catch the last train, so I left the restaurant early by myself
+しばらく移動して傘を忘れたことに気づいた
+A little while after I started heading back, I realized I'd forgotten my umbrella
+連絡して預かってもらっていた
+so I contacted them and they held onto it for me.
+彼がフェリー乗り場のすぐそばで働いているのでそれを受け取りに行った
+Since my friend works right near the ferry terminal, I went to pick it up from him
+その辺の寿司食って帰ってきた
+I grabbed some sushi nearby and came back
+高かった
+
+
+local search
+
 ICL
 ICLという目の手術をした
 目の中にレンズを入れる
