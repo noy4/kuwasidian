@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Quest } from '../theme/quest.data'
+import type { Quest } from './quest.data'
 
 defineProps<{ quest: Quest }>()
 </script>
@@ -19,7 +19,7 @@ defineProps<{ quest: Quest }>()
 
       <img
         v-if="quest.status === 'cleared'"
-        src="../theme/quest_cleared.png"
+        src="./quest_cleared.png"
         class="absolute top-0 right-0 w-30"
       >
 

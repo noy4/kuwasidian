@@ -5,7 +5,7 @@ lastUpdated: false
 ---
 
 <script setup>
-import QuestView from './.vitepress/components/QuestView.vue'
+import QuestView from './QuestView.vue'
 </script>
 
 <QuestView />

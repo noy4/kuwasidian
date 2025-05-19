@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { data } from '../theme/quest.data'
+import { data } from './quest.data'
 import QuestCard from './QuestCard.vue'
 </script>
 

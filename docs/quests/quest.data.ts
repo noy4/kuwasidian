@@ -1,5 +1,5 @@
 import { createContentLoader } from 'vitepress'
-import { createMd } from '../utils.server'
+import { createMd } from '../.vitepress/utils.server'
 
 export interface Section {
   title: string
@@ -25,7 +25,7 @@ const statusMap = {
 declare const data: Section[]
 export { data }
 
-export default createContentLoader('quest.data.md', {
+export default createContentLoader('quests/quest.data.md', {
   includeSrc: true,
   async transform(data) {
     const src = data[0]?.src || ''

@@ -81,8 +81,8 @@ export function insertH1IfMissing() {
 
       const fileName = path.basename(env.path, path.extname(env.path))
 
-      // index はタイトルを表示しない
-      if (fileName === 'index')
+      // index.md はタイトルを表示しない
+      if (env.relativePath === 'index.md')
         return
 
       const hasH1 = tokens.some(token =>
