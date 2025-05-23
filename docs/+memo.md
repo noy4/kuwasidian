@@ -8,7 +8,6 @@ anki
 
 [[piano]]
 youtube jasrac
-クエスト単体ページ
 クエスト整理
 
 

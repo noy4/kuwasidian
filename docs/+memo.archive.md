@@ -1,54 +1,20 @@
 
-前本島の方に飯食い行った時傘を忘れた
-When I went over to the main island to have dinner with my friends, I forgot my umbrella at the restaurant
-それを取りに行って帰って来た
-I went back to get it and then came back
-その時終電があるので僕だけ先に店を出た
-At the time, I had to catch the last train, so I left the restaurant early by myself
-しばらく移動して傘を忘れたことに気づいた
-A little while after I started heading back, I realized I'd forgotten my umbrella
-連絡して預かってもらっていた
-so I contacted them and they held onto it for me.
-彼がフェリー乗り場のすぐそばで働いているのでそれを受け取りに行った
-Since my friend works right near the ferry terminal, I went to pick it up from him
-その辺の寿司食って帰ってきた
-I grabbed some sushi nearby and came back
-高かった
+以下は英語学習のメモです。文章をそれぞれ Anki カードにして保存してください。文章は音声読み上げされるので文章以外の文言は含めないでください。
+表：日本語文
+裏：英文
+
+
+雑談英会話勉強中。文章変なら教えて。
+カジュアルな口語の英語にして
+
+クエスト単体ページ
+
 
 
 local search
 
-ICL
-ICLという目の手術をした
-目の中にレンズを入れる
-こめかみらへんがよく凝るようになった
-多分メガネをかけてた時はそれが遠近の調整をやってくれてた
-今はそれを自分の筋肉がやるようなった
-だから凝るんだと予想している
-I got ICL surgery — they put lenses inside my eyes.  
-Lately, I’ve been getting tension around my temples a lot.  
-I’m guessing it’s because back when I wore glasses, they did the focusing for me.  
-Now my eye muscles have to do that work, so they get tired and stiff.
 
 
-サブスクテスター
-
-宿のサブスクサービスが何個かある
-1つ新しく始まろうとしている
-拠点はいくつかあって、その一つにテスターとして来た。
-There are some stay-subscription services out there.
-A new one is just starting up.
-They have some locations, and I came here as a tester.
-
-> **There are a few subscription services for places to stay. One of them is just getting started. They’ve got a few locations, and I came to this one as a beta tester.**
-
-I'm staying here as a trial user of a new subscription service.
-I'm helping them test the service before it officially launches.
-
-昨日の残り
-I'm eating yesterday's leftovers
-20日に出る
-I'm leaving here on the 20th.
 別れた後走った？
 Did you run after I gave up?
 How did you end up here?
