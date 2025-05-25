@@ -1,3 +1,6 @@
+[[projects/Miyajima Tide/index|Miyajima Tide]]
+youtube jasrac
+最初バラバラで飯食ってた
 
 以下は英語学習のメモです。文章をそれぞれ Anki カードにして保存してください。文章は音声読み上げされるので文章以外の文言は含めないでください。
 表：日本語文
