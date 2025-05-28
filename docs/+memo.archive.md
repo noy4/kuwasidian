@@ -1,3 +1,13 @@
+バックアップストレージ
+ノマドリスト
+log VITEPRESS_CONFIG
+pc ケース
+
+[「反お笑い」の哲学史｜尾登雄平（世界史ブロガー・ライター）](https://note.com/tamam010yuhei/n/n2335d885e190)
+
+
+どのくらい滞在？
+kilocode 使ってみる
 [[projects/Miyajima Tide/index|Miyajima Tide]]
 youtube jasrac
 最初バラバラで飯食ってた
