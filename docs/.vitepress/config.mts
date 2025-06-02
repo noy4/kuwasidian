@@ -3,7 +3,6 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { BiDirectionalLinks } from '@nolebase/markdown-it-bi-directional-links'
 import UnoCSS from 'unocss/vite'
-import Inspect from 'vite-plugin-inspect'
 import { defineConfig } from 'vitepress'
 import { extractDescription } from './utils'
 import { getSidebarItems, insertH1IfMissing } from './utils.server'
@@ -60,7 +59,7 @@ const sidebar: DefaultTheme.Sidebar = [
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   vite: {
-    plugins: [Inspect(), UnoCSS()],
+    plugins: [UnoCSS()],
   },
 
   title: siteTitle,
