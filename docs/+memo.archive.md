@@ -1,3 +1,33 @@
+ケーキの切れない非行少年たち
+[1 Tip For EVERY COUNTRY in Geoguessr - YouTube](https://www.youtube.com/watch?v=wmy9dBN4Jac)
+roblox
+
+マイクラで世界地図を再現したマップで各野良プレイヤーが土地開拓してって国ができて人が増えて戦争して土地奪って、、ってやつ
+おっもろ
+
+Google Earth というのが昔からあるらしく、世界中どこでも上空から立体的にみれるみたいで、なんこれやっばと思って色々調べてたら飛行機で飛び回ったりピラミッド降りて歩けるゲームあった。すっげーや...
+建築学科の人らって Google Earth タコ使いしてたんやろか
+水臭いぞ君ら
+言えよ
+
+調査を続けます( ᐛ)ゝ
+
+https://www.youtube.com/watch?v=u2RuSqBT5qI
+
+
+( ᐛ)🔎
+( ᐛ)ゞ
+( ᐛ)ゝ
+
+(´▽｀)ゞ
+(´▽｀)ゝ
+
+
+実際のマップ　ゲーム
+荒野行動　東京マップ
+kuwasidian search color
+[Skywork](https://skywork.ai/)
+kokkai doc
 バックアップストレージ
 ノマドリスト
 log VITEPRESS_CONFIG
