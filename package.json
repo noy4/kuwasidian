@@ -12,14 +12,14 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@nolebase/markdown-it-bi-directional-links": "^2.17.0",
-    "@nolebase/vitepress-plugin-index": "^2.17.0",
+    "@nolebase/markdown-it-bi-directional-links": "^2.17.1",
+    "@nolebase/vitepress-plugin-index": "^2.17.1",
     "@unocss/reset": "66.1.0-beta.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^4.13.1",
-    "@types/node": "^22.15.18",
-    "eslint": "^9.27.0",
+    "@antfu/eslint-config": "^4.13.2",
+    "@types/node": "^22.15.29",
+    "eslint": "^9.28.0",
     "unocss": "66.1.0-beta.3",
     "vitepress": "2.0.0-alpha.2"
   }
