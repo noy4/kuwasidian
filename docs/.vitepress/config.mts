@@ -2,6 +2,7 @@ import type { DefaultTheme, HeadConfig } from 'vitepress'
 import fs from 'node:fs'
 import path from 'node:path'
 import { BiDirectionalLinks } from '@nolebase/markdown-it-bi-directional-links'
+import { presetWind4 } from 'unocss'
 import UnoCSS from 'unocss/vite'
 import { defineConfig } from 'vitepress'
 import { extractDescription } from './utils'
@@ -59,7 +60,17 @@ const sidebar: DefaultTheme.Sidebar = [
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   vite: {
-    plugins: [UnoCSS()],
+    plugins: [
+      UnoCSS({
+        presets: [
+          presetWind4({
+            preflights: {
+              reset: true,
+            },
+          }),
+        ],
+      }),
+    ],
   },
 
   title: siteTitle,
