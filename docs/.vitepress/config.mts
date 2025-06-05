@@ -33,18 +33,6 @@ const sidebar: DefaultTheme.Sidebar = [
         collapsed: true,
         items: getSidebarItems('browser-history-reports', { desc: true }),
       },
-      {
-        text: '検索履歴レポート',
-        link: '/search-history-reports/',
-        collapsed: true,
-        items: getSidebarItems('search-history-reports', { desc: true }),
-      },
-      {
-        text: 'YouTube履歴レポート',
-        link: '/youtube-history-reports/',
-        collapsed: true,
-        items: getSidebarItems('youtube-history-reports', { desc: true }),
-      },
     ],
   },
   {
@@ -53,6 +41,11 @@ const sidebar: DefaultTheme.Sidebar = [
         text: 'プロジェクト',
         collapsed: true,
         items: getSidebarItems('projects'),
+      },
+      {
+        text: 'アーカイブ',
+        collapsed: true,
+        items: getSidebarItems('archives'),
       },
       {
         text: 'その他メモ',
