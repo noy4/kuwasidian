@@ -3,7 +3,7 @@
 
 ## 手順
 - 履歴ファイルをコピーし、履歴・件数を取得する。（重複は除去）
-- 読み取った履歴をすべて参考にしたレポートを生成する。
+- 履歴を元にレポートを生成する。
 
 コマンド例：
 ```sh
@@ -37,7 +37,7 @@ sqlite3 ./tmp/History "SELECT COUNT(DISTINCT u.title) FROM urls u JOIN visits v 
 
 ## {😀 各トピックに対応する絵文字、タイトル}
 {詳細}
-{トピックに関連する動画がある場合、サムネタイルに表示する。各トピックごとに最低でも20件程度表示する。}
+{サムネタイル}
 ```
 
 ### 年次レポート
@@ -100,3 +100,7 @@ sqlite3 ./tmp/History "SELECT COUNT(DISTINCT u.title) FROM urls u JOIN visits v 
   }
 }
 </style>
+
+## その他メモ
+- claude-sonnet-4 で検証済み
+- レポートが長いと `Response too long.` で失敗する（サムネタイル各20件、550行程度）
