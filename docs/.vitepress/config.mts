@@ -23,15 +23,10 @@ const sidebar: DefaultTheme.Sidebar = [
   {
     items: [
       {
-        text: 'プロンプト',
+        text: '検索履歴レポート',
+        link: '/search-history-reports/',
         collapsed: true,
-        items: getSidebarItems('prompts'),
-      },
-      {
-        text: '検索履歴レポートv2',
-        link: '/browser-history-reports/',
-        collapsed: true,
-        items: getSidebarItems('browser-history-reports', { desc: true }),
+        items: getSidebarItems('search-history-reports', { desc: true }),
       },
     ],
   },
