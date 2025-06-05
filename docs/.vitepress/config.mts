@@ -28,6 +28,12 @@ const sidebar: DefaultTheme.Sidebar = [
         items: getSidebarItems('prompts'),
       },
       {
+        text: '検索履歴レポートv2',
+        link: '/browser-history-reports/',
+        collapsed: true,
+        items: getSidebarItems('browser-history-reports', { desc: true }),
+      },
+      {
         text: '検索履歴レポート',
         link: '/search-history-reports/',
         collapsed: true,
