@@ -17,7 +17,7 @@ sqlite3 ./tmp/History "SELECT DISTINCT u.title, u.url FROM urls u JOIN visits v 
 sqlite3 ./tmp/History "SELECT DISTINCT u.title, u.url FROM urls u JOIN visits v ON u.id = v.url WHERE u.url LIKE '%youtube.com/watch%' AND ..."
 
 -- 履歴件数の取得
-sqlite3 ./tmp/History "SELECT COUNT(DISTINCT u.url) ..."
+sqlite3 ./tmp/History "SELECT COUNT(DISTINCT u.title) ..."
 ```
 
 ## パラメータ（のちに指示がなければこれらの値で実行）
@@ -43,7 +43,7 @@ sqlite3 ./tmp/History "SELECT COUNT(DISTINCT u.url) ..."
 
 ## {😀 各トピックに対応する絵文字、タイトル}
 {詳細}
-{トピックに関連する動画がある場合、それら全てをサムネタイルに表示}
+{トピックに関連する動画がある場合、サムネタイルに表示する。各トピックごとに最低でも20件、可能であればそれ以上表示する。}
 ```
 
 ### 年次レポート
