@@ -5,7 +5,7 @@
 出力例：[[search-history-reports/2025-05|2025-05]]
 
 ## 準備
-- [[Roo Code のセットアップ]]
+- [[Cline のセットアップ]]
 
 ## 使うもの
 - プロンプト（AIへの指示文） - https://raw.githubusercontent.com/noy4/kuwasidian/main/docs/prompts/search-history-report.md

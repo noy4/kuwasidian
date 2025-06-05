@@ -2,10 +2,10 @@
 
 YouTube履歴レポートを自動作成する手順を説明します。ある月に何を見ていたかを振り返ることができます。
 
-出力例：[[youtube-history-reports/2025-04|2025-04]]
+出力例：[[archives/youtube-history-reports/2025-04|2025-04]]
 
 ## 準備
-- [[Roo Code のセットアップ]]
+- [[Cline のセットアップ]]
 
 ## 使うもの
 - プロンプト（AIへの指示文） - https://raw.githubusercontent.com/noy4/kuwasidian/main/docs/prompts/youtube-history-report.md

@@ -2,10 +2,10 @@
 
 ブラウザ検索履歴からレポートを自動作成する手順を説明します。ある月に何をしていたか（調査、学習、娯楽など）を振り返ることができます。
 
-出力例：[[search-history-reports/2025-04|2025-04]]
+出力例：[[archives/search-history-reports/2025-04|2025-04]]
 
 ## 準備
-- [[Roo Code のセットアップ]]
+- [[Cline のセットアップ]]
 
 ## 使うもの
 - プロンプト（AIへの指示文） - https://raw.githubusercontent.com/noy4/kuwasidian/main/docs/prompts/search-history-report.md
