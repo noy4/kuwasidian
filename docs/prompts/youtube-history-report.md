@@ -11,7 +11,7 @@
 sqlite3 ./tmp/History "SELECT DISTINCT u.title, u.url FROM urls u JOIN visits v ON u.id = v.url WHERE u.url LIKE '%youtube.com/watch%' AND datetime(v.visit_time / 1000000 + (strftime('%s', '1601-01-01')), 'unixepoch', 'localtime') >= '2025-05-01' AND datetime(v.visit_time / 1000000 + (strftime('%s', '1601-01-01')), 'unixepoch', 'localtime') < '2025-06-01';"
 
 -- 履歴件数を取得
-sqlite3 ./tmp/History "SELECT COUNT(DISTINCT u.url) FROM urls u JOIN visits v ON u.id = v.url WHERE u.url LIKE '%youtube.com/watch%' AND datetime(v.visit_time / 1000000 + (strftime('%s', '1601-01-01')), 'unixepoch', 'localtime') >= '2025-05-01' AND datetime(v.visit_time / 1000000 + (strftime('%s', '1601-01-01')), 'unixepoch', 'localtime') < '2025-06-01';"
+sqlite3 ./tmp/History "SELECT COUNT(DISTINCT u.title) FROM urls u JOIN visits v ON u.id = v.url WHERE u.url LIKE '%youtube.com/watch%' AND ..."
 ```
 
 ## パラメータ（のちに指示がなければこれらの値で実行）
@@ -37,7 +37,7 @@ sqlite3 ./tmp/History "SELECT COUNT(DISTINCT u.url) FROM urls u JOIN visits v ON
 
 ## {😀 各トピックに対応する絵文字、タイトル}
 {詳細}
-{トピックに関連する動画がある場合、サムネタイルに表示する。各トピックごとに最低でも20件、可能であれば最大40件表示する。}
+{トピックに関連する動画がある場合、サムネタイルに表示する。各トピックごとに最低でも20件、可能であればそれ以上表示する。}
 ```
 
 ### 年次レポート
