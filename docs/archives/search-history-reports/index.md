@@ -8,19 +8,19 @@
 - [[Cline のセットアップ]]
 
 ## 使うもの
-- プロンプト（AIへの指示文） - https://raw.githubusercontent.com/noy4/kuwasidian/main/docs/prompts/search-history-report.md
+- プロンプト（AIへの指示文） - https://raw.githubusercontent.com/noy4/kuwasidian/main/docs/archives/search-history-reports/prompt.md
 
 ## 手順
 Roo Code のチャットに以下のように入力する。
 
 ### 例1）今月分のレポートを作成
 ```sh
-@https://raw.githubusercontent.com/noy4/kuwasidian/main/docs/prompts/search-history-report.md
+@https://raw.githubusercontent.com/noy4/kuwasidian/main/docs/archives/search-history-reports/prompt.md
 ```
 
 ### 例2）パラメータを指定して作成
 ```sh
-@https://raw.githubusercontent.com/noy4/kuwasidian/main/docs/prompts/search-history-report.md
+@https://raw.githubusercontent.com/noy4/kuwasidian/main/docs/archives/search-history-reports/prompt.md
 
 browser: Safari
 month: 2月
@@ -32,7 +32,7 @@ exclude: YouTube, 筋トレ関連、ニュースサイト
 
 ### 例3）文章でパラメータを指定して作成
 ```sh
-@https://raw.githubusercontent.com/noy4/kuwasidian/main/docs/prompts/search-history-report.md
+@https://raw.githubusercontent.com/noy4/kuwasidian/main/docs/archives/search-history-reports/prompt.md
 
 去年の各月のレポート、年次レポート
 ```
@@ -40,7 +40,7 @@ exclude: YouTube, 筋トレ関連、ニュースサイト
 ### 例4）[Maki さん](https://x.com/hAru_mAki_ch) の [グラレコプロンプト](https://github.com/Sunwood-ai-labs/MysticLibrary/blob/main/prompts/documentation/Graphic-recording-infographic-anim-v3.md) でグラレコ化
 
 ```sh
-@https://raw.githubusercontent.com/noy4/kuwasidian/main/docs/prompts/search-history-report.md
+@https://raw.githubusercontent.com/noy4/kuwasidian/main/docs/archives/search-history-reports/prompt.md
 
 対象：4月
 
