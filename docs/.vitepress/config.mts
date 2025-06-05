@@ -53,20 +53,6 @@ const sidebar: DefaultTheme.Sidebar = [
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  vite: {
-    plugins: [
-      UnoCSS({
-        presets: [
-          presetWind4({
-            preflights: {
-              reset: true,
-            },
-          }),
-        ],
-      }),
-    ],
-  },
-
   title: siteTitle,
   titleTemplate: false,
   description: siteDescription,
@@ -134,5 +120,19 @@ export default defineConfig({
 
   sitemap: {
     hostname: siteUrl,
+  },
+
+  vite: {
+    plugins: [
+      UnoCSS({
+        presets: [
+          presetWind4({
+            preflights: {
+              reset: true,
+            },
+          }),
+        ],
+      }),
+    ],
   },
 })
