@@ -6,7 +6,7 @@
 - 履歴を確認・分析し、レポートを生成する。
 
 コマンド例：
-```sql
+```sh
 -- 履歴の取得
 sqlite3 ./tmp/History "SELECT DISTINCT u.title FROM urls u JOIN visits v ON u.id = v.url WHERE datetime(v.visit_time / 1000000 + (strftime('%s', '1601-01-01')), 'unixepoch', 'localtime') >= '2025-05-01' AND datetime(v.visit_time / 1000000 + (strftime('%s', '1601-01-01')), 'unixepoch', 'localtime') < '2025-06-01';"
 
