@@ -75,6 +75,7 @@ sqlite3 ./tmp/History "SELECT COUNT(DISTINCT u.title) FROM urls u JOIN visits v 
 
   img {
     width: 160px;
+    height: 90px;
   }
 
   .video-title {

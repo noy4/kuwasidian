@@ -81,6 +81,7 @@ sqlite3 ./tmp/History "SELECT COUNT(DISTINCT u.title) ..."
 
   img {
     width: 160px;
+    height: 90px;
   }
 
   .video-title {
