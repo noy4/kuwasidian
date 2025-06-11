@@ -1,3 +1,16 @@
+[「意味ネットワーク」を使えば凡人だって天才的に暗記できる　普通の主婦が東大大学院に合格した勉強法（4） - レタスクラブ](https://www.lettuceclub.net/news/article/1003568/)
+[ネットワーク分析の雰囲気をつかむ](https://zenn.dev/nagayu71/articles/37f8dc30354018)
+クエスト整理
+anki
+
+[CPA Approach Explained | Learn the Concrete, Pictorial, Abstract Method](https://mathsnoproblem.com/en/approach/concrete-pictorial-abstract)
+
+料理人　昼夜　1ヶ月
+
+文字起こしmcp
+
+[Firefox Support · Issue #1 · noy4/browser-history](https://github.com/noy4/browser-history/issues/1)
+
 ケーキの切れない非行少年たち
 [1 Tip For EVERY COUNTRY in Geoguessr - YouTube](https://www.youtube.com/watch?v=wmy9dBN4Jac)
 roblox

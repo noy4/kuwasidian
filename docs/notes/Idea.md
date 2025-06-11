@@ -8,3 +8,5 @@ curation of curation sites
 
 [[figure]]
 [[explanation]]
+
+考える人の言語化

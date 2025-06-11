@@ -24,7 +24,9 @@ vscode インストール手順説明動画
 
 
 
-[[prompt miniture diorama]]
+- [[prompt miniture diorama]]
+- [Diorama Concept Stock Illustrations – 2,160 Diorama Concept Stock Illustrations, Vectors & Clipart - Dreamstime](https://www.dreamstime.com/illustration/diorama-concept.html)
+
 
 パラメータを参考に、レポートを画像化してください。
 

@@ -28,6 +28,7 @@ const sidebar: DefaultTheme.Sidebar = [
         collapsed: true,
         items: getSidebarItems('search-history-reports', { desc: true }),
       },
+      { text: '各期テーマソング', link: '/me/theme-songs' },
     ],
   },
   {
