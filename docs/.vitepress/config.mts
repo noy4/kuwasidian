@@ -22,13 +22,14 @@ const sidebar: DefaultTheme.Sidebar = [
   { text: '最近の更新', link: '/recent-updates' },
   {
     items: [
+      { text: '生存理念', link: '/me/philosophy-of-life' },
+      { text: '各期テーマソング', link: '/me/theme-songs' },
       {
         text: '検索履歴レポート',
         link: '/search-history-reports/',
         collapsed: true,
         items: getSidebarItems('search-history-reports', { desc: true }),
       },
-      { text: '各期テーマソング', link: '/me/theme-songs' },
     ],
   },
   {
