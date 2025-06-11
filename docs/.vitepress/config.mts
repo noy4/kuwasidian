@@ -113,6 +113,8 @@ export default defineConfig({
     externalLinkIcon: true,
     sidebar,
     socialLinks: [
+      { icon: 'x', link: 'https://x.com/kuwappi_' },
+      { icon: 'instagram', link: 'https://www.instagram.com/instakuwamu/' },
       { icon: 'github', link: 'https://github.com/noy4/kuwasidian' },
     ],
     search: {
