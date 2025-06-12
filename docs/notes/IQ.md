@@ -1,10 +1,12 @@
-1つの情報を見た時に、浮かび上がる関連情報の数が多い
 ![](https://www.lettuceclub.net/i/N1/1003568/10023468.jpg?w=300)
+<img src="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-3d-illustration-of-hashtags-network-png-image_10241857.png" width="300"><img src="https://p.turbosquid.com/ts-thumb/Xk/Hsg9id/1n/neuralnetworka/png/1628157631/600x600/fit_q87/16b47e011a48f1aaf5d612adea25d1b21ef55c3e/neuralnetworka.jpg" width="300">
+
+1つの情報を見た時に、浮かび上がる関連情報の数が多い
 
 [Why?]
 脳の神経ネットワークの密度が高い
 →考える癖があるから（ネットワーク密度を高める習慣がある）
-<img src="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-3d-illustration-of-hashtags-network-png-image_10241857.png" width="300"><img src="https://p.turbosquid.com/ts-thumb/Xk/Hsg9id/1n/neuralnetworka/png/1628157631/600x600/fit_q87/16b47e011a48f1aaf5d612adea25d1b21ef55c3e/neuralnetworka.jpg" width="300">
+
 
 
 [その結果]
