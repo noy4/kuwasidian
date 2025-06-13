@@ -4,6 +4,7 @@ import path from 'node:path'
 import { BiDirectionalLinks } from '@nolebase/markdown-it-bi-directional-links'
 import { presetWind4 } from 'unocss'
 import UnoCSS from 'unocss/vite'
+import Inspect from 'vite-plugin-inspect'
 import { defineConfig } from 'vitepress'
 import { extractDescription } from './utils'
 import { getSidebarItems, insertH1IfMissing } from './utils.server'
@@ -130,6 +131,7 @@ export default defineConfig({
 
   vite: {
     plugins: [
+      Inspect(),
       UnoCSS({
         presets: [
           presetWind4({
