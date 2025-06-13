@@ -16,45 +16,6 @@ const siteUrl = `https://noy4.github.io${siteBase}`
 const siteImage = 'obsidian.png'
 const homeTitle = 'Kuwasidian（クワシディアン） | 彼の Obsidian（メモアプリ）のメモ'
 
-const sidebar: DefaultTheme.Sidebar = [
-  { text: 'メモ', link: '/' },
-  { text: 'クエスト', link: '/quests/' },
-  { text: '記事一覧', link: '/posts' },
-  { text: '最近の更新', link: '/recent-updates' },
-  {
-    items: [
-      { text: '生存理念', link: '/me/philosophy-of-life' },
-      { text: 'ほしい物リスト', link: '/me/wish-list' },
-      { text: '各期テーマソング', link: '/me/theme-songs' },
-      {
-        text: '検索履歴レポート',
-        link: '/search-history-reports/',
-        collapsed: true,
-        items: getSidebarItems('search-history-reports', { desc: true }),
-      },
-    ],
-  },
-  {
-    items: [
-      {
-        text: 'プロジェクト',
-        collapsed: true,
-        items: getSidebarItems('projects'),
-      },
-      {
-        text: 'アーカイブ',
-        collapsed: true,
-        items: getSidebarItems('archives'),
-      },
-      {
-        text: 'その他メモ',
-        collapsed: true,
-        items: getSidebarItems('notes'),
-      },
-    ],
-  },
-]
-
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: siteTitle,
@@ -113,7 +74,7 @@ export default defineConfig({
     logo: `/${siteImage}`,
     outline: [2, 3],
     externalLinkIcon: true,
-    sidebar,
+    sidebar: sidebar(),
     socialLinks: [
       { icon: 'x', link: 'https://x.com/kuwappi_' },
       { icon: 'instagram', link: 'https://www.instagram.com/instakuwamu/' },
@@ -144,3 +105,44 @@ export default defineConfig({
     ],
   },
 })
+
+function sidebar(): DefaultTheme.Sidebar {
+  return [
+    { text: 'メモ', link: '/' },
+    { text: 'クエスト', link: '/quests/' },
+    { text: '記事一覧', link: '/posts' },
+    { text: '最近の更新', link: '/recent-updates' },
+    {
+      items: [
+        { text: '生存理念', link: '/me/philosophy-of-life' },
+        { text: 'ほしい物リスト', link: '/me/wish-list' },
+        { text: '各期テーマソング', link: '/me/theme-songs' },
+        {
+          text: '検索履歴レポート',
+          link: '/search-history-reports/',
+          collapsed: true,
+          items: getSidebarItems('search-history-reports', { desc: true }),
+        },
+      ],
+    },
+    {
+      items: [
+        {
+          text: 'プロジェクト',
+          collapsed: true,
+          items: getSidebarItems('projects'),
+        },
+        {
+          text: 'アーカイブ',
+          collapsed: true,
+          items: getSidebarItems('archives'),
+        },
+        {
+          text: 'その他メモ',
+          collapsed: true,
+          items: getSidebarItems('notes'),
+        },
+      ],
+    },
+  ]
+}
