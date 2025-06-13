@@ -1,3 +1,7 @@
+
+[[note-migrations]]
+[[wish-list]]
+
 [「意味ネットワーク」を使えば凡人だって天才的に暗記できる　普通の主婦が東大大学院に合格した勉強法（4） - レタスクラブ](https://www.lettuceclub.net/news/article/1003568/)
 [ネットワーク分析の雰囲気をつかむ](https://zenn.dev/nagayu71/articles/37f8dc30354018)
 クエスト整理

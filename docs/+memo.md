@@ -7,8 +7,6 @@
 [[IQ]]
 [[3d map]]
 [[study]]
-[[note-migrations]]
-[[wish-list]]
 
 
 
@@ -17,7 +15,7 @@
 
 
 
-
+[Explore • Higgsfield](https://higgsfield.ai/)
 
 
 
