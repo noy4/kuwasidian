@@ -23,6 +23,7 @@ const sidebar: DefaultTheme.Sidebar = [
   {
     items: [
       { text: '生存理念', link: '/me/philosophy-of-life' },
+      { text: 'ほしい物リスト', link: '/me/wish-list' },
       { text: '各期テーマソング', link: '/me/theme-songs' },
       {
         text: '検索履歴レポート',
@@ -115,6 +116,7 @@ export default defineConfig({
     socialLinks: [
       { icon: 'x', link: 'https://x.com/kuwappi_' },
       { icon: 'instagram', link: 'https://www.instagram.com/instakuwamu/' },
+      { icon: 'youtube', link: 'https://www.youtube.com/@kuwamu' },
       { icon: 'github', link: 'https://github.com/noy4/kuwasidian' },
     ],
     search: {

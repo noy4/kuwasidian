@@ -7,7 +7,8 @@
 [[IQ]]
 [[3d map]]
 [[study]]
-
+[[note-migrations]]
+[[wish-list]]
 
 
 
