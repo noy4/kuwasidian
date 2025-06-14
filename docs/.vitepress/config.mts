@@ -62,10 +62,14 @@ export default defineConfig({
       pageData.description ||= extractDescription(content)
     }
 
+    const pageUrl = home
+      ? siteUrl
+      : `${siteUrl}${pageData.relativePath.replace(/\.md$/, '')}`
+
     ;((pageData.frontmatter.head ??= []) as HeadConfig[]).push(
       ['meta', { property: 'og:title', content: pageData.title }],
       ['meta', { property: 'og:description', content: pageData.description }],
-      ['meta', { property: 'og:url', content: `${siteUrl}${pageData.relativePath.replace(/\.md$/, '')}` }],
+      ['meta', { property: 'og:url', content: pageUrl }],
     )
   },
 
