@@ -15,7 +15,6 @@
 
 
 
-[Explore • Higgsfield](https://higgsfield.ai/)
 
 
 

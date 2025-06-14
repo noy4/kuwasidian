@@ -1,5 +1,10 @@
 
 
+[FramePack](https://github.com/lllyasviel/FramePack)
+[VEED.IO](https://www.veed.io/)
+[SkyReels](https://www.skyreels.ai/home)
+[Vrew](https://vrew.ai/ja/)
+[Explore • Higgsfield](https://higgsfield.ai/)
 
 
 Devin

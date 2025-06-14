@@ -21,10 +21,6 @@
 - [SamurAIGPT/Text-To-Video-AI: Generate video from text using AI](https://github.com/SamurAIGPT/Text-To-Video-AI?tab=readme-ov-file)
 
 
-[FramePack](https://github.com/lllyasviel/FramePack)
-[VEED.IO](https://www.veed.io/)
-[SkyReels](https://www.skyreels.ai/home)
-[Vrew](https://vrew.ai/ja/)
 
 ---
 
