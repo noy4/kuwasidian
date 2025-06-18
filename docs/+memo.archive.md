@@ -1,3 +1,4 @@
+read vitepress
 
 [[note-migrations]]
 [[wish-list]]

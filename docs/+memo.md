@@ -8,7 +8,7 @@
 [[IQ]]
 [[3d map]]
 [[study]]
-read vitepress
+tiptap
 
 
 ドロピザ巡礼
