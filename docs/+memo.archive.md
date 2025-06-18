@@ -1,3 +1,4 @@
+tiptap
 mermaid
 read vitepress
 

@@ -8,7 +8,6 @@
 [[IQ]]
 [[3d map]]
 [[study]]
-tiptap
 
 
 ドロピザ巡礼

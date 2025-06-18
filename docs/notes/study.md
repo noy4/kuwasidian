@@ -2,7 +2,7 @@
 ```yaml
 タイトル: 勉強のコツ
 
-勉強のコツ: 目的・実践ありき（逆算式）で勉強する
+勉強のコツ: 目的・実践ありきで勉強する（逆算式・トップダウン方式）
 
 方法:
   - 学ぶ目的・活用場面・必要レベルを明確にする
@@ -28,10 +28,3 @@ flowchart TD
     empty1 --> empty5((" "))
 ```
 
-
----
-
-勉強のコツの図解・言語化
-- [トップダウン学習法の原則 - Claude](https://claude.ai/chat/c1417b14-6454-4fb5-a58d-809885796aae)
-- [Effective Learning: Top-Down Strategy - Claude](https://claude.ai/chat/5cb22c79-dc34-48ad-96c3-cb069b8f3437)
-- [トップダウン学習のYAML化](https://chatgpt.com/c/6849aece-aaf4-8013-bf8c-f807db31a2a4)
