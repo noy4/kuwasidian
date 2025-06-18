@@ -6,6 +6,7 @@ import { presetWind4 } from 'unocss'
 import UnoCSS from 'unocss/vite'
 import Inspect from 'vite-plugin-inspect'
 import { defineConfig } from 'vitepress'
+import { withMermaid } from 'vitepress-plugin-mermaid'
 import { extractDescription } from './utils'
 import { getSidebarItems, insertH1IfMissing } from './utils.server'
 
@@ -17,7 +18,7 @@ const siteImage = 'obsidian.png'
 const homeTitle = 'Kuwasidian（クワシディアン） | 彼の Obsidian（メモアプリ）のメモ'
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
+export default withMermaid(defineConfig({
   title: siteTitle,
   titleTemplate: false,
   description: siteDescription,
@@ -108,7 +109,7 @@ export default defineConfig({
       }),
     ],
   },
-})
+}))
 
 function sidebar(): DefaultTheme.Sidebar {
   return [
