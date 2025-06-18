@@ -15,6 +15,18 @@
   - 実践を通して必要な基礎を同時に学べる
 ```
 
+```mermaid
+flowchart TD
+    goal(("目的")) --> application(("応用"))
+    goal --> empty1((" "))
+    
+    application --> fundamentals(("基礎"))
+    application --> empty2((" "))
+    application --> empty3((" "))
+    
+    empty1 --> empty4((" "))
+    empty1 --> empty5((" "))
+```
 
 
 ---

@@ -1,3 +1,4 @@
+mermaid
 read vitepress
 
 [[note-migrations]]
