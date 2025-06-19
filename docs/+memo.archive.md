@@ -1,3 +1,4 @@
+quest detail
 vitepress dynamic route
 
 [[IQ]]

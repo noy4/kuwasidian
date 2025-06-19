@@ -6,8 +6,8 @@
 [[piano]]
 
 [[3d map]]
-quest detail
 roadmap
+sort quest
 
 
 ドロピザ巡礼
