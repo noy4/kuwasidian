@@ -1,4 +1,4 @@
-import type { Quest, Section } from './quest-parser'
+import type { Quest } from './quest-parser'
 import fs from 'node:fs'
 import { parseQuestDataSync } from './quest-parser'
 
@@ -10,12 +10,11 @@ export default {
 
     for (const section of questData) {
       for (const quest of section.items) {
-        // 各クエストの詳細コンテンツをMarkdownで生成
-        const content = generateQuestMarkdown(quest, section)
+        const content = generateQuestMarkdown(quest)
 
         paths.push({
           params: { title: quest.title },
-          content, // Raw contentとして渡す
+          content,
         })
       }
     }
@@ -24,34 +23,13 @@ export default {
   },
 }
 
-function generateQuestMarkdown(quest: Quest, section: Section): string {
-  const statusBadge = quest.status === 'cleared'
-    ? '✅ **クリア済み**'
-    : quest.status === 'active'
-      ? '🔄 **進行中**'
-      : '📋 **未着手**'
-
-  const targetSection = quest.target
-    ? `## ターゲット\n\n${quest.target}\n`
-    : ''
-
-  const descriptionSection = quest.description
-    ? `## 説明\n\n${quest.description}\n`
-    : ''
-
-  const sectionInfo = section.title
-    ? `## セクション\n\n${section.title}\n`
-    : ''
-
+function generateQuestMarkdown(quest: Quest) {
   return `# ${quest.icon || '📝'} ${quest.title}
 
-${statusBadge}
+${quest.target}
+${quest.description}
 
-${targetSection}
-${descriptionSection}
-${sectionInfo}
-
----
+<br>
 
 [← クエスト一覧に戻る](/quests/)
 `

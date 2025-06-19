@@ -54,7 +54,7 @@ export function parseQuestDataSync(src: string): Section[] {
             title,
             target,
             description,
-            status: statusMap[sectionIdx as keyof typeof statusMap],
+            status: statusMap[sectionIdx],
           }
         })
 
