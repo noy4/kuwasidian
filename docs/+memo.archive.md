@@ -1,3 +1,8 @@
+
+[[IQ]]
+[[study]]
+
+
 tiptap
 mermaid
 read vitepress

@@ -5,9 +5,8 @@
 [roadmap]
 [[piano]]
 
-[[IQ]]
 [[3d map]]
-[[study]]
+vitepress dynamic route
 
 
 ドロピザ巡礼
