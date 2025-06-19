@@ -1,3 +1,4 @@
+vitepress dynamic route
 
 [[IQ]]
 [[study]]
