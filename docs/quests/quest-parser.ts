@@ -19,7 +19,11 @@ const statusMap = {
   2: 'cleared',
 } as const
 
-export function parseQuestDataSync(src: string): Section[] {
+export interface ParseOptions {
+  render?: (content: string) => string
+}
+
+export function parseQuestData(src: string, options: ParseOptions = {}): Section[] {
   // ## で始まるセクションで分割
   // 1行目：タイトル
   // 2行目：ターゲット
@@ -41,13 +45,13 @@ export function parseQuestDataSync(src: string): Section[] {
         .trim()
         .split(/\n\n\n/)
         .map(v => v.trim())
-        .filter(item => item.length > 0)
         .map((item) => {
           const itemLines = item.split(/\n/)
           const [_title, target, ..._description] = itemLines
           const [icon, ...__title] = _title.split(/\s+/)
           const title = __title.join(' ')
-          const description = _description.join('\n')
+          const rawDescription = _description.join('\n')
+          const description = options.render?.(rawDescription) || rawDescription
 
           return {
             icon,
