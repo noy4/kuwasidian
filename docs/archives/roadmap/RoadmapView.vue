@@ -5,11 +5,14 @@ import RoadmapCard from './RoadmapCard.vue'
 
 <template>
   <template v-for="section in data" :key="section.title">
-    <div v-html="section.title" />
+    <h2 v-if="section.title">
+      {{ section.title }}
+    </h2>
+    <div v-else class="h-4" />
     <div class="space-y-4">
       <RoadmapCard
         v-for="item in section.items"
-        :key="item.content"
+        :key="item.title"
         :item="item"
       />
     </div>
