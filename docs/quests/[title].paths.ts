@@ -1,5 +1,6 @@
 import type { Quest } from './quest-parser'
 import fs from 'node:fs'
+import dedent from 'dedent'
 import { parseQuestDataSync } from './quest-parser'
 
 export default {
@@ -24,13 +25,14 @@ export default {
 }
 
 function generateQuestMarkdown(quest: Quest) {
-  return `# ${quest.icon || '📝'} ${quest.title}
+  return dedent`
+    # ${quest.icon || '📝'} ${quest.title}
 
-${quest.target}
-${quest.description}
+    ${quest.target}
+    ${quest.description}
 
-<br>
+    <br>
 
-[← クエスト一覧に戻る](/quests/)
-`
+    [← クエスト一覧に戻る](/quests/)
+  `
 }
