@@ -96,6 +96,12 @@ export default withMermaid(defineConfig({
   },
 
   vite: {
+    resolve: {
+      alias: {
+        // [Updating mermaid to 9.2.0 reported an error](https://github.com/emersonbottero/vitepress-plugin-mermaid/issues/24#issuecomment-1379779295)
+        mermaid: 'mermaid/dist/mermaid.esm.mjs',
+      },
+    },
     plugins: [
       Inspect(),
       UnoCSS({
