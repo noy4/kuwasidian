@@ -119,17 +119,17 @@ export default withMermaid(defineConfig({
 
 function sidebar(): DefaultTheme.Sidebar {
   return [
-    { text: 'メモ', link: '/' },
-    { text: 'クエスト', link: '/quests/' },
-    { text: '記事一覧', link: '/posts' },
-    { text: '最近の更新', link: '/recent-updates' },
+    { text: '📝 メモ', link: '/' },
+    { text: '⚔️ クエスト', link: '/quests/' },
+    { text: '📄 記事一覧', link: '/posts' },
+    { text: '🔄 最近の更新', link: '/recent-updates' },
     {
       items: [
-        { text: '生存理念', link: '/me/philosophy-of-life' },
-        { text: 'ほしい物リスト', link: '/me/wish-list' },
-        { text: '各期テーマソング', link: '/me/theme-songs' },
+        { text: '💭 生存理念', link: '/me/philosophy-of-life' },
+        { text: '🎁 ほしい物リスト', link: '/me/wish-list' },
+        { text: '🎵 各期テーマソング', link: '/me/theme-songs' },
         {
-          text: '検索履歴レポート',
+          text: '🔍 検索履歴レポート',
           link: '/search-history-reports/',
           collapsed: true,
           items: getSidebarItems('search-history-reports', { desc: true }),
@@ -139,17 +139,17 @@ function sidebar(): DefaultTheme.Sidebar {
     {
       items: [
         {
-          text: 'プロジェクト',
+          text: '🚀 プロジェクト',
           collapsed: true,
           items: getSidebarItems('projects'),
         },
         {
-          text: 'アーカイブ',
+          text: '📦 アーカイブ',
           collapsed: true,
           items: getSidebarItems('archives'),
         },
         {
-          text: 'その他メモ',
+          text: '📋 その他メモ',
           collapsed: true,
           items: getSidebarItems('notes'),
         },
