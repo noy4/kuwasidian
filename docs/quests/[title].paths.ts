@@ -1,13 +1,19 @@
-import type { Quest } from './quest-parser'
+import type { RouteModule } from 'vitepress'
+import type { Quest, Status } from './quest-parser'
 import fs from 'node:fs'
 import dedent from 'dedent'
 import { parseQuestDataSync } from './quest-parser'
+
+const statusMap = new Map<string, Status | undefined>()
 
 export default {
   async paths() {
     const src = fs.readFileSync('docs/quests/quest.data.md', 'utf-8')
     const questData = parseQuestDataSync(src)
-    const paths: { params: { title: string }, content: string }[] = []
+    const paths: {
+      params: { title: string }
+      content: string
+    }[] = []
 
     for (const section of questData) {
       for (const quest of section.items) {
@@ -17,12 +23,19 @@ export default {
           params: { title: quest.title },
           content,
         })
+        statusMap.set(quest.title, quest.status)
       }
     }
 
     return paths
   },
-}
+  transformPageData(pageData) {
+    const status = statusMap.get(pageData.params?.title)
+    if (status === 'cleared') {
+      pageData.title = `（Cleared!）${pageData.title}`
+    }
+  },
+} as RouteModule
 
 function generateQuestMarkdown(quest: Quest) {
   return dedent`
