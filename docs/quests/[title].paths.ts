@@ -32,7 +32,7 @@ export default {
   transformPageData(pageData) {
     const status = statusMap.get(pageData.params?.title)
     if (status === 'cleared') {
-      pageData.title = `（Cleared!）${pageData.title}`
+      pageData.title = `（Cleared）${pageData.title}`
     }
   },
 } as RouteModule
