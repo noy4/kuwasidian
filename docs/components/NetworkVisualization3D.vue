@@ -18,6 +18,7 @@ let scene, camera, renderer
 let nodes = []
 let edges = []
 let nodeGroup, edgeGroup
+let animationId
 
 // マウスコントロール用
 let isMouseDown = false
@@ -260,7 +261,7 @@ function setupMouseControls() {
 }
 
 function animate() {
-  requestAnimationFrame(animate)
+  animationId = requestAnimationFrame(animate)
 
   // マウスによる回転の適用
   rotationX += (targetRotationX - rotationX) * 0.05
@@ -280,15 +281,13 @@ onMounted(async () => {
 })
 
 onUnmounted(() => {
-  // イベントリスナーのクリーンアップ
-  cleanupMouseControls?.()
+  if (animationId)
+    cancelAnimationFrame(animationId)
 
-  // Three.jsリソースのクリーンアップ
-  if (renderer && containerRef.value) {
+  if (renderer && containerRef.value)
     containerRef.value.removeChild(renderer.domElement)
-  }
 
-  // ネットワークのクリーンアップ
+  cleanupMouseControls?.()
   clearNetwork()
 })
 </script>
