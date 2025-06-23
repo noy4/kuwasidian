@@ -1,4 +1,5 @@
 <script setup>
+import * as THREE from 'three'
 import { onMounted, onUnmounted, ref } from 'vue'
 
 const props = defineProps({
@@ -28,23 +29,6 @@ let targetRotationX = 0
 let targetRotationY = 0
 let rotationX = 0
 let rotationY = 0
-
-async function loadThreeJS() {
-  if (window.THREE)
-    return
-
-  // Three.jsを動的にロード
-  const script = document.createElement('script')
-  script.src = 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js'
-  script.async = true
-
-  return new Promise((resolve) => {
-    script.onload = () => {
-      resolve()
-    }
-    document.head.appendChild(script)
-  })
-}
 
 let cleanupMouseControls
 
@@ -274,8 +258,7 @@ function animate() {
   renderer.render(scene, camera)
 }
 
-onMounted(async () => {
-  await loadThreeJS()
+onMounted(() => {
   init()
 })
 
