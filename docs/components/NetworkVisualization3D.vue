@@ -295,14 +295,13 @@ onUnmounted(() => {
 
 <template>
   <div
+    ref="containerRef"
     class="network-visualization-container"
     :style="{
       width: `${width}px`,
       height: `${height}px`,
     }"
-  >
-    <div ref="containerRef" class="container" />
-  </div>
+  />
 </template>
 
 <style scoped>
@@ -314,10 +313,5 @@ onUnmounted(() => {
 
 .network-visualization-container:active {
   cursor: grabbing;
-}
-
-.container {
-  width: 100%;
-  height: 100%;
 }
 </style>
