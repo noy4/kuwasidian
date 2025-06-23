@@ -308,6 +308,7 @@ onUnmounted(() => {
   overflow: hidden;
   cursor: grab;
   border-radius: 8px;
+  max-width: 100%;
 }
 
 .network-visualization-container:active {
