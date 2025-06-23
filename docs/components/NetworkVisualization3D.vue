@@ -45,6 +45,8 @@ async function loadThreeJS() {
   })
 }
 
+let cleanupMouseControls
+
 function init() {
   // シーンの作成
   scene = new THREE.Scene()
@@ -88,7 +90,7 @@ function init() {
   generateNetwork()
 
   // マウスイベントの設定
-  setupMouseControls()
+  cleanupMouseControls = setupMouseControls()
 
   // アニメーション開始
   animate()
@@ -204,13 +206,13 @@ function clearNetwork() {
 function setupMouseControls() {
   const container = containerRef.value
 
-  container.addEventListener('mousedown', (event) => {
+  const handleMouseDown = (event) => {
     isMouseDown = true
     mouseX = event.clientX
     mouseY = event.clientY
-  })
+  }
 
-  container.addEventListener('mousemove', (event) => {
+  const handleMouseMove = (event) => {
     if (isMouseDown) {
       const deltaX = event.clientX - mouseX
       const deltaY = event.clientY - mouseY
@@ -221,13 +223,13 @@ function setupMouseControls() {
       mouseX = event.clientX
       mouseY = event.clientY
     }
-  })
+  }
 
-  container.addEventListener('mouseup', () => {
+  const handleMouseUp = () => {
     isMouseDown = false
-  })
+  }
 
-  container.addEventListener('wheel', (event) => {
+  const handleWheel = (event) => {
     event.preventDefault() // ページのスクロールを停止
     if (event.deltaY > 0) {
       camera.position.multiplyScalar(1.1)
@@ -241,7 +243,20 @@ function setupMouseControls() {
       camera.position.setLength(20)
     if (distance > 150)
       camera.position.setLength(150)
-  })
+  }
+
+  container.addEventListener('mousedown', handleMouseDown)
+  container.addEventListener('mousemove', handleMouseMove)
+  container.addEventListener('mouseup', handleMouseUp)
+  container.addEventListener('wheel', handleWheel)
+
+  // クリーンアップ関数を返す
+  return () => {
+    container.removeEventListener('mousedown', handleMouseDown)
+    container.removeEventListener('mousemove', handleMouseMove)
+    container.removeEventListener('mouseup', handleMouseUp)
+    container.removeEventListener('wheel', handleWheel)
+  }
 }
 
 function animate() {
@@ -265,9 +280,16 @@ onMounted(async () => {
 })
 
 onUnmounted(() => {
+  // イベントリスナーのクリーンアップ
+  cleanupMouseControls?.()
+
+  // Three.jsリソースのクリーンアップ
   if (renderer && containerRef.value) {
     containerRef.value.removeChild(renderer.domElement)
   }
+
+  // ネットワークのクリーンアップ
+  clearNetwork()
 })
 </script>
 
