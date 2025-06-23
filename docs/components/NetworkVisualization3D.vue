@@ -2,7 +2,7 @@
 import * as THREE from 'three'
 import { onMounted, onUnmounted, ref } from 'vue'
 
-const props = defineProps({
+defineProps({
   width: {
     type: Number,
     default: 600,
@@ -42,31 +42,20 @@ function init() {
 
   // カメラの作成
   camera = new THREE.PerspectiveCamera(75, containerWidth / containerHeight, 0.1, 1000)
-  camera.position.set(0, 0, 50)
 
   // レンダラーの作成
   renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true })
   renderer.setSize(containerWidth, containerHeight)
   renderer.setClearColor(0x000000, 0)
-  renderer.shadowMap.enabled = true
-  renderer.shadowMap.type = THREE.PCFSoftShadowMap
   containerRef.value.appendChild(renderer.domElement)
 
-  // ライトの調整（立体感を残しつつ白く）
+  // ライトの設定
   const ambientLight = new THREE.AmbientLight(0xFFFFFF, 0.5)
   scene.add(ambientLight)
 
-  const directionalLight = new THREE.DirectionalLight(0xFFFFFF, 0.7)
+  const directionalLight = new THREE.DirectionalLight(0xFFFFFF, 0.8)
   directionalLight.position.set(50, 50, 50)
-  directionalLight.castShadow = true
-  directionalLight.shadow.mapSize.width = 2048
-  directionalLight.shadow.mapSize.height = 2048
   scene.add(directionalLight)
-
-  // 複数方向からの柔らかい照明
-  const directionalLight2 = new THREE.DirectionalLight(0xFFFFFF, 0.3)
-  directionalLight2.position.set(-30, -30, 30)
-  scene.add(directionalLight2)
 
   // グループの作成
   nodeGroup = new THREE.Group()
@@ -88,13 +77,10 @@ function init() {
 }
 
 function generateNetwork() {
-  // 既存のノードとエッジをクリア
   clearNetwork()
 
   const nodeCount = 45 + Math.floor(Math.random() * 25)
   const positions = []
-
-  // より密集した塊状の配置
   const clusters = 3 + Math.floor(Math.random() * 3)
 
   for (let cluster = 0; cluster < clusters; cluster++) {
@@ -114,7 +100,6 @@ function generateNetwork() {
       )
       positions.push(position)
 
-      // 様々なサイズのノード
       const size = (0.8 + Math.random() * 1.5)
       const geometry = new THREE.SphereGeometry(size, 16, 16)
       const material = new THREE.MeshLambertMaterial({
@@ -123,20 +108,14 @@ function generateNetwork() {
       const node = new THREE.Mesh(geometry, material)
       node.position.copy(position)
 
-      // 影を受ける・落とす設定
-      node.castShadow = true
-      node.receiveShadow = true
-
       nodes.push(node)
       nodeGroup.add(node)
     }
   }
 
-  // より複雑で密な接続パターン
   for (let i = 0; i < positions.length; i++) {
     const connectionsCount = 4 + Math.floor(Math.random() * 6)
 
-    // 距離でソートして近い順に接続
     const distances = []
     for (let j = 0; j < positions.length; j++) {
       if (i !== j) {
@@ -159,7 +138,6 @@ function generateNetwork() {
 function createEdge(start, end) {
   const length = start.distanceTo(end)
 
-  // 接続線の太さにバリエーション
   const thickness = 0.08 + Math.random() * 0.15
 
   const geometry = new THREE.CylinderGeometry(thickness, thickness, length, 8)
