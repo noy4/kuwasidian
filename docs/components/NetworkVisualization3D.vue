@@ -192,6 +192,10 @@ function adjustCameraToFitNetwork() {
   const size = boundingBox.getSize(new THREE.Vector3())
   const center = boundingBox.getCenter(new THREE.Vector3())
 
+  // ネットワーク全体を原点中心に移動（回転の中心をオブジェクトの中心にするため）
+  nodeGroup.position.copy(center).negate()
+  edgeGroup.position.copy(center).negate()
+
   // ネットワークの最大サイズ（幅、高さ、奥行きの最大値）
   const maxDimension = Math.max(size.x, size.y, size.z)
 
@@ -202,9 +206,9 @@ function adjustCameraToFitNetwork() {
   // 余裕を持たせるため距離を1.5倍にする
   const adjustedDistance = distance * 1.5
 
-  // カメラ位置を調整（ネットワークの中心を見るように）
+  // カメラ位置を調整（原点を見るように）
   camera.position.set(0, 0, adjustedDistance)
-  camera.lookAt(center)
+  camera.lookAt(0, 0, 0)
 }
 
 function clearNetwork() {
