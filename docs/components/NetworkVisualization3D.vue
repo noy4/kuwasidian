@@ -77,6 +77,9 @@ function init() {
   // ネットワークの生成
   generateNetwork()
 
+  // カメラ位置を調整してネットワーク全体が見えるようにする
+  adjustCameraToFitNetwork()
+
   // マウスイベントの設定
   cleanupMouseControls = setupMouseControls()
 
@@ -171,6 +174,37 @@ function createEdge(start, end) {
 
   edges.push(edge)
   edgeGroup.add(edge)
+}
+
+function adjustCameraToFitNetwork() {
+  if (nodes.length === 0)
+    return
+
+  // ネットワーク全体の境界ボックスを計算
+  const boundingBox = new THREE.Box3()
+
+  // 全ノードの位置から境界ボックスを計算
+  nodes.forEach((node) => {
+    boundingBox.expandByPoint(node.position)
+  })
+
+  // 境界ボックスのサイズを取得
+  const size = boundingBox.getSize(new THREE.Vector3())
+  const center = boundingBox.getCenter(new THREE.Vector3())
+
+  // ネットワークの最大サイズ（幅、高さ、奥行きの最大値）
+  const maxDimension = Math.max(size.x, size.y, size.z)
+
+  // カメラの視野角（FOV）を考慮して適切な距離を計算
+  const fov = camera.fov * (Math.PI / 180) // ラジアンに変換
+  const distance = (maxDimension / 2) / Math.tan(fov / 2)
+
+  // 余裕を持たせるため距離を1.5倍にする
+  const adjustedDistance = distance * 1.5
+
+  // カメラ位置を調整（ネットワークの中心を見るように）
+  camera.position.set(0, 0, adjustedDistance)
+  camera.lookAt(center)
 }
 
 function clearNetwork() {
