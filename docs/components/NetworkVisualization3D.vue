@@ -18,7 +18,7 @@ const containerRef = ref(null)
 let scene, camera, renderer
 let nodes = []
 let edges = []
-let nodeGroup, edgeGroup
+let networkGroup, nodeGroup, edgeGroup
 let animationId
 
 // マウスコントロール用
@@ -42,6 +42,7 @@ function init() {
 
   // カメラの作成
   camera = new THREE.PerspectiveCamera(75, containerWidth / containerHeight, 0.1, 1000)
+  camera.position.set(0, 0, 50)
 
   // レンダラーの作成
   renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true })
@@ -58,10 +59,12 @@ function init() {
   scene.add(directionalLight)
 
   // グループの作成
+  networkGroup = new THREE.Group()
   nodeGroup = new THREE.Group()
   edgeGroup = new THREE.Group()
-  scene.add(nodeGroup)
-  scene.add(edgeGroup)
+  networkGroup.add(nodeGroup)
+  networkGroup.add(edgeGroup)
+  scene.add(networkGroup)
 
   // ネットワークの生成
   generateNetwork()
@@ -171,8 +174,7 @@ function adjustCameraToFitNetwork() {
   const center = boundingBox.getCenter(new THREE.Vector3())
 
   // ネットワーク全体を原点中心に移動（回転の中心をオブジェクトの中心にするため）
-  nodeGroup.position.copy(center).negate()
-  edgeGroup.position.copy(center).negate()
+  networkGroup.position.copy(center).negate()
 
   // ネットワークの最大サイズ（幅、高さ、奥行きの最大値）
   const maxDimension = Math.max(size.x, size.y, size.z)
@@ -270,10 +272,8 @@ function animate() {
   rotationX += (targetRotationX - rotationX) * 0.05
   rotationY += (targetRotationY - rotationY) * 0.05
 
-  nodeGroup.rotation.x = rotationX
-  nodeGroup.rotation.y = rotationY
-  edgeGroup.rotation.x = rotationX
-  edgeGroup.rotation.y = rotationY
+  networkGroup.rotation.x = rotationX
+  networkGroup.rotation.y = rotationY
 
   renderer.render(scene, camera)
 }
