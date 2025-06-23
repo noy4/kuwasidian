@@ -4,7 +4,7 @@ import { onMounted, onUnmounted, ref } from 'vue'
 const props = defineProps({
   width: {
     type: Number,
-    default: 400,
+    default: 600,
   },
   height: {
     type: Number,
@@ -51,7 +51,6 @@ let cleanupMouseControls
 function init() {
   // シーンの作成
   scene = new THREE.Scene()
-  scene.fog = new THREE.Fog(0xFFFFFF, 100, 250)
 
   // カメラの作成
   camera = new THREE.PerspectiveCamera(75, props.width / props.height, 0.1, 1000)
