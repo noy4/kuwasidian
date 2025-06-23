@@ -36,13 +36,17 @@ function init() {
   // シーンの作成
   scene = new THREE.Scene()
 
+  // コンテナの実際のサイズを取得
+  const containerWidth = containerRef.value.clientWidth
+  const containerHeight = containerRef.value.clientHeight
+
   // カメラの作成
-  camera = new THREE.PerspectiveCamera(75, props.width / props.height, 0.1, 1000)
+  camera = new THREE.PerspectiveCamera(75, containerWidth / containerHeight, 0.1, 1000)
   camera.position.set(0, 0, 50)
 
   // レンダラーの作成
   renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true })
-  renderer.setSize(props.width, props.height)
+  renderer.setSize(containerWidth, containerHeight)
   renderer.setClearColor(0x000000, 0)
   renderer.shadowMap.enabled = true
   renderer.shadowMap.type = THREE.PCFSoftShadowMap
