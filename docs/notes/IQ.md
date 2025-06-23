@@ -1,4 +1,9 @@
 
+<script setup>
+import NetworkVisualization3D from '../components/NetworkVisualization3D.vue'
+</script>
+<NetworkVisualization3D />
+
 ```yaml
 テーマ: IQが高い人の特徴
 
@@ -74,3 +79,5 @@ mindmap
 [Data Sculptures | ZKM](https://zkm.de/en/data-sculptures)
 
 <img src="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-3d-illustration-of-hashtags-network-png-image_10241857.png" width="300"><img src="https://p.turbosquid.com/ts-thumb/Xk/Hsg9id/1n/neuralnetworka/png/1628157631/600x600/fit_q87/16b47e011a48f1aaf5d612adea25d1b21ef55c3e/neuralnetworka.jpg" width="300">
+
+<iframe src="/kuwasidian/network-2.html" width="400" />
