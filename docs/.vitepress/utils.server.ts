@@ -6,6 +6,11 @@ import process from 'node:process'
 import { createMarkdownRenderer } from 'vitepress'
 import { generateSidebar } from 'vitepress-sidebar'
 
+const defaultExcludePattern = fs.readFileSync('.gitignore', 'utf-8')
+  .split('\n')
+  .map(line => line.trim())
+  .filter(line => line && !line.startsWith('#'))
+
 export function getSidebarItemsV2(
   folderPath: string,
   options?: VitePressSidebarOptions & {
@@ -13,11 +18,13 @@ export function getSidebarItemsV2(
   },
 ) {
   const { desc, ...opts } = options || {}
+
   return generateSidebar({
     documentRootPath: process.argv[3],
     scanStartPath: folderPath,
     sortMenusByName: true,
     sortMenusOrderByDescending: desc,
+    excludePattern: defaultExcludePattern,
     ...opts,
   }) as DefaultTheme.SidebarItem[]
 }
