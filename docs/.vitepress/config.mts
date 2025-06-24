@@ -121,7 +121,7 @@ function sidebar(): DefaultTheme.Sidebar {
   return [
     { text: '📝 メモ', link: '/' },
     { text: '⚔️ クエスト', link: '/quests/' },
-    { text: '📄 記事一覧', link: '/posts' },
+    { text: '📄 記事一覧', link: '/posts/' },
     { text: '🔄 最近の更新', link: '/recent-updates' },
     {
       items: [
