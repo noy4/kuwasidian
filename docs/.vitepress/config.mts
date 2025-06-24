@@ -47,6 +47,10 @@ export default withMermaid(defineConfig({
     '\\+memo.md': 'index.md',
   },
 
+  sitemap: {
+    hostname: siteUrl,
+  },
+
   // markdown to html → transformPageData
   transformPageData(pageData) {
     const home = pageData.relativePath === 'index.md'
@@ -87,10 +91,6 @@ export default withMermaid(defineConfig({
     search: {
       provider: 'local',
     },
-  },
-
-  sitemap: {
-    hostname: siteUrl,
   },
 
   vite: {
