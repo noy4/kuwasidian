@@ -3,7 +3,7 @@ roadmap
 quest detail
 vitepress dynamic route
 
-[[IQ]]
+[[notes/IQ/index|IQ]]
 [[study]]
 
 

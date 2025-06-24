@@ -21,5 +21,5 @@ Tips：
 
 ---
 
-[[IQ]]
+[[notes/IQ/index|IQ]]
 [[study]]

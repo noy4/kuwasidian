@@ -1,7 +1,9 @@
+# IQ
 
 <script setup>
-import NetworkVisualization3D from '../components/NetworkVisualization3D.vue'
+import NetworkVisualization3D from './NetworkVisualization3D.vue'
 </script>
+
 <NetworkVisualization3D />
 
 ```yaml
