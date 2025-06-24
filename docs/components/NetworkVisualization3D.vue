@@ -321,10 +321,10 @@ onUnmounted(() => {
   cursor: grab;
   border-radius: 8px;
   max-width: 100%;
-  touch-action: none;
 }
 
 .network-visualization-container:active {
   cursor: grabbing;
+  touch-action: none;
 }
 </style>
