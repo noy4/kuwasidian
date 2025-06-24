@@ -22,6 +22,7 @@ export function getSidebarItemsV2(
   return generateSidebar({
     documentRootPath: process.argv[3],
     scanStartPath: folderPath,
+    useFolderLinkFromIndexFile: true,
     sortMenusByName: true,
     sortMenusOrderByDescending: desc,
     excludePattern: defaultExcludePattern,

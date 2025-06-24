@@ -144,6 +144,7 @@ function sidebar(): DefaultTheme.Sidebar {
       items: [
         {
           text: '🚀 プロジェクト',
+          base: '/projects/',
           collapsed: true,
           items: getSidebarItemsV2('projects'),
         },
