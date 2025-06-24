@@ -83,8 +83,14 @@ function generateNetwork() {
   clearNetwork()
 
   const nodeCount = 45 + Math.floor(Math.random() * 25)
-  const positions = []
   const clusters = 3 + Math.floor(Math.random() * 3)
+
+  const positions = generateNodes(nodeCount, clusters)
+  generateEdges(positions)
+}
+
+function generateNodes(nodeCount, clusters) {
+  const positions = []
 
   for (let cluster = 0; cluster < clusters; cluster++) {
     const clusterCenter = new THREE.Vector3(
@@ -116,6 +122,10 @@ function generateNetwork() {
     }
   }
 
+  return positions
+}
+
+function generateEdges(positions) {
   for (let i = 0; i < positions.length; i++) {
     const connectionsCount = 4 + Math.floor(Math.random() * 6)
 
