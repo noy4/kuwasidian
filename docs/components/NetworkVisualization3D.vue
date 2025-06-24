@@ -6,10 +6,12 @@ const {
   width = 600,
   height = 400,
   nodeCount = 60,
+  clusterCount = 4,
 } = defineProps({
   width: Number,
   height: Number,
   nodeCount: Number,
+  clusterCount: Number,
 })
 
 const containerRef = ref(null)
@@ -81,23 +83,21 @@ function init() {
 function generateNetwork() {
   clearNetwork()
 
-  const clusters = 3 + Math.floor(Math.random() * 3)
-
-  const positions = generateNodes(nodeCount, clusters)
+  const positions = generateNodes(nodeCount, clusterCount)
   generateEdges(positions)
 }
 
-function generateNodes(nodeCount, clusters) {
+function generateNodes(nodeCount, clusterCount) {
   const positions = []
 
-  for (let cluster = 0; cluster < clusters; cluster++) {
+  for (let cluster = 0; cluster < clusterCount; cluster++) {
     const clusterCenter = new THREE.Vector3(
       (Math.random() - 0.5) * 40,
       (Math.random() - 0.5) * 40,
       (Math.random() - 0.5) * 40,
     )
 
-    const nodesInCluster = Math.floor(nodeCount / clusters) + Math.floor(Math.random() * 5)
+    const nodesInCluster = Math.floor(nodeCount / clusterCount) + Math.floor(Math.random() * 5)
 
     for (let i = 0; i < nodesInCluster && positions.length < nodeCount; i++) {
       const position = new THREE.Vector3(
