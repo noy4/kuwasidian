@@ -5,9 +5,11 @@ import { onMounted, onUnmounted, ref } from 'vue'
 const {
   width = 600,
   height = 400,
+  nodeCount = 60,
 } = defineProps({
   width: Number,
   height: Number,
+  nodeCount: Number,
 })
 
 const containerRef = ref(null)
@@ -79,7 +81,6 @@ function init() {
 function generateNetwork() {
   clearNetwork()
 
-  const nodeCount = 45 + Math.floor(Math.random() * 25)
   const clusters = 3 + Math.floor(Math.random() * 3)
 
   const positions = generateNodes(nodeCount, clusters)
