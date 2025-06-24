@@ -22,10 +22,6 @@ let edges = []
 let networkGroup, nodeGroup, edgeGroup
 let animationId
 
-// マウスコントロール用
-let isMouseDown = false
-let mouseX = 0
-let mouseY = 0
 let targetRotationX = 0
 let targetRotationY = 0
 let rotationX = 0
@@ -220,27 +216,33 @@ function clearNetwork() {
 function setupMouseControls() {
   const container = containerRef.value
 
-  const handleMouseDown = (event) => {
-    isMouseDown = true
-    mouseX = event.clientX
-    mouseY = event.clientY
+  let isPointerDown = false
+  let pointerX = 0
+  let pointerY = 0
+
+  const handlePointerDown = (event) => {
+    isPointerDown = true
+    pointerX = event.clientX
+    pointerY = event.clientY
+    event.target?.setPointerCapture?.(event.pointerId)
   }
 
-  const handleMouseMove = (event) => {
-    if (isMouseDown) {
-      const deltaX = event.clientX - mouseX
-      const deltaY = event.clientY - mouseY
+  const handlePointerMove = (event) => {
+    if (isPointerDown) {
+      const deltaX = event.clientX - pointerX
+      const deltaY = event.clientY - pointerY
 
       targetRotationY += deltaX * 0.01
       targetRotationX += deltaY * 0.01
 
-      mouseX = event.clientX
-      mouseY = event.clientY
+      pointerX = event.clientX
+      pointerY = event.clientY
     }
   }
 
-  const handleMouseUp = () => {
-    isMouseDown = false
+  const handlePointerUp = (event) => {
+    isPointerDown = false
+    event.target?.releasePointerCapture?.(event.pointerId)
   }
 
   const handleWheel = (event) => {
@@ -259,16 +261,16 @@ function setupMouseControls() {
       camera.position.setLength(100)
   }
 
-  container.addEventListener('mousedown', handleMouseDown)
-  container.addEventListener('mousemove', handleMouseMove)
-  container.addEventListener('mouseup', handleMouseUp)
+  container.addEventListener('pointerdown', handlePointerDown)
+  container.addEventListener('pointermove', handlePointerMove)
+  container.addEventListener('pointerup', handlePointerUp)
   container.addEventListener('wheel', handleWheel)
 
   // クリーンアップ関数を返す
   return () => {
-    container.removeEventListener('mousedown', handleMouseDown)
-    container.removeEventListener('mousemove', handleMouseMove)
-    container.removeEventListener('mouseup', handleMouseUp)
+    container.removeEventListener('pointerdown', handlePointerDown)
+    container.removeEventListener('pointermove', handlePointerMove)
+    container.removeEventListener('pointerup', handlePointerUp)
     container.removeEventListener('wheel', handleWheel)
   }
 }
