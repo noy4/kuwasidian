@@ -9,7 +9,7 @@ node_modules
 .obsidian
 
 # private folder/file
-_*
+**/_*
 daily notes
 
 # tmp
