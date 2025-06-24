@@ -6,10 +6,14 @@ import process from 'node:process'
 import { createMarkdownRenderer } from 'vitepress'
 import { generateSidebar } from 'vitepress-sidebar'
 
-const defaultExcludePattern = fs.readFileSync('.gitignore', 'utf-8')
-  .split('\n')
-  .map(line => line.trim())
-  .filter(line => line && !line.startsWith('#'))
+function parseGitignore(filePath = '.gitignore') {
+  return fs.readFileSync(filePath, 'utf-8')
+    .split('\n')
+    .map(line => line.trim())
+    .filter(line => line && !line.startsWith('#'))
+}
+
+export const defaultExcludePattern = parseGitignore()
 
 export function getSidebarItemsV2(
   folderPath: string,

@@ -8,7 +8,7 @@ import Inspect from 'vite-plugin-inspect'
 import { defineConfig } from 'vitepress'
 import { withMermaid } from 'vitepress-plugin-mermaid'
 import { extractDescription } from './utils'
-import { getSidebarItems, getSidebarItemsV2, insertH1IfMissing } from './utils.server'
+import { defaultExcludePattern, getSidebarItems, getSidebarItemsV2, insertH1IfMissing } from './utils.server'
 
 const siteBase = '/kuwasidian/'
 const siteTitle = 'Kuwasidian'
@@ -33,10 +33,7 @@ export default withMermaid(defineConfig({
   lastUpdated: true,
   ignoreDeadLinks: true,
   cleanUrls: true,
-  srcExclude: [
-    '**/_*',
-    'daily notes/**',
-  ],
+  srcExclude: defaultExcludePattern,
 
   markdown: {
     breaks: true,
