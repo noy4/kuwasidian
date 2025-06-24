@@ -261,24 +261,16 @@ function setupMouseControls() {
       camera.position.setLength(100)
   }
 
-  // スマホ回転時のみスクロール無効化
-  const touchMoveHandler = (e) => {
-    if (isPointerDown)
-      e.preventDefault()
-  }
-
   container.addEventListener('pointerdown', handlePointerDown)
   container.addEventListener('pointermove', handlePointerMove)
   container.addEventListener('pointerup', handlePointerUp)
   container.addEventListener('wheel', handleWheel)
-  document.addEventListener('touchmove', touchMoveHandler, { passive: false })
 
   return () => {
     container.removeEventListener('pointerdown', handlePointerDown)
     container.removeEventListener('pointermove', handlePointerMove)
     container.removeEventListener('pointerup', handlePointerUp)
     container.removeEventListener('wheel', handleWheel)
-    document.removeEventListener('touchmove', touchMoveHandler, { passive: false })
   }
 }
 
@@ -328,6 +320,7 @@ onUnmounted(() => {
   cursor: grab;
   border-radius: 8px;
   max-width: 100%;
+  touch-action: none;
 }
 
 .network-visualization-container:active {
