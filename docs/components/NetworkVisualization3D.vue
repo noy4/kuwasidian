@@ -52,10 +52,10 @@ function init() {
   containerRef.value.appendChild(renderer.domElement)
 
   // ライトの設定
-  const ambientLight = new THREE.AmbientLight(0xFFFFFF, 0.5)
+  const ambientLight = new THREE.AmbientLight(0xFFFFFF, 0.8)
   scene.add(ambientLight)
 
-  const directionalLight = new THREE.DirectionalLight(0xFFFFFF, 0.8)
+  const directionalLight = new THREE.DirectionalLight(0xFFFFFF, 1.0)
   directionalLight.position.set(50, 50, 50)
   scene.add(directionalLight)
 
