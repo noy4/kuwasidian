@@ -5,8 +5,8 @@ import { onMounted, onUnmounted, ref } from 'vue'
 const {
   width = 600,
   height = 400,
-  nodeCount = 60,
-  clusterCount = 4,
+  nodeCount = 50,
+  clusterCount = 5,
 } = defineProps({
   width: Number,
   height: Number,
@@ -43,7 +43,7 @@ function init() {
 
   // カメラの作成
   camera = new THREE.PerspectiveCamera(75, containerWidth / containerHeight, 0.1, 1000)
-  camera.position.set(0, 0, 50)
+  camera.position.set(0, 0, 100)
 
   // レンダラーの作成
   renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true })
@@ -92,18 +92,18 @@ function generateNodes(nodeCount, clusterCount) {
 
   for (let cluster = 0; cluster < clusterCount; cluster++) {
     const clusterCenter = new THREE.Vector3(
-      (Math.random() - 0.5) * 40,
-      (Math.random() - 0.5) * 40,
-      (Math.random() - 0.5) * 40,
+      (Math.random() - 0.5) * 50,
+      (Math.random() - 0.5) * 50,
+      (Math.random() - 0.5) * 50,
     )
 
     const nodesInCluster = Math.floor(nodeCount / clusterCount) + Math.floor(Math.random() * 5)
 
     for (let i = 0; i < nodesInCluster && positions.length < nodeCount; i++) {
       const position = new THREE.Vector3(
-        clusterCenter.x + (Math.random() - 0.5) * 25,
-        clusterCenter.y + (Math.random() - 0.5) * 25,
-        clusterCenter.z + (Math.random() - 0.5) * 25,
+        clusterCenter.x + (Math.random() - 0.5) * 30,
+        clusterCenter.y + (Math.random() - 0.5) * 30,
+        clusterCenter.z + (Math.random() - 0.5) * 30,
       )
       positions.push(position)
 
@@ -139,7 +139,7 @@ function generateEdges(positions) {
     distances.sort((a, b) => a.distance - b.distance)
 
     for (let k = 0; k < Math.min(connectionsCount, distances.length); k++) {
-      if (distances[k].distance < 20) {
+      if (distances[k].distance < 30) {
         createEdge(positions[i], positions[distances[k].index])
       }
     }
@@ -255,8 +255,8 @@ function setupMouseControls() {
     const distance = camera.position.length()
     if (distance < 20)
       camera.position.setLength(20)
-    if (distance > 150)
-      camera.position.setLength(150)
+    if (distance > 100)
+      camera.position.setLength(100)
   }
 
   container.addEventListener('mousedown', handleMouseDown)
