@@ -7,9 +7,8 @@ import UnoCSS from 'unocss/vite'
 import Inspect from 'vite-plugin-inspect'
 import { defineConfig } from 'vitepress'
 import { withMermaid } from 'vitepress-plugin-mermaid'
-import { generateSidebar } from 'vitepress-sidebar'
 import { extractDescription } from './utils'
-import { getSidebarItems, insertH1IfMissing } from './utils.server'
+import { getSidebarItems, getSidebarItemsV2, insertH1IfMissing } from './utils.server'
 
 const siteBase = '/kuwasidian/'
 const siteTitle = 'Kuwasidian'
@@ -135,12 +134,9 @@ function sidebar(): DefaultTheme.Sidebar {
           link: '/',
           base: '/search-history-reports/',
           collapsed: true,
-          items: generateSidebar({
-            documentRootPath: 'docs',
-            scanStartPath: 'search-history-reports',
-            sortMenusByName: true,
-            sortMenusOrderByDescending: true,
-          }) as DefaultTheme.SidebarItem[],
+          items: getSidebarItemsV2('search-history-reports', {
+            desc: true,
+          }),
         },
       ],
     },

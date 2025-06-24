@@ -1,8 +1,26 @@
 import type { DefaultTheme, MarkdownRenderer, SiteConfig } from 'vitepress'
+import type { VitePressSidebarOptions } from 'vitepress-sidebar/types'
 import fs from 'node:fs'
 import path from 'node:path'
 import process from 'node:process'
 import { createMarkdownRenderer } from 'vitepress'
+import { generateSidebar } from 'vitepress-sidebar'
+
+export function getSidebarItemsV2(
+  folderPath: string,
+  options?: VitePressSidebarOptions & {
+    desc?: boolean
+  },
+) {
+  const { desc, ...opts } = options || {}
+  return generateSidebar({
+    documentRootPath: process.argv[3],
+    scanStartPath: folderPath,
+    sortMenusByName: true,
+    sortMenusOrderByDescending: desc,
+    ...opts,
+  }) as DefaultTheme.SidebarItem[]
+}
 
 export function getSidebarItems(
   targetDir: string,
