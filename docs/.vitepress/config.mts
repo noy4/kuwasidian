@@ -1,6 +1,7 @@
 import type { DefaultTheme, HeadConfig } from 'vitepress'
 import fs from 'node:fs'
 import path from 'node:path'
+import process from 'node:process'
 import { BiDirectionalLinks } from '@nolebase/markdown-it-bi-directional-links'
 import { presetWind4 } from 'unocss'
 import UnoCSS from 'unocss/vite'
@@ -54,7 +55,7 @@ export default withMermaid(defineConfig({
   // markdown to html → transformPageData
   transformPageData(pageData) {
     const home = pageData.relativePath === 'index.md'
-    const fullPath = path.resolve('docs', pageData.filePath)
+    const fullPath = path.resolve(process.argv[3], pageData.filePath)
 
     pageData.title = home
       ? homeTitle
