@@ -224,7 +224,7 @@ function setupMouseControls() {
     isPointerDown = true
     pointerX = event.clientX
     pointerY = event.clientY
-    event.target?.setPointerCapture?.(event.pointerId)
+    container.setPointerCapture?.(event.pointerId)
   }
 
   const handlePointerMove = (event) => {
@@ -242,7 +242,7 @@ function setupMouseControls() {
 
   const handlePointerUp = (event) => {
     isPointerDown = false
-    event.target?.releasePointerCapture?.(event.pointerId)
+    container.releasePointerCapture?.(event.pointerId)
   }
 
   const handleWheel = (event) => {
@@ -261,17 +261,24 @@ function setupMouseControls() {
       camera.position.setLength(100)
   }
 
+  // スマホ回転時のみスクロール無効化
+  const touchMoveHandler = (e) => {
+    if (isPointerDown)
+      e.preventDefault()
+  }
+
   container.addEventListener('pointerdown', handlePointerDown)
   container.addEventListener('pointermove', handlePointerMove)
   container.addEventListener('pointerup', handlePointerUp)
   container.addEventListener('wheel', handleWheel)
+  document.addEventListener('touchmove', touchMoveHandler, { passive: false })
 
-  // クリーンアップ関数を返す
   return () => {
     container.removeEventListener('pointerdown', handlePointerDown)
     container.removeEventListener('pointermove', handlePointerMove)
     container.removeEventListener('pointerup', handlePointerUp)
     container.removeEventListener('wheel', handleWheel)
+    document.removeEventListener('touchmove', touchMoveHandler, { passive: false })
   }
 }
 
@@ -325,6 +332,5 @@ onUnmounted(() => {
 
 .network-visualization-container:active {
   cursor: grabbing;
-  touch-action: none;
 }
 </style>
