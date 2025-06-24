@@ -50,6 +50,7 @@ export default withMermaid(defineConfig({
     '\\+memo.md': 'index.md',
   },
 
+  // markdown to html → transformPageData
   transformPageData(pageData) {
     const home = pageData.relativePath === 'index.md'
     const fullPath = path.resolve('docs', pageData.filePath)
