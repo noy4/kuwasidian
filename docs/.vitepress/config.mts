@@ -7,6 +7,7 @@ import UnoCSS from 'unocss/vite'
 import Inspect from 'vite-plugin-inspect'
 import { defineConfig } from 'vitepress'
 import { withMermaid } from 'vitepress-plugin-mermaid'
+import { generateSidebar } from 'vitepress-sidebar'
 import { extractDescription } from './utils'
 import { getSidebarItems, insertH1IfMissing } from './utils.server'
 
@@ -131,9 +132,15 @@ function sidebar(): DefaultTheme.Sidebar {
         { text: '🎵 各期テーマソング', link: '/me/theme-songs' },
         {
           text: '🔍 検索履歴レポート',
-          link: '/search-history-reports/',
+          link: '/',
+          base: '/search-history-reports/',
           collapsed: true,
-          items: getSidebarItems('search-history-reports', { desc: true }),
+          items: generateSidebar({
+            documentRootPath: 'docs',
+            scanStartPath: 'search-history-reports',
+            sortMenusByName: true,
+            sortMenusOrderByDescending: true,
+          }) as DefaultTheme.SidebarItem[],
         },
       ],
     },
