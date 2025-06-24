@@ -2,15 +2,12 @@
 import * as THREE from 'three'
 import { onMounted, onUnmounted, ref } from 'vue'
 
-defineProps({
-  width: {
-    type: Number,
-    default: 600,
-  },
-  height: {
-    type: Number,
-    default: 400,
-  },
+const {
+  width = 600,
+  height = 400,
+} = defineProps({
+  width: Number,
+  height: Number,
 })
 
 const containerRef = ref(null)
