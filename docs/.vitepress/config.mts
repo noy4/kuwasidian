@@ -147,12 +147,12 @@ function sidebar(): DefaultTheme.Sidebar {
         {
           text: '📦 アーカイブ',
           collapsed: true,
-          items: getSidebarItems('archives'),
+          items: getSidebarItemsV2('archives'),
         },
         {
           text: '📋 その他メモ',
           collapsed: true,
-          items: getSidebarItems('notes'),
+          items: getSidebarItemsV2('notes'),
         },
       ],
     },
