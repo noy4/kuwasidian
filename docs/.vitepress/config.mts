@@ -129,8 +129,7 @@ function sidebar(): DefaultTheme.Sidebar {
         { text: '🎵 各期テーマソング', link: '/me/theme-songs' },
         {
           text: '🔍 検索履歴レポート',
-          link: '/',
-          base: '/search-history-reports/',
+          link: '/search-history-reports/',
           collapsed: true,
           items: getSidebarItemsV2('search-history-reports', {
             desc: true,
@@ -142,7 +141,6 @@ function sidebar(): DefaultTheme.Sidebar {
       items: [
         {
           text: '🚀 プロジェクト',
-          base: '/projects/',
           collapsed: true,
           items: getSidebarItemsV2('projects'),
         },
