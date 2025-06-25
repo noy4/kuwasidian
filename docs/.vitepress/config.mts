@@ -9,7 +9,7 @@ import Inspect from 'vite-plugin-inspect'
 import { defineConfig } from 'vitepress'
 import { withMermaid } from 'vitepress-plugin-mermaid'
 import { extractDescription } from './utils'
-import { defaultExcludePattern, getSidebarItems, getSidebarItemsV2, insertH1IfMissing } from './utils.server'
+import { defaultExcludePattern, getSidebarItemsV2, insertH1IfMissing } from './utils.server'
 
 const siteBase = '/kuwasidian/'
 const siteTitle = 'Kuwasidian'
