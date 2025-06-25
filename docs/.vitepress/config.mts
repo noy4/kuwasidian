@@ -9,7 +9,7 @@ import Inspect from 'vite-plugin-inspect'
 import { defineConfig } from 'vitepress'
 import { withMermaid } from 'vitepress-plugin-mermaid'
 import { extractDescription } from './utils'
-import { defaultExcludePattern, getSidebarItemsV2, insertH1IfMissing } from './utils.server'
+import { autoSidebar, defaultExcludePattern, insertH1IfMissing } from './utils.server'
 
 const siteBase = '/kuwasidian/'
 const siteTitle = 'Kuwasidian'
@@ -131,7 +131,7 @@ function sidebar(): DefaultTheme.Sidebar {
           text: '🔍 検索履歴レポート',
           link: '/search-history-reports/',
           collapsed: true,
-          items: getSidebarItemsV2('search-history-reports', {
+          items: autoSidebar('search-history-reports', {
             desc: true,
           }),
         },
@@ -142,17 +142,17 @@ function sidebar(): DefaultTheme.Sidebar {
         {
           text: '🚀 プロジェクト',
           collapsed: true,
-          items: getSidebarItemsV2('projects'),
+          items: autoSidebar('projects'),
         },
         {
           text: '📦 アーカイブ',
           collapsed: true,
-          items: getSidebarItemsV2('archives'),
+          items: autoSidebar('archives'),
         },
         {
           text: '📋 その他メモ',
           collapsed: true,
-          items: getSidebarItemsV2('notes'),
+          items: autoSidebar('notes'),
         },
       ],
     },

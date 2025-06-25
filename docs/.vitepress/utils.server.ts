@@ -15,7 +15,7 @@ function parseGitignore(filePath = '.gitignore') {
 
 export const defaultExcludePattern = parseGitignore()
 
-export function getSidebarItemsV2(
+export function autoSidebar(
   folderPath: string,
   options?: VitePressSidebarOptions & {
     desc?: boolean
