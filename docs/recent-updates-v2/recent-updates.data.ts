@@ -49,9 +49,9 @@ function getRecentUpdates(options: Options = {}): RecentUpdateEntry[] {
   const targetCommits: Commit[] = []
   const entries: RecentUpdateEntry[] = []
   const seen = new Set<string>()
-  const chunks = log.split('\n\n')
+  const logChunks = log.split('\n\n')
 
-  for (const chunk of chunks) {
+  for (const chunk of logChunks) {
     const [date, ...fileLines] = chunk.split('\n')
     for (const line of fileLines) {
       const [status, filePath] = line.split('\t')
@@ -71,6 +71,7 @@ function getRecentUpdates(options: Options = {}): RecentUpdateEntry[] {
       break
   }
 
+  // convert to entries
   for (const { date, status, filePath } of targetCommits) {
     let content = ''
     if (fs.existsSync(filePath)) {
