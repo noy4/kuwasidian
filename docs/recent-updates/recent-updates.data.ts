@@ -21,7 +21,7 @@ interface FileRecord {
 
 type RecentUpdate = FileRecord & {
   title: string
-  url: string
+  link: string
 }
 
 declare const data: RecentUpdate[]
@@ -76,7 +76,7 @@ function getRecentUpdates(options: Options = {}): RecentUpdate[] {
     }
   }
 
-  // Filter commits (pattern, unique file, limit)
+  // Filter files (pattern, unique file, limit)
   for (const { date, status, filePath } of allFiles) {
     if (!minimatch(filePath, pattern))
       continue
@@ -88,7 +88,7 @@ function getRecentUpdates(options: Options = {}): RecentUpdate[] {
       break
   }
 
-  // convert to entries
+  // convert to recentUpdates
   for (const { date, status, filePath } of targetFiles) {
     let markdown = ''
     if (fs.existsSync(filePath))
@@ -99,13 +99,13 @@ function getRecentUpdates(options: Options = {}): RecentUpdate[] {
       || basename(filePath).replace(/\.md$/, '') // file name
     let page = filePath.replace(`${root ? `${root}/` : ''}`, '')
     page = globalSiteConfig.rewrites.map[page] || page
-    const url = `${globalSiteConfig.site.base}${page.replace(/(index)?\.md$/, '')}`
+    const link = `${globalSiteConfig.site.base}${page.replace(/(index)?\.md$/, '')}`
     recentUpdates.push({
       date,
       status,
       filePath,
       title,
-      url,
+      link,
     })
   }
 
