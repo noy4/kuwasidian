@@ -21,7 +21,6 @@ export default withMermaid(defineConfig({
   title: siteTitle,
   titleTemplate: false,
   description: siteDescription,
-  base: siteBase,
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: `${siteBase}${siteImage}` }],
     ['meta', { property: 'og:type', content: 'website' }],
@@ -29,44 +28,14 @@ export default withMermaid(defineConfig({
     ['meta', { property: 'og:url', content: siteUrl }],
     ['meta', { property: 'twitter:card', content: 'summary' }],
   ],
-  lastUpdated: true,
-  ignoreDeadLinks: true,
+  base: siteBase,
   cleanUrls: true,
-  srcExclude: defaultExcludePattern,
-
-  markdown: {
-    breaks: true,
-    config(md) {
-      md.use(insertH1IfMissing())
-      md.use(BiDirectionalLinks({ dir: process.argv[3] }))
-      md.use(descriptionExtractor)
-    },
-  },
-
   rewrites: {
     '\\+memo.md': 'index.md',
   },
-
-  sitemap: {
-    hostname: siteUrl,
-  },
-
-  // markdown to html → transformPageData
-  transformPageData(pageData) {
-    const home = pageData.relativePath === 'index.md'
-
-    pageData.title = home
-      ? homeTitle
-      : `${pageData.title} | ${siteTitle}`
-
-    const pageUrl = `${siteUrl}${pageData.relativePath.replace(/(index)?\.md$/, '')}`
-
-    ;((pageData.frontmatter.head ??= []) as HeadConfig[]).push(
-      ['meta', { property: 'og:title', content: pageData.title }],
-      ['meta', { property: 'og:description', content: pageData.description }],
-      ['meta', { property: 'og:url', content: pageUrl }],
-    )
-  },
+  srcExclude: defaultExcludePattern,
+  ignoreDeadLinks: true,
+  lastUpdated: true,
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -82,6 +51,15 @@ export default withMermaid(defineConfig({
     ],
     search: {
       provider: 'local',
+    },
+  },
+
+  markdown: {
+    breaks: true,
+    config(md) {
+      md.use(insertH1IfMissing())
+      md.use(BiDirectionalLinks({ dir: process.argv[3] }))
+      md.use(descriptionExtractor)
     },
   },
 
@@ -104,6 +82,28 @@ export default withMermaid(defineConfig({
         ],
       }),
     ],
+  },
+
+  sitemap: {
+    hostname: siteUrl,
+  },
+
+  // markdown to html → transformPageData
+  transformPageData(pageData) {
+    // set title
+    const home = pageData.relativePath === 'index.md'
+    pageData.title = home
+      ? homeTitle
+      : `${pageData.title} | ${siteTitle}`
+
+    // set ogp
+    const pageUrl = `${siteUrl}${pageData.relativePath.replace(/(index)?\.md$/, '')}`
+
+    ;((pageData.frontmatter.head ??= []) as HeadConfig[]).push(
+      ['meta', { property: 'og:title', content: pageData.title }],
+      ['meta', { property: 'og:description', content: pageData.description }],
+      ['meta', { property: 'og:url', content: pageUrl }],
+    )
   },
 }))
 
