@@ -3,6 +3,7 @@ import fs from 'node:fs'
 import process from 'node:process'
 import { minimatch } from 'minimatch'
 import { defineLoader } from 'vitepress'
+import { globalSiteConfig } from '../.vitepress/utils.server'
 
 export interface RecentUpdateEntry {
   lastUpdated: string
@@ -92,9 +93,9 @@ function getRecentUpdates(options: Options = {}): RecentUpdateEntry[] {
     }
     const title = content.match(/^#\s+(.*)/m)?.[1] // h1 in content
       || filePath.split('/').pop()!.replace(/\.md$/, '') // file name
-    const url = `/${filePath
-      .replace(`${root ? `${root}/` : ''}`, '')
-      .replace(/(index)?\.md$/, '')}`
+    let page = filePath.replace(`${root ? `${root}/` : ''}`, '')
+    page = globalSiteConfig.rewrites.map[page] || page
+    const url = `/${page.replace(/(index)?\.md$/, '')}`
     entries.push({
       lastUpdated: date,
       status,
