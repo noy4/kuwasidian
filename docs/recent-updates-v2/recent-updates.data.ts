@@ -42,27 +42,35 @@ function getRecentUpdates(options: Options = {}): RecentUpdateEntry[] {
   const log = execSync(
     `git log --pretty="format:%cd" --name-status --date=iso -n ${limit * 3}`,
     { encoding: 'utf-8' },
-  )
+  ).trim()
 
-  const commits: Commit[] = []
+  const allCommits: Commit[] = []
+  const targetCommits: Commit[] = []
   const entries: RecentUpdateEntry[] = []
   const seen = new Set<string>()
   const chunks = log.split('\n\n')
 
-  chunks.forEach((chunk) => {
+  for (const chunk of chunks) {
     const [date, ...fileLines] = chunk.split('\n')
-    fileLines.forEach((line) => {
+    for (const line of fileLines) {
       const [status, filePath] = line.split('\t')
-      commits.push({ date, status, filePath })
-    })
-  })
+      allCommits.push({ date, status, filePath })
+    }
+  }
 
-  for (const { date, status, filePath } of commits) {
+  // Filter commits (pattern, unique file, limit)
+  for (const { date, status, filePath } of allCommits) {
     if (!minimatch(filePath, pattern))
       continue
     if (seen.has(filePath))
       continue
     seen.add(filePath)
+    targetCommits.push({ date, status, filePath })
+    if (entries.length >= limit)
+      break
+  }
+
+  for (const { date, status, filePath } of targetCommits) {
     const title = filePath.split('/').pop()?.replace(/\.md$/, '') || filePath
     const url = `/${filePath.replace(/\.md$/, '').replace(/^docs\//, '')}`
     entries.push({
@@ -72,8 +80,6 @@ function getRecentUpdates(options: Options = {}): RecentUpdateEntry[] {
       title,
       url,
     })
-    if (entries.length >= limit)
-      break
   }
 
   return entries
