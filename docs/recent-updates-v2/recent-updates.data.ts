@@ -95,7 +95,7 @@ function getRecentUpdates(options: Options = {}): RecentUpdateEntry[] {
       || filePath.split('/').pop()!.replace(/\.md$/, '') // file name
     let page = filePath.replace(`${root ? `${root}/` : ''}`, '')
     page = globalSiteConfig.rewrites.map[page] || page
-    const url = `/${page.replace(/(index)?\.md$/, '')}`
+    const url = `${globalSiteConfig.site.base}${page.replace(/(index)?\.md$/, '')}`
     entries.push({
       lastUpdated: date,
       status,
