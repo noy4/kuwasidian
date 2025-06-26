@@ -1,3 +1,7 @@
+
+srcExclude
+notes sort by modified
+
 sort quest
 roadmap
 quest detail
