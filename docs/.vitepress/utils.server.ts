@@ -29,6 +29,7 @@ export function autoSidebar(
     useFolderLinkFromIndexFile: true,
     sortMenusByName: true,
     sortMenusOrderByDescending: desc,
+    collapsed: true,
     excludePattern: defaultExcludePattern,
     ...opts,
   }) as DefaultTheme.SidebarItem[]
