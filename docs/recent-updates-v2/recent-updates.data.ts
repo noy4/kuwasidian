@@ -45,12 +45,25 @@ function getRecentUpdates(options: Options = {}): RecentUpdateEntry[] {
     { encoding: 'utf-8' },
   ).trim()
 
+  // Example git log output:
+  /*
+    2025-06-26 11:34:32 +0900
+    M       docs/.vitepress/config.mts
+    A       docs/.vitepress/markdown.ts
+    M       docs/.vitepress/utils.ts
+
+    2025-06-26 11:09:41 +0900
+    M       docs/+memo.archive.md
+    M       docs/+memo.md
+  */
+
   const allCommits: Commit[] = []
   const targetCommits: Commit[] = []
   const entries: RecentUpdateEntry[] = []
   const seen = new Set<string>()
   const logChunks = log.split('\n\n')
 
+  // Parse git log output
   for (const chunk of logChunks) {
     const [date, ...fileLines] = chunk.split('\n')
     for (const line of fileLines) {
