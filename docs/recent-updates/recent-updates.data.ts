@@ -5,27 +5,24 @@ import { minimatch } from 'minimatch'
 import { defineLoader } from 'vitepress'
 import { globalSiteConfig } from '../.vitepress/utils.server'
 
-export interface RecentUpdateEntry {
-  lastUpdated: string
-  status: string
-  filePath: string
-  title: string
-  url: string
-}
-
 interface Options {
   root?: string
   pattern?: string
   limit?: number
 }
 
-interface Commit {
+interface FileRecord {
   date: string
   status: string
   filePath: string
 }
 
-declare const data: RecentUpdateEntry[]
+type RecentUpdate = FileRecord & {
+  title: string
+  url: string
+}
+
+declare const data: RecentUpdate[]
 export { data }
 
 export default defineLoader({
@@ -34,7 +31,7 @@ export default defineLoader({
   },
 })
 
-function getRecentUpdates(options: Options = {}): RecentUpdateEntry[] {
+function getRecentUpdates(options: Options = {}): RecentUpdate[] {
   const {
     root = process.argv[3],
     pattern = `${root ? `${root}/` : ''}**/*.md`,
@@ -58,9 +55,9 @@ function getRecentUpdates(options: Options = {}): RecentUpdateEntry[] {
     M       docs/+memo.md
   */
 
-  const allCommits: Commit[] = []
-  const targetCommits: Commit[] = []
-  const entries: RecentUpdateEntry[] = []
+  const allFiles: FileRecord[] = []
+  const targetFiles: FileRecord[] = []
+  const recentUpdates: RecentUpdate[] = []
   const seen = new Set<string>()
   const logChunks = log.split('\n\n')
 
@@ -69,24 +66,24 @@ function getRecentUpdates(options: Options = {}): RecentUpdateEntry[] {
     const [date, ...fileLines] = chunk.split('\n')
     for (const line of fileLines) {
       const [status, filePath] = line.split('\t')
-      allCommits.push({ date, status, filePath })
+      allFiles.push({ date, status, filePath })
     }
   }
 
   // Filter commits (pattern, unique file, limit)
-  for (const { date, status, filePath } of allCommits) {
+  for (const { date, status, filePath } of allFiles) {
     if (!minimatch(filePath, pattern))
       continue
     if (seen.has(filePath))
       continue
     seen.add(filePath)
-    targetCommits.push({ date, status, filePath })
-    if (entries.length >= limit)
+    targetFiles.push({ date, status, filePath })
+    if (recentUpdates.length >= limit)
       break
   }
 
   // convert to entries
-  for (const { date, status, filePath } of targetCommits) {
+  for (const { date, status, filePath } of targetFiles) {
     let content = ''
     if (fs.existsSync(filePath)) {
       content = fs.readFileSync(filePath, 'utf-8')
@@ -96,8 +93,8 @@ function getRecentUpdates(options: Options = {}): RecentUpdateEntry[] {
     let page = filePath.replace(`${root ? `${root}/` : ''}`, '')
     page = globalSiteConfig.rewrites.map[page] || page
     const url = `${globalSiteConfig.site.base}${page.replace(/(index)?\.md$/, '')}`
-    entries.push({
-      lastUpdated: date,
+    recentUpdates.push({
+      date,
       status,
       filePath,
       title,
@@ -105,5 +102,5 @@ function getRecentUpdates(options: Options = {}): RecentUpdateEntry[] {
     })
   }
 
-  return entries
+  return recentUpdates
 }

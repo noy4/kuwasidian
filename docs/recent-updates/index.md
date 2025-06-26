@@ -12,10 +12,10 @@ import { formatDate } from '../.vitepress/utils'
     <Badge v-else-if="file.status === 'D'" type="danger" text="Deleted" />
     <Badge v-else-if="file.status.startsWith('R')" type="warning" text="Renamed" />
     <span
-      v-if="index === 0 || formatDate(file.lastUpdated) !== formatDate(fileUpdates[index - 1].lastUpdated)"
+      v-if="index === 0 || formatDate(file.date) !== formatDate(fileUpdates[index - 1].date)"
       class="text-xs text-[var(--vp-c-text-2)]"
     >
-      - {{ formatDate(file.lastUpdated) }}
+      - {{ formatDate(file.date) }}
     </span>
   </li>
 </ul>
