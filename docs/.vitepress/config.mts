@@ -111,7 +111,7 @@ function sidebar(): DefaultTheme.Sidebar {
     { text: '📝 メモ', link: '/' },
     { text: '⚔️ クエスト', link: '/quests/' },
     { text: '📄 記事一覧', link: '/posts/' },
-    { text: '🔄 最近の更新', link: '/recent-updates' },
+    { text: '🔄 最近の更新', link: '/recent-updates/' },
     {
       items: [
         { text: '💭 生存理念', link: '/me/philosophy-of-life' },
