@@ -1,4 +1,4 @@
-import type { HeadConfig, MarkdownEnv, MarkdownRenderer } from 'vitepress'
+import type { MarkdownEnv, MarkdownRenderer } from 'vitepress'
 import path from 'node:path'
 
 // [title · Issue #4629 · vuejs/vitepress](https://github.com/vuejs/vitepress/issues/4629)
@@ -43,14 +43,11 @@ export function descriptionExtractor(md: MarkdownRenderer) {
   md.render = function (src: string, env?: MarkdownEnv) {
     const html = originalRender(src, env)
 
-    if (!env || env.frontmatter?.description)
+    if (!env)
       return html
 
-    const description = extractDescription(env.content)
     env.frontmatter ||= {}
-    ;((env.frontmatter.head ??= []) as HeadConfig[]).push(
-      ['meta', { name: 'description', content: description }],
-    )
+    env.frontmatter.description ||= extractDescription(env.content)
 
     return html
   }
