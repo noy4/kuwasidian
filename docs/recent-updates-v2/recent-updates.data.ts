@@ -78,7 +78,9 @@ function getRecentUpdates(options: Options = {}): RecentUpdateEntry[] {
     }
     const title = content.match(/^#\s+(.*)/m)?.[1] // h1 in content
       || filePath.split('/').pop()!.replace(/\.md$/, '') // file name
-    const url = `/${filePath.replace(/\.md$/, '').replace(/^docs\//, '')}`
+    const url = `/${filePath
+      .replace(`${root ? `${root}/` : ''}`, '')
+      .replace(/(index)?\.md$/, '')}`
     entries.push({
       lastUpdated: date,
       status,
