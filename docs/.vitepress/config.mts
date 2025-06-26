@@ -108,7 +108,7 @@ export default withMermaid(defineConfig({
 
 function sidebar(): DefaultTheme.Sidebar {
   return [
-    { text: '📝 メモ', link: '/' },
+    { text: '✏️ メモ', link: '/' },
     { text: '⚔️ クエスト', link: '/quests/' },
     { text: '📄 記事一覧', link: '/posts/' },
     { text: '🔄 最近の更新', link: '/recent-updates/' },
@@ -140,7 +140,7 @@ function sidebar(): DefaultTheme.Sidebar {
           items: autoSidebar('archives'),
         },
         {
-          text: '📋 その他メモ',
+          text: '🗒️ その他メモ',
           collapsed: true,
           items: autoSidebar('notes'),
         },
