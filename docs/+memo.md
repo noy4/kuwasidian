@@ -21,9 +21,6 @@ cline parallel
 - [fix(sidebar): folder/index should be active with base option by noy4 · Pull Request #4811 · vuejs/vitepress](https://github.com/vuejs/vitepress/pull/4811)
 - [3D GIS ビジュアライゼーションツール](https://chatgpt.com/c/685622fc-ded4-8013-a3b0-bc1cfc6a3df3)
 
-description in markdown-it
-
-
 
 
 
