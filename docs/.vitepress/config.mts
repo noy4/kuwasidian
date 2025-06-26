@@ -59,9 +59,7 @@ export default withMermaid(defineConfig({
       ? homeTitle
       : `${pageData.title} | ${siteTitle}`
 
-    const pageUrl = home
-      ? siteUrl
-      : `${siteUrl}${pageData.relativePath.replace(/\.md$/, '')}`
+    const pageUrl = `${siteUrl}${pageData.relativePath.replace(/(index)?\.md$/, '')}`
 
     ;((pageData.frontmatter.head ??= []) as HeadConfig[]).push(
       ['meta', { property: 'og:title', content: pageData.title }],
