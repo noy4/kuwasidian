@@ -13,7 +13,6 @@
   },
   "dependencies": {
     "@nolebase/markdown-it-bi-directional-links": "^2.17.1",
-    "@nolebase/vitepress-plugin-index": "^2.17.1",
     "dedent": "^1.6.0",
     "gray-matter": "^4.0.3",
     "minimatch": "^10.0.3",
