@@ -34,19 +34,19 @@ export function autoSidebar(
   }) as DefaultTheme.SidebarItem[]
 
   return addBase(generated, `/${folderPath}/`)
-}
 
-type SidebarItem = DefaultTheme.SidebarItem
+  type SidebarItem = DefaultTheme.SidebarItem
 
-function addBase(items: SidebarItem[], base: string): SidebarItem[] {
-  return [...items].map((_item) => {
-    const item = { ..._item }
-    if (item.link)
-      item.link = base + item.link
-    if (item.items)
-      item.items = addBase(item.items, base)
-    return item
-  })
+  function addBase(items: SidebarItem[], base: string): SidebarItem[] {
+    return [...items].map((_item) => {
+      const item = { ..._item }
+      if (item.link)
+        item.link = base + item.link
+      if (item.items)
+        item.items = addBase(item.items, base)
+      return item
+    })
+  }
 }
 
 // [How to interpolate markdown into markdown? #2921](https://github.com/vuejs/vitepress/discussions/2921#discussioncomment-7023589)
