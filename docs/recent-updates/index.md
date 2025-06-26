@@ -5,7 +5,7 @@ import { data as fileUpdates } from './recent-updates.data.ts'
 import { formatDate } from '../.vitepress/utils'
 </script>
 
-<ul>
+<ol>
   <li v-for="(file, index) in fileUpdates" :key="file.filePath">
     <a :href="file.link">{{ file.title }}</a>
     <!--  -->
@@ -20,4 +20,4 @@ import { formatDate } from '../.vitepress/utils'
       - {{ formatDate(file.date) }}
     </span>
   </li>
-</ul>
+</ol>
