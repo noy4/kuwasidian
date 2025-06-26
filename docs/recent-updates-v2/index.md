@@ -10,7 +10,11 @@ import { formatDate } from '../.vitepress/utils'
     <a :href="file.url">{{ file.title }}</a>
     <Badge v-if="file.status === 'A'" type="tip" text="Added" />
     <Badge v-else-if="file.status === 'D'" type="danger" text="Deleted" />
-    <span v-if="index === 0 || formatDate(file.lastUpdated) !== formatDate(fileUpdates[index - 1].lastUpdated)">
+    <Badge v-else-if="file.status.startsWith('R')" type="warning" text="Renamed" />
+    <span
+      v-if="index === 0 || formatDate(file.lastUpdated) !== formatDate(fileUpdates[index - 1].lastUpdated)"
+      class="text-xs text-[var(--vp-c-text-2)]"
+    >
       - {{ formatDate(file.lastUpdated) }}
     </span>
   </li>
