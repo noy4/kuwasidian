@@ -1,6 +1,8 @@
 import { execSync } from 'node:child_process'
 import fs from 'node:fs'
+import { basename } from 'node:path'
 import process from 'node:process'
+import matter from 'gray-matter'
 import { minimatch } from 'minimatch'
 import { defineLoader } from 'vitepress'
 import { globalSiteConfig } from '../.vitepress/utils.server'
@@ -65,8 +67,12 @@ function getRecentUpdates(options: Options = {}): RecentUpdate[] {
   for (const chunk of logChunks) {
     const [date, ...fileLines] = chunk.split('\n')
     for (const line of fileLines) {
-      const [status, filePath] = line.split('\t')
-      allFiles.push({ date, status, filePath })
+      const [status, filePath, renamedFilePath] = line.split('\t')
+      allFiles.push({
+        date,
+        status,
+        filePath: renamedFilePath || filePath,
+      })
     }
   }
 
@@ -84,12 +90,13 @@ function getRecentUpdates(options: Options = {}): RecentUpdate[] {
 
   // convert to entries
   for (const { date, status, filePath } of targetFiles) {
-    let content = ''
-    if (fs.existsSync(filePath)) {
-      content = fs.readFileSync(filePath, 'utf-8')
-    }
-    const title = content.match(/^#\s+(.*)/m)?.[1] // h1 in content
-      || filePath.split('/').pop()!.replace(/\.md$/, '') // file name
+    let markdown = ''
+    if (fs.existsSync(filePath))
+      markdown = fs.readFileSync(filePath, 'utf-8')
+    const { content, data } = matter(markdown)
+    const title = data.title // title in frontmatter
+      || content.match(/^#\s+(.*)/m)?.[1] // h1 in content
+      || basename(filePath).replace(/\.md$/, '') // file name
     let page = filePath.replace(`${root ? `${root}/` : ''}`, '')
     page = globalSiteConfig.rewrites.map[page] || page
     const url = `${globalSiteConfig.site.base}${page.replace(/(index)?\.md$/, '')}`
