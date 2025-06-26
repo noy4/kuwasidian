@@ -1,6 +1,4 @@
 import type { DefaultTheme, HeadConfig } from 'vitepress'
-import fs from 'node:fs'
-import path from 'node:path'
 import process from 'node:process'
 import { BiDirectionalLinks } from '@nolebase/markdown-it-bi-directional-links'
 import { presetWind4 } from 'unocss'
@@ -8,7 +6,7 @@ import UnoCSS from 'unocss/vite'
 import Inspect from 'vite-plugin-inspect'
 import { defineConfig } from 'vitepress'
 import { withMermaid } from 'vitepress-plugin-mermaid'
-import { extractDescription } from './utils'
+import { descriptionExtractor } from './markdown'
 import { autoSidebar, defaultExcludePattern, insertH1IfMissing } from './utils.server'
 
 const siteBase = '/kuwasidian/'
@@ -40,7 +38,8 @@ export default withMermaid(defineConfig({
     breaks: true,
     config(md) {
       md.use(insertH1IfMissing())
-      md.use(BiDirectionalLinks({ dir: 'docs' }))
+      md.use(BiDirectionalLinks({ dir: process.argv[3] }))
+      md.use(descriptionExtractor)
     },
   },
 
@@ -55,16 +54,10 @@ export default withMermaid(defineConfig({
   // markdown to html → transformPageData
   transformPageData(pageData) {
     const home = pageData.relativePath === 'index.md'
-    const fullPath = path.resolve(process.argv[3], pageData.filePath)
 
     pageData.title = home
       ? homeTitle
       : `${pageData.title} | ${siteTitle}`
-
-    if (fs.existsSync(fullPath)) {
-      const content = fs.readFileSync(fullPath, 'utf-8')
-      pageData.description ||= extractDescription(content)
-    }
 
     const pageUrl = home
       ? siteUrl
