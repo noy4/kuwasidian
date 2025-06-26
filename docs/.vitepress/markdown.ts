@@ -1,7 +1,25 @@
-import type { MarkdownEnv, MarkdownRenderer } from 'vitepress'
+import type { MarkdownEnv, MarkdownRenderer, SiteConfig } from 'vitepress'
 import path from 'node:path'
 import process from 'node:process'
 import { BiDirectionalLinks } from '@nolebase/markdown-it-bi-directional-links'
+import { createMarkdownRenderer } from 'vitepress'
+
+// [How to interpolate markdown into markdown? #2921](https://github.com/vuejs/vitepress/discussions/2921#discussioncomment-7023589)
+const config: SiteConfig = (globalThis as any).VITEPRESS_CONFIG
+
+export function createMd() {
+  return createMarkdownRenderer(
+    config.srcDir,
+    {
+      ...config.markdown,
+      config(md) {
+        md.use(wikilinks())
+      },
+    },
+    config.site.base,
+    config.logger,
+  )
+}
 
 // [title · Issue #4629 · vuejs/vitepress](https://github.com/vuejs/vitepress/issues/4629)
 export function insertH1IfMissing() {

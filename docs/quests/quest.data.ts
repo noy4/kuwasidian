@@ -1,6 +1,6 @@
 import type { Quest, Section, Status } from './quest-parser'
 import { createContentLoader } from 'vitepress'
-import { createMd } from '../.vitepress/utils.server'
+import { createMd } from '../.vitepress/markdown'
 import { parseQuestData } from './quest-parser'
 
 export type { Quest, Section, Status }

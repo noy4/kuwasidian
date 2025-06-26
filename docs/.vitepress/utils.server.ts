@@ -1,10 +1,8 @@
-import type { DefaultTheme, SiteConfig } from 'vitepress'
+import type { DefaultTheme } from 'vitepress'
 import type { VitePressSidebarOptions } from 'vitepress-sidebar/types'
 import fs from 'node:fs'
 import process from 'node:process'
-import { createMarkdownRenderer } from 'vitepress'
 import { generateSidebar } from 'vitepress-sidebar'
-import { wikilinks } from './markdown'
 
 function parseGitignore(filePath = '.gitignore') {
   return fs.readFileSync(filePath, 'utf-8')
@@ -48,21 +46,4 @@ export function autoSidebar(
       return item
     })
   }
-}
-
-// [How to interpolate markdown into markdown? #2921](https://github.com/vuejs/vitepress/discussions/2921#discussioncomment-7023589)
-const config: SiteConfig = (globalThis as any).VITEPRESS_CONFIG
-
-export function createMd() {
-  return createMarkdownRenderer(
-    config.srcDir,
-    {
-      ...config.markdown,
-      config(md) {
-        md.use(wikilinks())
-      },
-    },
-    config.site.base,
-    config.logger,
-  )
 }
