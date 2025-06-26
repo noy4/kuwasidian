@@ -1,5 +1,6 @@
 import { execSync } from 'node:child_process'
 import process from 'node:process'
+import { minimatch } from 'minimatch'
 import { defineLoader } from 'vitepress'
 
 export interface RecentUpdateEntry {
@@ -48,17 +49,17 @@ function getRecentUpdates(options: Options = {}): RecentUpdateEntry[] {
   const seen = new Set<string>()
   const chunks = log.split('\n\n')
 
-  for (const chunk of chunks) {
+  chunks.forEach((chunk) => {
     const [date, ...fileLines] = chunk.split('\n')
     fileLines.forEach((line) => {
       const [status, filePath] = line.split('\t')
       commits.push({ date, status, filePath })
     })
-  }
+  })
 
   for (const { date, status, filePath } of commits) {
-    // if (pattern && !filePath.includes(pattern.replace(/\*\*\/\*\.md$/, '').replace(/\*/, '')))
-    //   continue
+    if (!minimatch(filePath, pattern))
+      continue
     if (seen.has(filePath))
       continue
     seen.add(filePath)
