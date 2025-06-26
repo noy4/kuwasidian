@@ -1,12 +1,10 @@
 import type { DefaultTheme, HeadConfig } from 'vitepress'
-import process from 'node:process'
-import { BiDirectionalLinks } from '@nolebase/markdown-it-bi-directional-links'
 import { presetWind4 } from 'unocss'
 import UnoCSS from 'unocss/vite'
 import Inspect from 'vite-plugin-inspect'
 import { defineConfig } from 'vitepress'
 import { withMermaid } from 'vitepress-plugin-mermaid'
-import { descriptionExtractor, insertH1IfMissing } from './markdown'
+import { descriptionExtractor, insertH1IfMissing, wikilinks } from './markdown'
 import { autoSidebar, defaultExcludePattern } from './utils.server'
 
 const siteBase = '/kuwasidian/'
@@ -58,8 +56,8 @@ export default withMermaid(defineConfig({
     breaks: true,
     config(md) {
       md.use(insertH1IfMissing())
-      md.use(BiDirectionalLinks({ dir: process.argv[3] }))
-      md.use(descriptionExtractor)
+      md.use(descriptionExtractor())
+      md.use(wikilinks())
     },
   },
 

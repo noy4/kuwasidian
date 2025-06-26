@@ -4,6 +4,7 @@ import fs from 'node:fs'
 import process from 'node:process'
 import { createMarkdownRenderer } from 'vitepress'
 import { generateSidebar } from 'vitepress-sidebar'
+import { wikilinks } from './markdown'
 
 function parseGitignore(filePath = '.gitignore') {
   return fs.readFileSync(filePath, 'utf-8')
@@ -54,7 +55,12 @@ const config: SiteConfig = (globalThis as any).VITEPRESS_CONFIG
 export function createMd() {
   return createMarkdownRenderer(
     config.srcDir,
-    config.markdown,
+    {
+      ...config.markdown,
+      config(md) {
+        md.use(wikilinks())
+      },
+    },
     config.site.base,
     config.logger,
   )

@@ -1,5 +1,7 @@
 import type { MarkdownEnv, MarkdownRenderer } from 'vitepress'
 import path from 'node:path'
+import process from 'node:process'
+import { BiDirectionalLinks } from '@nolebase/markdown-it-bi-directional-links'
 
 // [title · Issue #4629 · vuejs/vitepress](https://github.com/vuejs/vitepress/issues/4629)
 export function insertH1IfMissing() {
@@ -37,31 +39,39 @@ export function insertH1IfMissing() {
   }
 }
 
-export function descriptionExtractor(md: MarkdownRenderer) {
-  const originalRender = md.render.bind(md)
+export function descriptionExtractor() {
+  return (md: MarkdownRenderer) => {
+    const originalRender = md.render.bind(md)
 
-  md.render = function (src: string, env?: MarkdownEnv) {
-    const html = originalRender(src, env)
+    md.render = function (src: string, env?: MarkdownEnv) {
+      const html = originalRender(src, env)
 
-    if (!env)
+      if (!env)
+        return html
+
+      env.frontmatter ||= {}
+      env.frontmatter.description ||= extractDescription(env.content)
+
       return html
+    }
 
-    env.frontmatter ||= {}
-    env.frontmatter.description ||= extractDescription(env.content)
+    function extractDescription(src = '') {
+      let content = src
+        .replace(/<[^>]*>/g, '') // Remove HTML tags
+        .replace(/\s+/g, ' ')
+        .trim()
 
-    return html
+      content = content.length > 120
+        ? `${content.slice(0, 120)}...`
+        : content
+
+      return content
+    }
   }
+}
 
-  function extractDescription(src = '') {
-    let content = src
-      .replace(/<[^>]*>/g, '') // Remove HTML tags
-      .replace(/\s+/g, ' ')
-      .trim()
-
-    content = content.length > 120
-      ? `${content.slice(0, 120)}...`
-      : content
-
-    return content
-  }
+export function wikilinks() {
+  return BiDirectionalLinks({
+    dir: process.argv[3],
+  })
 }
