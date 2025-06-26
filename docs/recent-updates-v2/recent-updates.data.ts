@@ -1,4 +1,5 @@
 import { execSync } from 'node:child_process'
+import fs from 'node:fs'
 import process from 'node:process'
 import { minimatch } from 'minimatch'
 import { defineLoader } from 'vitepress'
@@ -71,7 +72,12 @@ function getRecentUpdates(options: Options = {}): RecentUpdateEntry[] {
   }
 
   for (const { date, status, filePath } of targetCommits) {
-    const title = filePath.split('/').pop()?.replace(/\.md$/, '') || filePath
+    let content = ''
+    if (fs.existsSync(filePath)) {
+      content = fs.readFileSync(filePath, 'utf-8')
+    }
+    const title = content.match(/^#\s+(.*)/m)?.[1] // h1 in content
+      || filePath.split('/').pop()!.replace(/\.md$/, '') // file name
     const url = `/${filePath.replace(/\.md$/, '').replace(/^docs\//, '')}`
     entries.push({
       lastUpdated: date,
