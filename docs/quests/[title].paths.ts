@@ -33,6 +33,9 @@ export default {
     const status = statusMap.get(pageData.params?.title)
     if (status === 'cleared') {
       pageData.title = `（Cleared）${pageData.title}`
+      pageData.frontmatter.head.push(
+        ['meta', { property: 'og:title', content: pageData.title }],
+      )
     }
   },
 } as RouteModule
