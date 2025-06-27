@@ -1,3 +1,12 @@
+
+git worktree
+cline parallel
+
+太陽光発電
+
+
+- [fix(sidebar): folder/index should be active with base option by noy4 · Pull Request #4811 · vuejs/vitepress](https://github.com/vuejs/vitepress/pull/4811)
+
 [[桑ホーム　電気]]
 
 📝 🗒️ ✏️ 📓 📔 🖊️  🪶
