@@ -5,6 +5,7 @@ import Inspect from 'vite-plugin-inspect'
 import { defineConfig } from 'vitepress'
 import { withMermaid } from 'vitepress-plugin-mermaid'
 import { descriptionExtractor, insertH1IfMissing, wikilinks } from './markdown'
+import { Router } from './router'
 import { autoSidebar } from './sidebar'
 import { defaultExcludePattern } from './utils.server'
 
@@ -89,11 +90,17 @@ export default withMermaid(defineConfig({
 
   // markdown to html → transformPageData
   transformPageData(pageData) {
-    // set title
-    const home = pageData.relativePath === 'index.md'
-    pageData.title = home
-      ? homeTitle
-      : `${pageData.title} | ${siteTitle}`
+    const router = new Router()
+      .add('index.md', () => {
+        pageData.title = homeTitle
+      })
+      .add('quests/!(index)*', () => {
+        pageData.title = `${pageData.title} | ${siteTitle} Quests`
+      })
+      .add('**', () => {
+        pageData.title = `${pageData.title} | ${siteTitle}`
+      })
+    router.handle(pageData.relativePath)
 
     // set ogp
     const pageUrl = `${siteUrl}${pageData.relativePath.replace(/(index)?\.md$/, '')}`
