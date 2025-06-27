@@ -1,4 +1,4 @@
-import type { DefaultTheme, HeadConfig } from 'vitepress'
+import type { DefaultTheme } from 'vitepress'
 import { presetWind4 } from 'unocss'
 import UnoCSS from 'unocss/vite'
 import Inspect from 'vite-plugin-inspect'
@@ -96,6 +96,13 @@ export default withMermaid(defineConfig({
       })
       .add('quests/!(index)*', () => {
         pageData.title = `${pageData.title} | ${siteTitle} Quests`
+
+        if (pageData.frontmatter.status === 'cleared') {
+          pageData.title = `（Cleared）${pageData.title}`
+          ;(pageData.frontmatter.head ??= []).push(
+            ['meta', { property: 'og:title', content: pageData.title }],
+          )
+        }
       })
       .add('**', () => {
         pageData.title = `${pageData.title} | ${siteTitle}`
@@ -105,7 +112,7 @@ export default withMermaid(defineConfig({
     // set ogp
     const pageUrl = `${siteUrl}${pageData.relativePath.replace(/(index)?\.md$/, '')}`
 
-    ;((pageData.frontmatter.head ??= []) as HeadConfig[]).push(
+    ;(pageData.frontmatter.head ??= []).push(
       ['meta', { property: 'og:title', content: pageData.title }],
       ['meta', { property: 'og:description', content: pageData.description }],
       ['meta', { property: 'og:url', content: pageUrl }],

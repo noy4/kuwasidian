@@ -1,10 +1,10 @@
-import type { RouteModule } from 'vitepress'
 import type { Quest } from './quest-parser'
 import fs from 'node:fs'
 import dedent from 'dedent'
+import { defineRoutes } from 'vitepress'
 import { parseQuestData } from './quest-parser'
 
-export default {
+export default defineRoutes({
   async paths() {
     const src = fs.readFileSync('docs/quests/quest.data.md', 'utf-8')
     const questData = parseQuestData(src)
@@ -26,15 +26,7 @@ export default {
 
     return paths
   },
-  transformPageData(pageData) {
-    if (pageData.frontmatter.status === 'cleared') {
-      pageData.title = `（Cleared）${pageData.title}`
-      pageData.frontmatter.head.push(
-        ['meta', { property: 'og:title', content: pageData.title }],
-      )
-    }
-  },
-} as RouteModule
+})
 
 function generateQuestMarkdown(quest: Quest) {
   return dedent`
