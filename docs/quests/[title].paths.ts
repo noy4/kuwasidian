@@ -1,10 +1,8 @@
 import type { RouteModule } from 'vitepress'
-import type { Quest, Status } from './quest-parser'
+import type { Quest } from './quest-parser'
 import fs from 'node:fs'
 import dedent from 'dedent'
 import { parseQuestData } from './quest-parser'
-
-const statusMap = new Map<string, Status | undefined>()
 
 export default {
   async paths() {
@@ -23,15 +21,13 @@ export default {
           params: { title: quest.title },
           content,
         })
-        statusMap.set(quest.title, quest.status)
       }
     }
 
     return paths
   },
   transformPageData(pageData) {
-    const status = statusMap.get(pageData.params?.title)
-    if (status === 'cleared') {
+    if (pageData.frontmatter.status === 'cleared') {
       pageData.title = `（Cleared）${pageData.title}`
       pageData.frontmatter.head.push(
         ['meta', { property: 'og:title', content: pageData.title }],
@@ -42,7 +38,10 @@ export default {
 
 function generateQuestMarkdown(quest: Quest) {
   return dedent`
-    # ${quest.icon || '📝'} ${quest.title}
+    ---
+    status: ${quest.status}
+    ---
+    # ${quest.icon} ${quest.title}
 
     ${quest.target}
 
