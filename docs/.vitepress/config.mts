@@ -56,6 +56,9 @@ export default withMermaid(defineConfig({
 
   markdown: {
     breaks: true,
+    image: {
+      lazyLoading: true,
+    },
     config(md) {
       md.use(insertH1IfMissing())
       md.use(descriptionExtractor())
