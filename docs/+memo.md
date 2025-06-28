@@ -9,9 +9,6 @@
 3d printer
 脳波センサー
 
-gemini CLI
-quest creared icon
-kuwasidian quest
 
 ドロピザ巡礼
 どんなレポートにする？

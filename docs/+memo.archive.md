@@ -1,4 +1,7 @@
 
+gemini CLI
+quest creared icon
+kuwasidian quest
 git worktree
 cline parallel
 
