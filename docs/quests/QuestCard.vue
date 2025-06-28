@@ -20,7 +20,7 @@ defineProps<{ quest: Quest }>()
 
       <img
         v-if="quest.status === 'cleared'"
-        src="./quest_cleared.png"
+        src="/quest_cleared.png"
         class="absolute top-0 right-0 w-30"
       >
 

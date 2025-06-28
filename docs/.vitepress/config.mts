@@ -104,6 +104,7 @@ export default withMermaid(defineConfig({
           pageData.title = `（Cleared）${pageData.title}`
           ;(pageData.frontmatter.head ??= []).push(
             ['meta', { property: 'og:title', content: pageData.title }],
+            ['meta', { property: 'og:image', content: `${siteUrl}quest_cleared.png` }],
           )
         }
       })

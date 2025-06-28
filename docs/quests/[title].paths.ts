@@ -38,7 +38,7 @@ function generateQuestMarkdown(quest: Quest) {
     ${quest.target}
 
     ${quest.status === 'cleared'
-        ? '<img src="./quest_cleared.png" class="absolute top-0 right-0 w-30" >'
+        ? '<img src="/quest_cleared.png" class="absolute top-0 right-0 w-30" >'
         : ''
     }
 
