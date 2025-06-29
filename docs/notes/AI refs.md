@@ -57,6 +57,7 @@ mcp:
 [Glama](https://glama.ai/chat)
 [Smithery - Model Context Protocol Registry](https://smithery.ai/)
 [MCP Servers](https://mcp.so/)
+- [Sunwood-ai-labs/mcp-voicevox](https://github.com/Sunwood-ai-labs/mcp-voicevox/tree/main)
 
 
 nsfw:
