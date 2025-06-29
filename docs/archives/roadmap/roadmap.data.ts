@@ -23,40 +23,34 @@ export default createContentLoader('archives/roadmap/roadmap.data.md', {
   },
 })
 
+// ## で始まるセクションで分割
+// 1行目：タイトル
+// 2行目以降：説明
 export function parseRoadmapData(
   src: string,
   render?: (content: string) => string,
 ): RoadmapSection[] {
-  // ## で始まるセクションで分割
-  // 1行目：タイトル
-  // 2行目以降：説明
-
   const sections = src
     .split(/(?=^##)/m)
     .map((section) => {
       let sectionTitle = ''
       let sectionContent = section
 
+      // split section into title and content
       if (section.startsWith('## ')) {
-        const chunks = section.split(/\n/)
+        const chunks = section.split('\n')
         sectionTitle = chunks[0].replace(/^## /, '')
         sectionContent = chunks.slice(1).join('\n')
       }
 
       const items = sectionContent
         .trim()
-        .split(/\n\n\n/)
-        .map(v => v.trim())
+        .split(/\n{3,}/)
         .map((item) => {
-          const itemLines = item.split(/\n/)
-          const [title, ..._description] = itemLines
-          const rawDescription = _description.join('\n')
-          const description = render?.(rawDescription) || rawDescription
-
-          return {
-            title,
-            description,
-          }
+          const [title, ..._description] = item.split('\n')
+          let description = _description.join('\n')
+          description = render?.(description) || description
+          return { title, description }
         })
 
       return {
