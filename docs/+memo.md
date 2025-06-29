@@ -6,8 +6,12 @@
 [[piano]]
 
 [[3d map]]
-3d printer
-脳波センサー
+ずんだAI
+[[3d printer]]
+
+
+
+
 
 
 ドロピザ巡礼

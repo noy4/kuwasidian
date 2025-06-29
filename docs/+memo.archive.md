@@ -1,3 +1,5 @@
+脳波センサー
+quest id hash
 
 gemini CLI
 quest creared icon
