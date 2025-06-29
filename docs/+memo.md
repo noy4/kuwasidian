@@ -6,7 +6,6 @@
 [[piano]]
 
 [[3d map]]
-ずんだAI
 [[3d printer]]
 
 

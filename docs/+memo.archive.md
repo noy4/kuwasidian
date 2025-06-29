@@ -1,3 +1,7 @@
+ずんだAI
+
+
+- [Sunwood-ai-labs/mcp-voicevox](https://github.com/Sunwood-ai-labs/mcp-voicevox/tree/main)
 - [XユーザーのMaki@Sunwood AI Labs.さん: 「🎙️ 改造したVoiceVox MCP サーバーが Roo-CodeのMCPのマーケットプレイスに承認されそうかも？？！！！ ワクワク！！！ https://t.co/iE51EZM1jk」 / X](https://x.com/hAru_mAki_ch/status/1939150213857583488)
 
 

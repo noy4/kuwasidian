@@ -45,7 +45,6 @@ export default withMermaid(defineConfig({
     sidebar: sidebar(),
     socialLinks: [
       { icon: 'x', link: 'https://x.com/kuwappi_' },
-      { icon: 'instagram', link: 'https://www.instagram.com/instakuwamu/' },
       { icon: 'youtube', link: 'https://www.youtube.com/@kuwamu' },
       { icon: 'github', link: 'https://github.com/noy4/kuwasidian' },
     ],
@@ -128,7 +127,6 @@ function sidebar(): DefaultTheme.Sidebar {
   return [
     { text: '✏️ メモ', link: '/' },
     { text: '⚔️ クエスト', link: '/quests/' },
-    { text: '📄 記事一覧', link: '/posts/' },
     { text: '🔄 最近の更新', link: '/recent-updates/' },
     {
       items: [
@@ -147,6 +145,7 @@ function sidebar(): DefaultTheme.Sidebar {
     },
     {
       items: [
+        { text: '📄 記事一覧', link: '/posts/' },
         {
           text: '🚀 プロジェクト',
           collapsed: true,
