@@ -1,6 +1,7 @@
 export interface Section {
   title: string
   items: Quest[]
+  dateHeader?: boolean
 }
 
 export interface Quest {
@@ -9,9 +10,10 @@ export interface Quest {
   objective?: string
   description?: string
   status?: string
+  date?: string
 }
 
-const statusMap = {
+const statusMap: Record<number, string> = {
   0: 'active',
   1: 'open',
   2: 'cleared',
@@ -30,12 +32,15 @@ export function parseQuestData(
     .map((section, sectionIdx) => {
       let sectionTitle = ''
       let sectionContent = section
+      const status = statusMap[sectionIdx]
 
       if (section.startsWith('## ')) {
         const chunks = section.split('\n')
         sectionTitle = chunks[0].replace(/^## /, '')
         sectionContent = chunks.slice(1).join('\n')
       }
+
+      const dateHeader = status === 'cleared'
 
       const items = sectionContent
         .trim()
@@ -45,6 +50,14 @@ export function parseQuestData(
           const [icon, ...firstLineRest] = firstLine.split(/\s+/)
           const title = firstLineRest.join(' ')
           let description = rest.join('\n')
+          let date: string | undefined
+          if (dateHeader) {
+            const date_regex = /^\d{4}\/\d{2}\/\d{2}/m
+            description = description.replace(date_regex, (match) => {
+              date = match
+              return ''
+            })
+          }
           description = render?.(description) || description
 
           return {
@@ -52,13 +65,15 @@ export function parseQuestData(
             title,
             objective,
             description,
-            status: statusMap[sectionIdx],
+            status,
+            date,
           }
         })
 
       return {
         title: sectionTitle,
         items,
+        dateHeader,
       }
     })
 

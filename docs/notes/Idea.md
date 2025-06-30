@@ -10,3 +10,8 @@ curation of curation sites
 [[explanation]]
 
 考える人の言語化
+
+淘汰に問うた
+ロンリー論理
+Shitty嫉妬
+理不尽婦人
