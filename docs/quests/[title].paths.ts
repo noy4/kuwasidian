@@ -38,7 +38,12 @@ function generateQuestMarkdown(quest: Quest) {
     ${quest.objective}
 
     ${quest.status === 'cleared'
-        ? '<img src="/quest_cleared.png" class="absolute top-0 right-0 w-30" >'
+        ? dedent`
+            <script setup>
+            import QuestClearedIcon from './QuestClearedIcon.vue'
+            </script>
+            <QuestClearedIcon date="${quest.date}" />
+          `
         : ''
     }
 

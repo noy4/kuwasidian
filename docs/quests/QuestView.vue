@@ -2,6 +2,7 @@
 import dayjs from 'dayjs'
 import { withBase } from 'vitepress'
 import { data as sections } from './quest.data'
+import QuestClearedIcon from './QuestClearedIcon.vue'
 </script>
 
 <template>
@@ -48,13 +49,7 @@ import { data as sections } from './quest.data'
               {{ quest.objective }}
             </div>
             <template v-if="quest.status === 'cleared'">
-              <img
-                src="/quest_cleared.png"
-                class="absolute top-0 right-0 w-30"
-              >
-              <span class="absolute top-24 right-0 font-serif">
-                {{ dayjs(quest.date).format('YYYY.M.D') }}
-              </span>
+              <QuestClearedIcon :date="quest.date" />
             </template>
             <Badge
               v-if="quest.status === 'active'"
