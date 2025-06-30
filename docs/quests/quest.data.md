@@ -99,7 +99,7 @@ YouTube 字幕の Anki カード化
 
 🌄 冒険の幕開け
 Kuwasidian Quest の公開
-[Quest | Kuwasidian](https://noy4.github.io/kuwasidian/quest.html)
+[Quest | Kuwasidian](https://noy4.github.io/kuwasidian/quests/)
 2025/03/30
 
 
