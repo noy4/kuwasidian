@@ -47,11 +47,15 @@ import { data as sections } from './quest.data'
             <div class="text-[var(--vp-c-text-2)] text-xs mt-1">
               {{ quest.objective }}
             </div>
-            <img
-              v-if="quest.status === 'cleared'"
-              src="/quest_cleared.png"
-              class="absolute top-0 right-0 w-30"
-            >
+            <template v-if="quest.status === 'cleared'">
+              <img
+                src="/quest_cleared.png"
+                class="absolute top-0 right-0 w-30"
+              >
+              <span class="absolute top-24 right-0 font-serif">
+                {{ dayjs(quest.date).format('YYYY.M.D') }}
+              </span>
+            </template>
             <Badge
               v-if="quest.status === 'active'"
               text="進行中"
