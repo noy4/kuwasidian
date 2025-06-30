@@ -6,29 +6,25 @@ export interface Section {
 export interface Quest {
   icon?: string
   title: string
-  target?: string
+  objective?: string
   description?: string
-  status?: Status
+  status?: string
 }
-
-export type Status = 'active' | 'cleared'
 
 const statusMap = {
   0: 'active',
-  1: undefined,
+  1: 'open',
   2: 'cleared',
-} as const
-
-export interface ParseOptions {
-  render?: (content: string) => string
 }
 
-export function parseQuestData(src: string, options: ParseOptions = {}): Section[] {
-  // ## で始まるセクションで分割
-  // 1行目：タイトル
-  // 2行目：ターゲット
-  // 3行目以降：説明
-
+// ## で始まるセクションで分割
+// 1行目：タイトル
+// 2行目：目的
+// 3行目以降：説明
+export function parseQuestData(
+  src: string,
+  render?: (content: string) => string,
+): Section[] {
   const sections = src
     .split(/(?=^##)/m)
     .map((section, sectionIdx) => {
@@ -36,27 +32,25 @@ export function parseQuestData(src: string, options: ParseOptions = {}): Section
       let sectionContent = section
 
       if (section.startsWith('## ')) {
-        const chunks = section.split(/\n/)
+        const chunks = section.split('\n')
         sectionTitle = chunks[0].replace(/^## /, '')
         sectionContent = chunks.slice(1).join('\n')
       }
 
       const items = sectionContent
         .trim()
-        .split(/\n\n\n/)
-        .map(v => v.trim())
+        .split(/\n{3,}/)
         .map((item) => {
-          const itemLines = item.split(/\n/)
-          const [_title, target, ..._description] = itemLines
-          const [icon, ...__title] = _title.split(/\s+/)
-          const title = __title.join(' ')
-          const rawDescription = _description.join('\n')
-          const description = options.render?.(rawDescription) || rawDescription
+          const [firstLine, objective, ...rest] = item.split('\n')
+          const [icon, ...firstLineRest] = firstLine.split(/\s+/)
+          const title = firstLineRest.join(' ')
+          let description = rest.join('\n')
+          description = render?.(description) || description
 
           return {
             icon,
             title,
-            target,
+            objective,
             description,
             status: statusMap[sectionIdx],
           }

@@ -15,7 +15,7 @@ defineProps<{ quest: Quest }>()
         {{ quest.title }}
       </a>
       <div class="text-[var(--vp-c-text-2)] text-xs mt-1">
-        {{ quest.target }}
+        {{ quest.objective }}
       </div>
 
       <img

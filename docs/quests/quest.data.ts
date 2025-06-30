@@ -1,9 +1,9 @@
-import type { Quest, Section, Status } from './quest-parser'
+import type { Quest, Section } from './quest-parser'
 import { createContentLoader } from 'vitepress'
 import { createMd } from '../.vitepress/markdown'
 import { parseQuestData } from './quest-parser'
 
-export type { Quest, Section, Status }
+export type { Quest, Section }
 
 declare const data: Section[]
 export { data }
@@ -13,8 +13,6 @@ export default createContentLoader('quests/quest.data.md', {
   async transform(data) {
     const src = data[0]?.src || ''
     const md = await createMd()
-    return parseQuestData(src, {
-      render: md.render,
-    })
+    return parseQuestData(src, md.render)
   },
 })
