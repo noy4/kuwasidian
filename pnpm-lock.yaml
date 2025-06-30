@@ -11,6 +11,9 @@ importers:
       '@nolebase/markdown-it-bi-directional-links':
         specifier: ^2.17.1
         version: 2.17.1(markdown-it@14.1.0)
+      dayjs:
+        specifier: ^1.11.13
+        version: 1.11.13
       dedent:
         specifier: ^1.6.0
         version: 1.6.0

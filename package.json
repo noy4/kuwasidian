@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@nolebase/markdown-it-bi-directional-links": "^2.17.1",
+    "dayjs": "^1.11.13",
     "dedent": "^1.6.0",
     "gray-matter": "^4.0.3",
     "minimatch": "^10.0.3",

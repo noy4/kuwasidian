@@ -82,4 +82,4 @@ Obsidian のメモを公開
 桑日記のアーカイブ化
 WordPress ブログのデータを移行
 [伝説のサイト「桑日記」が復活しました。 | 桑日記](https://noy4.github.io/wordpress-archive/posts/kuwanikki-again.html)
-2025-02-27
+2025/02/27
