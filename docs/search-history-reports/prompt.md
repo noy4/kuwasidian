@@ -23,7 +23,7 @@ sqlite3 ./tmp/History "SELECT COUNT(DISTINCT u.title) ..."
 ## パラメータ（のちに指示がなければこれらの値で実行）
 - browser: ブラウザの種類（例: Chrome, Brave）= Chrome
 - month: 対象月（例: 2023-10）= 先月
-- output: 出力先 = ./browser-history-reports/
+- output: 出力先 = ./search-history-reports/
 - exclude: 履歴取得後、レポートにまとめる際に言及しないサイト・ジャンル。
 - annual: 年次レポートを作成するかどうか = false
 
