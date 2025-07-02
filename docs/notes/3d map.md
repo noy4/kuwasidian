@@ -1,4 +1,5 @@
 
+
 [Cesium: The Platform for 3D Geospatial](https://cesium.com/)
 [Bentley Systems](https://ja.bentley.com/)
 GIS
@@ -14,6 +15,8 @@ GIS
 - [View Forecast and Real-Time Weather Data with AllisonHouse Maps – Cesium](https://cesium.com/blog/2017/04/27/allisonhouse/)
 - [GraphCastの気象予測データをCesiumで可視化してみた #CS立体図 - Qiita](https://qiita.com/wayama_ryousuke/items/f1823be92153e9b2928b)
 - [QGISで気象データを扱ってみよう！〜気象庁GPVデータをQGISで可視化〜 - QGIS LAB by MIERUNE](https://qgis.mierune.co.jp/posts/usecase_jma-weather-data)
+- [Visualizing geospatial data with pydeck and Earth Engine | by Google Earth | Google Earth and Earth Engine | Medium](https://medium.com/google-earth/visualizing-geospatial-data-with-pydeck-and-earth-engine-8f77ce1fc8bb)
+
 
 
 [一般社団法人OSGeo日本支部(OSGeo.JP)](https://www.osgeo.jp/about)
