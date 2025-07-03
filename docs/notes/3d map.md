@@ -16,6 +16,9 @@ GIS
 - [GraphCastの気象予測データをCesiumで可視化してみた #CS立体図 - Qiita](https://qiita.com/wayama_ryousuke/items/f1823be92153e9b2928b)
 - [QGISで気象データを扱ってみよう！〜気象庁GPVデータをQGISで可視化〜 - QGIS LAB by MIERUNE](https://qgis.mierune.co.jp/posts/usecase_jma-weather-data)
 - [Visualizing geospatial data with pydeck and Earth Engine | by Google Earth | Google Earth and Earth Engine | Medium](https://medium.com/google-earth/visualizing-geospatial-data-with-pydeck-and-earth-engine-8f77ce1fc8bb)
+- [3D GIS ビジュアライゼーションツール](https://chatgpt.com/c/685622fc-ded4-8013-a3b0-bc1cfc6a3df3)
+- [Deep Biosphere](https://portal.gplates.org/portal/biosphere/)
+
 
 
 
@@ -43,6 +46,7 @@ GeoGuessr
 [GeoFS - Free Online Flight Simulator](https://www.geo-fs.com/)
 
 マイクラ　リアル対応
+
 お金の流れシミュレーション
 神話マッピング
 人工島、埋立地マッピング
