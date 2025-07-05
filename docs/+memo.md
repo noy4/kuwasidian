@@ -9,7 +9,6 @@
 [[3d printer]]
 
 
-くわmove
 
 
 ドロピザ巡礼
