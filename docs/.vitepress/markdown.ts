@@ -25,8 +25,13 @@ export function insertH1IfMissing() {
     md.core.ruler.after('block', 'insert_h1_if_missing', (state) => {
       const { env, tokens, Token } = state
 
-      if (env.h1Handled || !env.path)
+      if (
+        env.h1Handled
+        || !env.path
+        || (env.frontmatter.layout && env.frontmatter.layout !== 'doc')
+      ) {
         return
+      }
 
       const fileName = path.basename(env.path, path.extname(env.path))
 
