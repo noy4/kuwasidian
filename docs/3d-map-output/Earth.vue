@@ -1,17 +1,7 @@
-<script setup>
+<script setup lang="ts">
 import * as Cesium from 'cesium'
-import { onMounted, onUnmounted, ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import 'cesium/Build/Cesium/Widgets/widgets.css'
-
-// リアクティブデータ
-const cesiumContainer = ref(null)
-const currentCity = ref('広島')
-const currentCityIndex = ref(0)
-const isAutoMoving = ref(false)
-
-// Cesium関連の変数
-let viewer = null
-let autoMoveInterval = null
 
 // 都市データ
 const cities = [
@@ -23,11 +13,12 @@ const cities = [
   { name: '福岡', longitude: 130.4017, latitude: 33.5904, height: 50000 },
 ]
 
-// 指定された都市に移動する関数
-function flyToCity(cityIndex) {
-  if (!viewer)
-    return
+let viewer: Cesium.Viewer
+let currentCityIndex = 0
+const currentCity = ref(cities[0].name)
 
+// 指定された都市に移動する関数
+function flyToCity(cityIndex: number) {
   const city = cities[cityIndex]
   currentCity.value = city.name
 
@@ -37,27 +28,13 @@ function flyToCity(cityIndex) {
       heading: Cesium.Math.toRadians(0.0),
       pitch: Cesium.Math.toRadians(-45.0),
     },
-    duration: 3.0,
   })
 }
 
 // 次の都市に移動
 function moveToNextCity() {
-  currentCityIndex.value = (currentCityIndex.value + 1) % cities.length
-  flyToCity(currentCityIndex.value)
-}
-
-// 自動移動のトグル
-function toggleAutoMove() {
-  if (autoMoveInterval) {
-    clearInterval(autoMoveInterval)
-    autoMoveInterval = null
-    isAutoMoving.value = false
-  }
-  else {
-    autoMoveInterval = setInterval(moveToNextCity, 5000) // 5秒ごとに移動
-    isAutoMoving.value = true
-  }
+  currentCityIndex = (currentCityIndex + 1) % cities.length
+  flyToCity(currentCityIndex)
 }
 
 // Cesiumビューアーの初期化
@@ -66,7 +43,7 @@ async function initializeCesium() {
   Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxNjdlYzkxZC1kNTM5LTRlNWItYmM4MC1hMGUyY2VmZDFlYWQiLCJpZCI6MzEyMTEyLCJpYXQiOjE3NDk4OTEyMDF9.Krcs6xfVbGbfMuxORnoMA4iF-mLfcvudZfLy9EBAwGQ'
 
   // Cesium Viewerの初期化
-  viewer = new Cesium.Viewer(cesiumContainer.value, {
+  viewer = new Cesium.Viewer('cesiumContainer', {
     terrain: Cesium.Terrain.fromWorldTerrain(),
     timeline: false,
     animation: false,
@@ -87,21 +64,11 @@ async function initializeCesium() {
 onMounted(async () => {
   await initializeCesium()
 })
-
-// アンマウント時の処理
-onUnmounted(() => {
-  if (autoMoveInterval) {
-    clearInterval(autoMoveInterval)
-  }
-  if (viewer) {
-    viewer.destroy()
-  }
-})
 </script>
 
 <template>
   <div class="relative w-full h-screen">
-    <div id="cesiumContainer" ref="cesiumContainer" class="w-full h-full" />
+    <div id="cesiumContainer" class="w-full h-full" />
 
     <!-- 都市情報表示 -->
     <div class="absolute top-2.5 left-2.5 bg-black bg-opacity-70 text-white px-2.5 py-2.5 rounded text-lg font-sans z-1000">
@@ -115,17 +82,6 @@ onUnmounted(() => {
         @click="moveToNextCity"
       >
         次の都市へ
-      </button>
-
-      <button
-        class="px-3.75 py-2.5 text-sm text-white border-none rounded cursor-pointer transition-colors duration-300" :class="[
-          isAutoMoving
-            ? 'bg-red-500 hover:bg-red-600'
-            : 'bg-blue-500 hover:bg-blue-600',
-        ]"
-        @click="toggleAutoMove"
-      >
-        {{ isAutoMoving ? '自動移動停止' : '自動移動開始' }}
       </button>
     </div>
   </div>
