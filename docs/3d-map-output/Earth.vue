@@ -78,41 +78,31 @@ function toggleAutoMove() {
 
 // Cesiumビューアーの初期化
 async function initializeCesium() {
-  try {
-    // Cesium Ion access token
-    window.Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxNjdlYzkxZC1kNTM5LTRlNWItYmM4MC1hMGUyY2VmZDFlYWQiLCJpZCI6MzEyMTEyLCJpYXQiOjE3NDk4OTEyMDF9.Krcs6xfVbGbfMuxORnoMA4iF-mLfcvudZfLy9EBAwGQ'
+  // Cesium Ion access token
+  window.Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxNjdlYzkxZC1kNTM5LTRlNWItYmM4MC1hMGUyY2VmZDFlYWQiLCJpZCI6MzEyMTEyLCJpYXQiOjE3NDk4OTEyMDF9.Krcs6xfVbGbfMuxORnoMA4iF-mLfcvudZfLy9EBAwGQ'
 
-    // Cesium Viewerの初期化
-    viewer = new window.Cesium.Viewer(cesiumContainer.value, {
-      terrain: window.Cesium.Terrain.fromWorldTerrain(),
-      timeline: false,
-      animation: false,
-      baseLayerPicker: false,
-      sceneModePicker: false,
-      navigationHelpButton: false,
-    })
+  // Cesium Viewerの初期化
+  viewer = new window.Cesium.Viewer(cesiumContainer.value, {
+    terrain: window.Cesium.Terrain.fromWorldTerrain(),
+    timeline: false,
+    animation: false,
+    baseLayerPicker: false,
+    sceneModePicker: false,
+    navigationHelpButton: false,
+  })
 
-    // 3D建物レイヤーを追加
-    const buildingTileset = await window.Cesium.createOsmBuildingsAsync()
-    viewer.scene.primitives.add(buildingTileset)
+  // 3D建物レイヤーを追加
+  const buildingTileset = await window.Cesium.createOsmBuildingsAsync()
+  viewer.scene.primitives.add(buildingTileset)
 
-    // 初期位置を広島に設定
-    flyToCity(0)
-  }
-  catch (error) {
-    console.error('Cesium initialization failed:', error)
-  }
+  // 初期位置を広島に設定
+  flyToCity(0)
 }
 
 // マウント時の処理
 onMounted(async () => {
-  try {
-    await loadCesium()
-    await initializeCesium()
-  }
-  catch (error) {
-    console.error('Failed to load Cesium:', error)
-  }
+  await loadCesium()
+  await initializeCesium()
 })
 
 // アンマウント時の処理
@@ -128,7 +118,6 @@ onUnmounted(() => {
 
 <template>
   <div class="relative w-full h-screen">
-    <!-- Cesium 3D地球コンテナ -->
     <div id="cesiumContainer" ref="cesiumContainer" class="w-full h-full" />
 
     <!-- 都市情報表示 -->
