@@ -1,6 +1,7 @@
 <script setup lang="ts">
+import { $ref } from '@vue-macros/reactivity-transform/macros'
 import * as Cesium from 'cesium'
-import { onMounted, ref } from 'vue'
+import { onMounted } from 'vue'
 import 'cesium/Build/Cesium/Widgets/widgets.css'
 
 const cities = [
@@ -14,7 +15,7 @@ const cities = [
 
 let viewer: Cesium.Viewer
 let currentCityIndex = 0
-const currentCity = ref(cities[0].name)
+let currentCity = $ref(cities[0].name)
 
 async function initializeCesium() {
   Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxNjdlYzkxZC1kNTM5LTRlNWItYmM4MC1hMGUyY2VmZDFlYWQiLCJpZCI6MzEyMTEyLCJpYXQiOjE3NDk4OTEyMDF9.Krcs6xfVbGbfMuxORnoMA4iF-mLfcvudZfLy9EBAwGQ'
@@ -44,7 +45,7 @@ function flyToCity(
   },
 ) {
   const city = cities[cityIndex]
-  currentCity.value = city.name
+  currentCity = city.name
 
   viewer.camera.flyTo({
     destination: Cesium.Cartesian3.fromDegrees(
