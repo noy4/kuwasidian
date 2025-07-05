@@ -3,19 +3,38 @@ import * as Cesium from 'cesium'
 import { onMounted, ref } from 'vue'
 import 'cesium/Build/Cesium/Widgets/widgets.css'
 
-// 都市データ
 const cities = [
-  { name: '広島', longitude: 132.4596, latitude: 34.3853, height: 50000 },
-  { name: '埼玉', longitude: 139.6489, latitude: 35.8617, height: 50000 },
-  { name: '島根', longitude: 133.0505, latitude: 35.4723, height: 50000 },
-  { name: '大阪', longitude: 135.5023, latitude: 34.6937, height: 50000 },
-  { name: '愛媛', longitude: 132.7657, latitude: 33.8416, height: 50000 },
-  { name: '福岡', longitude: 130.4017, latitude: 33.5904, height: 50000 },
+  { name: '広島', longitude: 132.4596, latitude: 34.3853, height: 5000 },
+  { name: '埼玉', longitude: 139.6489, latitude: 35.8617, height: 5000 },
+  { name: '島根', longitude: 133.0505, latitude: 35.4723, height: 5000 },
+  { name: '大阪', longitude: 135.5023, latitude: 34.6937, height: 5000 },
+  { name: '愛媛', longitude: 132.7657, latitude: 33.8416, height: 5000 },
+  { name: '福岡', longitude: 130.4017, latitude: 33.5904, height: 5000 },
 ]
 
 let viewer: Cesium.Viewer
 let currentCityIndex = 0
 const currentCity = ref(cities[0].name)
+
+async function initializeCesium() {
+  Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxNjdlYzkxZC1kNTM5LTRlNWItYmM4MC1hMGUyY2VmZDFlYWQiLCJpZCI6MzEyMTEyLCJpYXQiOjE3NDk4OTEyMDF9.Krcs6xfVbGbfMuxORnoMA4iF-mLfcvudZfLy9EBAwGQ'
+
+  viewer = new Cesium.Viewer('cesiumContainer', {
+    terrain: Cesium.Terrain.fromWorldTerrain(),
+    timeline: false,
+    animation: false,
+    baseLayerPicker: false,
+    sceneModePicker: false,
+    navigationHelpButton: false,
+  })
+
+  // 3D建物レイヤーを追加
+  const buildingTileset = await Cesium.createOsmBuildingsAsync()
+  viewer.scene.primitives.add(buildingTileset)
+
+  // 初期位置を広島に設定
+  flyToCity(0, { duration: 0 })
+}
 
 // 指定された都市に移動する関数
 function flyToCity(
@@ -47,30 +66,6 @@ function moveToNextCity() {
   flyToCity(currentCityIndex)
 }
 
-// Cesiumビューアーの初期化
-async function initializeCesium() {
-  // Cesium Ion access token
-  Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxNjdlYzkxZC1kNTM5LTRlNWItYmM4MC1hMGUyY2VmZDFlYWQiLCJpZCI6MzEyMTEyLCJpYXQiOjE3NDk4OTEyMDF9.Krcs6xfVbGbfMuxORnoMA4iF-mLfcvudZfLy9EBAwGQ'
-
-  // Cesium Viewerの初期化
-  viewer = new Cesium.Viewer('cesiumContainer', {
-    terrain: Cesium.Terrain.fromWorldTerrain(),
-    timeline: false,
-    animation: false,
-    baseLayerPicker: false,
-    sceneModePicker: false,
-    navigationHelpButton: false,
-  })
-
-  // 3D建物レイヤーを追加
-  const buildingTileset = await Cesium.createOsmBuildingsAsync()
-  viewer.scene.primitives.add(buildingTileset)
-
-  // 初期位置を広島に設定
-  flyToCity(0, { duration: 0 })
-}
-
-// マウント時の処理
 onMounted(async () => {
   await initializeCesium()
 })
