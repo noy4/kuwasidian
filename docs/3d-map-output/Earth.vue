@@ -18,16 +18,26 @@ let currentCityIndex = 0
 const currentCity = ref(cities[0].name)
 
 // 指定された都市に移動する関数
-function flyToCity(cityIndex: number) {
+function flyToCity(
+  cityIndex: number,
+  options?: {
+    duration?: number
+  },
+) {
   const city = cities[cityIndex]
   currentCity.value = city.name
 
   viewer.camera.flyTo({
-    destination: Cesium.Cartesian3.fromDegrees(city.longitude, city.latitude, city.height),
+    destination: Cesium.Cartesian3.fromDegrees(
+      city.longitude,
+      city.latitude,
+      city.height,
+    ),
     orientation: {
       heading: Cesium.Math.toRadians(0.0),
       pitch: Cesium.Math.toRadians(-45.0),
     },
+    ...options,
   })
 }
 
@@ -57,7 +67,7 @@ async function initializeCesium() {
   viewer.scene.primitives.add(buildingTileset)
 
   // 初期位置を広島に設定
-  flyToCity(0)
+  flyToCity(0, { duration: 0 })
 }
 
 // マウント時の処理
