@@ -1,23 +1,7 @@
 <script setup>
+import * as Cesium from 'cesium'
 import { onMounted, onUnmounted, ref } from 'vue'
-
-// Cesium CDN scripts
-function loadCesium() {
-  return new Promise((resolve, reject) => {
-    // CesiumJS CSS
-    const link = document.createElement('link')
-    link.rel = 'stylesheet'
-    link.href = 'https://cesium.com/downloads/cesiumjs/releases/1.131/Build/Cesium/Widgets/widgets.css'
-    document.head.appendChild(link)
-
-    // CesiumJS JavaScript
-    const script = document.createElement('script')
-    script.src = 'https://cesium.com/downloads/cesiumjs/releases/1.131/Build/Cesium/Cesium.js'
-    script.onload = resolve
-    script.onerror = reject
-    document.head.appendChild(script)
-  })
-}
+import 'cesium/Build/Cesium/Widgets/widgets.css'
 
 // リアクティブデータ
 const cesiumContainer = ref(null)
@@ -48,10 +32,10 @@ function flyToCity(cityIndex) {
   currentCity.value = city.name
 
   viewer.camera.flyTo({
-    destination: window.Cesium.Cartesian3.fromDegrees(city.longitude, city.latitude, city.height),
+    destination: Cesium.Cartesian3.fromDegrees(city.longitude, city.latitude, city.height),
     orientation: {
-      heading: window.Cesium.Math.toRadians(0.0),
-      pitch: window.Cesium.Math.toRadians(-45.0),
+      heading: Cesium.Math.toRadians(0.0),
+      pitch: Cesium.Math.toRadians(-45.0),
     },
     duration: 3.0,
   })
@@ -79,11 +63,11 @@ function toggleAutoMove() {
 // Cesiumビューアーの初期化
 async function initializeCesium() {
   // Cesium Ion access token
-  window.Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxNjdlYzkxZC1kNTM5LTRlNWItYmM4MC1hMGUyY2VmZDFlYWQiLCJpZCI6MzEyMTEyLCJpYXQiOjE3NDk4OTEyMDF9.Krcs6xfVbGbfMuxORnoMA4iF-mLfcvudZfLy9EBAwGQ'
+  Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxNjdlYzkxZC1kNTM5LTRlNWItYmM4MC1hMGUyY2VmZDFlYWQiLCJpZCI6MzEyMTEyLCJpYXQiOjE3NDk4OTEyMDF9.Krcs6xfVbGbfMuxORnoMA4iF-mLfcvudZfLy9EBAwGQ'
 
   // Cesium Viewerの初期化
-  viewer = new window.Cesium.Viewer(cesiumContainer.value, {
-    terrain: window.Cesium.Terrain.fromWorldTerrain(),
+  viewer = new Cesium.Viewer(cesiumContainer.value, {
+    terrain: Cesium.Terrain.fromWorldTerrain(),
     timeline: false,
     animation: false,
     baseLayerPicker: false,
@@ -92,7 +76,7 @@ async function initializeCesium() {
   })
 
   // 3D建物レイヤーを追加
-  const buildingTileset = await window.Cesium.createOsmBuildingsAsync()
+  const buildingTileset = await Cesium.createOsmBuildingsAsync()
   viewer.scene.primitives.add(buildingTileset)
 
   // 初期位置を広島に設定
@@ -101,7 +85,6 @@ async function initializeCesium() {
 
 // マウント時の処理
 onMounted(async () => {
-  await loadCesium()
   await initializeCesium()
 })
 
