@@ -15,6 +15,9 @@ const cities = [
 
 let viewer: Cesium.Viewer
 let currentCityIndex = $ref(0)
+let isRotating = $ref(false)
+let cameraRotationHandler: (() => void) | null = null
+const RANGE = 1000 // カメラの距離
 
 async function initializeCesium() {
   Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxNjdlYzkxZC1kNTM5LTRlNWItYmM4MC1hMGUyY2VmZDFlYWQiLCJpZCI6MzEyMTEyLCJpYXQiOjE3NDk4OTEyMDF9.Krcs6xfVbGbfMuxORnoMA4iF-mLfcvudZfLy9EBAwGQ'
@@ -54,9 +57,9 @@ function flyToCity(
 
   viewer.camera.flyToBoundingSphere(boundingSphere, {
     offset: new Cesium.HeadingPitchRange(
-      Cesium.Math.toRadians(0.0),
+      0,
       Cesium.Math.toRadians(-15.0),
-      1000,
+      RANGE,
     ),
     pitchAdjustHeight: 0,
     ...options,
@@ -72,6 +75,46 @@ function goToCity(index: number) {
 // 次の都市に移動
 function moveToNextCity() {
   goToCity((currentCityIndex + 1) % cities.length)
+}
+
+// カメラを都市中心の円周上で回転させる
+function startCameraRotation() {
+  if (isRotating)
+    return
+
+  isRotating = true
+  const city = cities[currentCityIndex]
+  const rotationSpeed = 0.005
+
+  const center = Cesium.Cartesian3.fromDegrees(city.longitude, city.latitude)
+  const transform = Cesium.Transforms.eastNorthUpToFixedFrame(center)
+  viewer.camera.lookAtTransform(
+    transform,
+    new Cesium.HeadingPitchRange(0, Cesium.Math.toRadians(-15), RANGE),
+  )
+  cameraRotationHandler = () => viewer.camera.rotateRight(rotationSpeed)
+  viewer.clock.onTick.addEventListener(cameraRotationHandler)
+}
+
+// カメラの回転を停止
+function stopCameraRotation() {
+  isRotating = false
+  if (cameraRotationHandler) {
+    viewer.clock.onTick.removeEventListener(cameraRotationHandler)
+    cameraRotationHandler = null
+  }
+  // カメラロック解除
+  viewer.camera.lookAtTransform(Cesium.Matrix4.IDENTITY)
+}
+
+// 回転の開始/停止を切り替え
+function toggleCameraRotation() {
+  if (isRotating) {
+    stopCameraRotation()
+  }
+  else {
+    startCameraRotation()
+  }
 }
 
 onMounted(async () => {
@@ -140,6 +183,14 @@ onMounted(async () => {
         @click="moveToNextCity"
       >
         次の都市へ
+      </button>
+
+      <button
+        class="btn mt-2 w-full"
+        :class="isRotating ? 'btn-error' : 'btn-success'"
+        @click="toggleCameraRotation"
+      >
+        {{ isRotating ? '回転停止' : '回転開始' }}
       </button>
     </div>
   </div>
