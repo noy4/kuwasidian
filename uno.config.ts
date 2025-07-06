@@ -1,5 +1,5 @@
 import { presetDaisy } from '@ameinhardt/unocss-preset-daisy'
-import { defineConfig, presetWind4, transformerVariantGroup } from 'unocss'
+import { defineConfig, presetIcons, presetWind4, transformerVariantGroup } from 'unocss'
 
 const daisy = await presetDaisy()
 const exclude = ['link', 'divider'] // conflict with VitePress styles
@@ -15,6 +15,9 @@ export default defineConfig({
       },
     }),
     daisy,
+    presetIcons({
+      cdn: 'https://esm.sh/',
+    }),
   ],
   transformers: [
     transformerVariantGroup(),

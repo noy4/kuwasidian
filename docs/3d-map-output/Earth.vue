@@ -14,8 +14,7 @@ const cities = [
 ]
 
 let viewer: Cesium.Viewer
-let currentCityIndex = 0
-let currentCity = $ref(cities[0].name)
+let currentCityIndex = $ref(0)
 
 async function initializeCesium() {
   Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxNjdlYzkxZC1kNTM5LTRlNWItYmM4MC1hMGUyY2VmZDFlYWQiLCJpZCI6MzEyMTEyLCJpYXQiOjE3NDk4OTEyMDF9.Krcs6xfVbGbfMuxORnoMA4iF-mLfcvudZfLy9EBAwGQ'
@@ -50,7 +49,6 @@ function flyToCity(
   },
 ) {
   const city = cities[cityIndex]
-  currentCity = city.name
 
   const boundingSphere = new Cesium.BoundingSphere(
     Cesium.Cartesian3.fromDegrees(city.longitude, city.latitude),
@@ -72,6 +70,12 @@ function moveToNextCity() {
   flyToCity(currentCityIndex)
 }
 
+// 指定された都市に移動（タイムライン用）
+function goToCity(index: number) {
+  currentCityIndex = index
+  flyToCity(index)
+}
+
 onMounted(async () => {
   await initializeCesium()
 })
@@ -81,15 +85,57 @@ onMounted(async () => {
   <div class="relative w-full h-screen">
     <div id="cesiumContainer" class="w-full h-full" />
 
-    <!-- 都市情報表示 -->
-    <div class="absolute top-2.5 left-2.5 bg-black bg-opacity-70 text-white px-2.5 py-2.5 rounded text-lg font-sans z-1000">
-      現在の場所: {{ currentCity }}
-    </div>
+    <!-- タイムライン -->
+    <div class="absolute left-2 top-2 bg-black/70 rounded p-3">
+      <h3 class="text-white text-lg font-bold mb-2">
+        くわ都市履歴
+      </h3>
 
-    <!-- コントロールパネル -->
-    <div class="absolute top-15 left-2.5 flex flex-col gap-2.5 z-1000">
+      <ul class="timeline timeline-vertical">
+        <li v-for="(city, index) in cities" :key="index">
+          <hr v-if="index !== 0" class="bg-gray-600">
+
+          <div
+            class="timeline-start text-sm"
+            :class="[
+              currentCityIndex === index
+                ? 'text-base-100'
+                : 'text-gray-400',
+            ]"
+          >
+            {{ city.year }}
+          </div>
+
+          <div class="timeline-middle">
+            <div
+              class="i-tabler-circle-check-filled w-4 h-4 cursor-pointer transition-colors duration-200"
+              :class="[
+                currentCityIndex === index
+                  ? 'bg-green-500'
+                  : 'bg-gray-400 hover:bg-gray-300',
+              ]"
+              @click="goToCity(index)"
+            />
+          </div>
+
+          <button
+            class="timeline-end text-sm transition-colors duration-200"
+            :class="[
+              currentCityIndex === index
+                ? 'text-white'
+                : 'text-gray-400 hover:text-gray-300',
+            ]"
+            @click="goToCity(index)"
+          >
+            {{ city.name }}
+          </button>
+
+          <hr v-if="index < cities.length - 1" class="bg-gray-600">
+        </li>
+      </ul>
+
       <button
-        class="px-3.75 py-2.5 text-sm bg-green-500 hover:bg-green-600 text-white border-none rounded cursor-pointer transition-colors duration-300"
+        class="btn btn-primary mt-4 w-full"
         @click="moveToNextCity"
       >
         次の都市へ
