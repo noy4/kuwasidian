@@ -58,6 +58,7 @@ function flyToCity(
       Cesium.Math.toRadians(-15.0),
       1000,
     ),
+    pitchAdjustHeight: 0,
     ...options,
   })
 }
