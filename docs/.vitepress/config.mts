@@ -1,6 +1,5 @@
 import type { DefaultTheme } from 'vitepress'
 import ReactivityTransform from '@vue-macros/reactivity-transform/vite'
-import { presetWind4 } from 'unocss'
 import UnoCSS from 'unocss/vite'
 import Inspect from 'vite-plugin-inspect'
 import { defineConfig } from 'vitepress'
@@ -81,15 +80,7 @@ export default withMermaid(defineConfig({
     plugins: [
       Inspect(),
       ReactivityTransform(),
-      UnoCSS({
-        presets: [
-          presetWind4({
-            preflights: {
-              reset: true,
-            },
-          }),
-        ],
-      }),
+      UnoCSS(),
       cesium(),
     ],
   },

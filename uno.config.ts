@@ -1,6 +1,21 @@
-import { defineConfig, transformerVariantGroup } from 'unocss'
+import { presetDaisy } from '@ameinhardt/unocss-preset-daisy'
+import { defineConfig, presetWind4, transformerVariantGroup } from 'unocss'
+
+const daisy = await presetDaisy()
+const exclude = ['link', 'divider'] // conflict with VitePress styles
+daisy.rules = daisy.rules!.filter(rule =>
+  !exclude.some(e => rule[0].toString().includes(e)),
+)
 
 export default defineConfig({
+  presets: [
+    presetWind4({
+      preflights: {
+        reset: true,
+      },
+    }),
+    daisy,
+  ],
   transformers: [
     transformerVariantGroup(),
   ],
