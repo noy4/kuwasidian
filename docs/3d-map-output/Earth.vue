@@ -5,12 +5,12 @@ import { onMounted } from 'vue'
 import 'cesium/Build/Cesium/Widgets/widgets.css'
 
 const cities = [
-  { name: '広島・福山', longitude: 133.3716565649084, latitude: 34.48419596526299 },
-  { name: '埼玉', longitude: 139.6489, latitude: 35.8617 },
-  { name: '島根・松江', longitude: 133.0722218545677, latitude: 35.475048093578025 },
-  { name: '大阪', longitude: 135.5023, latitude: 34.6937 },
-  { name: '愛媛', longitude: 132.7657, latitude: 33.8416 },
-  { name: '福岡', longitude: 130.4017, latitude: 33.5904 },
+  { year: 1998, name: '広島・福山', longitude: 133.3716565649084, latitude: 34.48419596526299 },
+  { year: 1998, name: '埼玉', longitude: 139.6489, latitude: 35.8617 },
+  { year: 2005, name: '島根・松江', longitude: 133.0722218545677, latitude: 35.475048093578025 },
+  { year: 2008, name: '大阪', longitude: 135.5023, latitude: 34.6937 },
+  { year: 2011, name: '愛媛', longitude: 132.7657, latitude: 33.8416 },
+  { year: 2017, name: '福岡', longitude: 130.4017, latitude: 33.5904 },
 ]
 
 let viewer: Cesium.Viewer
