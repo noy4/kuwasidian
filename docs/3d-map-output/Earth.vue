@@ -62,16 +62,15 @@ function flyToCity(
   })
 }
 
-// 次の都市に移動
-function moveToNextCity() {
-  currentCityIndex = (currentCityIndex + 1) % cities.length
-  flyToCity(currentCityIndex)
-}
-
-// 指定された都市に移動（タイムライン用）
+// 指定された都市に移動
 function goToCity(index: number) {
   currentCityIndex = index
   flyToCity(index)
+}
+
+// 次の都市に移動
+function moveToNextCity() {
+  goToCity((currentCityIndex + 1) % cities.length)
 }
 
 onMounted(async () => {
