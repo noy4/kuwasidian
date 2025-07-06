@@ -5,12 +5,12 @@ import { onMounted } from 'vue'
 import 'cesium/Build/Cesium/Widgets/widgets.css'
 
 const cities = [
-  { name: '広島', longitude: 132.4596, latitude: 34.3853, height: 5000 },
-  { name: '埼玉', longitude: 139.6489, latitude: 35.8617, height: 5000 },
-  { name: '島根', longitude: 133.0505, latitude: 35.4723, height: 5000 },
-  { name: '大阪', longitude: 135.5023, latitude: 34.6937, height: 5000 },
-  { name: '愛媛', longitude: 132.7657, latitude: 33.8416, height: 5000 },
-  { name: '福岡', longitude: 130.4017, latitude: 33.5904, height: 5000 },
+  { name: '広島', longitude: 132.4596, latitude: 34.3853 },
+  { name: '埼玉', longitude: 139.6489, latitude: 35.8617 },
+  { name: '島根', longitude: 133.0505, latitude: 35.4723 },
+  { name: '大阪', longitude: 135.5023, latitude: 34.6937 },
+  { name: '愛媛', longitude: 132.7657, latitude: 33.8416 },
+  { name: '福岡', longitude: 130.4017, latitude: 33.5904 },
 ]
 
 let viewer: Cesium.Viewer
@@ -47,16 +47,16 @@ function flyToCity(
   const city = cities[cityIndex]
   currentCity = city.name
 
-  viewer.camera.flyTo({
-    destination: Cesium.Cartesian3.fromDegrees(
-      city.longitude,
-      city.latitude,
-      city.height,
+  const boundingSphere = new Cesium.BoundingSphere(
+    Cesium.Cartesian3.fromDegrees(city.longitude, city.latitude),
+  )
+
+  viewer.camera.flyToBoundingSphere(boundingSphere, {
+    offset: new Cesium.HeadingPitchRange(
+      Cesium.Math.toRadians(0.0),
+      Cesium.Math.toRadians(-15.0),
+      3000,
     ),
-    orientation: {
-      heading: Cesium.Math.toRadians(0.0),
-      pitch: Cesium.Math.toRadians(-45.0),
-    },
     ...options,
   })
 }
