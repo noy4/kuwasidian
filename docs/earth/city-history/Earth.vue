@@ -76,6 +76,9 @@ function moveToNextCity() {
 
 onMounted(async () => {
   await initializeCesium()
+  return () => {
+    viewer.destroy()
+  }
 })
 </script>
 
