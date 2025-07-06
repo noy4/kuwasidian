@@ -20,7 +20,6 @@ async function initializeCesium() {
   Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxNjdlYzkxZC1kNTM5LTRlNWItYmM4MC1hMGUyY2VmZDFlYWQiLCJpZCI6MzEyMTEyLCJpYXQiOjE3NDk4OTEyMDF9.Krcs6xfVbGbfMuxORnoMA4iF-mLfcvudZfLy9EBAwGQ'
 
   viewer = new Cesium.Viewer('cesiumContainer', {
-    // terrain: Cesium.Terrain.fromWorldTerrain(),
     globe: false,
     geocoder: Cesium.IonGeocodeProviderType.GOOGLE,
     timeline: false,
@@ -28,16 +27,15 @@ async function initializeCesium() {
     baseLayerPicker: false,
     sceneModePicker: false,
     navigationHelpButton: false,
+    fullscreenButton: false,
+    homeButton: false,
   })
   viewer.scene.skyAtmosphere.show = true
 
-  // 3D建物レイヤーを追加
-  // const buildingTileset = await Cesium.createOsmBuildingsAsync()
-  // viewer.scene.primitives.add(buildingTileset)
+  // add Google Photorealistic 3D Tileset
   const tileset = await Cesium.createGooglePhotorealistic3DTileset()
   viewer.scene.primitives.add(tileset)
 
-  // 初期位置を広島に設定
   flyToCity(0, { duration: 0 })
 }
 
@@ -88,7 +86,7 @@ onMounted(async () => {
     <!-- タイムライン -->
     <div class="absolute left-2 top-2 bg-black/70 rounded p-3">
       <h3 class="text-white text-lg font-bold mb-2">
-        くわ都市履歴
+        都市履歴
       </h3>
 
       <ul class="timeline timeline-vertical">
