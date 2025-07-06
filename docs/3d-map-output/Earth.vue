@@ -5,7 +5,7 @@ import { onMounted } from 'vue'
 import 'cesium/Build/Cesium/Widgets/widgets.css'
 
 const cities = [
-  { name: '広島', longitude: 132.4596, latitude: 34.3853 },
+  { name: '広島/福山', longitude: 133.3716565649084, latitude: 34.48419596526299 },
   { name: '埼玉', longitude: 139.6489, latitude: 35.8617 },
   { name: '島根', longitude: 133.0505, latitude: 35.4723 },
   { name: '大阪', longitude: 135.5023, latitude: 34.6937 },
