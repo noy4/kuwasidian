@@ -1,4 +1,5 @@
 ---
+title: 都市履歴
 layout: page
 sidebar: false
 navbar: false

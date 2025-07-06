@@ -6,11 +6,11 @@ import 'cesium/Build/Cesium/Widgets/widgets.css'
 
 const cities = [
   { year: 1998, name: '広島・福山', longitude: 133.3716565649084, latitude: 34.48419596526299 },
-  { year: 1998, name: '埼玉', longitude: 139.6489, latitude: 35.8617 },
+  { year: 1998, name: '埼玉・大宮', longitude: 139.61808580282548, latitude: 35.94521419848559 },
   { year: 2005, name: '島根・松江', longitude: 133.0722218545677, latitude: 35.475048093578025 },
-  { year: 2008, name: '大阪', longitude: 135.5023, latitude: 34.6937 },
-  { year: 2011, name: '愛媛', longitude: 132.7657, latitude: 33.8416 },
-  { year: 2017, name: '福岡', longitude: 130.4017, latitude: 33.5904 },
+  { year: 2008, name: '大阪・枚方', longitude: 135.6670453481949, latitude: 34.85421820595925 },
+  { year: 2011, name: '愛媛・松山', longitude: 132.78038862244543, latitude: 33.84173274937172 },
+  { year: 2017, name: '福岡・大橋', longitude: 130.43078806765084, latitude: 33.561114860244885 },
 ]
 
 let viewer: Cesium.Viewer
@@ -58,7 +58,7 @@ function flyToCity(
     offset: new Cesium.HeadingPitchRange(
       Cesium.Math.toRadians(0.0),
       Cesium.Math.toRadians(-15.0),
-      3000,
+      1000,
     ),
     ...options,
   })
