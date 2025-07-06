@@ -45,12 +45,9 @@ async function initializeCesium() {
 // 指定された都市に移動する関数
 function flyToCity(
   cityIndex: number,
-  options?: {
-    duration?: number
-  },
+  options?: Parameters<Cesium.Camera['flyToBoundingSphere']>[1],
 ) {
   const city = cities[cityIndex]
-
   const boundingSphere = new Cesium.BoundingSphere(
     Cesium.Cartesian3.fromDegrees(city.longitude, city.latitude),
   )
@@ -68,8 +65,11 @@ function flyToCity(
 
 // 指定された都市に移動
 function goToCity(index: number) {
+  stopCameraRotation()
   currentCityIndex = index
-  flyToCity(index)
+  flyToCity(index, {
+    complete: () => startCameraRotation(),
+  })
 }
 
 // 次の都市に移動
@@ -119,7 +119,9 @@ function toggleCameraRotation() {
 
 onMounted(async () => {
   await initializeCesium()
+  startCameraRotation()
   return () => {
+    stopCameraRotation()
     viewer.destroy()
   }
 })
