@@ -1,5 +1,6 @@
 
 
+[フロントエンド、バックエンド、データベースが1つのCloudflare Workerに](https://blog.cloudflare.com/ja-jp/full-stack-development-on-cloudflare-workers/)
 
 2025/07/01
 ---
