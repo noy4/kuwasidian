@@ -20,7 +20,7 @@ defineProps<{
           class="timeline-start text-sm"
           :class="[
             earth.currentCityIndex.value === index
-              ? 'text-base-100'
+              ? 'text-white'
               : 'text-gray-400',
           ]"
         >
