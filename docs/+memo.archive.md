@@ -1,4 +1,6 @@
+[[domain]]
 
+[CloudflareでGitHub Pagesのカスタムドメインを設定する](https://zenn.dev/babarot/articles/github-pages-cloudflare-custom-domain)
 [Error while Deploying to Cloudflare's global network - Application Performance / Getting Started - Cloudflare Community](https://community.cloudflare.com/t/error-while-deploying-to-cloudflares-global-network/797224/5)
 [フロントエンド、バックエンド、データベースが1つのCloudflare Workerに](https://blog.cloudflare.com/ja-jp/full-stack-development-on-cloudflare-workers/)
 

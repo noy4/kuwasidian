@@ -9,7 +9,6 @@
 [[3d printer]]
 
 
-[[domain]]
 クエスト名
 
 
