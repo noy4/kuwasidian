@@ -1,5 +1,5 @@
 
-
+[Error while Deploying to Cloudflare's global network - Application Performance / Getting Started - Cloudflare Community](https://community.cloudflare.com/t/error-while-deploying-to-cloudflares-global-network/797224/5)
 [フロントエンド、バックエンド、データベースが1つのCloudflare Workerに](https://blog.cloudflare.com/ja-jp/full-stack-development-on-cloudflare-workers/)
 
 2025/07/01
