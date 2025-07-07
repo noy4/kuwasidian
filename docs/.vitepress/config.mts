@@ -12,10 +12,12 @@ import { autoSidebar } from './sidebar'
 import { defaultExcludePattern } from './utils.server'
 
 const prod = process.env.NODE_ENV === 'production'
-const siteBase = prod ? '/' : '/kuwasidian/'
+
 const siteTitle = 'Kuwasidian'
 const siteDescription = '彼の Obsidian（メモアプリ）のメモ'
-const siteUrl = `https://noy4.github.io${siteBase}`
+const siteOrigin = 'https://kuwasidian.com'
+const siteBase = prod ? '/' : '/kuwasidian/'
+const siteUrl = `${siteOrigin}${siteBase}`
 const siteImage = 'obsidian.png'
 const homeTitle = 'Kuwasidian（クワシディアン） | 彼の Obsidian（メモアプリ）のメモ'
 
