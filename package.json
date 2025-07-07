@@ -10,7 +10,7 @@
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
     "lint:fix": "eslint . --fix",
-    "deploy": "npx wrangler deploy"
+    "deploy": "wrangler deploy"
   },
   "dependencies": {
     "@ameinhardt/unocss-preset-daisy": "^1.1.8",
@@ -35,6 +35,7 @@
     "vite-plugin-static-copy": "^3.1.0",
     "vitepress": "2.0.0-alpha.5",
     "vitepress-plugin-mermaid": "^2.0.17",
-    "vitepress-sidebar": "^1.31.1"
+    "vitepress-sidebar": "^1.31.1",
+    "wrangler": "^4.23.0"
   }
 }
