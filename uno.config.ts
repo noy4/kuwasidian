@@ -2,7 +2,7 @@ import { presetDaisy } from '@ameinhardt/unocss-preset-daisy'
 import { defineConfig, presetIcons, presetWind4, transformerVariantGroup } from 'unocss'
 
 const daisy = await presetDaisy()
-const exclude = ['link', 'divider'] // conflict with VitePress styles
+const exclude = ['link', 'divider', 'menu'] // conflict with VitePress styles
 daisy.rules = daisy.rules!.filter(rule =>
   !exclude.some(e => rule[0].toString().includes(e)),
 )
