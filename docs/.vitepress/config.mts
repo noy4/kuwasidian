@@ -1,4 +1,5 @@
 import type { DefaultTheme } from 'vitepress'
+import process from 'node:process'
 import ReactivityTransform from '@vue-macros/reactivity-transform/vite'
 import UnoCSS from 'unocss/vite'
 import Inspect from 'vite-plugin-inspect'
@@ -10,7 +11,8 @@ import { Router } from './router'
 import { autoSidebar } from './sidebar'
 import { defaultExcludePattern } from './utils.server'
 
-const siteBase = '/kuwasidian/'
+const prod = process.env.NODE_ENV === 'production'
+const siteBase = prod ? '/' : '/kuwasidian/'
 const siteTitle = 'Kuwasidian'
 const siteDescription = '彼の Obsidian（メモアプリ）のメモ'
 const siteUrl = `https://noy4.github.io${siteBase}`
