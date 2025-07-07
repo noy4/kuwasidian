@@ -1,5 +1,5 @@
 
-[[3d-map-output/index]]
+[[earth/city-history/index|都市履歴]]
 
 ---
 
