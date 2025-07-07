@@ -1,0 +1,7 @@
+{
+  "name": "kuwasidian",
+  "compatibility_date": "2025-07-07",
+  "assets": {
+    "directory": "./docs/.vitepress/dist/"
+  }
+}
