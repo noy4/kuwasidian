@@ -41,7 +41,7 @@ function getRecentUpdates(options: Options = {}): RecentUpdate[] {
   } = options
 
   const log = execSync(
-    `git log --pretty="format:%cd" --name-status --date=iso -n ${limit * 3}`,
+    `git -c core.quotepath=false log --pretty="format:%cd" --name-status --date=iso -n ${limit * 3}`,
     { encoding: 'utf-8' },
   ).trim()
 
