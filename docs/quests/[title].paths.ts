@@ -32,6 +32,7 @@ function generateQuestMarkdown(quest: Quest) {
   return dedent`
     ---
     status: ${quest.status}
+    lastUpdated: false
     ---
     # ${quest.icon} ${quest.title}
 
