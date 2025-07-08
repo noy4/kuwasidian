@@ -1,4 +1,5 @@
 import * as Cesium from 'cesium'
+import { tinykeys } from 'tinykeys'
 import { ref } from 'vue'
 
 export interface City {
@@ -18,6 +19,7 @@ export class Earth {
   currentCityIndex = ref(0)
   isRotating = ref(false)
   cities: City[]
+  unsubKeys: (() => void) | null = null
 
   constructor(cities: City[]) {
     this.cities = cities
@@ -26,19 +28,20 @@ export class Earth {
   async mount() {
     await this.initialize()
     this.startCameraRotation()
-    window.addEventListener('keydown', this.handleSpaceKey)
+    this.unsubKeys = tinykeys(window, {
+      'Space': () => this.toggleCameraRotation(),
+      'Enter': () => this.goToNextCity(),
+      'ArrowRight': () => this.goToNextCity(),
+      'Shift+Enter': () => this.goToPrevCity(),
+      'ArrowLeft': () => this.goToPrevCity(),
+    })
   }
 
   destroy() {
     this.stopCameraRotation()
     this.viewer.destroy()
-    window.removeEventListener('keydown', this.handleSpaceKey)
-  }
-
-  handleSpaceKey = (e: KeyboardEvent) => {
-    if (e.code === 'Space') {
-      this.toggleCameraRotation()
-    }
+    this.unsubKeys?.()
+    this.unsubKeys = null
   }
 
   async initialize() {
@@ -80,6 +83,12 @@ export class Earth {
 
   goToNextCity() {
     return this.goToCity((this.currentCityIndex.value + 1) % this.cities.length)
+  }
+
+  goToPrevCity() {
+    const len = this.cities.length
+    const prev = (this.currentCityIndex.value - 1 + len) % len
+    return this.goToCity(prev)
   }
 
   async flyToCityView(
@@ -138,17 +147,12 @@ export class Earth {
       this.startCameraRotation()
   }
 
-  flyToAsync(
-    options: Parameters<Cesium.Camera['flyTo']>[0],
-  ): Promise<void> {
-    return flyToAsync(this.viewer, options)
+  flyToAsync(...args: Parameters<Cesium.Camera['flyTo']>) {
+    return flyToAsync(this.viewer, ...args)
   }
 
-  flyToBoundingSphereAsync(
-    boundingSphere: Cesium.BoundingSphere,
-    options?: Parameters<Cesium.Camera['flyToBoundingSphere']>[1],
-  ): Promise<void> {
-    return flyToBoundingSphereAsync(this.viewer, boundingSphere, options)
+  flyToBoundingSphereAsync(...args: Parameters<Cesium.Camera['flyToBoundingSphere']>) {
+    return flyToBoundingSphereAsync(this.viewer, ...args)
   }
 }
 

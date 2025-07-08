@@ -20,6 +20,7 @@
     "gray-matter": "^4.0.3",
     "minimatch": "^10.0.3",
     "three": "^0.177.0",
+    "tinykeys": "^3.0.0",
     "vue": "^3.5.16"
   },
   "devDependencies": {
