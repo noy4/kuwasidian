@@ -54,7 +54,7 @@ export class Earth {
       animation: false,
       baseLayerPicker: false,
       sceneModePicker: false,
-      navigationHelpButton: false,
+      // navigationHelpButton: false,
       fullscreenButton: false,
       homeButton: false,
     })

@@ -149,6 +149,7 @@ function sidebar(): DefaultTheme.Sidebar {
     {
       items: [
         { text: '📄 記事一覧', link: '/posts/' },
+        { text: '🌏 Earth', link: '/earth/' },
         {
           text: '🚀 プロジェクト',
           collapsed: true,
