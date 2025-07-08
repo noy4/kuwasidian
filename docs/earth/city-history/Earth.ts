@@ -11,6 +11,7 @@ export interface City {
 export class Earth {
   RANGE = 1000
   PITCH = Cesium.Math.toRadians(-15)
+  OFFSET = new Cesium.HeadingPitchRange(0, this.PITCH, this.RANGE)
 
   viewer!: Cesium.Viewer
   cameraRotationHandler: (() => void) | null = null
@@ -84,11 +85,7 @@ export class Earth {
       ),
     )
     await this.flyToBoundingSphereAsync(sphere, {
-      offset: new Cesium.HeadingPitchRange(
-        0,
-        Cesium.Math.toRadians(-15.0),
-        this.RANGE,
-      ),
+      offset: this.OFFSET,
       ...options,
     })
   }
@@ -117,7 +114,7 @@ export class Earth {
     const transform = Cesium.Transforms.eastNorthUpToFixedFrame(center)
     this.viewer.camera.lookAtTransform(
       transform,
-      new Cesium.HeadingPitchRange(0, Cesium.Math.toRadians(-15), this.RANGE),
+      this.OFFSET,
     )
     this.cameraRotationHandler = () => this.viewer.camera.rotateRight(rotationSpeed)
     this.viewer.clock.onTick.addEventListener(this.cameraRotationHandler)
