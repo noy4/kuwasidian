@@ -12,9 +12,9 @@ export class Earth {
   RANGE = 1000
   PITCH = Cesium.Math.toRadians(-15)
   OFFSET = new Cesium.HeadingPitchRange(0, this.PITCH, this.RANGE)
+  ROTATION_SPEED = 0.005
 
   viewer!: Cesium.Viewer
-  cameraRotationHandler: (() => void) | null = null
   currentCityIndex = ref(0)
   isRotating = ref(false)
   cities: City[]
@@ -71,7 +71,7 @@ export class Earth {
   }
 
   goToNextCity() {
-    this.goToCity((this.currentCityIndex.value + 1) % this.cities.length)
+    return this.goToCity((this.currentCityIndex.value + 1) % this.cities.length)
   }
 
   async flyToCityView(
@@ -104,28 +104,22 @@ export class Earth {
     })
   }
 
+  cameraRotationHandler = () => this.viewer.camera.rotateRight(this.ROTATION_SPEED)
+
   startCameraRotation() {
     if (this.isRotating.value)
       return
     this.isRotating.value = true
     const city = this.cities[this.currentCityIndex.value]
-    const rotationSpeed = 0.005
     const center = Cesium.Cartesian3.fromDegrees(city.longitude, city.latitude)
     const transform = Cesium.Transforms.eastNorthUpToFixedFrame(center)
-    this.viewer.camera.lookAtTransform(
-      transform,
-      this.OFFSET,
-    )
-    this.cameraRotationHandler = () => this.viewer.camera.rotateRight(rotationSpeed)
+    this.viewer.camera.lookAtTransform(transform, this.OFFSET)
     this.viewer.clock.onTick.addEventListener(this.cameraRotationHandler)
   }
 
   stopCameraRotation() {
     this.isRotating.value = false
-    if (this.cameraRotationHandler) {
-      this.viewer.clock.onTick.removeEventListener(this.cameraRotationHandler)
-      this.cameraRotationHandler = null
-    }
+    this.viewer.clock.onTick.removeEventListener(this.cameraRotationHandler)
     this.viewer.camera.lookAtTransform(Cesium.Matrix4.IDENTITY)
   }
 
