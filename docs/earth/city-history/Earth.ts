@@ -9,10 +9,11 @@ export interface City {
 }
 
 export class Earth {
+  RANGE = 1000
+  PITCH = Cesium.Math.toRadians(-15)
+
   viewer!: Cesium.Viewer
   cameraRotationHandler: (() => void) | null = null
-  readonly RANGE = 1000
-
   currentCityIndex = ref(0)
   isRotating = ref(false)
   cities: City[]
@@ -34,7 +35,8 @@ export class Earth {
   async initialize() {
     Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxNjdlYzkxZC1kNTM5LTRlNWItYmM4MC1hMGUyY2VmZDFlYWQiLCJpZCI6MzEyMTEyLCJpYXQiOjE3NDk4OTEyMDF9.Krcs6xfVbGbfMuxORnoMA4iF-mLfcvudZfLy9EBAwGQ'
     this.viewer = new Cesium.Viewer('cesiumContainer', {
-      globe: false,
+      terrain: Cesium.Terrain.fromWorldTerrain(),
+      // globe: false,
       geocoder: Cesium.IonGeocodeProviderType.GOOGLE,
       timeline: false,
       animation: false,
@@ -45,9 +47,15 @@ export class Earth {
       homeButton: false,
     })
     this.viewer.scene.skyAtmosphere.show = true
-    const tileset = await Cesium.createGooglePhotorealistic3DTileset()
-    this.viewer.scene.primitives.add(tileset)
+    // const tileset = await Cesium.createGooglePhotorealistic3DTileset()
+    // this.viewer.scene.primitives.add(tileset)
     this.flyToCity(0, { duration: 0 })
+  }
+
+  flyToAsync(
+    options: Parameters<Cesium.Camera['flyTo']>[0],
+  ): Promise<void> {
+    return flyToAsync(this.viewer, options)
   }
 
   flyToCity(
@@ -69,10 +77,20 @@ export class Earth {
     })
   }
 
-  goToCity(index: number) {
+  async goToCity(nextIndex: number) {
     this.stopCameraRotation()
-    this.currentCityIndex.value = index
-    this.flyToCity(index, {
+    const currentCity = this.cities[this.currentCityIndex.value]
+    await this.flyToAsync({
+      destination: Cesium.Cartesian3.fromDegrees(
+        currentCity.longitude,
+        currentCity.latitude,
+        this.RANGE,
+      ),
+      easingFunction: Cesium.EasingFunction.QUARTIC_OUT,
+      duration: 0.5,
+    })
+    this.currentCityIndex.value = nextIndex
+    this.flyToCity(nextIndex, {
       complete: () => this.startCameraRotation(),
     })
   }
@@ -114,4 +132,18 @@ export class Earth {
       this.startCameraRotation()
     }
   }
+}
+
+// Function to fly to a specific camera position asynchronously
+function flyToAsync(
+  viewer: Cesium.Viewer,
+  options: Parameters<Cesium.Camera['flyTo']>[0],
+): Promise<void> {
+  return new Promise((resolve, reject) => {
+    viewer.camera.flyTo({
+      ...options,
+      complete: resolve,
+      cancel: reject,
+    })
+  })
 }
