@@ -25,14 +25,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="relative w-full h-screen">
+  <div class="relative w-full h-screen z-1000">
     <div id="cesiumContainer" class="w-full h-full" />
     <EarthCard :earth="earth" />
   </div>
 </template>
-
-<style>
-.VPLocalNav {
-  display: none;
-}
-</style>
