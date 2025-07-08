@@ -57,7 +57,7 @@ defineProps<{
 
     <button
       class="btn btn-primary mt-4 w-full"
-      @click="earth.moveToNextCity()"
+      @click="earth.goToNextCity()"
     >
       次の都市へ
     </button>

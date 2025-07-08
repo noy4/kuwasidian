@@ -49,59 +49,62 @@ export class Earth {
     this.viewer.scene.skyAtmosphere.show = true
     // const tileset = await Cesium.createGooglePhotorealistic3DTileset()
     // this.viewer.scene.primitives.add(tileset)
-    this.lookAtCity(0, { duration: 0 })
+    this.flyToCityView(0, { duration: 0 })
   }
 
-  async lookAtCity(
+  async goToCity(cityIndex: number) {
+    this.stopCameraRotation()
+
+    await this.flyAboveCity(this.currentCityIndex.value, {
+      duration: 0.5,
+      easingFunction: Cesium.EasingFunction.QUARTIC_OUT,
+    })
+    this.currentCityIndex.value = cityIndex
+    await this.flyAboveCity(cityIndex)
+    await this.flyToCityView(cityIndex, {
+      easingFunction: Cesium.EasingFunction.QUADRATIC_IN,
+      duration: 0.5,
+    })
+
+    this.startCameraRotation()
+  }
+
+  goToNextCity() {
+    this.goToCity((this.currentCityIndex.value + 1) % this.cities.length)
+  }
+
+  async flyToCityView(
     cityIndex: number,
     options?: Parameters<Cesium.Camera['flyToBoundingSphere']>[1],
   ) {
-    const city = this.cities[cityIndex]
-    const boundingSphere = new Cesium.BoundingSphere(
-      Cesium.Cartesian3.fromDegrees(city.longitude, city.latitude),
+    const sphere = new Cesium.BoundingSphere(
+      Cesium.Cartesian3.fromDegrees(
+        this.cities[cityIndex].longitude,
+        this.cities[cityIndex].latitude,
+      ),
     )
-    await this.flyToBoundingSphereAsync(boundingSphere, {
+    await this.flyToBoundingSphereAsync(sphere, {
       offset: new Cesium.HeadingPitchRange(
         0,
         Cesium.Math.toRadians(-15.0),
         this.RANGE,
       ),
-      easingFunction: Cesium.EasingFunction.QUADRATIC_IN,
-      duration: 0.5,
       ...options,
     })
   }
 
-  async goToCity(nextIndex: number) {
-    this.stopCameraRotation()
-    const currentCity = this.cities[this.currentCityIndex.value]
-    await this.lookDownCity(currentCity, {
-      duration: 0.5,
-      easingFunction: Cesium.EasingFunction.QUARTIC_OUT,
-    })
-    this.currentCityIndex.value = nextIndex
-    const nextCity = this.cities[nextIndex]
-    await this.lookDownCity(nextCity)
-    await this.lookAtCity(nextIndex)
-    this.startCameraRotation()
-  }
-
-  lookDownCity(
-    city: City,
+  flyAboveCity(
+    cityIndex: number,
     options?: Partial<Parameters<Cesium.Camera['flyTo']>[0]>,
   ) {
     return this.flyToAsync({
       destination: Cesium.Cartesian3.fromDegrees(
-        city.longitude,
-        city.latitude,
+        this.cities[cityIndex].longitude,
+        this.cities[cityIndex].latitude,
         this.RANGE,
       ),
       ...options,
     })
-  }
-
-  moveToNextCity() {
-    this.goToCity((this.currentCityIndex.value + 1) % this.cities.length)
   }
 
   startCameraRotation() {
