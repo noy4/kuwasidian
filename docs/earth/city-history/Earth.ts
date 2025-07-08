@@ -52,27 +52,30 @@ export class Earth {
     this.flyToCity(0, { duration: 0 })
   }
 
-  flyToAsync(
-    options: Parameters<Cesium.Camera['flyTo']>[0],
-  ): Promise<void> {
-    return flyToAsync(this.viewer, options)
-  }
-
-  flyToCity(
+  async flyToCity(
     cityIndex: number,
     options?: Parameters<Cesium.Camera['flyToBoundingSphere']>[1],
   ) {
     const city = this.cities[cityIndex]
+    await this.flyToAsync({
+      destination: Cesium.Cartesian3.fromDegrees(
+        city.longitude,
+        city.latitude,
+        this.RANGE,
+      ),
+      ...options,
+    })
     const boundingSphere = new Cesium.BoundingSphere(
       Cesium.Cartesian3.fromDegrees(city.longitude, city.latitude),
     )
-    this.viewer.camera.flyToBoundingSphere(boundingSphere, {
+    await this.flyToBoundingSphereAsync(boundingSphere, {
       offset: new Cesium.HeadingPitchRange(
         0,
         Cesium.Math.toRadians(-15.0),
         this.RANGE,
       ),
-      pitchAdjustHeight: 0,
+      easingFunction: Cesium.EasingFunction.QUADRATIC_IN,
+      duration: 0.5,
       ...options,
     })
   }
@@ -90,9 +93,8 @@ export class Earth {
       duration: 0.5,
     })
     this.currentCityIndex.value = nextIndex
-    this.flyToCity(nextIndex, {
-      complete: () => this.startCameraRotation(),
-    })
+    await this.flyToCity(nextIndex)
+    this.startCameraRotation()
   }
 
   moveToNextCity() {
@@ -132,6 +134,19 @@ export class Earth {
       this.startCameraRotation()
     }
   }
+
+  flyToAsync(
+    options: Parameters<Cesium.Camera['flyTo']>[0],
+  ): Promise<void> {
+    return flyToAsync(this.viewer, options)
+  }
+
+  flyToBoundingSphereAsync(
+    boundingSphere: Cesium.BoundingSphere,
+    options?: Parameters<Cesium.Camera['flyToBoundingSphere']>[1],
+  ): Promise<void> {
+    return flyToBoundingSphereAsync(this.viewer, boundingSphere, options)
+  }
 }
 
 // Function to fly to a specific camera position asynchronously
@@ -141,6 +156,20 @@ function flyToAsync(
 ): Promise<void> {
   return new Promise((resolve, reject) => {
     viewer.camera.flyTo({
+      ...options,
+      complete: resolve,
+      cancel: reject,
+    })
+  })
+}
+
+function flyToBoundingSphereAsync(
+  viewer: Cesium.Viewer,
+  boundingSphere: Cesium.BoundingSphere,
+  options: Parameters<Cesium.Camera['flyToBoundingSphere']>[1],
+): Promise<void> {
+  return new Promise((resolve, reject) => {
+    viewer.camera.flyToBoundingSphere(boundingSphere, {
       ...options,
       complete: resolve,
       cancel: reject,
