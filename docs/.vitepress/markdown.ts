@@ -78,6 +78,7 @@ export function descriptionExtractor() {
 
     function extractDescription(src = '') {
       let content = src
+        .replace(/^#.*/, '') // Remove if it starts with a heading
         .replace(/<[^>]*>/g, '') // Remove HTML tags
         .replace(/\s+/g, ' ')
         .trim()
