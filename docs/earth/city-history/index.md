@@ -11,7 +11,7 @@ import Earth from './Earth.vue'
 
 <Earth />
 
-<style>
+<style scoped>
 .VPLocalNav {
   display: none;
 }
