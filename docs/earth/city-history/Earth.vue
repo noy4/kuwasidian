@@ -30,3 +30,9 @@ onMounted(() => {
     <EarthCard :earth="earth" />
   </div>
 </template>
+
+<style>
+.VPLocalNav {
+  display: none;
+}
+</style>

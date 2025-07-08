@@ -10,9 +10,3 @@ import Earth from './Earth.vue'
 </script>
 
 <Earth />
-
-<style scoped>
-.VPLocalNav {
-  display: none;
-}
-</style>
