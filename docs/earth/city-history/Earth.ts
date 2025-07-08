@@ -26,11 +26,19 @@ export class Earth {
   async mount() {
     await this.initialize()
     this.startCameraRotation()
+    window.addEventListener('keydown', this.handleSpaceKey)
   }
 
   destroy() {
     this.stopCameraRotation()
     this.viewer.destroy()
+    window.removeEventListener('keydown', this.handleSpaceKey)
+  }
+
+  handleSpaceKey = (e: KeyboardEvent) => {
+    if (e.code === 'Space') {
+      this.toggleCameraRotation()
+    }
   }
 
   async initialize() {
@@ -124,12 +132,10 @@ export class Earth {
   }
 
   toggleCameraRotation() {
-    if (this.isRotating.value) {
+    if (this.isRotating.value)
       this.stopCameraRotation()
-    }
-    else {
+    else
       this.startCameraRotation()
-    }
   }
 
   flyToAsync(
