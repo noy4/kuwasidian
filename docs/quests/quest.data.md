@@ -80,7 +80,7 @@ YouTube 字幕の Anki カード化
 
 
 ## Cleared
-🗾 地理空間入門
+🗾 地球にDIVE IN
 3D Map を使って何か作る
 [都市履歴 | Kuwasidian](https://kuwasidian.com/earth/city-history/)
 2025/07/08
