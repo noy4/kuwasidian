@@ -12,7 +12,7 @@ defineProps<{
     <div class="breadcrumbs text-xs text-gray-400 pt-0 pb-1">
       <ul>
         <li><a :href="withBase('/')">Kuwasidian</a></li>
-        <li><a :href="withBase('/earth')">Earth</a></li>
+        <li><a :href="withBase('/earth/')">Earth</a></li>
       </ul>
     </div>
 
