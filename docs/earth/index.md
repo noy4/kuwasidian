@@ -1,3 +1,4 @@
 # Earth
 
-[[earth/city-history/index|都市履歴]]
+- [[earth/city-history/index|都市履歴]]
+- [[earth/population/index|世界人口]]
