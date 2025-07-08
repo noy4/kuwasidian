@@ -80,6 +80,12 @@ YouTube 字幕の Anki カード化
 
 
 ## Cleared
+🗾 地理空間入門
+3D Map を使って何か作る
+[都市履歴 | Kuwasidian](https://kuwasidian.com/earth/city-history/)
+2025/07/08
+
+
 🎹 洋琴・ハ長調・易シ
 「♪ピアノがこんな簡単だなんて知らなかったんだ」の作成
 [[ピアノがこんな簡単だなんて知らなかったんだ]]
@@ -100,7 +106,7 @@ YouTube 字幕の Anki カード化
 
 🌄 冒険の幕開け
 Kuwasidian Quest の公開
-[Quest | Kuwasidian](https://noy4.github.io/kuwasidian/quests/)
+[Quests | Kuwasidian](https://noy4.github.io/kuwasidian/quests/)
 2025/03/30
 
 
