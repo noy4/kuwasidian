@@ -110,6 +110,12 @@ export default withMermaid(defineConfig({
           )
         }
       })
+      .add('blog/!(index)*', () => {
+        pageData.title = `${pageData.title} | ${siteTitle} Blog`
+      })
+      .add('earth/*/**', () => {
+        pageData.title = `${pageData.title} | ${siteTitle} Earth`
+      })
       .add('**', () => {
         pageData.title = `${pageData.title} | ${siteTitle}`
       })
@@ -148,7 +154,7 @@ function sidebar(): DefaultTheme.Sidebar {
     },
     {
       items: [
-        { text: '📄 記事一覧', link: '/posts/' },
+        { text: '📄 ブログ', link: '/blog/' },
         { text: '🌏 Earth', link: '/earth/' },
         {
           text: '🚀 プロジェクト',

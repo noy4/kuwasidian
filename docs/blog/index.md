@@ -1,5 +1,5 @@
 ---
-title: 記事一覧
+title: Blog
 ---
 
 [旧ブログサイト](https://noy4.github.io/wordpress-archive/posts/)
