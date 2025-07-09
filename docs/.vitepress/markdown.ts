@@ -2,6 +2,9 @@ import type { MarkdownEnv, MarkdownRenderer } from 'vitepress'
 import path from 'node:path'
 import process from 'node:process'
 import { BiDirectionalLinks } from '@nolebase/markdown-it-bi-directional-links'
+import dayjs from 'dayjs'
+import dedent from 'dedent'
+import matter from 'gray-matter'
 import { createMarkdownRenderer } from 'vitepress'
 import { globalSiteConfig } from './utils.server'
 
@@ -96,4 +99,28 @@ export function wikilinks() {
   return BiDirectionalLinks({
     dir: process.argv[3],
   })
+}
+
+export function insertDateIfBlog() {
+  return (md: MarkdownRenderer) => {
+    const originalRender = md.render.bind(md)
+
+    md.render = function (src: string, env?: MarkdownEnv) {
+      if (env?.relativePath.match(/^blog\/[^index]/)) {
+        const { data, content } = matter(src)
+        const { published_at, updated_at } = data
+
+        const dateHtml = dedent`
+          <p style="display: flex; justify-content: flex-end; gap: 0.25rem; color: var(--vp-c-text-2); font-size: 0.875rem;">
+            ${published_at ? `<span>${dayjs(published_at).format('YYYY/MM/DD')}</span>` : ''}
+            ${updated_at ? `<span>(${dayjs(updated_at).format('YYYY/MM/DD')} 更新)</span>` : ''}
+          </p>
+        `
+        src = matter.stringify(`${dateHtml}\n\n${content}`, data)
+      }
+
+      const html = originalRender(src, env)
+      return html
+    }
+  }
 }
