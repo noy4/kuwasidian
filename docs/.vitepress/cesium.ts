@@ -1,13 +1,16 @@
 // [Configuring Vite or Webpack for CesiumJS – Cesium](https://cesium.com/blog/2024/02/13/configuring-vite-or-webpack-for-cesiumjs/)
 
+import type { Plugin } from 'vitepress'
 import { viteStaticCopy } from 'vite-plugin-static-copy'
 
-export const cesiumSource = 'node_modules/cesium/Build/Cesium'
-export const cesiumBaseUrl = 'cesiumStatic'
-
 // Copy Cesium static files
-export function cesium() {
-  return viteStaticCopy({
+export function cesium(options: { siteBase?: string } = {}): Plugin[] {
+  const { siteBase = '/' } = options
+
+  const cesiumSource = 'node_modules/cesium/Build/Cesium'
+  const cesiumBaseUrl = 'cesiumStatic'
+
+  const copies = viteStaticCopy({
     targets: [
       { src: `../${cesiumSource}/ThirdParty`, dest: cesiumBaseUrl },
       { src: `../${cesiumSource}/Workers`, dest: cesiumBaseUrl },
@@ -15,4 +18,17 @@ export function cesium() {
       { src: `../${cesiumSource}/Widgets`, dest: cesiumBaseUrl },
     ],
   })
+
+  const _cesium: Plugin = {
+    name: 'vite-plugin-cesium',
+    config() {
+      return {
+        define: {
+          CESIUM_BASE_URL: JSON.stringify(`${siteBase}${cesiumBaseUrl}`),
+        },
+      }
+    },
+  }
+
+  return [...copies, _cesium]
 }

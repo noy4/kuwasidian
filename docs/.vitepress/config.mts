@@ -5,7 +5,7 @@ import UnoCSS from 'unocss/vite'
 import Inspect from 'vite-plugin-inspect'
 import { defineConfig } from 'vitepress'
 import { withMermaid } from 'vitepress-plugin-mermaid'
-import { cesium, cesiumBaseUrl } from './cesium'
+import { cesium } from './cesium'
 import { descriptionExtractor, insertDateIfBlog, insertH1IfMissing, wikilinks } from './markdown'
 import { Router } from './router'
 import { autoSidebar } from './sidebar'
@@ -78,15 +78,11 @@ export default withMermaid(defineConfig({
         mermaid: 'mermaid/dist/mermaid.esm.mjs',
       },
     },
-    define: {
-      // [Configuring Vite or Webpack for CesiumJS – Cesium](https://cesium.com/blog/2024/02/13/configuring-vite-or-webpack-for-cesiumjs/)
-      CESIUM_BASE_URL: JSON.stringify(`${siteBase}${cesiumBaseUrl}`),
-    },
     plugins: [
       Inspect(),
       ReactivityTransform(),
       UnoCSS(),
-      cesium(),
+      cesium({ siteBase }),
     ],
   },
 
