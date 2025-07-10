@@ -1,6 +1,10 @@
 
 [[earth/city-history/index|都市履歴]]
 
+[Re:Earth - A free, open, highly extensible WebGIS platform | Re:Earth](https://reearth.io/ja/)
+[GIS実習オープン教材とは · GIS実習オープン教材](https://gis-oer.github.io/gitbook/book/)
+
+
 ---
 
 [Cesium: The Platform for 3D Geospatial](https://cesium.com/)
