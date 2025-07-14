@@ -17,8 +17,8 @@ export class Earth {
       terrain: Cesium.Terrain.fromWorldTerrain(),
       // globe: false,
       geocoder: Cesium.IonGeocodeProviderType.GOOGLE,
-      timeline: false,
-      animation: false,
+      // timeline: false,
+      // animation: false,
       baseLayerPicker: false,
       sceneModePicker: false,
       // navigationHelpButton: false,
@@ -67,52 +67,32 @@ export class Earth {
     // CzmlDataSource のサンプル
     const czml = [{
       id: 'document',
-      name: 'Nihon Sankei',
+      name: 'name',
       version: '1.0',
     }, {
       id: '1',
-      name: 'Matsusima',
-      description: 'ここは松島です',
-      position: {
-        cartographicDegrees: [141.064, 38.366, 100],
-      },
+      name: 'animation',
+      description: '動きます',
+      availability: '2018-03-13T12:00:00Z/2018-03-13T12:01:00Z',
+      // billboard: {
+      //   image: 'imageURL.png',
+      //   scale: 0.3,
+      // },
       point: {
         color: {
           rgba: [255, 0, 0, 255],
         },
         pixelSize: 8,
       },
-    }, {
-      id: '2',
-      name: 'Amanohashidate',
-      description: 'ここは天橋立です',
       position: {
-        cartographicDegrees: [135.190, 35.567, 100],
-      },
-      point: {
-        color: {
-          rgba: [0, 255, 0, 255],
-        },
-        pixelSize: 8,
-      },
-    }, {
-      id: '3',
-      name: 'Miyajima',
-      description: 'ここは宮島です',
-      position: {
-        cartographicDegrees: [132.318, 34.297, 100],
-      },
-      point: {
-        color: {
-          rgba: [0, 0, 255, 255],
-        },
-        pixelSize: 8,
+        epoch: '2018-03-13T12:00:00Z',
+        cartographicDegrees: [0, 139, 35, 0, 5, 141.064, 38.366, 0, 6, 140.94532, 38.337405, 0, 7, 141.061363, 38.238789, 0, 8, 141.215858, 38.341713, 0, 9, 141.099129, 38.439652, 0, 10, 140.94532, 38.337405, 0, 15, 135.190, 35.567, 0, 16, 135.14831542968753, 35.58920198716242, 0, 17, 135.14488220214847, 35.54619518601583, 0, 18, 135.20942687988284, 35.544519165584674, 0, 19, 135.21080017089847, 35.586968406786504, 0, 20, 135.14831542968753, 35.58920198716242, 0, 25, 132.318, 34.297, 0, 26, 132.24929809570315, 34.31650345811414, 0, 27, 132.24826812744143, 34.225704902867896, 0, 28, 132.38250732421878, 34.22769216967081, 0, 29, 132.38216400146487, 34.31650194389378, 0, 30, 132.24929809570315, 34.31650345811414, 0],
       },
     }]
 
     const czmlDataSource = new Cesium.CzmlDataSource()
-    await czmlDataSource.load('1.czml')
+    await czmlDataSource.load(czml)
     await this.viewer.dataSources.add(czmlDataSource)
-    await this.viewer.flyTo(czmlDataSource)
+    await this.viewer.flyTo(czmlDataSource, { duration: 0 })
   }
 }

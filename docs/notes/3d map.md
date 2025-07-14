@@ -1,8 +1,17 @@
 
 [[earth/city-history/index|都市履歴]]
 
-[Re:Earth - A free, open, highly extensible WebGIS platform | Re:Earth](https://reearth.io/ja/)
-[GIS実習オープン教材とは · GIS実習オープン教材](https://gis-oer.github.io/gitbook/book/)
+- [Re:Earth - A free, open, highly extensible WebGIS platform | Re:Earth](https://reearth.io/ja/)
+- [GIS実習オープン教材とは · GIS実習オープン教材](https://gis-oer.github.io/gitbook/book/)
+- [Learning | PLATEAUを学び、活用する | PLATEAU [プラトー]](https://www.mlit.go.jp/plateau/learning/)
+- [Terria](https://terria.io/)
+- [Create your own Custom Map | MapChart](https://www.mapchart.net/)
+- [ジオグラフ](https://www.geograph.teikokushoin.co.jp/)
+
+
+- [Stats, Maps n Pix: How to make a 3D population density render for any country in the world](https://www.statsmapsnpix.com/2020/11/how-to-make-3d-population-density.html)
+- [WorldPop :: Population Density](https://hub.worldpop.org/project/categories?id=18)
+- [joewdavies/geoblender: Tutorials for making 3D-looking maps with Blender and QGIS](https://github.com/joewdavies/geoblender?tab=readme-ov-file)
 
 
 ---

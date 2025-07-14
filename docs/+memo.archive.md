@@ -1,3 +1,21 @@
+[ゆっくり解説 戦争する国としない国の違いはどこにあるのか？ 戦争と平和の弊害 - YouTube](https://www.youtube.com/watch?v=fC3PnufMcUo)
+
+[Kaoru GreenEmerald - YouTube](https://www.youtube.com/channel/UC3AQFO6FBjONUBleVcPtfcQ)
+[全地球史アトラス　フルストーリー - YouTube](https://www.youtube.com/watch?v=rTCXFuQSSNU)
+[割とガチ目に氷河期が起こる理由を解説　ミランコビッチ・サイクル](https://www.youtube.com/watch?v=V5Cx5ws0-CE "割とガチ目に氷河期が起こる理由を解説　ミランコビッチ・サイクル")
+[ゆっくり解説 我々を苦しめる税制を生んだ諸悪の根源たち　地中海性気候と温暖冬季少雨気候は害悪 - YouTube](https://www.youtube.com/watch?v=dhI60Il8H0M)
+
+>いつもつい「こんな授業受けたかったな…」て考えそうになるんだけど この方の話の面白さは多方面に飛んで繋いでくれるからこそってのが大きいだろうし、単純に一学問と授業容量を考えたらそりゃ無理か、と そうなると本当に必要なのは「誰かが教えてくれれば」じゃなくて自分が昔から、今から普段からこういった”常に多面的にモノを考える癖”をつけて ”答え”じゃなく"思考の過程"を意識していかないといけないんだなぁ痛感する（自分で言ってて耳が痛くなってくる 笑
+
+ミランコビッチ・サイクル
+語族
+
+[気候が遠く離れた地域の言語を似せる？　インド＝ヨーロッパ語族が生まれた背景 - YouTube](https://www.youtube.com/watch?v=O7s3cQqDFmw)
+小笠原虎哲
+
+favori
+[WEB招待状 「ふたりの人生をつなぐ。」Favori（ファヴォリ）](https://favori.wedding/)
+
 セマンティックバージョニング
 
 自分のバージョン管理始める
