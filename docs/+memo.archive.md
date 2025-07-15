@@ -1,3 +1,6 @@
+浄化槽
+馬・車輪・言語
+
 [ゆっくり解説 戦争する国としない国の違いはどこにあるのか？ 戦争と平和の弊害 - YouTube](https://www.youtube.com/watch?v=fC3PnufMcUo)
 
 [Kaoru GreenEmerald - YouTube](https://www.youtube.com/channel/UC3AQFO6FBjONUBleVcPtfcQ)
