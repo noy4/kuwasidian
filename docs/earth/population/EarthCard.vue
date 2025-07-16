@@ -19,5 +19,8 @@ defineProps<{
     <h3 class="text-white text-lg font-bold mb-2">
       世界人口
     </h3>
+    <p>
+      2000年
+    </p>
   </div>
 </template>
