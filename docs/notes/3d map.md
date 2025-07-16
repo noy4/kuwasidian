@@ -12,6 +12,8 @@
 - [Stats, Maps n Pix: How to make a 3D population density render for any country in the world](https://www.statsmapsnpix.com/2020/11/how-to-make-3d-population-density.html)
 - [WorldPop :: Population Density](https://hub.worldpop.org/project/categories?id=18)
 - [joewdavies/geoblender: Tutorials for making 3D-looking maps with Blender and QGIS](https://github.com/joewdavies/geoblender?tab=readme-ov-file)
+- [3D地図で世界の人口分布を示した「Population Mountains」では見えなかったものが見えてくる - GIGAZINE](https://gigazine.net/news/20181213-population-mountains/)
+- 
 
 
 ---
