@@ -1,0 +1,19 @@
+// [[Docs] Explain how to use TypeScript in a VitePress project · Issue #1047 · vuejs/vitepress](https://github.com/vuejs/vitepress/issues/1047)
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "jsx": "preserve",
+    "lib": ["esnext", "dom"],
+    "useDefineForClassFields": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "strict": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "skipLibCheck": true
+  },
+  "exclude": ["**/node_modules/**", "**/dist/**"],
+  "allowSyntheticDefaultImports": true
+}

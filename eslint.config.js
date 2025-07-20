@@ -4,5 +4,4 @@ export default antfu({
   ignores: [
     '**/*.md',
   ],
-  typescript: true,
 })
