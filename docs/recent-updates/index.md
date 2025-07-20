@@ -1,8 +1,12 @@
 # 最近の更新
 
 <script setup>
+import dayjs from 'dayjs';
 import { data as fileUpdates } from './recent-updates.data.ts'
-import { formatDate } from '../.vitepress/utils'
+
+function formatDate(date) {
+  return dayjs(date).format('YYYY/MM/DD')
+}
 </script>
 
 <ol>
