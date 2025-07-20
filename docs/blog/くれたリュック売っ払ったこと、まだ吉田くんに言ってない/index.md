@@ -31,8 +31,8 @@ published_at: 2025/07/21
 それはさておき、確か彼がリュックをくれたのは、その時桑が使っていたリュックがボロかったからだった気がする。見かねた吉田くんがリュックを買ってくれた、というわけだ。それを受け取りつつも採用しなかった桑は、引き続き元のリュックを使い続けていたようだ。しかしどうやらその3ヶ月後にAmazonでリュックを買っている。
 
 <figure>
-    <img src='./IMG20250720172057_transparent.jpg' width="400" />
-    <figcaption>透明リュック</figcaption>
+  <img src='./IMG20250720172057_transparent.jpg' width="400" />
+  <figcaption>透明リュック</figcaption>
 </figure>
 
 桑リュック条件を満たすものをAmazonで探した結果、透明になってしまった。しかしどうやらこのリュック、ベリーグッドである。
@@ -46,8 +46,8 @@ published_at: 2025/07/21
 何とかオペを施し、透明リュックは生命を繋ぎ止めた。そして緊急オペから一年ちょいたった今日まで何とか生き長らえている。
 
 <figure>
-    <img src="./IMG20250720172141_backpack_broken.jpg" width="400" />
-    <figcaption>ギリギリの透明リュック</figcaption>
+  <img src="./IMG20250720172141_backpack_broken.jpg" width="400" />
+  <figcaption>ギリギリの透明リュック</figcaption>
 </figure>
 
 もはやチャックを開かずとも中身が取り出せる始末である。雨耐性はゼロ。いつかまた破裂するかもしれないという恐怖感。
@@ -55,8 +55,8 @@ published_at: 2025/07/21
 状況を鑑み、桑はこの度リュックを新調することにした。
 
 <figure>
-    <img src='./IMG20250720172210_backpack_new.jpg' width="400" />
-    <figcaption>2代目透明リュック</figcaption>
+  <img src='./IMG20250720172210_backpack_new.jpg' width="400" />
+  <figcaption>2代目透明リュック</figcaption>
 </figure>
 
 2代目透明リュックである。
