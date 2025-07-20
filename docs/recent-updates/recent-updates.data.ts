@@ -5,7 +5,7 @@ import process from 'node:process'
 import matter from 'gray-matter'
 import { minimatch } from 'minimatch'
 import { defineLoader } from 'vitepress'
-import { globalSiteConfig } from '../.vitepress/utils.server'
+import { getSiteConfig } from '../.vitepress/utils.server'
 
 interface Options {
   root?: string
@@ -39,6 +39,7 @@ function getRecentUpdates(options: Options = {}): RecentUpdate[] {
     pattern = `${root ? `${root}/` : ''}**/*.md`,
     limit = 30,
   } = options
+  const siteConfig = getSiteConfig()
 
   const log = execSync(
     `git -c core.quotepath=false log --pretty="format:%cd" --name-status --date=iso -n ${limit * 3}`,
@@ -98,8 +99,8 @@ function getRecentUpdates(options: Options = {}): RecentUpdate[] {
       || content.match(/^#\s+(.*)/m)?.[1] // h1 in content
       || basename(filePath).replace(/\.md$/, '') // file name
     let page = filePath.replace(`${root ? `${root}/` : ''}`, '')
-    page = globalSiteConfig.rewrites.map[page] || page
-    const link = `${globalSiteConfig.site.base}${page.replace(/(index)?\.md$/, '')}`
+    page = siteConfig.rewrites.map[page] || page
+    const link = `${siteConfig.site.base}${page.replace(/(index)?\.md$/, '')}`
     recentUpdates.push({
       date,
       status,
