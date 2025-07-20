@@ -1,0 +1,5 @@
+figcaption {
+  color: var(--vp-c-text-2);
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
