@@ -1,4 +1,4 @@
-import type { HeadConfig, MarkdownEnv, MarkdownRenderer } from 'vitepress'
+import type { MarkdownEnv, MarkdownRenderer } from 'vitepress'
 import path from 'node:path'
 import process from 'node:process'
 import { BiDirectionalLinks } from '@nolebase/markdown-it-bi-directional-links'
@@ -122,33 +122,6 @@ export function insertDateIfBlog() {
 
       const html = originalRender(src, env)
       return html
-    }
-  }
-}
-
-export function extractOgImage(options: { include?: string[] } = {}) {
-  return (md: MarkdownRenderer) => {
-    const originalRender = md.render.bind(md)
-
-    md.render = function (src: string, env?: MarkdownEnv) {
-      const matched = options.include?.some(v => env?.relativePath.match(new RegExp(v)))
-
-      if (env && matched) {
-        // get og:image from content
-        const ogImageMatch = src.match(/<img[^>]+src="([^"]+)"/)
-
-        if (ogImageMatch) {
-          // add og:image to frontmatter
-          const { siteUrl = '' } = getSiteConfig().userConfig || {}
-          const ogImage = path.join(siteUrl, env.relativePath.replace(/(index)?\.md$/, ''), ogImageMatch[1])
-          env.frontmatter ||= {}
-          ;((env.frontmatter.head ??= []) as HeadConfig[]).push(
-            ['meta', { property: 'og:image', content: ogImage }],
-          )
-        }
-      }
-
-      return originalRender(src, env)
     }
   }
 }
