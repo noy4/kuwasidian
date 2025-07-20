@@ -15,5 +15,9 @@
     "skipLibCheck": true
   },
   "exclude": ["**/node_modules/**", "**/dist/**"],
-  "allowSyntheticDefaultImports": true
+
+  // [Using Vue in Markdown | VitePress](https://vitepress.dev/guide/using-vue#vs-code-intellisense-support)
+  "vueCompilerOptions": {
+    "vitePressExtensions": [".md"]
+  }
 }

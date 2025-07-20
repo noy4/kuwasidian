@@ -1,5 +1,6 @@
 {
   // https://github.com/antfu/eslint-config
+  // ---
   // Disable the default formatter, use eslint instead
   "editor.formatOnSave": false,
 
@@ -33,5 +34,9 @@
     "scss",
     "pcss",
     "postcss"
-  ]
+  ],
+
+  // [Using Vue in Markdown | VitePress](https://vitepress.dev/guide/using-vue#vs-code-intellisense-support)
+  // ---
+  "vue.server.includeLanguages": ["vue", "markdown"]
 }
