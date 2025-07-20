@@ -8,7 +8,10 @@ declare module 'vitepress' {
 }
 
 // [How to interpolate markdown into markdown? #2921](https://github.com/vuejs/vitepress/discussions/2921#discussioncomment-7023589)
-export const globalSiteConfig: SiteConfig = (globalThis as any).VITEPRESS_CONFIG
+export function getSiteConfig(): SiteConfig {
+  return (globalThis as any).VITEPRESS_CONFIG
+}
+
 export const defaultExcludePattern = parseGitignore()
 
 function parseGitignore(filePath = '.gitignore') {

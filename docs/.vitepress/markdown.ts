@@ -6,19 +6,20 @@ import dayjs from 'dayjs'
 import dedent from 'dedent'
 import matter from 'gray-matter'
 import { createMarkdownRenderer } from 'vitepress'
-import { globalSiteConfig } from './utils.server'
+import { getSiteConfig } from './utils.server'
 
 export function createMd() {
+  const siteConfig = getSiteConfig()
   return createMarkdownRenderer(
-    globalSiteConfig.srcDir,
+    siteConfig.srcDir,
     {
-      ...globalSiteConfig.markdown,
+      ...siteConfig.markdown,
       config(md) {
         md.use(wikilinks())
       },
     },
-    globalSiteConfig.site.base,
-    globalSiteConfig.logger,
+    siteConfig.site.base,
+    siteConfig.logger,
   )
 }
 
@@ -138,7 +139,7 @@ export function extractOgImage(options: { include?: string[] } = {}) {
 
         if (ogImageMatch) {
           // add og:image to frontmatter
-          const { siteUrl = '' } = globalSiteConfig?.userConfig || {}
+          const { siteUrl = '' } = getSiteConfig().userConfig || {}
           const ogImage = path.join(siteUrl, env.relativePath.replace(/(index)?\.md$/, ''), ogImageMatch[1])
           env.frontmatter ||= {}
           ;((env.frontmatter.head ??= []) as HeadConfig[]).push(
