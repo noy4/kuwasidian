@@ -6,7 +6,7 @@ import Inspect from 'vite-plugin-inspect'
 import { defineConfig } from 'vitepress'
 import { withMermaid } from 'vitepress-plugin-mermaid'
 import { cesium } from './cesium'
-import { descriptionExtractor, insertDateIfBlog, insertH1IfMissing, wikilinks } from './markdown'
+import { descriptionExtractor, extractOgImage, insertDateIfBlog, insertH1IfMissing, wikilinks } from './markdown'
 import { Router } from './router'
 import { autoSidebar } from './sidebar'
 import { defaultExcludePattern } from './utils.server'
@@ -34,6 +34,7 @@ export default withMermaid(defineConfig({
     ['meta', { property: 'twitter:card', content: 'summary' }],
   ],
   base: siteBase,
+  siteUrl,
   cleanUrls: true,
   rewrites: {
     '\\+memo.md': 'index.md',
@@ -68,6 +69,7 @@ export default withMermaid(defineConfig({
       md.use(descriptionExtractor())
       md.use(wikilinks())
       md.use(insertDateIfBlog())
+      md.use(extractOgImage({ include: ['blog/[^index]*'] }))
     },
   },
 
