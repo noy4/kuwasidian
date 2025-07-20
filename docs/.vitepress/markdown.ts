@@ -6,7 +6,7 @@ import dayjs from 'dayjs'
 import dedent from 'dedent'
 import matter from 'gray-matter'
 import { createMarkdownRenderer } from 'vitepress'
-import { getSiteConfig } from './utils.server'
+import { getSiteConfig } from './vitepress.extend'
 
 export function createMd() {
   const siteConfig = getSiteConfig()

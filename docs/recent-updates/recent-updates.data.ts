@@ -5,7 +5,7 @@ import process from 'node:process'
 import matter from 'gray-matter'
 import { minimatch } from 'minimatch'
 import { defineLoader } from 'vitepress'
-import { getSiteConfig } from '../.vitepress/utils.server'
+import { getSiteConfig } from '../.vitepress/vitepress.extend'
 
 interface Options {
   root?: string

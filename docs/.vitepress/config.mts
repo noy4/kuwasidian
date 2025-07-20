@@ -9,7 +9,7 @@ import { cesium } from './cesium'
 import { descriptionExtractor, extractOgImage, insertDateIfBlog, insertH1IfMissing, wikilinks } from './markdown'
 import { Router } from './router'
 import { autoSidebar } from './sidebar'
-import { defaultExcludePattern } from './utils.server'
+import { defaultExcludePattern } from './vitepress.extend'
 
 const prod = process.env.NODE_ENV === 'production'
 

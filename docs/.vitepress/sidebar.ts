@@ -2,7 +2,7 @@ import type { DefaultTheme } from 'vitepress'
 import type { VitePressSidebarOptions } from 'vitepress-sidebar/types'
 import process from 'node:process'
 import { generateSidebar } from 'vitepress-sidebar'
-import { defaultExcludePattern } from './utils.server'
+import { defaultExcludePattern } from './vitepress.extend'
 
 export function autoSidebar(
   folderPath: string,
