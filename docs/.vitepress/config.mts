@@ -34,7 +34,6 @@ export default withMermaid(defineConfig({
     ['meta', { property: 'twitter:card', content: 'summary' }],
   ],
   base: siteBase,
-  siteUrl,
   cleanUrls: true,
   rewrites: {
     '\\+memo.md': 'index.md',

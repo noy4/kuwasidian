@@ -1,12 +1,6 @@
 import type { SiteConfig } from 'vitepress'
 import fs from 'node:fs'
 
-declare module 'vitepress' {
-  interface UserConfig {
-    siteUrl?: string
-  }
-}
-
 // [How to interpolate markdown into markdown? #2921](https://github.com/vuejs/vitepress/discussions/2921#discussioncomment-7023589)
 export function getSiteConfig(): SiteConfig {
   return (globalThis as any).VITEPRESS_CONFIG
