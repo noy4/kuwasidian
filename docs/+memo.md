@@ -8,9 +8,6 @@
 金持ちツアー
 ドロピザ巡礼
 
-blog folder date
-blog header
-
 
 
 
