@@ -1,4 +1,4 @@
-import { minimatch } from 'minimatch'
+// ref. [kwhitley/itty-router: A little router.](https://github.com/kwhitley/itty-router)
 
 export class Router {
   private routes: {
@@ -8,7 +8,11 @@ export class Router {
 
   add(pattern: string, handler: () => void) {
     this.routes.push({
-      match: (path: string) => minimatch(path, pattern),
+      match: (path: string) => !!path.match(
+        new RegExp(`^${pattern
+          .replace(/(\/?)\*/g, '($1.*)?') // wildcard
+        }$`),
+      ),
       handler,
     })
     return this
