@@ -2,7 +2,6 @@ import type { MarkdownEnv, MarkdownRenderer } from 'vitepress'
 import path from 'node:path'
 import process from 'node:process'
 import { BiDirectionalLinks } from '@nolebase/markdown-it-bi-directional-links'
-import dayjs from 'dayjs'
 import dedent from 'dedent'
 import matter from 'gray-matter'
 import { createMarkdownRenderer } from 'vitepress'
@@ -21,6 +20,12 @@ export function createMd() {
     siteConfig.site.base,
     siteConfig.logger,
   )
+}
+
+export function wikilinks() {
+  return BiDirectionalLinks({
+    dir: process.argv[3],
+  })
 }
 
 // [title · Issue #4629 · vuejs/vitepress](https://github.com/vuejs/vitepress/issues/4629)
@@ -64,44 +69,6 @@ export function insertH1IfMissing() {
   }
 }
 
-export function descriptionExtractor() {
-  return (md: MarkdownRenderer) => {
-    const originalRender = md.render.bind(md)
-
-    md.render = function (src: string, env?: MarkdownEnv) {
-      const html = originalRender(src, env)
-
-      if (!env)
-        return html
-
-      env.frontmatter ||= {}
-      env.frontmatter.description ||= extractDescription(env.content)
-
-      return html
-    }
-
-    function extractDescription(src = '') {
-      let content = src
-        .replace(/^#.*/, '') // Remove if it starts with a heading
-        .replace(/<[^>]*>/g, '') // Remove HTML tags
-        .replace(/\s+/g, ' ')
-        .trim()
-
-      content = content.length > 120
-        ? `${content.slice(0, 120)}...`
-        : content
-
-      return content
-    }
-  }
-}
-
-export function wikilinks() {
-  return BiDirectionalLinks({
-    dir: process.argv[3],
-  })
-}
-
 export function insertDateIfBlog() {
   return (md: MarkdownRenderer) => {
     const originalRender = md.render.bind(md)
@@ -120,8 +87,35 @@ export function insertDateIfBlog() {
         src = matter.stringify(`${dateHtml}\n\n${content}`, data)
       }
 
-      const html = originalRender(src, env)
-      return html
+      return originalRender(src, env)
+    }
+  }
+}
+
+export function descriptionExtractor() {
+  return (md: MarkdownRenderer) => {
+    const originalRender = md.render.bind(md)
+
+    md.render = function (src: string, env?: MarkdownEnv) {
+      if (env) {
+        env.frontmatter ||= {}
+        env.frontmatter.description ||= extractDescription(env.content)
+      }
+      return originalRender(src, env)
+    }
+
+    function extractDescription(src = '') {
+      let content = src
+        .replace(/^#.*/, '') // Remove if it starts with a heading
+        .replace(/<[^>]*>/g, '') // Remove HTML tags
+        .replace(/\s+/g, ' ')
+        .trim()
+
+      content = content.length > 120
+        ? `${content.slice(0, 120)}...`
+        : content
+
+      return content
     }
   }
 }

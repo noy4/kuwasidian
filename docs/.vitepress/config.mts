@@ -64,10 +64,10 @@ export default withMermaid(defineConfig({
       lazyLoading: true,
     },
     config(md) {
-      md.use(insertH1IfMissing())
-      md.use(descriptionExtractor())
       md.use(wikilinks())
+      md.use(insertH1IfMissing())
       md.use(insertDateIfBlog())
+      md.use(descriptionExtractor())
     },
   },
 

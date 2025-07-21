@@ -8,7 +8,7 @@ defineProps<{
 </script>
 
 <template>
-  <p style="display: flex; justify-content: flex-end; gap: 0.25rem; color: var(--vp-c-text-2); font-size: 0.875rem;">
+  <p class="flex justify-end gap-1 text-[var(--vp-c-text-2)] text-sm">
     <span v-if="publishedAt">{{ dayjs(publishedAt).format('YYYY/MM/DD') }}</span>
     <span v-if="updatedAt">({{ dayjs(updatedAt).format('YYYY/MM/DD') }} 更新)</span>
   </p>
