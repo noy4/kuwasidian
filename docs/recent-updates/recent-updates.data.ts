@@ -97,7 +97,7 @@ function getRecentUpdates(options: Options = {}): RecentUpdate[] {
     const { content, data } = matter(markdown)
     const title = data.title // title in frontmatter
       || content.match(/^#\s+(.*)/m)?.[1] // h1 in content
-      || basename(filePath).replace(/\.md$/, '') // file name
+      || basename(filePath.replace(/(\/index)?\.md$/, '')) // file name
     let page = filePath.replace(`${root ? `${root}/` : ''}`, '')
     page = siteConfig.rewrites.map[page] || page
     const link = `${siteConfig.site.base}${page.replace(/(index)?\.md$/, '')}`
