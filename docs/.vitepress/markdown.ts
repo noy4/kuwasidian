@@ -44,8 +44,7 @@ export function insertH1IfMissing() {
       ) {
         const hasH1 = content.startsWith('# ')
         if (!hasH1) {
-          const fileName = path.basename(env.path, path.extname(env.path))
-          const title = data.title || fileName
+          const title = data.title || path.basename(env.path.replace(/(\/index)?\.md$/, ''))
           src = matter.stringify(`# ${title}\n\n${content}`, data)
         }
       }
