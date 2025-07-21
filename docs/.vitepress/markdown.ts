@@ -112,10 +112,10 @@ export function insertDateIfBlog() {
         const { published_at, updated_at } = data
 
         const dateHtml = dedent`
-          <p style="display: flex; justify-content: flex-end; gap: 0.25rem; color: var(--vp-c-text-2); font-size: 0.875rem;">
-            ${published_at ? `<span>${dayjs(published_at).format('YYYY/MM/DD')}</span>` : ''}
-            ${updated_at ? `<span>(${dayjs(updated_at).format('YYYY/MM/DD')} 更新)</span>` : ''}
-          </p>
+          <DateCard
+            :published-at='${JSON.stringify(published_at)}'
+            :updated-at='${JSON.stringify(updated_at)}'
+          />
         `
         src = matter.stringify(`${dateHtml}\n\n${content}`, data)
       }
