@@ -98,8 +98,9 @@ export function descriptionExtractor() {
 
     md.render = function (src: string, env?: MarkdownEnv) {
       if (env) {
-        env.frontmatter ||= {}
-        env.frontmatter.description ||= extractDescription(env.content)
+        const { data, content } = matter(src)
+        const description = data.description || extractDescription(content)
+        src = matter.stringify(content, { ...data, description })
       }
       return originalRender(src, env)
     }
