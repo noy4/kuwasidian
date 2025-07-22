@@ -2,7 +2,7 @@ import * as Cesium from 'cesium'
 import { tinykeys } from 'tinykeys'
 import { ref } from 'vue'
 
-export interface City {
+export interface Location {
   name: string
   longitude: number
   latitude: number
@@ -15,13 +15,13 @@ export class Earth {
   ROTATION_SPEED = 0.005
 
   viewer!: Cesium.Viewer
-  currentCityIndex = ref(0)
+  currentLocationIndex = ref(0)
   isRotating = ref(false)
-  cities: City[]
+  locations: Location[]
   unsubKeys: (() => void) | null = null
 
-  constructor(cities: City[]) {
-    this.cities = cities
+  constructor(locations: Location[]) {
+    this.locations = locations
   }
 
   async mount() {
@@ -29,10 +29,10 @@ export class Earth {
     // this.startCameraRotation()
     this.unsubKeys = tinykeys(window, {
       'Space': () => this.toggleCameraRotation(),
-      'Enter': () => this.goToNextCity(),
-      'ArrowRight': () => this.goToNextCity(),
-      'Shift+Enter': () => this.goToPrevCity(),
-      'ArrowLeft': () => this.goToPrevCity(),
+      'Enter': () => this.goToNextLocation(),
+      'ArrowRight': () => this.goToNextLocation(),
+      'Shift+Enter': () => this.goToPrevLocation(),
+      'ArrowLeft': () => this.goToPrevLocation(),
     })
   }
 
@@ -60,19 +60,19 @@ export class Earth {
     this.viewer.scene.skyAtmosphere.show = true
     // const tileset = await Cesium.createGooglePhotorealistic3DTileset()
     // this.viewer.scene.primitives.add(tileset)
-    this.flyToCityView(0, { duration: 0 })
+    this.flyToLocationView(0, { duration: 0 })
   }
 
-  async goToCity(cityIndex: number) {
+  async goToLocation(locationIndex: number) {
     this.stopCameraRotation()
 
-    await this.flyAboveCity(this.currentCityIndex.value, {
+    await this.flyAboveLocation(this.currentLocationIndex.value, {
       duration: 0.5,
       easingFunction: Cesium.EasingFunction.QUARTIC_OUT,
     })
-    this.currentCityIndex.value = cityIndex
-    await this.flyAboveCity(cityIndex)
-    await this.flyToCityView(cityIndex, {
+    this.currentLocationIndex.value = locationIndex
+    await this.flyAboveLocation(locationIndex)
+    await this.flyToLocationView(locationIndex, {
       easingFunction: Cesium.EasingFunction.QUADRATIC_IN,
       duration: 0.5,
     })
@@ -80,24 +80,24 @@ export class Earth {
     this.startCameraRotation()
   }
 
-  goToNextCity() {
-    return this.goToCity((this.currentCityIndex.value + 1) % this.cities.length)
+  goToNextLocation() {
+    return this.goToLocation((this.currentLocationIndex.value + 1) % this.locations.length)
   }
 
-  goToPrevCity() {
-    const len = this.cities.length
-    const prev = (this.currentCityIndex.value - 1 + len) % len
-    return this.goToCity(prev)
+  goToPrevLocation() {
+    const len = this.locations.length
+    const prev = (this.currentLocationIndex.value - 1 + len) % len
+    return this.goToLocation(prev)
   }
 
-  async flyToCityView(
-    cityIndex: number,
+  async flyToLocationView(
+    locationIndex: number,
     options?: Parameters<Cesium.Camera['flyToBoundingSphere']>[1],
   ) {
     const sphere = new Cesium.BoundingSphere(
       Cesium.Cartesian3.fromDegrees(
-        this.cities[cityIndex].longitude,
-        this.cities[cityIndex].latitude,
+        this.locations[locationIndex].longitude,
+        this.locations[locationIndex].latitude,
       ),
     )
     await this.flyToBoundingSphereAsync(sphere, {
@@ -106,14 +106,14 @@ export class Earth {
     })
   }
 
-  flyAboveCity(
-    cityIndex: number,
+  flyAboveLocation(
+    locationIndex: number,
     options?: Partial<Parameters<Cesium.Camera['flyTo']>[0]>,
   ) {
     return this.flyToAsync({
       destination: Cesium.Cartesian3.fromDegrees(
-        this.cities[cityIndex].longitude,
-        this.cities[cityIndex].latitude,
+        this.locations[locationIndex].longitude,
+        this.locations[locationIndex].latitude,
         this.RANGE,
       ),
       ...options,
@@ -126,8 +126,8 @@ export class Earth {
     if (this.isRotating.value)
       return
     this.isRotating.value = true
-    const city = this.cities[this.currentCityIndex.value]
-    const center = Cesium.Cartesian3.fromDegrees(city.longitude, city.latitude)
+    const location = this.locations[this.currentLocationIndex.value]
+    const center = Cesium.Cartesian3.fromDegrees(location.longitude, location.latitude)
     const transform = Cesium.Transforms.eastNorthUpToFixedFrame(center)
     this.viewer.camera.lookAtTransform(transform, this.OFFSET)
     this.viewer.clock.onTick.addEventListener(this.cameraRotationHandler)

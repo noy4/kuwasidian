@@ -8,7 +8,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="absolute left-2 top-2 bg-black/70 rounded p-3 max-w-xs">
+  <div class="absolute left-2 top-2 bg-black/70 rounded p-3 max-w-72">
     <div class="breadcrumbs text-xs text-gray-400 pt-0 pb-1">
       <ul>
         <li><a :href="withBase('/')">Kuwasidian</a></li>
@@ -17,7 +17,7 @@ defineProps<{
     </div>
 
     <h3 class="text-white text-lg font-bold mb-2">
-      経済的豊かさランキング（2025）
+      経済豊かさランキング（2025）
     </h3>
 
     <p class="text-gray-300 text-xs mb-4">
@@ -25,15 +25,15 @@ defineProps<{
     </p>
 
     <ul>
-      <li v-for="(city, index) in earth.cities" :key="index">
+      <li v-for="(city, index) in earth.locations" :key="index">
         <button
           class="text-sm transition-colors duration-200"
           :class="[
-            earth.currentCityIndex.value === index
+            earth.currentLocationIndex.value === index
               ? 'text-white'
               : 'text-gray-400 hover:text-gray-300',
           ]"
-          @click="earth.goToCity(index)"
+          @click="earth.goToLocation(index)"
         >
           {{ index + 1 }}. {{ city.name }}
         </button>
@@ -42,7 +42,7 @@ defineProps<{
 
     <button
       class="btn btn-primary mt-4 w-full"
-      @click="earth.goToNextCity()"
+      @click="earth.goToNextLocation()"
     >
       次の都市へ
     </button>
