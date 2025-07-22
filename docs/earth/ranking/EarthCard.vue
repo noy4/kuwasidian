@@ -8,7 +8,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="absolute left-2 top-2 bg-black/70 rounded p-3">
+  <div class="absolute left-2 top-2 bg-black/70 rounded p-3 max-w-xs">
     <div class="breadcrumbs text-xs text-gray-400 pt-0 pb-1">
       <ul>
         <li><a :href="withBase('/')">Kuwasidian</a></li>
@@ -17,8 +17,12 @@ defineProps<{
     </div>
 
     <h3 class="text-white text-lg font-bold mb-2">
-      都市履歴
+      経済的豊かさランキング（2025）
     </h3>
+
+    <p class="text-gray-300 text-xs mb-4">
+      <b>一人当たりGDP（PPP）</b>（物価の違いを考慮した生活水準を測る指標）を元にしたランキング
+    </p>
 
     <ul>
       <li v-for="(city, index) in earth.cities" :key="index">
@@ -31,7 +35,7 @@ defineProps<{
           ]"
           @click="earth.goToCity(index)"
         >
-          {{ city.name }}
+          {{ index + 1 }}. {{ city.name }}
         </button>
       </li>
     </ul>
