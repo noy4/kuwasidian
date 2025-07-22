@@ -24,8 +24,8 @@ export class Earth {
     this.locations = locations
   }
 
-  async mount() {
-    await this.initialize()
+  mount = () => {
+    this.initialize()
     // this.startCameraRotation()
     this.unsubKeys = tinykeys(window, {
       'Space': () => this.toggleCameraRotation(),
@@ -34,6 +34,7 @@ export class Earth {
       'Shift+Enter': () => this.goToPrevLocation(),
       'ArrowLeft': () => this.goToPrevLocation(),
     })
+    return () => this.destroy()
   }
 
   destroy() {

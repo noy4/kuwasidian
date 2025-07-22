@@ -7,13 +7,7 @@ import locations from './gdp-per-capita.json'
 import 'cesium/Build/Cesium/Widgets/widgets.css'
 
 const earth = new Earth(locations as Location[])
-
-onMounted(() => {
-  earth.mount()
-  return () => {
-    earth.destroy()
-  }
-})
+onMounted(earth.mount)
 </script>
 
 <template>
