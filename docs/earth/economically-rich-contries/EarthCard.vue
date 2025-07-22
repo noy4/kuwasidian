@@ -17,7 +17,7 @@ defineProps<{
     </div>
 
     <h3 class="text-white text-lg font-bold mb-2">
-      経済豊かさランキング（2025）
+      経済的に豊かな国々（2025）
     </h3>
 
     <p class="text-gray-300 text-xs mb-4">
@@ -44,7 +44,7 @@ defineProps<{
       class="btn btn-primary mt-4 w-full"
       @click="earth.goToNextLocation()"
     >
-      次の都市へ
+      次の場所へ
     </button>
 
     <button
