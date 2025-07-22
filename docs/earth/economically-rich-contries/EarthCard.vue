@@ -20,9 +20,9 @@ defineProps<{
       経済的に豊かな国々（2025）
     </h3>
 
-    <p class="text-gray-300 text-xs mb-4">
+    <div class="text-gray-300 text-xs mb-4">
       <b>一人当たりGDP（PPP）</b>（物価の違いを考慮した生活水準を測る指標）を元にしたランキング
-    </p>
+    </div>
 
     <ul>
       <li v-for="(city, index) in earth.locations" :key="index">
@@ -36,6 +36,9 @@ defineProps<{
           @click="earth.goToLocation(index)"
         >
           {{ index + 1 }}. {{ city.name }}
+          <template v-if="city.gdp_ppp !== -1">
+            (${{ city.gdp_ppp.toLocaleString() }})
+          </template>
         </button>
       </li>
     </ul>
@@ -54,5 +57,17 @@ defineProps<{
     >
       {{ earth.isRotating.value ? '回転停止' : '回転開始' }}
     </button>
+
+    <div class="text-gray-300 text-xs mt-4">
+      データ出典：
+      <a
+        href="https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(PPP)_per_capita"
+        class="link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        List of countries by GDP (PPP) per capita - Wikipedia
+      </a>
+    </div>
   </div>
 </template>

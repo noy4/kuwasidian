@@ -8,6 +8,10 @@ export interface Location {
   latitude: number
 }
 
+export type GDPLocation = Location & {
+  gdp_ppp: number
+}
+
 export class Earth {
   RANGE = 1000
   PITCH = Cesium.Math.toRadians(-15)
@@ -17,10 +21,10 @@ export class Earth {
   viewer!: Cesium.Viewer
   currentLocationIndex = ref(0)
   isRotating = ref(false)
-  locations: Location[]
+  locations: GDPLocation[]
   unsubKeys: (() => void) | null = null
 
-  constructor(locations: Location[]) {
+  constructor(locations: GDPLocation[]) {
     this.locations = locations
   }
 
