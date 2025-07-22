@@ -13,7 +13,7 @@ export type GDPLocation = Location & {
 }
 
 export class Earth {
-  RANGE = 1000
+  RANGE = 2000
   PITCH = Cesium.Math.toRadians(-15)
   OFFSET = new Cesium.HeadingPitchRange(0, this.PITCH, this.RANGE)
   ROTATION_SPEED = 0.005
@@ -30,7 +30,7 @@ export class Earth {
 
   mount = () => {
     this.initialize()
-    // this.startCameraRotation()
+      .then(() => this.startCameraRotation())
     this.unsubKeys = tinykeys(window, {
       'Space': () => this.toggleCameraRotation(),
       'Enter': () => this.goToNextLocation(),
@@ -51,8 +51,8 @@ export class Earth {
   async initialize() {
     Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxNjdlYzkxZC1kNTM5LTRlNWItYmM4MC1hMGUyY2VmZDFlYWQiLCJpZCI6MzEyMTEyLCJpYXQiOjE3NDk4OTEyMDF9.Krcs6xfVbGbfMuxORnoMA4iF-mLfcvudZfLy9EBAwGQ'
     this.viewer = new Cesium.Viewer('cesiumContainer', {
-      terrain: Cesium.Terrain.fromWorldTerrain(),
-      // globe: false,
+      // terrain: Cesium.Terrain.fromWorldTerrain(),
+      globe: false,
       geocoder: Cesium.IonGeocodeProviderType.GOOGLE,
       timeline: false,
       animation: false,
@@ -63,8 +63,8 @@ export class Earth {
       homeButton: false,
     })
     this.viewer.scene.skyAtmosphere.show = true
-    // const tileset = await Cesium.createGooglePhotorealistic3DTileset()
-    // this.viewer.scene.primitives.add(tileset)
+    const tileset = await Cesium.createGooglePhotorealistic3DTileset()
+    this.viewer.scene.primitives.add(tileset)
     this.flyToLocationView(0, { duration: 0 })
   }
 
