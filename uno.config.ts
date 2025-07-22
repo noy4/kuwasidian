@@ -28,7 +28,7 @@ async function daisy(): Promise<Preset> {
       // --un-text-opacity などは無視
       if (util.layer === 'properties')
         return
-      util.selector = `.VPContent ${util.selector}`
+      util.selector = `.VPContent > :not(.NotFound) ${util.selector}`
     },
   }
 }
