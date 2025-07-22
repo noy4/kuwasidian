@@ -3,7 +3,6 @@ import { tinykeys } from 'tinykeys'
 import { ref } from 'vue'
 
 export interface City {
-  year: number
   name: string
   longitude: number
   latitude: number

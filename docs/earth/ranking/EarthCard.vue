@@ -20,35 +20,10 @@ defineProps<{
       都市履歴
     </h3>
 
-    <ul class="timeline timeline-vertical">
+    <ul>
       <li v-for="(city, index) in earth.cities" :key="index">
-        <hr v-if="index !== 0" class="bg-gray-600">
-
-        <div
-          class="timeline-start text-sm"
-          :class="[
-            earth.currentCityIndex.value === index
-              ? 'text-white'
-              : 'text-gray-400',
-          ]"
-        >
-          {{ city.year }}
-        </div>
-
-        <div class="timeline-middle">
-          <div
-            class="i-tabler-circle-check-filled w-4 h-4 cursor-pointer transition-colors duration-200"
-            :class="[
-              earth.currentCityIndex.value === index
-                ? 'bg-green-500'
-                : 'bg-gray-400 hover:bg-gray-300',
-            ]"
-            @click="earth.goToCity(index)"
-          />
-        </div>
-
         <button
-          class="timeline-end text-sm transition-colors duration-200"
+          class="text-sm transition-colors duration-200"
           :class="[
             earth.currentCityIndex.value === index
               ? 'text-white'
@@ -58,8 +33,6 @@ defineProps<{
         >
           {{ city.name }}
         </button>
-
-        <hr v-if="index < earth.cities.length - 1" class="bg-gray-600">
       </li>
     </ul>
 
