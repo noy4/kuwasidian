@@ -13,13 +13,15 @@ export type GDPLocation = Location & {
 }
 
 export class Earth {
-  RANGE = 2000
+  RANGE = 1000
   PITCH = Cesium.Math.toRadians(-15)
   OFFSET = new Cesium.HeadingPitchRange(0, this.PITCH, this.RANGE)
   ROTATION_SPEED = 0.005
 
   viewer!: Cesium.Viewer
+  terrainProvider!: Cesium.TerrainProvider
   currentLocationIndex = ref(0)
+  currentPoint = ref<Cesium.Cartesian3 | null>(null)
   isRotating = ref(false)
   locations: GDPLocation[]
   unsubKeys: (() => void) | null = null
@@ -30,7 +32,6 @@ export class Earth {
 
   mount = () => {
     this.initialize()
-      .then(() => this.startCameraRotation())
     this.unsubKeys = tinykeys(window, {
       'Space': () => this.toggleCameraRotation(),
       'Enter': () => this.goToNextLocation(),
@@ -51,8 +52,10 @@ export class Earth {
   async initialize() {
     Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxNjdlYzkxZC1kNTM5LTRlNWItYmM4MC1hMGUyY2VmZDFlYWQiLCJpZCI6MzEyMTEyLCJpYXQiOjE3NDk4OTEyMDF9.Krcs6xfVbGbfMuxORnoMA4iF-mLfcvudZfLy9EBAwGQ'
     this.viewer = new Cesium.Viewer('cesiumContainer', {
-      // terrain: Cesium.Terrain.fromWorldTerrain(),
+      // The globe does not need to be displayed,
+      // since the Photorealistic 3D Tiles include terrain
       globe: false,
+      // terrain: Cesium.Terrain.fromWorldTerrain(),
       geocoder: Cesium.IonGeocodeProviderType.GOOGLE,
       timeline: false,
       animation: false,
@@ -62,10 +65,15 @@ export class Earth {
       fullscreenButton: false,
       homeButton: false,
     })
+    // 標高の取得に使いたいが、`globe: false` だと viewer から取得できないようで、別で定義
+    this.terrainProvider = await Cesium.createWorldTerrainAsync()
     this.viewer.scene.skyAtmosphere.show = true
-    const tileset = await Cesium.createGooglePhotorealistic3DTileset()
+    const tileset = await Cesium.createGooglePhotorealistic3DTileset({
+      onlyUsingWithGoogleGeocoder: true, // needed to hide warning
+    })
     this.viewer.scene.primitives.add(tileset)
-    this.flyToLocationView(0, { duration: 0 })
+    await this.flyToLocationView(0, { duration: 0 })
+    this.startCameraRotation()
   }
 
   async goToLocation(locationIndex: number) {
@@ -99,12 +107,21 @@ export class Earth {
     locationIndex: number,
     options?: Parameters<Cesium.Camera['flyToBoundingSphere']>[1],
   ) {
-    const sphere = new Cesium.BoundingSphere(
-      Cesium.Cartesian3.fromDegrees(
+    const [terrainPosition] = await Cesium.sampleTerrainMostDetailed(
+      this.terrainProvider,
+      [Cesium.Cartographic.fromDegrees(
         this.locations[locationIndex].longitude,
         this.locations[locationIndex].latitude,
-      ),
+      )],
     )
+    console.log('height:', terrainPosition.height)
+    const center = Cesium.Cartesian3.fromDegrees(
+      this.locations[locationIndex].longitude,
+      this.locations[locationIndex].latitude,
+      terrainPosition.height,
+    )
+    this.currentPoint.value = center
+    const sphere = new Cesium.BoundingSphere(center)
     await this.flyToBoundingSphereAsync(sphere, {
       offset: this.OFFSET,
       ...options,
@@ -127,13 +144,12 @@ export class Earth {
 
   cameraRotationHandler = () => this.viewer.camera.rotateRight(this.ROTATION_SPEED)
 
+  // [Control the Camera – Cesium](https://cesium.com/learn/cesiumjs-learn/cesiumjs-camera/#orbit-around-a-point)
   startCameraRotation() {
     if (this.isRotating.value)
       return
     this.isRotating.value = true
-    const location = this.locations[this.currentLocationIndex.value]
-    const center = Cesium.Cartesian3.fromDegrees(location.longitude, location.latitude)
-    const transform = Cesium.Transforms.eastNorthUpToFixedFrame(center)
+    const transform = Cesium.Transforms.eastNorthUpToFixedFrame(this.currentPoint.value!)
     this.viewer.camera.lookAtTransform(transform, this.OFFSET)
     this.viewer.clock.onTick.addEventListener(this.cameraRotationHandler)
   }
