@@ -2,6 +2,7 @@
 import type { Earth } from './Earth'
 import { withBase } from 'vitepress'
 import { ref } from 'vue'
+import LocationItem from './LocationItem.vue'
 
 defineProps<{
   earth: Earth
@@ -32,25 +33,22 @@ const open = ref(true)
         <div class="text-gray-300 text-xs mt-2 mb-4">
           <b>一人当たりGDP（PPP）</b>（物価の違いを考慮した生活水準を測る指標）を元にしたランキング
         </div>
-        <div class="flex flex-col gap-1">
-          <div v-for="(city, index) in earth.locations" :key="index">
-            <button
-              class="text-sm transition-colors duration-100 px-2 py-1 rounded w-full flex text-start"
-              :class="[
-                earth.currentLocationIndex.value === index
-                  ? 'text-white bg-white/20'
-                  : 'text-gray-400 hover:bg-white/10 hover:text-white',
-              ]"
-              @click="earth.goToLocation(index)"
-            >
-              {{ index + 1 }}. {{ city.name }}
-              <div class="flex-1" />
-              <template v-if="city.gdp_ppp !== -1">
-                ${{ city.gdp_ppp.toLocaleString() }}
-              </template>
-            </button>
-          </div>
+
+        <div class="flex flex-col gap-1 h-80 overflow-scroll">
+          <LocationItem
+            v-for="(location, index) in earth.locations.slice(0, -1)"
+            :key="index"
+            :earth
+            :location
+            :index
+          />
         </div>
+        <LocationItem
+          :earth
+          :location="earth.locations.at(-1)!"
+          :index="earth.locations.length - 1"
+          class="mt-1"
+        />
 
         <button
           class="btn btn-primary mt-4 w-full"
