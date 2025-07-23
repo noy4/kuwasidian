@@ -110,7 +110,7 @@ export default withMermaid(defineConfig({
       .add('blog/[^index]*', () => {
         pageData.title = `${pageData.title} | ${siteTitle} Blog`
       })
-      .add('earth/*', () => {
+      .add('earth/[^index]*', () => {
         pageData.title = `${pageData.title} | ${siteTitle} Earth`
       })
       .add('*', () => {
