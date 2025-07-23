@@ -4,4 +4,7 @@ export default antfu({
   ignores: [
     '**/*.md',
   ],
+  rules: {
+    'no-console': 'off', // Allow console statements
+  },
 })
