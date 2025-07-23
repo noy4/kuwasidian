@@ -96,7 +96,7 @@ export default withMermaid(defineConfig({
       .add('index.md', () => {
         pageData.title = homeTitle
       })
-      .add('quests/[^index]*', () => {
+      .add('quests/(?!index)*', () => {
         pageData.title = `${pageData.title} | ${siteTitle} Quests`
 
         if (pageData.frontmatter.status === 'cleared') {
@@ -107,16 +107,17 @@ export default withMermaid(defineConfig({
           )
         }
       })
-      .add('blog/[^index]*', () => {
+      .add('blog/(?!index)*', () => {
         pageData.title = `${pageData.title} | ${siteTitle} Blog`
       })
-      .add('earth/[^index]*', () => {
+      .add('earth/(?!index)*', () => {
         pageData.title = `${pageData.title} | ${siteTitle} Earth`
       })
       .add('*', () => {
         pageData.title = `${pageData.title} | ${siteTitle}`
       })
     router.handle(pageData.relativePath)
+    console.log('pageData.relativePath:', pageData.relativePath)
 
     // set ogp
     const pageUrl = `${siteUrl}${pageData.relativePath.replace(/(index)?\.md$/, '')}`
