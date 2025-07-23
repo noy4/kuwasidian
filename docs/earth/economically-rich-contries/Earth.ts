@@ -33,11 +33,11 @@ export class Earth {
   mount = () => {
     this.initialize()
     this.unsubKeys = tinykeys(window, {
-      'Space': () => this.toggleCameraRotation(),
-      'Enter': () => this.goToNextLocation(),
-      'ArrowRight': () => this.goToNextLocation(),
-      'Shift+Enter': () => this.goToPrevLocation(),
-      'ArrowLeft': () => this.goToPrevLocation(),
+      'Space': preventDefault(() => this.toggleCameraRotation()),
+      'Enter': preventDefault(() => this.goToNextLocation()),
+      'ArrowRight': preventDefault(() => this.goToNextLocation()),
+      'Shift+Enter': preventDefault(() => this.goToPrevLocation()),
+      'ArrowLeft': preventDefault(() => this.goToPrevLocation()),
     })
     return () => this.destroy()
   }
@@ -202,4 +202,11 @@ function flyToBoundingSphereAsync(
       cancel: reject,
     })
   })
+}
+
+function preventDefault(fn: (e: KeyboardEvent) => void) {
+  return (e: KeyboardEvent) => {
+    e.preventDefault()
+    fn(e)
+  }
 }
