@@ -48,7 +48,8 @@ defineProps<{
       class="btn btn-primary mt-4 w-full"
       @click="earth.goToNextLocation()"
     >
-      次の場所へ
+      <i class="i-lucide-arrow-right" />
+      次の地点へ
     </button>
 
     <button
@@ -56,6 +57,7 @@ defineProps<{
       :class="earth.isRotating.value ? 'btn-error' : 'btn-success'"
       @click="earth.toggleCameraRotation()"
     >
+      <i :class="earth.isRotating.value ? 'i-lucide-refresh-cw-off' : 'i-lucide-refresh-cw'" />
       {{ earth.isRotating.value ? '回転停止' : '回転開始' }}
     </button>
 
