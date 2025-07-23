@@ -27,7 +27,7 @@ const open = ref(true)
     <div
       :class="open ? 'rows-[1fr]' : 'rows-[0fr]'"
       class="grid"
-      style="transition: grid-template-rows .2s ease-in-out;"
+      style="transition: grid-template-rows .2s ease;"
     >
       <div class="overflow-hidden">
         <div class="text-gray-300 text-xs mt-2 mb-4">
@@ -81,7 +81,10 @@ const open = ref(true)
       </div>
     </div>
 
-    <label class="btn btn-xs btn-ghost text-white/50 mt-1">
+    <label
+      class="btn btn-xs btn-ghost mt-1"
+      style="--btn-color: #fff2; --btn-fg: #fff8;"
+    >
       <input v-model="open" type="checkbox" hidden>
       <i :class="open ? 'i-lucide-chevron-up' : 'i-lucide-chevron-down'" />
       {{ open ? '閉じる' : '開く' }}
