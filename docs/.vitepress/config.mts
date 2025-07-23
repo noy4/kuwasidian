@@ -117,7 +117,6 @@ export default withMermaid(defineConfig({
         pageData.title = `${pageData.title} | ${siteTitle}`
       })
     router.handle(pageData.relativePath)
-    console.log('pageData.relativePath:', pageData.relativePath)
 
     // set ogp
     const pageUrl = `${siteUrl}${pageData.relativePath.replace(/(index)?\.md$/, '')}`
