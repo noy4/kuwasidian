@@ -1,5 +1,20 @@
 
-[[earth/city-history/index|都市履歴]]
+x 金持ち国ツアー
+虐殺数ツアー
+神話始まりの地ツアー
+人口密度低い国
+
+地球3dモデル
+プレート可視化
+気温マップ
+人工島、埋立地マッピング
+架空の神殿
+
+お金の流れシミュレーション
+飛行機ビジネスクラス料金運び
+ゲームオブスローンズ再現
+戦争再生
+
 
 - [Re:Earth - A free, open, highly extensible WebGIS platform | Re:Earth](https://reearth.io/ja/)
 - [GIS実習オープン教材とは · GIS実習オープン教材](https://gis-oer.github.io/gitbook/book/)
@@ -64,23 +79,6 @@ GeoGuessr
 [GeoFS - Free Online Flight Simulator](https://www.geo-fs.com/)
 
 マイクラ　リアル対応
-
-
-金持ち国ツアー
-虐殺数ツアー
-神話始まりの地ツアー
-人口密度低い国
-
-地球3dモデル
-プレート可視化
-気温マップ
-人工島、埋立地マッピング
-架空の神殿
-
-お金の流れシミュレーション
-飛行機ビジネスクラス料金運び
-ゲームオブスローンズ再現
-戦争再生
 
 
 [Cesium とは #JavaScript - Qiita](https://qiita.com/haystacker/items/2b17287ebf60bf87e892)
