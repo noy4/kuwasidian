@@ -16,6 +16,17 @@ x 金持ち国ツアー
 戦争再生
 
 
+---
+
+- [GPlates Portal](https://portal.gplates.org/)
+- [geojson.xyz](https://geojson.xyz/)
+
+[デジタル地球儀](https://digital-globe.netlify.app/)
+[グリフォン](https://griffon.netlify.app/)
+
+---
+
+
 - [Re:Earth - A free, open, highly extensible WebGIS platform | Re:Earth](https://reearth.io/ja/)
 - [GIS実習オープン教材とは · GIS実習オープン教材](https://gis-oer.github.io/gitbook/book/)
 - [Learning | PLATEAUを学び、活用する | PLATEAU [プラトー]](https://www.mlit.go.jp/plateau/learning/)
