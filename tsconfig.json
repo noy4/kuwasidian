@@ -7,6 +7,9 @@
     "useDefineForClassFields": true,
     "module": "esnext",
     "moduleResolution": "node",
+    "paths": {
+      "@/*": ["./docs/.vitepress/*"]
+    },
     "resolveJsonModule": true,
     "strict": true,
     "sourceMap": true,

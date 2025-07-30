@@ -12,6 +12,6 @@ onMounted(() => {
 <template>
   <div class="relative w-full h-screen z-1000">
     <div id="map" class="w-full h-full" />
-    <!-- <EarthCard :earth /> -->
+    <EarthCard />
   </div>
 </template>

@@ -41,17 +41,11 @@ export const colorRange: Color[] = [
 ]
 
 function getTooltip({ object }: PickingInfo) {
-  if (!object) {
+  if (!object)
     return null
-  }
-  const lat = object.position[1]
-  const lng = object.position[0]
-  const count = object.count
 
-  return `\
-    latitude: ${Number.isFinite(lat) ? lat.toFixed(6) : ''}
-    longitude: ${Number.isFinite(lng) ? lng.toFixed(6) : ''}
-    ${count} Schools`
+  const count = object.count
+  return `${count} Schools`
 }
 
 type DataPoint = [longitude: number, latitude: number]

@@ -1,4 +1,5 @@
 import type { DefaultTheme } from 'vitepress'
+import path from 'node:path'
 import process from 'node:process'
 import ReactivityTransform from '@vue-macros/reactivity-transform/vite'
 import UnoCSS from 'unocss/vite'
@@ -75,7 +76,9 @@ export default withMermaid(defineConfig({
     resolve: {
       alias: {
         // [Updating mermaid to 9.2.0 reported an error](https://github.com/emersonbottero/vitepress-plugin-mermaid/issues/24#issuecomment-1379779295)
-        mermaid: 'mermaid/dist/mermaid.esm.mjs',
+        'mermaid': 'mermaid/dist/mermaid.esm.mjs',
+        // [[Docs] Explain how to use TypeScript in a VitePress project · Issue #1047 · vuejs/vitepress](https://github.com/vuejs/vitepress/issues/1047)
+        '@': path.resolve(__dirname, './'),
       },
     },
     plugins: [

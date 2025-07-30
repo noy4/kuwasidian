@@ -23,6 +23,7 @@
     "dedent": "^1.6.0",
     "gray-matter": "^4.0.3",
     "maplibre-gl": "^5.6.1",
+    "markdown-it-async": "^2.2.0",
     "minimatch": "^10.0.3",
     "three": "^0.177.0",
     "tinykeys": "^3.0.0",
