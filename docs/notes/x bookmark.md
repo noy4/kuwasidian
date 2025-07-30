@@ -1,3 +1,4 @@
+[XユーザーのKevin Whitleyさん: 「Love this.」 / X](https://x.com/kevinrwhitley/status/1949111669570809934)
 [Xユーザーの中村俊也｜ＡＩキャンプ®さん: 「おおおお、すごい！本当だ！Google AI StudioにYouTubeのURLをはりつけ、「SRTファイル作って」ってお願いしたら、全字幕とタイムスタンプを作ってくれる！しかもこれ、英語の動画に翻訳までつけてくれる！神じゃん！Google強い。 https://t.co/svCsrAcvIn」 / X](https://x.com/tsyn18/status/1900156566382248414)
 [Xユーザーのpaji.ethさん: 「AIヤバい、新Gemini、こんなのも https://t.co/w7w4VGzI4e」 / X](https://x.com/paji_a/status/1922230096011702684)
 [Xユーザーのpaji.ethさん: 「AIヤバい、Gemini、進化はまだ続くし https://t.co/Z6YcdYaiAT」 / X](https://x.com/paji_a/status/1923297851385274384)
