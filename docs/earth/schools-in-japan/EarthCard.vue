@@ -4,7 +4,7 @@ import { mdrender } from '@/utils'
 </script>
 
 <template>
-  <div class="absolute left-2 top-2 bg-black/70 rounded p-3 max-w-72 w-full">
+  <div class="absolute left-2 top-2 bg-black/70 rounded p-3 max-w-72 w-full z-10">
     <div class="breadcrumbs text-xs text-gray-400 pt-0 pb-1">
       <ul>
         <li><a :href="withBase('/')">Kuwasidian</a></li>
