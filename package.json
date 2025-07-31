@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@ameinhardt/unocss-preset-daisy": "^1.1.8",
+    "@deck.gl/geo-layers": "^9.1.14",
     "@deck.gl/mapbox": "^9.1.14",
     "@loaders.gl/core": "^4.3.4",
     "@loaders.gl/csv": "^4.3.4",
