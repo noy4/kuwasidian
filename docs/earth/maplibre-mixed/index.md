@@ -1,5 +1,5 @@
 ---
-title: MapLibre
+title: MapLibre Mixed
 description: MapLibre のテスト
 layout: page
 sidebar: false

@@ -17,8 +17,16 @@ defineProps<{
     </div>
 
     <h3 class="text-white text-lg font-bold">
-      MapLibre
+      MapLibre Mixed Example
     </h3>
+
+    <input
+      type="checkbox"
+      :checked="earth.isPopulationLayerVisible.value"
+      class="toggle"
+      @change="earth.togglePopulationLayer"
+    >
+
     <div class="h-3" />
   </div>
 </template>

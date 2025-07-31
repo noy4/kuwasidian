@@ -49,10 +49,61 @@ const ELEVATION_DECODER: TerrainLayerProps['elevationDecoder'] = {
 
 export class Earth {
   totalPopulation = ref(0)
+  deckOverlay!: DeckOverlay
+  terrainLayer!: TerrainLayer
+  populationLayer!: HexagonLayer<DataPoint>
+  isPopulationLayerVisible = ref(true)
 
-  init() {
+  init = () => {
+    const map = new maplibregl.Map({
+      container: 'map',
+      style: MAP_STYLE,
+      // japan
+      center: [137, 36],
+      zoom: 5.5,
+      pitch: 40.5,
+      bearing: -27,
+    })
+
+    this.terrainLayer = new TerrainLayer({
+      id: 'terrain',
+      minZoom: 0,
+      maxZoom: 23,
+      strategy: 'no-overlap',
+      elevationDecoder: ELEVATION_DECODER,
+      elevationData: TERRAIN_IMAGE,
+      texture: SURFACE_IMAGE,
+      wireframe: false,
+      color: [255, 255, 255],
+    })
+
+    this.deckOverlay = new DeckOverlay({
+      // interleaved: true,
+      getTooltip,
+      layers: [this.terrainLayer],
+    })
+
+    map.addControl(this.deckOverlay)
+    map.addControl(new maplibregl.NavigationControl())
+
     loadMap().then((result) => {
       this.totalPopulation.value = result.totalPopulation
+      this.populationLayer = result.populationLayer
+      this.deckOverlay.setProps({
+        layers: [
+          this.terrainLayer,
+          this.populationLayer,
+        ],
+      })
+    })
+  }
+
+  togglePopulationLayer = () => {
+    this.isPopulationLayerVisible.value = !this.isPopulationLayerVisible.value
+    this.deckOverlay.setProps({
+      layers: this.isPopulationLayerVisible.value
+        ? [this.terrainLayer, this.populationLayer]
+        : [this.terrainLayer],
     })
   }
 }
@@ -62,67 +113,39 @@ export async function loadMap() {
   const data = _data.map(d => [d.X, d.Y, d.Z] as DataPoint)
   const totalPopulation = data.reduce((sum, d) => sum + d[2], 0)
 
-  const map = new maplibregl.Map({
-    container: 'map',
-    style: MAP_STYLE,
-    // japan
-    center: [137, 36],
-    zoom: 5.5,
-    pitch: 40.5,
-    bearing: -27,
-  })
-
   const radius = 1000
   const upperPercentile = 100
   const coverage = 0.8
 
-  const deckOverlay = new DeckOverlay({
-    // interleaved: true,
-    getTooltip,
-    layers: [
-      new TerrainLayer({
-        id: 'terrain',
-        minZoom: 0,
-        maxZoom: 23,
-        strategy: 'no-overlap',
-        elevationDecoder: ELEVATION_DECODER,
-        elevationData: TERRAIN_IMAGE,
-        texture: SURFACE_IMAGE,
-        wireframe: false,
-        color: [255, 255, 255],
-      }),
-      new HexagonLayer<DataPoint>({
-        id: 'heatmap',
-        gpuAggregation: true,
-        colorRange,
-        coverage,
-        data,
-        elevationRange: [0, 3000],
-        elevationScale: data && data.length ? 50 : 0,
-        extruded: true,
-        getPosition: d => d,
-        getElevationWeight: d => d[2],
-        getColorWeight: d => d[2],
-        pickable: true,
-        radius,
-        upperPercentile,
-        material: {
-          ambient: 0.64,
-          diffuse: 0.6,
-          shininess: 32,
-          specularColor: [51, 51, 51],
-        },
+  const populationLayer = new HexagonLayer<DataPoint>({
+    id: 'heatmap',
+    gpuAggregation: true,
+    colorRange,
+    coverage,
+    data,
+    elevationRange: [0, 3000],
+    elevationScale: data && data.length ? 50 : 0,
+    extruded: true,
+    getPosition: d => d,
+    getElevationWeight: d => d[2],
+    getColorWeight: d => d[2],
+    pickable: true,
+    radius,
+    upperPercentile,
+    material: {
+      ambient: 0.64,
+      diffuse: 0.6,
+      shininess: 32,
+      specularColor: [51, 51, 51],
+    },
 
-        transitions: {
-          elevationScale: 3000,
-        },
-      }),
-    ],
+    transitions: {
+      elevationScale: 3000,
+    },
   })
 
-  await map.once('load')
-  map.addControl(deckOverlay)
-  map.addControl(new maplibregl.NavigationControl())
-
-  return { totalPopulation }
+  return {
+    totalPopulation,
+    populationLayer,
+  }
 }
