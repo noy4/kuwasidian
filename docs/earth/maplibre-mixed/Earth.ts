@@ -51,8 +51,8 @@ export class Earth {
   totalPopulation = ref(0)
   deckOverlay!: DeckOverlay
   terrainLayer!: TerrainLayer
-  populationLayer!: HexagonLayer<DataPoint>
   isPopulationLayerVisible = ref(true)
+  data: DataPoint[] = []
 
   init = () => {
     const map = new maplibregl.Map({
@@ -88,11 +88,11 @@ export class Earth {
 
     loadMap().then((result) => {
       this.totalPopulation.value = result.totalPopulation
-      this.populationLayer = result.populationLayer
+      this.data = result.data
       this.deckOverlay.setProps({
         layers: [
           this.terrainLayer,
-          this.populationLayer,
+          this.createPopulationLayer(),
         ],
       })
     })
@@ -102,50 +102,53 @@ export class Earth {
     this.isPopulationLayerVisible.value = !this.isPopulationLayerVisible.value
     this.deckOverlay.setProps({
       layers: this.isPopulationLayerVisible.value
-        ? [this.terrainLayer, this.populationLayer]
+        ? [this.terrainLayer, this.createPopulationLayer()]
         : [this.terrainLayer],
+    })
+  }
+
+  // 同じ HexagonLayer インスタンスを再利用するとエラーになる？ので都度作成
+  createPopulationLayer = () => {
+    const data = this.data
+    const radius = 1000
+    const upperPercentile = 100
+    const coverage = 0.8
+
+    return new HexagonLayer<DataPoint>({
+      id: 'heatmap',
+      gpuAggregation: true,
+      colorRange,
+      coverage,
+      data,
+      elevationRange: [0, 3000],
+      elevationScale: data.length ? 50 : 0,
+      extruded: true,
+      getPosition: d => d,
+      getElevationWeight: d => d[2],
+      getColorWeight: d => d[2],
+      pickable: true,
+      radius,
+      upperPercentile,
+      material: {
+        ambient: 0.64,
+        diffuse: 0.6,
+        shininess: 32,
+        specularColor: [51, 51, 51],
+      },
+      transitions: {
+        elevationScale: 3000,
+      },
     })
   }
 }
 
 export async function loadMap() {
-  const _data = (await load(DATA_URL, CSVLoader)).data as Record<string, number>[]
-  const data = _data.map(d => [d.X, d.Y, d.Z] as DataPoint)
+  const records = (await load(DATA_URL, CSVLoader)).data as Record<string, number>[]
+  const data = records.map(d => [d.X, d.Y, d.Z] as DataPoint)
   const totalPopulation = data.reduce((sum, d) => sum + d[2], 0)
-
-  const radius = 1000
-  const upperPercentile = 100
-  const coverage = 0.8
-
-  const populationLayer = new HexagonLayer<DataPoint>({
-    id: 'heatmap',
-    gpuAggregation: true,
-    colorRange,
-    coverage,
-    data,
-    elevationRange: [0, 3000],
-    elevationScale: data && data.length ? 50 : 0,
-    extruded: true,
-    getPosition: d => d,
-    getElevationWeight: d => d[2],
-    getColorWeight: d => d[2],
-    pickable: true,
-    radius,
-    upperPercentile,
-    material: {
-      ambient: 0.64,
-      diffuse: 0.6,
-      shininess: 32,
-      specularColor: [51, 51, 51],
-    },
-
-    transitions: {
-      elevationScale: 3000,
-    },
-  })
 
   return {
     totalPopulation,
-    populationLayer,
+    data,
   }
 }
