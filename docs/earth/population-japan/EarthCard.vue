@@ -13,13 +13,13 @@ import { mdrender } from '@/utils'
     </div>
 
     <h3 class="text-white text-lg font-bold">
-      学校の分布（2013）
+      人口分布（2020）
     </h3>
 
     <div class="text-gray-300 text-xs mt-4">
       <div
         v-html="mdrender(`
-          データ出典：[国土数値情報 | 学校データ](https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P29.html#prefecture00)
+          データ出典：[WorldPop :: Population Counts](https://hub.worldpop.org/geodata/summary?id=31939)
         `)"
       />
     </div>

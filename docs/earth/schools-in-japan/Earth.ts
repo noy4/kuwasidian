@@ -52,9 +52,7 @@ type DataPoint = [longitude: number, latitude: number]
 
 export async function loadEarth() {
   const _data = (await load(DATA_URL, CSVLoader)).data as Record<string, number>[]
-  const data: DataPoint[] = _data
-    .map(d => (Number.isFinite(d.X) ? [d.X, d.Y] : null))
-    .filter(Boolean)
+  const data = _data.map(d => [d.X, d.Y] as DataPoint)
 
   const map = new maplibregl.Map({
     container: 'map',

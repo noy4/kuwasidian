@@ -1,6 +1,6 @@
 ---
-title: 経済的に豊かな国々
-description: 経済的に豊かな国々を地球儀上で巡る
+title: 学校の分布
+description: 日本の学校の分布
 layout: page
 sidebar: false
 navbar: false

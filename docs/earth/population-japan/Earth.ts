@@ -8,7 +8,8 @@ import { withBase } from 'vitepress'
 import 'maplibre-gl/dist/maplibre-gl.css'
 
 // Source data CSV
-const DATA_URL = withBase('/schools-japan-2013.csv')
+// [WorldPop :: Population Counts](https://hub.worldpop.org/geodata/summary?id=31939)
+const DATA_URL = withBase('/ppp_JPN_2020_1km_Aggregated.csv')
 
 const ambientLight = new AmbientLight({
   color: [255, 255, 255],
@@ -44,17 +45,15 @@ function getTooltip({ object }: PickingInfo) {
   if (!object)
     return null
 
-  const count = object.count
-  return `${count} Schools`
+  const count = object.elevationValue
+  return `${count.toFixed()}人`
 }
 
-type DataPoint = [longitude: number, latitude: number]
+type DataPoint = [longitude: number, latitude: number, elevation: number]
 
 export async function loadEarth() {
   const _data = (await load(DATA_URL, CSVLoader)).data as Record<string, number>[]
-  const data: DataPoint[] = _data
-    .map(d => (Number.isFinite(d.X) ? [d.X, d.Y] : null))
-    .filter(Boolean)
+  const data = _data.map(d => [d.X, d.Y, d.Z] as DataPoint)
 
   const map = new maplibregl.Map({
     container: 'map',
@@ -68,7 +67,7 @@ export async function loadEarth() {
 
   const radius = 1000
   const upperPercentile = 100
-  const coverage = 1
+  const coverage = 0.8
 
   const deckOverlay = new DeckOverlay({
     // interleaved: true,
@@ -85,6 +84,8 @@ export async function loadEarth() {
         elevationScale: data && data.length ? 50 : 0,
         extruded: true,
         getPosition: d => d,
+        getElevationWeight: d => d[2],
+        getColorWeight: d => d[2],
         pickable: true,
         radius,
         upperPercentile,
