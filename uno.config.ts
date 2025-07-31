@@ -1,5 +1,5 @@
 import { presetDaisy } from '@ameinhardt/unocss-preset-daisy'
-import { defineConfig, presetIcons, presetWind4, transformerVariantGroup } from 'unocss'
+import { defineConfig, presetIcons, presetTypography, presetWind4, transformerVariantGroup } from 'unocss'
 
 export default defineConfig({
   presets: [
@@ -12,6 +12,7 @@ export default defineConfig({
     presetIcons({
       cdn: 'https://esm.sh/',
     }),
+    presetTypography(),
   ],
   transformers: [
     transformerVariantGroup(),

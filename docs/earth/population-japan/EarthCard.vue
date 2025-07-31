@@ -4,8 +4,8 @@ import { mdrender } from '@/utils'
 </script>
 
 <template>
-  <div class="absolute left-2 top-2 bg-black/70 rounded p-3 max-w-72 w-full z-10">
-    <div class="breadcrumbs text-xs text-gray-400 pt-0 pb-1">
+  <div class="absolute left-2 top-2 bg-black/70 rounded px-3 max-w-72 w-full z-10">
+    <div class="breadcrumbs text-xs text-gray-400 pt-3 pb-1">
       <ul>
         <li><a :href="withBase('/')">Kuwasidian</a></li>
         <li><a :href="withBase('/earth/')">Earth</a></li>
@@ -16,12 +16,11 @@ import { mdrender } from '@/utils'
       人口分布（2020）
     </h3>
 
-    <div class="text-gray-300 text-xs mt-4">
-      <div
-        v-html="mdrender(`
-          データ出典：[WorldPop :: Population Counts](https://hub.worldpop.org/geodata/summary?id=31939)
-        `)"
-      />
-    </div>
+    <div
+      class="text-xs prose"
+      v-html="mdrender(`
+        データ出典：[WorldPop :: Population Counts](https://hub.worldpop.org/geodata/summary?id=31939)
+      `)"
+    />
   </div>
 </template>
