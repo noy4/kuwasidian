@@ -82,7 +82,7 @@ export async function loadMap() {
   const coverage = 0.8
 
   const deckOverlay = new DeckOverlay({
-    // interleaved: true,
+    interleaved: true,
     effects: [lightingEffect],
     getTooltip,
     layers: [
