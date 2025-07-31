@@ -2,7 +2,6 @@
 import { onMounted } from 'vue'
 import { loadEarth } from './Earth'
 import EarthCard from './EarthCard.vue'
-import 'cesium/Build/Cesium/Widgets/widgets.css'
 
 onMounted(() => {
   loadEarth()
