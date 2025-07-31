@@ -1,6 +1,11 @@
 <script setup lang="ts">
+import type { Earth } from './Earth'
 import { withBase } from 'vitepress'
 import { mdrender } from '@/utils'
+
+defineProps<{
+  earth: Earth
+}>()
 </script>
 
 <template>
@@ -19,6 +24,7 @@ import { mdrender } from '@/utils'
     <div
       class="text-xs prose"
       v-html="mdrender(`
+        総人口：${Math.floor(earth.totalPopulation.value).toLocaleString()} 人
         データ出典：[WorldPop :: Population Counts](https://hub.worldpop.org/geodata/summary?id=31939)
       `)"
     />

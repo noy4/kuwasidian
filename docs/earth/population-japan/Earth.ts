@@ -5,6 +5,7 @@ import { CSVLoader } from '@loaders.gl/csv'
 import { AmbientLight, HexagonLayer, LightingEffect, PointLight } from 'deck.gl'
 import maplibregl from 'maplibre-gl'
 import { withBase } from 'vitepress'
+import { ref } from 'vue'
 import 'maplibre-gl/dist/maplibre-gl.css'
 
 // Source data CSV
@@ -51,9 +52,20 @@ function getTooltip({ object }: PickingInfo) {
 
 type DataPoint = [longitude: number, latitude: number, elevation: number]
 
-export async function loadEarth() {
+export class Earth {
+  totalPopulation = ref(0)
+
+  init() {
+    loadMap().then((result) => {
+      this.totalPopulation.value = result.totalPopulation
+    })
+  }
+}
+
+export async function loadMap() {
   const _data = (await load(DATA_URL, CSVLoader)).data as Record<string, number>[]
   const data = _data.map(d => [d.X, d.Y, d.Z] as DataPoint)
+  const totalPopulation = data.reduce((sum, d) => sum + d[2], 0)
 
   const map = new maplibregl.Map({
     container: 'map',
@@ -108,4 +120,6 @@ export async function loadEarth() {
     map.addControl(deckOverlay)
     map.addControl(new maplibregl.NavigationControl())
   })
+
+  return { totalPopulation }
 }
