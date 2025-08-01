@@ -3,6 +3,7 @@ x 金持ち国ツアー
 虐殺数ツアー
 神話始まりの地ツアー
 人口密度低い国
+思想家マップ
 
 地球3dモデル
 プレート可視化
@@ -17,6 +18,9 @@ x 金持ち国ツアー
 
 
 ---
+[Svelte MapLibre GL - Build interactive web maps effortlessly with MapLibre GL JS and Svelte](https://svelte-maplibre-gl.mierune.dev/)
+[Sorami Hisamoto](https://sorami.dev/)
+[株式会社MIERUNE - 位置から、価値へ。](https://www.mierune.co.jp/)
 
 - [GPlates Portal](https://portal.gplates.org/)
 - [geojson.xyz](https://geojson.xyz/)

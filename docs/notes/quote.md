@@ -18,3 +18,6 @@ There are only two ways to live your life. One is as though nothing is a miracle
 
 美学
 
+
+人間はわからない状態に耐えられない
+わかった気になる
