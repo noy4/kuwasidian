@@ -5,7 +5,7 @@ import { CSVLoader } from '@loaders.gl/csv'
 import { HexagonLayer } from 'deck.gl'
 import maplibregl from 'maplibre-gl'
 import { withBase } from 'vitepress'
-import { ref } from 'vue'
+import { ref, watchEffect } from 'vue'
 import 'maplibre-gl/dist/maplibre-gl.css'
 
 // Source data CSV
@@ -40,8 +40,19 @@ const SURFACE_IMAGE = `https://api.mapbox.com/v4/mapbox.satellite/{z}/{x}/{y}@2x
 export class Earth {
   totalPopulation = ref(0)
   deckOverlay!: DeckOverlay
-  isPopulationLayerVisible = ref(true)
+  isPopulationLayerVisible = ref(false)
   data: DataPoint[] = []
+
+  constructor() {
+    watchEffect(() => {
+      const _deps = [this.isPopulationLayerVisible.value]
+      this.deckOverlay?.setProps({
+        layers: [
+          this.isPopulationLayerVisible.value && this.createPopulationLayer(),
+        ],
+      })
+    })
+  }
 
   init = () => {
     const map = new maplibregl.Map({
@@ -91,21 +102,12 @@ export class Earth {
     loadMap().then((result) => {
       this.totalPopulation.value = result.totalPopulation
       this.data = result.data
-      this.deckOverlay.setProps({
-        layers: [
-          // this.createPopulationLayer(),
-        ],
-      })
+      this.isPopulationLayerVisible.value = true
     })
   }
 
   togglePopulationLayer = () => {
     this.isPopulationLayerVisible.value = !this.isPopulationLayerVisible.value
-    this.deckOverlay.setProps({
-      layers: this.isPopulationLayerVisible.value
-        ? [this.createPopulationLayer()]
-        : [],
-    })
   }
 
   // 同じ HexagonLayer インスタンスを再利用するとエラーになる？ので都度作成
