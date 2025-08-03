@@ -38,12 +38,15 @@ const TERRAIN_IMAGE = `https://api.mapbox.com/v4/mapbox.terrain-rgb/{z}/{x}/{y}.
 const SURFACE_IMAGE = `https://api.mapbox.com/v4/mapbox.satellite/{z}/{x}/{y}@2x.png?access_token=${MAPBOX_TOKEN}`
 
 export class Earth {
-  totalPopulation = ref(0)
-  deckOverlay!: DeckOverlay
-  isPopulationLayerVisible = ref(false)
+  map?: maplibregl.Map
+  deckOverlay?: DeckOverlay
   data: DataPoint[] = []
+  totalPopulation = ref(0)
+  isPopulationLayerVisible = ref(false)
+  isSurfaceLayerVisible = ref(false)
 
   constructor() {
+    // watch population layer visibility
     watchEffect(() => {
       const props = {
         layers: [
@@ -51,6 +54,12 @@ export class Earth {
         ],
       }
       this.deckOverlay?.setProps(props)
+    })
+
+    // watch surface layer visibility
+    watchEffect(() => {
+      const visibility = this.isSurfaceLayerVisible.value ? 'visible' : 'none'
+      this.map?.setLayoutProperty('surface', 'visibility', visibility)
     })
   }
 
@@ -64,6 +73,7 @@ export class Earth {
       pitch: 40.5,
       bearing: -27,
     })
+    this.map = map
 
     this.deckOverlay = new DeckOverlay({
       // interleaved: true,
@@ -94,7 +104,7 @@ export class Earth {
         id: 'surface',
         type: 'raster',
         source: 'surface',
-        layout: { visibility: 'visible' },
+        layout: { visibility: this.isSurfaceLayerVisible.value ? 'visible' : 'none' },
       })
 
       // set terrain
@@ -110,6 +120,10 @@ export class Earth {
 
   togglePopulationLayer = () => {
     this.isPopulationLayerVisible.value = !this.isPopulationLayerVisible.value
+  }
+
+  toggleSurfaceLayer = () => {
+    this.isSurfaceLayerVisible.value = !this.isSurfaceLayerVisible.value
   }
 
   // 同じ HexagonLayer インスタンスを再利用するとエラーになる？ので都度作成
