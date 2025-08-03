@@ -1,9 +1,8 @@
-import type { TerrainLayerProps } from '@deck.gl/geo-layers'
 import type { Color, PickingInfo } from 'deck.gl'
 import { MapboxOverlay as DeckOverlay } from '@deck.gl/mapbox'
 import { load } from '@loaders.gl/core'
 import { CSVLoader } from '@loaders.gl/csv'
-import { HexagonLayer, TerrainLayer } from 'deck.gl'
+import { HexagonLayer } from 'deck.gl'
 import maplibregl from 'maplibre-gl'
 import { withBase } from 'vitepress'
 import { ref } from 'vue'
@@ -38,15 +37,6 @@ const MAPBOX_TOKEN = 'pk.eyJ1Ijoibm95NCIsImEiOiJjbWRtczZmMzExcTMzMmtwdXUxcWZidG8
 const TERRAIN_IMAGE = `https://api.mapbox.com/v4/mapbox.terrain-rgb/{z}/{x}/{y}.png?access_token=${MAPBOX_TOKEN}`
 const SURFACE_IMAGE = `https://api.mapbox.com/v4/mapbox.satellite/{z}/{x}/{y}@2x.png?access_token=${MAPBOX_TOKEN}`
 
-// https://docs.mapbox.com/help/troubleshooting/access-elevation-data/#mapbox-terrain-rgb
-// Note - the elevation rendered by this example is greatly exagerated!
-const ELEVATION_DECODER: TerrainLayerProps['elevationDecoder'] = {
-  rScaler: 6553.6,
-  gScaler: 25.6,
-  bScaler: 0.1,
-  offset: -10000,
-}
-
 export class Earth {
   totalPopulation = ref(0)
   deckOverlay!: DeckOverlay
@@ -63,18 +53,6 @@ export class Earth {
       pitch: 40.5,
       bearing: -27,
     })
-
-    // this.terrainLayer = new TerrainLayer({
-    //   id: 'terrain',
-    //   minZoom: 0,
-    //   maxZoom: 23,
-    //   strategy: 'no-overlap',
-    //   elevationDecoder: ELEVATION_DECODER,
-    //   elevationData: TERRAIN_IMAGE,
-    //   texture: SURFACE_IMAGE,
-    //   wireframe: false,
-    //   color: [255, 255, 255],
-    // })
 
     this.deckOverlay = new DeckOverlay({
       // interleaved: true,
@@ -93,20 +71,17 @@ export class Earth {
         tiles: [TERRAIN_IMAGE],
         tileSize: 512,
       })
-      // map.addSource('hillshadeSource', {
-      //   type: 'raster-dem',
-      //   tiles: [SURFACE_IMAGE],
-      //   tileSize: 512,
-      // })
-      map.addLayer(
-        {
-          id: 'hills',
-          type: 'hillshade',
-          source: 'terrain',
-          layout: { visibility: 'visible' },
-          paint: { 'hillshade-shadow-color': '#473B24' },
-        },
-      )
+      map.addSource('surface', {
+        type: 'raster',
+        tiles: [SURFACE_IMAGE],
+        tileSize: 512,
+      })
+      map.addLayer({
+        id: 'surface',
+        type: 'raster',
+        source: 'surface',
+        layout: { visibility: 'visible' },
+      })
     })
 
     loadMap().then((result) => {
@@ -114,7 +89,7 @@ export class Earth {
       this.data = result.data
       this.deckOverlay.setProps({
         layers: [
-          this.createPopulationLayer(),
+          // this.createPopulationLayer(),
         ],
       })
     })
