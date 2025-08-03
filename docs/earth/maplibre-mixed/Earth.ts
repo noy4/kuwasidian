@@ -80,11 +80,13 @@ export class Earth {
         type: 'raster-dem',
         tiles: [TERRAIN_IMAGE],
         tileSize: 512,
+        attribution: '<a href="https://www.mapbox.com/about/maps" target="_blank">Mapbox</a>',
       })
       map.addSource('surface', {
         type: 'raster',
         tiles: [SURFACE_IMAGE],
         tileSize: 512,
+        attribution: '<a href="https://www.mapbox.com/about/maps" target="_blank">Mapbox</a>',
       })
 
       // add layers
