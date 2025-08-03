@@ -27,7 +27,7 @@ function getTooltip({ object }: PickingInfo) {
     return null
 
   const count = object.elevationValue
-  return `${count.toFixed()}人`
+  return `${Math.floor(count).toLocaleString()}人`
 }
 
 type DataPoint = [longitude: number, latitude: number, elevation: number]
