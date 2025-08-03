@@ -50,7 +50,6 @@ const ELEVATION_DECODER: TerrainLayerProps['elevationDecoder'] = {
 export class Earth {
   totalPopulation = ref(0)
   deckOverlay!: DeckOverlay
-  terrainLayer!: TerrainLayer
   isPopulationLayerVisible = ref(true)
   data: DataPoint[] = []
 
@@ -65,22 +64,21 @@ export class Earth {
       bearing: -27,
     })
 
-    this.terrainLayer = new TerrainLayer({
-      id: 'terrain',
-      minZoom: 0,
-      maxZoom: 23,
-      strategy: 'no-overlap',
-      elevationDecoder: ELEVATION_DECODER,
-      elevationData: TERRAIN_IMAGE,
-      texture: SURFACE_IMAGE,
-      wireframe: false,
-      color: [255, 255, 255],
-    })
+    // this.terrainLayer = new TerrainLayer({
+    //   id: 'terrain',
+    //   minZoom: 0,
+    //   maxZoom: 23,
+    //   strategy: 'no-overlap',
+    //   elevationDecoder: ELEVATION_DECODER,
+    //   elevationData: TERRAIN_IMAGE,
+    //   texture: SURFACE_IMAGE,
+    //   wireframe: false,
+    //   color: [255, 255, 255],
+    // })
 
     this.deckOverlay = new DeckOverlay({
       // interleaved: true,
       getTooltip,
-      layers: [this.terrainLayer],
     })
 
     map.addControl(this.deckOverlay)
@@ -116,8 +114,7 @@ export class Earth {
       this.data = result.data
       this.deckOverlay.setProps({
         layers: [
-          // this.terrainLayer,
-          // this.createPopulationLayer(),
+          this.createPopulationLayer(),
         ],
       })
     })
@@ -127,8 +124,8 @@ export class Earth {
     this.isPopulationLayerVisible.value = !this.isPopulationLayerVisible.value
     this.deckOverlay.setProps({
       layers: this.isPopulationLayerVisible.value
-        ? [this.terrainLayer, this.createPopulationLayer()]
-        : [this.terrainLayer],
+        ? [this.createPopulationLayer()]
+        : [],
     })
   }
 
