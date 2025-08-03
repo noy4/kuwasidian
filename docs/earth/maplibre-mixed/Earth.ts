@@ -85,14 +85,39 @@ export class Earth {
 
     map.addControl(this.deckOverlay)
     map.addControl(new maplibregl.NavigationControl())
+    map.addControl(new maplibregl.TerrainControl({
+      source: 'terrain',
+    }))
+
+    map.on('load', () => {
+      map.addSource('terrain', {
+        type: 'raster-dem',
+        tiles: [TERRAIN_IMAGE],
+        tileSize: 512,
+      })
+      // map.addSource('hillshadeSource', {
+      //   type: 'raster-dem',
+      //   tiles: [SURFACE_IMAGE],
+      //   tileSize: 512,
+      // })
+      map.addLayer(
+        {
+          id: 'hills',
+          type: 'hillshade',
+          source: 'terrain',
+          layout: { visibility: 'visible' },
+          paint: { 'hillshade-shadow-color': '#473B24' },
+        },
+      )
+    })
 
     loadMap().then((result) => {
       this.totalPopulation.value = result.totalPopulation
       this.data = result.data
       this.deckOverlay.setProps({
         layers: [
-          this.terrainLayer,
-          this.createPopulationLayer(),
+          // this.terrainLayer,
+          // this.createPopulationLayer(),
         ],
       })
     })
