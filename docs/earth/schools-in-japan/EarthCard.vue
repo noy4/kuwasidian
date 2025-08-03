@@ -24,7 +24,7 @@ defineProps<{
     <div class="prose text-xs mt-4">
       総数：{{ earth.totalSchoolCount.value.toLocaleString() }}校
 
-      <div class="flex items-center gap-1">
+      <label class="block mt-3">
         学校数グラフ：
         <input
           type="checkbox"
@@ -32,7 +32,17 @@ defineProps<{
           class="toggle"
           @change="earth.toggleSchoolLayer"
         >
-      </div>
+      </label>
+
+      <label class="block">
+        航空写真：
+        <input
+          type="checkbox"
+          :checked="earth.isSurfaceLayerVisible.value"
+          class="toggle"
+          @change="earth.toggleSurfaceLayer"
+        >
+      </label>
 
       <div
         v-html="mdrender(`

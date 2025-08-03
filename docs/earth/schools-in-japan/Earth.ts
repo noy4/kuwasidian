@@ -12,6 +12,11 @@ import 'maplibre-gl/dist/maplibre-gl.css'
 const DATA_URL = withBase('/schools-japan-2013.csv')
 const MAP_STYLE = 'https://basemaps.cartocdn.com/gl/dark-matter-nolabels-gl-style/style.json'
 
+// Set your mapbox token here
+const MAPBOX_TOKEN = 'pk.eyJ1Ijoibm95NCIsImEiOiJjbWRtczZmMzExcTMzMmtwdXUxcWZidG80In0.TgOdgcBfCZHIdcYqHk4nIw'
+const TERRAIN_IMAGE = `https://api.mapbox.com/v4/mapbox.terrain-rgb/{z}/{x}/{y}.png?access_token=${MAPBOX_TOKEN}`
+const SURFACE_IMAGE = `https://api.mapbox.com/v4/mapbox.satellite/{z}/{x}/{y}@2x.png?access_token=${MAPBOX_TOKEN}`
+
 export const colorRange: Color[] = [
   [1, 152, 189],
   [73, 227, 206],
@@ -32,12 +37,15 @@ function getTooltip({ object }: PickingInfo) {
 type DataPoint = [longitude: number, latitude: number]
 
 export class Earth {
-  totalSchoolCount = ref(0)
+  map?: maplibregl.Map
   deckOverlay!: DeckOverlay
-  isSchoolLayerVisible = ref(false)
   data: DataPoint[] = []
+  totalSchoolCount = ref(0)
+  isSchoolLayerVisible = ref(false)
+  isSurfaceLayerVisible = ref(false)
 
   constructor() {
+    // watch school layer visibility
     watchEffect(() => {
       const props = {
         layers: [
@@ -45,6 +53,12 @@ export class Earth {
         ],
       }
       this.deckOverlay?.setProps(props)
+    })
+
+    // watch surface layer visibility
+    watchEffect(() => {
+      const visibility = this.isSurfaceLayerVisible.value ? 'visible' : 'none'
+      this.map?.setLayoutProperty('surface', 'visibility', visibility)
     })
   }
 
@@ -58,6 +72,7 @@ export class Earth {
       pitch: 40.5,
       bearing: -27,
     })
+    this.map = map
 
     this.deckOverlay = new DeckOverlay({
       // interleaved: true,
@@ -68,15 +83,48 @@ export class Earth {
     map.addControl(new maplibregl.NavigationControl())
     map.addControl(new maplibregl.GlobeControl())
 
+    map.on('load', () => {
+      // add sources
+      map.addSource('terrain', {
+        type: 'raster-dem',
+        tiles: [TERRAIN_IMAGE],
+        tileSize: 512,
+        attribution: '<a href="https://www.mapbox.com/about/maps" target="_blank">Mapbox</a>',
+      })
+      map.addSource('surface', {
+        type: 'raster',
+        tiles: [SURFACE_IMAGE],
+        tileSize: 512,
+        attribution: '<a href="https://www.mapbox.com/about/maps" target="_blank">Mapbox</a>',
+      })
+
+      // add layers
+      map.addLayer({
+        id: 'surface',
+        type: 'raster',
+        source: 'surface',
+        layout: {
+          visibility: this.isSurfaceLayerVisible.value ? 'visible' : 'none',
+        },
+      })
+
+      // set terrain
+      map.setTerrain({ source: 'terrain', exaggeration: 1.5 })
+    })
+
     loadData().then((result) => {
-      this.totalSchoolCount.value = result.data.length
       this.data = result.data
+      this.totalSchoolCount.value = result.data.length
       this.isSchoolLayerVisible.value = true
     })
   }
 
   toggleSchoolLayer = () => {
     this.isSchoolLayerVisible.value = !this.isSchoolLayerVisible.value
+  }
+
+  toggleSurfaceLayer = () => {
+    this.isSurfaceLayerVisible.value = !this.isSurfaceLayerVisible.value
   }
 
   // 同じ HexagonLayer インスタンスを再利用するとエラーになる？ので都度作成
@@ -116,7 +164,5 @@ export async function loadData() {
   const records = (await load(DATA_URL, CSVLoader)).data as Record<string, number>[]
   const data = records.map(d => [d.X, d.Y] as DataPoint)
 
-  return {
-    data,
-  }
+  return { data }
 }
