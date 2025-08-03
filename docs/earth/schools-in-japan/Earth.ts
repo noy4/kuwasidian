@@ -5,6 +5,7 @@ import { CSVLoader } from '@loaders.gl/csv'
 import { HexagonLayer } from 'deck.gl'
 import maplibregl from 'maplibre-gl'
 import { withBase } from 'vitepress'
+import { ref, watchEffect } from 'vue'
 import 'maplibre-gl/dist/maplibre-gl.css'
 
 // Source data CSV
@@ -30,57 +31,92 @@ function getTooltip({ object }: PickingInfo) {
 
 type DataPoint = [longitude: number, latitude: number]
 
-export async function loadEarth() {
-  const _data = (await load(DATA_URL, CSVLoader)).data as Record<string, number>[]
-  const data = _data.map(d => [d.X, d.Y] as DataPoint)
+export class Earth {
+  totalSchoolCount = ref(0)
+  deckOverlay!: DeckOverlay
+  isSchoolLayerVisible = ref(false)
+  data: DataPoint[] = []
 
-  const map = new maplibregl.Map({
-    container: 'map',
-    style: MAP_STYLE,
-    // japan
-    center: [137, 36],
-    zoom: 5.5,
-    pitch: 40.5,
-    bearing: -27,
-  })
+  constructor() {
+    watchEffect(() => {
+      const props = {
+        layers: [
+          this.isSchoolLayerVisible.value && this.createSchoolLayer(),
+        ],
+      }
+      this.deckOverlay?.setProps(props)
+    })
+  }
 
-  const radius = 1000
-  const upperPercentile = 100
-  const coverage = 1
+  init = () => {
+    const map = new maplibregl.Map({
+      container: 'map',
+      style: MAP_STYLE,
+      // japan
+      center: [137, 36],
+      zoom: 5.5,
+      pitch: 40.5,
+      bearing: -27,
+    })
 
-  const deckOverlay = new DeckOverlay({
-    // interleaved: true,
-    getTooltip,
-    layers: [
-      new HexagonLayer<DataPoint>({
-        id: 'heatmap',
-        gpuAggregation: true,
-        colorRange,
-        coverage,
-        data,
-        elevationRange: [0, 3000],
-        elevationScale: data && data.length ? 50 : 0,
-        extruded: true,
-        getPosition: d => d,
-        pickable: true,
-        radius,
-        upperPercentile,
-        material: {
-          ambient: 0.64,
-          diffuse: 0.6,
-          shininess: 32,
-          specularColor: [51, 51, 51],
-        },
+    this.deckOverlay = new DeckOverlay({
+      // interleaved: true,
+      getTooltip,
+    })
 
-        transitions: {
-          elevationScale: 3000,
-        },
-      }),
-    ],
-  })
-
-  map.on('load', () => {
-    map.addControl(deckOverlay)
+    map.addControl(this.deckOverlay)
     map.addControl(new maplibregl.NavigationControl())
-  })
+    map.addControl(new maplibregl.GlobeControl())
+
+    loadData().then((result) => {
+      this.totalSchoolCount.value = result.data.length
+      this.data = result.data
+      this.isSchoolLayerVisible.value = true
+    })
+  }
+
+  toggleSchoolLayer = () => {
+    this.isSchoolLayerVisible.value = !this.isSchoolLayerVisible.value
+  }
+
+  // 同じ HexagonLayer インスタンスを再利用するとエラーになる？ので都度作成
+  createSchoolLayer = () => {
+    const data = this.data
+    const radius = 1000
+    const upperPercentile = 100
+    const coverage = 0.8
+
+    return new HexagonLayer<DataPoint>({
+      id: 'heatmap',
+      gpuAggregation: true,
+      colorRange,
+      coverage,
+      data,
+      elevationRange: [0, 3000],
+      elevationScale: data.length ? 50 : 0,
+      extruded: true,
+      getPosition: d => d,
+      pickable: true,
+      radius,
+      upperPercentile,
+      material: {
+        ambient: 0.64,
+        diffuse: 0.6,
+        shininess: 32,
+        specularColor: [51, 51, 51],
+      },
+      transitions: {
+        elevationScale: 3000,
+      },
+    })
+  }
+}
+
+export async function loadData() {
+  const records = (await load(DATA_URL, CSVLoader)).data as Record<string, number>[]
+  const data = records.map(d => [d.X, d.Y] as DataPoint)
+
+  return {
+    data,
+  }
 }

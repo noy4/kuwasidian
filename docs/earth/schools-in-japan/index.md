@@ -8,15 +8,15 @@ navbar: false
 
 <script setup lang="ts">
 import { onMounted } from 'vue'
-import { loadEarth } from './Earth'
+import { Earth } from './Earth'
 import EarthCard from './EarthCard.vue'
 
-onMounted(() => {
-  loadEarth()
-})
+const earth = new Earth()
+
+onMounted(earth.init)
 </script>
 
 <div class="relative w-full h-screen z-1000">
   <div id="map" class="w-full h-full" />
-  <EarthCard />
+  <EarthCard :earth />
 </div>
