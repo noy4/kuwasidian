@@ -76,7 +76,7 @@ export class Earth {
     this.map = map
 
     this.deckOverlay = new DeckOverlay({
-      // interleaved: true,
+      interleaved: true,
       getTooltip,
     })
 
