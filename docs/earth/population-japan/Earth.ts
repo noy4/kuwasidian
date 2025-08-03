@@ -163,8 +163,8 @@ export class Earth {
 
 export async function loadPopulation() {
   const records = (await load(DATA_URL, CSVLoader)).data as Record<string, number>[]
-  const data = records.map(d => [d.X, d.Y, d.Z] as DataPoint)
-  const totalPopulation = data.reduce((sum, d) => sum + d[2], 0)
+  const data = records.filter(v => v.Z > 100).map(d => [d.X, d.Y, d.Z] as DataPoint)
+  const totalPopulation = records.reduce((sum, d) => sum + d.Z, 0)
 
   return {
     totalPopulation,

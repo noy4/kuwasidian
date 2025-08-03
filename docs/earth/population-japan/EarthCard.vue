@@ -21,10 +21,14 @@ defineProps<{
       人口分布（2020）
     </h3>
 
-    <div class="text-xs prose mt-4">
-      総人口：{{ Math.floor(earth.totalPopulation.value).toLocaleString() }} 人
+    <div class="text-xs prose">
+      <div
+        v-html="mdrender(`
+          総人口：**${Math.floor(earth.totalPopulation.value).toLocaleString()}** 人
+        `)"
+      />
 
-      <label class="block mt-3">
+      <label class="block">
         📊 人口表示：
         <input
           type="checkbox"
@@ -46,6 +50,7 @@ defineProps<{
 
       <div
         v-html="mdrender(`
+          *100人以下の区画はグラフ表示から除外
           データ出典：[WorldPop :: Population Counts](https://hub.worldpop.org/geodata/summary?id=31939)
         `)"
       />
