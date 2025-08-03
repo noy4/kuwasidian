@@ -25,7 +25,7 @@ defineProps<{
       総人口：{{ Math.floor(earth.totalPopulation.value).toLocaleString() }} 人
 
       <label class="block mt-3">
-        人口表示：
+        📊 人口表示：
         <input
           type="checkbox"
           :checked="earth.isPopulationLayerVisible.value"
@@ -35,7 +35,7 @@ defineProps<{
       </label>
 
       <label class="block">
-        航空写真：
+        🛰️ 航空写真：
         <input
           type="checkbox"
           :checked="earth.isSurfaceLayerVisible.value"

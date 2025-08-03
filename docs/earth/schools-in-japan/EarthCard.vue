@@ -25,7 +25,7 @@ defineProps<{
       総数：{{ earth.totalSchoolCount.value.toLocaleString() }}校
 
       <label class="block mt-3">
-        学校数グラフ：
+        📊 学校数グラフ：
         <input
           type="checkbox"
           :checked="earth.isSchoolLayerVisible.value"
@@ -35,7 +35,7 @@ defineProps<{
       </label>
 
       <label class="block">
-        航空写真：
+        🛰️ 航空写真：
         <input
           type="checkbox"
           :checked="earth.isSurfaceLayerVisible.value"
