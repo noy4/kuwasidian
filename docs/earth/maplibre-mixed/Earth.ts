@@ -101,7 +101,7 @@ export class Earth {
       map.setTerrain({ source: 'terrain', exaggeration: 1.5 })
     })
 
-    loadMap().then((result) => {
+    loadPopulation().then((result) => {
       this.totalPopulation.value = result.totalPopulation
       this.data = result.data
       this.isPopulationLayerVisible.value = true
@@ -147,7 +147,7 @@ export class Earth {
   }
 }
 
-export async function loadMap() {
+export async function loadPopulation() {
   const records = (await load(DATA_URL, CSVLoader)).data as Record<string, number>[]
   const data = records.map(d => [d.X, d.Y, d.Z] as DataPoint)
   const totalPopulation = data.reduce((sum, d) => sum + d[2], 0)
