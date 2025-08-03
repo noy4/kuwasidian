@@ -45,12 +45,12 @@ export class Earth {
 
   constructor() {
     watchEffect(() => {
-      const _deps = [this.isPopulationLayerVisible.value]
-      this.deckOverlay?.setProps({
+      const props = {
         layers: [
           this.isPopulationLayerVisible.value && this.createPopulationLayer(),
         ],
-      })
+      }
+      this.deckOverlay?.setProps(props)
     })
   }
 

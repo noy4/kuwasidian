@@ -21,21 +21,24 @@ defineProps<{
       人口分布（2020）
     </h3>
 
-    <div
-      class="text-xs prose"
-      v-html="mdrender(`
-        総人口：${Math.floor(earth.totalPopulation.value).toLocaleString()} 人
-        データ出典：[WorldPop :: Population Counts](https://hub.worldpop.org/geodata/summary?id=31939)
-      `)"
-    />
+    <div class="text-xs prose">
+      <div
+        v-html="mdrender(`
+          総人口：${Math.floor(earth.totalPopulation.value).toLocaleString()} 人
+          データ出典：[WorldPop :: Population Counts](https://hub.worldpop.org/geodata/summary?id=31939)
+        `)"
+      />
 
-    人口表示：
-    <input
-      type="checkbox"
-      :checked="earth.isPopulationLayerVisible.value"
-      class="toggle"
-      @change="earth.togglePopulationLayer"
-    >
+      <div class="flex items-center gap-1">
+        人口表示：
+        <input
+          type="checkbox"
+          :checked="earth.isPopulationLayerVisible.value"
+          class="toggle"
+          @change="earth.togglePopulationLayer"
+        >
+      </div>
+    </div>
 
     <div class="h-3" />
   </div>
