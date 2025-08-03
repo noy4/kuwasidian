@@ -61,11 +61,10 @@ export class Earth {
 
     map.addControl(this.deckOverlay)
     map.addControl(new maplibregl.NavigationControl())
-    map.addControl(new maplibregl.TerrainControl({
-      source: 'terrain',
-    }))
+    map.addControl(new maplibregl.GlobeControl())
 
     map.on('load', () => {
+      // add sources
       map.addSource('terrain', {
         type: 'raster-dem',
         tiles: [TERRAIN_IMAGE],
@@ -76,12 +75,17 @@ export class Earth {
         tiles: [SURFACE_IMAGE],
         tileSize: 512,
       })
+
+      // add layers
       map.addLayer({
         id: 'surface',
         type: 'raster',
         source: 'surface',
         layout: { visibility: 'visible' },
       })
+
+      // set terrain
+      map.setTerrain({ source: 'terrain', exaggeration: 1.5 })
     })
 
     loadMap().then((result) => {
