@@ -24,6 +24,16 @@ defineProps<{
     <div class="prose text-xs mt-4">
       総数：{{ earth.totalSchoolCount.value.toLocaleString() }}校
 
+      <div class="flex items-center gap-1">
+        学校数グラフ：
+        <input
+          type="checkbox"
+          :checked="earth.isSchoolLayerVisible.value"
+          class="toggle"
+          @change="earth.toggleSchoolLayer"
+        >
+      </div>
+
       <div
         v-html="mdrender(`
           データ出典：[国土数値情報 | 学校データ](https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P29.html#prefecture00)
