@@ -52,6 +52,14 @@ mindmap
 
 ---
 
+- [【99%が経験してる】なぜ人間は「IQの差」を感じると話が噛み合わないのか？【ゆっくり解説】 - YouTube](https://www.youtube.com/watch?v=3--fEtIYsDw)
+- [【アニメ】知能指数が可視化されるとどうなるのか？ - YouTube](https://www.youtube.com/watch?v=rU8L95TeZAg)
+- [【IQの差】話が通じない人の理由がコレだった - YouTube](https://www.youtube.com/watch?v=nsCKf0aQmDk)
+
+
+「何が起きたのか」よりも「どう感じたか」に脳が支配される
+
+
 考える人の図解・言語化
 
 

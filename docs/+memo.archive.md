@@ -1,3 +1,9 @@
+読み物する時、カーソルが文字に被ったりホバーエフェクト発動したりするのが気が散って嫌なんで、コンテンツのすぐ脇、サイドバーとの間にカーソルを移動させがちなんだが、そのエリアだとカーソル効かないサイトがたまにあって、そん時はバチギレます
+
+[高品質かつ高速な画像生成AI「FLUX.1 Kontext」が登場したので使ってみた、テキストと画像の入力に対応しアニメ風も実写風も生成可能 - GIGAZINE](https://gigazine.net/news/20250530-flux-1-kontext-image-generation-ai/)
+>「KreaAI」「Freepik」「Lightricks」「OpenArt」「LeonardoAI」「FAL」「Replicate」「Runware」「DataCrunch」「TogetherAI」「ComfyOrg」「HuggingFace」
+
+population
 猫耳センサー
 
 ## 2025/08/01
