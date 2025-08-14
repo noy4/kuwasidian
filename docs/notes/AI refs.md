@@ -1,4 +1,15 @@
 
+veo 3
+- [MimicPC - How to Write Veo 3 Prompts for Best Result (10+ Examples)](https://www.mimicpc.com/learn/how-to-write-veo-3-prompts-for-the-best-result)
+flux kontext
+- [How To Use Multi-Image In FLUX Kontext (ComfyUI) - YouTube](https://www.youtube.com/watch?v=kqbqKGBqf8s)
+- [MimicPC - How to Use FLUX Kontext Dev in ComfyUI for Free Editing](https://www.mimicpc.com/learn/how-to-use-flux-kontext-dev-in-comfyui-for-free)
+- [MimicPC - Flux Kontext Prompt Guide: How to Edit Images (20+ Examples)](https://www.mimicpc.com/learn/flux-kontext-prompt-guide-how-to-edit-images)
+- [ComfyUI チュートリアルシリーズ Ep 52: Flux Kontext をマスターする - インペインティング、編集、文字の一貫性 - YouTube](https://www.youtube.com/watch?v=9-onDeEWWvU)
+image2text
+- [MimicPC - DeepSeek+FLUX: Best Image-to-Prompt Workflow in ComfyUI](https://www.mimicpc.com/learn/deepseek-flux-best-image-to-prompt-workflow)
+- [MimicPC - Use DeepSeek Janus to Reverse Image Prompt & Generate Together](https://www.mimicpc.com/learn/use-deepseek-janus-to-reverse-image-prompt-generate-together)
+
 
 [FramePack](https://github.com/lllyasviel/FramePack)
 [VEED.IO](https://www.veed.io/)

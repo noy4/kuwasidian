@@ -13,16 +13,9 @@ Quest x Quest
 アー写
 ポーズ　男性モデル
 
-- [MimicPC - How to Write Veo 3 Prompts for Best Result (10+ Examples)](https://www.mimicpc.com/learn/how-to-write-veo-3-prompts-for-the-best-result)
-- [How To Use Multi-Image In FLUX Kontext (ComfyUI) - YouTube](https://www.youtube.com/watch?v=kqbqKGBqf8s)
-- [DeepSeek+FLUX: Best Image-to-Prompt Workflow in ComfyUI](https://home.mimicpc.com/learn-detail?id=deepseek-flux-best-image-to-prompt-workflow&from=learn)
-- [MimicPC - Use DeepSeek Janus to Reverse Image Prompt & Generate Together](https://www.mimicpc.com/learn/use-deepseek-janus-to-reverse-image-prompt-generate-together)
 
-
-
+[Top Ten Most Evil Dictators of All Time (in order of kill count) – Popten](https://www.popten.net/2010/05/top-ten-most-evil-dictators-of-all-time-in-order-of-kill-count/)
+[List of genocides - Wikipedia](https://en.wikipedia.org/wiki/List_of_genocides?utm_source=chatgpt.com)
+[◇史上最も影響を与えた人物ベスト100ランキング; M.H.ハート氏の本より　～aokiuva](https://www.aokiuva.com/b100influpers.html)
 
 ---
-
-
-
-

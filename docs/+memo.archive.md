@@ -1,3 +1,60 @@
+
+共産党
+外交技術　戦略的沈黙
+
+[人為的な要因による死者数一覧 - Wikipedia](https://ja.wikipedia.org/wiki/%E4%BA%BA%E7%82%BA%E7%9A%84%E3%81%AA%E8%A6%81%E5%9B%A0%E3%81%AB%E3%82%88%E3%82%8B%E6%AD%BB%E8%80%85%E6%95%B0%E4%B8%80%E8%A6%A7#%E6%AD%BB%E8%80%85%E6%95%B0%E3%81%AB%E3%82%88%E3%82%8B%E6%94%BF%E6%B2%BB%E7%9A%84%E6%8C%87%E5%B0%8E%E8%80%85%E4%B8%80%E8%A6%A7)
+[世界史虐殺者ランキング](http://barbarossa.red/slaughterer-ranking/)
+[人類史上最悪の虐殺者ランキング](https://anond.hatelabo.jp/20230210193818)
+
+人口分布
+厚切りジェイソン
+
+
+[人々が知性を捨て、陰謀論を掲げる男を選び始めた理由 - YouTube](https://www.youtube.com/watch?v=W094e2c_Tas)
+
+Put the white tiger besides the man while maintaining the man's facial features and pose. Make the white tiger tall as the man.
+
+道場の前に立つ女性の画像のスタイルで、女性を男性で置き換えて。男性のポーズは保つこと。
+
+the man in black suite is surrounded by the dragon. keep the man's face, composition, and pose the exact same.
+
+
+remove the man from the scene and make the woman in white wear the black tshirt with logo. Keep the style and logo of the black shirt the same. keep the woman's face and pose the same
+
+change the scene with the woman in white so that she is wearing the brown jacket over her existing clothes. Maintain all design details of the jacket. keep the woman's pose, composition, and color style the exact same.
+
+change the scene with the woman in white so that she is wearing the dress. Maintain the style and design of the dress exactly. keep the woman's pose, composition, and color style the exact same.
+
+Place the woman and the bunny and the anime girl together in one scene while preserving her exact facial features, eye color, and facial expression.front view, the woman is in the left, the anime girl in the right and the bunny in the middle, they all hug
+
+
+From the provided reference images, create a unified, cohesive image such that the woman is standing in front of the pink cherry blossom tree. Maintain the identity and characteristics of each subject while adjusting their proportions, scale, and positioning to create a harmonious, naturally balanced composition. Blend and integrate all elements seamlessly with consistent lighting, perspective, and style. The final result should look like a single naturally captured scene where all subjects are properly sized and positioned relative to each other, not assembled from multiple sources.
+
+
+From the provided reference images, create a unified, cohesive image such that the man is standing in front of the dojo. Maintain the identity and characteristics of each subject while adjusting their proportions, scale, and positioning to create a harmonious, naturally balanced composition. Blend and integrate all elements seamlessly with consistent lighting, perspective, and style. The final result should look like a single naturally captured scene where all subjects are properly sized and positioned relative to each other, not assembled from multiple sources.
+
+
+
+
+[Introduction to BIM - Bonsai 0.8.3 documentation](https://docs.bonsaibim.org/quickstart/introduction_to_bim.html)
+revit
+.ifc
+
+
+神の如き装飾が施された自分のアー写、が作りたくて研究してる
+被写体の顔が変わらんことがキモなんだが。。
+ChatGPTだとフル整形される。
+
+
+Google マップ（パソコン版）で縮小してたら限界突破して他の惑星移動したんだが
+まじかよ
+ほんでいろんな場所にもう名前がついてるっぽい
+金星にマクドナルドって場所あっておいおいやめとけよ2ちゃんネラー笑と思ったらこれはアメリカの女性作家ドルカス・マクドナルドさんにちなんでつけられたらしい
+>金星の地名は、**女性の名前**にちなんで名付けるというルールが国際天文学連合（IAU）によって定められているためです。
+
+まじかよ
+
+
 読み物する時、カーソルが文字に被ったりホバーエフェクト発動したりするのが気が散って嫌なんで、コンテンツのすぐ脇、サイドバーとの間にカーソルを移動させがちなんだが、そのエリアだとカーソル効かないサイトがたまにあって、そん時はバチギレます
 
 [高品質かつ高速な画像生成AI「FLUX.1 Kontext」が登場したので使ってみた、テキストと画像の入力に対応しアニメ風も実写風も生成可能 - GIGAZINE](https://gigazine.net/news/20250530-flux-1-kontext-image-generation-ai/)
