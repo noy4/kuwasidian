@@ -13,8 +13,8 @@ const open = ref(true)
 </script>
 
 <template>
-  <div class="absolute left-2 top-2 bg-black/70 rounded p-3 max-w-72 w-full">
-    <div class="breadcrumbs text-xs text-gray-400 pt-0 pb-1">
+  <div class="absolute left-2 top-2 bg-black/70 rounded px-3 max-w-76 w-full">
+    <div class="breadcrumbs text-xs text-gray-400 pt-3 pb-1">
       <ul>
         <li><a :href="withBase('/')">Kuwasidian</a></li>
         <li><a :href="withBase('/earth/')">Earth</a></li>
@@ -22,7 +22,7 @@ const open = ref(true)
     </div>
 
     <h3 class="text-white text-lg font-bold">
-      虐殺数ランキング
+      たくさん殺した独裁者ランキング
     </h3>
 
     <div
@@ -73,7 +73,7 @@ const open = ref(true)
     </div>
 
     <label
-      class="btn btn-xs btn-ghost"
+      class="btn btn-xs btn-ghost mb-2"
       style="--btn-color: #fff2; --btn-fg: #fff8;"
     >
       <input v-model="open" type="checkbox" hidden>
