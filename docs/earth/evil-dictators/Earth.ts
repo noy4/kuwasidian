@@ -12,6 +12,8 @@ export type DictatorLocation = Location & {
   country: string
   min_death_count: number
   max_death_count: number
+  icon: string
+  description: string
 }
 
 export class Earth {

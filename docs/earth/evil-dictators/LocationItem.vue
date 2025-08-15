@@ -24,7 +24,7 @@ function formatNumber(num: number): string {
 
 <template>
   <button
-    class="text-sm transition-colors duration-100 px-2 py-1 rounded w-full text-start"
+    class="text-sm transition-colors duration-100 px-2 py-1 rounded flex items-center text-start"
     :class="[
       earth.currentLocationIndex.value === index
         ? 'text-white bg-white/20'
@@ -32,20 +32,29 @@ function formatNumber(num: number): string {
     ]"
     @click="earth.goToLocation(index)"
   >
-    {{ index + 1 }}. {{ location.name }}
+    <div class="w-4">
+      {{ index + 1 }}.
+    </div>
 
-    <div class="flex">
-      <span>（{{ location.country }}）</span>
-      <span class="ml-auto">
-        {{
-          [
-            formatNumber(location.min_death_count),
-            location.min_death_count !== location.max_death_count
-              && `-${formatNumber(location.max_death_count)}`,
-            '人',
-          ].filter(Boolean).join('')
-        }}
-      </span>
+    <div class="w-9 h-9 bg-red rounded-full mr-2 relative overflow-hidden">
+      <img :src="location.icon" class="absolute inset-0 object-cover">
+    </div>
+
+    <div class="flex-1">
+      <div class="flex flex-wrap">
+        <span class="font-semibold">{{ location.name }}</span>
+        <span>（{{ location.country }}）</span>
+        <span class="ml-auto">
+          {{
+            [
+              formatNumber(location.min_death_count),
+              location.min_death_count !== location.max_death_count
+                && `-${formatNumber(location.max_death_count)}`,
+              '人',
+            ].filter(Boolean).join('')
+          }}
+        </span>
+      </div>
     </div>
   </button>
 </template>
