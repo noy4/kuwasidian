@@ -2,6 +2,7 @@
 import type { Earth } from './Earth'
 import { withBase } from 'vitepress'
 import { ref } from 'vue'
+import { mdrender } from '@/utils'
 import LocationItem from './LocationItem.vue'
 
 defineProps<{
@@ -21,7 +22,7 @@ const open = ref(true)
     </div>
 
     <h3 class="text-white text-lg font-bold">
-      経済的に豊かな国々（2025）
+      虐殺数ランキング
     </h3>
 
     <div
@@ -31,24 +32,18 @@ const open = ref(true)
     >
       <div class="overflow-hidden">
         <div class="text-gray-300 text-xs mt-2 mb-4">
-          <b>一人当たりGDP（PPP）</b>（物価の違いを考慮した生活水準を測る指標）を元にしたランキング
+          殺害数順に独裁者を表示
         </div>
 
         <div class="flex flex-col gap-1 h-80 overflow-scroll">
           <LocationItem
-            v-for="(location, index) in earth.locations.slice(0, -1)"
+            v-for="(location, index) in earth.locations"
             :key="index"
             :earth
             :location
             :index
           />
         </div>
-        <LocationItem
-          :earth
-          :location="earth.locations.at(-1)!"
-          :index="earth.locations.length - 1"
-          class="mt-1"
-        />
 
         <button
           class="btn btn-primary mt-4 w-full"
@@ -67,22 +62,18 @@ const open = ref(true)
           {{ earth.isRotating.value ? '回転停止' : '回転開始' }}
         </button>
 
-        <div class="text-gray-300 text-xs mt-4">
-          データ出典：
-          <a
-            href="https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(PPP)_per_capita"
-            class="link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            List of countries by GDP (PPP) per capita - Wikipedia
-          </a>
+        <div class="prose text-xs">
+          <div
+            v-html="mdrender(`
+              ソース：[Top Ten Most Evil Dictators of All Time (in order of kill count) – Popten](https://www.popten.net/2010/05/top-ten-most-evil-dictators-of-all-time-in-order-of-kill-count/)
+            `)"
+          />
         </div>
       </div>
     </div>
 
     <label
-      class="btn btn-xs btn-ghost mt-1"
+      class="btn btn-xs btn-ghost"
       style="--btn-color: #fff2; --btn-fg: #fff8;"
     >
       <input v-model="open" type="checkbox" hidden>

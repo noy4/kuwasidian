@@ -1,12 +1,11 @@
 <script setup lang="ts">
-import type { GDPLocation } from './Earth'
 import { onMounted } from 'vue'
 import { Earth } from './Earth'
 import EarthCard from './EarthCard.vue'
-import locations from './gdp-per-capita.json'
+import locations from './evil-dictators.json'
 import 'cesium/Build/Cesium/Widgets/widgets.css'
 
-const earth = new Earth(locations as GDPLocation[])
+const earth = new Earth(locations)
 onMounted(earth.mount)
 </script>
 

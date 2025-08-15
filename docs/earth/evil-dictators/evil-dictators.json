@@ -1,0 +1,82 @@
+[
+  {
+    "name": "毛沢東",
+    "country": "中国",
+    "longitude": 116.4074,
+    "latitude": 39.9042,
+    "min_death_count": 49000000,
+    "max_death_count": 78000000
+  },
+  {
+    "name": "ヨシフ・スターリン",
+    "country": "ソビエト連邦",
+    "longitude": 37.6173,
+    "latitude": 55.7558,
+    "min_death_count": 23000000,
+    "max_death_count": 23000000
+  },
+  {
+    "name": "アドルフ・ヒトラー",
+    "country": "ドイツ",
+    "longitude": 13.4050,
+    "latitude": 52.5200,
+    "min_death_count": 17000000,
+    "max_death_count": 17000000
+  },
+  {
+    "name": "レオポルド2世",
+    "country": "ベルギー",
+    "longitude": 4.3517,
+    "latitude": 50.8503,
+    "min_death_count": 2000000,
+    "max_death_count": 15000000
+  },
+  {
+    "name": "東條英機",
+    "country": "日本",
+    "longitude": 139.6917,
+    "latitude": 35.6895,
+    "min_death_count": 5000000,
+    "max_death_count": 5000000
+  },
+  {
+    "name": "イスマイル・エンヴェル・パシャ",
+    "country": "オスマン帝国",
+    "longitude": 28.9784,
+    "latitude": 41.0082,
+    "min_death_count": 2500000,
+    "max_death_count": 2500000
+  },
+  {
+    "name": "ポル・ポト",
+    "country": "カンボジア",
+    "longitude": 104.9160,
+    "latitude": 11.5564,
+    "min_death_count": 1700000,
+    "max_death_count": 2500000
+  },
+  {
+    "name": "キム・イルソン",
+    "country": "北朝鮮",
+    "longitude": 125.7625,
+    "latitude": 39.0392,
+    "min_death_count": 1600000,
+    "max_death_count": 1600000
+  },
+  {
+    "name": "メンギスト・ハイレ・マリアム",
+    "country": "エチオピア",
+    "longitude": 38.7578,
+    "latitude": 9.0300,
+    "min_death_count": 400000,
+    "max_death_count": 1500000
+  },
+  {
+    "name": "ヤクブ・ゴウォン",
+    "country": "ナイジェリア",
+    "longitude": 7.4951,
+    "latitude": 9.0579,
+    "min_death_count": 1100000,
+    "max_death_count": 1100000
+  }
+]

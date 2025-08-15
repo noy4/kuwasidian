@@ -8,8 +8,10 @@ export interface Location {
   latitude: number
 }
 
-export type GDPLocation = Location & {
-  gdp_ppp: number
+export type DictatorLocation = Location & {
+  country: string
+  min_death_count: number
+  max_death_count: number
 }
 
 export class Earth {
@@ -23,10 +25,10 @@ export class Earth {
   currentLocationIndex = ref(0)
   currentPoint = ref<Cesium.Cartesian3 | null>(null)
   isRotating = ref(false)
-  locations: GDPLocation[]
+  locations: DictatorLocation[]
   unsubKeys: (() => void) | null = null
 
-  constructor(locations: GDPLocation[]) {
+  constructor(locations: DictatorLocation[]) {
     this.locations = locations
   }
 
@@ -73,7 +75,7 @@ export class Earth {
     })
     this.viewer.scene.primitives.add(tileset)
     await this.flyToLocationView(0, { duration: 0 })
-    this.startCameraRotation()
+    // this.startCameraRotation()
   }
 
   async goToLocation(locationIndex: number) {

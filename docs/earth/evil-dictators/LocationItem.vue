@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import type { Earth, GDPLocation } from './Earth'
+import type { DictatorLocation, Earth } from './Earth'
 
 defineProps<{
   earth: Earth
-  location: GDPLocation
+  location: DictatorLocation
   index: number
 }>()
 </script>
 
 <template>
   <button
-    class="text-sm transition-colors duration-100 px-2 py-1 rounded w-full flex text-start"
+    class="text-sm transition-colors duration-100 px-2 py-1 rounded flex flex-wrap w-full text-start"
     :class="[
       earth.currentLocationIndex.value === index
         ? 'text-white bg-white/20'
@@ -18,10 +18,8 @@ defineProps<{
     ]"
     @click="earth.goToLocation(index)"
   >
-    {{ index + 1 }}. {{ location.name }}
+    {{ index + 1 }}. {{ location.name }}（{{ location.country }}）
     <div class="flex-1" />
-    <template v-if="location.gdp_ppp !== -1">
-      ${{ location.gdp_ppp.toLocaleString() }}
-    </template>
+    <span class="ml-auto">{{ location.min_death_count.toLocaleString() }}</span>
   </button>
 </template>
