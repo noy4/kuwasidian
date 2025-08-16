@@ -1,0 +1,102 @@
+[
+  {
+    "name": "毛沢東",
+    "country": "中国",
+    "longitude": 116.4074,
+    "latitude": 39.9042,
+    "min_death_count": 49000000,
+    "max_death_count": 78000000,
+    "icon": "https://i0.wp.com/www.popten.net/wp-content/uploads/2010/05/e6af9be6b3bde4b89c-mao-zedong-mao-tse-tung.jpg?resize=215%2C278&ssl=1",
+    "description": "大躍進政策や文化大革命による飢饉、強制労働、粛清で数千万人が死亡。"
+  },
+  {
+    "name": "ヨシフ・スターリン",
+    "country": "ソビエト連邦",
+    "longitude": 37.6173,
+    "latitude": 55.7558,
+    "min_death_count": 23000000,
+    "max_death_count": 23000000,
+    "icon": "https://i0.wp.com/www.popten.net/wp-content/uploads/2010/05/stalin.jpg?resize=215%2C253&ssl=1",
+    "description": "大粛清、強制収容所（グラグ）、飢饉（ホロドモール）による大量死。"
+  },
+  {
+    "name": "アドルフ・ヒトラー",
+    "country": "ドイツ",
+    "longitude": 13.4050,
+    "latitude": 52.5200,
+    "min_death_count": 17000000,
+    "max_death_count": 17000000,
+    "icon": "https://i0.wp.com/www.popten.net/wp-content/uploads/2010/05/hitler.jpg?resize=215%2C260&ssl=1",
+    "description": "ホロコーストや第二次世界大戦における民間人・兵士の大量殺害。"
+  },
+  {
+    "name": "レオポルド2世",
+    "country": "ベルギー",
+    "longitude": 4.3517,
+    "latitude": 50.8503,
+    "min_death_count": 2000000,
+    "max_death_count": 15000000,
+    "icon": "https://i0.wp.com/www.popten.net/wp-content/uploads/2010/05/leopold.jpg?resize=215%2C292&ssl=1",
+    "description": "コンゴ自由国での強制労働と虐待により数百万人が死亡。"
+  },
+  {
+    "name": "東條英機",
+    "country": "日本",
+    "longitude": 139.6917,
+    "latitude": 35.6895,
+    "min_death_count": 5000000,
+    "max_death_count": 5000000,
+    "icon": "https://i0.wp.com/www.popten.net/wp-content/uploads/2010/05/Hideki-Tojo.png?resize=215%2C275&ssl=1",
+    "description": "太平洋戦争における侵略戦争と占領政策で数百万人が死亡。"
+  },
+  {
+    "name": "イスマイル・エンヴェル・パシャ",
+    "country": "オスマン帝国",
+    "longitude": 28.9784,
+    "latitude": 41.0082,
+    "min_death_count": 2500000,
+    "max_death_count": 2500000,
+    "icon": "https://i0.wp.com/www.popten.net/wp-content/uploads/2010/05/250px-Ismail_Enver.jpg?resize=215%2C305&ssl=1",
+    "description": "アルメニア人・アッシリア人・ギリシャ人の大量虐殺。"
+  },
+  {
+    "name": "ポル・ポト",
+    "country": "カンボジア",
+    "longitude": 104.9160,
+    "latitude": 11.5564,
+    "min_death_count": 1700000,
+    "max_death_count": 2500000,
+    "icon": "https://i0.wp.com/www.popten.net/wp-content/uploads/2010/05/PolPot.jpg?resize=215%2C266&ssl=1",
+    "description": "農村化政策と粛清により数百万人が飢餓や強制労働で死亡。"
+  },
+  {
+    "name": "金日成",
+    "country": "北朝鮮",
+    "longitude": 125.7625,
+    "latitude": 39.0392,
+    "min_death_count": 1600000,
+    "max_death_count": 1600000,
+    "icon": "https://i0.wp.com/www.popten.net/wp-content/uploads/2010/05/kp04_02a.jpg?resize=216%2C252&ssl=1",
+    "description": "粛清、政治犯収容所、飢饉により多数の国民が死亡。"
+  },
+  {
+    "name": "メンギスト・ハイレ・マリアム",
+    "country": "エチオピア",
+    "longitude": 38.7578,
+    "latitude": 9.0300,
+    "min_death_count": 400000,
+    "max_death_count": 1500000,
+    "icon": "https://www.popten.net/wp-content/uploads/2010/05/ethiopia2Mengistu.bmp",
+    "description": "赤色テロによる政治的粛清と飢饉で数十万〜百万人以上が死亡。"
+  },
+  {
+    "name": "ヤクブ・ゴウォン",
+    "country": "ナイジェリア",
+    "longitude": 7.4951,
+    "latitude": 9.0579,
+    "min_death_count": 1100000,
+    "max_death_count": 1100000,
+    "icon": "https://i0.wp.com/www.popten.net/wp-content/uploads/2010/05/BNW-Yakubu-Gowon-Chinua-Achebe-Foundation-1.jpg?resize=215%2C245&ssl=1",
+    "description": "ビアフラ戦争中の封鎖政策と飢餓で百万人以上が死亡。"
+  }
+]
