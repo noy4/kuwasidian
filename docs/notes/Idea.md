@@ -16,3 +16,5 @@ curation of curation sites
 ロンリー論理
 Shitty嫉妬
 理不尽婦人
+Simple 信奉
+ぴえんぴえんサピエン

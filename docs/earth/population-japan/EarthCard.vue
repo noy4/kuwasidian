@@ -21,7 +21,7 @@ defineProps<{
       人口分布（2020）
     </h3>
 
-    <div class="text-xs prose">
+    <div class="text-xs prose text-white/80">
       <div
         v-html="mdrender(`
           総人口：**${Math.floor(earth.totalPopulation.value).toLocaleString()}** 人

@@ -24,11 +24,11 @@ function formatNumber(num: number): string {
 
 <template>
   <button
-    class="text-sm transition-colors duration-100 px-2 py-1 rounded flex text-start text-white"
+    class="text-sm duration-100 px-2 py-1 rounded flex text-start text-white"
     :class="[
       earth.currentLocationIndex.value === index
         ? 'bg-white/20'
-        : 'opacity-60 hover:bg-white/10 hover:text-white',
+        : 'opacity-60 hover:opacity-100 hover:bg-white/10',
     ]"
     @click="earth.goToLocation(index)"
   >

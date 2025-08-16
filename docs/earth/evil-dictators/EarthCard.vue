@@ -32,7 +32,7 @@ const open = ref(true)
     >
       <div class="overflow-hidden">
         <div class="text-gray-300 text-xs mt-2 mb-4">
-          殺害数順に独裁者を表示
+          恐ろしい数の死者を生み出した指導者たちが歴史に存在する。彼らをその犠牲者数とともに見ていく。
         </div>
 
         <div class="flex flex-col gap-1 h-80 overflow-scroll">
@@ -62,7 +62,7 @@ const open = ref(true)
           {{ earth.isRotating.value ? '回転停止' : '回転開始' }}
         </button>
 
-        <div class="prose text-xs">
+        <div class="prose text-xs text-white/50">
           <div
             v-html="mdrender(`
               ソース：[Top Ten Most Evil Dictators of All Time (in order of kill count) – Popten](https://www.popten.net/2010/05/top-ten-most-evil-dictators-of-all-time-in-order-of-kill-count/)

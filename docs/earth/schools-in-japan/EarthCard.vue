@@ -21,7 +21,7 @@ defineProps<{
       学校の分布（2013）
     </h3>
 
-    <div class="prose text-xs mt-4">
+    <div class="prose text-xs text-white/80 mt-4">
       総数：{{ earth.totalSchoolCount.value.toLocaleString() }}校
 
       <label class="block mt-3">
