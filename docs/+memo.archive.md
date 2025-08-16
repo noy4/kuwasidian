@@ -1,3 +1,8 @@
+[Top Ten Most Evil Dictators of All Time (in order of kill count) – Popten](https://www.popten.net/2010/05/top-ten-most-evil-dictators-of-all-time-in-order-of-kill-count/)
+[List of genocides - Wikipedia](https://en.wikipedia.org/wiki/List_of_genocides?utm_source=chatgpt.com)
+虐殺数ツアー
+田舎　WorldPackers 使用人
+
 [The History of React Through Code | Playful Programming](https://playfulprogramming.com/posts/react-history-through-code#fiber)
 
 
