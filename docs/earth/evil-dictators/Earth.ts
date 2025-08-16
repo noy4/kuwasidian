@@ -16,6 +16,8 @@ export type DictatorLocation = Location & {
   description: string
 }
 
+Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxNjdlYzkxZC1kNTM5LTRlNWItYmM4MC1hMGUyY2VmZDFlYWQiLCJpZCI6MzEyMTEyLCJpYXQiOjE3NDk4OTEyMDF9.Krcs6xfVbGbfMuxORnoMA4iF-mLfcvudZfLy9EBAwGQ'
+
 export class Earth {
   RANGE = 1000
   PITCH = Cesium.Math.toRadians(-15)
@@ -54,7 +56,6 @@ export class Earth {
   }
 
   async initialize() {
-    Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxNjdlYzkxZC1kNTM5LTRlNWItYmM4MC1hMGUyY2VmZDFlYWQiLCJpZCI6MzEyMTEyLCJpYXQiOjE3NDk4OTEyMDF9.Krcs6xfVbGbfMuxORnoMA4iF-mLfcvudZfLy9EBAwGQ'
     this.viewer = new Cesium.Viewer('cesiumContainer', {
       // The globe does not need to be displayed,
       // since the Photorealistic 3D Tiles include terrain

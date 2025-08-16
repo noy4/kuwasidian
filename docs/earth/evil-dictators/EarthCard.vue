@@ -31,7 +31,7 @@ const open = ref(true)
       style="transition: grid-template-rows .2s ease;"
     >
       <div class="overflow-hidden">
-        <div class="text-gray-300 text-xs mt-2 mb-4">
+        <div class="text-white/80 text-xs mt-2 mb-4">
           恐ろしい数の死者を生み出した指導者たちが歴史に存在する。彼らをその犠牲者数とともに見ていく。
         </div>
 
