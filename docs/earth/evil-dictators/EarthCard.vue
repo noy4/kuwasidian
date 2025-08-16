@@ -1,15 +1,31 @@
 <script setup lang="ts">
+import type { ComponentPublicInstance } from 'vue'
 import type { Earth } from './Earth'
 import { withBase } from 'vitepress'
-import { ref } from 'vue'
+import { nextTick, ref, useTemplateRef, watch } from 'vue'
 import { mdrender } from '@/utils'
 import LocationItem from './LocationItem.vue'
 
-defineProps<{
+const { earth } = defineProps<{
   earth: Earth
 }>()
 
 const open = ref(true)
+const locationItemRefs = ref<HTMLElement[]>([])
+const locationListRef = useTemplateRef('locationListRef')
+
+watch(earth.currentLocationIndex, (newIndex) => {
+  // nextTick で DOM が更新された後にスクロール
+  nextTick(() => {
+    const targetElement = locationItemRefs.value[newIndex]
+    if (targetElement && locationListRef.value) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest',
+      })
+    }
+  })
+})
 </script>
 
 <template>
@@ -35,10 +51,11 @@ const open = ref(true)
           恐ろしい数の死者を生み出した指導者たちが歴史に存在する。彼らをその犠牲者数とともに見ていく。
         </div>
 
-        <div class="flex flex-col gap-1 h-80 overflow-scroll">
+        <div ref="locationListRef" class="flex flex-col gap-1 h-80 overflow-scroll">
           <LocationItem
             v-for="(location, index) in earth.locations"
             :key="index"
+            :ref="(el) => { if (el) locationItemRefs[index] = (el as ComponentPublicInstance).$el }"
             :earth
             :location
             :index
