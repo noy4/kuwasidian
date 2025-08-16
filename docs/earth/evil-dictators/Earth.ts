@@ -78,7 +78,7 @@ export class Earth {
     })
     this.viewer.scene.primitives.add(tileset)
     await this.flyToLocationView(0, { duration: 0 })
-    // this.startCameraRotation()
+    this.startCameraRotation()
   }
 
   async goToLocation(locationIndex: number) {
