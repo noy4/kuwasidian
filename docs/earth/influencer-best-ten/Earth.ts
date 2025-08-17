@@ -8,12 +8,13 @@ export interface Location {
   latitude: number
 }
 
-export type DictatorLocation = Location & {
-  country: string
-  min_death_count: number
-  max_death_count: number
+export type InfluencerLocation = Location & {
+  birth_year: number
+  death_year?: number
+  field: string // 分野（宗教、科学、哲学、発明など）
   icon: string
   description: string
+  major_achievement: string // 主な功績
 }
 
 Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxNjdlYzkxZC1kNTM5LTRlNWItYmM4MC1hMGUyY2VmZDFlYWQiLCJpZCI6MzEyMTEyLCJpYXQiOjE3NDk4OTEyMDF9.Krcs6xfVbGbfMuxORnoMA4iF-mLfcvudZfLy9EBAwGQ'
@@ -29,10 +30,10 @@ export class Earth {
   currentLocationIndex = ref(0)
   currentPoint = ref<Cesium.Cartesian3 | null>(null)
   isRotating = ref(false)
-  locations: DictatorLocation[]
+  locations: InfluencerLocation[]
   unsubKeys: (() => void) | null = null
 
-  constructor(locations: DictatorLocation[]) {
+  constructor(locations: InfluencerLocation[]) {
     this.locations = locations
   }
 

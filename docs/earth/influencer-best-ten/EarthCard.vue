@@ -38,7 +38,7 @@ watch(earth.currentLocationIndex, (newIndex) => {
     </div>
 
     <h3 class="text-white text-lg font-bold">
-      たくさん殺した独裁者ランキング
+      史上最も影響を与えた人物ベスト10
     </h3>
 
     <div
@@ -48,7 +48,7 @@ watch(earth.currentLocationIndex, (newIndex) => {
     >
       <div class="overflow-hidden">
         <div class="text-white/80 text-xs mt-2 mb-4">
-          恐ろしい数の死者を生み出した指導者たちが歴史に存在する。彼らをその犠牲者数とともに見ていく。
+          人類の歴史を変えた偉大な人物たち。宗教、科学、哲学、発明の分野で世界に大きな影響を与えた10人を巡る旅。
         </div>
 
         <div ref="locationListRef" class="flex flex-col gap-1 h-80 overflow-scroll">
@@ -82,7 +82,7 @@ watch(earth.currentLocationIndex, (newIndex) => {
         <div class="prose text-xs text-white/50">
           <div
             v-html="mdrender(`
-              ソース：[Top Ten Most Evil Dictators of All Time (in order of kill count) – Popten](https://www.popten.net/2010/05/top-ten-most-evil-dictators-of-all-time-in-order-of-kill-count/)
+              ソース：[史上最も影響を与えた人物ベスト100ランキング; M.H.ハート氏の本より　～aokiuva](https://www.aokiuva.com/b100influpers.html)
             `)"
           />
         </div>

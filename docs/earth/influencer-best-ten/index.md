@@ -1,6 +1,6 @@
 ---
-title: たくさん殺した独裁者ランキング
-description: 多くの人々を死亡させた独裁者の地を訪れましょう。
+title: 史上最も影響を与えた人物ベスト10
+description: 人類史上最も大きな影響を与えた偉大な人物たちの足跡を辿りましょう。
 layout: page
 sidebar: false
 navbar: false
@@ -10,7 +10,7 @@ navbar: false
 import { onMounted } from 'vue'
 import { Earth } from './Earth'
 import EarthCard from './EarthCard.vue'
-import locations from './evil-dictators.json'
+import locations from './influencers.json'
 import 'cesium/Build/Cesium/Widgets/widgets.css'
 
 const earth = new Earth(locations)

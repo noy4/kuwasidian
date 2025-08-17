@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import type { DictatorLocation, Earth } from './Earth'
+import type { InfluencerLocation, Earth } from './Earth'
 
 defineProps<{
   earth: Earth
-  location: DictatorLocation
+  location: InfluencerLocation
   index: number
 }>()
 
@@ -40,22 +40,19 @@ function formatNumber(num: number): string {
       <div>
         {{ index + 1 }}.
         <span class="font-semibold">{{ location.name }}</span>
-        （{{ location.country }}）
+        （{{ location.field }}）
       </div>
 
       <div class="text-xs text-white/70">
         {{ location.description }}
       </div>
 
-      <div class="text-right">
-        {{
-          [
-            formatNumber(location.min_death_count),
-            location.min_death_count !== location.max_death_count
-              && `-${formatNumber(location.max_death_count)}`,
-            '人',
-          ].filter(Boolean).join('')
-        }}
+      <div class="text-right text-xs">
+        {{ location.birth_year }}{{ location.death_year ? `-${location.death_year}` : '' }}年
+      </div>
+
+      <div class="text-xs text-white/60 mt-1">
+        {{ location.major_achievement }}
       </div>
     </div>
   </button>
