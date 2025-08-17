@@ -7,7 +7,8 @@
 
 [[3d map]]
 ドロピザ巡礼
-女性　片付け　チャッピー
+mapbox key
+フランシス・ ベーコン
 
 Quest x Quest
 アー写

@@ -6,20 +6,6 @@ defineProps<{
   location: InfluencerLocation
   index: number
 }>()
-
-function formatNumber(num: number): string {
-  if (num == null || Number.isNaN(num))
-    return ''
-  let result = ''
-  if (num >= 1_0000) {
-    result += `${Math.floor(num / 1_0000)}万`
-    num = num % 1_0000
-  }
-  if (num > 0 || result === '') {
-    result += num.toString()
-  }
-  return result
-}
 </script>
 
 <template>
@@ -48,7 +34,17 @@ function formatNumber(num: number): string {
       </div>
 
       <div class="text-right text-xs">
-        {{ location.birth_year }}{{ location.death_year ? `-${location.death_year}` : '' }}年
+        {{
+          location.birth_year < 0
+            ? `前${Math.abs(location.birth_year)}`
+            : location.birth_year
+        }}{{
+          location.death_year
+            ? (location.death_year < 0
+              ? `-前${Math.abs(location.death_year)}`
+              : `-${location.death_year}`)
+            : ''
+        }}年
       </div>
     </div>
   </button>
