@@ -38,7 +38,7 @@ watch(earth.currentLocationIndex, (newIndex) => {
     </div>
 
     <h3 class="text-white text-lg font-bold">
-      史上最も影響を与えた人物ベスト10
+      インフルエンサー・ベスト10
     </h3>
 
     <div
@@ -48,7 +48,7 @@ watch(earth.currentLocationIndex, (newIndex) => {
     >
       <div class="overflow-hidden">
         <div class="text-white/80 text-xs mt-2 mb-4">
-          人類の歴史を変えた偉大な人物たち。宗教、科学、哲学、発明の分野で世界に大きな影響を与えた10人を巡る旅。
+          人類史に影響を与えた偉大な人物たち。そのゆかりの地を巡る。
         </div>
 
         <div ref="locationListRef" class="flex flex-col gap-1 h-80 overflow-scroll">

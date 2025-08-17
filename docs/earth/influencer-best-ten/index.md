@@ -1,6 +1,6 @@
 ---
-title: 史上最も影響を与えた人物ベスト10
-description: 人類史上最も大きな影響を与えた偉大な人物たちの足跡を辿りましょう。
+title: インフルエンサー・ベスト10
+description: 人類史に多大な影響を与えた偉大な人物たち
 layout: page
 sidebar: false
 navbar: false
