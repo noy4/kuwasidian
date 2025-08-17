@@ -6,7 +6,7 @@
     "field": "宗教",
     "longitude": 39.8262,
     "latitude": 21.4225,
-    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Golden_star.svg/120px-Golden_star.svg.png",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/%22Prophet_Muhammad_Preaching%22%2C_Folio_from_a_Maqtal-i_Al-i_Rasul_of_Lami%27i_Chelebi_MET_DT200632.jpg/256px-%22Prophet_Muhammad_Preaching%22%2C_Folio_from_a_Maqtal-i_Al-i_Rasul_of_Lami%27i_Chelebi_MET_DT200632.jpg",
     "description": "イスラム教の預言者。アラビア半島でイスラム教を創始し、世界最大級の宗教の一つを築いた。",
     "major_achievement": "イスラム教の創始・コーランの啓示"
   },
@@ -39,7 +39,7 @@
     "field": "宗教・哲学",
     "longitude": 84.7278,
     "latitude": 27.5916,
-    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Buddha_in_Sarnath_Museum_%28Dhammajak_Mutra%29.jpg/256px-Buddha_in_Sarnath_Museum_%28Dhammajak_Mutra%29.jpg",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Gandhara_Buddha_%28tnm%29.jpeg/256px-Gandhara_Buddha_%28tnm%29.jpeg",
     "description": "仏教の創始者。苦悩からの解脱を説き、慈悲と智慧の教えで多くの人々を導いた。",
     "major_achievement": "仏教の創始・四諦八正道の教え"
   },
@@ -50,7 +50,7 @@
     "field": "哲学・教育",
     "longitude": 117.0009,
     "latitude": 35.6751,
-    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Konfuzius-1770.jpg/256px-Konfuzius-1770.jpg",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Konfuzius-1770.jpg/256px-Konfuzius-1770.jpg",
     "description": "中国の思想家・教育者。儒教の基礎を築き、東アジア文化圏に絶大な影響を与えた。",
     "major_achievement": "儒教の創始・論語の教え"
   },
@@ -61,7 +61,7 @@
     "field": "宗教",
     "longitude": 35.1304,
     "latitude": 36.7538,
-    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Saint_Paul_%28El_Greco%29.jpg/256px-Saint_Paul_%28El_Greco%29.jpg",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Apostel_Paulus%2C_RP-P-1995-24.jpg/256px-Apostel_Paulus%2C_RP-P-1995-24.jpg",
     "description": "キリスト教の使徒。異邦人への宣教活動により、キリスト教を世界宗教に発展させた。",
     "major_achievement": "キリスト教の世界的布教・新約聖書の執筆"
   },
@@ -72,7 +72,7 @@
     "field": "発明",
     "longitude": 112.9820,
     "latitude": 28.1158,
-    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Cai_Lun.jpg/256px-Cai_Lun.jpg",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/1_Gold_Star.svg/256px-1_Gold_Star.svg.png",
     "description": "中国の宦官・発明家。現代的な製紙法を発明し、知識の普及と文明の発展に貢献した。",
     "major_achievement": "紙の製造法の発明・改良"
   },
@@ -94,7 +94,7 @@
     "field": "探検・発見",
     "longitude": 8.9463,
     "latitude": 44.4056,
-    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Christopher_Columbus.PNG/256px-Christopher_Columbus.PNG",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Christobal_Colon.jpg/256px-Christobal_Colon.jpg",
     "description": "イタリアの探検家。アメリカ大陸への航路を開拓し、新旧大陸の交流を始めた。",
     "major_achievement": "アメリカ大陸の発見・新大陸への航路開拓"
   },

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { InfluencerLocation, Earth } from './Earth'
+import type { Earth, InfluencerLocation } from './Earth'
 
 defineProps<{
   earth: Earth
@@ -49,10 +49,6 @@ function formatNumber(num: number): string {
 
       <div class="text-right text-xs">
         {{ location.birth_year }}{{ location.death_year ? `-${location.death_year}` : '' }}年
-      </div>
-
-      <div class="text-xs text-white/60 mt-1">
-        {{ location.major_achievement }}
       </div>
     </div>
   </button>
