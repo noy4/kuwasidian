@@ -8,7 +8,8 @@
     "latitude": 21.4225,
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/15th-century_art_from_illuminated_manuscript_from_the_Ottoman_Empire_Qur%27an_%28cropped%29.jpg/256px-15th-century_art_from_illuminated_manuscript_from_the_Ottoman_Empire_Qur%27an_%28cropped%29.jpg",
     "description": "イスラム教の預言者。アラビア半島でイスラム教を創始し、世界最大級の宗教の一つを築いた。",
-    "major_achievement": "イスラム教の創始・コーランの啓示"
+    "major_achievement": "イスラム教の創始・コーランの啓示",
+    "model": "https://raw.githubusercontent.com/CesiumGS/cesium/main/Apps/SampleData/models/CesiumAir/Cesium_Air.glb"
   },
   {
     "name": "アイザック・ニュートン",
@@ -19,7 +20,8 @@
     "latitude": 51.5074,
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/GodfreyKneller-IsaacNewton-1689.jpg/256px-GodfreyKneller-IsaacNewton-1689.jpg",
     "description": "物理学者・数学者。万有引力の法則、運動の法則を発見し、近代科学の基礎を築いた。",
-    "major_achievement": "万有引力の法則・微積分学の発明"
+    "major_achievement": "万有引力の法則・微積分学の発明",
+    "model": "https://raw.githubusercontent.com/CesiumGS/cesium/main/Apps/SampleData/models/CesiumDrone/CesiumDrone.glb"
   },
   {
     "name": "イエス・キリスト",
@@ -30,7 +32,8 @@
     "latitude": 31.7683,
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Spas_vsederzhitel_sinay.jpg/256px-Spas_vsederzhitel_sinay.jpg",
     "description": "キリスト教の創始者。愛と平和の教えを説き、世界最大の宗教であるキリスト教の基盤を築いた。",
-    "major_achievement": "キリスト教の創始・愛の教え"
+    "major_achievement": "キリスト教の創始・愛の教え",
+    "model": "./models/cross.glb"
   },
   {
     "name": "ブッダ（釈迦）",
@@ -41,7 +44,8 @@
     "latitude": 27.5916,
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Gandhara_Buddha_%28tnm%29.jpeg/256px-Gandhara_Buddha_%28tnm%29.jpeg",
     "description": "仏教の創始者。苦悩からの解脱を説き、慈悲と智慧の教えで多くの人々を導いた。",
-    "major_achievement": "仏教の創始・四諦八正道の教え"
+    "major_achievement": "仏教の創始・四諦八正道の教え",
+    "model": "./models/bodhi_tree.glb"
   },
   {
     "name": "孔子",
@@ -52,7 +56,8 @@
     "latitude": 35.6751,
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Konfuzius-1770.jpg/256px-Konfuzius-1770.jpg",
     "description": "中国の思想家・教育者。儒教の基礎を築き、東アジア文化圏に絶大な影響を与えた。",
-    "major_achievement": "儒教の創始・論語の教え"
+    "major_achievement": "儒教の創始・論語の教え",
+    "model": "./models/scroll.glb"
   },
   {
     "name": "聖パウロ",
@@ -63,7 +68,8 @@
     "latitude": 36.7538,
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Apostel_Paulus%2C_RP-P-1995-24.jpg/256px-Apostel_Paulus%2C_RP-P-1995-24.jpg",
     "description": "キリスト教の使徒。異邦人への宣教活動により、キリスト教を世界宗教に発展させた。",
-    "major_achievement": "キリスト教の世界的布教・新約聖書の執筆"
+    "major_achievement": "キリスト教の世界的布教・新約聖書の執筆",
+    "model": "./models/letter_scroll.glb"
   },
   {
     "name": "蔡倫",
@@ -74,7 +80,8 @@
     "latitude": 28.1158,
     "icon": "https://blog-imgs-42.fc2.com/y/o/s/yosukenaito/201104092207381f9.jpg",
     "description": "中国の宦官・発明家。現代的な製紙法を発明し、知識の普及と文明の発展に貢献した。",
-    "major_achievement": "紙の製造法の発明・改良"
+    "major_achievement": "紙の製造法の発明・改良",
+    "model": "./models/paper_stack.glb"
   },
   {
     "name": "ヨハン・グーテンベルク",
@@ -85,7 +92,8 @@
     "latitude": 50.0012,
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Gutenberg.jpg/256px-Gutenberg.jpg",
     "description": "ドイツの発明家。活版印刷術を実用化し、知識の大衆化と文芸復興を促進した。",
-    "major_achievement": "活版印刷術の発明・聖書の大量印刷"
+    "major_achievement": "活版印刷術の発明・聖書の大量印刷",
+    "model": "./models/printing_press.glb"
   },
   {
     "name": "クリストファー・コロンブス",
@@ -96,7 +104,8 @@
     "latitude": 44.4056,
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Christobal_Colon.jpg/256px-Christobal_Colon.jpg",
     "description": "イタリアの探検家。アメリカ大陸への航路を開拓し、新旧大陸の交流を始めた。",
-    "major_achievement": "アメリカ大陸の発見・新大陸への航路開拓"
+    "major_achievement": "アメリカ大陸の発見・新大陸への航路開拓",
+    "model": "./models/sailing_ship.glb"
   },
   {
     "name": "アルバート・アインシュタイン",
@@ -107,6 +116,7 @@
     "latitude": 47.3769,
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Einstein_1921_by_F_Schmutzer_-_restoration.jpg/256px-Einstein_1921_by_F_Schmutzer_-_restoration.jpg",
     "description": "ドイツ系理論物理学者。相対性理論を提唱し、現代物理学の基礎を確立した。",
-    "major_achievement": "相対性理論の発見・現代物理学の確立"
+    "major_achievement": "相対性理論の発見・現代物理学の確立",
+    "model": "./models/atom.glb"
   }
 ]

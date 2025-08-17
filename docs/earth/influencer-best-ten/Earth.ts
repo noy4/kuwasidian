@@ -15,6 +15,9 @@ export type InfluencerLocation = Location & {
   icon: string
   description: string
   major_achievement: string // 主な功績
+  model?: string // 3Dモデルのパス（オプショナル）
+  modelScale?: number // 3Dモデルのスケール（オプショナル、デフォルト: 10.0）
+  modelHeight?: number // 地面からの高さ（オプショナル、デフォルト: 50）
 }
 
 Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxNjdlYzkxZC1kNTM5LTRlNWItYmM4MC1hMGUyY2VmZDFlYWQiLCJpZCI6MzEyMTEyLCJpYXQiOjE3NDk4OTEyMDF9.Krcs6xfVbGbfMuxORnoMA4iF-mLfcvudZfLy9EBAwGQ'
@@ -32,6 +35,7 @@ export class Earth {
   isRotating = ref(false)
   locations: InfluencerLocation[]
   unsubKeys: (() => void) | null = null
+  models: Cesium.Model[] = [] // 3Dモデルの配列
 
   constructor(locations: InfluencerLocation[]) {
     this.locations = locations
@@ -51,6 +55,7 @@ export class Earth {
 
   destroy() {
     this.stopCameraRotation()
+    this.remove3DModels()
     this.viewer.destroy()
     this.unsubKeys?.()
     this.unsubKeys = null
@@ -78,6 +83,7 @@ export class Earth {
       onlyUsingWithGoogleGeocoder: true, // needed to hide warning
     })
     this.viewer.scene.primitives.add(tileset)
+    await this.load3DModels()
     await this.flyToLocationView(0, { duration: 0 })
     this.startCameraRotation()
   }
@@ -171,6 +177,54 @@ export class Earth {
       this.stopCameraRotation()
     else
       this.startCameraRotation()
+  }
+
+  // 3Dモデルを読み込んで配置する
+  async load3DModels() {
+    for (let i = 0; i < this.locations.length; i++) {
+      const location = this.locations[i]
+      if (location.model) {
+        try {
+          // 地形の高さを取得
+          const [terrainPosition] = await Cesium.sampleTerrainMostDetailed(
+            this.terrainProvider,
+            [Cesium.Cartographic.fromDegrees(location.longitude, location.latitude)],
+          )
+
+          // 3Dモデルの位置を設定（地面から少し浮かせる）
+          const modelHeight = location.modelHeight || 50 // デフォルト50m
+          const position = Cesium.Cartesian3.fromDegrees(
+            location.longitude,
+            location.latitude,
+            terrainPosition.height + modelHeight,
+          )
+
+          // 3Dモデルを読み込み
+          const modelScale = location.modelScale || 10.0 // デフォルトスケール
+          const model = await Cesium.Model.fromGltfAsync({
+            url: location.model,
+            modelMatrix: Cesium.Transforms.eastNorthUpToFixedFrame(position),
+            scale: modelScale,
+            minimumPixelSize: 32,
+            maximumScale: 200,
+          })
+
+          this.viewer.scene.primitives.add(model)
+          this.models.push(model)
+        }
+        catch (error) {
+          console.warn(`Failed to load 3D model for ${location.name}:`, error)
+        }
+      }
+    }
+  }
+
+  // 3Dモデルを削除する
+  remove3DModels() {
+    this.models.forEach((model) => {
+      this.viewer.scene.primitives.remove(model)
+    })
+    this.models = []
   }
 
   flyToAsync(...args: Parameters<Cesium.Camera['flyTo']>) {
