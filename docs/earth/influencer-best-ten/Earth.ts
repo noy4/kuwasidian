@@ -58,7 +58,7 @@ export class Earth {
 
   destroy() {
     this.stopCameraRotation()
-    this.remove3DModels()
+    remove3DModels(this)
     this.viewer.destroy()
     this.unsubKeys?.()
     this.unsubKeys = null
@@ -181,14 +181,6 @@ export class Earth {
       this.startCameraRotation()
   }
 
-  // 3Dモデルを削除する
-  remove3DModels() {
-    this.models.forEach((model) => {
-      this.viewer.scene.primitives.remove(model)
-    })
-    this.models = []
-  }
-
   flyToAsync(...args: Parameters<Cesium.Camera['flyTo']>) {
     return flyToAsync(this.viewer, ...args)
   }
@@ -250,6 +242,14 @@ async function load3DModels(earth: Earth) {
       console.warn(`Failed to load 3D model for ${location.name}:`, error)
     }
   }
+}
+
+// 3Dモデルを削除する
+function remove3DModels(earth: Earth) {
+  earth.models.forEach((model) => {
+    earth.viewer.scene.primitives.remove(model)
+  })
+  earth.models = []
 }
 
 // Function to fly to a specific camera position asynchronously
