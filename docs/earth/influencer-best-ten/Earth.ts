@@ -29,7 +29,6 @@ export class Earth {
   RANGE = 1000
   PITCH = Cesium.Math.toRadians(-15)
   OFFSET = new Cesium.HeadingPitchRange(0, this.PITCH, this.RANGE)
-  ROTATION_SPEED = 0.005
 
   viewer!: Cesium.Viewer
   terrainProvider!: Cesium.TerrainProvider
@@ -39,6 +38,7 @@ export class Earth {
   locations: InfluencerLocation[]
   unsubKeys: (() => void) | null = null
   models: Cesium.Model[] = [] // 3Dモデルの配列
+  rotation = new Rotation(this)
 
   constructor(locations: InfluencerLocation[]) {
     this.locations = locations
@@ -47,7 +47,7 @@ export class Earth {
   mount = () => {
     this.initialize()
     this.unsubKeys = tinykeys(window, {
-      'Space': preventDefault(() => this.toggleCameraRotation()),
+      'Space': preventDefault(() => this.rotation.toggle()),
       'Enter': preventDefault(() => this.goToNextLocation()),
       'ArrowRight': preventDefault(() => this.goToNextLocation()),
       'Shift+Enter': preventDefault(() => this.goToPrevLocation()),
@@ -57,7 +57,7 @@ export class Earth {
   }
 
   destroy() {
-    this.stopCameraRotation()
+    this.rotation.stop()
     remove3DModels(this)
     this.viewer.destroy()
     this.unsubKeys?.()
@@ -88,11 +88,11 @@ export class Earth {
     this.viewer.scene.primitives.add(tileset)
     await load3DModels(this)
     await this.flyToLocationView(0, { duration: 0 })
-    this.startCameraRotation()
+    this.rotation.start()
   }
 
   async goToLocation(locationIndex: number) {
-    this.stopCameraRotation()
+    this.rotation.stop()
 
     await this.flyAboveLocation(this.currentLocationIndex.value, {
       duration: 0.5,
@@ -105,7 +105,7 @@ export class Earth {
       duration: 0.5,
     })
 
-    this.startCameraRotation()
+    this.rotation.start()
   }
 
   goToNextLocation() {
@@ -155,30 +155,35 @@ export class Earth {
       ...options,
     })
   }
+}
 
-  cameraRotationHandler = () => this.viewer.camera.rotateRight(this.ROTATION_SPEED)
+class Rotation {
+  ROTATION_SPEED = 0.005
+  constructor(public earth: Earth) {}
+
+  cameraRotationHandler = () => this.earth.viewer.camera.rotateRight(this.ROTATION_SPEED)
 
   // [Control the Camera – Cesium](https://cesium.com/learn/cesiumjs-learn/cesiumjs-camera/#orbit-around-a-point)
-  startCameraRotation() {
-    if (this.isRotating.value)
+  start() {
+    if (this.earth.isRotating.value)
       return
-    this.isRotating.value = true
-    const transform = Cesium.Transforms.eastNorthUpToFixedFrame(this.currentPoint.value!)
-    this.viewer.camera.lookAtTransform(transform, this.OFFSET)
-    this.viewer.clock.onTick.addEventListener(this.cameraRotationHandler)
+    this.earth.isRotating.value = true
+    const transform = Cesium.Transforms.eastNorthUpToFixedFrame(this.earth.currentPoint.value!)
+    this.earth.viewer.camera.lookAtTransform(transform, this.earth.OFFSET)
+    this.earth.viewer.clock.onTick.addEventListener(this.cameraRotationHandler)
   }
 
-  stopCameraRotation() {
-    this.isRotating.value = false
-    this.viewer.clock.onTick.removeEventListener(this.cameraRotationHandler)
-    this.viewer.camera.lookAtTransform(Cesium.Matrix4.IDENTITY)
+  stop() {
+    this.earth.isRotating.value = false
+    this.earth.viewer.clock.onTick.removeEventListener(this.cameraRotationHandler)
+    this.earth.viewer.camera.lookAtTransform(Cesium.Matrix4.IDENTITY)
   }
 
-  toggleCameraRotation() {
-    if (this.isRotating.value)
-      this.stopCameraRotation()
+  toggle() {
+    if (this.earth.isRotating.value)
+      this.stop()
     else
-      this.startCameraRotation()
+      this.start()
   }
 }
 
