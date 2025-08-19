@@ -26,61 +26,25 @@
 
 ## 手順1: Sketchfabからのモデル取得
 
-### 1.1 アカウント作成
-1. [Sketchfab](https://sketchfab.com/) にアクセス
-2. 無料アカウントを作成（Googleアカウントでも可）
+### 1.1 [Sketchfab](https://sketchfab.com/) のアカウント作成
 
 ### 1.2 モデル検索とダウンロード
 
-#### クルアーン (quran.glb)
-1. Sketchfabで「quran」で検索
-2. [推奨モデル](https://sketchfab.com/3d-models/quran-3d-free-63021dc03fa0409ca8392b1eddfcbf18)
-3. 「Download 3D Model」→「Original format」→GLBファイルをダウンロード
-4. ファイル名を `quran.glb` にリネーム
+- **クルアーン (quran.glb)**: [search 'quran'](https://sketchfab.com/search?q=quran&type=models) (ex. https://sketchfab.com/3d-models/quran-3d-free-63021dc03fa0409ca8392b1eddfcbf18)
+- **リンゴの木 (apple_tree.glb)**: [search 'apple tree'](https://sketchfab.com/search?q=apple+tree&type=models) (ex. https://sketchfab.com/3d-models/animal-crossing-apple-tree-2ed2a55eebbb4b4fb60484390f611d20)
+- **十字架 (cross.glb)**: [search 'christian cross'](https://sketchfab.com/search?q=christian+cross&type=models)
+- **菩提樹 (bodhi_tree.glb)**: [search 'bodhi tree'](https://sketchfab.com/search?q=bodhi+tree&type=models)
+- **巻物 (scroll.glb)**: [search 'ancient scroll'](https://sketchfab.com/search?q=ancient+scroll&type=models)
+- **手紙の巻物 (letter_scroll.glb)**: [search 'letter scroll'](https://sketchfab.com/search?q=letter+scroll&type=models)
+- **紙の束 (paper_stack.glb)**: [search 'paper stack'](https://sketchfab.com/search?q=paper+stack&type=models)
+- **活版印刷機 (printing_press.glb)**: [search 'printing press'](https://sketchfab.com/search?q=printing+press&type=models)
+- **帆船 (sailing_ship.glb)**: [search 'sailing ship'](https://sketchfab.com/search?q=sailing+ship&type=models)
+- **原子模型 (atom.glb)**: [search 'atom model'](https://sketchfab.com/search?q=atom+model&type=models)
 
-#### リンゴの木 (apple_tree.glb)
-1. 「apple tree」で検索
-2. [推奨モデル](https://sketchfab.com/3d-models/animal-crossing-apple-tree-2ed2a55eebbb4b4fb60484390f611d20)
-3. CC Attribution ライセンスを確認
-4. GLBファイルをダウンロードして `apple_tree.glb` にリネーム
-
-#### 十字架 (cross.glb)
-1. 「christian cross」で検索
-2. CC0またはCC Attributionライセンスのモデルを選択
-3. GLBファイルをダウンロードして `cross.glb` にリネーム
-
-#### 菩提樹 (bodhi_tree.glb)
-1. 「bodhi tree」または「buddhist tree」で検索
-2. 適切なライセンスのモデルを選択
-3. GLBファイルをダウンロードして `bodhi_tree.glb` にリネーム
-
-#### 巻物 (scroll.glb)
-1. 「ancient scroll」または「parchment scroll」で検索
-2. 古典的な巻物のモデルを選択
-3. GLBファイルをダウンロードして `scroll.glb` にリネーム
-
-#### 手紙の巻物 (letter_scroll.glb)
-1. 「letter scroll」または「manuscript」で検索
-2. GLBファイルをダウンロードして `letter_scroll.glb` にリネーム
-
-#### 紙の束 (paper_stack.glb)
-1. 「paper stack」または「book pages」で検索
-2. GLBファイルをダウンロードして `paper_stack.glb` にリネーム
-
-#### 活版印刷機 (printing_press.glb)
-1. 「printing press」または「gutenberg press」で検索
-2. 中世の印刷機モデルを選択
-3. GLBファイルをダウンロードして `printing_press.glb` にリネーム
-
-#### 帆船 (sailing_ship.glb)
-1. 「sailing ship」または「caravel」で検索
-2. 15世紀頃の帆船モデルを選択
-3. GLBファイルをダウンロードして `sailing_ship.glb` にリネーム
-
-#### 原子模型 (atom.glb)
-1. 「atom model」または「atomic structure」で検索
-2. 原子の軌道モデルを選択
-3. GLBファイルをダウンロードして `atom.glb` にリネーム
+**ダウンロード手順**:
+1. 適切なライセンス（CC0またはCC Attribution）のモデルを選択
+2. 「Download 3D Model」→「Original format」→GLBファイルをダウンロード
+3. ファイル名を対応する名前にリネーム
 
 ## 手順2: ファイル配置
 
