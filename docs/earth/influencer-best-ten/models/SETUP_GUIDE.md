@@ -85,17 +85,6 @@ cp ~/Downloads/atom.glb docs/earth/influencer-best-ten/models/
 2. プロンプト例：「ancient quran book islamic holy scripture」
 3. 生成されたモデルをGLB形式でダウンロード
 
-## 無料3Dモデルの入手先
-
-- [Sketchfab](https://sketchfab.com/) (Free models section)
-- [Poly Haven](https://polyhaven.com/)
-- [OpenGameArt](https://opengameart.org/)
-- [Free3D](https://free3d.com/)
-
-## ライセンス注意事項
-
-使用する3Dモデルは、商用利用可能またはCC0ライセンスのものを選択してください。
-
 ## 手順4: モデル最適化
 
 ### 4.1 ファイルサイズ確認
@@ -156,11 +145,17 @@ models/
 2. テクスチャサイズを削減
 3. ポリゴン数を削減したモデルを選択
 
-## 代替リソース
+## 無料3Dモデルの入手先・代替リソース
 
-モデルが見つからない場合の代替入手先：
+### メインリソース
+- [Sketchfab](https://sketchfab.com/) (Free models section)
 - [Poly Haven](https://polyhaven.com/models)
 - [OpenGameArt](https://opengameart.org/)
 - [Free3D](https://free3d.com/)
+
+### 代替リソース
 - [TurboSquid Free](https://www.turbosquid.com/Search/3D-Models/free)
 - [CGTrader Free](https://www.cgtrader.com/free-3d-models)
+
+### ライセンス注意事項
+使用する3Dモデルは、商用利用可能またはCC0ライセンスのものを選択してください。
