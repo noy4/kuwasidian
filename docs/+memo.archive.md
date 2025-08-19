@@ -1,3 +1,17 @@
+リアルタイムシミュレーション
+リアルタイムストラテジー
+スタークラフト
+エイジオブエンパイア
+
+
+[◇史上最も影響を与えた人物ベスト100ランキング; M.H.ハート氏の本より　～aokiuva](https://www.aokiuva.com/b100influpers.html)
+
+
+influencer-best-ten は evil-dictators をコピペした状態。
+コンテンツを [◇史上最も影響を与えた人物ベスト100ランキング; M.H.ハート氏の本より　～aokiuva](https://www.aokiuva.com/b100influpers.html) の上位10人に置き換えたい。
+プランを立てて influencer-best-ten/plan.md に書き出して
+
+
 -  https://raw.githubusercontent.com/CesiumGS/cesium/main/Apps/SampleData/models/CesiumDrone/CesiumDrone.glb
 - https://raw.githubusercontent.com/CesiumGS/cesium/main/Apps/SampleData/models/CesiumAir/Cesium_Air.glb
 
@@ -10,6 +24,7 @@
 - [Get 3D Models](https://github.com/Get-3D-Models)
 
 女性　片付け　チャッピー
+mapbox key
 
 
 [Top Ten Most Evil Dictators of All Time (in order of kill count) – Popten](https://www.popten.net/2010/05/top-ten-most-evil-dictators-of-all-time-in-order-of-kill-count/)

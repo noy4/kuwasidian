@@ -1,7 +1,28 @@
 # 3Dモデル準備の詳細手順
 
 ## 概要
-READMEにリストアップされた各偉人の象徴的な3Dモデルを実際に取得・配置する手順です。
+このディレクトリには、各偉人を象徴する3Dモデルファイル（.glb形式）が格納されます。
+以下の手順に従って、必要な3Dモデルを取得・配置してください。
+
+## 必要なモデルファイル
+
+1. `quran.glb` - ムハンマド（クルアーン）
+2. `apple_tree.glb` - ニュートン（リンゴの木）
+3. `cross.glb` - イエス・キリスト（十字架）
+4. `bodhi_tree.glb` - ブッダ（菩提樹）
+5. `scroll.glb` - 孔子（巻物）
+6. `letter_scroll.glb` - 聖パウロ（手紙の巻物）
+7. `paper_stack.glb` - 蔡倫（紙の束）
+8. `printing_press.glb` - グーテンベルク（活版印刷機）
+9. `sailing_ship.glb` - コロンブス（帆船）
+10. `atom.glb` - アインシュタイン（原子模型）
+
+## モデルの要件
+
+- ファイル形式: GLB (GL Transmission Format Binary)
+- ファイルサイズ: 可能な限り軽量（推奨：1MB以下）
+- テクスチャ: 埋め込み形式
+- ポリゴン数: 低ポリ（1000ポリゴン以下推奨）
 
 ## 手順1: Sketchfabからのモデル取得
 
@@ -66,7 +87,7 @@ READMEにリストアップされた各偉人の象徴的な3Dモデルを実際
 ### 2.1 ダウンロードしたファイルを配置
 ```bash
 # プロジェクトのmodelsディレクトリに配置
-cp ~/Downloads/kaaba.glb docs/earth/influencer-best-ten/models/
+cp ~/Downloads/quran.glb docs/earth/influencer-best-ten/models/
 cp ~/Downloads/apple_tree.glb docs/earth/influencer-best-ten/models/
 cp ~/Downloads/cross.glb docs/earth/influencer-best-ten/models/
 cp ~/Downloads/bodhi_tree.glb docs/earth/influencer-best-ten/models/
@@ -82,7 +103,7 @@ cp ~/Downloads/atom.glb docs/earth/influencer-best-ten/models/
 ```json
 {
   "name": "ムハンマド",
-  "model": "./models/kaaba.glb",
+  "model": "./models/quran.glb",
   "modelScale": 30.0,
   "modelHeight": 80
 }
@@ -97,8 +118,19 @@ cp ~/Downloads/atom.glb docs/earth/influencer-best-ten/models/
 
 ### 3.2 AI生成ツール
 1. [Meshy.ai](https://meshy.ai/) - テキストから3Dモデル生成
-2. プロンプト例：「ancient kaaba cube building islamic architecture」
+2. プロンプト例：「ancient quran book islamic holy scripture」
 3. 生成されたモデルをGLB形式でダウンロード
+
+## 無料3Dモデルの入手先
+
+- [Sketchfab](https://sketchfab.com/) (Free models section)
+- [Poly Haven](https://polyhaven.com/)
+- [OpenGameArt](https://opengameart.org/)
+- [Free3D](https://free3d.com/)
+
+## ライセンス注意事項
+
+使用する3Dモデルは、商用利用可能またはCC0ライセンスのものを選択してください。
 
 ## 手順4: モデル最適化
 
@@ -139,7 +171,7 @@ npm run dev
 ```
 models/
 ├── LICENSE.md          # 各モデルのライセンス情報
-├── kaaba.glb          # CC Attribution - Sketchfab user
+├── quran.glb          # CC Attribution - Sketchfab user
 ├── apple_tree.glb     # CC Attribution - Sketchfab user
 └── ...
 ```
