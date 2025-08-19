@@ -30,16 +30,16 @@
 
 ### 1.2 モデル検索とダウンロード
 
-- **クルアーン (quran.glb)**: [search 'quran'](https://sketchfab.com/search?q=quran&type=models) (ex. https://sketchfab.com/3d-models/quran-3d-free-63021dc03fa0409ca8392b1eddfcbf18)
-- **リンゴの木 (apple_tree.glb)**: [search 'apple tree'](https://sketchfab.com/search?q=apple+tree&type=models) (ex. https://sketchfab.com/3d-models/animal-crossing-apple-tree-2ed2a55eebbb4b4fb60484390f611d20)
-- **十字架 (cross.glb)**: [search 'christian cross'](https://sketchfab.com/search?q=christian+cross&type=models)
-- **菩提樹 (bodhi_tree.glb)**: [search 'bodhi tree'](https://sketchfab.com/search?q=bodhi+tree&type=models)
-- **巻物 (scroll.glb)**: [search 'ancient scroll'](https://sketchfab.com/search?q=ancient+scroll&type=models)
-- **手紙の巻物 (letter_scroll.glb)**: [search 'letter scroll'](https://sketchfab.com/search?q=letter+scroll&type=models)
-- **紙の束 (paper_stack.glb)**: [search 'paper stack'](https://sketchfab.com/search?q=paper+stack&type=models)
-- **活版印刷機 (printing_press.glb)**: [search 'printing press'](https://sketchfab.com/search?q=printing+press&type=models)
-- **帆船 (sailing_ship.glb)**: [search 'sailing ship'](https://sketchfab.com/search?q=sailing+ship&type=models)
-- **原子模型 (atom.glb)**: [search 'atom model'](https://sketchfab.com/search?q=atom+model&type=models)
+- **クルアーン (quran.glb)**: [search 'quran'](https://sketchfab.com/search?features=downloadable&q=quran&type=models) (ex. https://sketchfab.com/3d-models/quran-3d-free-63021dc03fa0409ca8392b1eddfcbf18)
+- **リンゴの木 (apple_tree.glb)**: [search 'apple tree'](https://sketchfab.com/search?features=downloadable&q=apple+tree&type=models) (ex. https://sketchfab.com/3d-models/animal-crossing-apple-tree-2ed2a55eebbb4b4fb60484390f611d20)
+- **十字架 (cross.glb)**: [search 'christian cross'](https://sketchfab.com/search?features=downloadable&q=christian+cross&type=models)
+- **菩提樹 (bodhi_tree.glb)**: [search 'bodhi tree'](https://sketchfab.com/search?features=downloadable&q=bodhi+tree&type=models)
+- **巻物 (scroll.glb)**: [search 'ancient scroll'](https://sketchfab.com/search?features=downloadable&q=ancient+scroll&type=models)
+- **手紙の巻物 (letter_scroll.glb)**: [search 'letter scroll'](https://sketchfab.com/search?features=downloadable&q=letter+scroll&type=models)
+- **紙の束 (paper_stack.glb)**: [search 'paper stack'](https://sketchfab.com/search?features=downloadable&q=paper+stack&type=models)
+- **活版印刷機 (printing_press.glb)**: [search 'printing press'](https://sketchfab.com/search?features=downloadable&q=printing+press&type=models)
+- **帆船 (sailing_ship.glb)**: [search 'sailing ship'](https://sketchfab.com/search?features=downloadable&q=sailing+ship&type=models)
+- **原子模型 (atom.glb)**: [search 'atom model'](https://sketchfab.com/search?features=downloadable&q=atom+model&type=models)
 
 **ダウンロード手順**:
 1. 適切なライセンス（CC0またはCC Attribution）のモデルを選択
