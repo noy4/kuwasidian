@@ -32,13 +32,14 @@ export class Earth {
 
   viewer!: Cesium.Viewer
   terrainProvider!: Cesium.TerrainProvider
+  locations: InfluencerLocation[]
+  models: Cesium.Model[] = [] // 3Dモデルの配列
+  rotation = new Rotation(this)
+  unsubKeys: (() => void) | null = null
+
   currentLocationIndex = ref(0)
   currentPoint = ref<Cesium.Cartesian3 | null>(null)
   isRotating = ref(false)
-  locations: InfluencerLocation[]
-  unsubKeys: (() => void) | null = null
-  models: Cesium.Model[] = [] // 3Dモデルの配列
-  rotation = new Rotation(this)
 
   constructor(locations: InfluencerLocation[]) {
     this.locations = locations
