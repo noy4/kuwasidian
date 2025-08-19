@@ -40,7 +40,9 @@
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Spas_vsederzhitel_sinay.jpg/256px-Spas_vsederzhitel_sinay.jpg",
     "description": "キリスト教の創始者。愛と平和の教えを説き、世界最大の宗教であるキリスト教の基盤を築いた。",
     "major_achievement": "キリスト教の創始・愛の教え",
-    "model": "./models/cross.glb"
+    "model": "/parrot.glb",
+    "modelScale": 3.0,
+    "modelHeight": 100
   },
   {
     "name": "ブッダ（釈迦）",

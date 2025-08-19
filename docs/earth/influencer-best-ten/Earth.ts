@@ -74,6 +74,7 @@ export class Earth {
       geocoder: Cesium.IonGeocodeProviderType.GOOGLE,
       timeline: false,
       animation: false,
+      shouldAnimate: true,
       baseLayerPicker: false,
       sceneModePicker: false,
       // navigationHelpButton: false,
@@ -88,7 +89,7 @@ export class Earth {
     })
     this.viewer.scene.primitives.add(tileset)
     await load3DModels(this)
-    await flyToLocationView(this, 0, { duration: 0 })
+    await flyToLocationView(this, this.currentLocationIndex.value, { duration: 0 })
     this.rotation.start()
   }
 
@@ -233,6 +234,12 @@ async function load3DModels(earth: Earth) {
         modelMatrix,
         minimumPixelSize: 32,
         maximumScale: 1000,
+      })
+
+      model.readyEvent.addEventListener(() => {
+        model.activeAnimations.addAll({
+          loop: Cesium.ModelAnimationLoop.REPEAT, // ループ再生
+        })
       })
 
       earth.viewer.scene.primitives.add(model)
