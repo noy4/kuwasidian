@@ -16,6 +16,11 @@ export interface InfluencerLocation {
   model?: string // 3Dモデルのパス（オプショナル）
   modelScale?: number // 3Dモデルのスケール（オプショナル、デフォルト: 10.0）
   modelHeight?: number // 地面からの高さ（オプショナル、デフォルト: 50）
+  modelRotation?: {
+    heading?: number // ヨー角（度単位、オプショナル、デフォルト: 0）
+    pitch?: number // ピッチ角（度単位、オプショナル、デフォルト: 0）
+    roll?: number // ロール角（度単位、オプショナル、デフォルト: 0）
+  }
 }
 
 Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxNjdlYzkxZC1kNTM5LTRlNWItYmM4MC1hMGUyY2VmZDFlYWQiLCJpZCI6MzEyMTEyLCJpYXQiOjE3NDk4OTEyMDF9.Krcs6xfVbGbfMuxORnoMA4iF-mLfcvudZfLy9EBAwGQ'
@@ -199,10 +204,24 @@ export class Earth {
 
         // 3Dモデルを読み込み
         const modelScale = location.modelScale || 10.0 // デフォルトスケール
+
+        // 回転角度の設定（度をラジアンに変換）
+        const heading = Cesium.Math.toRadians(location.modelRotation?.heading || 0)
+        const pitch = Cesium.Math.toRadians(location.modelRotation?.pitch || 0)
+        const roll = Cesium.Math.toRadians(location.modelRotation?.roll || 0)
+
+        // 回転を含むモデルマトリックスの作成
+        const hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll)
+        const orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr)
+        const modelMatrix = Cesium.Matrix4.fromTranslationQuaternionRotationScale(
+          position,
+          orientation,
+          new Cesium.Cartesian3(modelScale, modelScale, modelScale),
+        )
+
         const model = await Cesium.Model.fromGltfAsync({
           url: withBase(location.model),
-          modelMatrix: Cesium.Transforms.eastNorthUpToFixedFrame(position),
-          scale: modelScale,
+          modelMatrix,
           minimumPixelSize: 32,
           maximumScale: 1000,
         })

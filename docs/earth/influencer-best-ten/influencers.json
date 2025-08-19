@@ -11,7 +11,11 @@
     "major_achievement": "イスラム教の創始・コーランの啓示",
     "model": "/quran.glb",
     "modelScale": 1000,
-    "modelHeight": 100
+    "modelHeight": 100,
+    "modelRotation": {
+      "pitch": -20,
+      "roll": 10
+    }
   },
   {
     "name": "アイザック・ニュートン",

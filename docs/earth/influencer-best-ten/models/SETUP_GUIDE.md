@@ -69,7 +69,12 @@ cp ~/Downloads/atom.glb docs/earth/influencer-best-ten/models/
   "name": "ムハンマド",
   "model": "./models/quran.glb",
   "modelScale": 30.0,
-  "modelHeight": 80
+  "modelHeight": 80,
+  "modelRotation": {
+    "heading": 0,
+    "pitch": 0,
+    "roll": 0
+  }
 }
 ```
 
