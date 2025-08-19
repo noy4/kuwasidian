@@ -178,8 +178,7 @@ export class Earth {
 
   // 3Dモデルを読み込んで配置する
   async load3DModels() {
-    for (let i = 0; i < this.locations.length; i++) {
-      const location = this.locations[i]
+    for (const location of this.locations) {
       if (location.model) {
         try {
           // 地形の高さを取得
