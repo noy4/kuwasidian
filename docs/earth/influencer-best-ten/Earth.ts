@@ -86,7 +86,7 @@ export class Earth {
       onlyUsingWithGoogleGeocoder: true, // needed to hide warning
     })
     this.viewer.scene.primitives.add(tileset)
-    await this.load3DModels()
+    await load3DModels(this)
     await this.flyToLocationView(0, { duration: 0 })
     this.startCameraRotation()
   }
@@ -249,6 +249,60 @@ export class Earth {
 
   flyToBoundingSphereAsync(...args: Parameters<Cesium.Camera['flyToBoundingSphere']>) {
     return flyToBoundingSphereAsync(this.viewer, ...args)
+  }
+}
+
+// 3Dモデルを読み込んで配置する
+async function load3DModels(earth: Earth) {
+  for (const location of earth.locations) {
+    if (!location.model)
+      continue
+
+    try {
+      // 地形の高さを取得
+      const [terrainPosition] = await Cesium.sampleTerrainMostDetailed(
+        earth.terrainProvider,
+        [Cesium.Cartographic.fromDegrees(location.longitude, location.latitude)],
+      )
+
+      // 3Dモデルの位置を設定（地面から少し浮かせる）
+      const modelHeight = location.modelHeight || 0
+      const position = Cesium.Cartesian3.fromDegrees(
+        location.longitude,
+        location.latitude,
+        terrainPosition.height + modelHeight,
+      )
+
+      // 3Dモデルを読み込み
+      const modelScale = location.modelScale || 10.0 // デフォルトスケール
+
+      // 回転角度の設定（度をラジアンに変換）
+      const heading = Cesium.Math.toRadians(location.modelRotation?.heading || 0)
+      const pitch = Cesium.Math.toRadians(location.modelRotation?.pitch || 0)
+      const roll = Cesium.Math.toRadians(location.modelRotation?.roll || 0)
+
+      // 回転を含むモデルマトリックスの作成
+      const hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll)
+      const orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr)
+      const modelMatrix = Cesium.Matrix4.fromTranslationQuaternionRotationScale(
+        position,
+        orientation,
+        new Cesium.Cartesian3(modelScale, modelScale, modelScale),
+      )
+
+      const model = await Cesium.Model.fromGltfAsync({
+        url: withBase(location.model),
+        modelMatrix,
+        minimumPixelSize: 32,
+        maximumScale: 1000,
+      })
+
+      earth.viewer.scene.primitives.add(model)
+      earth.models.push(model)
+    }
+    catch (error) {
+      console.warn(`Failed to load 3D model for ${location.name}:`, error)
+    }
   }
 }
 
