@@ -136,7 +136,7 @@ export class Earth {
     )
     this.currentPoint.value = center
     const sphere = new Cesium.BoundingSphere(center)
-    await this.flyToBoundingSphereAsync(sphere, {
+    await flyToBoundingSphereAsync(this.viewer, sphere, {
       offset: this.OFFSET,
       ...options,
     })
@@ -146,7 +146,7 @@ export class Earth {
     locationIndex: number,
     options?: Partial<Parameters<Cesium.Camera['flyTo']>[0]>,
   ) {
-    return this.flyToAsync({
+    return flyToAsync(this.viewer, {
       destination: Cesium.Cartesian3.fromDegrees(
         this.locations[locationIndex].longitude,
         this.locations[locationIndex].latitude,
@@ -179,14 +179,6 @@ export class Earth {
       this.stopCameraRotation()
     else
       this.startCameraRotation()
-  }
-
-  flyToAsync(...args: Parameters<Cesium.Camera['flyTo']>) {
-    return flyToAsync(this.viewer, ...args)
-  }
-
-  flyToBoundingSphereAsync(...args: Parameters<Cesium.Camera['flyToBoundingSphere']>) {
-    return flyToBoundingSphereAsync(this.viewer, ...args)
   }
 }
 
