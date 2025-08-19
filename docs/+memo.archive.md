@@ -1,3 +1,14 @@
+-  https://raw.githubusercontent.com/CesiumGS/cesium/main/Apps/SampleData/models/CesiumDrone/CesiumDrone.glb
+- https://raw.githubusercontent.com/CesiumGS/cesium/main/Apps/SampleData/models/CesiumAir/Cesium_Air.glb
+
+
+[「結果がすべて」破天荒IT企業　採用は人狼ゲーム、勤務中の飲酒OK　推しロス休暇も有 - 産経ニュース](https://www.sankei.com/article/20250811-ALRW67525JITVKDHR37YG42HRI/)
+
+
+- [glTF-Sample-Models/2.0 at main · KhronosGroup/glTF-Sample-Models](https://github.com/KhronosGroup/glTF-Sample-Models/tree/main/2.0/)
+- [KhronosGroup/glTF-Sample-Assets: An assortment of assets that demonstrate features and capabilities of the glTF format](https://github.com/KhronosGroup/glTF-Sample-Assets?tab=readme-ov-file)
+- [Get 3D Models](https://github.com/Get-3D-Models)
+
 女性　片付け　チャッピー
 
 

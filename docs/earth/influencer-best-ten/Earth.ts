@@ -1,14 +1,12 @@
 import * as Cesium from 'cesium'
 import { tinykeys } from 'tinykeys'
+import { withBase } from 'vitepress'
 import { ref } from 'vue'
 
-export interface Location {
+export interface InfluencerLocation {
   name: string
   longitude: number
   latitude: number
-}
-
-export type InfluencerLocation = Location & {
   birth_year: number
   death_year?: number
   field: string // 分野（宗教、科学、哲学、発明など）
@@ -126,7 +124,6 @@ export class Earth {
         this.locations[locationIndex].latitude,
       )],
     )
-    console.log('height:', terrainPosition.height)
     const center = Cesium.Cartesian3.fromDegrees(
       this.locations[locationIndex].longitude,
       this.locations[locationIndex].latitude,
@@ -192,7 +189,7 @@ export class Earth {
           )
 
           // 3Dモデルの位置を設定（地面から少し浮かせる）
-          const modelHeight = location.modelHeight || 50 // デフォルト50m
+          const modelHeight = location.modelHeight || 0
           const position = Cesium.Cartesian3.fromDegrees(
             location.longitude,
             location.latitude,
@@ -202,11 +199,11 @@ export class Earth {
           // 3Dモデルを読み込み
           const modelScale = location.modelScale || 10.0 // デフォルトスケール
           const model = await Cesium.Model.fromGltfAsync({
-            url: location.model,
+            url: withBase(location.model),
             modelMatrix: Cesium.Transforms.eastNorthUpToFixedFrame(position),
             scale: modelScale,
             minimumPixelSize: 32,
-            maximumScale: 200,
+            maximumScale: 1000,
           })
 
           this.viewer.scene.primitives.add(model)

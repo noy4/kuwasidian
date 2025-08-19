@@ -9,7 +9,9 @@
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/15th-century_art_from_illuminated_manuscript_from_the_Ottoman_Empire_Qur%27an_%28cropped%29.jpg/256px-15th-century_art_from_illuminated_manuscript_from_the_Ottoman_Empire_Qur%27an_%28cropped%29.jpg",
     "description": "イスラム教の預言者。アラビア半島でイスラム教を創始し、世界最大級の宗教の一つを築いた。",
     "major_achievement": "イスラム教の創始・コーランの啓示",
-    "model": "https://raw.githubusercontent.com/CesiumGS/cesium/main/Apps/SampleData/models/CesiumAir/Cesium_Air.glb"
+    "model": "/quran.glb",
+    "modelScale": 1000,
+    "modelHeight": 100
   },
   {
     "name": "アイザック・ニュートン",
@@ -21,7 +23,8 @@
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/GodfreyKneller-IsaacNewton-1689.jpg/256px-GodfreyKneller-IsaacNewton-1689.jpg",
     "description": "物理学者・数学者。万有引力の法則、運動の法則を発見し、近代科学の基礎を築いた。",
     "major_achievement": "万有引力の法則・微積分学の発明",
-    "model": "https://raw.githubusercontent.com/CesiumGS/cesium/main/Apps/SampleData/models/CesiumDrone/CesiumDrone.glb"
+    "model": "/apple_tree.glb",
+    "modelScale": 0.5
   },
   {
     "name": "イエス・キリスト",
