@@ -73,7 +73,7 @@ watch(earth.currentLocationIndex, (newIndex) => {
         <button
           class="btn mt-2 w-full"
           :class="earth.isRotating.value ? 'btn-error' : 'btn-success'"
-          @click="earth.toggleCameraRotation()"
+          @click="earth.rotation.toggle()"
         >
           <i :class="earth.isRotating.value ? 'i-lucide-refresh-cw-off' : 'i-lucide-refresh-cw'" />
           {{ earth.isRotating.value ? '回転停止' : '回転開始' }}
