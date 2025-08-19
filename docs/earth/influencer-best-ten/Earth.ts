@@ -87,20 +87,20 @@ export class Earth {
     })
     this.viewer.scene.primitives.add(tileset)
     await load3DModels(this)
-    await this.flyToLocationView(0, { duration: 0 })
+    await flyToLocationView(this, 0, { duration: 0 })
     this.rotation.start()
   }
 
   async goToLocation(locationIndex: number) {
     this.rotation.stop()
 
-    await this.flyAboveLocation(this.currentLocationIndex.value, {
+    await flyAboveLocation(this, this.currentLocationIndex.value, {
       duration: 0.5,
       easingFunction: Cesium.EasingFunction.QUARTIC_OUT,
     })
     this.currentLocationIndex.value = locationIndex
-    await this.flyAboveLocation(locationIndex)
-    await this.flyToLocationView(locationIndex, {
+    await flyAboveLocation(this, locationIndex)
+    await flyToLocationView(this, locationIndex, {
       easingFunction: Cesium.EasingFunction.QUADRATIC_IN,
       duration: 0.5,
     })
@@ -117,44 +117,46 @@ export class Earth {
     const prev = (this.currentLocationIndex.value - 1 + len) % len
     return this.goToLocation(prev)
   }
+}
 
-  async flyToLocationView(
-    locationIndex: number,
-    options?: Parameters<Cesium.Camera['flyToBoundingSphere']>[1],
-  ) {
-    const [terrainPosition] = await Cesium.sampleTerrainMostDetailed(
-      this.terrainProvider,
-      [Cesium.Cartographic.fromDegrees(
-        this.locations[locationIndex].longitude,
-        this.locations[locationIndex].latitude,
-      )],
-    )
-    const center = Cesium.Cartesian3.fromDegrees(
-      this.locations[locationIndex].longitude,
-      this.locations[locationIndex].latitude,
-      terrainPosition.height,
-    )
-    this.currentPoint.value = center
-    const sphere = new Cesium.BoundingSphere(center)
-    await flyToBoundingSphereAsync(this.viewer, sphere, {
-      offset: this.OFFSET,
-      ...options,
-    })
-  }
+async function flyToLocationView(
+  earth: Earth,
+  locationIndex: number,
+  options?: Parameters<Cesium.Camera['flyToBoundingSphere']>[1],
+) {
+  const [terrainPosition] = await Cesium.sampleTerrainMostDetailed(
+    earth.terrainProvider,
+    [Cesium.Cartographic.fromDegrees(
+      earth.locations[locationIndex].longitude,
+      earth.locations[locationIndex].latitude,
+    )],
+  )
+  const center = Cesium.Cartesian3.fromDegrees(
+    earth.locations[locationIndex].longitude,
+    earth.locations[locationIndex].latitude,
+    terrainPosition.height,
+  )
+  earth.currentPoint.value = center
+  const sphere = new Cesium.BoundingSphere(center)
+  await flyToBoundingSphereAsync(earth.viewer, sphere, {
+    offset: earth.OFFSET,
+    ...options,
+  })
+}
 
-  flyAboveLocation(
-    locationIndex: number,
-    options?: Partial<Parameters<Cesium.Camera['flyTo']>[0]>,
-  ) {
-    return flyToAsync(this.viewer, {
-      destination: Cesium.Cartesian3.fromDegrees(
-        this.locations[locationIndex].longitude,
-        this.locations[locationIndex].latitude,
-        this.RANGE,
-      ),
-      ...options,
-    })
-  }
+function flyAboveLocation(
+  earth: Earth,
+  locationIndex: number,
+  options?: Partial<Parameters<Cesium.Camera['flyTo']>[0]>,
+) {
+  return flyToAsync(earth.viewer, {
+    destination: Cesium.Cartesian3.fromDegrees(
+      earth.locations[locationIndex].longitude,
+      earth.locations[locationIndex].latitude,
+      earth.RANGE,
+    ),
+    ...options,
+  })
 }
 
 class Rotation {
@@ -248,6 +250,8 @@ function remove3DModels(earth: Earth) {
   })
   earth.models = []
 }
+
+// --- utils ---
 
 // Function to fly to a specific camera position asynchronously
 function flyToAsync(
