@@ -203,9 +203,9 @@ class Rotation {
 
 // 3Dモデルを読み込んで配置する
 async function load3DModels(earth: Earth) {
-  for (const location of earth.locations) {
+  const modelPromises = earth.locations.map(async (location) => {
     if (!location.model)
-      continue
+      return null
 
     try {
       // 地形の高さを取得
@@ -251,12 +251,16 @@ async function load3DModels(earth: Earth) {
       })
 
       earth.viewer.scene.primitives.add(model)
-      earth.models.push(model)
+      return model
     }
     catch (error) {
       console.warn(`Failed to load 3D model for ${location.name}:`, error)
+      return null
     }
-  }
+  })
+
+  const models = await Promise.all(modelPromises)
+  earth.models = models.filter(v => v !== null)
 }
 
 // 3Dモデルを削除する
