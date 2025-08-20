@@ -168,12 +168,29 @@ class Rotation {
   cameraRotationHandler = () => this.earth.viewer.camera.rotateRight(this.ROTATION_SPEED)
 
   // [Control the Camera – Cesium](https://cesium.com/learn/cesiumjs-learn/cesiumjs-camera/#orbit-around-a-point)
-  start() {
+  async start() {
     if (this.earth.isRotating.value)
       return
     this.earth.isRotating.value = true
-    const transform = Cesium.Transforms.eastNorthUpToFixedFrame(this.earth.currentPoint.value!)
-    this.earth.viewer.camera.lookAtTransform(transform, this.earth.OFFSET)
+
+    // 回転開始時点の画面中央の地表の点を取得
+    const canvas = this.earth.viewer.scene.canvas
+    const canvasCenter = new Cesium.Cartesian2(canvas.clientWidth / 2, canvas.clientHeight / 2)
+    const ellipsoidPosition = this.earth.viewer.camera.pickEllipsoid(canvasCenter, Cesium.Ellipsoid.WGS84)!
+    const cartographic = Cesium.Cartographic.fromCartesian(ellipsoidPosition)
+    const [terrainPosition] = await Cesium.sampleTerrainMostDetailed(
+      this.earth.terrainProvider,
+      [cartographic],
+    )
+    const rotationCenter = Cesium.Cartesian3.fromDegrees(
+      Cesium.Math.toDegrees(cartographic.longitude),
+      Cesium.Math.toDegrees(cartographic.latitude),
+      terrainPosition.height,
+    )
+
+    // 画面中央の点を中心にカメラを固定
+    const transform = Cesium.Transforms.eastNorthUpToFixedFrame(rotationCenter)
+    this.earth.viewer.camera.lookAtTransform(transform)
     this.earth.viewer.clock.onTick.addEventListener(this.cameraRotationHandler)
   }
 
