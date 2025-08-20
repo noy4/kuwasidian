@@ -87,9 +87,9 @@ export class Earth {
       onlyUsingWithGoogleGeocoder: true, // needed to hide warning
     })
     this.viewer.scene.primitives.add(tileset)
+    const center = await flyToLocationView(this, this.currentLocationIndex.value, { duration: 0 })
+    this.rotation.start(center)
     await load3DModels(this)
-    await flyToLocationView(this, this.currentLocationIndex.value, { duration: 0 })
-    this.rotation.start()
   }
 
   async goToLocation(locationIndex: number) {
@@ -142,6 +142,7 @@ async function flyToLocationView(
     offset: earth.OFFSET,
     ...options,
   })
+  return sphere.center
 }
 
 function flyAboveLocation(
@@ -166,7 +167,7 @@ class Rotation {
   cameraRotationHandler = () => this.earth.viewer.camera.rotateRight(this.ROTATION_SPEED)
 
   // [Control the Camera – Cesium](https://cesium.com/learn/cesiumjs-learn/cesiumjs-camera/#orbit-around-a-point)
-  async start() {
+  async start(rotationCenter?: Cesium.Cartesian3) {
     if (this.earth.isRotating.value)
       return
     this.earth.isRotating.value = true
@@ -174,17 +175,11 @@ class Rotation {
     // 回転開始時点の画面中央の地表の点を取得
     const canvas = this.earth.viewer.scene.canvas
     const canvasCenter = new Cesium.Cartesian2(canvas.clientWidth / 2, canvas.clientHeight / 2)
-    const ellipsoidPosition = this.earth.viewer.camera.pickEllipsoid(canvasCenter, Cesium.Ellipsoid.WGS84)!
-    const cartographic = Cesium.Cartographic.fromCartesian(ellipsoidPosition)
-    const [terrainPosition] = await Cesium.sampleTerrainMostDetailed(
-      this.earth.terrainProvider,
-      [cartographic],
-    )
-    const rotationCenter = Cesium.Cartesian3.fromDegrees(
-      Cesium.Math.toDegrees(cartographic.longitude),
-      Cesium.Math.toDegrees(cartographic.latitude),
-      terrainPosition.height,
-    )
+    rotationCenter ||= this.earth.viewer.scene.pickPosition(canvasCenter)
+
+    // 3D Tiles未ロードや空中の場合は何もしない
+    if (!rotationCenter)
+      return
 
     // 画面中央の点を中心にカメラを固定
     const transform = Cesium.Transforms.eastNorthUpToFixedFrame(rotationCenter)
