@@ -18,3 +18,7 @@ Quest x Quest
 
 
 ---
+
+- [AI 3D: Tripo AI + アニメーションチュートリアルで魅力的な 3D モデルを生成 - YouTube](https://www.youtube.com/watch?v=uC8hzJvDHxs)
+- [Best AI 3D Tool ? - AI Animation Tutorial - YouTube](https://www.youtube.com/watch?v=7aYy9H7jQuQ)
+- [Meshy AI - AI 3Dモデリング 無料](https://www.meshy.ai/)

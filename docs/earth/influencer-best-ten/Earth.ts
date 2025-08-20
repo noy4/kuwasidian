@@ -232,8 +232,6 @@ async function load3DModels(earth: Earth) {
       const model = await Cesium.Model.fromGltfAsync({
         url: withBase(location.model),
         modelMatrix,
-        minimumPixelSize: 32,
-        maximumScale: 1000,
       })
 
       model.readyEvent.addEventListener(() => {

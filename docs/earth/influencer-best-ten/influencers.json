@@ -66,7 +66,8 @@
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Konfuzius-1770.jpg/256px-Konfuzius-1770.jpg",
     "description": "中国の思想家・教育者。儒教の基礎を築き、東アジア文化圏に絶大な影響を与えた。",
     "major_achievement": "儒教の創始・論語の教え",
-    "model": "./models/scroll.glb"
+    "model": "/confucius.glb",
+    "modelScale": 1000000
   },
   {
     "name": "聖パウロ",
