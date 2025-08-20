@@ -38,7 +38,6 @@ export class Earth {
   unsubKeys: (() => void) | null = null
 
   currentLocationIndex = ref(0)
-  currentPoint = ref<Cesium.Cartesian3 | null>(null)
   isRotating = ref(false)
 
   constructor(locations: InfluencerLocation[]) {
@@ -138,7 +137,6 @@ async function flyToLocationView(
     earth.locations[locationIndex].latitude,
     terrainPosition.height,
   )
-  earth.currentPoint.value = center
   const sphere = new Cesium.BoundingSphere(center)
   await flyToBoundingSphereAsync(earth.viewer, sphere, {
     offset: earth.OFFSET,
