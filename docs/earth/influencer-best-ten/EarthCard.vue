@@ -62,23 +62,6 @@ watch(earth.currentLocationIndex, (newIndex) => {
           />
         </div>
 
-        <button
-          class="btn btn-primary mt-4 w-full"
-          @click="earth.goToNextLocation()"
-        >
-          <i class="i-lucide-arrow-right" />
-          次の地点へ
-        </button>
-
-        <button
-          class="btn mt-2 w-full"
-          :class="earth.isRotating.value ? 'btn-error' : 'btn-success'"
-          @click="earth.rotation.toggle()"
-        >
-          <i :class="earth.isRotating.value ? 'i-lucide-refresh-cw-off' : 'i-lucide-refresh-cw'" />
-          {{ earth.isRotating.value ? '回転停止' : '回転開始' }}
-        </button>
-
         <div class="prose text-xs text-white/50">
           <div
             v-html="mdrender(`
@@ -89,13 +72,32 @@ watch(earth.currentLocationIndex, (newIndex) => {
       </div>
     </div>
 
-    <label
-      class="btn btn-xs btn-ghost mb-2"
-      style="--btn-color: #fff2; --btn-fg: #fff8;"
-    >
-      <input v-model="open" type="checkbox" hidden>
-      <i :class="open ? 'i-lucide-chevron-up' : 'i-lucide-chevron-down'" />
-      {{ open ? '閉じる' : '開く' }}
-    </label>
+    <div>
+      <button
+        class="btn btn-primary w-full mt-1"
+        @click="earth.goToNextLocation()"
+      >
+        <i class="i-lucide-arrow-right" />
+        次の地点へ
+      </button>
+
+      <button
+        class="btn mt-2 w-full"
+        :class="earth.isRotating.value ? 'btn-error' : 'btn-success'"
+        @click="earth.rotation.toggle()"
+      >
+        <i :class="earth.isRotating.value ? 'i-lucide-refresh-cw-off' : 'i-lucide-refresh-cw'" />
+        {{ earth.isRotating.value ? '回転停止' : '回転開始' }}
+      </button>
+
+      <label
+        class="btn btn-xs btn-ghost mt-1 mb-2"
+        style="--btn-color: #fff2; --btn-fg: #fff8;"
+      >
+        <input v-model="open" type="checkbox" hidden>
+        <i :class="open ? 'i-lucide-chevron-up' : 'i-lucide-chevron-down'" />
+        {{ open ? '閉じる' : '開く' }}
+      </label>
+    </div>
   </div>
 </template>
