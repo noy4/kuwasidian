@@ -131,3 +131,7 @@ models/
 
 ### ライセンス注意事項
 使用する3Dモデルは、商用利用可能またはCC0ライセンスのものを選択してください。
+
+- [Community - Meshy](https://www.meshy.ai/3d-models/realistic-Jesus-Christ-Highly-Detailed-Ultra-Realistic-Apose-Full-Body-0192675f-c555-737b-8ac7-b49ad7f8b07f)
+- [Community - Meshy](https://www.meshy.ai/3d-models/Meditative-Buddha-Statue-01918178-9467-7512-89b6-c2b0a4a095f9)
+- [Saint Paul the Apostle - Download Free 3D model by Virtual Museums of Małopolska (@WirtualneMuzeaMalopolski) [2195c3c]](https://sketchfab.com/3d-models/saint-paul-the-apostle-2195c3c0b9a140628e938ddb146d00ca)

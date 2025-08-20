@@ -40,9 +40,9 @@
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Spas_vsederzhitel_sinay.jpg/256px-Spas_vsederzhitel_sinay.jpg",
     "description": "キリスト教の創始者。愛と平和の教えを説き、世界最大の宗教であるキリスト教の基盤を築いた。",
     "major_achievement": "キリスト教の創始・愛の教え",
-    "model": "/parrot.glb",
-    "modelScale": 3.0,
-    "modelHeight": 100
+    "model": "/jesus_christ.glb",
+    "modelScale": 100,
+    "modelHeight": 20
   },
   {
     "name": "ブッダ（釈迦）",
@@ -54,7 +54,8 @@
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Gandhara_Buddha_%28tnm%29.jpeg/256px-Gandhara_Buddha_%28tnm%29.jpeg",
     "description": "仏教の創始者。苦悩からの解脱を説き、慈悲と智慧の教えで多くの人々を導いた。",
     "major_achievement": "仏教の創始・四諦八正道の教え",
-    "model": "./models/bodhi_tree.glb"
+    "model": "/buddha.glb",
+    "modelScale": 100
   },
   {
     "name": "孔子",
@@ -79,7 +80,9 @@
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Apostel_Paulus%2C_RP-P-1995-24.jpg/256px-Apostel_Paulus%2C_RP-P-1995-24.jpg",
     "description": "キリスト教の使徒。異邦人への宣教活動により、キリスト教を世界宗教に発展させた。",
     "major_achievement": "キリスト教の世界的布教・新約聖書の執筆",
-    "model": "./models/letter_scroll.glb"
+    "model": "/saint_paul_the_apostle.glb",
+    "modelScale": 100,
+    "modelHeight": 100
   },
   {
     "name": "蔡倫",
