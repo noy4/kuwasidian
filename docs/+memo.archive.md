@@ -1,3 +1,5 @@
+[doc: add note hover style of btn-ghost does not have translucent background or does not respect normal text color in v5 in migration guide · Issue #3595 · saadeghi/daisyui](https://github.com/saadeghi/daisyui/issues/3595)
+
 Expand this: A monster
 Add T-pose and rock material to the prompt
 

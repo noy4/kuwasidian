@@ -18,7 +18,7 @@ const earth = new Earth(locations)
 onMounted(earth.mount)
 </script>
 
-<div class="relative w-full h-screen z-1000">
+<div class="relative w-full h-100dvh z-1000">
   <div id="cesiumContainer" class="w-full h-full" />
   <EarthCard :earth />
   <RotateButton :earth />
