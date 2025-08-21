@@ -10,7 +10,7 @@ defineProps<{
   <div class="absolute bottom-3 right-4">
     <button
       title="回転（Space）"
-      class="btn btn-circle flex flex-col gap-1 shadow"
+      class="btn btn-lg btn-circle flex-col gap-1 shadow"
       :class="earth.isRotating.value ? 'text-primary' : 'text-base-content/50!'"
       @click="earth.rotation.toggle()"
     >
