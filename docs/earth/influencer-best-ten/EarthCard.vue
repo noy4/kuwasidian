@@ -37,9 +37,11 @@ watch(earth.currentLocationIndex, (newIndex) => {
       </ul>
     </div>
 
-    <h3 class="text-white text-lg font-bold">
+    <label class="text-white text-lg font-bold flex items-center cursor-pointer">
       インフルエンサー・ベスト10
-    </h3>
+      <i :class="open ? 'i-lucide-chevron-down' : 'i-lucide-chevron-left'" class="ml-auto text-base" />
+      <input v-model="open" type="checkbox" hidden>
+    </label>
 
     <div
       :class="open ? 'rows-[1fr]' : 'rows-[0fr]'"
@@ -74,21 +76,12 @@ watch(earth.currentLocationIndex, (newIndex) => {
 
     <div>
       <button
-        class="btn btn-primary w-full mt-1"
+        class="btn btn-primary w-full mt-1 mb-3"
         @click="earth.goToNextLocation()"
       >
         <i class="i-lucide-arrow-right" />
         次の地点へ
       </button>
-
-      <label
-        class="btn btn-xs btn-ghost mt-1 mb-2"
-        style="--btn-color: #fff2; --btn-fg: #fff8;"
-      >
-        <input v-model="open" type="checkbox" hidden>
-        <i :class="open ? 'i-lucide-chevron-up' : 'i-lucide-chevron-down'" />
-        {{ open ? '閉じる' : '開く' }}
-      </label>
     </div>
   </div>
 </template>
