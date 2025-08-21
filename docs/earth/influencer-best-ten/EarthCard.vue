@@ -81,15 +81,6 @@ watch(earth.currentLocationIndex, (newIndex) => {
         次の地点へ
       </button>
 
-      <button
-        class="btn mt-2 w-full"
-        :class="earth.isRotating.value ? 'btn-error' : 'btn-success'"
-        @click="earth.rotation.toggle()"
-      >
-        <i :class="earth.isRotating.value ? 'i-lucide-refresh-cw-off' : 'i-lucide-refresh-cw'" />
-        {{ earth.isRotating.value ? '回転停止' : '回転開始' }}
-      </button>
-
       <label
         class="btn btn-xs btn-ghost mt-1 mb-2"
         style="--btn-color: #fff2; --btn-fg: #fff8;"
