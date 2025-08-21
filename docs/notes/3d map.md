@@ -1,6 +1,6 @@
 
 x 金持ち国ツアー
-虐殺数ツアー
+x 虐殺数ツアー
 神話始まりの地ツアー
 人口密度低い国
 思想家マップ
@@ -15,6 +15,9 @@ x 金持ち国ツアー
 飛行機ビジネスクラス料金運び
 ゲームオブスローンズ再現
 戦争再生
+
+
+- [ZhiminXu/AwesomeCesium: Awesome lists about all kinds of cesium related resources.](https://github.com/ZhiminXu/AwesomeCesium)
 
 
 ---
@@ -38,15 +41,28 @@ x 金持ち国ツアー
 - [GIS実習オープン教材とは · GIS実習オープン教材](https://gis-oer.github.io/gitbook/book/)
 - [Learning | PLATEAUを学び、活用する | PLATEAU [プラトー]](https://www.mlit.go.jp/plateau/learning/)
 - [Terria](https://terria.io/)
+    - [TOPIC 7｜TerriaJSで活用する[1/2]｜TerriaMapの開発環境を構築する | How To Use | PLATEAU [プラトー]](https://www.mlit.go.jp/plateau/learning/tpc07-1/)
 - [Create your own Custom Map | MapChart](https://www.mapchart.net/)
 - [ジオグラフ](https://www.geograph.teikokushoin.co.jp/)
 
 
+[TOPIC 2｜PLATEAU VIEWで体験する[2/2]｜他の地理空間情報を重ねて確認 | How To Use | PLATEAU [プラトー]](https://www.mlit.go.jp/plateau/learning/tpc02-2/)
+> なお、旧バージョンのPLATEAU VIEW 1.1はTerriaMapをベースに開発されたもので、PLATEAU VIEW2.0以降はRe:Earthをベースに移行されました。
+
+[Re:Earthがもたらす新たな3D都市モデルの可能性 - 令和5年度のProject PLATEAUにおけるEukaryaの取り組み成果について｜Eukarya Inc.](https://note.com/eukarya/n/n75c8eea7b31e)
+```
+PLATEAU VIEW 1.1（TerriaJS）
+PLATEAU VIEW 2.0（Re:Earthのプラグインで再現）- 2022; no code化
+- UI が TerriaJSベース、使いにくい、表現力不足
+```
+
+
+Population
 - [Stats, Maps n Pix: How to make a 3D population density render for any country in the world](https://www.statsmapsnpix.com/2020/11/how-to-make-3d-population-density.html)
 - [WorldPop :: Population Density](https://hub.worldpop.org/project/categories?id=18)
 - [joewdavies/geoblender: Tutorials for making 3D-looking maps with Blender and QGIS](https://github.com/joewdavies/geoblender?tab=readme-ov-file)
 - [3D地図で世界の人口分布を示した「Population Mountains」では見えなかったものが見えてくる - GIGAZINE](https://gigazine.net/news/20181213-population-mountains/)
-- 
+
 
 
 ---

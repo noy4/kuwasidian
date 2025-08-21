@@ -1,3 +1,7 @@
+Expand this: A monster
+Add T-pose and rock material to the prompt
+
+
 リアルタイムシミュレーション
 リアルタイムストラテジー
 スタークラフト

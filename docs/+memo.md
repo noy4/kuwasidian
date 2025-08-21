@@ -18,6 +18,8 @@ Quest x Quest
 ポーズ　男性モデル
 
 
+[TOPIC 2｜PLATEAU VIEWで体験する[1/2]｜3D都市モデルをブラウザで利用 | How To Use | PLATEAU [プラトー]](https://www.mlit.go.jp/plateau/learning/tpc02-1/)
+
 
 ---
 
