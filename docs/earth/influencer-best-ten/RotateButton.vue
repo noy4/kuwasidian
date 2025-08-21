@@ -9,9 +9,9 @@ defineProps<{
 <template>
   <div class="absolute bottom-3 right-4">
     <button
-      title="回転を切り替え（Space）"
+      title="回転（Space）"
       class="btn btn-circle flex flex-col gap-1 shadow"
-      :class="earth.isRotating.value ? 'text-blue' : ''"
+      :class="earth.isRotating.value ? 'text-primary' : 'text-base-content/50!'"
       @click="earth.rotation.toggle()"
     >
       <i

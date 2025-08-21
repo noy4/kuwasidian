@@ -19,6 +19,7 @@
     "@loaders.gl/csv": "^4.3.4",
     "@nolebase/markdown-it-bi-directional-links": "^2.17.1",
     "cesium": "^1.131.0",
+    "daisyui": "^5.0.50",
     "dayjs": "^1.11.13",
     "deck.gl": "^9.1.14",
     "dedent": "^1.6.0",

@@ -1,5 +1,9 @@
 import { presetDaisy } from '@ameinhardt/unocss-preset-daisy'
+// @ts-expect-error no_types
+import theme from 'daisyui/functions/variables.js'
 import { defineConfig, presetIcons, presetTypography, presetWind4, transformerVariantGroup } from 'unocss'
+
+// [unocss-preset-daisy](https://github.com/ameinhardt/unocss-preset-daisy)
 
 export default defineConfig({
   presets: [
@@ -17,6 +21,7 @@ export default defineConfig({
   transformers: [
     transformerVariantGroup(),
   ],
+  theme,
 })
 
 // VitePress のスタイルと競合するクラスを除外
