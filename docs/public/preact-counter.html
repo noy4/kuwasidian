@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Preact Counter</title>
+</head>
+<body>
+  <script type="importmap">
+    {
+      "imports": {
+        "preact": "https://esm.sh/preact@10.27.1",
+        "preact/": "https://esm.sh/preact@10.27.1/",
+        "@preact/signals": "https://esm.sh/@preact/signals@2.3.1?external=preact",
+        "htm/preact": "https://esm.sh/htm@3.1.1/preact"
+      }
+    }
+  </script>
+  <script type="module">
+    import { html, render } from "htm/preact"
+    import { signal } from "@preact/signals"
+
+    const count = signal(0)
+
+    function Counter() {
+      return html`
+        <div>
+          <p>Count: ${count}</p>
+          <button onClick=${() => count.value++}>Increment</button>
+          <button onClick=${() => count.value--}>Decrement</button>
+        </div>
+      `
+    }
+
+    render(html`<${Counter} />`, document.body)
+
+    // [Preact w/ SignalsをバンドルせずCDN経由で使う | Memory ice cubes](https://leaysgur.github.io/posts/2024/01/11/173221/)
+    // [Getting Started – Preact Guide](https://preactjs.com/guide/v10/getting-started)
+    // [Signals – Preact Guide](https://preactjs.com/guide/v10/signals)
+  </script>
+</body>
+</html>
