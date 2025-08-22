@@ -1,3 +1,22 @@
+① 長野県・大町市
+リモートワーカー向けのコワーキングスペースを整備
+移住者に家賃補助、就業サポート
+② 徳島県・神山町
+「ITタウン神山」と呼ばれるほど、都会のIT企業やフリーランスが移住
+高速インターネット完備、創造的環境
+③ 北海道・南富良野町
+農業＋カフェ＋宿泊で複合経営
+都会の若者が農業体験＋リモートワークで暮らす
+
+
+[「松山市 決算報告 pdf」 - Google Search](https://www.google.com/search?q=%E3%80%8C%E6%9D%BE%E5%B1%B1%E5%B8%82+%E6%B1%BA%E7%AE%97%E5%A0%B1%E5%91%8A+pdf%E3%80%8D&oq=%E3%80%8C%E6%9D%BE%E5%B1%B1%E5%B8%82+%E6%B1%BA%E7%AE%97%E5%A0%B1%E5%91%8A+pdf%E3%80%8D&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQLhhA0gEHMzk2ajBqMagCALACAA&sourceid=chrome&ie=UTF-8)
+[入札情報（物品・委託等） - 入札 - 愛媛県庁公式ホームページ](https://www.pref.ehime.jp/site/nyusatsu/list92-339.html)
+[入札情報（工事や工事に係る業務委託業務）　松山市公式ホームページ PCサイト](https://www.city.matsuyama.ehime.jp/shisei/denshinyusatsu/jouhou/oshirase/index.html)
+[松山市オープンデータサイト　松山市公式ホームページ PCサイト](https://www.city.matsuyama.ehime.jp/shisei/opendata/top.html)
+[美容所新規施設一覧　松山市公式ホームページ PCサイト](https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/biyousho.html)
+
+[3 Useful Meshy Features You Might Not Know: Optimize 3D Models for Better Quality - Blog - Meshy](https://www.meshy.ai/blog/optimize-3d-models-for-better-quality)
+
 [doc: add note hover style of btn-ghost does not have translucent background or does not respect normal text color in v5 in migration guide · Issue #3595 · saadeghi/daisyui](https://github.com/saadeghi/daisyui/issues/3595)
 
 Expand this: A monster
