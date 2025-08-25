@@ -21,8 +21,13 @@ x 虐殺数ツアー
 
 - [ZhiminXu/AwesomeCesium: Awesome lists about all kinds of cesium related resources.](https://github.com/ZhiminXu/AwesomeCesium)
 
+3D AI
+- [AI 3D: Tripo AI + アニメーションチュートリアルで魅力的な 3D モデルを生成 - YouTube](https://www.youtube.com/watch?v=uC8hzJvDHxs)
+- [Best AI 3D Tool ? - AI Animation Tutorial - YouTube](https://www.youtube.com/watch?v=7aYy9H7jQuQ)
+- [Meshy AI - AI 3Dモデリング 無料](https://www.meshy.ai/)
 
 ---
+
 [Svelte MapLibre GL - Build interactive web maps effortlessly with MapLibre GL JS and Svelte](https://svelte-maplibre-gl.mierune.dev/)
 [Sorami Hisamoto](https://sorami.dev/)
 [株式会社MIERUNE - 位置から、価値へ。](https://www.mierune.co.jp/)
@@ -32,6 +37,8 @@ x 虐殺数ツアー
 
 [デジタル地球儀](https://digital-globe.netlify.app/)
 [グリフォン](https://griffon.netlify.app/)
+[ヒロシマ・アーカイブ](https://hiroshima.mapping.jp/index_jp.html)
+[Nagasaki Archive](https://www.nagasaki.mapping.jp/)
 
 
 [deck.gl の始め方  - インストールから可視化まで #JavaScript - Qiita](https://qiita.com/keijipoon/items/92d9551930fe52d6c90a)
@@ -57,6 +64,8 @@ PLATEAU VIEW 1.1（TerriaJS）
 PLATEAU VIEW 2.0（Re:Earthのプラグインで再現）- 2022; no code化
 - UI が TerriaJSベース、使いにくい、表現力不足
 ```
+
+[国土交通省資料:「Re:Earth」を用いたユースケース開発](https://www.mlit.go.jp/scpf/archives/docs/3d_matching_221027.pdf)
 
 
 Population

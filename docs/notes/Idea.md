@@ -19,3 +19,5 @@ Shitty嫉妬
 Simple信奉
 ぴえんぴえんサピエン
 ピルグリミッち
+現状アブストラクション
+greedy×greedy

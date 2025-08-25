@@ -1,3 +1,15 @@
+[theopenco/llmgateway: Route, manage, and analyze your LLM requests across multiple providers with a unified API interface.](https://github.com/theopenco/llmgateway)
+
+
+フランシス・ ベーコン
+具体と抽象の行き来を視覚的に表現したアニメーションがないか探したい
+抽象化=カテゴライズ
+反知性主義
+
+preact + htm
+hybrids
+
+
 ① 長野県・大町市
 リモートワーカー向けのコワーキングスペースを整備
 移住者に家賃補助、就業サポート
