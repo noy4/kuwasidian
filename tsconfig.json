@@ -17,6 +17,12 @@
     "isolatedModules": true,
     "skipLibCheck": true
   },
+  "include": [
+    "**/*.ts",
+    "**/*.vue",
+    "**/*.md",
+    ".kilocode/**/*.md"
+  ],
   "exclude": [
     "**/node_modules/**",
     "**/dist/**"

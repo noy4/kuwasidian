@@ -13,12 +13,22 @@
 Quest x Quest
 アー写
 ポーズ　男性モデル
+nano-banana
 
 
 kilo code catchup
 kilo code deep research
+cline catchup
+openai nextjs
+
+[metatool-ai/metamcp](https://github.com/metatool-ai/metamcp)
+OpenWebUI
+gitmcp
+[dzhng/deep-research](https://github.com/dzhng/deep-research)
+
 
 [TOPIC 2｜PLATEAU VIEWで体験する[1/2]｜3D都市モデルをブラウザで利用 | How To Use | PLATEAU [プラトー]](https://www.mlit.go.jp/plateau/learning/tpc02-1/)
 
 
 ---
+

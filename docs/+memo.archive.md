@@ -1,3 +1,35 @@
+
+
+exa, tavily and brave search
+memory bank implementation
+visualize kilo code prompt
+
+
+1. **DeepSeek: R1 0528** (8位)
+2. **MoonshotAI: Kimi K2** (8位)
+3. **Qwen3 Coder** (26位)
+4. **Z.AI: GLM 4.5 Air** (27位)
+
+
+テキストを見やすく変換
+
+テキストを視覚的に見やすくするため、絵文字、カードなどを使った html に変換したい。要素を漏れなく変換するため、次の手順で実行すること。
+
+1. テキストの構造を把握してユーザーに報告、漏れがないか確認を求める
+2. テキストを html に変換
+
+**禁止事項**:
+- 要素を省略することを禁止する。すべての文言を余すことなく表示すること。
+
+
+AI の tool_use という概念について、以下2つがある？
+- モデル側がその機能を提供し、それを使うパターン
+- モデルとはテキストのやり取りをし、やり取り内でxml形式などで使用ツールが指定された場合、それをアプリ側で実行するパターン
+調べてまとめて欲しい
+
+keyword: OpenAI, Gemini, Anthropic, Cline
+
+
 [theopenco/llmgateway: Route, manage, and analyze your LLM requests across multiple providers with a unified API interface.](https://github.com/theopenco/llmgateway)
 
 
