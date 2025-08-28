@@ -16,7 +16,13 @@
 
 ---
 
+[What is Agent Communication Protocol (ACP)? | IBM](https://www.ibm.com/think/topics/agent-communication-protocol)
+
+
 deep research:
+[DavidZWZ/Awesome-Deep-Research](https://github.com/DavidZWZ/Awesome-Deep-Research)
+[dzhng/deep-research](https://github.com/dzhng/deep-research)
+
 [Web Search Tools · RooCodeInc/Roo-Code · Discussion #1029](https://github.com/RooCodeInc/Roo-Code/discussions/1029)
 - [Deep Research alternatives · ItzCrazyKns/Perplexica · Discussion #608](https://github.com/ItzCrazyKns/Perplexica/discussions/608)
 - [Deep Research · open-webui/open-webui · Discussion #9321](https://github.com/open-webui/open-webui/discussions/9321)

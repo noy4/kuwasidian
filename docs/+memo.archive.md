@@ -1,4 +1,26 @@
+github のリモートリポジトリのファイル一覧を取得するには？
+curl -s https://api.github.com/repos/vuejs/vitepress/git/trees/main?recursive=1 | jq -r '.tree | sort_by(.type == "blob") | .[0:1000] | .[] | .path + (if .type == "tree" then "/" else "" end)'
 
+
+{"message":"API rate limit exceeded for 219.109.122.149. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+
+
+deepwiki mcp
+github repo tree
+kilo code blog
+
+[Viberank - Claude Code Usage Leaderboard | Track AI Development Stats](https://www.viberank.app/)
+> Recent Updates
+> Latest improvements to viberank
+
+[metatool-ai/metamcp](https://github.com/metatool-ai/metamcp)
+
+
+[エンジニアを10年以上やって視力2.0を保つ秘訣](https://zenn.dev/engine0606/articles/a975c7eeead980)
+
+kilo code catchup
+kilo code deep research
+gitmcp
 
 exa, tavily and brave search
 memory bank implementation
