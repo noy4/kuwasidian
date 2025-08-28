@@ -157,6 +157,11 @@ function sidebar(): DefaultTheme.Sidebar {
         { text: '📄 ブログ', link: '/blog/' },
         { text: '🌏 Earth', link: '/earth/' },
         {
+          text: '🤖 プロンプト',
+          collapsed: true,
+          items: autoSidebar('prompts'),
+        },
+        {
           text: '🚀 プロジェクト',
           collapsed: true,
           items: autoSidebar('projects'),
