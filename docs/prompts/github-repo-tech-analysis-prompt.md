@@ -3,8 +3,6 @@
 指定されたGitHubリポジトリの技術構成を分析し、詳細なレポート(.html)を作成する。
 
 ## 使い方
-[mcp-server-fetch](https://github.com/modelcontextprotocol/servers/tree/main/src/fetch) を設定し、以下のように実行する。
-
 ```
 {このプロンプト}
 metatool-ai/metamcp # 対象リポジトリ（URLも可）
