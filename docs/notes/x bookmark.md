@@ -1,3 +1,14 @@
+
+[Xユーザーのgohan 🍚⛩️さん: 「エグい良すぎるwwwww よく賃貸探すけど、こんなにユーザーの導線理解してるアプリなくて感動した https://t.co/hU6NdJAjAT」 / X](https://x.com/grandchildrice/status/1950017213152313813)
+![XユーザーのAnthony Fu 🦋 @antfu.meさん: 「Wut? I am also antfu?」 / X](https://x.com/antfu7/status/1945405860148306106)
+
+[XユーザーのBilawal Sidhuさん: 「3d digital twin of a new light rail project in australia bim/cad data + google maps 3d tiles --&gt; interactive 3d engine imagine if every major infrastructure project in the world did this https://t.co/4wfNibfIGs」 / X](https://x.com/bilawalsidhu/status/1957529179794133147)
+
+[Xユーザーの麦 ⌇Bakuさん: 「https://t.co/IcbXFmNzsY I've redesigned my website into a digital garden, where my works, commercial projects, and personal notes are placed all together. 17歳の頃から使ってきたポートフォリオサイトを更新しました　コマーシャルワーク、Cosenseのメモなども一緒くたに載せています https://t.co/NZLDcJfW7s」 / X](https://x.com/_baku89/status/1957781981573574657)
+[XユーザーのOpenAI Developersさん: 「https://t.co/gbLgHDtImj is quickly becoming a popular way to share instructions with coding agents in your repo. Now supported in Cursor, Amp, Jules, Factory, RooCode, and Codex.」 / X](https://x.com/OpenAIDevs/status/1957925682048336354)
+[Xユーザーのゆいちむと映画さん: 「アマプラ民これ死ぬほど笑えるから観てほしい🥹 https://t.co/Jp3pPclAVp」 / X](https://x.com/YUI3MOV/status/1957715627134841285)
+[Xユーザーの𝗡𝗼𝗯𝘂.𝗛𝗔𝗡𝗔𝗠𝗜𝗧𝗦𝗨さん: 「確かに、WEBカメラがあればドキドキ（rPPG）は実装できるよなぁということでVibe codingした GPT-5 Proに論文を調査してアプリ作ってもらって、ちょっとバグがあったからClaudeで手直ししたもの github pagesで公開したからブラウザから動かせるよ https://t.co/G44w0TFiMJ https://t.co/SshNTOTguC」 / X](https://x.com/873ch/status/1958498660192231780)
+
 [XユーザーのKevin Whitleyさん: 「Love this.」 / X](https://x.com/kevinrwhitley/status/1949111669570809934)
 [Xユーザーの中村俊也｜ＡＩキャンプ®さん: 「おおおお、すごい！本当だ！Google AI StudioにYouTubeのURLをはりつけ、「SRTファイル作って」ってお願いしたら、全字幕とタイムスタンプを作ってくれる！しかもこれ、英語の動画に翻訳までつけてくれる！神じゃん！Google強い。 https://t.co/svCsrAcvIn」 / X](https://x.com/tsyn18/status/1900156566382248414)
 [Xユーザーのpaji.ethさん: 「AIヤバい、新Gemini、こんなのも https://t.co/w7w4VGzI4e」 / X](https://x.com/paji_a/status/1922230096011702684)

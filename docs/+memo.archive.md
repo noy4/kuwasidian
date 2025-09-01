@@ -1,3 +1,33 @@
+
+## 2025/09/01
+
+🗺️ 3D Map コンテンツ追加
+🤖 Kilo Code 分析
+🏗️ AI 3Dモデル生成
+🎨 AI画像装飾
+
+
+anthropic
+claude system prompt
+[sst/opencode](https://github.com/sst/opencode)
+openai nextjs
+[openai/openai-responses-starter-app](https://github.com/openai/openai-responses-starter-app)
+
+[Comfy | バツグンに探しやすい物件検索 | 全国の賃貸を検索](https://comfy.maison/)
+
+cline catchup
+
+@https://raw.githubusercontent.com/noy4/kuwasidian/main/docs/prompts/github-repo-tech-analysis-prompt.md
+
+https://github.com/open-webui/open-webui
+
+
+deepwiki.com
+gitmcp.com
+
+のように github.com のドメイン部分を変えて使うサービス他にある？
+
+
 github のリモートリポジトリのファイル一覧を取得するには？
 curl -s https://api.github.com/repos/vuejs/vitepress/git/trees/main?recursive=1 | jq -r '.tree | sort_by(.type == "blob") | .[0:1000] | .[] | .path + (if .type == "tree" then "/" else "" end)'
 
