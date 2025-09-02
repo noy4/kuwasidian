@@ -1,3 +1,8 @@
+OpenWebUI
+OpenHands
+mcp inspector
+openai reasoning_content
+[Refact.ai](https://github.com/smallcloudai)
 
 ## 2025/09/01
 

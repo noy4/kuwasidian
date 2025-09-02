@@ -16,7 +16,14 @@
 
 ---
 
+
+agents:
 [sst/opencode](https://github.com/sst/opencode)
+Gemini CLI
+OpenHands (py)
+Cline
+
+
 [What is Agent Communication Protocol (ACP)? | IBM](https://www.ibm.com/think/topics/agent-communication-protocol)
 
 
