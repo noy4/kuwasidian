@@ -1,3 +1,32 @@
+スモーキーレポート
+table for one, please.
+
+[Talk To Strangers. It Will Change Your Life. - YouTube](https://www.youtube.com/watch?v=2UwQUc0Xd7Q)
+
+[何者コンプレックス、問い、私｜Saki Matsuo / 咲希](https://note.com/_sakimatsuo/n/n1da491281506)
+[フィリピンの貧困問題？｜Saki Matsuo / 咲希](https://note.com/_sakimatsuo/n/n103d2df82def)
+
+
+viber
+weather
+
+
+
+Do you want me to turn off the light?
+Maybe in a bit.
+I’m okay either way.
+up to you
+whatever you prefer
+I don’t mind.
+
+
+ランドリーで絡まれた上裸刈り上げ小太りタトゥー金ネックレスのおいちゃんについてったら路地の裏の裏の奥の自分ん家見せてくれた
+机の上の甘辛いトリの足食わせてくれた
+ランチした別のおいちゃんはテスラモデルYで街を周遊してくれた
+エグ加速見してくれた
+おもろかった
+
+
 OpenWebUI
 OpenHands
 mcp inspector
