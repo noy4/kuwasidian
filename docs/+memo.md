@@ -14,11 +14,6 @@ Quest x Quest
 ポーズ　男性モデル
 nano-banana
 
-search history prompt
-sqlite backup
-youtube history viewer
-[purarue/browserexport](https://github.com/purarue/browserexport?tab=readme-ov-file)
-
 astro
 欲望耐久力、継続力、誠実性
 
@@ -72,5 +67,4 @@ Paalam - Goodbye
 
 
 
-[[blog/流星街を目指して/index]]
 
