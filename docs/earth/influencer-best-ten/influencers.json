@@ -9,7 +9,7 @@
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/15th-century_art_from_illuminated_manuscript_from_the_Ottoman_Empire_Qur%27an_%28cropped%29.jpg/256px-15th-century_art_from_illuminated_manuscript_from_the_Ottoman_Empire_Qur%27an_%28cropped%29.jpg",
     "description": "イスラム教の預言者。アラビア半島でイスラム教を創始し、世界最大級の宗教の一つを築いた。",
     "major_achievement": "イスラム教の創始・コーランの啓示",
-    "model": "/quran.glb",
+    "model": "./models/quran.glb",
     "modelScale": 1000,
     "modelHeight": 100,
     "modelRotation": {
@@ -27,7 +27,7 @@
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/GodfreyKneller-IsaacNewton-1689.jpg/256px-GodfreyKneller-IsaacNewton-1689.jpg",
     "description": "物理学者・数学者。万有引力の法則、運動の法則を発見し、近代科学の基礎を築いた。",
     "major_achievement": "万有引力の法則・微積分学の発明",
-    "model": "/apple_tree.glb",
+    "model": "./models/apple_tree.glb",
     "modelScale": 0.5
   },
   {
@@ -40,7 +40,7 @@
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Spas_vsederzhitel_sinay.jpg/256px-Spas_vsederzhitel_sinay.jpg",
     "description": "キリスト教の創始者。愛と平和の教えを説き、世界最大の宗教であるキリスト教の基盤を築いた。",
     "major_achievement": "キリスト教の創始・愛の教え",
-    "model": "/jesus_christ.glb",
+    "model": "./models/jesus_christ.glb",
     "modelScale": 100,
     "modelHeight": 20
   },
@@ -54,7 +54,7 @@
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Gandhara_Buddha_%28tnm%29.jpeg/256px-Gandhara_Buddha_%28tnm%29.jpeg",
     "description": "仏教の創始者。苦悩からの解脱を説き、慈悲と智慧の教えで多くの人々を導いた。",
     "major_achievement": "仏教の創始・四諦八正道の教え",
-    "model": "/buddha.glb",
+    "model": "./models/buddha.glb",
     "modelScale": 100
   },
   {
@@ -67,7 +67,7 @@
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Konfuzius-1770.jpg/256px-Konfuzius-1770.jpg",
     "description": "中国の思想家・教育者。儒教の基礎を築き、東アジア文化圏に絶大な影響を与えた。",
     "major_achievement": "儒教の創始・論語の教え",
-    "model": "/confucius.glb",
+    "model": "./models/confucius.glb",
     "modelScale": 1000000
   },
   {
@@ -80,7 +80,7 @@
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Apostel_Paulus%2C_RP-P-1995-24.jpg/256px-Apostel_Paulus%2C_RP-P-1995-24.jpg",
     "description": "キリスト教の使徒。異邦人への宣教活動により、キリスト教を世界宗教に発展させた。",
     "major_achievement": "キリスト教の世界的布教・新約聖書の執筆",
-    "model": "/saint_paul_the_apostle.glb",
+    "model": "./models/saint_paul_the_apostle.glb",
     "modelScale": 100,
     "modelHeight": 100
   },
