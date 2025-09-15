@@ -10,7 +10,7 @@ import 'maplibre-gl/dist/maplibre-gl.css'
 
 // Source data CSV
 // [WorldPop :: Population Counts](https://hub.worldpop.org/geodata/summary?id=31939)
-const DATA_URL = withBase('/ppp_JPN_2020_1km_Aggregated.csv')
+const DATA_URL = './ppp_JPN_2020_1km_Aggregated.csv'
 const MAP_STYLE = 'https://basemaps.cartocdn.com/gl/dark-matter-nolabels-gl-style/style.json'
 
 export const colorRange: Color[] = [
