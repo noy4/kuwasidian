@@ -3,7 +3,7 @@ import fs from 'node:fs/promises'
 import path, { dirname } from 'node:path'
 import process from 'node:process'
 import ReactivityTransform from '@vue-macros/reactivity-transform/vite'
-import fg from 'fast-glob'
+import fastglob from 'fast-glob'
 import UnoCSS from 'unocss/vite'
 import Inspect from 'vite-plugin-inspect'
 import { defineConfig } from 'vitepress'
@@ -135,7 +135,14 @@ export default withMermaid(defineConfig({
 
   // [Delivering static assets from source directory · vuejs/vitepress · Discussion #3708](https://github.com/vuejs/vitepress/discussions/3708)
   async buildEnd({ srcDir, outDir }) {
-    const files = await fg.glob(['**/*', '!**/*.md'], { cwd: srcDir, absolute: true })
+    const files = await fastglob.glob([
+      '**/*',
+      '!**/*.md',
+      '!**/*.ts',
+      '!**/*.vue',
+      '!assets/**',
+      '!public/**',
+    ], { cwd: srcDir, absolute: true })
     await Promise.all(
       files.map(async (file) => {
         const destFile = file.replace(srcDir, outDir)
