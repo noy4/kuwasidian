@@ -140,7 +140,6 @@ export default withMermaid(defineConfig({
       '!**/*.md',
       '!**/*.ts',
       '!**/*.vue',
-      '!assets/**',
       '!public/**',
     ], { cwd: srcDir, absolute: true })
     await Promise.all(

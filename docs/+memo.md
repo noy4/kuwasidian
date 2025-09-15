@@ -4,10 +4,12 @@
 [[3d map]]
 ドロピザ巡礼
 
+[TOPIC 2｜PLATEAU VIEWで体験する[1/2]｜3D都市モデルをブラウザで利用 | How To Use | PLATEAU [プラトー]](https://www.mlit.go.jp/plateau/learning/tpc02-1/)
+
+
 スタークラフト
 エイジオブエンパイア
 フリーダムハウス　報告書
-鈴木裕
 
 Quest x Quest
 アー写
@@ -15,24 +17,13 @@ Quest x Quest
 nano-banana
 
 astro
-欲望耐久力、継続力、誠実性
-
-thank
 
 
-BGC
-Makati
-Ortigas
-Malate
-Tagaytay
-Queson
 
 
-[WorldAtlas.com](https://www.worldatlas.com/)
-[Infoplease](https://www.infoplease.com/)
 
+Tagalog flashcard
 
-[TOPIC 2｜PLATEAU VIEWで体験する[1/2]｜3D都市モデルをブラウザで利用 | How To Use | PLATEAU [プラトー]](https://www.mlit.go.jp/plateau/learning/tpc02-1/)
 
 
 

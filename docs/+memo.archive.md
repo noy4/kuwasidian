@@ -1,4 +1,25 @@
 
+BGC
+Makati
+Ortigas
+Malate
+Tagaytay
+Queson
+
+
+[WorldAtlas.com](https://www.worldatlas.com/)
+[Infoplease](https://www.infoplease.com/)
+
+鈴木裕
+thank
+Can you rank them from cheapest to most expensive, including Grab?
+
+conscientiousness
+欲望耐久力、継続力、誠実性
+
+**Sorry for the trouble.**
+**Sorry for making it difficult.**
+
 [[kazuma's 30 phrases]]
 
 [【PIVOT TALK】 Kazu Languages 覚えるべき30フレーズまとめ！英語バージョン付き｜Reirei](https://note.com/reireireijinjin6/n/n270c6f4dd0ae?utm_source=chatgpt.com)
