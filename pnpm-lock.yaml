@@ -41,6 +41,9 @@ importers:
       dedent:
         specifier: ^1.6.0
         version: 1.6.0
+      fast-glob:
+        specifier: ^3.3.3
+        version: 3.3.3
       gray-matter:
         specifier: ^4.0.3
         version: 4.0.3
@@ -244,12 +247,14 @@ packages:
 
   '@arcgis/components-utils@4.33.12':
     resolution: {integrity: sha512-B3cISRLbWEfTTYyjwLR5M5CT38fq6EerAeV8h+nYZMu7Zijy8rWrFLpDXGmDu9eD+KaWZG74Zq065UQv3nhWtg==}
+    deprecated: This version is no longer supported. Upgrade to @latest
 
   '@arcgis/core@4.33.11':
     resolution: {integrity: sha512-mnBxie2VWktXylzEL0vTYY2brUFoLjyTlJI5Zlt8fQbTkqEr73QMOMkpM2zudFN18wGyWge1UvI1pTjWwtGLww==}
 
   '@arcgis/lumina@4.33.12':
     resolution: {integrity: sha512-KSkL9AfZX6R6OyxTesa7QLIYedtX2Cje4+9PbcZY5R/txiqGHeunnF842r/xuuNGWrp0L6hQI9zCKCaZkPqzPg==}
+    deprecated: This version is no longer supported. Upgrade to @latest
 
   '@babel/helper-string-parser@7.27.1':
     resolution: {integrity: sha512-qMlSxKbpRlAridDExk92nSobyDdpPijUq2DW6oDnUqd0iOGxmQjyqhMIihI9+zv4LPyZdRje2cavWPbCbWm3eA==}

@@ -4,12 +4,11 @@ import { load } from '@loaders.gl/core'
 import { CSVLoader } from '@loaders.gl/csv'
 import { HexagonLayer } from 'deck.gl'
 import maplibregl from 'maplibre-gl'
-import { withBase } from 'vitepress'
 import { ref, watchEffect } from 'vue'
 import 'maplibre-gl/dist/maplibre-gl.css'
 
 // Source data CSV
-const DATA_URL = withBase('/schools-japan-2013.csv')
+const DATA_URL = './schools-japan-2013.csv'
 const MAP_STYLE = 'https://basemaps.cartocdn.com/gl/dark-matter-nolabels-gl-style/style.json'
 
 // Set your mapbox token here
