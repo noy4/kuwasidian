@@ -7,7 +7,7 @@
 [14:12](https://www.youtube.com/watch?v=WtKeeDYA_2I&t=852s) Flat - GTD
 [14:38](https://www.youtube.com/watch?v=WtKeeDYA_2I&t=878s) Flat - Zettelkasten
 
-![[Pasted image 20240809214641.png|400]]
+![[Pasted image 20240809214641.png 23-02-42-826.png|400]]
 
 PARA:
 ![[Pasted image 20240809220532.png]]

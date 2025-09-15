@@ -71,7 +71,7 @@ noy4.github.io/try-quartz/
 [videos]
 [Why I don't use Logseq (but it's cool if you do)](https://www.youtube.com/shorts/E2Ms9IjRtIk)
 [[Top 8 Incredible Note Apps with AI!]]
-[[The Ultimate Guide to File Organization 5 Systems You Must Know]] [link](https://youtu.be/WtKeeDYA_2I?si=LHmLk3KSPRb_aF7u)
+[[notes/The Ultimate Guide to File Organization 5 Systems You Must Know/index]] [link](https://youtu.be/WtKeeDYA_2I?si=LHmLk3KSPRb_aF7u)
 
 [people]
 [Nicole van der Hoeven](https://nicolevanderhoeven.github.io/)
