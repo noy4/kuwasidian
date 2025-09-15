@@ -1,4 +1,8 @@
 
+[[kazuma's 30 phrases]]
+
+[【PIVOT TALK】 Kazu Languages 覚えるべき30フレーズまとめ！英語バージョン付き｜Reirei](https://note.com/reireireijinjin6/n/n270c6f4dd0ae?utm_source=chatgpt.com)
+Whang-od
 
 search history prompt
 sqlite backup
