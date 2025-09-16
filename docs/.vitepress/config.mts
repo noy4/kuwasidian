@@ -2,7 +2,6 @@ import type { DefaultTheme, PageData } from 'vitepress'
 import fs from 'node:fs/promises'
 import path, { dirname } from 'node:path'
 import process from 'node:process'
-import ReactivityTransform from '@vue-macros/reactivity-transform/vite'
 import fastglob from 'fast-glob'
 import UnoCSS from 'unocss/vite'
 import Inspect from 'vite-plugin-inspect'
@@ -85,7 +84,6 @@ export default withMermaid(defineConfig({
     },
     plugins: [
       Inspect(),
-      ReactivityTransform(),
       UnoCSS(),
       cesium({ siteBase }),
     ],

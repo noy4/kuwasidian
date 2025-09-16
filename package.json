@@ -36,7 +36,6 @@
     "@antfu/eslint-config": "^4.13.2",
     "@types/node": "^22.15.29",
     "@types/three": "^0.177.0",
-    "@vue-macros/reactivity-transform": "3.0.0-beta.15",
     "eslint": "^9.28.0",
     "mermaid": "^11.6.0",
     "typescript": "^5.8.3",
