@@ -1,4 +1,4 @@
-import type { DefaultTheme } from 'vitepress'
+import type { DefaultTheme, PageData } from 'vitepress'
 import fs from 'node:fs/promises'
 import path, { dirname } from 'node:path'
 import process from 'node:process'
@@ -95,43 +95,7 @@ export default withMermaid(defineConfig({
     hostname: siteUrl,
   },
 
-  // markdown to html → transformPageData
-  transformPageData(pageData) {
-    const router = new Router()
-      .add('index.md', () => {
-        pageData.title = homeTitle
-      })
-      .add('quests/(?!index)*', () => {
-        pageData.title = `${pageData.title} | ${siteTitle} Quests`
-
-        if (pageData.frontmatter.status === 'cleared') {
-          pageData.title = `（Cleared）${pageData.title}`
-          ;(pageData.frontmatter.head ??= []).push(
-            ['meta', { property: 'og:title', content: pageData.title }],
-            ['meta', { property: 'og:image', content: `${siteUrl}quest_cleared.png` }],
-          )
-        }
-      })
-      .add('blog/(?!index)*', () => {
-        pageData.title = `${pageData.title} | ${siteTitle} Blog`
-      })
-      .add('earth/(?!index)*', () => {
-        pageData.title = `${pageData.title} | ${siteTitle} Earth`
-      })
-      .add('*', () => {
-        pageData.title = `${pageData.title} | ${siteTitle}`
-      })
-    router.handle(pageData.relativePath)
-
-    // set ogp
-    const pageUrl = `${siteUrl}${pageData.relativePath.replace(/(index)?\.md$/, '')}`
-
-    ;(pageData.frontmatter.head ??= []).push(
-      ['meta', { property: 'og:title', content: pageData.title }],
-      ['meta', { property: 'og:description', content: pageData.description }],
-      ['meta', { property: 'og:url', content: pageUrl }],
-    )
-  },
+  transformPageData,
 
   // [Delivering static assets from source directory · vuejs/vitepress · Discussion #3708](https://github.com/vuejs/vitepress/discussions/3708)
   async buildEnd({ srcDir, outDir }) {
@@ -151,6 +115,44 @@ export default withMermaid(defineConfig({
     )
   },
 }))
+
+// markdown to html → transformPageData
+function transformPageData(pageData: PageData) {
+  const router = new Router()
+    .add('index.md', () => {
+      pageData.title = homeTitle
+    })
+    .add('quests/(?!index)*', () => {
+      pageData.title = `${pageData.title} | ${siteTitle} Quests`
+
+      if (pageData.frontmatter.status === 'cleared') {
+        pageData.title = `（Cleared）${pageData.title}`
+        ;(pageData.frontmatter.head ??= []).push(
+          ['meta', { property: 'og:title', content: pageData.title }],
+          ['meta', { property: 'og:image', content: `${siteUrl}quest_cleared.png` }],
+        )
+      }
+    })
+    .add('blog/(?!index)*', () => {
+      pageData.title = `${pageData.title} | ${siteTitle} Blog`
+    })
+    .add('earth/(?!index)*', () => {
+      pageData.title = `${pageData.title} | ${siteTitle} Earth`
+    })
+    .add('*', () => {
+      pageData.title = `${pageData.title} | ${siteTitle}`
+    })
+  router.handle(pageData.relativePath)
+
+  // set ogp
+  const pageUrl = `${siteUrl}${pageData.relativePath.replace(/(index)?\.md$/, '')}`
+
+  ;(pageData.frontmatter.head ??= []).push(
+    ['meta', { property: 'og:title', content: pageData.title }],
+    ['meta', { property: 'og:description', content: pageData.description }],
+    ['meta', { property: 'og:url', content: pageUrl }],
+  )
+}
 
 function sidebar(): DefaultTheme.Sidebar {
   return [
