@@ -1,4 +1,8 @@
 
+[Building a digital garden with Obsidian and Astro](https://www.emgoto.com/obsidian-digital-garden/)
+
+Tagalog flashcard
+
 BGC
 Makati
 Ortigas

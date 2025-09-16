@@ -22,7 +22,6 @@ astro
 
 
 
-Tagalog flashcard
 
 
 
