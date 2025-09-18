@@ -42,3 +42,14 @@ ref. [YouCanSpeak](https://youcanspeak.net/)
 5) Get a language parent.
 6) Copy the face.
 7) Direct connect to mental images. (connect sounds, images, feeling with words)
+
+## Tasks
+
+次に効果的なタスクについて考える。
+
+- 挨拶
+- レストラン
+- ホテル
+- 買い物
+- 道案内
+- 自己紹介
