@@ -1,4 +1,4 @@
-# 言語学習メソッドのまとめ
+# 言語学習について
 
 まず効果的な言語学習について考える。
 
@@ -13,3 +13,12 @@
 
 - Communicative Language Teaching（コミュニケーション重視）
 - [Task-Based Language Teaching](https://en.wikipedia.org/wiki/Task-based_language_learning)（タスク重視）
+
+## Structual Drills
+
+- Chunking
+- Transformation
+- Substitution
+- Sentence Combining
+
+ref. [YouCanSpeak](https://youcanspeak.net/)
