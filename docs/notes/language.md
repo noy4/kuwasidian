@@ -53,3 +53,6 @@ ref. [YouCanSpeak](https://youcanspeak.net/)
 - 買い物
 - 道案内
 - 自己紹介
+
+## 挨拶
+

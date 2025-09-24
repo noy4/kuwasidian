@@ -1,3 +1,5 @@
+ビートボックス
+GitHub ユーザー寄り
 
 [Building a digital garden with Obsidian and Astro](https://www.emgoto.com/obsidian-digital-garden/)
 

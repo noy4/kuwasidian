@@ -25,7 +25,6 @@ astro
 
 
 
-
 ---
 
 magandang umaga - goodな morning
