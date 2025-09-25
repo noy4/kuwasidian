@@ -14,7 +14,7 @@
 9. なぜ○○語を勉強していますか？ - Why are you studying ○○?
 10. なぜなら○○だからです - Because ○○.
 11. どのくらい○○を学んでいますか？ - How long have you been learning ○○?
-12. 趣味はなんですか？ - What’s your hobby?
+12. 趣味はなんですか？ - What do you do for fun?
 13. ○○したことはありますか？ - Have you ever ○○?
 14. ○○してもいいですか？ - May I ○○?
 15. いつ○○しましたか？ - When did you ○○?
@@ -29,10 +29,10 @@
 24. どの○○ですか？ - Which ○○?
 25. あの方はどなたですか？ - Who is that person?
 26. 何時ですか？ - What time is it?
-27. おすすめの料理はなんですか？ - What’s your favorite dish? / What dish do you recommend?
-28. これをください - I’ll take this / Can I have this?
+27. おすすめの料理はなんですか？ - What dish do you recommend?
+28. これをください - Can I get this?
 29. お会計をお願いします - Could I have the bill, please?
-30. ○○していただけますか？ - Could you do ○○ for me?
+30. ○○していただけますか？ - Could you please ○○?
 
 ## Kazuma's 30 Phrases (with examples)
 
@@ -47,10 +47,9 @@
 9. なぜ日本語を勉強していますか？ - Why are you studying Japanese?
 10. なぜならアニメが好きだからです - Because I like anime.
 11. どのくらい日本語を学んでいますか？ - How long have you been learning Japanese?
-12. 趣味はなんですか？ - What’s your hobby?
+12. 趣味はなんですか？ - What do you do for fun?
 13. 日本に行ったことはありますか？ - Have you ever been to Japan?
 13. 寿司を食べたことはありますか？ - Have you ever eaten sushi?
-13. スカイダイビングを試したことはありますか？ - Have you ever tried skydiving?
 14. 質問してもいいですか？ - May I ask you a question?
 14. ペンを借りてもいいですか？ - May I borrow your pen?
 14. あなたの電話を使ってもいいですか？ - May I use your phone?
@@ -73,9 +72,8 @@
 24. どちらの道を行けばいいですか？ - Which way should I go?
 25. あの方はどなたですか？ - Who is that person?
 26. 何時ですか？ - What time is it?
-27. おすすめの料理はなんですか？ - What’s your favorite dish? / What dish do you recommend?
-28. これをください - I’ll take this / Can I have this?
-29. お会計をお願いします - Could I have the bill, please?
-30. お願いを聞いてもらえますか？ - Could you do me a favor and pick up my package?
-30. この仕事を代わりにやってもらえますか？ - Could you do this task for me?
-30. 皿洗いをしてもらえますか？ - Could you do the dishes for me?
+27. おすすめの料理はなんですか？ - What dish do you recommend?
+28. これをください - Can I get this?
+29. お会計をお願いします - Could I have the check, please?
+30. お願いを聞いてもらえますか？ - Could you do me a favor?
+30. 皿洗いをしてもらえますか？ - Could you do the dishes?
