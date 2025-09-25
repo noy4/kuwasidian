@@ -36,45 +36,45 @@
 
 ## Kazuma's 30 Phrases (with examples)
 
-1. お名前はなんですか？ - What’s your name?
-2. 出身地はどこですか？ - Where are you from?
-3. どこに住んでいますか？ - Where do you live?
-4. 元気ですか？ - How are you?
-5. あなたはどうですか？ - How about you?
-6. はじめまして - Nice to meet you.
-7. 何をしていますか？ - What are you doing?
-8. 英語を話しますか？ - Do you speak English?
-9. なぜ日本語を勉強していますか？ - Why are you studying Japanese?
-10. なぜならアニメが好きだからです - Because I like anime.
-11. どのくらい日本語を学んでいますか？ - How long have you been learning Japanese?
-12. 趣味はなんですか？ - What do you do for fun?
-13. 日本に行ったことはありますか？ - Have you ever been to Japan?
-13. 寿司を食べたことはありますか？ - Have you ever eaten sushi?
-14. 質問してもいいですか？ - May I ask you a question?
-14. ペンを借りてもいいですか？ - May I borrow your pen?
-14. あなたの電話を使ってもいいですか？ - May I use your phone?
-15. いつ英語の勉強を始めましたか？ - When did you start learning English?
-15. いつこの街に引っ越しましたか？ - When did you move to this city?
-15. 最後に医者に行ったのはいつですか？ - When did you last visit the doctor?
-16. 寿司は好きですか？ - Do you like sushi?
-17. 「愛」はどういう意味ですか？ - What does "Ai" mean?
-18. これを手伝ってもらえますか？ - Can you help me with this?
-18. 車を運転できますか？ - Can you drive a car?
-19. そこに愛はありますか？ - Is there love?
-19. 近くにコンビニはありますか？ - Is there a convenience store nearby?
-20. もう一度言ってください - Could you say that again?
-21. この本はいくらですか？ - How much is this book?
-21. コーヒー一杯はいくらですか？ - How much is a cup of coffee?
-21. コンサートのチケットはいくらですか？ - How much is the ticket to the concert?
-22. トイレに行きたいです - I want to go to the bathroom.
-23. 駅まではどうやって行きますか？ - How do I get to the station?
-24. どの色が好きですか？ - Which color do you prefer?
-24. どこのレストランがお気に入りですか？ - Which restaurant is your favorite?
-24. どちらの道を行けばいいですか？ - Which way should I go?
-25. あの方はどなたですか？ - Who is that person?
-26. 何時ですか？ - What time is it?
-27. おすすめの料理はなんですか？ - What dish do you recommend?
-28. これをください - Can I get this?
-29. お会計をお願いします - Could I have the check, please?
-30. お願いを聞いてもらえますか？ - Could you do me a favor?
-30. 皿洗いをしてもらえますか？ - Could you do the dishes?
+- お名前はなんですか？ - What’s your name?
+- 出身地はどこですか？ - Where are you from?
+- どこに住んでいますか？ - Where do you live?
+- 元気ですか？ - How are you?
+- あなたはどうですか？ - How about you?
+- はじめまして - Nice to meet you.
+- 何をしていますか？ - What are you doing?
+- 英語を話しますか？ - Do you speak English?
+- なぜ日本語を勉強していますか？ - Why are you studying Japanese?
+- なぜならアニメが好きだからです - Because I like anime.
+- どのくらい日本語を学んでいますか？ - How long have you been learning Japanese?
+- 趣味はなんですか？ - What do you do for fun?
+- 日本に行ったことはありますか？ - Have you ever been to Japan?
+- 寿司を食べたことはありますか？ - Have you ever eaten sushi?
+- 質問してもいいですか？ - May I ask you a question?
+- ペンを借りてもいいですか？ - May I borrow your pen?
+- あなたの電話を使ってもいいですか？ - May I use your phone?
+- いつ英語の勉強を始めましたか？ - When did you start learning English?
+- いつこの街に引っ越しましたか？ - When did you move to this city?
+- 最後に医者に行ったのはいつですか？ - When did you last visit the doctor?
+- 寿司は好きですか？ - Do you like sushi?
+- 「愛」はどういう意味ですか？ - What does "Ai" mean?
+- これを手伝ってもらえますか？ - Can you help me with this?
+- 車を運転できますか？ - Can you drive a car?
+- そこに愛はありますか？ - Is there love?
+- 近くにコンビニはありますか？ - Is there a convenience store nearby?
+- もう一度言ってください - Could you say that again?
+- この本はいくらですか？ - How much is this book?
+- コーヒー一杯はいくらですか？ - How much is a cup of coffee?
+- コンサートのチケットはいくらですか？ - How much is the ticket to the concert?
+- トイレに行きたいです - I want to go to the bathroom.
+- 駅まではどうやって行きますか？ - How do I get to the station?
+- どの色が好きですか？ - Which color do you prefer?
+- どこのレストランがお気に入りですか？ - Which restaurant is your favorite?
+- どちらの道を行けばいいですか？ - Which way should I go?
+- あの方はどなたですか？ - Who is that person?
+- 何時ですか？ - What time is it?
+- おすすめの料理はなんですか？ - What dish do you recommend?
+- これをください - Can I get this?
+- お会計をお願いします - Could I have the check, please?
+- お願いを聞いてもらえますか？ - Could you do me a favor?
+- 皿洗いをしてもらえますか？ - Could you do the dishes?
