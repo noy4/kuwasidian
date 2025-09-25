@@ -3,36 +3,36 @@
 
 ## Kazuma's 30 Phrases
 
-1. お名前はなんですか？ - What’s your name?
-2. 出身地はどこですか？ - Where are you from?
-3. どこに住んでいますか？ - Where do you live?
-4. 元気ですか？ - How are you?
-5. あなたはどうですか？ - How about you?
-6. はじめまして - Nice to meet you.
-7. 何をしていますか？ - What are you doing?
-8. ○○語を話しますか？ - Do you speak ○○?
-9. なぜ○○語を勉強していますか？ - Why are you studying ○○?
-10. なぜなら○○だからです - Because ○○.
-11. どのくらい○○を学んでいますか？ - How long have you been learning ○○?
-12. 趣味はなんですか？ - What do you do for fun?
-13. ○○したことはありますか？ - Have you ever ○○?
-14. ○○してもいいですか？ - May I ○○?
-15. いつ○○しましたか？ - When did you ○○?
-16. ○○が好きですか？ - Do you like ○○?
-17. ○○はどういう意味ですか？ - What does ○○ mean?
-18. ○○ができますか？ - Can you ○○?
-19. ○○がありますか？ - Do you have ○○?
-20. もう一度言ってください - Could you say that again?
-21. ○○はいくらですか？ - How much is ○○?
-22. ○○に行きたいです - I want to go to ○○.
-23. ○○まではどうやって行きますか？ - How do I get to ○○?
-24. どの○○ですか？ - Which ○○?
-25. あの方はどなたですか？ - Who is that person?
-26. 何時ですか？ - What time is it?
-27. おすすめの料理はなんですか？ - What dish do you recommend?
-28. これをください - Can I get this?
-29. お会計をお願いします - Could I have the bill, please?
-30. ○○していただけますか？ - Could you please ○○?
+1. お名前はなんですか？ - What’s your name? (What、自己紹介)
+2. 出身地はどこですか？ - Where are you from? (Where、自己紹介)
+3. どこに住んでいますか？ - Where do you live? (Where、自己紹介)
+4. 元気ですか？ - How are you? (挨拶)
+5. あなたはどうですか？ - How about you? (挨拶)
+6. はじめまして - Nice to meet you. (挨拶)
+7. 何をしていますか？ - What are you doing? (What、現在)
+8. ○○語を話しますか？ - Do you speak ○○? (質問)
+9. なぜ○○語を勉強していますか？ - Why are you studying ○○? (Why)
+10. なぜなら○○だからです - Because ○○. (理由)
+11. どのくらい○○を学んでいますか？ - How long have you been learning ○○? (期間)
+12. 趣味はなんですか？ - What do you do for fun? (自己紹介)
+13. ○○したことはありますか？ - Have you ever ○○? (経験)
+14. ○○してもいいですか？ - May I ○○? (許可)
+15. いつ○○しましたか？ - When did you ○○? (When)
+16. ○○が好きですか？ - Do you like ○○? (好み)
+17. ○○はどういう意味ですか？ - What does ○○ mean? (意味)
+18. ○○ができますか？ - Can you ○○? (能力)
+19. ○○がありますか？ - Is there ○○? (存在)
+20. もう一度言ってください - Could you say that again? (もう一度)
+21. ○○はいくらですか？ - How much is ○○? (値段)
+22. ○○に行きたいです - I want to go to ○○. (願望)
+23. ○○まではどうやって行きますか？ - How do I get to ○○? (How)
+24. どの○○ですか？ - Which ○○? (Which)
+25. あの方はどなたですか？ - Who is that person? (Who)
+26. 何時ですか？ - What time is it? (Time)
+27. おすすめの料理はなんですか？ - What dish do you recommend? (レストラン)
+28. これをください - Can I get this? (買い物、レストラン)
+29. お会計をお願いします - Could I have the check, please? (レストラン)
+30. ○○していただけますか？ - Could you please ○○? (お願い)
 
 ## Kazuma's 30 Phrases (with examples)
 
@@ -60,7 +60,8 @@
 17. 「愛」はどういう意味ですか？ - What does "Ai" mean?
 18. これを手伝ってもらえますか？ - Can you help me with this?
 18. 車を運転できますか？ - Can you drive a car?
-19. ペンはありますか？ - Do you have a pen?
+19. そこに愛はありますか？ - Is there love?
+19. 近くにコンビニはありますか？ - Is there a convenience store nearby?
 20. もう一度言ってください - Could you say that again?
 21. この本はいくらですか？ - How much is this book?
 21. コーヒー一杯はいくらですか？ - How much is a cup of coffee?
