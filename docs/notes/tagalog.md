@@ -36,83 +36,83 @@
 ## Kazuma's 30 Phrases (with examples and answers)
 
 - What’s your name? - Anong pangalan mo?
-  - My name is John. - Ang pangalan ko ay John.
+  - My name is John. - Ako si John.
 - Where are you from? - Taga-saan ka?
-  - I'm from the United States. - Taga-Estados Unidos ako.
+  - I'm from the United States. - Taga-America ako.
 - Where do you live? - Saan ka nakatira?
-  - I live in Tokyo. - Nakatira ako sa Tokyo.
+  - I live in Tokyo. - Sa Tokyo ako nakatira.
 - How are you? - Kamusta ka?
-  - I'm fine, thank you. - Mabuti naman, salamat.
-- How about you? - Ikaw?
-  - I'm fine, too. - Mabuti rin ako.
+  - I'm fine, thank you. - Okay lang ako, salamat.
+- How about you? - Ikaw? / Kamusta ka naman?
+  - I'm fine, too. - Okay lang din ako.
 - Nice to meet you. - Kinagagalak kitang makilala.
-  - Nice to meet you, too. - Kinagagalak din kitang makilala.
+  - Nice to meet you, too. - Ako rin.
 - What are you doing? - Anong ginagawa mo?
   - I'm reading a book. - Nagbabasa ako ng libro.
 - Do you speak English? - Nagsasalita ka ba ng Ingles?
-  - Yes, I do. - Oo, nagsasalita ako.
-- Why are you studying Japanese? - Bakit ka nag-aaral ng Hapon?
-  - Because I like anime. - Dahil gusto ko ng anime.
-- How long have you been learning Japanese? - Gaano ka na katagal nag-aaral ng Hapon?
-  - I've been learning it for a year. - Isang taon na akong nag-aaral.
-- What do you do for fun? - Anong hobby mo?
-  - I like watching movies. - Gusto kong manood ng mga pelikula.
+  - Yes, I do. - Oo, kaunti. (Yes, a little.)
+- Why are you studying Japanese? - Bakit ka nag-aaral ng Japanese?
+  - Because I like anime. - Kasi gusto ko ng anime.
+- How long have you been learning Japanese? - Gaano ka na katagal nag-aaral ng Japanese?
+  - I've been learning it for a year. - Isang taon na.
+- What do you do for fun? - Anong libangan mo?
+  - I like watching movies. - Mahilig akong manood ng sine.
 - Have you ever been to Japan? - Nakapunta ka na ba sa Japan?
-  - Yes, I have. - Oo, nakapunta na ako.
+  - Yes, I have. - Oo, nakapunta na.
 - Have you ever eaten sushi? - Nakakain ka na ba ng sushi?
   - No, I haven't. - Hindi pa.
-- May I ask you a question? - Pwede ba akong magtanong?
-  - Yes, of course. - Oo, sige.
-- May I borrow your pen? - Pwede ko bang hiramin ang ballpen mo?
-  - Sure, here you are. - Sige, heto o.
-- May I use your phone? - Pwede ko bang gamitin ang telepono mo?
-  - I'm sorry, but I'm using it right now. - Pasensya na, ginagamit ko ngayon.
+- May I ask you a question? - Pwede magtanong?
+  - Yes, of course. - Oo naman, sige.
+- May I borrow your pen? - Pahiram ng ballpen.
+  - Sure, here you are. - Sige, heto.
+- May I use your phone? - Pwedeng gamitin ang phone mo?
+  - I'm sorry, but I'm using it right now. - Ay, pasensya na, ginagamit ko.
 - When did you start learning English? - Kailan ka nagsimulang mag-aral ng Ingles?
-  - I started when I was 10 years old. - Nagsimula ako noong 10 taong gulang ako.
-- When did you move to this city? - Kailan ka lumipat sa siyudad na ito?
-  - I moved here last month. - Lumipat ako dito noong nakaraang buwan.
-- When did you last visit the doctor? - Kailan ka huling pumunta sa doktor?
+  - I started when I was 10 years old. - Nung 10 years old ako.
+- When did you move to this city? - Kailan ka lumipat dito?
+  - I moved here last month. - Nakaraang buwan lang.
+- When did you last visit the doctor? - Kailan ka huling nagpatingin sa doktor?
   - It was a year ago. - Isang taon na ang nakalipas.
 - Do you like sushi? - Gusto mo ba ng sushi?
-  - Yes, I love it. - Oo, gustong-gusto ko.
+  - Yes, I love it. - Oo, paborito ko 'yan.
 - What does "Ai" mean? - Anong ibig sabihin ng "Ai"?
-  - It means "Love". - Ang ibig sabihin niyan ay "Pag-ibig".
-- Can you help me with this? - Pwede mo ba akong tulungan dito?
-  - Of course. - Oo naman.
-- Can you drive a car? - Marunong ka bang magmaneho ng kotse?
-  - Yes, I can. - Oo, marunong ako.
+  - It means "Love". - "Pag-ibig" ang ibig sabihin niyan.
+- Can you help me with this? - Patulong naman dito.
+  - Of course. - Sige ba.
+- Can you drive a car? - Marunong ka bang mag-drive?
+  - Yes, I can. - Oo.
 - Is there love? - May pag-ibig ba?
-  - Yes, there is. - Oo, mayroon.
-- Is there a convenience store nearby? - May malapit bang convenience store?
+  - Yes, there is. - Oo, meron.
+- Is there a convenience store nearby? - May convenience store ba dito sa malapit?
   - Yes, there's one around the corner. - Oo, meron diyan sa kanto.
-- Could you say that again? - Pakiulit mo.
+- Could you say that again? - Paki-ulit nga.
   - Yes, I'll say it again. - Sige, uulitin ko.
-- How much is this book? - Magkano itong libro?
-  - It's 1000 yen. - 1000 yen ito.
-- How much is a cup of coffee? - Magkano ang isang tasa ng kape?
+- How much is this book? - Magkano 'to?
+  - It's 1000 yen. - 1000 yen.
+- How much is a cup of coffee? - Magkano isang kape?
   - It's 500 yen. - 500 yen.
-- How much is the ticket to the concert? - Magkano ang tiket sa konsiyerto?
+- How much is the ticket to the concert? - Magkano ang ticket sa concert?
   - It's 8000 yen. - 8000 yen.
-- I want to go to the bathroom. - Gusto kong pumunta sa banyo.
-- How do I get to the station? - Paano ako makakapunta sa istasyon?
-  - Go straight down this street. - Dumiretso ka lang sa kalsadang ito.
-- Which color do you prefer? - Aling kulay ang mas gusto mo?
-  - I prefer blue. - Mas gusto ko ang asul.
-- Which restaurant is your favorite? - Aling restawran ang paborito mo?
-  - The Italian restaurant in front of the station. - Yung Italian restaurant sa tapat ng istasyon.
-- Which way should I go? - Aling daan ang dapat kong tahakin?
-  - You should take the right way. - Daanan mo yung sa kanan.
-- Who is that person? - Sino siya?
-  - That's my teacher. - Guro ko siya.
+- I want to go to the bathroom. - Pupunta lang ako sa banyo. / CR lang ako.
+- How do I get to the station? - Paano pumunta sa station?
+  - Go straight down this street. - Diretsuhin mo lang ang kalyeng 'to.
+- Which color do you prefer? - Aling kulay ang gusto mo?
+  - I prefer blue. - Gusto ko ng asul.
+- Which restaurant is your favorite? - Saang restaurant ang paborito mo?
+  - The Italian restaurant in front of the station. - Yung Italian restaurant sa tapat ng station.
+- Which way should I go? - Saan dito ang daan?
+  - You should take the right way. - Dito ka sa kanan.
+- Who is that person? - Sino 'yun?
+  - That's my teacher. - Teacher ko.
 - What time is it? - Anong oras na?
-  - It's 3 o'clock. - Alas tres na.
-- What dish do you recommend? - Anong pagkain ang mairerekomenda mo?
-  - I recommend the ramen at this restaurant. - Inirerekomenda ko ang ramen sa restawran na ito.
-- Can I get this? - Pwedeng makuha ito?
-  - Yes, here you are. - Oo, heto o.
-- Could I have the check, please? - Pwedeng makuha ang bill?
+  - It's 3 o'clock. - Alas tres.
+- What dish do you recommend? - Anong masarap dito?
+  - I recommend the ramen at this restaurant. - Masarap ang ramen dito.
+- Can I get this? - Pabili nito. / Akin na 'to.
+  - Yes, here you are. - Sige, heto o.
+- Could I have the check, please? - Bill out, please.
   - Certainly. - Sige po.
-- Could you do me a favor? - Pwede mo ba akong tulungan?
-  - Yes, what is it? - Oo, ano yun?
-- Could you do the dishes? - Pwede mo bang hugasan ang mga plato?
+- Could you do me a favor? - Pwede bang humingi ng pabor?
+  - Yes, what is it? - Oo naman, ano 'yun?
+- Could you do the dishes? - Pwede bang ikaw na maghugas ng plato?
   - Sure. - Sige.
