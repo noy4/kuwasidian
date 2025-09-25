@@ -22,6 +22,13 @@ astro
 
 
 
+read slide (understand the context)
+search revit
+make doability path
+
+
+[Revit + Claude MCP Set Up for Beginners – Step-by-Step Tutorial - YouTube](https://www.youtube.com/watch?v=Qm_vRncHHGU)
+[revit-mcp](https://github.com/revit-mcp/revit-mcp)
 
 
 
