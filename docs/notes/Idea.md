@@ -8,6 +8,7 @@ curation of curation sites
 
 [[figure]]
 [[explanation]]
+[[language]]
 
 考える人の言語化
 [[3d printer]]

@@ -1,3 +1,13 @@
+organize download
+
+地方移住するのにGoogleマップが大活躍しました ～物件探しは苦戦＜その2＞【奥川浩彦の「岐阜の山奥に移住しました」第4回】 - INTERNET Watch https://share.google/7wKkFekTQDleEg5du
+
+I'll test if I can generate example .ifc from ESCA's revit file image through Bonsai MCP
+
+plateau population pillar
+[[language]]
+
+[TOPIC 2｜PLATEAU VIEWで体験する[1/2]｜3D都市モデルをブラウザで利用 | How To Use | PLATEAU [プラトー]](https://www.mlit.go.jp/plateau/learning/tpc02-1/)
 
 magandang umaga - goodな morning
 magandang hapon - good afternoon

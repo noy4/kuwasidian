@@ -4,7 +4,6 @@
 [[3d map]]
 ドロピザ巡礼
 
-[TOPIC 2｜PLATEAU VIEWで体験する[1/2]｜3D都市モデルをブラウザで利用 | How To Use | PLATEAU [プラトー]](https://www.mlit.go.jp/plateau/learning/tpc02-1/)
 
 
 スタークラフト
@@ -15,20 +14,18 @@ Quest x Quest
 アー写
 ポーズ　男性モデル
 nano-banana
+[[mythical-creature-prompt]]
+[lobe-chat](https://github.com/lobehub/lobe-chat)
+
+from transcription
 
 astro
-
-[[language]]
 
 
 
 ---
 
-
-
-
-I'll test if I can generate example .ifc from ESCA's revit file image through Bonsai MCP
-
+[【佐渡市公式】単発お仕事探し「さどマッチボックス」](https://matchbox.jp/niigata/sado)
 
 
 
