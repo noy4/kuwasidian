@@ -15,11 +15,13 @@ Quest x Quest
 ポーズ　男性モデル
 nano-banana
 [[mythical-creature-prompt]]
-[lobe-chat](https://github.com/lobehub/lobe-chat)
+
 
 from transcription
 
+
 astro
+[lobe-chat](https://github.com/lobehub/lobe-chat)
 
 
 
