@@ -13,7 +13,7 @@ node_modules
 daily
 
 # tmp
-tmp
+.tmp
 
 # playground
 .playground
