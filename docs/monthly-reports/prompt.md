@@ -33,7 +33,7 @@ sqlite3 ./.tmp/History "SELECT COUNT(DISTINCT u.title) ..."
 ### パラメータ（のちに指示がなければこれらの値で実行）
 - browser: ブラウザの種類（例: Chrome, Brave）= Chrome
 - month: 対象月（例: 2023-10）= 先月
-- output: 出力先 = ./search-history-reports/
+- output: 出力先 = ./monthly-reports/
 - exclude: 履歴取得後、レポートにまとめる際に言及しないサイト・ジャンル。
 
 ### 注意
@@ -51,7 +51,7 @@ sqlite3 ./.tmp/History "SELECT COUNT(DISTINCT u.title) ..."
 
 ### {😀 各トピックに対応する絵文字、タイトル}
 {詳細}
-{トピックに関連する動画がある場合、サムネタイルに表示する。各トピックごとに最低20件程度表示する。}
+{トピックに関連する動画がある場合、サムネタイルに表示する。}
 ```
 
 ### サムネタイル
@@ -110,4 +110,4 @@ sqlite3 ./.tmp/History "SELECT COUNT(DISTINCT u.title) ..."
 </style>
 
 ## その他メモ
-- claude-sonnet-4 で検証済み
+- `Claude Sonnet 4.5` で検証済み
