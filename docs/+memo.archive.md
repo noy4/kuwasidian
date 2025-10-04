@@ -1,3 +1,12 @@
+
+## 2025/10
+
+🇵🇭 フィリピン散策
+💼 仕事スタート（建築設計の効率化）
+🎧 Pimsleur 開始（タガログ語）
+📻 サンドリ（有吉のラジオ）にハマる
+
+
 organize download
 
 地方移住するのにGoogleマップが大活躍しました ～物件探しは苦戦＜その2＞【奥川浩彦の「岐阜の山奥に移住しました」第4回】 - INTERNET Watch https://share.google/7wKkFekTQDleEg5du
