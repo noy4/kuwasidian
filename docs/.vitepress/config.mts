@@ -163,10 +163,10 @@ function sidebar(): DefaultTheme.Sidebar {
         { text: '🎁 ほしい物リスト', link: '/me/wish-list' },
         { text: '🎵 各期テーマソング', link: '/me/theme-songs' },
         {
-          text: '🔍 検索履歴レポート',
-          link: '/search-history-reports/',
+          text: '📅 月次レポート',
+          link: '/monthly-reports/',
           collapsed: true,
-          items: autoSidebar('search-history-reports', {
+          items: autoSidebar('monthly-reports', {
             desc: true,
           }).sort((a, b) => {
             // prompt から始まるファイルを最後に移動
