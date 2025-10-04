@@ -168,6 +168,13 @@ function sidebar(): DefaultTheme.Sidebar {
           collapsed: true,
           items: autoSidebar('search-history-reports', {
             desc: true,
+          }).sort((a, b) => {
+            // prompt から始まるファイルを最後に移動
+            if (a.text?.startsWith('prompt'))
+              return 1
+            if (b.text?.startsWith('prompt'))
+              return -1
+            return 0
           }),
         },
       ],
