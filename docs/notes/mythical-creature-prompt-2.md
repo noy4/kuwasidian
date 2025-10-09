@@ -17,8 +17,8 @@ person_analysis:
 
 # 1. 幻獣の選択と特徴
 creature:
-  type: 神秘的な白いキツネ # ドラゴン、フェニックス、キツネなど
-  personality: 穏やかで知的
+  type: 神秘的な白いキツネ # ドラゴン、フェニックス、グリフィン、キツネなど
+  personality: 穏やかで知的、古の知恵を宿す
   symbolism: 知恵と守護
   features:
     fur_scales: 柔らかく光沢のある白い毛並み
@@ -29,7 +29,7 @@ creature:
 # 注意: 人物の色調と幻獣の色温度を統一
 color_harmony:
   temperature: cool # warm / cool / neutral
-  saturation_level: subdued # natural / moderate / subdued
+  saturation_level: subdued # natural / moderate / subdued / vibrant
   color_palette:
     primary: 深い青
     secondary: 銀白
@@ -37,10 +37,10 @@ color_harmony:
 
 # 3. スケールと配置
 # 注意: 奥行きのある構図で配置
+# 補足: 人物と幻獣の間に適切な空間を持たせ、威圧感よりも共存関係を強調
 scale_and_placement:
   creature_size: 人物の身長の1.2倍
   position: 右斜め後方1.5メートル
-  height: 人物の肩の高さ
 
 # 4. 相互作用と関係性
 interaction:
@@ -48,7 +48,7 @@ interaction:
   eye_direction:
     person: 前方を見つめる
     creature: 人物を静かに見守る
-  physical_contact: なし
+  physical_contact: なし # 触れているか、距離があるか
   emotional_bond: 深い信頼と静かな絆
 
 # 5. ライティング
@@ -71,13 +71,13 @@ background:
 # 7. エフェクト(オプション)
 # 注意: 控えめに(合成感を避ける)
 effects:
-  type: [光の粒子]
+  type: [光の粒子, 霧]
   placement: 幻獣の周囲
   intensity: subtle # subtle / moderate / strong
 
 # 8. 質感とディテール
 texture_detail:
   realism_level: photorealistic # 人物と同程度の写実性
-  texture_consistency: soft-focus # soft-focus / sharp
+  texture_consistency: consistent # soft-focus / sharp / consistent
   edge_treatment: natural # sharp / soft / natural
 ```
