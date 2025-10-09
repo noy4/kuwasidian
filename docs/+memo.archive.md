@@ -1,4 +1,40 @@
 
+pollo prompts
+paypay 経済圏
+ロードバイク
+
+🔧 Setup testing environment
+🤔 From testing to production
+📅 Project Timeline
+
+x learn bonsai
+x prompting
+x what we shared
+x summary
+x research and develop
+
+
+The more uncertainty there is, the harder it becomes to estimate timelines accurately.
+
+Let's say you're building a BIM data sharing, management web platform. You're going to build a data uploading page and a data viewing page. Implementing a BIM data preview feature in data viewing page might be a little 少し特殊, you need some research, once you find the way to show it, You can estimate the effort.
+
+どこでもドア
+
+The project doc updated:
+
+[x] Update "🍎 Revit doesn't work on Mac" - Add detailed explanation about Revit-Bonsai compatibility
+[x] Add "🪴 Becoming a Bonsai user"
+[x] Add "🛠️ Prompting over developing?"
+[x] Add summary at top
+
+[Ifc Architect - YouTube](https://www.youtube.com/@IfcArchitect)
+- [Bonsai - Beginner Project - Step by Step - YouTube](https://www.youtube.com/playlist?list=PLMDcOjMJYxUNfJMZNWzaXU-N7iqH2Jxvh)
+- [盆栽チュートリアル - 初心者向けプロジェクト - パート1 - モデリング - YouTube](https://www.youtube.com/watch?v=Jc896Sob2bU)
+
+[How import IFC into Blender without add-on - Tutorials, Tips and Tricks - Blender Artists Community](https://blenderartists.org/t/how-import-ifc-into-blender-without-add-on/1179144)
+couldn't open the sample ifc
+
+
 ## 2025/10
 
 🇵🇭 フィリピン散策
