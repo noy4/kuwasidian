@@ -16,6 +16,8 @@
 
 ---
 
+[lobe-chat](https://github.com/lobehub/lobe-chat)
+
 
 agents:
 [sst/opencode](https://github.com/sst/opencode)
