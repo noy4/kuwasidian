@@ -26,36 +26,31 @@ BIMワークフローの中で最も時間を要する反復作業（タギン�
 #### 主要なツール:
 
 **[BIMLOGIQ](https://bimlogiq.com/)**
-- 特徴:
-  - ChatGPT形式のプロンプトでRevitを操作
-  - 自動タギング機能（Smart Annotation）
-  - パイプ交差部の壁開口自動生成
-  - 自然言語による指示が可能
+- ChatGPT形式のプロンプトでRevitを操作
+- 自動タギング機能（Smart Annotation）
+- パイプ交差部の壁開口自動生成
+- 自然言語による指示が可能
 
 **[ArchiLabs](https://archilabs.ai/)**
-- 特徴:
-  - AI駆動のRevit自動化プラットフォーム
-  - シート作成、タギング、寸法記入の自動化
-  - Dynamoスクリプトのライブラリも提供
+- AI駆動のRevit自動化プラットフォーム
+- シート作成、タギング、寸法記入の自動化
+- Dynamoスクリプトのライブラリも提供
 
 **[IDEATURA](https://ideatura.ai/)**
-- 特徴:
-  - 自然言語によるCAD/BIM自動化
-  - グリッド、壁、開口部などの自動寸法記入
-  - ビュー、シート、タグの自動管理
-  - 建築家によって建築家のために構築
+- 自然言語によるCAD/BIM自動化
+- グリッド、壁、開口部などの自動寸法記入
+- ビュー、シート、タグの自動管理
+- 建築家によって建築家のために構築
 
 **[Glyph CoPilot (by EvolveLab)](https://www.evolvelab.io/glyph)**
-- 特徴:
-  - GPTベースのAIアシスタントをRevitに統合
-  - 建設ドキュメンテーションの自動化
-  - 自然言語によるRevit操作
+- GPTベースのAIアシスタントをRevitに統合
+- 建設ドキュメンテーションの自動化
+- 自然言語によるRevit操作
 
 **[Pele AI](https://aecmag.com/ai/ai-bim-assistant-for-revit-launches/)**
-- 特徴:
-  - Revit向けAI BIMアシスタント
-  - 反復タスクの自動化とワークフロー効率化
-  - 2024年に新規ローンチ
+- Revit向けAI BIMアシスタント
+- 反復タスクの自動化とワークフロー効率化
+- 2024年に新規ローンチ
 
 #### 自動化の対象となる主な作業:
 1. **タギング（Tagging）**: 部屋、ドア、窓などの要素への自動ラベル付け
