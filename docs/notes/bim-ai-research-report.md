@@ -49,6 +49,23 @@ BIMワークフローの中で最も時間を要する反復作業（タギン�
   - 自然言語によるCAD/BIM自動化
   - グリッド、壁、開口部などの自動寸法記入
   - ビュー、シート、タグの自動管理
+  - 建築家によって建築家のために構築
+
+**Glyph CoPilot (by EvolveLab)**
+- URL: https://www.evolvelab.io/
+- 発見した検索クエリ: `BIM automation tagging dimensioning AI` (拡張検索)
+- 特徴:
+  - GPTベースのAIアシスタントをRevitに統合
+  - 建設ドキュメンテーションの自動化
+  - 自然言語によるRevit操作
+
+**Pele AI**
+- URL: https://aecmag.com/ai/ai-bim-assistant-for-revit-launches/
+- 発見した検索クエリ: `BIM automation tagging dimensioning AI` (拡張検索)
+- 特徴:
+  - Revit向けAI BIMアシスタント
+  - 反復タスクの自動化とワークフロー効率化
+  - 2024年に新規ローンチ
 
 #### 自動化の対象となる主な作業:
 1. **タギング（Tagging）**: 部屋、ドア、窓などの要素への自動ラベル付け
@@ -357,10 +374,39 @@ BIMワークフローの自動化は、現在のBIM-AI統合の**最前線に位
 
 ### 7.4 競合分析
 
-**既存の商用ツール:**
-- BIMLOGIQ: 最も包括的、ChatGPT形式のUI
-- ArchiLabs: 幅広い自動化機能
-- IDEATURA: 自然言語インターフェース
+**主要な商用ツール（2024-2025年）:**
+
+1. **BIMLOGIQ**
+   - 最も包括的なAI BIMソリューション
+   - ChatGPT形式のCopilot UI
+   - Smart Annotation、Smart Schematicsなど専門ツール
+   - Dynamoとの比較優位性を強調
+
+2. **ArchiLabs**
+   - 幅広い自動化機能とDynamoスクリプトライブラリ
+   - 教育コンテンツが充実（ブログ、チュートリアル）
+   - オールインワンのRevit自動化プラットフォーム
+
+3. **IDEATURA**
+   - 自然言語インターフェースに特化
+   - 「建築家による建築家のための」ツール
+   - 寸法記入とタギングの自動化に焦点
+
+4. **Glyph CoPilot (EvolveLab)**
+   - GPTベースのAIアシスタント
+   - 建設ドキュメンテーション自動化
+   - Unitizeなど他のEvolveLab製品との統合
+
+5. **Pele AI**
+   - 2024年新規ローンチ
+   - Revit向けAI BIMアシスタント
+   - 反復タスクの自動化に特化
+
+**市場の特徴:**
+- 複数の競合が同時期（2024-2025年）に市場参入
+- 自然言語インターフェースが標準機能化
+- 価格競争よりも機能の差別化が重要
+- Dynamoとの比較が一般的な議論ポイント
 
 **優位性を築く要素:**
 1. **特定業界への特化**: 日本の建築業界の特殊性に対応
@@ -375,10 +421,21 @@ BIMワークフローの自動化は、現在のBIM-AI統合の**最前線に位
 ### 8.1 主要なツール・プラットフォーム
 
 1. **BIMLOGIQ** - https://bimlogiq.com/
+   - Smart Annotation - https://bimlogiq.com/product/smart-annotation
+   - DynamoとAIツールの比較 - https://bimlogiq.com/docs/articles/comparison-between-dynamo-and-ai-tools
 2. **ArchiLabs** - https://archilabs.ai/
+   - BIM自動化ガイド - https://archilabs.ai/posts/bim-automation
+   - Revitでのタギング自動化 - https://archilabs.ai/posts/automate-tagging-in-revit
+   - Revit AIツール - https://archilabs.ai/posts/revit-ai-tools
+   - Revit AI - https://archilabs.ai/posts/revit-ai
+   - 2025年のベストBIMツール - https://archilabs.ai/posts/best-bim-software-tools-of-2025
+   - Revitアドイン・プラグイン - https://archilabs.ai/posts/revit-add-ins-add-ons-and-plugins
+   - ArchiLabs vs Bimlogiq比較 - https://archilabs.ai/posts/archilabs-vs-bimlogiq-features-pricing-and-verdict
 3. **IDEATURA** - https://ideatura.ai/
-4. **Autodesk Generative Design** - https://www.autodesk.com/solutions/generative-design/architecture-engineering-construction
-5. **Bonsai MCP** - https://github.com/JotaDeRodriguez/Bonsai_mcp
+4. **Glyph CoPilot (EvolveLab)** - https://www.evolvelab.io/post/automating-construction-documentation-with-glyph-co-pilot-your-ultimate-ai-gpt-assistant-in-revit
+5. **Pele AI** - https://aecmag.com/ai/ai-bim-assistant-for-revit-launches/
+6. **Autodesk Generative Design** - https://www.autodesk.com/solutions/generative-design/architecture-engineering-construction
+7. **Bonsai MCP** - https://github.com/JotaDeRodriguez/Bonsai_mcp
 
 ### 8.2 学術研究・論文
 
@@ -533,15 +590,69 @@ BIMワークフローの自動化（タギング、セクショニング、寸�
 
 ---
 
+### 検索クエリ6（拡張）: `BIM automation tagging dimensioning AI` (count=20)
+
+**目的**: より多くの商用ツールと詳細情報を収集
+
+**追加で発見されたツール:**
+- **Glyph CoPilot (EvolveLab)**: GPTベースのRevit AIアシスタント
+- **Pele AI**: 2024年新規ローンチのRevit向けAI BIMアシスタント
+
+**追加の重要な情報:**
+- ArchiLabsの教育コンテンツが非常に充実していることを確認
+  - Revit AIツール解説
+  - Dynamoスクリプトのベストプラクティス
+  - 競合比較（ArchiLabs vs Bimlogiq）
+- BIMLOGIQとDynamoの比較記事を発見
+- Reddit等のコミュニティでのAI in BIMの議論を確認
+- buildingSMARTによるAI in BIM & Renovationの記事
+
+**重要なURL（追加）:**
+- https://www.evolvelab.io/post/automating-construction-documentation-with-glyph-co-pilot-your-ultimate-ai-gpt-assistant-in-revit （Glyph CoPilot）
+- https://aecmag.com/ai/ai-bim-assistant-for-revit-launches/ （Pele AI）
+- https://archilabs.ai/posts/revit-ai-tools （Revit AIツール詳細）
+- https://archilabs.ai/posts/revit-ai （Revit AI解説）
+- https://archilabs.ai/posts/best-bim-software-tools-of-2025 （2025年のベストツール）
+- https://archilabs.ai/posts/evolvelab-helix-alternatives （EvolveLab Helix代替）
+- https://archilabs.ai/posts/archilabs-vs-bimlogiq-features-pricing-and-verdict （詳細比較）
+- https://bimlogiq.com/docs/articles/comparison-between-dynamo-and-ai-tools （Dynamo vs AI）
+- https://www.reddit.com/r/bim/comments/1h0zevx/ai_in_bim/ （コミュニティ議論）
+- https://www.buildingsmart.org/artificial-intelligence-in-bim-and-renovation/ （buildingSMART）
+
+**市場分析の深化:**
+- 2024-2025年に複数の商用AIツールが同時期に市場参入
+- 自然言語インターフェースが標準機能化
+- Dynamoとの比較が重要な議論ポイント
+- 教育コンテンツとコミュニティサポートが差別化要因
+
+---
+
 ### 調査の総括
 
-合計6つの検索クエリを実施し、以下の情報を体系的に収集しました：
+合計7つの検索クエリ（うち1つは拡張検索）を実施し、以下の情報を体系的に収集しました：
 
 1. **日本国内の動向**（検索1）
 2. **2024年の最新トレンド**（検索2）
 3. **ジェネレーティブデザイン技術**（検索3）
 4. **IFC機械学習研究**（検索4）
 5. **Scan-to-BIM技術**（検索5）
-6. **自動化ツールの実装例**（検索6）
+6. **自動化ツールの実装例**（検索6 - 10件）
+7. **自動化ツールの詳細調査**（検索6拡張 - 20件）
 
-特に検索6が最も有用で、BIM自動化に直接関連する商用ツール（BIMLOGIQ、ArchiLabs、IDEATURA）を発見しました。これらのツールは、タギング、寸法記入、シート作成などの自動化を既に実現しており、技術的実現可能性を裏付ける重要な証拠となりました。
+**主要な成果:**
+
+検索6と6拡張が最も有用で、以下の**5つの商用AIツール**を特定しました：
+
+1. **BIMLOGIQ** - 最も包括的、Copilot + 専門ツール
+2. **ArchiLabs** - 教育コンテンツ充実、オールインワン
+3. **IDEATURA** - 自然言語特化
+4. **Glyph CoPilot** - EvolveLab製、GPTベース
+5. **Pele AI** - 2024年新規参入
+
+これらのツールは、タギング、寸法記入、シート作成などの自動化を既に実現しており、技術的実現可能性を裏付ける重要な証拠となりました。
+
+**市場の特徴:**
+- 2024-2025年に一斉市場参入（競争激化）
+- 自然言語インターフェースが標準化
+- Dynamoとの比較が重要な差別化ポイント
+- 教育コンテンツとコミュニティが競争優位の源泉
