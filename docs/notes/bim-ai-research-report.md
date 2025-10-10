@@ -52,7 +52,7 @@ BIMワークフローの中で最も時間を要する反復作業（タギン�
   - 建築家によって建築家のために構築
 
 **Glyph CoPilot (by EvolveLab)**
-- URL: https://www.evolvelab.io/
+- URL: https://www.evolvelab.io/glyph
 - 発見した検索クエリ: `BIM automation tagging dimensioning AI` (拡張検索)
 - 特徴:
   - GPTベースのAIアシスタントをRevitに統合
@@ -432,7 +432,8 @@ BIMワークフローの自動化は、現在のBIM-AI統合の**最前線に位
    - Revitアドイン・プラグイン - https://archilabs.ai/posts/revit-add-ins-add-ons-and-plugins
    - ArchiLabs vs Bimlogiq比較 - https://archilabs.ai/posts/archilabs-vs-bimlogiq-features-pricing-and-verdict
 3. **IDEATURA** - https://ideatura.ai/
-4. **Glyph CoPilot (EvolveLab)** - https://www.evolvelab.io/post/automating-construction-documentation-with-glyph-co-pilot-your-ultimate-ai-gpt-assistant-in-revit
+4. **Glyph CoPilot (EvolveLab)** - https://www.evolvelab.io/glyph
+   - ブログ記事: https://www.evolvelab.io/post/automating-construction-documentation-with-glyph-co-pilot-your-ultimate-ai-gpt-assistant-in-revit
 5. **Pele AI** - https://aecmag.com/ai/ai-bim-assistant-for-revit-launches/
 6. **Autodesk Generative Design** - https://www.autodesk.com/solutions/generative-design/architecture-engineering-construction
 7. **Bonsai MCP** - https://github.com/JotaDeRodriguez/Bonsai_mcp
@@ -608,7 +609,8 @@ BIMワークフローの自動化（タギング、セクショニング、寸�
 - buildingSMARTによるAI in BIM & Renovationの記事
 
 **重要なURL（追加）:**
-- https://www.evolvelab.io/post/automating-construction-documentation-with-glyph-co-pilot-your-ultimate-ai-gpt-assistant-in-revit （Glyph CoPilot）
+- https://www.evolvelab.io/glyph （Glyph CoPilot）
+- https://www.evolvelab.io/post/automating-construction-documentation-with-glyph-co-pilot-your-ultimate-ai-gpt-assistant-in-revit （Glyph CoPilotブログ記事）
 - https://aecmag.com/ai/ai-bim-assistant-for-revit-launches/ （Pele AI）
 - https://archilabs.ai/posts/revit-ai-tools （Revit AIツール詳細）
 - https://archilabs.ai/posts/revit-ai （Revit AI解説）
