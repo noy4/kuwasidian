@@ -13,12 +13,4 @@ curation of curation sites
 考える人の言語化
 [[3d printer]]
 
-淘汰に問うた
-ロンリー論理
-Shitty嫉妬
-理不尽婦人
-Simple信奉
-ぴえんぴえんサピエン
-ピルグリミッち
-現状アブストラクション
-greedy×greedy
+[[Kuwatify 未発表曲集]]
