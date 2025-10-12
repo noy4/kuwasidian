@@ -26,7 +26,6 @@ from transcription
 
 
 
-
 ---
 
 [【佐渡市公式】単発お仕事探し「さどマッチボックス」](https://matchbox.jp/niigata/sado)

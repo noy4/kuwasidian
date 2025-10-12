@@ -1,3 +1,3 @@
 サードウェーブ実験
 
-[[earth history]]
+[[人間 Prerequisites]]

@@ -1,4 +1,11 @@
 
+[[人間 Prerequisites]]
+
+二胡
+アルキメデスポンプ
+
+[[bim-ai-research-report]]
+
 astro
 pollo prompts
 paypay 経済圏

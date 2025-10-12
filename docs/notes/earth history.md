@@ -1,4 +1,0 @@
-- [【サピエンス全史】人類の進化、虚構、そして幸福の行方【Update版】 - YouTube](https://www.youtube.com/watch?v=igWL9j1WWAE)
-- [全地球史アトラス　フルストーリー - YouTube](https://www.youtube.com/watch?v=rTCXFuQSSNU)
-- [【マイクラ】一気見！地球が完全再現された「世界で一番リアルな戦争サーバーEarth MC」建国～戦争。【Minecraft】 - YouTube](https://www.youtube.com/watch?v=-LHpQS7oYLo)
-- 
