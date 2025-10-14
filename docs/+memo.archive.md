@@ -1,4 +1,20 @@
 
+[Why Intelligent People Scare Society | Schopenhauer - YouTube](https://www.youtube.com/watch?v=LCgCeoxToek)
+
+Minimum viable product
+
+
+While I was investigating, I found some existing Revit AI plugins. I haven't checked them in depth yet, but I wanted to give you a heads up. Are you already familiar with any of these? They have quick demo videos on their websites.
+
+Would you like me to put together a report covering pricing and features? Or would you prefer to check them out yourself? You could even install and try some of them.
+
+1. [BIMLOGIQ](https://bimlogiq.com/)
+2. [ArchiLabs](https://archilabs.ai/)
+3. [IDEATURA](https://ideatura.ai/)
+4. [Glyph CoPilot (by EvolveLab)](https://www.evolvelab.io/glyph)
+5. [Pele AI](https://aecmag.com/ai/ai-bim-assistant-for-revit-launches/)
+
+
 [[人間 Prerequisites]]
 
 二胡

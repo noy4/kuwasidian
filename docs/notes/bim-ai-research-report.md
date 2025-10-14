@@ -47,7 +47,7 @@ BIMワークフローの中で最も時間を要する反復作業（タギン�
 - 建設ドキュメンテーションの自動化
 - 自然言語によるRevit操作
 
-**[Pele AI](https://aecmag.com/ai/ai-bim-assistant-for-revit-launches/)**
+**[Pele AI](https://www.pele-assistant.online/pele)**
 - Revit向けAI BIMアシスタント
 - 反復タスクの自動化とワークフロー効率化
 - 2024年に新規ローンチ
