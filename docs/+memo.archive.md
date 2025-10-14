@@ -1,6 +1,7 @@
 
 [Why Intelligent People Scare Society | Schopenhauer - YouTube](https://www.youtube.com/watch?v=LCgCeoxToek)
 
+[Pele AI | revit add-in](https://www.pele-assistant.online/pele)
 Minimum viable product
 
 

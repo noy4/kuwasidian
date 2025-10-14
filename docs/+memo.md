@@ -20,8 +20,6 @@ nano-banana
 
 from transcription
 
-[Pele AI | revit add-in](https://www.pele-assistant.online/pele)
-
 
 
 
