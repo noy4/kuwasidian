@@ -1,3 +1,5 @@
+# BIM AI Tool Comparison
+
 This document summarizes emerging BIM AI tools. A clear trend is the move towards chat-based interfaces to automate a wide range of tasks, from dimensioning and tagging to more complex workflows. The tools below are ordered by the apparent richness of their feature sets.
 
 | Tool | Free Trial | Pricing | Features | Background | Notes |
