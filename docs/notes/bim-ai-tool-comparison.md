@@ -16,9 +16,14 @@ This document summarizes emerging BIM AI tools. A clear trend is the move toward
 Notably, ArchiLabs has published an article titled "[ArchiLabs vs. Bimlogiq: Features, pricing, and verdict](https://archilabs.ai/posts/archilabs-vs-bimlogiq-features-pricing-and-verdict)," directly comparing themselves to Bimlogiq and highlighting them as a key competitor. This suggests both are major players in the AI-for-Revit space.
 
 
-## BIMLOGIQ Smart Annotation Pricing
+## BIMLOGIQ Smart Annotation
 
-BIMLOGIQ's `Smart Annotation` tool is sold separately from their main Copilot and has its own tiered pricing:
+The existing `Smart Annotation` may be consolidated into the Co-pilot in the future.
+
+[Revit to be driven by natural language AI - AEC Magazine](https://aecmag.com/bim/ai-tool-uses-natural-language-to-drive-revit/) - 2023/11/23
+> BIMlogic Copilot is currently in early access but BIMlogic has officially released two other AI-driven tools – Smart Annotation and Smart Schematics.
+
+Current pricing for Smart Annotation:
 
 - **LITE:** $29/mo ($25/mo if paid annually). Designed for simpler drawings with on-device processing for tagging only.
 - **PRO:** $145/mo ($125/mo if paid annually). Better for complex drawings, with cloud processing options and support for both tagging and dimensioning.
