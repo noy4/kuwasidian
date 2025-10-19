@@ -16,6 +16,7 @@
 
 ---
 
+[oraios/serena](https://github.com/oraios/serena)
 [lobe-chat](https://github.com/lobehub/lobe-chat)
 
 

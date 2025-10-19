@@ -1,4 +1,32 @@
 
+[【佐渡市公式】単発お仕事探し「さどマッチボックス」](https://matchbox.jp/niigata/sado)
+シーステッド
+こごみ
+
+首元モゾり
+夜半の焦り
+アカン求むは電気の明かり
+布団をめくり
+その姿あり
+見事襟元カメ香り
+死ね
+
+piracy
+[kenkunz/svelte-fsm: Tiny, expressive finite state machines for svelte](https://github.com/kenkunz/svelte-fsm)
+
+sectioning, tagging
+`ifcopenshell.api.run()`, `bonsai.tool`
+
+会議の要約をして欲しいのと、誰かが発言した英語の修正ポイントを列挙してほしい
+佐渡サイズ
+猫
+complain
+https://deepwiki.com/search/blender-bonsai-annotation-tool_e55f5944-4d64-4bcf-939f-2fcbca81a71c
+
+IfcWindow オブジェクトを選択
+タグを追加
+タグには {{Name}} みたいな感じで紐づいたオブジェクトの情報を表示
+
 [Why Intelligent People Scare Society | Schopenhauer - YouTube](https://www.youtube.com/watch?v=LCgCeoxToek)
 
 [Pele AI | revit add-in](https://www.pele-assistant.online/pele)
