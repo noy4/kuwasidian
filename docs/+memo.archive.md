@@ -1,4 +1,13 @@
 
+browser bookmark
+x project doc
+x progress list
+x engineer log
+x research roadmap
+`[op for op in dir(bpy.ops.bim) if not op.startswith('_')]`
+
+Skills
+svelte MCP
 [【佐渡市公式】単発お仕事探し「さどマッチボックス」](https://matchbox.jp/niigata/sado)
 シーステッド
 こごみ

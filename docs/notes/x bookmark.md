@@ -1,4 +1,7 @@
 
+
+[XユーザーのMaki@Sunwood AI Labs.さん: 「Why language models hallucinate https://t.co/FFNih76bYr」 / X](https://x.com/hAru_mAki_ch/status/1964648446356520971)
+[XユーザーのMaki@Sunwood AI Labs.さん: 「Gemini API の Google Maps の Groundingつかってみたけど超楽しい！ ニューヨークのおすすめのカフェをピンで表示してもらった！ https://t.co/5t7PKA1s4x」 / X](https://x.com/hAru_mAki_ch/status/1979789694759321781)
 [XユーザーのJSer.infoさん: 「"The History of React Through Code | Playful Programming" https://t.co/QWPXyd2gkY → https://t.co/wtrEZGkfwC ReactのAPIの変遷やアーキテクチャについて。 JSX/VDOM、Class Component、Hooks。Fiber、Suspense/use」 / X](https://x.com/jser_info/status/1946822509891883474)
 [Xユーザーの田中渓さん: 「英語学習してきた中で、やって一番役立っていること 1. 自分の人生の流れを全部を書き出す 2. 以下についても全部書く ・学校(高校や大学など)で勉強したこと ・今やっている仕事の内容(その業界の現在地や市況、今後の展望などもできれば) ・それに至るまでの職歴などの変遷」 / X](https://x.com/KeiTanaka_Radio/status/1930750893420666948)
 [Xユーザーの少年Bさん: 「タイミーに興味をもったきっかけのひとつはこの取材でした。手前味噌だけどめちゃめちゃおもしろいぜ！よかったら読んでくれよな！！！ https://t.co/qsp8nG1fNq」 / X](https://x.com/raira21/status/1945892740069490969)
