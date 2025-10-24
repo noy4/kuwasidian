@@ -1,4 +1,8 @@
 
+sauna
+crossbike
+higgs field
+kilo cli
 browser bookmark
 x project doc
 x progress list

@@ -16,6 +16,8 @@
 
 ---
 
+[Freepik | All-in-One AI Creative Suite](https://www.freepik.com/)
+[chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp/)
 [oraios/serena](https://github.com/oraios/serena)
 [lobe-chat](https://github.com/lobehub/lobe-chat)
 

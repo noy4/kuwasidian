@@ -14,6 +14,10 @@ nano-banana
 
 
 ai catchup
+日向坂
+kuwasidian skills
+sheldon review
+sentences
 
 
 transcription
