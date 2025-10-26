@@ -22,6 +22,11 @@ x 虐殺数ツアー
 戦争再生
 
 
+[RESAS-API - API概要](https://opendata.resas-portal.go.jp/docs/api/v1/index.html)
+[国土交通DPF利用者API](https://www.mlit-data.jp/api_docs/)
+
+
+
 [The Topography of the World Visualized - Part 1 - YouTube](https://www.youtube.com/watch?v=wNg1iad-Gfw)
 
 

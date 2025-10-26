@@ -16,6 +16,8 @@
 
 ---
 
+[wbopan/cui: A web UI for Claude Code agents](https://github.com/wbopan/cui)
+[winfunc/opcode: A powerful GUI app and Toolkit for Claude Code - Create custom agents, manage interactive Claude Code sessions, run secure background agents, and more.](https://github.com/winfunc/opcode?source=post_page-----17f1cfc56731---------------------------------------)
 [Freepik | All-in-One AI Creative Suite](https://www.freepik.com/)
 [chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp/)
 [oraios/serena](https://github.com/oraios/serena)

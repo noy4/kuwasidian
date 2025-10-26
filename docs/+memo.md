@@ -14,15 +14,15 @@ nano-banana
 
 
 ai catchup
-日向坂
-kuwasidian skills
-sheldon review
-sentences
+[[sentences]]
+blog cross bike
 
 
 transcription
 ui (button, chat)
 check other ui
+
+
 
 
 

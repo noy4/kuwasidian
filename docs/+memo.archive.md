@@ -1,4 +1,12 @@
 
+notebookLM
+cat eye velo wireless
+[[young sheldon]]
+kuwasidian skills
+[[skill.data]]
+[[award.data]]
+
+日向坂
 sauna
 crossbike
 higgs field

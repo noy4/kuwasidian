@@ -5,6 +5,7 @@ Shitty嫉妬
 理不尽婦人
 Simple信奉
 ぴえんぴえんサピエン
+強引Going
 
 ピルグリミッち
 High Complicate度
