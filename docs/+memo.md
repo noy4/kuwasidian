@@ -15,13 +15,16 @@ nano-banana
 
 ai catchup
 [[sentences]]
-blog cross bike
+[[blog cross bike]]
 
 
 transcription
-ui (button, chat)
-check other ui
 
+transfer
+visa
+accommodation
+
+wise auto exchange
 
 
 

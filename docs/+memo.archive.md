@@ -1,4 +1,19 @@
 
+Revolut
+Privacy & Security > Full Disk Access
+[[prompt bookmarks]]
+
+カオス。めちゃおもろい。
+
+[NotebookLM]
+読むのしんどい資料いっぱいぶち込んだら解説動画作ってくれるやつ。無料。（すごい）
+[Jグランツ MCP Server]
+補助金探してくれる、AI用コネクタ byデジタル庁（すごい）
+[ニコニコ弾幕マルチエージェント]
+「解説動画にニコニコの弾幕コメントいっぱい付けよう！」（変態）
+
+ui (button, chat)
+check other ui
 notebookLM
 cat eye velo wireless
 [[young sheldon]]
