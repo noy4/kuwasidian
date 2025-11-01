@@ -1,4 +1,6 @@
 
+ai catchup
+wise auto exchange
 
 ## 2025/11
 

@@ -13,7 +13,6 @@ nano-banana
 [[mythical-creature-prompt]]
 
 
-ai catchup
 [[sentences]]
 
 
@@ -23,7 +22,6 @@ transfer
 visa
 accommodation
 
-wise auto exchange
 
 
 
