@@ -164,15 +164,14 @@ function sidebar(): DefaultTheme.Sidebar {
         { text: '🎵 各期テーマソング', link: '/me/theme-songs' },
         {
           text: '📅 月次レポート',
-          link: '/monthly-reports/',
           collapsed: true,
           items: autoSidebar('monthly-reports', {
             desc: true,
           }).sort((a, b) => {
-            // prompt から始まるファイルを最後に移動
-            if (a.text?.startsWith('prompt'))
+            // 数字から始まらないファイルを最後に移動
+            if (!a.text?.match(/^\d+/))
               return 1
-            if (b.text?.startsWith('prompt'))
+            if (!b.text?.match(/^\d+/))
               return -1
             return 0
           }),
