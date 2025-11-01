@@ -15,7 +15,6 @@ nano-banana
 
 ai catchup
 [[sentences]]
-[[blog cross bike]]
 
 
 transcription
