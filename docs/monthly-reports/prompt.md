@@ -23,7 +23,7 @@
 {トピックに関連する動画がある場合、サムネタイルに表示する。}
 ```
 
-### サムネタイル
+**サムネタイル:**
 <div class="thumbnail-tiles">
   <a href="https://www.youtube.com/watch?v=0UC1vvHprq8" target="_blank" rel="noopener noreferrer">
     <img src="https://img.youtube.com/vi/0UC1vvHprq8/mqdefault.jpg">
@@ -97,7 +97,8 @@ sqlite3 ./.tmp/History "SELECT DISTINCT u.title FROM urls u JOIN visits v ON u.i
 sqlite3 ./.tmp/History "SELECT COUNT(DISTINCT u.title) ..."
 ```
 
-### パラメータ（のちに指示がなければこれらの値で実行）
+### パラメータ
+のちに指示がなければこれらの値で実行
 - `browser`: ブラウザの種類（例: Chrome, Brave）= Chrome
 - `month`: 対象月（例: 2023-10）= 先月
 - `output`: 出力先 = `./monthly-reports/`
@@ -106,7 +107,7 @@ sqlite3 ./.tmp/History "SELECT COUNT(DISTINCT u.title) ..."
 ### 注意
 - 一時ファイルは `./.tmp` に保存し、作業後に削除する。
 - スクリプトファイルは**絶対に**作成してはいけない。
-- 履歴はファイルに**絶対に**書き出してはいけない。メモリ内で処理する。
+- 履歴はファイルに**絶対に**書き出してはいけない。書き出したファイルの内容の読み取りに失敗することがあるので、メモリ内で処理する。
 - `exclude` で除外したサイトについて、除外したことには**絶対に**言及しない（セキュリティ、ユーザー保護）。
 
 ## その他メモ
