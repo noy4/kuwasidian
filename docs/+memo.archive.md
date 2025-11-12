@@ -1,4 +1,45 @@
 
+btt
+accommodation
+flood
+teams on startup
+edge on startup
+
+2025/11/08 PH
+
+annual temperature
+typhoon
+obsidian
+transfer
+transcription
+visa
+
+[] look for nice Revit tutorial
+[x] Windows permission setting (meeting with Mico)
+[x] Visual Studio installation
+[] compile revit-mcp-plugin with Visual Studio
+
+
+席料 500
+ゆずサワー 550
+
+ししとう 200
+
+ワカサギ 300
+しいたけ 300
+たまご 300
+
+舞茸 400
+しらす大葉 400 x2
+イカ 400
+
+アイス 500
+
+
+4,250
+5,250
+
+
 ai catchup
 wise auto exchange
 
