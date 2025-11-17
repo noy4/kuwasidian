@@ -11,6 +11,7 @@ the later years in Osaka,
 went to junior high and high school in Ehime,  
 and studied at university in Fukuoka.
 
+
 [University]
 I graduated from Kyushu University, School of Design, Department of Art and Information Design.
 
@@ -23,12 +24,28 @@ For example, I had classes where I made a 3D animation, a documentary, did some 
 [Work]
 I'm a software engineer
 
-The project I'm working on right now is related to the construction industry.
-These days, construction companies usually design their blueprints on computers.
-They want to make the process of creating those blueprints more efficient.  
+Right now, I'm working on a project for the construction industry.
+These days, construction companies usually create blueprints on computers.
+And they want to make that process more efficient.  
 
-For example, there’s a step where they have to add labels to different parts of a building — like putting “door” on doors and “window” on windows.  
-Doing that repeatedly is a lot of work, so they’re wondering if AI could automate that process.
+For example, there’s a part where they have to label different building components — like putting “door” on doors and “window” on windows.  
+Doing that over and over is really tedious, so they’re looking at using AI to automate it.
 
 I'm developing a software extension to make that possible.
+
+
+[How I got here]
+When I was in university, I did an internship at a company and met a guy from the Philippines.
+About five years later, after I had left that company, he reached out saying he'd started a company in the Philippines and asked if I was interested in joining.
+I said yes, and that's how I ended up here.
+
+
+[Turning point]
+When I was in university, I worried about myself and my future because I felt like I didn’t have anything I really wanted to do. Toward the end of my junior year, a friend of mine who was interning at a career-related company lent me a book called _The Mindset for Changing Careers_.
+
+The book said that most people actually _don’t_ have a clear passion or dream—and that it’s totally fine. That line lifted a weight off my shoulders, because I’d always felt like I should have a clear goal. Instead, the book emphasized that people usually have an image of the kind of person they want to become, and that the hints for that are hidden in the life they’ve lived so far.
+
+It suggested one way to figure out the person I wanted to become: give yourself a label.  
+So I gave myself the label **“Creative Dragon”—a super creative individual.**  
+Suddenly, everything felt clearer, like a fog had lifted. From that moment, it felt like my new life had begun. Now, I can decide what to do based on whether it brings me closer to that version of myself.
 

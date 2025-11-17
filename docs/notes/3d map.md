@@ -39,12 +39,14 @@ x 虐殺数ツアー
 
 ---
 
+
 [Svelte MapLibre GL - Build interactive web maps effortlessly with MapLibre GL JS and Svelte](https://svelte-maplibre-gl.mierune.dev/)
 [Sorami Hisamoto](https://sorami.dev/)
 [株式会社MIERUNE - 位置から、価値へ。](https://www.mierune.co.jp/)
 
 - [GPlates Portal](https://portal.gplates.org/)
 - [geojson.xyz](https://geojson.xyz/)
+- [earth :: a global map of wind, weather, and ocean conditions](https://earth.nullschool.net/#current/wind/surface/level/orthographic=-237.08,15.71,2611/loc=124.369,9.957)
 
 [デジタル地球儀](https://digital-globe.netlify.app/)
 [グリフォン](https://griffon.netlify.app/)

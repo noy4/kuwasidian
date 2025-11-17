@@ -1,6 +1,8 @@
 - [【語学の最短学習法】語学は”勉強”するな／最初に押さえるべきフレーズ30／スピーキングはスポーツだ／フレーズから単語・文法へ／言語の持つ力／Kazu Languagesさん【PIVOT TALK】 - YouTube](https://www.youtube.com/watch?v=Q5GDR7P39GE)
 - [【PIVOT TALK】 Kazu Languages 覚えるべき30フレーズまとめ！英語バージョン付き｜Reirei](https://note.com/reireireijinjin6/n/n270c6f4dd0ae)
 
+[[tagalog]]
+
 ## Kazuma's 30 Phrases
 
 1. お名前はなんですか？ - What’s your name? (What、自己紹介)

@@ -1,4 +1,25 @@
 
+[HeroUI (Previously NextUI) - Beautiful, fast and modern React UI Library](https://www.heroui.com/)
+person who I want to shake hands - tiptap right
+
+[[握手したい人]]
+
+Hi, Erik told me that the cash for my salary isn’t ready yet because of a bank issue, so I’d like to pay you digitally instead. Which option works best for you?
+
+1. **Wise** – If you have a Wise account, I can send it easily.    
+2. **Polygon token** – Simple and low-fee.
+3. **Any crypto** on the Ethereum or Polygon chain.
+
+Can I have your bank info? I’d like to try a bank transfer. I only have about $200 in crypto, so I need to top up, but my usual method isn’t available anymore.
+
+Before I realized, I sent you some crypto as a test. Let me know if it went through:  
+0.00053 ETH (100 PHP)  
+10 POL (90 PHP)
+
+
+[Code execution with MCP: building more efficient AI agents \ Anthropic](https://www.anthropic.com/engineering/code-execution-with-mcp)
+[Code Mode: the better way to use MCP](https://blog.cloudflare.com/code-mode/)
+
 btt
 accommodation
 flood
