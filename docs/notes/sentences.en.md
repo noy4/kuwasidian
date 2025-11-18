@@ -49,3 +49,28 @@ It suggested one way to figure out the person I wanted to become: give yourself 
 So I gave myself the label **“Creative Dragon”—a super creative individual.**  
 Suddenly, everything felt clearer, like a fog had lifted. From that moment, it felt like my new life had begun. Now, I can decide what to do based on whether it brings me closer to that version of myself.
 
+
+[My Core Values]
+Becoming the person I want to be
+Working toward the world I like
+
+Living free
+Staying mentally and intellectually strong
+Being cool
+Doing what feels meaningful
+
+
+I thought about the meaning of life,
+and realized there's no meaning at all.
+I'm just a bunch of atoms,
+a product of long, long natural selection.
+
+If life has no meaning,
+that's honestly sad and kind of frustrating.
+But alright then—if that's how it is,
+I'll be the one who decides what my life means.
+
+If I'm going to die anyway, I'd rather leave something behind.
+I want to do something fun, something interesting.
+So I'll keep gathering whatever seems useful,
+and keep living my life today, too.

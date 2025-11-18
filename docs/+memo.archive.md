@@ -1,4 +1,10 @@
 
+You seem busy right now.
+I'm gonna fix something, withdraw the money, and hand it to you.
+How long will it take? Around what time do you think I can get the money?
+Since we live close, you can give it to me whenever works for you.
+I'm staying here, so you can stop by when you get home, or I can go to your place to pick up my salary.
+
 [HeroUI (Previously NextUI) - Beautiful, fast and modern React UI Library](https://www.heroui.com/)
 person who I want to shake hands - tiptap right
 
