@@ -74,3 +74,13 @@ If I'm going to die anyway, I'd rather leave something behind.
 I want to do something fun, something interesting.
 So I'll keep gathering whatever seems useful,
 and keep living my life today, too.
+
+
+[What I want to do in the future]
+Someday I want my own studio or workspace where I can hide away, learn new things, and make stuff all day.
+For example, I want to print things with a 3D printer,
+work on electronics projects,
+build web apps,
+practice cooking,
+and practice instruments.
+

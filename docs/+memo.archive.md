@@ -1,4 +1,11 @@
 
+[DataDrivenConstruction.io | Revolutionizing Construction with Data | Revit, AutoCAD, IFC, DGN converter](https://datadrivenconstruction.io/)
+
+[MCP-UI could be the future - Here's Why - YouTube](https://www.youtube.com/watch?v=aziRV2DAWew)
+[Tip-tap gesture support · Issue #47 · TransposonY/GestureSign](https://github.com/TransposonY/GestureSign/issues/47)
+
+deca tower
+
 You seem busy right now.
 I'm gonna fix something, withdraw the money, and hand it to you.
 How long will it take? Around what time do you think I can get the money?

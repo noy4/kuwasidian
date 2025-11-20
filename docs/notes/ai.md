@@ -16,6 +16,9 @@
 
 ---
 
+[mcp-ui](https://github.com/MCP-UI-Org/mcp-ui)
+- [MCP-UI could be the future - Here's Why - YouTube](https://www.youtube.com/watch?v=aziRV2DAWew)
+
 [Freepik | All-in-One AI Creative Suite](https://www.freepik.com/)
 [chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp/)
 [oraios/serena](https://github.com/oraios/serena)
