@@ -1,5 +1,5 @@
 
-
+[XユーザーのAiden Baiさん: 「just so we're clear: Antigravity is a Windsurf wrapper Windsurf is a VSCode wrapper VSCode is an Electron wrapper Electron is a Chromium wrapper Chromium is a C++ wrapper C++ is a C wrapper C is an Assembly wrapper Assembly is a Machine Code wrapper」 / X](https://x.com/aidenybai/status/1990960782356717822)
 [XユーザーのMaki@Sunwood AI Labs.さん: 「Why language models hallucinate https://t.co/FFNih76bYr」 / X](https://x.com/hAru_mAki_ch/status/1964648446356520971)
 [XユーザーのMaki@Sunwood AI Labs.さん: 「Gemini API の Google Maps の Groundingつかってみたけど超楽しい！ ニューヨークのおすすめのカフェをピンで表示してもらった！ https://t.co/5t7PKA1s4x」 / X](https://x.com/hAru_mAki_ch/status/1979789694759321781)
 [XユーザーのJSer.infoさん: 「"The History of React Through Code | Playful Programming" https://t.co/QWPXyd2gkY → https://t.co/wtrEZGkfwC ReactのAPIの変遷やアーキテクチャについて。 JSX/VDOM、Class Component、Hooks。Fiber、Suspense/use」 / X](https://x.com/jser_info/status/1946822509891883474)

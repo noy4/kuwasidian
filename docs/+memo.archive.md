@@ -1,4 +1,8 @@
 
+pork belly
+
+[Mobbin — UI & UX design inspiration for mobile & web apps](https://mobbin.com/?via=fireship)
+
 [DataDrivenConstruction.io | Revolutionizing Construction with Data | Revit, AutoCAD, IFC, DGN converter](https://datadrivenconstruction.io/)
 
 [MCP-UI could be the future - Here's Why - YouTube](https://www.youtube.com/watch?v=aziRV2DAWew)

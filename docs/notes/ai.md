@@ -26,10 +26,12 @@
 
 
 webui
-[wbopan/cui: A web UI for Claude Code agents](https://github.com/wbopan/cui)
-[winfunc/opcode](https://github.com/winfunc/opcode) (ex. [Claudia GUI](https://claudia.so/))
-[sugyan/claude-code-webui](https://github.com/sugyan/claude-code-webui?tab=readme-ov-file)
-[siteboon/claudecodeui](https://github.com/siteboon/claudecodeui)
+- [wbopan/cui: A web UI for Claude Code agents](https://github.com/wbopan/cui)
+- [winfunc/opcode](https://github.com/winfunc/opcode) (ex. [Claudia GUI](https://claudia.so/))
+- [sugyan/claude-code-webui](https://github.com/sugyan/claude-code-webui)
+- [siteboon/claudecodeui](https://github.com/siteboon/claudecodeui)
+- [iOfficeAI/AionUi](https://github.com/iOfficeAI/AionUi)
+- [cruzyjapan/Gemini-CLI-UI](https://github.com/cruzyjapan/Gemini-CLI-UI)
 
 
 agents:
