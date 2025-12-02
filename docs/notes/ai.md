@@ -25,13 +25,31 @@
 [lobe-chat](https://github.com/lobehub/lobe-chat)
 
 
-webui
-- [wbopan/cui: A web UI for Claude Code agents](https://github.com/wbopan/cui)
+Chat UI
+- [open-webui](https://github.com/open-webui/open-webui)
+- [LibreChat](https://github.com/danny-avila/LibreChat)
+
+chat sdk
+- [ChatKit - OpenAI API](https://platform.openai.com/docs/guides/chatkit#embed-chatkit-in-your-frontend)
+- [chatbotkit/node-sdk](https://github.com/chatbotkit/node-sdk)
+
+
+WebUI for AI CLI - [YouTube@AICodeKing/search?query=UI](https://www.youtube.com/@AICodeKing/search?query=UI)
+
+webui, gemini CLI
+- [cruzyjapan/Gemini-CLI-UI](https://github.com/cruzyjapan/Gemini-CLI-UI) - [Gemini CLI WebUI: POWER UP Your Gemini CLI by 10X & Access it ANYWHERE! - YouTube](https://www.youtube.com/watch?v=KF1l5FAF32I) - 2025/07/21
+- [iOfficeAI/AionUi](https://github.com/iOfficeAI/AionUi)
+
+webui, claude code
 - [winfunc/opcode](https://github.com/winfunc/opcode) (ex. [Claudia GUI](https://claudia.so/))
 - [sugyan/claude-code-webui](https://github.com/sugyan/claude-code-webui)
-- [siteboon/claudecodeui](https://github.com/siteboon/claudecodeui)
-- [iOfficeAI/AionUi](https://github.com/iOfficeAI/AionUi)
-- [cruzyjapan/Gemini-CLI-UI](https://github.com/cruzyjapan/Gemini-CLI-UI)
+- [stravu/crystal](https://github.com/stravu/crystal) - Codex
+- [Terragon](https://www.terragonlabs.com/) - OpenAI Codex, OpenCode, Amp - closed source
+- [siteboon/claudecodeui](https://github.com/siteboon/claudecodeui) - cursor CLI
+
+webui, others
+- [wbopan/cui](https://github.com/wbopan/cui) - claude code sdk
+- [idosal/git-mcp](https://github.com/idosal/git-mcp)
 
 
 agents:

@@ -1,4 +1,5 @@
 
+Hi, is there any pocket Wi-Fi I could borrow while I'm waiting for my place's Wi-Fi to be installed? I was thinking of staying at a hotel, but then I realized this is also an option.
 pork belly
 
 [Mobbin — UI & UX design inspiration for mobile & web apps](https://mobbin.com/?via=fireship)
