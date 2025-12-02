@@ -1,4 +1,14 @@
 
+
+
+
+Available Platforms
+- Windows 64-bit
+
+到着 11/9
+新居 11/28
+
+
 Hi, is there any pocket Wi-Fi I could borrow while I'm waiting for my place's Wi-Fi to be installed? I was thinking of staying at a hotel, but then I realized this is also an option.
 pork belly
 
