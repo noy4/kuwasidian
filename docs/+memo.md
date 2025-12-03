@@ -16,6 +16,8 @@ delivery order
 why im here
 [mcp-ui](https://github.com/MCP-UI-Org/mcp-ui)
 
+umh-ha
+
 
 lower back
 room fix
@@ -31,8 +33,20 @@ vs windows
 
 
 
+カリンデリア
+新居
+修理
+
+[[blog/新拠点・イン・マカティ/index]]
 
 ---
+
+
+
+
+
+
+
 
 
 

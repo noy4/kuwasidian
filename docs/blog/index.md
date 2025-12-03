@@ -3,6 +3,7 @@ title: Blog
 ---
 
 ## 2025
+- [[blog/新拠点・イン・マカティ/index|新拠点・イン・マカティ]]
 - [[blog/VS. Windows/index|VS. Windows]]
 - [[blog/クロスバイクええやん/index|クロスバイクええやん]]
 - [[blog/流星街を目指して/index|流星街を目指して]]
