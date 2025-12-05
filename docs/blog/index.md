@@ -3,6 +3,8 @@ title: Blog
 ---
 
 ## 2025
+- [[blog/わしゃわしゃ・マイ・ヘッド/index|わしゃわしゃ・マイ・ヘッド]]
+- [[blog/キャバクラでオチョオチョ/index|キャバクラでオチョオチョ]]
 - [[blog/新拠点・イン・マカティ/index|新拠点・イン・マカティ]]
 - [[blog/VS. Windows/index|VS. Windows]]
 - [[blog/クロスバイクええやん/index|クロスバイクええやん]]

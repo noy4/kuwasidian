@@ -16,34 +16,17 @@ delivery order
 why im here
 [mcp-ui](https://github.com/MCP-UI-Org/mcp-ui)
 
-umh-ha
 
-
-lower back
-room fix
-vs windows
-
-
-[[blog/VS. Windows/index|VS. Windows]]
-無限カリンデリア生活
-新居
-腰いわした
-
-キャバでオチョオチョ
+[VIKTOR.AI | Build and share awesome engineering apps with Python](https://www.viktor.ai/)
 
 
 
-カリンデリア
-新居
-修理
 
-[[blog/新拠点・イン・マカティ/index]]
+
+
+
 
 ---
-
-
-
-
 
 
 

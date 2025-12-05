@@ -1,6 +1,31 @@
 
 
 
+## 2025/12
+
+💻 Windows 入門
+🏢 新生活開始
+💥 腰いわした
+
+lower back
+
+[[blog/VS. Windows/index|VS. Windows]]
+[[blog/新拠点・イン・マカティ/index|新拠点・イン・マカティ]]
+[[blog/キャバクラでオチョオチョ/index|キャバクラでオチョオチョ]]
+腰いわした
+
+[[blog/わしゃわしゃ・マイ・ヘッド/index|わしゃわしゃ・マイ・ヘッド]]
+
+
+Uh-huh
+Um-hum
+
+新居
+無限カリンデリア生活
+vs windows
+room fix
+umh-ha
+
 
 Available Platforms
 - Windows 64-bit
