@@ -1,5 +1,8 @@
 
 
+21:42:53 [DBG] ../server/src/types/types.ts(3,27): error TS2307: Cannot find module 'ai' or its corresponding type declarations.
+url
+Dec 10 globe home recharge
 
 ## 2025/12
 
