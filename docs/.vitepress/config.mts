@@ -23,6 +23,11 @@ const siteUrl = `${siteOrigin}${siteBase}`
 const siteImage = 'obsidian.png'
 const homeTitle = 'Kuwasidian（クワシディアン） | 彼の Obsidian（メモアプリ）のメモ'
 
+// English localization
+const siteTitleEn = 'Kuwasidian'
+const siteDescriptionEn = 'His Obsidian (note-taking app) notes'
+const homeTitleEn = 'Kuwasidian | His Obsidian (note-taking app) notes'
+
 // https://vitepress.dev/reference/site-config
 export default withMermaid(defineConfig({
   title: siteTitle,
@@ -43,6 +48,22 @@ export default withMermaid(defineConfig({
   srcExclude: defaultExcludePattern,
   ignoreDeadLinks: true,
   lastUpdated: true,
+
+  locales: {
+    root: {
+      label: '日本語',
+      lang: 'ja',
+    },
+    en: {
+      label: 'English',
+      lang: 'en',
+      title: siteTitleEn,
+      description: siteDescriptionEn,
+      themeConfig: {
+        sidebar: sidebarEn(),
+      },
+    },
+  },
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -116,9 +137,15 @@ export default withMermaid(defineConfig({
 
 // markdown to html → transformPageData
 function transformPageData(pageData: PageData) {
+  const isEnglish = pageData.relativePath.startsWith('en/')
+  const currentHomeTitle = isEnglish ? homeTitleEn : homeTitle
+
   const router = new Router()
     .add('index.md', () => {
-      pageData.title = homeTitle
+      pageData.title = currentHomeTitle
+    })
+    .add('en/index.md', () => {
+      pageData.title = homeTitleEn
     })
     .add('quests/(?!index)*', () => {
       pageData.title = `${pageData.title} | ${siteTitle} Quests`
@@ -202,6 +229,60 @@ function sidebar(): DefaultTheme.Sidebar {
           collapsed: true,
           items: autoSidebar('notes'),
         },
+      ],
+    },
+  ]
+}
+
+function sidebarEn(): DefaultTheme.Sidebar {
+  return [
+    { text: '✏️ Notes', link: '/en/' },
+    { text: '⚔️ Quests', link: '/en/quests/' },
+    { text: '🔄 Recent Updates', link: '/en/recent-updates/' },
+    {
+      items: [
+        { text: '💭 Philosophy of Life', link: '/en/me/philosophy-of-life' },
+        { text: '🎁 Wish List', link: '/en/me/wish-list' },
+        { text: '🎵 Theme Songs', link: '/en/me/theme-songs' },
+        // {
+        //   text: '📅 Monthly Reports',
+        //   collapsed: true,
+        //   items: autoSidebar('en/monthly-reports', {
+        //     desc: true,
+        //   }).sort((a, b) => {
+        //     if (!a.text?.match(/^\d+/))
+        //       return 1
+        //     if (!b.text?.match(/^\d+/))
+        //       return -1
+        //     return 0
+        //   }),
+        // },
+      ],
+    },
+    {
+      items: [
+        { text: '📄 Blog', link: '/en/blog/' },
+        { text: '🌏 Earth', link: '/en/earth/' },
+        // {
+        //   text: '🤖 Prompts',
+        //   collapsed: true,
+        //   items: autoSidebar('en/prompts'),
+        // },
+        // {
+        //   text: '🚀 Projects',
+        //   collapsed: true,
+        //   items: autoSidebar('en/projects'),
+        // },
+        // {
+        //   text: '📦 Archives',
+        //   collapsed: true,
+        //   items: autoSidebar('en/archives'),
+        // },
+        // {
+        //   text: '🗒️ Other Notes',
+        //   collapsed: true,
+        //   items: autoSidebar('en/notes'),
+        // },
       ],
     },
   ]
