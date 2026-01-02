@@ -84,3 +84,42 @@ build web apps,
 practice cooking,
 and practice instruments.
 
+
+[Hobbies & Interests]
+I like making things and building things from scratch. Creating something myself is what gives me a real sense of fulfillment.
+
+**Music**
+I prefer singing and playing rather than just listening. I tend to pick songs based on whether I want to sing them myself.
+
+**Web Development**
+I enjoy being able to build as much as I want for free. It’s like architecture without the material costs. I don’t mind doing the research or studying hard as long as it helps me implement a new feature.
+
+[How I spend my days off]
+I don't really have a 'weekend' mindset. I'm basically always working on web development—coding, researching, or studying. When I’m not doing that, I’m usually just on YouTube.
+
+
+[Trip]
+I’m the type of person who could spend all day on my laptop—honestly, I’d prefer it. But if I do that, I don’t talk to anyone and nothing ever happens. So, I force myself to change my environment just to make something happen.
+
+[Food]
+I’m not a huge foodie. I don’t like to spend much on meals; I just want something that's healthy and tastes good enough. I rarely eat chips—maybe twice a year. Chocolate is my absolute favorite, but I also like marshmallows and gummies.
+
+
+[Where I live, where I have lived]
+I’m living in Manila right now—specifically **Rockwell in Makati**. It’s a high-end area with a residence that’s **directly connected** to a mall. I didn't actually pick it myself; I asked someone to set up a place for me, and this is where I ended up. I don't plan on staying here too long, though.
+
+Before this, I spent a long time using **housing subscriptions**. I’d move to a new spot every month or so, which was great because it kept the environment and the people around me fresh. There was **always something going on**, which I really liked.
+
+
+[Family & partner]
+I have one younger brother who’s three years younger than me. He’s living back home, working part-time, and is basically a total **gym rat**.
+
+As for me, I’m single. I don't think I'm really **wired for romance**. If marriage happens, it happens, but I’m not really chasing it.
+
+
+[Friends]
+I’m mostly a **solo player**, so I rarely do things with friends. It’s not that I’m anti-social—I actually enjoy chatting or grabbing a bite with people I meet while traveling. I’d love to bond with others by working on a project together, but since I’m usually on my own, those chances are slim. I’m hoping to find a way to **loop people into** my creative work so we can hang out and collaborate.
+
+
+
+
