@@ -16,6 +16,20 @@
 
 ---
 
+
+OpenAI Agent
+[openai/openai-agents-js](https://github.com/openai/openai-agents-js)
+[yusuf-eren/openai-agents-js](https://github.com/yusuf-eren/openai-agents-js)
+[amazedsaint/openai-agent](https://github.com/amazedsaint/openai-agent)
+
+
+[Benchmarks]
+[Did Google just kill OpenAI? - YouTube](https://www.youtube.com/watch?v=bsL7ZnKIAhs)
+- [WeirdML | Håvard Tveit Ihle](https://htihle.github.io/weirdml.html)
+- [Humanity's Last Exam](https://agi.safe.ai/)
+- [MathArena](https://matharena.ai/?view=problem)
+
+
 [mcp-ui](https://github.com/MCP-UI-Org/mcp-ui)
 - [MCP-UI could be the future - Here's Why - YouTube](https://www.youtube.com/watch?v=aziRV2DAWew)
 

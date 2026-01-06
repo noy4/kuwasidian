@@ -1,6 +1,7 @@
 # Ultimate Sentences
 
-My dad’s from Ehime and my mom’s from Hiroshima
+
+My dad’s from a prefecture called Ehime and my mom’s from Hiroshima
 so I’ve got roots in the Chugoku–Shikoku region.
 My dad worked for an insurance company, and my mom was a full-time homemaker.  
 Because of my dad’s job transfers, I moved around a lot.
@@ -36,8 +37,7 @@ I'm developing a software extension to make that possible.
 
 [How I got here]
 When I was in university, I did an internship at a company and met a guy from the Philippines.
-About five years later, after I had left that company, he reached out saying he'd started a company in the Philippines and asked if I was interested in joining.
-I said yes, and that's how I ended up here.
+About five years later, he reached out saying he'd started a company in the Philippines and asked if I was interested in joining, and that's how I ended up here.
 
 
 [Turning point]
@@ -94,6 +94,7 @@ I prefer singing and playing rather than just listening. I tend to pick songs ba
 **Web Development**
 I enjoy being able to build as much as I want for free. It’s like architecture without the material costs. I don’t mind doing the research or studying hard as long as it helps me implement a new feature.
 
+
 [How I spend my days off]
 I don't really have a 'weekend' mindset. I'm basically always working on web development—coding, researching, or studying. When I’m not doing that, I’m usually just on YouTube.
 
@@ -121,5 +122,22 @@ As for me, I’m single. I don't think I'm really **wired for romance**. If marr
 I’m mostly a **solo player**, so I rarely do things with friends. It’s not that I’m anti-social—I actually enjoy chatting or grabbing a bite with people I meet while traveling. I’d love to bond with others by working on a project together, but since I’m usually on my own, those chances are slim. I’m hoping to find a way to **loop people into** my creative work so we can hang out and collaborate.
 
 
+[About places I like or I want to share]
+**Musubiya**
+A guesthouse in **Northern Okinawa**. The beach is literally in the **backyard**. Every night at 8:00, there’s a **potluck dinner** where everyone brings a dish and chats. It’s a great way to bond with other guests over food and drinks, and you often end up hanging out with them later.
+
+**Momoiwasou**
+A youth hostel on Rebun Island in Hokkaido. The staff meets you at the port, waving flags and shouting, **"Welcome back!"** On the shuttle bus to the hostel, they give a super dramatic presentation where they tell you to **leave your "intelligence, manners, and inhibitions" behind** in a long tunnel along the way.
+
+When you slide open the front door, everyone greets you with a loud, festive welcome. After a briefing on the rules and the trekking courses (4 or 8 hours), you hit the trails the next morning. By the time you finish the long hike, you’ve **really bonded** with the other guests. At night, there’s a "meeting" where everyone sings and dances together. When it’s time to head home, you "pick up" your "intelligence, manners, and inhibitions" from the tunnel and leave the island by ferry as they shout **"See you soon!"** from the dock.
+
+
+**[The Pros and Cons of Japan]**
+**Pros:** The streets are clean—no trash and definitely no **dead animals** lying around. I also love that I never have to worry about **personal safety**.
+**Cons:** There are **no jobs in the countryside**, so everyone is moving to the big cities. Plus, the work culture is intense, and you see so many **burnt-out employees**.
+
+
+**[Why I started learning English]**
+It feels like English is the **global standard** these days, so I want to be able to use it. Honestly, it **frustrates me** that I still can't speak it properly despite spending so many years learning it in school. I want to change that.
 
 
