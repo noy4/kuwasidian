@@ -1,4 +1,6 @@
+---
 # Ultimate Sentences (English - Tagalog)
+Anki: Added up to line 83
 
 front: My dad’s from a prefecture called Ehime and my mom’s from Hiroshima
 back: Galing ang tatay ko sa isang prefecture na tinatawag na Ehime at ang nanay ko naman ay mula sa Hiroshima
@@ -45,3 +47,37 @@ trabaho: job
 lumipat: moved
 maraming: many
 beses: times
+
+front: I was born in Hiroshima,
+back: Ipinanganak ako sa Hiroshima,
+
+ipinanganak: was born
+
+front: went to kindergarten in Saitama,
+back: pumunta ako sa kindergarten sa Saitama,
+
+pumunta: went
+
+front: spent the early years of elementary school in Shimane,
+back: ginugol ko ang mga unang taon ng elementarya sa Shimane,
+
+ginugol: spent
+unang: early
+ng: of
+elementarya: elementary school
+
+front: the later years in Osaka,
+back: ang mga huling taon sa Osaka,
+
+huling: later
+
+front: went to junior high and high school in Ehime,
+back: pumunta ako sa junior high at high school sa Ehime,
+
+front: and studied at university in Fukuoka.
+back: at nag-aral sa unibersidad sa Fukuoka.
+
+nag-aral: studied
+
+front: I graduated from Kyushu University, School of Design, Department of Art and Information Design.
+back: Nagtapos ako sa Kyushu University, School of Design, Department of Art and Information Design.

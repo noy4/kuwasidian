@@ -21,7 +21,7 @@
     "**/*.ts",
     "**/*.vue",
     "**/*.md",
-    ".kilocode/**/*.md"
+    ".local/**/*.md"
   ],
   "exclude": [
     "**/node_modules/**",
