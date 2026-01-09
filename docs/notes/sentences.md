@@ -2,6 +2,7 @@
 
 [[sentences.en]]
 [[sentences.tagalog]]
+[[sentences.en-tag]]
 
 
 父は愛媛、母は広島
