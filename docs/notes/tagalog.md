@@ -43,14 +43,14 @@
   - I live in Tokyo. - Sa Tokyo ako nakatira.
 - How are you? - Kamusta ka?
   - I'm fine, thank you. - Okay lang ako, salamat.
-- How about you? - Ikaw? / Kamusta ka naman?
+- How about you? - Ikaw?
   - I'm fine, too. - Okay lang din ako.
 - Nice to meet you. - Kinagagalak kitang makilala.
   - Nice to meet you, too. - Ako rin.
 - What are you doing? - Anong ginagawa mo?
   - I'm reading a book. - Nagbabasa ako ng libro.
 - Do you speak English? - Nagsasalita ka ba ng Ingles?
-  - Yes, I do. - Oo, kaunti. (Yes, a little.)
+  - Yes, a little. - Oo, kaunti. (Yes, a little.)
 - Why are you studying Japanese? - Bakit ka nag-aaral ng Japanese?
   - Because I like anime. - Kasi gusto ko ng anime.
 - How long have you been learning Japanese? - Gaano ka na katagal nag-aaral ng Japanese?

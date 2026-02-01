@@ -16,6 +16,31 @@
 
 ---
 
+[Verdent](https://docs.verdent.ai/)
+[oh-my-opencode](https://github.com/code-yeongyu/oh-my-opencode)
+[Craft Agents](https://agents.craft.do/docs/getting-started/introduction)
+[rowboatlabs/rowboat: Local-first AI coworker, with memory](https://github.com/rowboatlabs/rowboat)
+[swiftlysingh/excalidraw-cli](https://github.com/swiftlysingh/excalidraw-cli)
+
+
+openclaw
+[openclaw/openclaw](https://github.com/openclaw/openclaw)
+[cloudflare/moltworker](https://github.com/cloudflare/moltworker)
+[badlogic/pi-mono](https://github.com/badlogic/pi-mono?tab=readme-ov-file)
+[moltbook - the front page of the agent internet](https://www.moltbook.com/)
+
+
+voice
+- [\[Enhancement\]: Integrate Livekit - an open source alternative to OpenAI Realtime API · danny-avila/LibreChat · Discussion #7358](https://github.com/danny-avila/LibreChat/discussions/7358)
+- [livekit/livekit](https://github.com/livekit/livekit)
+- [Deepgram](https://deepgram.com/)
+
+
+[GitHub: mcp client library lang:ts](https://github.com/search?q=mcp+client+library+language%3ATypeScript&type=repositories&l=TypeScript)
+- [mcp-z/client](https://github.com/mcp-z/client)
+- [leotrinh/mcp-client-kit](https://github.com/leotrinh/mcp-client-kit)
+- [SilentCaMXMF/universal-mcp-server](https://github.com/SilentCaMXMF/universal-mcp-server)
+
 
 OpenAI Agent
 [openai/openai-agents-js](https://github.com/openai/openai-agents-js)

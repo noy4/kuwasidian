@@ -1,5 +1,11 @@
 
+copy github url
 
+小指ずれた
+My pinky finger shifted out of place
+My pinky got dislocated
+
+[sinclairzx81/typebox: JSON Schema Type Builder with Static Type Resolution for TypeScript](https://github.com/sinclairzx81/typebox)
 
 Anki 25.02.5 (29192d15)  (ao)
 Python 3.9.18 Qt 6.6.2 PyQt 6.6.1
@@ -355,7 +361,7 @@ conscientiousness
 **Sorry for the trouble.**
 **Sorry for making it difficult.**
 
-[[kazuma's 30 phrases]]
+[[kazuma languages]]
 
 [【PIVOT TALK】 Kazu Languages 覚えるべき30フレーズまとめ！英語バージョン付き｜Reirei](https://note.com/reireireijinjin6/n/n270c6f4dd0ae?utm_source=chatgpt.com)
 Whang-od

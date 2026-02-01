@@ -41,7 +41,8 @@ telemetry
 
 
 [Platform]
-https://www.convex.dev/
+[Convex](https://www.convex.dev/)
+[LiveKit](https://docs.livekit.io/intro/overview/)
 
 
 
@@ -55,6 +56,7 @@ Arc browser
 
 [Jellyfin](https://jellyfin.org/) - The Free Software Media System
 [n8n](https://github.com/n8n-io/n8n)
+[openclaw/openclaw](https://github.com/openclaw/openclaw?tab=readme-ov-file)
 
 
 [Svelte project]
