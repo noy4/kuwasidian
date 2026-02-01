@@ -1,4 +1,3 @@
----
 # Ultimate Sentences (English - Tagalog)
 Anki: Added up to line 83
 
