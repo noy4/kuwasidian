@@ -268,6 +268,76 @@ AIコーディングエージェントの進化が目覚ましく、`Claude Code
   </a>
 </div>
 
+### 📝 メモ少年 & ロバート愛
+今月は、ロバートの元ストーカーとして知られる「メモ少年」こと篠田ディレクターの動画を非常に多く視聴しました。彼がテレビ局員になり、憧れのロバート秋山と番組（『秋山歌謡祭』など）を作るまでの軌跡や、その異常なまでの情熱に触れるコンテンツにどっぷり浸かった1ヶ月でした。
+
+<div class="thumbnail-tiles">
+  <a href="https://www.youtube.com/watch?v=69rt6WI0PNA" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.youtube.com/vi/69rt6WI0PNA/mqdefault.jpg">
+    <span class="video-title">【ロバート秋山 × メモ少年】秋山歌謡祭に懸ける想い / 秋元康が認めた音楽性 / 衝撃のクラファン529万円 - YouTube</span>
+  </a>
+  <a href="https://www.youtube.com/watch?v=6f3esx9HQZ4" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.youtube.com/vi/6f3esx9HQZ4/mqdefault.jpg">
+    <span class="video-title">【ロバート秋山 × メモ少年】ファンがテレビ局に入社して特番制作 / 本音で対談 / 恐怖のMD - YouTube</span>
+  </a>
+  <a href="https://www.youtube.com/watch?v=y3W2ovZPpYM" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.youtube.com/vi/y3W2ovZPpYM/mqdefault.jpg">
+    <span class="video-title">【秋山×メモ少年】ロバートの元ストーカーが次は本を出した【出版記念対談】 - YouTube</span>
+  </a>
+  <a href="https://www.youtube.com/watch?v=MAjvnSJurgE" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.youtube.com/vi/MAjvnSJurgE/mqdefault.jpg">
+    <span class="video-title">【メモ少年】ロバート山本さんと”ストーカーライブ”を開催しました - YouTube</span>
+  </a>
+  <a href="https://www.youtube.com/watch?v=F-fjFx5QOEs" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.youtube.com/vi/F-fjFx5QOEs/mqdefault.jpg">
+    <span class="video-title">ロバート10年ストーカーし私欲で法政大の学祭乗っ取り…/テレビ局員になり 枠占拠の暴挙/メモ少年 篠田直哉 - YouTube</span>
+  </a>
+  <a href="https://www.youtube.com/watch?v=F15kPntmbp8" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.youtube.com/vi/F15kPntmbp8/mqdefault.jpg">
+    <span class="video-title">秋山歌謡祭の続編を制作することになりました！！【ロバート秋山 × メモ少年】 - YouTube</span>
+  </a>
+  <a href="https://www.youtube.com/watch?v=Kv_eM7VtH10" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.youtube.com/vi/Kv_eM7VtH10/mqdefault.jpg">
+    <span class="video-title">ロバート秋山x”元ストーカー”篠田直哉、まさかの本出版で対談 - YouTube</span>
+  </a>
+  <a href="https://www.youtube.com/watch?v=bvV2EVUPT78" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.youtube.com/vi/bvV2EVUPT78/mqdefault.jpg">
+    <span class="video-title">ロバート秋山x”元ストーカー”篠田直哉、即興コント披露！？ - YouTube</span>
+  </a>
+  <a href="https://www.youtube.com/watch?v=gDrsf1VuB4A" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.youtube.com/vi/gDrsf1VuB4A/mqdefault.jpg">
+    <span class="video-title">【ロバート秋山 × メモ少年】秋山歌謡祭ライブを開催します。 - YouTube</span>
+  </a>
+  <a href="https://www.youtube.com/watch?v=tPhiBauJShY" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.youtube.com/vi/tPhiBauJShY/mqdefault.jpg">
+    <span class="video-title">【秋山×メモ少年】ロバートの元ストーカーが、特番を作るため直接オファー。 - YouTube</span>
+  </a>
+  <a href="https://www.youtube.com/watch?v=3z75tTX3fdc" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.youtube.com/vi/3z75tTX3fdc/mqdefault.jpg">
+    <span class="video-title">【ロバート秋山 × メモ少年】元ストーカーが念願の新番組を立ち上げます - YouTube</span>
+  </a>
+  <a href="https://www.youtube.com/watch?v=eIGkrVvkrtI" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.youtube.com/vi/eIGkrVvkrtI/mqdefault.jpg">
+    <span class="video-title">【新展開】”激レアさん” メモ少年から近況報告があります〈ロバートのリーダー〉 - YouTube</span>
+  </a>
+  <a href="https://www.youtube.com/watch?v=ewm0-bdAEW0" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.youtube.com/vi/ewm0-bdAEW0/mqdefault.jpg">
+    <span class="video-title">メモ少年/小４からロバートのストーカーし法政卒テレビ局員→秋山歌謡祭プロデューサー - YouTube</span>
+  </a>
+  <a href="https://www.youtube.com/watch?v=Y-e_b5ftxd0" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.youtube.com/vi/Y-e_b5ftxd0/mqdefault.jpg">
+    <span class="video-title">ロバート秋山の元ストーカーの現在がすごい話【ひろゆき 切り抜き メモ少年】 - YouTube</span>
+  </a>
+  <a href="https://www.youtube.com/watch?v=_7O4dXqaEjs" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.youtube.com/vi/_7O4dXqaEjs/mqdefault.jpg">
+    <span class="video-title">【あのメモ少年】“元ストーカー”のロバート愛が爆発！からの「ハズい…」 - YouTube</span>
+  </a>
+  <a href="https://www.youtube.com/watch?v=sDGbaqVKQaE" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.youtube.com/vi/sDGbaqVKQaE/mqdefault.jpg">
+    <span class="video-title">芸人愛の最上級者「メモ少年」 - YouTube</span>
+  </a>
+</div>
+
 ### 🐉 ドラゴンボール & アニメ
 『ドラゴンボール』40周年記念映像や、名シーンの振り返り動画を視聴しました。特にベジータやトランクスに関連するシーンへの反応動画など、ファンコミュニティの盛り上がりも追っていました。
 

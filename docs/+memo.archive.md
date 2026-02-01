@@ -14,7 +14,7 @@ Platform: macOS-15.6.1-arm64-arm-64bit
 When loading Anki MCP Server:
 Traceback (most recent call last):
   File "aqt.addons", line 250, in loadAddons
-  File "/Users/noy/Library/Application Support/Anki2/addons21/124672614/__init__.py", line 56, in <module>
+  File "/Users/noy/Library/Application Support/Anki2/addons21/124672614/__init__.py", line 56, in module
     raise ImportError("AnkiMCP Server: pydantic_core not available")
 ImportError: AnkiMCP Server: pydantic_core not available
 
