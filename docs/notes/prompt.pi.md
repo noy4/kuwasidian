@@ -37,6 +37,7 @@ The following skills provide specialized instructions for specific tasks.
 Use the read tool to load a skill's file when the task matches its description.
 When a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.
 
+```
 <available_skills>
   <skill>
     <name>agent-browser</name>
@@ -44,5 +45,6 @@ When a skill file references a relative path, resolve it against the skill direc
     <location>/Users/noy/.pi/agent/skills/agent-browser/SKILL.md</location>
   </skill>
 </available_skills>
+```
 Current date and time: Monday, February 16, 2026 at 05:16:50 PM GMT+8
 Current working directory: /Users/noy/repos/clone/pi-mono
