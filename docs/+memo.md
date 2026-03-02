@@ -6,20 +6,18 @@
 [[sentences]]
 
 
-dialogue from what happened
-head spa
-massage
-delivery order
-why im here
 [mcp-ui](https://github.com/MCP-UI-Org/mcp-ui)
 [hey-api/openapi-ts](https://github.com/hey-api/openapi-ts)
 
 
-monthly
-moltworker
-remote storage
-pi
-skills
+[Traycer](https://traycer.ai/)
+conductor
+commander
+[bmad-code-org/BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD)
+[Factory-AI/factory](https://github.com/factory-ai/factory)
+- [AGENTS.md - Factory Documentation](https://docs.factory.ai/cli/configuration/agents-md)
+
+
 
 
 

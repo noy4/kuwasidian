@@ -1,4 +1,61 @@
 
+
+
+土曜から何食っても液状でケツから出てくる
+金曜の夜食った液体コンボを疑っている（酸っぱスープ、オレンジジュース、水、シチューかと思って頼んだ激甘白玉デザート）
+
+ただそんなもん一日で治りそうなのでウイルス性の何某かにかかった可能性もあり。
+なお少し前から口の両端が裂けてカサブタができ続ける現象有り。乾燥あるいはストレスか。
+
+何か手を打とうということでCoCo壱に来た。野菜コンボを注文（野菜＋ほうれん草カレー、五穀米に変更、セットのサラダ）。猛れ食物繊維、全てを絡め取れ。そして大きな糞となれ。
+
+So people in the construction industry use design software to create blueprints, right? I'm building a plugin for one of these software tools that uses AI to make the workflow more efficient.
+
+The plugin currently provides tools that allow the AI to control Revit, and I plan to extend it with tools for accessing and managing the local file system.
+
+By integrating the plugin with the local file system, users can manage their own prompts, and the AI can dynamically create or update prompts as needed.
+So we can ask the AI something like, “Create and save a prompt that transforms data A into data B.”
+
+
+I woke up at ten AM today. It's a bit late.And I ordered lunch and dinner on Grab.
+
+delivery order
+why im here
+dialogue from what happened
+head spa
+massage
+
+My head feels tense all the time
+I have tension in my head.
+
+Dual N-Back training
+
+So there's a tool called Claude Code, and there's a well-known open-source alternative called OpenCode. The problem is, the source code for open code is quite messy. pi-cli is a simpler version of Open Code.
+
+
+
+
+x bookmarks
+
+[Negative Delay · Issue #5 · behnamazimi/youtube-subtitle-delay](https://github.com/behnamazimi/youtube-subtitle-delay/issues/5)
+
+ the tagging process I was explained was this
+ you run the tag all first then you clean up after
+ but since there are so many tags, even if the AI moves one next to another some overlap still remains
+ so I think I should remove the number of the tags first, but I'm not sure which ones to remove
+ So what I want is the rules about which tags should be removed?
+
+skills
+antigravity
+
+I woke up at 7:30 today and yesterday I found some interesting posts related to AI and agent skills. I want to check in, but I can today because I have something else to do building an ad in for software called rabbit, which is used in the construction industry and I'm trying to use AI to Slimline the workflow and by next Thursday I need to prepare something like this if AI detect something overlapping, it moves one next to the other, so I'm not gonna check the posts until I'm done
+
+
+remote storage
+moltworker
+monthly
+
+## 2026/02
 copy github url
 
 小指ずれた

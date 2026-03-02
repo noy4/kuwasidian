@@ -23,3 +23,6 @@ Tips：
 
 [[notes/IQ/index|IQ]]
 [[study]]
+
+
+[story of the entire Bible, i guess - YouTube](https://www.youtube.com/watch?v=B5wCziuqnwk)

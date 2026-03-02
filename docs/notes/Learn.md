@@ -14,3 +14,10 @@
 [[Anki]]
 
 [[politics]]
+
+
+people
+[Eray Sona - Learn Any Skill Faster](https://eraysona.com/)
+
+training
+Dual N-Back training

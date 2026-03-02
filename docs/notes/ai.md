@@ -16,18 +16,76 @@
 
 ---
 
+[OpenClaw + Codex & Claude Code (Agent Swarm): This is the CRAZIEST way to use OpenClaw! - YouTube](https://www.youtube.com/watch?v=kx4OOL7vpzA)
+
+
+claw clone
+[HKUDS/nanobot](https://github.com/HKUDS/nanobot) py
+[sipeed/picoclaw](https://github.com/sipeed/picoclaw?tab=readme-ov-file) go
+[qwibitai/nanoclaw](https://github.com/qwibitai/nanoclaw) ts
+[agent0ai/agent-zero](https://github.com/agent0ai/agent-zero) py
+
+
+in-memory virtual filesystem
+[vercel-labs/just-bash](https://github.com/vercel-labs/just-bash)
+[vercel-labs/node-vfs-polyfill](https://github.com/vercel-labs/node-vfs-polyfill)
+
+video
+[Remotion | Make videos programmatically](https://www.remotion.dev/)
+[Remotion | Prompt](https://www.remotion.dev/prompts/show?prompt=launch-video-on-x)
+
+[Maartenlouis/elevenlabs-remotion-skill](https://github.com/maartenlouis/elevenlabs-remotion-skill)
+[Maartenlouis/remotion-ads](https://github.com/Maartenlouis/remotion-ads)
+
+
+util
+[cjpais/Handy](https://github.com/cjpais/Handy)
+parakeet v3 - nvidia stt works locally
+
+
+skills
+[Skill authoring best practices - Claude API Docs](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices)
+
+[vercel-labs/skills](https://github.com/vercel-labs/skills)
+[pi0/skillman](https://github.com/pi0/skillman)
+[antfu/skills-npm](https://github.com/antfu/skills-npm?tab=readme-ov-file)
+[antfu/skills](https://github.com/antfu/skills)
+
+[huguangju/skills](https://github.com/huguangju/skills)
+
+skills curation
+[obra/superpowers](https://github.com/obra/superpowers)
+[sickn33/antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills)
+[davila7/claude-code-templates](https://github.com/davila7/claude-code-templates)
+
+
 [Verdent](https://docs.verdent.ai/)
 [oh-my-opencode](https://github.com/code-yeongyu/oh-my-opencode)
 [Craft Agents](https://agents.craft.do/docs/getting-started/introduction)
 [rowboatlabs/rowboat: Local-first AI coworker, with memory](https://github.com/rowboatlabs/rowboat)
 [swiftlysingh/excalidraw-cli](https://github.com/swiftlysingh/excalidraw-cli)
+[Commander - Native macOS App for AI Coding Agents](https://commanderai.app/)
 
 
 openclaw
 [openclaw/openclaw](https://github.com/openclaw/openclaw)
 [cloudflare/moltworker](https://github.com/cloudflare/moltworker)
-[badlogic/pi-mono](https://github.com/badlogic/pi-mono?tab=readme-ov-file)
 [moltbook - the front page of the agent internet](https://www.moltbook.com/)
+[vercel-labs/dev3000](https://github.com/vercel-labs/dev3000)
+
+
+pi
+[badlogic/pi-mono](https://github.com/badlogic/pi-mono?tab=readme-ov-file)
+- [What I learned building an opinionated and minimal coding agent](https://mariozechner.at/posts/2025-11-30-pi-coding-agent/)
+- [steipete/mcporter](https://github.com/steipete/mcporter)
+- [badlogic/pi-skills](https://github.com/badlogic/pi-skills)
+- [badlogic/doppelgangers](https://github.com/badlogic/doppelgangers)
+- [pasky/pi-amplike](https://github.com/pasky/pi-amplike)
+
+
+
+cli
+[jacob-bd/notebooklm-mcp-cli](https://github.com/jacob-bd/notebooklm-mcp-cli)
 
 
 voice

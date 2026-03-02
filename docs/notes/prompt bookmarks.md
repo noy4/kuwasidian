@@ -30,6 +30,8 @@ Sora2Craftr
 ---
 
 
+Flux.2 manga
+[XユーザーのMaki@Sunwood AI Labs.さん: 「FLUX.2 についてNotebookLMで漫画インフォグラフィック化してみました！ これ見やすいぞ！！！！！ ーーー📒プロンプトーーー 添付した下記のキャラクターで少女漫画風の作風・演出・表情表現を重視した漫画を生成してください。 https://t.co/mV2yc0w4Ic」 / X](https://x.com/hAru_mAki_ch/status/1993533111842619684)
 
 粒子ホログラムプロンプト
 [XユーザーのMaki@Sunwood AI Labs.さん: 「粒子ホログラムプロンプト爆誕！！ Prompt👇🏻 [SUBJECT] conjured as a spectral particle hologram, where swarming light motes, arcane sigil dust, and refractive haze weave a knightly form from thin air. Use radiant shades of [COLOR1] and [COLOR2] to accent edge highlights, rune https://t.co/UYEozwHe18」 / X](https://x.com/hAru_mAki_ch/status/1983158554514338057)

@@ -1,5 +1,8 @@
 # 言語学習について
 
+- [Learn ANY Language Fast For The Rest of Your Life - YouTube](https://www.youtube.com/watch?v=4IRTuL93RJw)
+- [How I'm using NotebookLM to power up my language learning - YouTube](https://www.youtube.com/watch?v=mrVczP0yigk)
+
 ## Methods
 
 まず効果的な言語学習について考える。
