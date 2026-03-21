@@ -1,0 +1,59 @@
+<script setup lang="ts">
+import type { Earth } from './Earth'
+import { withBase } from 'vitepress'
+import { mdrender } from '@/utils'
+
+defineProps<{
+  earth: Earth
+}>()
+</script>
+
+<template>
+  <div class="absolute left-2 top-2 bg-black/70 rounded px-3 max-w-72 w-full z-10">
+    <div class="breadcrumbs text-xs text-gray-400 pt-3 pb-1">
+      <ul>
+        <li><a :href="withBase('/')">Kuwasidian</a></li>
+        <li><a :href="withBase('/earth/')">Earth</a></li>
+      </ul>
+    </div>
+
+    <h3 class="text-white text-lg font-bold">
+      Population Distribution (2026)
+    </h3>
+
+    <div class="text-xs prose text-white/80">
+      <div
+        v-html="mdrender(`
+          Total population:**${Math.floor(earth.totalPopulation.value).toLocaleString()}** people
+        `)"
+      />
+
+      <label class="block">
+        📊 Show population:
+        <input
+          type="checkbox"
+          :checked="earth.isPopulationLayerVisible.value"
+          class="toggle"
+          @change="earth.togglePopulationLayer"
+        >
+      </label>
+
+      <label class="block">
+        🛰️ Satellite view:
+        <input
+          type="checkbox"
+          :checked="earth.isSurfaceLayerVisible.value"
+          class="toggle"
+          @change="earth.toggleSurfaceLayer"
+        >
+      </label>
+
+      <div
+        v-html="mdrender(`
+          *Areas with population below 100 are excluded
+          Data source:[WorldPop :: Population Counts](https://hub.worldpop.org/geodata/summary?id=78816)
+        `)"
+      />
+    </div>
+  </div>
+</template>

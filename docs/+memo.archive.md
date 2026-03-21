@@ -1,4 +1,5 @@
 
+summarize six months
 
 [[Philippines]]
 calc money
