@@ -1,5 +1,47 @@
 
 
+[[Philippines]]
+calc money
+
+> 内面が空っぽだと他者評価を当てにしたがる
+
+actual workflows ui
+
+仕事で説明用に作ってた技術文書をAIに読まして
+プログラミングで動画作れるやつ、のコード書かして概要動画ができた
+
+余は満悦じゃ
+
+**A:**
+
+> The criteria haven't been met yet, so we won't make the payment until they are.
+
+**B:**
+
+> This is a joint venture project, so the output should be shared. But you're saying you want to keep everything. That's not fair. The price is this low because we agreed to share the future profits.
+
+
+
+remotion: Color difference between preview and render
+preview gray, yellow-green on render
+[Color difference between preview and render · Issue #3850 · remotion-dev/remotion](https://github.com/remotion-dev/remotion/issues/3850)
+
+
+what's the current view?
+tag ducts
+
+- Chat with Revit in natural language
+- AI agent loop: plan → execute C# scripts → observe → self-correct
+- Document-driven workflows (instruction manuals)
+- Works inside Revit via a built-in chat panel
+
+- Control Revit with chat
+- Automate workflows
+- Document-driven
+- AI agent loop
+
+
+ジェプ ポギ
 
 土曜から何食っても液状でケツから出てくる
 金曜の夜食った液体コンボを疑っている（酸っぱスープ、オレンジジュース、水、シチューかと思って頼んだ激甘白玉デザート）

@@ -16,6 +16,26 @@
 
 ---
 
+
+
+
+[Best Remotion Alternatives in 2026 | Coding Motion Graphic is Coming? : r/VideoEditingTips](https://www.reddit.com/r/VideoEditingTips/comments/1rabobl/best_remotion_alternatives_in_2026_coding_motion/)
+[redotvideo/revideo](https://github.com/redotvideo/revideo)
+
+
+
+[mcp-ui](https://github.com/MCP-UI-Org/mcp-ui)
+[hey-api/openapi-ts](https://github.com/hey-api/openapi-ts) - used in opencode
+
+
+[Traycer](https://traycer.ai/)
+conductor
+commander
+[bmad-code-org/BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD)
+[Factory-AI/factory](https://github.com/factory-ai/factory)
+- [AGENTS.md - Factory Documentation](https://docs.factory.ai/cli/configuration/agents-md)
+
+
 [OpenClaw + Codex & Claude Code (Agent Swarm): This is the CRAZIEST way to use OpenClaw! - YouTube](https://www.youtube.com/watch?v=kx4OOL7vpzA)
 
 
