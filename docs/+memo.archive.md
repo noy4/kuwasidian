@@ -1,4 +1,8 @@
 
+
+[[travel]]
+
+[【海外生活に興味ある人必見】Workawayとは？経験者が解説 | 旅行・おでかけ・趣味のアイデアで日常を豊かに楽しく | ベルトラYOKKA | VELTRA](https://www.veltra.com/jp/yokka/article/recommended-workaway-for-overseas-life/)
 summarize six months
 
 [[Philippines]]

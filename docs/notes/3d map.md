@@ -22,6 +22,25 @@ x 虐殺数ツアー
 戦争再生
 
 
+
+
+- [Most of Earth Is Empty. This 3D Map Shows Where 8 Billion People Actually Live. | by Tingkart | Medium](https://medium.com/%40thomas_82964/where-8-billion-people-actually-live-18386292c15d)
+- [Norway Population Density](https://world-population-hex.netlify.app/)
+
+
+[Observable](https://observablehq.com/) - js jupyter notebook
+
+
+[XユーザーのSorami Shiromizu (Hisamoto)さん: 「QGISの地図をWebでカンタンに共有できるKumoy、使ってみた 🌤️ 北海道の人口, 牛口, 漁獲量, 小麦収穫量, 垂直積雪量 #Kumoy https://t.co/G0VZRN7nh2 サクサク使えて便利、UIもいい感じだ〜 https://t.co/qXCgogQSSD」 / X](https://x.com/sorami/status/2024464674872578361)
+- [北海道の人口, 牛口, 漁獲量, 小麦収穫量, 垂直積雪量 - Kumoy](https://app.kumoy.io/public/map/556ae0f7-b225-4d82-a02e-f0b67f8182c1#6.71/43.456/142.549)
+- [地方公共団体の位置データ Location Data of Local Governments in Japan - ASTI アマノ技研](https://amano-tec.com/data/localgovernments.html)
+- [住民基本台帳人口・世帯数 - 総合政策部計画局統計課](https://www.pref.hokkaido.lg.jp/ss/tuk/900brr/index2.html)
+- [届出情報の統計-目的別索引-牛の個体識別情報検索サービス](https://www.id.nlbc.go.jp/data/toukei.html)
+- [海面漁業生産統計調査 市町村別データ 平成30年産市町村別データ | ファイル | 統計データを探す | 政府統計の総合窓口](https://www.e-stat.go.jp/stat-search/files?page=1&layout=datalist&toukei=00500216&tstat=000001015174&cycle=7&tclass1=000001042343&tclass2=000001138208&tclass3val=0)
+- [農業：北海道農政事務所](https://www.maff.go.jp/hokkaido/toukei/kikaku/database/nougyou/nougyou.html#mugi)
+- [垂直積雪量 - 建設部住宅局建築指導課](https://www.pref.hokkaido.lg.jp/kn/ksd/kijun/sekisetu.html)
+
+
 [RESAS-API - API概要](https://opendata.resas-portal.go.jp/docs/api/v1/index.html)
 [国土交通DPF利用者API](https://www.mlit-data.jp/api_docs/)
 

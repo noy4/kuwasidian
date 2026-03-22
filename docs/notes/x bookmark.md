@@ -1,4 +1,10 @@
 
+
+- kumoy 牛口 [XユーザーのSorami Shiromizu (Hisamoto)さん: 「QGISの地図をWebでカンタンに共有できるKumoy、使ってみた 🌤️ 北海道の人口, 牛口, 漁獲量, 小麦収穫量, 垂直積雪量 #Kumoy https://t.co/G0VZRN7nh2 サクサク使えて便利、UIもいい感じだ〜 https://t.co/qXCgogQSSD」 / X](https://x.com/sorami/status/2024464674872578361)
+- kumoy qgis [XユーザーのYasunori Kirimotoさん: 「MIERUNEの新サービス「Kumoy」のパブリックベータ版を本日リリースしました☁️ QGISとWebのシームレスな連携を実現したクラウドサービスです。どなたでも利用できますのでぜひお試しください！ https://t.co/4be42asLTI プレスリリース https://t.co/jFctvYT2R7 https://t.co/92ipaRkLCb」 / X](https://x.com/dayjournal_nori/status/2023944214489247965)
+- itty-sockets [XユーザーのKevin Whitleyさん: 「itty-sockets - add socket messaging to your apps, instantly - better DX/ergo than raw WebSocket API - use free zero-config channels, or your own WS server - only 466 bytes」 / X](https://x.com/kevinrwhitley/status/2020964858410434864)
+- vibe hardware [XユーザーのMario Zechnerさん: 「This is cool! If you think debugging vibed code is bad, wait till you have to debug your first vibed circuits :D」 / X](https://x.com/badlogicgames/status/2020963477918302428)
+
 [Xユーザーのmahirさん: 「@andimarafioti been using it for MONTHS and genuinely love it!! https://t.co/fQ7RVfXKEY is a great OSS UI for it」 / X](https://x.com/slobkebap/status/2020171706418200734)
 [XユーザーのSIGKITTENさん: 「what if we took these coding agents that are made to run in node.js and ran them in the browser by also running the entire node.js in the browser? In the spirit of the famous "the birth and death of javascript" talk, we can bring these typescript,react,etc back to the browser https://t.co/guZgwPfp4T」 / X](https://x.com/SIGKITTEN/status/2020191133628805415)
 [XユーザーのPooya Parsa 🦋さん: 「👀Auto-detecting skills based on project dependencies is such a cool idea!」 / X](https://x.com/_pi0_/status/2019853635664879891)
