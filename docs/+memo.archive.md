@@ -1,12 +1,19 @@
 
+spec 3d network
+git commit 3d network animation
+
+demo youtube
+calc money
+summarize six months
+remotion webpack
+philippines poplulation
+
 
 [[travel]]
 
 [【海外生活に興味ある人必見】Workawayとは？経験者が解説 | 旅行・おでかけ・趣味のアイデアで日常を豊かに楽しく | ベルトラYOKKA | VELTRA](https://www.veltra.com/jp/yokka/article/recommended-workaway-for-overseas-life/)
-summarize six months
 
 [[Philippines]]
-calc money
 
 > 内面が空っぽだと他者評価を当てにしたがる
 

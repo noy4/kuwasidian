@@ -5,11 +5,11 @@
 
 [[sentences]]
 
-spec 3d network
-git commit 3d network animation
+
+[[visualization]]
+
 deepwiki video
-
-
+牛口　愛媛
 
 
 
