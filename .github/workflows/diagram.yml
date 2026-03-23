@@ -1,6 +1,8 @@
 # [githubocto/repo-visualizer](https://github.com/githubocto/repo-visualizer)
 
 name: Create diagram
+permissions:
+  contents: write
 on:
   workflow_dispatch: {}
   push:
