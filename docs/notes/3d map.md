@@ -24,6 +24,9 @@ x 虐殺数ツアー
 
 
 
+
+[mapcn - Beautiful maps made simple](https://www.mapcn.dev/)
+
 - [Most of Earth Is Empty. This 3D Map Shows Where 8 Billion People Actually Live. | by Tingkart | Medium](https://medium.com/%40thomas_82964/where-8-billion-people-actually-live-18386292c15d)
 - [Norway Population Density](https://world-population-hex.netlify.app/)
 

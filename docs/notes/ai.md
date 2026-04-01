@@ -7,16 +7,34 @@
 [[ai video]]
 [[ai agents]]
 [[ai payed]]
-[[ai research]]
 
 
 [[claude desktop]]
 [[zunda]]
 
+[[voice agent]]
+
+
+
+pi
+[badlogic/pi-mono](https://github.com/badlogic/pi-mono?tab=readme-ov-file)
+- [What I learned building an opinionated and minimal coding agent](https://mariozechner.at/posts/2025-11-30-pi-coding-agent/)
+- [steipete/mcporter](https://github.com/steipete/mcporter)
+- [badlogic/pi-skills](https://github.com/badlogic/pi-skills)
+- [badlogic/doppelgangers](https://github.com/badlogic/doppelgangers)
+- [pasky/pi-amplike](https://github.com/pasky/pi-amplike)
+- [mikeyobrien/rho](https://github.com/mikeyobrien/rho)
+- [rcarmo/piclaw](https://github.com/rcarmo/piclaw)
+- [Packages - pi.dev](https://pi.dev/packages)
+- [qualisero/awesome-pi-agent](https://github.com/qualisero/awesome-pi-agent)
+
 
 ---
 
-
+[Forging a Workflow: Agentic Engineering in Practice | Martin Gratzer](https://mgratzer.com/posts/forging-a-workflow/)
+[badlogic/sitegeist](https://github.com/badlogic/sitegeist)
+[Anil-matcha/Open-Higgsfield-AI](https://github.com/Anil-matcha/Open-Higgsfield-AI)
+[nicobailon/visual-explainer](https://github.com/nicobailon/visual-explainer)
 
 
 [Best Remotion Alternatives in 2026 | Coding Motion Graphic is Coming? : r/VideoEditingTips](https://www.reddit.com/r/VideoEditingTips/comments/1rabobl/best_remotion_alternatives_in_2026_coding_motion/)
@@ -92,15 +110,6 @@ openclaw
 [cloudflare/moltworker](https://github.com/cloudflare/moltworker)
 [moltbook - the front page of the agent internet](https://www.moltbook.com/)
 [vercel-labs/dev3000](https://github.com/vercel-labs/dev3000)
-
-
-pi
-[badlogic/pi-mono](https://github.com/badlogic/pi-mono?tab=readme-ov-file)
-- [What I learned building an opinionated and minimal coding agent](https://mariozechner.at/posts/2025-11-30-pi-coding-agent/)
-- [steipete/mcporter](https://github.com/steipete/mcporter)
-- [badlogic/pi-skills](https://github.com/badlogic/pi-skills)
-- [badlogic/doppelgangers](https://github.com/badlogic/doppelgangers)
-- [pasky/pi-amplike](https://github.com/pasky/pi-amplike)
 
 
 
