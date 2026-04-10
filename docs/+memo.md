@@ -13,6 +13,7 @@ deepwiki video
 deepwiki cli
 sitegeist
 
+シプセンチ
 
 
 
