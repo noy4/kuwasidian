@@ -8,19 +8,19 @@
 - [[Cline のセットアップ]]
 
 ## 使うもの
-- [プロンプト（AIへの指示文）](./prompt.md) - 原文：https://raw.githubusercontent.com/noy4/kuwasidian/main/docs/monthly-reports/prompt.md
+- [プロンプト（AIへの指示文）](./prompt.md) - 原文：https://raw.githubusercontent.com/noy4/kuwasidian/main/docs/monthly-reports/monthly-report-prompt.md
 
 ## 手順
 Cline のチャットに以下のように入力する。
 
 ### 例1）先月分のレポートを作成
 ```sh
-@https://raw.githubusercontent.com/noy4/kuwasidian/main/docs/monthly-reports/prompt.md
+@https://raw.githubusercontent.com/noy4/kuwasidian/main/docs/monthly-reports/monthly-report-prompt.md
 ```
 
 ### 例2）パラメータを指定して作成
 ```sh
-@https://raw.githubusercontent.com/noy4/kuwasidian/main/docs/monthly-reports/prompt.md
+@https://raw.githubusercontent.com/noy4/kuwasidian/main/docs/monthly-reports/monthly-report-prompt.md
 
 browser: Safari
 month: 2月
