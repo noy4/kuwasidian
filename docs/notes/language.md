@@ -1,3 +1,8 @@
+
+Korean
+- [1分30秒でハングルが読めるようになる神動画 - YouTube](https://www.youtube.com/watch?v=8Za8QZCQQ4k)
+- [1番簡単で覚えやすいカナダラソング(ハングルソング) 가나다라 한글송 韓国語の文字の覚え方 - YouTube](https://www.youtube.com/watch?v=J5fv2Ei6L9g)
+
 # 言語学習について
 
 - [Learn ANY Language Fast For The Rest of Your Life - YouTube](https://www.youtube.com/watch?v=4IRTuL93RJw)

@@ -15,6 +15,9 @@
 [[voice agent]]
 
 
+[vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser)
+- [agent-browser/skill-data/electron/SKILL.md](https://github.com/vercel-labs/agent-browser/blob/b02e485a37e60a9a564d8cf57a4f82ec06bddd4f/skill-data/electron/SKILL.md?plain=1#L32)
+
 
 pi
 [badlogic/pi-mono](https://github.com/badlogic/pi-mono?tab=readme-ov-file)
@@ -30,6 +33,8 @@ pi
 
 
 ---
+
+[Aqua Voice - Fast and Accurate Voice Dictation for Mac and Windows](https://aquavoice.com/)
 
 [Forging a Workflow: Agentic Engineering in Practice | Martin Gratzer](https://mgratzer.com/posts/forging-a-workflow/)
 [badlogic/sitegeist](https://github.com/badlogic/sitegeist)
@@ -74,6 +79,8 @@ video
 
 [Maartenlouis/elevenlabs-remotion-skill](https://github.com/maartenlouis/elevenlabs-remotion-skill)
 [Maartenlouis/remotion-ads](https://github.com/Maartenlouis/remotion-ads)
+
+[heygen-com/hyperframes](https://github.com/heygen-com/hyperframes)
 
 
 util

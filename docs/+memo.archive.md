@@ -1,5 +1,31 @@
 
+pimsleur lessons prompt
+タバコ
+ガソリン
+[heygen-com/hyperframes](https://github.com/heygen-com/hyperframes)
+agent-browser vscode
 
+- After running a bash command, stay silent — only respond if there is an error.
+
+[Anchor links copied from project READMEs now add a `?tab=readme-ov-file` query parameter, making them harder to read · community · Discussion #70577](https://github.com/orgs/community/discussions/70577)
+
+[altic-dev/PeekX](https://github.com/altic-dev/PeekX)
+[sbarex/QLMarkdown](https://github.com/sbarex/QLMarkdown)
+
+[momenbasel/PureMac](https://github.com/momenbasel/PureMac)
+
+[自給自足の農地を探し回りました！役立つ地図サイトと調査のポイントを紹介。交渉の結果は‥‥^_^; - YouTube](https://www.youtube.com/watch?v=a-E_--0QJpU)
+
+2.16
+100,000
+216,000
+
+2.65
+
+18850
+
+pimsleur anki
+シプセンチ
 ダーティンギノオ
 yaku map
 

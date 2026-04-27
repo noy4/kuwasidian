@@ -4,7 +4,27 @@ https://my-agent-1w94u5.sandbox.livekit.io/
 [livekit-examples/meet](https://github.com/livekit-examples/meet)
 
 
+[hexgrad/kokoro](https://github.com/hexgrad/kokoro)
+
+
+[Voice Control]
+[openinterpreter/01](https://github.com/OpenInterpreter/01)
+[Interpreter: デスクトップエージェント](https://www.openinterpreter.com/ja#home)
+[BasedHardware/omi](https://github.com/BasedHardware/omi)
+[mediar-ai/fazm](https://github.com/mediar-ai/fazm)
+
+
+[GitHub search: livekit](https://github.com/search?q=livekit&type=repositories&p=4)
+- [livekit-examples/python-agents-examples](https://github.com/livekit-examples/python-agents-examples)
+- [ShayneP/local-voice-ai](https://github.com/ShayneP/local-voice-ai)
+- [mbailey/voicemode](https://github.com/mbailey/voicemode)
+- [AlphaAvatar/AlphaAvatar](https://github.com/AlphaAvatar/AlphaAvatar)
+- [taresh18/conversify](https://github.com/taresh18/conversify)
+
+
 ## LiveKit 採用事例まとめ
+
+[Customers | LiveKit](https://livekit.com/customers)
 
 - **OpenAI (ChatGPT)**: [OpenAI and LiveKit partner to turn Advanced Voice into an API](https://livekit.com/blog/openai-livekit-partnership-advanced-voice-realtime-api) - ChatGPTの「高度な音声モード」を支える技術として採用され、Realtime APIを共同提供。
 - **xAI (Grok)**: [Introducing the Grok Voice Agent API in partnership with xAI](https://livekit.com/blog/xai-livekit-partnership-grok-voice-agent-api) - Grokのリアルタイム音声対話機能を実現するインフラとして採用。
