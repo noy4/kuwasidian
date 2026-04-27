@@ -25,13 +25,13 @@ import QuestClearedIcon from './QuestClearedIcon.vue'
         <h4
           v-if="
             section.dateHeader
-              && quest.date
+              && quest.clearedDate
               && (index === 0
-                || dayjs(quest.date).format('YYYY/MM') !== dayjs(section.items[index - 1]?.date).format('YYYY/MM'))
+                || dayjs(quest.clearedDate).format('YYYY/MM') !== dayjs(section.items[index - 1]?.clearedDate).format('YYYY/MM'))
           "
           class="col-[1/-1] mt-4!"
         >
-          {{ dayjs(quest.date).format('YYYY年M月') }}
+          {{ dayjs(quest.clearedDate).format('YYYY年M月') }}
         </h4>
 
         <!-- Card -->
@@ -49,7 +49,7 @@ import QuestClearedIcon from './QuestClearedIcon.vue'
               {{ quest.objective }}
             </div>
             <template v-if="quest.status === 'cleared'">
-              <QuestClearedIcon :date="quest.date" />
+              <QuestClearedIcon :cleared-date="quest.clearedDate" />
             </template>
             <Badge
               v-if="quest.status === 'active'"

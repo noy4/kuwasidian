@@ -43,14 +43,14 @@ function generateQuestMarkdown(quest: Quest) {
             <script setup>
             import QuestClearedIcon from './QuestClearedIcon.vue'
             </script>
-            <QuestClearedIcon date="${quest.date}" />
+            <QuestClearedIcon clearedDate="${quest.clearedDate}" />
           `
         : ''
     }
 
     ${quest.description}
 
-    <br>
+    ${quest.addedDate ? `<p style="font-size:0.8em;color:var(--vp-c-text-3);margin-top:1.5rem">追加日: ${quest.addedDate}</p>` : ''}
 
     [← クエスト一覧に戻る](/quests/)
   `

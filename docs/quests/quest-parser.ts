@@ -10,7 +10,8 @@ export interface Quest {
   objective?: string
   description?: string
   status?: string
-  date?: string
+  addedDate?: string
+  clearedDate?: string
 }
 
 const statusMap: Record<number, string> = {
@@ -49,24 +50,22 @@ export function parseQuestData(
           const [firstLine, objective, ...rest] = item.split('\n')
           const [icon, ...firstLineRest] = firstLine.split(/\s+/)
           const title = firstLineRest.join(' ')
-          let description = rest.join('\n')
-          let date: string | undefined
-          if (dateHeader) {
-            const date_regex = /^\d{4}\/\d{2}\/\d{2}/m
-            description = description.replace(date_regex, (match) => {
-              date = match
+
+          const fields: Record<string, string> = {}
+          const descRest = rest.join('\n')
+            .replace(/^(\w+): *(\S.*)$/gm, (_, key, value) => {
+              fields[key] = value.trimEnd()
               return ''
             })
-          }
-          description = render?.(description) || description
 
           return {
             icon,
             title,
             objective,
-            description,
+            description: render?.(descRest) || descRest,
             status,
-            date,
+            addedDate: fields.added || fields.cleared,
+            clearedDate: fields.cleared,
           }
         })
 
