@@ -17,8 +17,6 @@
 
 
 東出
-monthly report prompt
 quests
-drive
 
 
