@@ -20,7 +20,6 @@ const statusMap: Record<number, string> = {
   2: 'cleared',
 }
 
-// タイトル\n--- で始まるセクションで分割
 // 1行目：タイトル
 // 2行目：目的
 // 3行目以降：説明
@@ -52,8 +51,9 @@ export function parseQuestData(
           const title = firstLineRest.join(' ')
 
           const fields: Record<string, string> = {}
+          const regex_key_value = /^(\w+): *(\S.*)$/gm
           const descRest = rest.join('\n')
-            .replace(/^(\w+): *(\S.*)$/gm, (_, key, value) => {
+            .replace(regex_key_value, (_, key, value) => {
               fields[key] = value.trimEnd()
               return ''
             })
