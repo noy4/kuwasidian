@@ -7,8 +7,8 @@
 [ベーシックインカムちゃんねる](https://www.youtube.com/@basicincom)
 added: 2025/03/30
 
-## クエスト一覧
-
+クエスト一覧
+---
 
 🪲 甲虫王者は何処
 ヘラクレスオオカブトの捕獲
@@ -91,7 +91,9 @@ added: 2025/06/20
 - 話す：説明、位置関係（解説動画）
 
 
-## Cleared
+クリア済
+---
+
 🗾 地球にDIVE IN
 3D Map を使って何か作る
 [都市履歴 | Kuwasidian Earth](https://kuwasidian.com/earth/city-history/)

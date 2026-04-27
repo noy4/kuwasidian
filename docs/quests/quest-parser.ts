@@ -20,7 +20,7 @@ const statusMap: Record<number, string> = {
   2: 'cleared',
 }
 
-// ## で始まるセクションで分割
+// タイトル\n--- で始まるセクションで分割
 // 1行目：タイトル
 // 2行目：目的
 // 3行目以降：説明
@@ -29,16 +29,16 @@ export function parseQuestData(
   render?: (content: string) => string,
 ): Section[] {
   const sections = src
-    .split(/(?=^##)/m)
+    .split(/(?=^.+\n---$)/m)
     .map((section, sectionIdx) => {
       let sectionTitle = ''
       let sectionContent = section
       const status = statusMap[sectionIdx]
 
-      if (section.startsWith('## ')) {
-        const chunks = section.split('\n')
-        sectionTitle = chunks[0].replace(/^## /, '')
-        sectionContent = chunks.slice(1).join('\n')
+      const chunks = section.split('\n')
+      if (chunks[1]?.trimEnd() === '---') {
+        sectionTitle = chunks[0]
+        sectionContent = chunks.slice(2).join('\n')
       }
 
       const dateHeader = status === 'cleared'
