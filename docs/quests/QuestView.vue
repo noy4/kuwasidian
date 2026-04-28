@@ -29,7 +29,7 @@ function closeDrawer() {
     </div>
 
     <!-- Section items -->
-    <div class="grid sm:cols-2 gap-2 mt-4">
+    <div class="grid cols-2 sm:cols-3 xl:cols- gap-2 mt-4">
       <template
         v-for="(quest, index) in section.items"
         :key="quest.title"
@@ -53,13 +53,13 @@ function closeDrawer() {
           @click="openDrawer(quest)"
         >
           <div class="relative">
-            <div class="text-6xl pt-3">
+            <div class="text-5xl pt-3">
               {{ quest.icon }}
             </div>
             <div class="mt-3">
               <a
                 :href="withBase(`/quests/${quest.title}`)"
-                class="font-semibold text-lg text-inherit! no-underline! hover:underline!"
+                class="font-semibold! text-sm text-inherit! no-underline! hover:underline!"
                 @click.stop
               >
                 {{ quest.title }}
