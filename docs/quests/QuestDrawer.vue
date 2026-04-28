@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import type { Quest } from './quest.data'
 import dayjs from 'dayjs'
-import { withBase } from 'vitepress'
 import { onMounted, onUnmounted } from 'vue'
 
 const props = defineProps<{
@@ -62,15 +61,15 @@ onUnmounted(() => {
       >
         <div
           v-if="quest"
-          class="quest-drawer-panel relative w-[calc(100%-48px)] max-w-[360px] h-full bg-[var(--vp-c-bg)] border-l border-[var(--vp-c-divider)] p-6 sm:p-8 overflow-y-auto flex flex-col pointer-events-auto"
+          class="quest-drawer-panel relative w-[calc(100%-48px)] max-w-[360px] h-full bg-[var(--vp-c-bg)] border-l border-[var(--vp-c-divider)] overflow-y-auto flex flex-col pointer-events-auto"
         >
           <!-- Header -->
-          <div class="flex items-start gap-4 mb-3">
+          <div class="flex items-start gap-4 mt-6 mb-3 px-4">
             <div class="text-5xl">
               {{ quest.icon }}
             </div>
             <div class="flex-1 min-w-0">
-              <div class="font-semibold text-xl leading-tight">
+              <div class="font-semibold text-l leading-tight">
                 {{ quest.title }}
               </div>
               <div class="text-[var(--vp-c-text-2)] text-sm mt-1">
@@ -78,7 +77,7 @@ onUnmounted(() => {
               </div>
             </div>
             <button
-              class="bg-transparent border-none text-[var(--vp-c-text-2)] text-lg cursor-pointer px-2 py-1 leading-none rounded hover:text-[var(--vp-c-text-1)] hover:bg-[var(--vp-c-bg-alt)] transition-colors shrink-0"
+              class="absolute top-1 right-1 bg-transparent border-none text-[var(--vp-c-text-2)] text-lg cursor-pointer px-2 py-1 leading-none rounded hover:text-[var(--vp-c-text-1)] hover:bg-[var(--vp-c-bg-alt)] transition-colors shrink-0"
               aria-label="閉じる"
               @click="emit('close')"
             >
@@ -87,39 +86,18 @@ onUnmounted(() => {
           </div>
 
           <!-- Badges -->
-          <div class="flex items-center gap-2 mb-5">
+          <div v-if="quest.status === 'active'" class="px-4">
             <Badge v-if="quest.status === 'active'" text="進行中" />
-            <span
-              v-if="quest.status === 'cleared' && quest.clearedDate"
-              class="text-[var(--vp-c-text-2)] text-xs"
-            >
-              ✅ {{ dayjs(quest.clearedDate).format('YYYY年M月D日') }} クリア
-            </span>
           </div>
 
           <!-- Description -->
           <div
-            v-if="quest.description"
-            class="flex-1 text-[0.9rem] bg-[var(--vp-c-bg-alt)] border-0.5 border-[var(--vp-c-divider)] rounded-lg p-4 sm:px-5 leading-[1.75]"
+            class="flex-1 text-[0.9rem] bg-[var(--vp-c-bg-alt)] border-0.5 border-[var(--vp-c-divider)] rounded-lg mx-4 my-3 p-4 sm:px-5 leading-[1.75]"
           >
             <div
               class="prose [&>*:first-child]:mt-0 [&>*:last-child]:mb-0"
               v-html="quest.description"
             />
-          </div>
-          <div v-else class="text-[var(--vp-c-text-3)] text-sm">
-            説明なし
-          </div>
-
-          <!-- Link -->
-          <div class="mt-6">
-            <a
-              :href="withBase(`/quests/${quest.title}`)"
-              class="inline-block px-5 py-2 bg-[var(--vp-c-brand-1)] text-white! rounded-md text-[0.9rem] font-medium decoration-none! transition-colors hover:bg(--vp-c-brand-2)"
-              @click="emit('close')"
-            >
-              クエストページへ →
-            </a>
           </div>
         </div>
       </Transition>

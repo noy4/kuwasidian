@@ -69,7 +69,10 @@ function closeDrawer() {
               {{ quest.objective }}
             </div>
             <template v-if="quest.status === 'cleared'">
-              <QuestClearedIcon :cleared-date="quest.clearedDate" />
+              <QuestClearedIcon
+                :cleared-date="quest.clearedDate"
+                class="w-20!"
+              />
             </template>
             <Badge
               v-if="quest.status === 'active'"

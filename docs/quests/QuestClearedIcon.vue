@@ -5,14 +5,18 @@ defineProps<{ clearedDate?: string }>()
 </script>
 
 <template>
-  <img
-    src="/quest_cleared.png"
-    class="absolute top-0 right-0 w-30"
-  >
-  <span
-    v-if="clearedDate"
-    class="absolute top-24 right-0 font-serif"
-  >
-    {{ dayjs(clearedDate).format('YYYY.M.D') }}
-  </span>
+  <div class="absolute top-0 right-0 w-30 pointer-events-none">
+    <div class="relative">
+      <img
+        src="/quest_cleared.png"
+        class="w-full"
+      >
+      <span
+        v-if="clearedDate"
+        class="absolute top-[calc(100%-14px)] right-2 font-serif text-sm"
+      >
+        {{ dayjs(clearedDate).format('YYYY.M.D') }}
+      </span>
+    </div>
+  </div>
 </template>
