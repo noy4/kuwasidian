@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { Quest } from './quest.data'
-import dayjs from 'dayjs'
 import { onMounted, onUnmounted } from 'vue'
+import QuestClearedIcon from './QuestClearedIcon.vue'
 
 const props = defineProps<{
   quest: Quest | null
@@ -89,6 +89,12 @@ onUnmounted(() => {
           <div v-if="quest.status === 'active'" class="px-4">
             <Badge v-if="quest.status === 'active'" text="進行中" />
           </div>
+          <template v-if="quest.status === 'cleared'">
+            <QuestClearedIcon
+              :cleared-date="quest.clearedDate"
+              class="w-24! absolute right-4!"
+            />
+          </template>
 
           <!-- Description -->
           <div
