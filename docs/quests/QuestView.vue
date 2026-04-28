@@ -1,8 +1,21 @@
 <script setup lang="ts">
+import type { Quest } from './quest.data'
 import dayjs from 'dayjs'
 import { withBase } from 'vitepress'
+import { ref } from 'vue'
 import { data as sections } from './quest.data'
 import QuestClearedIcon from './QuestClearedIcon.vue'
+import QuestDrawer from './QuestDrawer.vue'
+
+const selectedQuest = ref<Quest | null>(null)
+
+function openDrawer(quest: Quest) {
+  selectedQuest.value = quest
+}
+
+function closeDrawer() {
+  selectedQuest.value = null
+}
 </script>
 
 <template>
@@ -36,15 +49,22 @@ import QuestClearedIcon from './QuestClearedIcon.vue'
 
         <!-- Card -->
         <div
-          class="p-4 bg-[var(--vp-c-bg-alt)] border-0.5 border-[var(--vp-c-divider)] rounded-lg flex flex-col gap-4"
+          class="quest-card p-4 bg-[var(--vp-c-bg-alt)] border-0.5 border-[var(--vp-c-divider)] rounded-lg flex flex-col gap-4 cursor-pointer hover:border-[var(--vp-c-brand-1)] transition-colors"
+          @click="openDrawer(quest)"
         >
           <div class="relative">
             <div class="text-6xl pt-3">
               {{ quest.icon }}
             </div>
-            <a :href="withBase(`/quests/${quest.title}`)" class="font-semibold text-lg mt-3 decoration-none! block text-inherit!">
-              {{ quest.title }}
-            </a>
+            <div class="mt-3">
+              <a
+                :href="withBase(`/quests/${quest.title}`)"
+                class="font-semibold text-lg text-inherit! no-underline! hover:underline!"
+                @click.stop
+              >
+                {{ quest.title }}
+              </a>
+            </div>
             <div class="text-[var(--vp-c-text-2)] text-xs mt-1">
               {{ quest.objective }}
             </div>
@@ -57,14 +77,10 @@ import QuestClearedIcon from './QuestClearedIcon.vue'
               class="absolute top-0 right-0"
             />
           </div>
-          <div
-            v-if="quest.description"
-            class="flex-1 text-sm bg-[var(--vp-c-bg)] border-0.5 border-[var(--vp-c-divider)] px-4 rounded-lg"
-          >
-            <div v-html="quest.description" />
-          </div>
         </div>
       </template>
     </div>
   </div>
+
+  <QuestDrawer :quest="selectedQuest" @close="closeDrawer" />
 </template>
