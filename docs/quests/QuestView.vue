@@ -69,7 +69,7 @@ function closeDrawer() {
             <div class="text-[var(--vp-c-text-2)] text-xs mt-1">
               {{ quest.objective }}
             </div>
-            <template v-if="quest.status === 'cleared'">
+            <template v-if="quest.clearedDate">
               <QuestClearedIcon
                 :cleared-date="quest.clearedDate"
                 class="w-20!"

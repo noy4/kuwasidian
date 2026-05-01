@@ -18,6 +18,7 @@ export interface Section {
 }
 
 export interface Quest {
+  [key: string]: string | undefined
   icon?: string
   title: string
   objective?: string
@@ -28,7 +29,7 @@ export interface Quest {
 }
 
 const statusMap: Record<number, string> = {
-  0: 'active',
+  0: 'upcoming',
   1: 'open',
   2: 'archived',
   3: 'cleared',
@@ -114,8 +115,8 @@ function parseQuestBlock(
     title,
     objective,
     description: render?.(description) || description,
-    status,
     addedDate: metadata.added || defaultMeta,
     clearedDate: metadata.cleared,
+    ...metadata,
   }
 }
