@@ -3,13 +3,13 @@
 // **Example**:
 // Quests {hidden: true}
 // ---
-// - 🎙️ Chant; Research voice-controlled PC; Make PC operation a language learning opportunity; 2026/04/28, cleared: 2026/04/29
+// - 🎙️ Chant; Research voice-controlled PC; Make PC operation a language learning opportunity; 2026/04/28; cleared: 2026/04/29
 //
 // **Rules**:
-// Sections: H2 (title followed by `-` line). Optional props: `Title {key: value; ...}`
-// Quests: `- icon + title; objective; description; metadata`. Starts with '- ', semicolon-delimited, can span multiple lines.
+// Sections: Delimited by H2 (title followed by `-` line). Optional props: `Title {key: value; ...}`
+// Quests: `- icon + title; objective; description; ...metadata`. Starts with '- ', semicolon-delimited, can span multiple lines.
 // Escape: Use `\-` for description lines starting with `-`.
-// Metadata: bare date = added, `cleared: YYYY/MM/DD` = cleared
+// Metadata: `key: value`. Exception: added date doesn't need key. (e.g. `2026/04/28`)
 
 export interface Section {
   title: string
@@ -90,15 +90,11 @@ function parseQuestBlock(
   status: string,
   render?: (content: string) => string,
 ): Quest {
-  // handle escaped hyphens
-  const unescapedBlock = block.replaceAll('\\-', '-')
-  const [
-    titlePart,
-    objective,
-    description = '',
-    metaStr = '',
-  ] = unescapedBlock.split(';')
+  const parts = block
+    .replaceAll('\\-', '-') // handle escaped hyphens
+    .split(';')
     .map(p => p.trim())
+  const [titlePart, objective, description = '', ...metaParts] = parts
 
   // get icon and title
   const iconTitle = (titlePart || '').replace(/^- /, '')
@@ -107,7 +103,6 @@ function parseQuestBlock(
 
   // parse metadata
   let defaultMeta: string | undefined
-  const metaParts = metaStr.split(',').map(p => p.trim())
   const metadata: Record<string, string> = {}
   for (const part of metaParts) {
     const regex_key_value = /^(\w+):\s*(\S.*)$/
