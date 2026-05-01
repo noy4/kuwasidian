@@ -87,14 +87,13 @@ onUnmounted(() => {
 
           <!-- Badges -->
           <div v-if="quest.status === 'active'" class="px-4">
-            <Badge v-if="quest.status === 'active'" text="進行中" />
+            <Badge text="進行中" />
           </div>
-          <template v-if="quest.status === 'cleared'">
-            <QuestClearedIcon
-              :cleared-date="quest.clearedDate"
-              class="w-24! absolute right-4!"
-            />
-          </template>
+          <QuestClearedIcon
+            v-if="quest.cleared"
+            :cleared-date="quest.cleared"
+            class="w-24! absolute right-4!"
+          />
 
           <!-- Description -->
           <div
