@@ -1,23 +1,15 @@
-// Structure: sections separated by H2 (hyphen-style; title followed by `-` line),
-// quests separated by lines starting with `- `
+// Quest Format
 //
-// Section title
+// **Example**:
+// Quests {hidden: true}
 // ---
-// - icon + title; objective; description; metadata
+// - 🎙️ Chant; Research voice-controlled PC; Make PC operation a language learning opportunity; 2026/04/28, cleared: 2026/04/29
 //
-// Section title can include props in curly braces:
-// Archive {hidden: true}
-//
-// Quest format (semicolon-delimited):
-// - 0: icon (emoji) + title
-// - 1: objective
-// - 2: description (can be multiline)
-// - 3: metadata (comma-delimited) — bare date for added, "cleared: YYYY/MM/DD" for cleared
-//
-// Example:
-// - 🎙️ Chant; Voice-controlled PC operation research; Make PC operation a language learning opportunity; 2026/04/28
-//
-// Escape literal hyphens in descriptions with backslash: \-
+// **Rules**:
+// Sections: H2 (title followed by `-` line). Optional props: `Title {key: value; ...}`
+// Quests: `- icon + title; objective; description; metadata`. Starts with '- ', semicolon-delimited, can span multiple lines.
+// Escape: Use `\-` for description lines starting with `-`.
+// Metadata: bare date = added, `cleared: YYYY/MM/DD` = cleared
 
 export interface Section {
   title: string
