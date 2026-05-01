@@ -20,6 +20,7 @@ export interface Section {
   title: string
   items: Quest[]
   dateHeader?: boolean
+  props: Record<string, string>
 }
 
 export interface Quest {
@@ -35,7 +36,8 @@ export interface Quest {
 const statusMap: Record<number, string> = {
   0: 'active',
   1: 'open',
-  2: 'cleared',
+  2: 'archived',
+  3: 'cleared',
 }
 
 export function parseQuestData(
@@ -50,12 +52,27 @@ export function parseQuestData(
       let sectionTitle = ''
       let sectionContent = section
       const status = statusMap[sectionIdx]
+      const props: Record<string, string> = {}
 
       // get section title
       const chunks = section.split('\n')
+
+      // check if has title
       if (chunks[1]?.match(/^-+$/)) {
-        sectionTitle = chunks[0]
-        sectionContent = chunks.slice(2).join('\n')
+        const [titleLine, _underline, ...contentLines] = chunks
+        const regex_section_title_props = /^([^{]+)(?:\{([^}]+)\})?$/
+        const [, rawTitle = '', rawProps] = titleLine.match(regex_section_title_props) || []
+        sectionTitle = rawTitle.trim()
+
+        // parse section props
+        if (rawProps) {
+          for (const pair of rawProps.split(';')) {
+            const [key, value] = pair.split(':').map(s => s.trim())
+            if (key && value)
+              props[key] = value
+          }
+        }
+        sectionContent = contentLines.join('\n')
       }
 
       // parse quest blocks (- separated)
@@ -67,6 +84,7 @@ export function parseQuestData(
         title: sectionTitle,
         items: blocks.map(block => parseQuestBlock(block, status, render)),
         dateHeader: status === 'cleared',
+        props,
       }
     })
   return sections

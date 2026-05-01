@@ -7,6 +7,7 @@ import { data as sections } from './quest.data'
 import QuestClearedIcon from './QuestClearedIcon.vue'
 import QuestDrawer from './QuestDrawer.vue'
 
+const visibleSections = sections.filter(s => s.props.hidden !== 'true')
 const selectedQuest = ref<Quest | null>(null)
 
 function openDrawer(quest: Quest) {
@@ -19,7 +20,7 @@ function closeDrawer() {
 </script>
 
 <template>
-  <div v-for="section in sections" :key="section.title">
+  <div v-for="section in visibleSections" :key="section.title">
     <!-- Section title -->
     <div
       v-if="section.title"
