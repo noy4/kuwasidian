@@ -5,6 +5,9 @@
 // ---
 // - icon + title; objective; description; metadata
 //
+// Section title can include props in curly braces:
+// Archive {hidden: true}
+//
 // Quest format (semicolon-delimited):
 // - 0: icon (emoji) + title
 // - 1: objective
