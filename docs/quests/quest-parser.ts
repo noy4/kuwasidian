@@ -6,9 +6,9 @@
 // - 🎙️ Chant; Research voice-controlled PC; Make PC operation a language learning opportunity; 2026/04/28; cleared: 2026/04/29
 //
 // **Rules**:
-// Sections: Delimited by H2 (title followed by `-` line). Optional props: `Title {key: value; ...}`
-// Quests: `- icon + title; objective; description; ...metadata`. Starts with '- ', semicolon-delimited, can span multiple lines.
-// Metadata: `key: value` pairs. Bare dates are treated as added date.
+// - Sections: Delimited by H2 (title followed by `-` line). Optional props: `Title {key: value; ...}`
+// - Quests: `- icon + title; objective; description; ...metadata`. Starts with '- ', semicolon-delimited, can span multiple lines.
+// - Metadata: `key: value` pairs. Bare dates are treated as added date.
 
 export interface Section {
   title: string
