@@ -1,4 +1,5 @@
 
+どのようにクエストの塊を判別できるか
 add created_at
 drive
 monthly report prompt

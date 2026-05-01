@@ -7,6 +7,7 @@
 [[github url hacks]]
 
 [Submarine Cable Map](https://www.submarinecablemap.com/)
+[MarineTraffic: Global Ship Tracking Intelligence | AIS Marine Traffic](https://www.marinetraffic.com/jp/ais/home/centerx:139.0/centery:36.0/zoom:7)
 
 sunburst
 Circle Packing
