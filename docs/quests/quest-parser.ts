@@ -1,3 +1,21 @@
+// Structure: sections separated by H2 (hyphen-style; title followed by `-` line),
+// quests separated by lines starting with `- `
+//
+// Section title
+// ---
+// - icon + title; objective; description; metadata
+//
+// Quest format (semicolon-delimited):
+// - 0: icon (emoji) + title
+// - 1: objective
+// - 2: description (can be multiline)
+// - 3: metadata (comma-delimited) — bare date for added, "cleared: YYYY/MM/DD" for cleared
+//
+// Example:
+// - 🎙️ Chant; Voice-controlled PC operation research; Make PC operation a language learning opportunity; 2026/04/28
+//
+// Escape literal hyphens in descriptions with backslash: \-
+
 export interface Section {
   title: string
   items: Quest[]
@@ -18,53 +36,6 @@ const statusMap: Record<number, string> = {
   0: 'active',
   1: 'open',
   2: 'cleared',
-}
-
-function unescape(s: string): string {
-  return s.replaceAll('\\-', '-')
-}
-
-function parseBlock(
-  block: string,
-  status: string,
-  render?: (content: string) => string,
-): Quest {
-  const escapedBlock = unescape(block)
-  const [
-    titlePart,
-    objective,
-    description = '',
-    metaStr = '',
-  ] = escapedBlock.split(';')
-    .map(p => p.trim())
-
-  // get icon and title
-  const iconTitle = (titlePart || '').replace(/^- /, '')
-  const regex_icon_title = /^(\S+)\s+(\S.*)$/
-  const [, icon, title] = iconTitle.match(regex_icon_title) || []
-
-  // parse metadata
-  let defaultMeta: string | undefined
-  const metaParts = metaStr.split(',').map(p => p.trim())
-  const metadata: Record<string, string> = {}
-  for (const part of metaParts) {
-    const regex_key_value = /^(\w+):\s*(\S.*)$/
-    const kv = part.match(regex_key_value)
-    if (kv)
-      metadata[kv[1]] = kv[2].trim()
-    else
-      defaultMeta = part
-  }
-
-  return {
-    icon,
-    title,
-    objective,
-    description: render?.(description) || description,
-    status,
-    addedDate: metadata.added || defaultMeta,
-    clearedDate: metadata.cleared,
-  }
 }
 
 export function parseQuestData(
@@ -94,9 +65,53 @@ export function parseQuestData(
 
       return {
         title: sectionTitle,
-        items: blocks.map(block => parseBlock(block, status, render)),
+        items: blocks.map(block => parseQuestBlock(block, status, render)),
         dateHeader: status === 'cleared',
       }
     })
   return sections
+}
+
+function parseQuestBlock(
+  block: string,
+  status: string,
+  render?: (content: string) => string,
+): Quest {
+  // handle escaped hyphens
+  const unescapedBlock = block.replaceAll('\\-', '-')
+  const [
+    titlePart,
+    objective,
+    description = '',
+    metaStr = '',
+  ] = unescapedBlock.split(';')
+    .map(p => p.trim())
+
+  // get icon and title
+  const iconTitle = (titlePart || '').replace(/^- /, '')
+  const regex_icon_title = /^(\S+)\s+(\S.*)$/
+  const [, icon, title] = iconTitle.match(regex_icon_title) || []
+
+  // parse metadata
+  let defaultMeta: string | undefined
+  const metaParts = metaStr.split(',').map(p => p.trim())
+  const metadata: Record<string, string> = {}
+  for (const part of metaParts) {
+    const regex_key_value = /^(\w+):\s*(\S.*)$/
+    const kv = part.match(regex_key_value)
+    if (kv)
+      metadata[kv[1]] = kv[2].trim()
+    else
+      defaultMeta = part
+  }
+
+  return {
+    icon,
+    title,
+    objective,
+    description: render?.(description) || description,
+    status,
+    addedDate: metadata.added || defaultMeta,
+    clearedDate: metadata.cleared,
+  }
 }
