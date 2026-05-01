@@ -8,7 +8,6 @@
 // **Rules**:
 // Sections: Delimited by H2 (title followed by `-` line). Optional props: `Title {key: value; ...}`
 // Quests: `- icon + title; objective; description; ...metadata`. Starts with '- ', semicolon-delimited, can span multiple lines.
-// Escape: Use `\-` for description lines starting with `-`.
 // Metadata: `key: value`. Exception: added date doesn't need key. (e.g. `2026/04/28`)
 
 export interface Section {
@@ -70,9 +69,9 @@ export function parseQuestData(
         sectionContent = contentLines.join('\n')
       }
 
-      // parse quest blocks (- separated)
+      // parse quest blocks (- separated, only lines with ; are new quests)
       const blocks = sectionContent.trim()
-        .split(/(?=^- )/m)
+        .split(/(?=^- .*;)/m)
         .filter(b => b.trim())
 
       return {
@@ -90,10 +89,7 @@ function parseQuestBlock(
   status: string,
   render?: (content: string) => string,
 ): Quest {
-  const parts = block
-    .replaceAll('\\-', '-') // handle escaped hyphens
-    .split(';')
-    .map(p => p.trim())
+  const parts = block.split(';').map(p => p.trim())
   const [titlePart, objective, description = '', ...metaParts] = parts
 
   // get icon and title
