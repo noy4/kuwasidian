@@ -7,7 +7,7 @@ import { data as sections } from './quest.data'
 import QuestClearedIcon from './QuestClearedIcon.vue'
 import QuestDrawer from './QuestDrawer.vue'
 
-const visibleSections = sections.filter(s => s.props.hidden !== 'true')
+const visibleSections = sections.filter(s => s.hidden !== 'true')
 const selectedQuest = ref<Quest | null>(null)
 
 function openDrawer(quest: Quest) {

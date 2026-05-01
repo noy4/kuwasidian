@@ -13,12 +13,10 @@
 export interface Section {
   title: string
   items: Quest[]
-  dateHeader?: boolean
-  props: Record<string, string>
+  [key: string]: string | Quest[] | undefined
 }
 
 export interface Quest {
-  [key: string]: string | undefined
   icon?: string
   title: string
   objective?: string
@@ -26,13 +24,7 @@ export interface Quest {
   status?: string
   addedDate?: string
   clearedDate?: string
-}
-
-const statusMap: Record<number, string> = {
-  0: 'upcoming',
-  1: 'open',
-  2: 'archived',
-  3: 'cleared',
+  [key: string]: string | undefined
 }
 
 export function parseQuestData(
@@ -43,10 +35,9 @@ export function parseQuestData(
     // split by section title
     .split(/(?=^.+\n-+$)/m)
     .filter(s => s.trim())
-    .map((section, sectionIdx) => {
+    .map((section) => {
       let sectionTitle = ''
       let sectionContent = section
-      const status = statusMap[sectionIdx]
       const props: Record<string, string> = {}
 
       // get section title
@@ -77,9 +68,8 @@ export function parseQuestData(
 
       return {
         title: sectionTitle,
-        items: blocks.map(block => parseQuestBlock(block, status, render)),
-        dateHeader: status === 'cleared',
-        props,
+        items: blocks.map(block => parseQuestBlock(block, render)),
+        ...props,
       }
     })
   return sections
@@ -87,7 +77,6 @@ export function parseQuestData(
 
 function parseQuestBlock(
   block: string,
-  status: string,
   render?: (content: string) => string,
 ): Quest {
   const parts = block.split(';').map(p => p.trim())

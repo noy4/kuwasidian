@@ -44,7 +44,7 @@
   - 話す：説明、位置関係（解説動画）; 2025/06/20
 
 
-クリア済
+クリア済 {dateHeader: cleared}
 ---
 - 🗾 地球にDIVE IN; 3D Map を使って何か作る; [都市履歴 | Kuwasidian Earth](https://kuwasidian.com/earth/city-history/); cleared: 2025/07/08
 - 🎹 洋琴・ハ長調・易シ; 「♪ピアノがこんな簡単だなんて知らなかったんだ」の作成; [[ピアノがこんな簡単だなんて知らなかったんだ]]; cleared: 2025/07/07
