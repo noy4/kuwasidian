@@ -29,6 +29,8 @@ export default defineRoutes({
 })
 
 function generateQuestMarkdown(quest: Quest) {
+  const addedDate = quest.added || quest.cleared
+
   return dedent`
     ---
     status: ${quest.status}
@@ -38,19 +40,19 @@ function generateQuestMarkdown(quest: Quest) {
 
     ${quest.objective}
 
-    ${quest.status === 'cleared'
+    ${quest.cleared
         ? dedent`
             <script setup>
             import QuestClearedIcon from './QuestClearedIcon.vue'
             </script>
-            <QuestClearedIcon clearedDate="${quest.clearedDate}" />
+            <QuestClearedIcon cleared-date="${quest.cleared}" />
           `
         : ''
     }
 
     ${quest.description}
 
-    ${quest.addedDate ? `<p style="font-size:0.8em;color:var(--vp-c-text-3);margin-top:1.5rem">追加日: ${quest.addedDate}</p>` : ''}
+    ${addedDate ? `<p style="font-size:0.8em;color:var(--vp-c-text-3);margin-top:1.5rem">追加日: ${addedDate}</p>` : ''}
 
     [← クエスト一覧に戻る](/quests/)
   `

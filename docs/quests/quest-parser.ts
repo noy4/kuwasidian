@@ -21,9 +21,10 @@ export interface Quest {
   title: string
   objective?: string
   description?: string
+  // Optional metadata fields
   status?: string
-  addedDate?: string
-  clearedDate?: string
+  added?: string
+  cleared?: string
   [key: string]: string | undefined
 }
 
@@ -104,8 +105,7 @@ function parseQuestBlock(
     title,
     objective,
     description: render?.(description) || description,
-    addedDate: metadata.added || defaultMeta,
-    clearedDate: metadata.cleared,
     ...metadata,
+    added: metadata.added || defaultMeta,
   }
 }

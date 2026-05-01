@@ -39,13 +39,13 @@ function closeDrawer() {
         <h4
           v-if="
             section.dateHeader
-              && quest.clearedDate
+              && quest.cleared
               && (index === 0
-                || dayjs(quest.clearedDate).format('YYYY/MM') !== dayjs(section.items[index - 1]?.clearedDate).format('YYYY/MM'))
+                || dayjs(quest.cleared).format('YYYY/MM') !== dayjs(section.items[index - 1]?.cleared).format('YYYY/MM'))
           "
           class="col-[1/-1] mt-4!"
         >
-          {{ dayjs(quest.clearedDate).format('YYYY年M月') }}
+          {{ dayjs(quest.cleared).format('YYYY年M月') }}
         </h4>
 
         <!-- Card -->
@@ -69,12 +69,11 @@ function closeDrawer() {
             <div class="text-[var(--vp-c-text-2)] text-xs mt-1">
               {{ quest.objective }}
             </div>
-            <template v-if="quest.clearedDate">
-              <QuestClearedIcon
-                :cleared-date="quest.clearedDate"
-                class="w-20!"
-              />
-            </template>
+            <QuestClearedIcon
+              v-if="quest.cleared"
+              :cleared-date="quest.cleared"
+              class="w-20!"
+            />
             <Badge
               v-if="quest.status === 'active'"
               text="進行中"
