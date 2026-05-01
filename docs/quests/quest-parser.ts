@@ -8,7 +8,7 @@
 // **Rules**:
 // Sections: Delimited by H2 (title followed by `-` line). Optional props: `Title {key: value; ...}`
 // Quests: `- icon + title; objective; description; ...metadata`. Starts with '- ', semicolon-delimited, can span multiple lines.
-// Metadata: `key: value`. Exception: added date doesn't need key. (e.g. `2026/04/28`)
+// Metadata: `key: value` pairs. Bare dates are treated as added date.
 
 export interface Section {
   title: string
