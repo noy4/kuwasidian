@@ -19,6 +19,8 @@
 東出
 quests
 
+tile width
+date tile
 
 
 - 🌍 大地は語る; 地理勉強、ケッペン英語; 
