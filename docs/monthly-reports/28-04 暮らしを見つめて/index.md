@@ -1,4 +1,4 @@
-# 桑記 28巻4章「」
+# 桑記 28巻4章「暮らしを見つめて」
 2026年4月
 
 <img src='./attachments/mindoro_rice_field.webp' width="200" />
