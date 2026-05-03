@@ -190,7 +190,7 @@ function sidebar(): DefaultTheme.Sidebar {
         { text: '🎁 ほしい物リスト', link: '/me/wish-list' },
         { text: '🎵 各期テーマソング', link: '/me/theme-songs' },
         {
-          text: '📅 月次レポート',
+          text: '📅 桑記（月次レポート）',
           collapsed: true,
           items: autoSidebar('monthly-reports', {
             desc: true,
