@@ -1,6 +1,14 @@
 # 桑記 28巻4章「」
 2026年4月
 
+<img src='./attachments/mindoro_rice_field.webp' width="200" />
+
+🌴 ミンドロ島探訪
+🏯 川越宿滞在
+🚗 免許更新
+🛠️ 母DIY手伝い
+🦌 西条シカ猟見学
+
 ## 検索履歴
 訪問サイト数：1111件（YouTube：134件）
 
