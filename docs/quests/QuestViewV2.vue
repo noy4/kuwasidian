@@ -17,6 +17,18 @@ function openDrawer(quest: Quest) {
 function closeDrawer() {
   selectedQuest.value = null
 }
+
+function getMonthKey(date: string | undefined) {
+  return date ? dayjs(date).format('YYYY/MM') : ''
+}
+
+function findPrevClearedIndex(items: Quest[], currentIndex: number) {
+  for (let i = currentIndex - 1; i >= 0; i--) {
+    if (items[i]?.cleared)
+      return i
+  }
+  return -1
+}
 </script>
 
 <template>
@@ -29,26 +41,21 @@ function closeDrawer() {
       {{ section.title }}
     </div>
 
-    <!-- Section items -->
+    <!-- Section items as flat tile grid -->
     <div class="grid cols-2 sm:cols-3 gap-2 mt-4">
-      <template
-        v-for="(quest, index) in section.items"
-        :key="quest.title"
-      >
-        <!-- Date Header -->
-        <h4
-          v-if="
-            section.dateHeader
-              && quest.cleared
-              && (index === 0
-                || dayjs(quest.cleared).format('YYYY/MM') !== dayjs(section.items[index - 1]?.cleared).format('YYYY/MM'))
-          "
-          class="col-[1/-1] mt-4!"
+      <template v-for="(quest, index) in section.items" :key="quest.title">
+        <!-- Month tile (inserted when month changes) -->
+        <div
+          v-if="quest.cleared && (findPrevClearedIndex(section.items, index) === -1 || getMonthKey(quest.cleared) !== getMonthKey(section.items[findPrevClearedIndex(section.items, index)]?.cleared))"
+          :key="`month-${getMonthKey(quest.cleared)}`"
+          class="month-tile p-4 bg-[var(--vp-c-bg-alt)] border-0.5 border-[var(--vp-c-divider)] rounded-lg flex items-center justify-center"
         >
-          {{ dayjs(quest.cleared).format('YYYY年M月') }}
-        </h4>
+          <span class="text-lg font-semibold">
+            {{ dayjs(quest.cleared).format('YYYY年M月') }}
+          </span>
+        </div>
 
-        <!-- Card -->
+        <!-- Quest tile -->
         <div
           class="quest-card p-4 bg-[var(--vp-c-bg-alt)] border-0.5 border-[var(--vp-c-divider)] rounded-lg flex flex-col gap-4 cursor-pointer hover:border-[var(--vp-c-brand-1)] transition-colors"
           @click="openDrawer(quest)"
