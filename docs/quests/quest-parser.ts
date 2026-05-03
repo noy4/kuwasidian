@@ -10,6 +10,8 @@
 // - Quests: `- icon + title; objective; description; ...metadata`. Starts with '- ', semicolon-delimited, can span multiple lines.
 // - Metadata: `key: value` pairs. Bare dates are treated as added date.
 
+import dedent from 'dedent'
+
 export interface Section {
   title: string
   items: Quest[]
@@ -81,12 +83,16 @@ function parseQuestBlock(
   render?: (content: string) => string,
 ): Quest {
   const parts = block.split(';').map(p => p.trim())
-  const [titlePart, objective, description = '', ...metaParts] = parts
+  const [titlePart, objective, descriptionPart = '', ...metaParts] = parts
 
   // get icon and title
   const iconTitle = (titlePart || '').replace(/^- /, '')
   const regex_icon_title = /^(\S+)\s+(\S.*)$/
   const [, icon, title] = iconTitle.match(regex_icon_title) || []
+
+  // description
+  let description = dedent(descriptionPart)
+  description = render?.(description) || description
 
   // parse metadata
   let defaultMeta: string | undefined
@@ -104,7 +110,7 @@ function parseQuestBlock(
     icon,
     title,
     objective,
-    description: render?.(description) || description,
+    description,
     ...metadata,
     added: metadata.added || defaultMeta,
   }
