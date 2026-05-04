@@ -5,6 +5,9 @@
 
 ---
 
+[牛旅wasabee うしたびワサビィ | にっぽん全国牛旅中！](https://wasabee.co.jp/)
+[愛媛県：統計でみる都道府県のすがた｜社会科調べ学習（しらべがくしゅう）用 統計データ｜株式会社帝国書院](https://www.teikokushoin.co.jp/statistics/prefecture/detail/38/)
+
 大気大循環 Global Atmospheric Circulation
 
 [How Do Oceans Circulate? Crash Course Geography #9 - YouTube](https://www.youtube.com/watch?v=xa6SdvFA3w0) North Pacific Garbage Patch
