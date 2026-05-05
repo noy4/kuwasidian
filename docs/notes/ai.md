@@ -14,6 +14,12 @@
 
 [[voice agent]]
 
+---
+
+
+Accessibility ref
+[steipete/AXorcist](https://github.com/steipete/AXorcist)
+[1amageek/AXUI](https://github.com/1amageek/AXUI)
 
 [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser)
 - [agent-browser/skill-data/electron/SKILL.md](https://github.com/vercel-labs/agent-browser/blob/b02e485a37e60a9a564d8cf57a4f82ec06bddd4f/skill-data/electron/SKILL.md?plain=1#L32)
@@ -30,6 +36,10 @@ pi
 - [rcarmo/piclaw](https://github.com/rcarmo/piclaw)
 - [Packages - pi.dev](https://pi.dev/packages)
 - [qualisero/awesome-pi-agent](https://github.com/qualisero/awesome-pi-agent)
+
+[injaneity/pi-computer-use](https://github.com/injaneity/pi-computer-use)
+[minghinmatthewlam/pi-gui](https://github.com/minghinmatthewlam/pi-gui)
+[Superconductor](https://super.engineering/)
 
 
 ---

@@ -1,4 +1,5 @@
-
+- pi new ui [Xユーザーのsuper.engineeringさん: 「Say hi to Pi, in our brand new UI. Switch between GUI and terminal chat instantly without losing context. https://t.co/JdmXwATz7p」 / X](https://x.com/superdoteng/status/2049163568491188543)
+- pi-gui computer-use [XユーザーのMatthew Lamさん: 「Pi-GUI now has computer use and a build in integrated terminal! v0.1.0-beta.26 To showcase the power of @badlogicgames 's Pi and OSS, I saw a pi computer-use extension on X, asked my agent to audit the extension for security, then asked it to patch pi-gui to make it compatible. https://t.co/HgRYtfYiSu」 / X](https://x.com/mattlam_/status/2048443950457827652)
 - piclaw [XユーザーのRui Carmo ☯️さん: 「People of pi, https://t.co/EfQWdftcq6 is becoming almost as smart as the original: /cc @badlogicgames https://t.co/O550Os61Ny」 / X](https://x.com/rcarmo/status/2027524347653423402)
 - visualizing openclaw [XユーザーのDominik Scholzさん: 「visualizing OpenClaw 🦞🎶 https://t.co/yLi4SkzQ6a」 / X](https://x.com/dom_scholz/status/2020936942901395487)
 - pi > rho [XユーザーのMario Zechnerさん: 「Hidden gem. Give it a looksy.」 / X](https://x.com/badlogicgames/status/2020964088378220984)
