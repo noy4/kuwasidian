@@ -17,9 +17,23 @@
 ---
 
 
+[getpaseo/paseo](https://github.com/getpaseo/paseo)
+
+[fathah/hermes-desktop](https://github.com/fathah/hermes-desktop)
+[NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)
+
+in-memory virtual filesystem
+[vercel-labs/just-bash](https://github.com/vercel-labs/just-bash)
+[vercel-labs/node-vfs-polyfill](https://github.com/vercel-labs/node-vfs-polyfill)
+[tursodatabase/agentfs](https://github.com/tursodatabase/agentfs)
+
+
 Accessibility ref
 [steipete/AXorcist](https://github.com/steipete/AXorcist)
 [1amageek/AXUI](https://github.com/1amageek/AXUI)
+[lahfir/agent-desktop](https://github.com/lahfir/agent-desktop)
+[crowecawcaw/agent-desktop](https://github.com/crowecawcaw/agent-desktop)
+[andelf/axcli](https://github.com/andelf/axcli)
 
 [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser)
 - [agent-browser/skill-data/electron/SKILL.md](https://github.com/vercel-labs/agent-browser/blob/b02e485a37e60a9a564d8cf57a4f82ec06bddd4f/skill-data/electron/SKILL.md?plain=1#L32)
@@ -78,10 +92,6 @@ claw clone
 [qwibitai/nanoclaw](https://github.com/qwibitai/nanoclaw) ts
 [agent0ai/agent-zero](https://github.com/agent0ai/agent-zero) py
 
-
-in-memory virtual filesystem
-[vercel-labs/just-bash](https://github.com/vercel-labs/just-bash)
-[vercel-labs/node-vfs-polyfill](https://github.com/vercel-labs/node-vfs-polyfill)
 
 video
 [Remotion | Make videos programmatically](https://www.remotion.dev/)

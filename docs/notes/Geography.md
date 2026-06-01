@@ -1,9 +1,18 @@
 
 
+[ソラからトラベル / Sorakara Travel Japan - YouTube](https://www.youtube.com/@Sorakarajapan)
+
 [CrashCourse - YouTube](https://www.youtube.com/@crashcourse/playlists)
 - [Geography - YouTube](https://www.youtube.com/playlist?list=PL8dPuuaLjXtO85Sl24rSiVQ93q7vcntNF)
 
+
 ---
+
+[Mapped: Every Country’s Fertility Rate as Births Decline Worldwide](https://www.visualcapitalist.com/mapped-every-countrys-fertility-rate-births-decline/?shem=dsdf%2Csharefoc%2Cagadiscoversdl%2C%2Csh%2Fx%2Fdiscover%2Fm1%2F4)
+[Projected Population Change by Country (2025-2050) - Voronoi](https://www.voronoiapp.com/demographics/Projected-Population-Change-by-Country-2025-2050-8056)
+[日本はまだまだ広い……空港・新幹線からの遠さを可視化したマップが興味深い - やじうまの杜 - 窓の杜](https://forest.watch.impress.co.jp/docs/serial/yajiuma/2073824.html)
+
+[【地理】四国の高低差・凸凹な土地を空から見る【Google Earth】 - YouTube](https://www.youtube.com/watch?v=UONNrEtJzM8)
 
 [牛旅wasabee うしたびワサビィ | にっぽん全国牛旅中！](https://wasabee.co.jp/)
 [愛媛県：統計でみる都道府県のすがた｜社会科調べ学習（しらべがくしゅう）用 統計データ｜株式会社帝国書院](https://www.teikokushoin.co.jp/statistics/prefecture/detail/38/)

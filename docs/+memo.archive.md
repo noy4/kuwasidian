@@ -1,4 +1,105 @@
 
+
+[約600万円のボートで暮らす、25歳のイギリス人女性。毎月15万円以上を節約する | Business Insider Japan](https://www.businessinsider.jp/article/2604-uk-woman-lives-in-narrowboat-saves-money/)
+[【地理】四国の高低差・凸凹な土地を空から見る【Google Earth】 - YouTube](https://www.youtube.com/watch?v=UONNrEtJzM8)
+
+A JavaScript error occurred in the main process
+Uncaught Exception:
+Error: spawn node ENOENT
+at ChildProcess._handle.onexit (node:internal/child_process:285:19)
+at onErrorNT (node:internal/child_process:483:16)
+at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+
+shortcut
+[Rich-Harris/degit](https://github.com/Rich-Harris/degit)
+[shadcn/shadcn-electron-app](https://github.com/shadcn/shadcn-electron-app)
+tinykeys
+
+[[DIY]]
+
+[文明を捨て、自給自足の拠点を築く | オフグリッド・エンジニアリング - YouTube](https://www.youtube.com/watch?v=PBK46NKsEbQ)
+
+fetcher
+browse
+    x finder
+    x recently opened
+    x command palette
+theme default
+
+[Entire Map of Money in 21 Min. - YouTube](https://www.youtube.com/watch?v=mnuOZcmoGD8)
+
+  ctx.timeline.value = initialData.timeline
+  ctx.playbackIndex.value = initialData.timeline.length - 1
+icon ssr
+`@iconify/react` → `@iconify-icon/react`
+seekbar
+[rphlmr/react-router-hono-server](https://github.com/rphlmr/react-router-hono-server)
+dark mode
+node size
+
+```tsx
+import { signal } from '@preact/signals-react'
+
+function createContext() {
+  const count = signal(0)
+  return {
+    count,
+    increment: () => count.value++,
+  }
+}
+
+function App() {
+  const context = useMemo(() => createContext(), [])
+  return <Counter context={context} />
+}
+
+function Counter({ context }) {
+  const { count, increment } = context
+
+  return (
+    <button onClick={increment}>
+      {count.value}
+    </button>
+  )
+}
+```
+
+[【要約】具体と抽象【細谷功】 - YouTube](https://www.youtube.com/watch?v=-DxczGF87XU)
+
+[Animate the evolution of a repository in time · Issue #763 · git-truck/git-truck](https://github.com/git-truck/git-truck/issues/763)
+[Cian2015b.pdf](https://robertominelli.com/assets/downloads/co-supervised-theses/Cian2015b.pdf)
+
+```ts
+// vite.config.js
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import { signalsVite } from "@preact/signals-agent-vite";
+
+export default defineConfig({
+  plugins: [
+    react(),
+    signalsVite({ framework: "react" }),
+  ],
+});
+```
+
+[Signals vite by JoviDeCroock · Pull Request #900 · preactjs/signals](https://github.com/preactjs/signals/pull/900)
+[Release @preact/signals-agent-vite@0.1.1 · preactjs/signals](https://github.com/preactjs/signals/releases/tag/%40preact%2Fsignals-agent-vite%400.1.1)
+[Docs: React Compiler - Vite · Issue #13796 · remix-run/react-router](https://github.com/remix-run/react-router/issues/13796)
+[Installation – React](https://react.dev/learn/react-compiler/installation#usage-with-react-router)
+
+pimsleur anki
+pi agents.md
+github link copy
+root agent.md
+
+[fix: SyntaxError in SSR due to ES2025 `using` keyword not supported by Vite module runner #1036](https://github.com/git-truck/git-truck/issues/1036)
+
+[if war bad... why stocks go up? - YouTube](https://www.youtube.com/watch?v=WCS1bK3KB3U)
+packed square
+anki two button
+korean old character
+
 クエストが更新されました。
 
 実施予定：

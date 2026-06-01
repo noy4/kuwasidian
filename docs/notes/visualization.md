@@ -16,6 +16,10 @@ Circular Treemap
 
 ---
 
+
+[Explore Voronoi by Visual Capitalist: Data-Driven Visual Stories from Top Creators.](https://www.voronoiapp.com/)
+
+
 software city
 [MaibornWolff/codecharta](https://github.com/MaibornWolff/codecharta)
 [cjayawickrema/city-blocks](https://github.com/cjayawickrema/city-blocks)
