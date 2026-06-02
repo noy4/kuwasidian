@@ -36,8 +36,8 @@ inspector
 new object effect
 
 
-raycast ax
 realtime model
 chat view
 
 bun add @livekit/agents@github:livekit/agents-js#main
+
