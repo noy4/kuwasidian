@@ -181,14 +181,10 @@ function transformPageData(pageData: PageData) {
 
 function sidebar(): DefaultTheme.Sidebar {
   return [
-    { text: '✏️ メモ', link: '/' },
-    { text: '⚔️ クエスト', link: '/quests/' },
-    { text: '🔄 最近の更新', link: '/recent-updates/' },
     {
       items: [
-        { text: '💭 生存理念', link: '/me/philosophy-of-life' },
-        { text: '🎁 ほしい物リスト', link: '/me/wish-list' },
-        { text: '🎵 各期テーマソング', link: '/me/theme-songs' },
+        { text: '✏️ メモ', link: '/' },
+        { text: '⚔️ クエスト', link: '/quests/' },
         {
           text: '📅 桑記（月次レポート）',
           collapsed: true,
@@ -206,23 +202,40 @@ function sidebar(): DefaultTheme.Sidebar {
       ],
     },
     {
+      text: 'See more',
+      collapsed: false,
       items: [
         { text: '📄 ブログ', link: '/blog/' },
         { text: '🌏 Earth', link: '/earth/' },
+        { text: '🔄 最近の更新', link: '/recent-updates/' },
         {
-          text: '🤖 プロンプト',
-          collapsed: true,
-          items: autoSidebar('prompts'),
+          text: '👤 自分',
+          items: [
+            { text: '💭 生存理念', link: '/me/philosophy-of-life' },
+            { text: '🎁 ほしい物リスト', link: '/me/wish-list' },
+            { text: '🎵 各期テーマソング', link: '/me/theme-songs' },
+          ],
         },
         {
-          text: '🚀 プロジェクト',
+          text: '📚 書類',
           collapsed: true,
-          items: autoSidebar('projects'),
-        },
-        {
-          text: '📦 アーカイブ',
-          collapsed: true,
-          items: autoSidebar('archives'),
+          items: [
+            {
+              text: '🤖 プロンプト',
+              collapsed: true,
+              items: autoSidebar('prompts'),
+            },
+            {
+              text: '🚀 プロジェクト',
+              collapsed: true,
+              items: autoSidebar('projects'),
+            },
+            {
+              text: '📦 アーカイブ',
+              collapsed: true,
+              items: autoSidebar('archives'),
+            },
+          ],
         },
         {
           text: '🗒️ その他メモ',
