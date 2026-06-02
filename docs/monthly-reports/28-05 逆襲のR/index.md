@@ -7,6 +7,17 @@
 🚚 Git Van（システム開発の建築アニメーション化）開発
 🥤 コンビニ店内調合カフェドリンク購入
 
+## ピックアップ
+
+<div class="thumbnail-tiles">
+  <a href="https://www.youtube.com/watch?v=UONNrEtJzM8" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.youtube.com/vi/UONNrEtJzM8/mqdefault.jpg">
+    <span class="video-title">【地理】四国の高低差・凸凹な土地を空から見る - YouTube</span>
+  </a>
+</div>
+
+四国の各県の地理的特徴を解説する動画。メサ、ビュートって地理で習ったけど香川にもあったのか。。！
+
 ## 検索履歴
 訪問サイト数：1903件（YouTube：146件）
 
