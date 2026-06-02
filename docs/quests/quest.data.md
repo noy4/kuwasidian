@@ -52,6 +52,7 @@
 
 クリア済 {dateHeader: cleared}
 ---
+- 🥤 憧れのモカフラッペ; コンビニ店内調合カフェドリンクの購入;; cleared: 2025/05/13
 - ✈️ 海の向こうで; 海外で働く; フィリピンで働いた。ソフトウェア開発案件。; cleared: 2026/03/31
 - 🗾 地球にDIVE IN; 3D Map を使って何か作る; [都市履歴 | Kuwasidian Earth](https://kuwasidian.com/earth/city-history/); cleared: 2025/07/08
 - 🎹 洋琴・ハ長調・易シ; 「♪ピアノがこんな簡単だなんて知らなかったんだ」の作成; [[ピアノがこんな簡単だなんて知らなかったんだ]]; cleared: 2025/07/07
