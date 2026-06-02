@@ -27,7 +27,6 @@ stock market heatmap, circle packing
 hmr dark mode
 
 
-
 timeline
 inspector
     folder size
@@ -37,30 +36,8 @@ inspector
 new object effect
 
 
-realtime-ptt
-ptt-only
+raycast ax
+realtime model
+chat view
 
-onstartup: ptt-only
-cmd+opt+space: realtime(no-ppt)
-cmd+space
-
-```
-┌─────────────────────────────────────────────┐
-│  Agent Server (dist/main.js)                │
-│                                             │
-│  mode: 'realtime-ptt' | 'ptt-only'          │
-│                                             │
-│  realtime-ptt:                              │
-│    - audio常にenabled                       │
-│    - VAD END_OF_SPEECH → 自動commit         │
-│    - PTT → interrupt + clear + 押し込み中   │
-│                                             │
-│  ptt-only:                                  │
-│    - audio通常disabled                      │
-│    - PTT押下→enable、リリース→commit        │
-│    - VADイベント無視                        │
-│                                             │
-│  RPC: set_mode / start_turn / end_turn      │
-└─────────────────────────────────────────────┘
-```
-
+bun add @livekit/agents@github:livekit/agents-js#main

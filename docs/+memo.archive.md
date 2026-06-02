@@ -1,5 +1,38 @@
 
 
+realtime-ptt
+ptt-only
+
+onstartup: ptt-only
+cmd+opt+space: realtime(no-ppt)
+cmd+space
+
+```
+┌─────────────────────────────────────────────┐
+│  Agent Server (dist/main.js)                │
+│                                             │
+│  mode: 'realtime-ptt' | 'ptt-only'          │
+│                                             │
+│  realtime-ptt:                              │
+│    - audio常にenabled                       │
+│    - VAD END_OF_SPEECH → 自動commit         │
+│    - PTT → interrupt + clear + 押し込み中   │
+│                                             │
+│  ptt-only:                                  │
+│    - audio通常disabled                      │
+│    - PTT押下→enable、リリース→commit        │
+│    - VADイベント無視                        │
+│                                             │
+│  RPC: set_mode / start_turn / end_turn      │
+└─────────────────────────────────────────────┘
+```
+
+
+サクナヒメ
+
+"body":"LLM token credit quota exceeded, category: MaxGatewayCredits, remaining_limit: 0, current_usage: 0, session_id: c40ed88a-5a4b-4722-94ab-a837d280009d, project_id: p_4r5rwj1ld5m, status: QuotaStatusExceeded","retryable":true,"name":"APIStatusError","statusCode":429,"requestId":null},"msg":"failed to generate LLM completion, retrying in 2000ms"}
+
+
 [約600万円のボートで暮らす、25歳のイギリス人女性。毎月15万円以上を節約する | Business Insider Japan](https://www.businessinsider.jp/article/2604-uk-woman-lives-in-narrowboat-saves-money/)
 [【地理】四国の高低差・凸凹な土地を空から見る【Google Earth】 - YouTube](https://www.youtube.com/watch?v=UONNrEtJzM8)
 
