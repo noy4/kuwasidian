@@ -1,5 +1,129 @@
 
+event & message
+realtime save
+[ボカロの歴史 全解説【VOCALOID 20周年】 - YouTube](https://www.youtube.com/watch?v=1RLait3r3M0)
+metrics
+check event
+private repo
+yabai
+usage
+open report
+front message shape
 
+tool message, report
+ui message
+
+event stream
+ui message stream
+message context
+東出
+{
+  visibleFiles: ["agent/src/agent.ts", "core/src/environment.ts"],
+  openTabs: [
+    "electron/src/renderer/src/lib/messages.ts",
+    "electron/src/renderer/src/components/Transcript.tsx",
+    "core/src/environment.ts",
+    "agent/src/agent.ts"
+  ],
+  activeFile: "agent/src/agent.ts"
+}
+
+[[google] RealtimeModel + external VAD: generate_reply() conflicts with activity-based audio flow, STT transcript discarded · Issue #5408 · livekit/agents](https://github.com/livekit/agents/issues/5408)
+tool plan
+check pi, kilo context
+fixed minsize
+collapsed event
+indicator style
+concise tools
+message structure
+history
+usage
+debug
+    log
+settings
+tools
+pi message structure (toolcall, toolresult)
+fix history
+
+**なぜTailwind環境でズレが生じやすかったのか** Tailwindの `zoom-in-95` などのアニメーションクラスと `w-fit` + `border` を組み合わせると、ブラウザのサブピクセルレンダリング時に、ライブラリの初期位置計算値と実際の描画サイズとの間に微小な誤差（1px未満）が生じやすくなります。
+
+[Welcome | React Tooltip](https://react-tooltip.com/)
+[Tooltip · Base UI](https://base-ui.com/react/components/tooltip#api-reference)
+
+[fix: TooltipContent styles for improved visual consistency by abdulhajiyev · Pull Request #7463 · shadcn-ui/ui](https://github.com/shadcn-ui/ui/pull/7463)
+[fix(v4 tooltip): tooltip arrow overlap issue by paaskus · Pull Request #6934 · shadcn-ui/ui](https://github.com/shadcn-ui/ui/pull/6934)
+[Customize arrow for tooltip and popover border · radix-ui/primitives · Discussion #868](https://github.com/radix-ui/primitives/discussions/868)
+icon tab
+
+The `tooltip` component has been added. Remember to wrap your app with the `TooltipProvider` component.
+
+```tsx title="app/layout.tsx"
+import { TooltipProvider } from "@/components/ui/tooltip"
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en">
+      <body>
+        <TooltipProvider>{children}</TooltipProvider>
+      </body>
+    </html>
+  )
+}
+```
+
+chat view
+session toggle
+[Server startup modes | LiveKit Documentation](https://docs.livekit.io/agents/server/startup-modes/)
+web.api handler position
+first mode rpc call
+rpc wait
+dispatch
+
+6/7 Gベイビー
+```ts
+  const animatorState = computed<AgentState>(() => {
+    if (connection.value === ConnectionState.Disconnected) return 'disconnected'
+    if (pttActive.value) return 'thinking'
+    return agentState.value ?? 'initializing'
+  })
+```
+[asmvik/yabai](https://github.com/asmvik/yabai?utm_source=chatgpt.com)
+[fix: resolve fullscreen AX tree retrieval returning ref_count: 0 by noy4 · Pull Request #56 · lahfir/agent-desktop](https://github.com/lahfir/agent-desktop/pull/56#event-26409713255)
+realtime model
+
+あらすじ
+
+中古クロスバイクを求めて出かけた桑。
+バスに乗りリサイクルショップへ。
+おぉ、結構置いてるじゃないか。7台くらいある。
+値段は、、59,800円？126,000円？アホか。
+佐渡のブックオフで買ったやつ27,500円やったぞ。
+エクスペンシブルでインポッシブルや。
+体勢を立て直すため、桑はそらともりに向かった。
+
+頭にシトラス香るジェルを塗られ、マッサージを受ける桑。
+「って感じで、メルカリ見ようと思って来たんですよねー」
+雑談の桑。
+「最近自転車高いですよねー。」ネキは言う。
+「最近自転車買ったんですか？」
+「私前職、自転車の整備やってたんですよねー」
+まじかよ。
+
+私ブロンプトンってやつ乗ってました。もし趣味にするなら、おすすめですよー。
+プロンプト？ほぅ
+正座してるみたいになるんですよー
+ほ、ほぅ
+いわゆる折り畳み自転車とやらであった。
+
+勉強した桑は深夜、メルカリで中古220,000円のBromptonをポチったのであった。
+
+
+ブロンプトン
+[古佐古基史オフィシャルウェブサイト](https://motoshi.thepathofpractice.com/home)
+bun add @livekit/agents@github:livekit/agents-js#main
+[Hermes Desktop | Nous Research](https://hermes-agent.nousresearch.com/desktop)
+hermes desktop check
+[Use Voice Mode with Hermes | Hermes Agent](https://hermes-agent.nousresearch.com/docs/guides/use-voice-mode-with-hermes)
 raycast ax
 
 2026/06

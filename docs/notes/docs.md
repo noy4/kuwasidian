@@ -8,3 +8,6 @@
 [gen]
 [tldraw](https://tldraw.dev/quick-start)
 
+[framework]
+[fuma-nama/fumapress](https://github.com/fuma-nama/fumapress)
+[fuma-nama/fumadocs](https://github.com/fuma-nama/fumadocs)

@@ -1,0 +1,1 @@
+- vize [Xユーザーの筋と憎悪，もののけ王さん: 「⚡️ Announcement for Vize Vize is entering the Real World Testing phase. https://t.co/Dr2q3FyOl4 Looking for: ・Bug reports (Issues) ・Pull Requests ・Medium-to-large Vue projects to test against The next milestone is v1.0.0-alpha. https://t.co/7DSaKeCxTo」 / X](https://x.com/ubugeeei/status/2063508372834693284)

@@ -17,15 +17,12 @@
 住処
 
 
-東出
-コンテナハウス
-ドームハウス
 
 
 stock market heatmap, circle packing
 
+[git-van]
 hmr dark mode
-
 
 timeline
 inspector
@@ -36,8 +33,10 @@ inspector
 new object effect
 
 
-realtime model
-chat view
+[voivoi]
 
-bun add @livekit/agents@github:livekit/agents-js#main
+local model
+agent wave
+
+
 

@@ -16,11 +16,31 @@
 
 ---
 
+leaderboard
+[Kilo - Best AI Coding Models 2026 | Live AI Leaderboard](https://kilo.ai/leaderboard)
 
-[getpaseo/paseo](https://github.com/getpaseo/paseo)
 
+agent framework
+[Eve - Vercel](https://vercel.com/eve)
+[vercel-labs/personal-agent-template](https://github.com/vercel-labs/personal-agent-template)
+[withastro/flue](https://github.com/withastro/flue)
+
+
+code wiki
+[FSoft-AI4Code/CodeWiki](https://github.com/FSoft-AI4Code/CodeWiki)
+
+
+agent desktop
+[getpaseo/paseo](https://github.com/getpaseo/paseo) (supports pi)
+[bytedance/UI-TARS-desktop](https://github.com/bytedance/UI-TARS-desktop)
+
+
+hermes
 [fathah/hermes-desktop](https://github.com/fathah/hermes-desktop)
+[dodo-reach/hermes-desktop](https://github.com/dodo-reach/hermes-desktop)
 [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)
+[Hermes Desktop | Nous Research](https://hermes-agent.nousresearch.com/desktop)
+[Use Voice Mode with Hermes | Hermes Agent](https://hermes-agent.nousresearch.com/docs/guides/use-voice-mode-with-hermes)
 
 in-memory virtual filesystem
 [vercel-labs/just-bash](https://github.com/vercel-labs/just-bash)
@@ -58,6 +78,8 @@ pi
 
 ---
 
+voice dictation
+[Wispr Flow | Effortless Voice Dictation](https://wisprflow.ai/)
 [Aqua Voice - Fast and Accurate Voice Dictation for Mac and Windows](https://aquavoice.com/)
 
 [Forging a Workflow: Agentic Engineering in Practice | Martin Gratzer](https://mgratzer.com/posts/forging-a-workflow/)
