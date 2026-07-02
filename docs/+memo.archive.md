@@ -1,4 +1,8 @@
 
+[[hermes-skills]]
+
+## 2026/07/02
+
 event & message
 realtime save
 [ボカロの歴史 全解説【VOCALOID 20周年】 - YouTube](https://www.youtube.com/watch?v=1RLait3r3M0)

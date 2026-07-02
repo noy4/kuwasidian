@@ -8,6 +8,8 @@
 [[ai agents]]
 [[ai payed]]
 
+[[hermes-skills]]
+
 
 [[claude desktop]]
 [[zunda]]
@@ -15,6 +17,10 @@
 [[voice agent]]
 
 ---
+
+skill
+[JimLiu/baoyu-skills](https://github.com/JimLiu/baoyu-skills)
+[runcomfy-com/skills](https://github.com/runcomfy-com/skills)
 
 leaderboard
 [Kilo - Best AI Coding Models 2026 | Live AI Leaderboard](https://kilo.ai/leaderboard)

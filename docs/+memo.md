@@ -39,4 +39,4 @@ local model
 agent wave
 
 
-
+macos-computer-use

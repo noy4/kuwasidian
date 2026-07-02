@@ -52,6 +52,7 @@
 
 クリア済 {dateHeader: cleared}
 ---
+- 🚲 チャリ様どうか; 自転車の購入; メルカリで Brompton の折り畳み自転車を購入。; cleared: 2025/06/06
 - 🥤 憧れのモカフラッペ; コンビニ店内調合カフェドリンクの購入;; cleared: 2025/05/13
 - ✈️ 海の向こうで; 海外で働く; フィリピンで働いた。ソフトウェア開発案件。; cleared: 2026/03/31
 - 🗾 地球にDIVE IN; 3D Map を使って何か作る; [都市履歴 | Kuwasidian Earth](https://kuwasidian.com/earth/city-history/); cleared: 2025/07/08
