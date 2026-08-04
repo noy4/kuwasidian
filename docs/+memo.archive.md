@@ -1,4 +1,379 @@
 
+
+
+
+
+あらすじ
+
+淡路島の北端目掛けて自転車を漕ぐ桑。
+ガシュンッ！痛って！
+段差でペダルを打ったか？ペダルの縁に目をやるが傷はない。お前丈夫だな。しかし衝撃で左胸に変な負荷がかかった。いてて。。
+へこたれるな。進もう。しかし疲れてきた。ペダルが重い。
+ふと後輪に目をやる。あれ？潰れてね？
+
+自転車を降り、押し歩いて次の日陰へ。サイドスタンドを立てるがスタンド側への傾きが足りずうまく立たない。
+自転車を横にし、左手で後輪に触れる。親指と人差し指が潰れたゴム越しに互いを感じ合う。オワタオワタ。＼(^o^)／
+
+どーすっぺ。マジで。
+港までタクシーか？ヒッチハイクか？いや最終手段だな。さっき見た黄色いパトロールカー来ないか？待て、とりあえず自転車屋を探すか。
+あった。歩いて1時間5分。嫌だ。この鉄塊を抱えて1時間歩きたくない。そうだ！バスはあるか？
+あった！バス停まで徒歩6分、自転車屋もバス停に近い！耐えた——
+桑は自転車を折り畳んで輪行バッグ（自転車収納バッグ）にしまい、それを抱えてバス停まで歩いた。
+輪行バッグは、鳴門から淡路島に入るバスと今回、昨日ぶり2度目の使用。大活躍である。
+
+
+「すごい機構やな。。」
+齢70過ぎだろうか。自転車屋の親父は車体をまじまじと見つめ、後輪のチューブを外して空気を入れる。
+シュー...
+空気の漏れる音がする。親父は穴を見つけ、塞ぎにかかる。
+「画鋲でも踏んだんすかね？」
+「そやろな。」親父は言う。
+「おー、川野さんおった。」
+入り口側に座る桑の後ろから、日除け布付き帽子のおばちゃんが自転車で現れた。
+「仕事け？」親父は言う。
+「そー、まだ3時まであんねん。」
+桑とおばちゃんは互いに会釈する。
+「暑いなぁお兄ちゃん。」
+「すねー。」
+「四国から来たんやと。」親父が言う。
+「そーか。車輪小っさいと大変やろぉ。」
+「いや、なんかここ（ペダルのとこの歯車）がデカいと大丈夫らしいすよ」
+「あー合わさってか。なるほどな。」おばちゃんは言う。
+「（それ）電動自転車じゃないすか。いいすね。」
+「ええやろ。ラクやでぇ。坂道でもな、南風が吹いてきてもな、スイスイ行けるねん。ほんでみんな抜かしていくとな、優越感に浸れるねん。」
+店奥から別のおばちゃんが現れ、桑の正面の端の椅子に座った。細身で茶髪の金ネックレスである。
+
+「ほなな。また来た時はおいでな。」
+しばらく話し、自転車のおばちゃんは去っていった。
+
+
+長くなった。以下ダイジェスト。
+- 親父が外して付け忘れた細い棒状パーツ、携帯空気入れだった
+- 手の甲に水脹れ、日焼け超えて火傷。
+- 明石到着
+- 「まぜそばやってます」ののぼりを見て入店、ランチ＆9時以降限定メニューで食えず。会計7千円弱（焼肉だった）
+
+
+
+
+あらすじ
+
+香川、高松の宿で一夜過ごした桑。明くる日、すぐそばの自転車屋へと向かう。
+
+サドルが少しずつ下がる、ハンドルがたまに前後にズレる、スマホホルダーが恐ろしく揺れる、という不調を説明する桑。直して今日中に連絡するって形でいいですか？とマスター。承知した桑は宿に戻った。この後は前日にホットペッパービューティーで予約した鍼治療（眼精疲労撃退コース）がある。それまでラウンジで時間を潰す。韓国語フラッシュカードをこなす桑。暑くなりますね。トオジネヨー。
+
+鍼灸院へ歩く桑。背後から声がかかる。
+「直りましたよ。」
+振り向くと、チャリ屋のおっさんが俺のチャリを乗り回している。なんしとんねん。めちゃくちゃ乗っとるやないか。笑
+「おぉびっくりしたぁ」
+「試し乗りしてました。どうします？今渡します？」
+「あ、じゃあはい。あざす。」
+ネジしめ料300円を払い、受け取った自転車をチャリ屋裏の無料駐輪場に放り込む。そして桑は鍼灸院へと向かう。
+
+宿に戻った桑。その晩、屋上でプチバーベキューをやるとのこと。それまで桑はラウンジで時間を潰す。鍼灸院でもらったウィダーインゼリーを啜り、帰りに買った瀬戸内ジェラートを啜り、韓国語フラッシュカードをこなす。書留郵便でお願いします。トゥンジャンギ ウピョヌロ ポネジュセヨー。
+
+屋上で焼きそばをかき込む桑。集まったのは10人。ローカル親父2、放浪ニキ1、宿主ニキ1、旅ギャル2、タイ系旅ギャル1、オーストラリア系ヘルパー1、フィリピン系友達1、長身好青年・桑氏1。フィリピンニキにうろ覚えのタガログ語を喋ったらウケた。
+
+オーストラリアニキにいつかパースに行きたい、と話した。高校地理で習った特殊な気候、CS気候（地中海性気候）を浴びに行きたい、と説明したく、「ケッペン気候区分って分かるか？」と問うたところ、「キャットマン？あぁ知ってるぜ。今オーストラリアで一番有名な日本人だ。猫の格好をしてオーストラリア中を回ってる。」と言い、豹柄タイツで台車を引く奇人の動画を見せられた。誰だよ。彼はその動画を見せて満足し、トイレへと消えた。
+
+夜は更け、桑は眠りに着く。明日はまた、チャリを漕ぐ。
+
+
+
+あらすじ
+
+起床、ラウンジに行くと宿主ニキ2が現れた。コーヒーを賜った。家主ニキ1の高校時代の連れらしい。話しているとどうやら、淡路島へは自転車では渡れないっぽい。しかしまあ、、なんとかなるだろう。桑は今日辿り着けそうな距離らへんの宿を取り、出発した。
+
+駐輪場へ行き、自転車を見ると前輪がペシャンコである。わったふぁっく？え？
+前輪を持ち上げながら裏の自転車屋へと運ぶ。扉を開けようとするも、閉まっている。Googleマップで見ると今日は定休日。オワタオワタ。昨日もいた女性スタッフが背をこちらに向け奥でパソコンを触っている。扉をコンコン叩くと来てくれた。
+
+前輪を見るなり、ありゃ〜という顔。
+「イタズラですかね？」桑は問う。
+「いやぁ、急になる時あるんですよー。」
+女性は自転車を店内に運び、マスターに電話をしてくれた。
+「今日は自転車のワタベさん（仮名）が空いてるので、そちらに行ってもらえると。ちょっと気難しい人ですけど。」
+「ほぅ」
+「とりあえずそこまで用に空気入れますね。」
+
+話しているとどうやら、折り畳み自転車は折り畳んで電車・バスで運べることが強みで、乗りたいとこまで持ってってそこだけ乗る、というユーザーが多いらしい。（輪行（りんこう））その際輪行バッグに収納する必要があるのだが、メルカリで買った時に入ってたデカい袋家に置いてきたんだよなぁ。
+「輪行バッグ置いてます？」
+「ありますよ」
+桑は輪行バッグを購入した。15,400円。必要経費。くっ。。
+
+チャリネキは店頭の折り畳み自転車を輪行バッグに収納し、肩にかけて見せた。
+「で、ちょっとチャック開けといて、ここから掴んだら運びやすいです。で、こうやって畳んでサドルの後ろにこう引っ掛けてこうします。」
+自転車愛好者による、これから自転車を愛すかもしれない男に向けた、親切丁寧な説明である。自転車を楽しんでほしい、そんな気持ちから来る初心者への惜しみないサポート。愛に満ちたコミュニティが、そこにはあった、、！
+
+「ちなみに、自転車畳めますか。。？」ネキは桑に問うた。
+分かる。分かるよ。松山からここまで漕いできたこと、チャリ初心者であること、総合的な情報から、ワンチャンこの男チャリ畳めないんじゃないか、そう思ったんだよね。分かるよ。
+流石に畳む、組み立てる、はできる。でも分かるよ。
+
+桑は自転車のワタベさんに向かった。前輪は間も無くフニャって萎えた。炎天下、チャリを押しながら、ワタベさんに到着した。
+
+ワタベさんは前輪を外し、自転車のチューブを外す。
+「最近多いんですよね、、。」
+「パンクですか？暑いからですかね。。？」
+「理由としては、、うん、、気温が高いのと、地面周辺の温度も高いからでしょうねぇ。。」
+「ふむ。あっついスよねーこんな日焼けしましたよ。」
+「ほぅ、、どちらからですか」
+
+松山から大阪に自転車で向かっていることを話した。
+「この暑いのに、皆さん漕いでるんですよねー」
+ワタベさんは最近の客について話す。ドリンクホルダーがダメになった客、ブレーキパッドがダメになった女性客の自転車にやたらレアパーツが付いてて、聞いたら企業からサポート受ける認定ライダーで、それはずるいヨォと思った話、その女性は富士山なんちゃら？を63分で上り切るほどだったとのこと。なんのこっちゃ。
+
+「1,000円は欲しいですねぇ、、。」ワタベさんは言った。
+「昔は、500円を握りしめて、コンビニもない中を、走った。。その日買うであろうパンのために残しておいて。。しかし、、1,000円は欲しいですねぇ。。」
+「ほぅ。僕はここ来るまでコンビニめちゃくちゃ入りました。1,000円で豪遊しました。」
+「いいんです。いいんですよそれで。。いいですねぇ。。僕も放浪したいなぁ。。」
+
+ワタベさんは話しながらも、圧倒的な手際でチューブを交換し終えた。
+「お気をつけて。。」
+見送られながら、桑は次の宿へと漕ぎ出した。遍路外人の多そうな安宿である。
+
+
+createModel
+`find . -name "node_modules" -type d -prune -exec rm -rf {} +`
+agent wave
+pill state (collapsed)
+
+倒錯的イデオロギーガイド
+イスマイル・カダレ ピラミッド
+“哲学界のスーパースター”、スラヴォイ・ジジェクが今という狂気の時代を語る | Vogue Japan https://share.google/WekfJnbSy2Fu2vSOV
+
+screen state prompt
+escape
+api -> client
+
+> The type of this node cannot be serialized because its property '[dispose]' cannot be serialized.
+
+cli mode
+voice boot
+payment
+LP
+delete dashboard
+model change
+
+**Realtime**: provider / model / voice **Pipeline**: STT model + language / LLM model / TTS model + voice / TurnDetector **共通**: モード切替 (realtime vs pipeline)
+
+---
+
+### パターン
+
+**A. モード連動タブ** モード切替で表示するタブセットが変わる
+
+- `[Realtime]` → provider / model / voice
+- `[Pipeline]` → STT / LLM / TTS
+- メリット: 使わない設定が見えない。シンプル
+- デメリット: モード切替でUIが変化する
+
+**B. 単一フォーム + モード切替** タブなし。上部に Realtime/Pipeline トグル、下部に該当設定のみ
+
+- メリット: 最もコンパクト。HUDモーダルに最適
+- デメリット: 設定が増えると縦に長くなる
+
+**C. レイヤー別タブ** `[Input]` `[Brain]` `[Output]`
+
+- Input: STT / TurnDetector
+- Brain: LLM (or Realtime provider)
+- Output: TTS / Voice
+- メリット: モードに依存しない統一構造
+- デメリット: Realtime は Input/Brain/Output が一体化しているので不自然
+
+**D. プロバイダー別タブ** `[OpenAI]` `[Google]` `[xAI]` `[Pipeline]`
+
+- 各タブにそのプロバイダー固有の設定
+- メリット: プロバイダー固有の選択肢を明確に
+- デメリット: プロバイダー追加でタブ増加
+
+**E. プリセット + カスタム** `[Presets]` `[Custom]`
+
+- Presets: Quality / Speed / Cost-effective 等の組み合わせ
+- Custom: 個別設定
+- メリット: 初心者向け。迷わない
+- デメリット: プリセット設計の手間
+
+
+
+resizable
+Factory-based Reactive ViewModel
+
+[mathuo/dockview](https://github.com/mathuo/dockview)
+web ui
+web prompt
+abort tool
+
+[Bun's unreleased Rust port has 13,365 unsafe blocks. Most can be removed.](https://bun.com/bun-unsafe-audit)
+[feat(voice): stream tool call status events by rosetta-livekit-bot[bot] · Pull Request #1929 · livekit/agents-js](https://github.com/livekit/agents-js/pull/1929)
+
+```
+**A JavaScript error occurred in the main process**
+Uncaught Exception:
+Error: write EPIPE
+at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+at writeGeneric (node:internal/stream_base_commons:150:3)
+at Socket._writeGeneric (node:net:966:11)
+at Socket._write (node:net:978:8)
+at writeOrBuffer (node:internal/streams/writable:572:12)
+at _write (node:internal/streams/writable:501:10)
+at Writable.write (node:internal/streams/writable:510:10)
+at console.value (node:internal/console/constructor:303:16)
+at console.log (node:internal/console/constructor:405:26)
+at ChildProcess.<anonymous> (/Users/noy/repos/project/voivoi/electron/out/main/index.js:104:11)
+```
+
+[なぜ科学やファクトを無視する反知性的な態度が強まっているのか？【学知を大学にまかせていいのか④】 - YouTube](https://www.youtube.com/watch?v=f9rbBhZAUps&t=3665s)
+pill inactive color
+opentelemetry
+
+[Feature Request: AgentOutputTranscribed event for agent output transcription chunks · Issue #6441 · livekit/agents](https://github.com/livekit/agents/issues/6441)
+lk agent console - log, hook -> tcp
+livekit-server log
+global shortcut
+lk.transcription
+
+[voice agent frontend transcription output can not stream or interupt · Issue #1408 · livekit/agents](https://github.com/livekit/agents/issues/1408)
+
+- **B**: 音声I/OはCLI（PortAudio）、Webはテキスト表示のみ
+- **C**: マイクはWeb、スピーカーはローカル（非対称）
+- **D**: LiveKit Room経由（SFU仲介）
+- **A/E**: フルWeb音声、WebSocketブリッジ（同じもの）
+
+ありです。現在の `lk agent console` のアーキテクチャ（TCP + protobuf）をそのまま使えるパターンはいくつかあります。
+
+## パターン整理
+
+### Pattern A: フルWeb音声（TUIのWeb版）
+
+```
+Browser (mic) --WebSocket--> Go server --TCP/protobuf--> Agent
+Browser (speaker) <--WebSocket-- Go server <--TCP/protobuf-- Agent
+```
+
+- Webが音声の送受信両方やる
+- CLIのTUIをそのままWebに置き換え
+- Web Audio API + WebSocketでPCM/Opus送受信
+- **Pros**: 既存のTCPプロトコルをほぼそのまま使える、リモートアクセス可能
+- **Cons**: ブラウザの音声レイテンシ、エンコード/デコード必要
+
+### Pattern B: Web=テキスト入力+文字起こし表示、音声はローカル
+
+```
+Browser --WebSocket--> Go server --TCP/protobuf--> Agent
+PortAudio (mic) -----> Go server                  PortAudio (speaker)
+                       <--TCP/protobuf--
+```
+
+- CLIが引き続きPortAudioで音声I/O
+- Webは文字起こし、イベント、メトリクス、チャット表示のみ
+- Webからはテキスト入力や制御コマンド（mute/unmute等）を送る
+- **Pros**: ブラウザ音声の複雑さを回避、既存コード最小変更
+- **Cons**: CLI + Web 両方起動する必要がある
+
+### Pattern C: Web=音声送信、音声受信はローカル
+
+```
+Browser (mic) --WebSocket--> Go server --TCP/protobuf--> Agent
+                             PortAudio (speaker) <------ Agent
+```
+
+- ユーザーの声はWebから、エージェントの発話はローカルスピーカーから
+- Webは文字起こしも受け取る
+- **Pros**: マイクだけWeb、スピーカーはローカルで低レイテンシ
+- **Cons**: 非対称で直感に反するかも
+
+### Pattern D: LiveKit Room経由（既存のフロントエンド方式）
+
+```
+Browser (livekit-client) --WebRTC--> LiveKit SFU --WebRTC--> Agent
+```
+
+- あなたの `voivoi` が既にやってる方式
+- **Pros**: 既存インフラ使える、リモート対応、SDKが成熟
+- **Cons**: LiveKit サーバー必須、`lk agent console` のTCPプロトコルとは別物
+
+### Pattern E: WebSocketブリッジ（最小変更）
+
+```
+Browser --WebSocket--> lk agent console (embedded WS server) --TCP--> Agent
+```
+
+- `lk agent console --web` でWebSocketサーバーも起動
+- CLIが WebSocket <-> TCP のブリッジになる
+- ブラウザはPCMをWebSocketで送受信
+- **Pros**: CLI単体で完結、TCPプロトコル変更なし
+- **Cons**: CLIプロセスが常駐する必要がある
+
+## 推奨
+
+**Pattern E が最も現実的**です。理由:
+
+1. `pkg/console/tcp.go` の `AgentSessionMessage` protobuf は既に音声フレーム、イベント、リクエスト/レスポンスを定義済み
+2. WebSocket に置き換えるだけで、エージェント側のコード変更不要
+3. `cmd/lk/console.go:122` の `console.NewTCPServer` の旁边に `http.Server` + WebSocket handler を追加するだけ
+4. ブラウザ側は `WebSocket` + `Web Audio API`（`AudioWorklet` でPCM送受信）で実装可能
+
+**Pattern B** も手軽です。TUIの表示部分（transcription, events, metrics）をWebに出すだけで、音声I/OはCLIに任せる。`tea.Println` で出力してる部分をWebSocketでブラウザに送るだけ。
+
+どちらの方向で進めたいですか？
+
+
+**PCM**：**パルス符号変調**（Pulse Code Modulation）
+how hermes cli renders
+
+[Rewriting Bun in Rust | Bun Blog](https://bun.com/blog/bun-in-rust)
+[feat(session): support Node.js agents in the local session daemon by toubatbrian · Pull Request #861 · livekit/livekit-cli](https://github.com/livekit/livekit-cli/pull/861)
+sidebar auto toggle
+local livekit
+agent-desktop hide actions
+openai tier
+
+```
+code --force-renderer-accessibility 
+```
+`accessibility.windowTitleOptimized`
+sessionid on select
+new session name
+code copy
+pill border
+initial scroll
+
+osascript -e '
+tell application "Visual Studio Code" to activate
+tell application "System Events"
+  keystroke "p" using command down
+  set the clipboard to "リサーチ"
+  keystroke "v" using command down
+end tell
+'
+
+osascript -e '
+tell application "Visual Studio Code" to activate
+delay 0.5
+tell application "System Events"
+  keystroke "p" using command down
+  delay 0.3
+  set the clipboard to "リサーチ"
+  keystroke "v" using command down
+end tell
+'
+
+osascript -e 'tell application "Visual Studio Code" to activate' && osascript -e 'tell application "System Events" to keystroke "1" using command down' && osascript -e 'tell application "System Events" to key code 15 using control down' && osascript -e 'tell application "System Events" to keystroke "リサーチ"'
+
+osascript -e 'tell application "System Events" to key code 15 using control down'
+osascript -e 'tell application "System Events" to keystroke "リサーチ"'
+osascript -e 'tell application "Visual Studio Code" to activate' && osascript -e 'tell application "System Events" to keystroke "1" using command down'
+osascript -e 'tell application "Visual Studio Code" to activate' && sleep 1 && osascript -e 'tell application "System Events" to keystroke "1" using command down'
+[Wordgard Release 0.1](https://marijnhaverbeke.nl/blog/wordgard-0.1.html)
+stock market heatmap, circle packing
+virtual skill file
+error event
+osascript -e 'tell application "System Events" to keystroke "t" using {command down}'
+[HOME - ARCHITECTS STUDIO JAPAN](https://corporate.asj-net.com/)
+[2026年に株価が爆上げした日本企業TOP20 空撮解説MAP | No001 - YouTube](https://www.youtube.com/watch?v=fRU7pIplKf8)
+```
+"Rate limit reached for gpt-realtime (for limit gpt-4o-realtime) in        organization org-FrDHJRsQa0ub8JF1Z2eUW43b on tokens per min (TPM): Limit        40000, Used 38571, Requested 11391. Please try again in 14.943s. Visit        https://platform.openai.com/account/rate-limits to learn more."
+```
+macos-computer-use
 [[hermes-skills]]
 
 ## 2026/07/02

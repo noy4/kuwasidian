@@ -1,6 +1,10 @@
 
+library
+[pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat)
 
+[Moss | Real-Time Semantic Search for AI Agents](https://www.moss.dev/)
 
+---
 
 [Demos | Utterly Voice](https://utterlyvoice.com/demos)
 [Talon](https://talonvoice.com/)
@@ -9,7 +13,7 @@ livekit bash tool
 https://my-agent-1w94u5.sandbox.livekit.io/
 [livekit-examples/meet](https://github.com/livekit-examples/meet)
 
-
+model
 [hexgrad/kokoro](https://github.com/hexgrad/kokoro)
 
 

@@ -1,3 +1,6 @@
+[TheSkyC/HistorySync](https://github.com/TheSkyC/HistorySync)
+
+
 (search) hook chrome browser event and execute javascript
 https://gist.github.com/danharper/8364399
 
@@ -6,7 +9,7 @@ https://wiki.keyboardmaestro.com/actions/Execute_a_JavaScript_in_Browser
 https://wiki.keyboardmaestro.com/actions/Browser_Actions
 
 
-# Keyboard Maestro
+## Keyboard Maestro
 
 (search) chrome extension execute js on browser event
 https://groups.google.com/a/chromium.org/g/chromium-extensions/c/9bsbgra9QgE

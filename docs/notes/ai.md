@@ -18,6 +18,18 @@
 
 ---
 
+models
+[Models.dev - An open-source database of AI models](https://models.dev/)
+
+spec
+[llm-codes/spec.md at main · amantus-ai/llm-codes](https://github.com/amantus-ai/llm-codes/blob/main/spec.md)
+
+tools
+[steipete/CodexBar](https://github.com/steipete/CodexBar)
+[steipete/summarize](https://github.com/steipete/summarize)
+[openclaw/Peekaboo](https://github.com/openclaw/Peekaboo)
+
+
 skill
 [JimLiu/baoyu-skills](https://github.com/JimLiu/baoyu-skills)
 [runcomfy-com/skills](https://github.com/runcomfy-com/skills)
@@ -30,7 +42,7 @@ agent framework
 [Eve - Vercel](https://vercel.com/eve)
 [vercel-labs/personal-agent-template](https://github.com/vercel-labs/personal-agent-template)
 [withastro/flue](https://github.com/withastro/flue)
-
+[CopilotKit/CopilotKit](https://github.com/copilotkit/copilotkit)
 
 code wiki
 [FSoft-AI4Code/CodeWiki](https://github.com/FSoft-AI4Code/CodeWiki)

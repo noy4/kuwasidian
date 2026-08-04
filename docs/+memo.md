@@ -18,8 +18,9 @@
 
 
 
+[zcaceres/fetch-mcp](https://github.com/zcaceres/fetch-mcp)
+Firecrawl
 
-stock market heatmap, circle packing
 
 [git-van]
 hmr dark mode
@@ -34,9 +35,15 @@ new object effect
 
 
 [voivoi]
+event emitter
+quit error
 
 local model
-agent wave
+restart on dev
 
 
-macos-computer-use
+[Wakeword detection | LiveKit Documentation](https://docs.livekit.io/agents/multimodality/audio/wakeword/)
+[livekit/livekit-wakeword](https://github.com/livekit/livekit-wakeword)
+[livekit-examples/hello-wakeword](https://github.com/livekit-examples/hello-wakeword)
+
+

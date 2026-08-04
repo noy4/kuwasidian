@@ -16,9 +16,13 @@ Circular Treemap
 
 ---
 
+[禁断エリアMAP - YouTube](https://www.youtube.com/@kindanarea)
 [The Spread of Writing: Every Year - YouTube](https://www.youtube.com/watch?v=eUpJ4yVCNrI&list=WL&index=3)
 [Explore Voronoi by Visual Capitalist: Data-Driven Visual Stories from Top Creators.](https://www.voronoiapp.com/)
 
+
+stock heatmap
+[株式ヒートマップ — TradingView](https://jp.tradingview.com/heatmap/stock/#%7B%22dataSource%22%3A%22NI225%22%2C%22blockColor%22%3A%22change%22%2C%22blockSize%22%3A%22market_cap_basic%22%2C%22grouping%22%3A%22sector%22%7D)
 
 software city
 [MaibornWolff/codecharta](https://github.com/MaibornWolff/codecharta)
