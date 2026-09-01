@@ -6,6 +6,9 @@ library
 
 ---
 
+[app]
+[microsoft/skill-recorder](https://github.com/microsoft/skill-recorder)
+
 [Demos | Utterly Voice](https://utterlyvoice.com/demos)
 [Talon](https://talonvoice.com/)
 

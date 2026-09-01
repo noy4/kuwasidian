@@ -35,15 +35,17 @@ new object effect
 
 
 [voivoi]
-event emitter
-quit error
+payment
+e as any
+hold audio before start
 
 local model
-restart on dev
 
 
 [Wakeword detection | LiveKit Documentation](https://docs.livekit.io/agents/multimodality/audio/wakeword/)
 [livekit/livekit-wakeword](https://github.com/livekit/livekit-wakeword)
 [livekit-examples/hello-wakeword](https://github.com/livekit-examples/hello-wakeword)
+
+[deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness)
 
 

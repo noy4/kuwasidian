@@ -18,6 +18,12 @@
 
 ---
 
+note taking
+[bholmesdev/hubble.md](https://github.com/bholmesdev/hubble.md)
+
+agent workspace
+[cloudflare/cloudflare-os](https://github.com/cloudflare/cloudflare-os)
+
 models
 [Models.dev - An open-source database of AI models](https://models.dev/)
 
@@ -33,6 +39,7 @@ tools
 skill
 [JimLiu/baoyu-skills](https://github.com/JimLiu/baoyu-skills)
 [runcomfy-com/skills](https://github.com/runcomfy-com/skills)
+[affaan-m/ECC](https://github.com/affaan-m/ecc)
 
 leaderboard
 [Kilo - Best AI Coding Models 2026 | Live AI Leaderboard](https://kilo.ai/leaderboard)

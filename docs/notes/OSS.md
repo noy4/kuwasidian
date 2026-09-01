@@ -27,7 +27,8 @@ supabase
 googleapis
 
 
-
+app
+[warpdotdev/warp](https://github.com/warpdotdev/warp)
 
 cli
 [unjs/citty](https://github.com/unjs/citty)

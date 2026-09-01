@@ -5,8 +5,12 @@
 [CrashCourse - YouTube](https://www.youtube.com/@crashcourse/playlists)
 - [Geography - YouTube](https://www.youtube.com/playlist?list=PL8dPuuaLjXtO85Sl24rSiVQ93q7vcntNF)
 
+[tools]
+[Felt](https://felt.com/) - Cloud-Native GIS Software & Online Mapping Platform
 
 ---
+
+[What Continents REALLY Look Like in 3D 🏔️ (Elevation Maps) #shorts - YouTube](https://www.youtube.com/shorts/hGI5HKtjHew)
 
 [Mapped: Every Country’s Fertility Rate as Births Decline Worldwide](https://www.visualcapitalist.com/mapped-every-countrys-fertility-rate-births-decline/?shem=dsdf%2Csharefoc%2Cagadiscoversdl%2C%2Csh%2Fx%2Fdiscover%2Fm1%2F4)
 [Projected Population Change by Country (2025-2050) - Voronoi](https://www.voronoiapp.com/demographics/Projected-Population-Change-by-Country-2025-2050-8056)
