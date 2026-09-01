@@ -176,47 +176,13 @@ Cloudflare OS、D1/R2。Kilo GatewayのAnthropic互換、OpenRouter、Pi coding 
 
 <style>
 .thumbnail-tiles {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 1em;
-
+  display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 1em;
   a {
-    position: relative;
-    border-radius: 4px;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease;
-
-    &:hover {
-      transform: scale(1.05);
-    }
+    position: relative; border-radius: 4px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: transform 0.2s ease; &:hover { transform: scale(1.05); }
   }
-
-  img {
-    width: 160px;
-    height: 90px;
-  }
-
+  img { width: 160px; height: 90px; }
   .video-title {
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 4px 6px;
-    font-size: 11px;
-    line-height: 1.3;
-    opacity: 0;
-    transition: opacity 0.2s ease;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 6;
-    -webkit-box-orient: vertical;
-
-    &:hover {
-      opacity: 1;
-    }
+    position: absolute; inset: 0; background-color: rgba(0, 0, 0, 0.7); color: white; padding: 4px 6px; font-size: 11px; line-height: 1.3; opacity: 0; transition: opacity 0.2s ease; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 6; -webkit-box-orient: vertical; &:hover { opacity: 1; }
   }
 }
 </style>
