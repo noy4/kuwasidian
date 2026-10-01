@@ -48,7 +48,6 @@ search history
 
 
 
-[trailhq/Graft](https://github.com/trailhq/graft)
 
 
 [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness)
