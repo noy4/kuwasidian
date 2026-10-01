@@ -26,9 +26,42 @@ anthropic
 supabase
 googleapis
 
+---
+
+
+[Content layer for building Markdown-driven websites](https://content.comark.dev/)
+[vercel-labs/fx](https://github.com/vercel-labs/fx)
+[devframes/devframe](https://github.com/devframes/devframe)
+
+[Kamran Ahmed](http://kamranahmed.info/)
+guiding user focus
+[nilbuild/driver.js](https://github.com/nilbuild/driver.js)
+[nilbuild/git-standup](https://github.com/nilbuild/git-standup)
+[nilbuild/githunt](https://github.com/nilbuild/githunt)
+
+1-click AI app launcher
+[pinokiocomputer/pinokio](https://github.com/pinokiocomputer/pinokio)
+
+A spy satellite simulator
+[bilawalsidhu/gods-eye-view](https://github.com/bilawalsidhu/gods-eye-view)
+
+migration
+[Dictation | Raycast Manual > Migrate from Another App](https://manual.raycast.com/ai/dictation#migrate-from-another-app)
+
+menubar app
+[swiftbar/SwiftBar](https://github.com/swiftbar/SwiftBar)
+[exelban/stats](https://github.com/exelban/stats)
+
+toolchain
+[nubjs/nub](https://github.com/nubjs/nub)
+    [aubepkg/aube](https://github.com/aubepkg/aube)
 
 app
 [warpdotdev/warp](https://github.com/warpdotdev/warp)
+
+[block/berd](https://github.com/block/berd) 3d ai agent desktop
+[herdrdev/herdr](https://github.com/herdrdev/herdr) rust, tmux alternative
+[microsoft/skill-recorder](https://github.com/microsoft/skill-recorder)
 
 cli
 [unjs/citty](https://github.com/unjs/citty)

@@ -1,4 +1,160 @@
 
+inworld realtime-tts-2
+muse-voice-transcribe
+
+1. AIが生成したたくさんのhtmlファイル
+.html のリスト表示
+2. アイコン、タイトル、タグライン
+3. フォルダ選択、ギャラリー表示
+4. ライブリロード、各ページの変更は自動反映
+5. macosアプリ、cli, vscode拡張が利用可能
+6. アイコン、タイトル、CTA、github badge
+
+[noy4/docserve](https://github.com/noy4/docserve)
+[devframes/devframe](https://github.com/devframes/devframe)
+[antfu/vscode-pnpm-catalog-lens](https://github.com/antfu/vscode-pnpm-catalog-lens)
+
+desktop cli without node
+merge statusbar items
+change folder color
+vscode extension
+empty font
+statusbar priority
+index gallery
+marketplace 6 months
+index vscode
+
+[Docserve - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=noy4.docserve)
+
+readme image round
+serve
+livepreview
+page title folder name
+include docs/index.html
+open folder
+[nilbuild/video-demo](https://github.com/nilbuild/video-demo)
+
+https://github.com/microsoft/vscode-livepreview
+https://github.com/ritwickdey/vscode-live-server
+[http-party/http-server](https://github.com/http-party/http-server)
+**“Docserve” is damaged and can’t be opened. You should move it to the Trash.**
+
+serve astro wrapper cli
+desktop,state
+method chain animation
+no ipc
+pinokio
+browser history desktop
+
+[God’s Eye View Blew Up. Here's What You Can Do With It. - YouTube](https://www.youtube.com/watch?v=o_FJ1NIH9yw)
+[pinokiocomputer/pinokio](https://github.com/pinokiocomputer/pinokio)
+[Catalog | CodeCrafters](https://app.codecrafters.io/catalog)
+
+qwen audio agent: method chain
+[Vivaldi ブラウザ | パワフル、パーソナル、プライベート なブラウザ](https://vivaldi.com/ja/)
+theme toggle
+astro gallery date
+astro external folder
+
+[Carbon | Create and share beautiful images of your source code](https://carbon.now.sh/)
+[JSON Crack | Online JSON Viewer - Transform your data into interactive graphs](https://jsoncrack.com/)
+[Editor | ToDiagram](https://todiagram.com/editor?utm_source=jsoncrack&utm_medium=open_button)
+
+load optimize iframe
+[tt-a1i/archify](https://github.com/tt-a1i/archify)
+クラス、メソッドの呼び出しを辿るhtmlレポートを作って
+
+
+[magic5644/Graph-It-Live](https://github.com/magic5644/Graph-It-Live)
+[BrowserSync/browser-sync](https://github.com/browsersync/browser-sync)
+
+[This Open-Source Tool Makes Claude Create Architecture Diagrams - YouTube](https://www.youtube.com/watch?v=iuJszJuiuSg)
+openhands
+[reuseman/flashcards-obsidian](https://github.com/reuseman/flashcards-obsidian)
+raycast scripts
+
+[[obsidian note gallery]]
+[microsoft/vscode-livepreview](https://github.com/microsoft/vscode-livepreview)
+
+- **SwiftBar** (swiftbar.app) — スクリプト出力をメニューバーに表示。メニューから任意のシェルスクリプト実行できる。シンプルで定番
+- **xbar** (旧 BitBar, 約4千★) — SwiftBar の元祖。プラグイン形式
+- **Shellmen / Barify** 系 — 限定的
+
+[molokoloco/ia-dashboard-pro](https://github.com/molokoloco/ia-dashboard-pro)
+python3 reports/serve.py & sleep 1 && open http://localhost:8765
+
+mattpocock
+    setup-matt-pocock-skills
+    grill-with-docs
+    research
+    improve-codebase-architecture
+
+9router
+show agent error
+overflow x
+update realtime model
+livekit model
+debug chat text
+api type export
+whisper flow
+livekit cloud
+split voivoi.auth
+manage processes
+agent logging
+group api
+expanded state
+load model list
+
+> に対して、今すぐできそうな「ハードルの低い提案」を用意する。ここにすごい価値があるのではないか。100個ぐらい出てきたら、2-3個ぐらい「それならやりたいかも！」があるだろう。
+
+[「嫉妬」の発見｜柴田史郎](https://note.com/4bata/n/nab311c86a7ad)
+> 嫉妬-他人の成功、幸運、能力、所有物などに対して感じる強い羨望や不満。これは、それらを自分も欲しいと思ったり、その人に対して不公平さを感じたりすることから生じる感情
+
+
+
+[勝手に学ぶ人と期待されて学ぶ人の差が埋められない理由 - YouTube](https://www.youtube.com/watch?v=1qepJaSUe5U)
+[柴田史郎｜note](https://note.com/4bata)
+
+
+agent-starter-node model
+pass api_key
+
+- **現象**: ESLint が動作しない
+- **原因**: `typescript` を `7.0.2` にアップデートしたため。`@antfu/eslint-config` 内の `@typescript-eslint`（v8系）が TypeScript 7.x に未対応で、ESLint 実行時にクラッシュしていた。
+    
+    ```
+    Error: typescript-eslint does not support TS 7.0.
+    ```
+    
+deps update
+deepgram
+
+- [Install fails on Apple Silicon with Python 3.13: uv sync cannot install kaldialign<=0.9.1 (pinned by nemo-toolkit 2.7.3, no cp313 macOS wheel) · Issue #21 · ShayneP/local-voice-ai](https://github.com/ShayneP/local-voice-ai/issues/21)
+- [Startup fails on Apple Silicon: nemo-speech exits with "no matching GPU device found" when the launcher execs the binary directly · Issue #22 · ShayneP/local-voice-ai](https://github.com/ShayneP/local-voice-ai/issues/22)
+- [Web UI fails to load on the native runtime: localhost:8080 returns 404 unless FRONTEND_DIR is set (only Docker builds the frontend) · Issue #23 · ShayneP/local-voice-ai](https://github.com/ShayneP/local-voice-ai/issues/23)
+- [Agent startup fails when port 8081 is already in use: make the health port configurable via AGENT_HTTP_PORT · Issue #24 · ShayneP/local-voice-ai](https://github.com/ShayneP/local-voice-ai/issues/24)
+
+
+10:43:42 WARNING supervisor: [agent]   return self._jws.encode(
+10:43:42 WARNING supervisor: [livekit] 2026-09-03T10:43:42.086+0900     INFO    livekit.agents  service/agentservice.go:316     worker registered  {"namespace": "", "jobType": "JT_ROOM", "agentName": "", "workerID": "AW_y26G6wm6xUY6"}
+10:43:42 INFO supervisor: [agent] {"message": "registered worker", "level": "INFO", "name": "livekit.agents", "agent_name": "", "id": "AW_y26G6wm6xUY6", "url": "ws://127.0.0.1:7880", "region": "", "protocol": 17, "timestamp": "2026-09-03T01:43:42.086349+00:00"}
+10:43:42 INFO main: starting: livekit ✓ | llama … 11 MB | nemotron … 118 MB | kokoro … | agent …
+10:43:43 INFO httpx: HTTP Request: GET http://127.0.0.1:8085/ "HTTP/1.1 200 OK"
+10:43:43 INFO supervisor: [agent] ready
+10:43:52 INFO main: 
+
+push-to-talk
+handy rust self-made
+
+- [electron-vite.github.io（Electron⚡️Vite）](https://electron-vite.github.io/?utm_source=chatgpt.com) - `vite-plugin-electron` でViteプロジェクトにElectronを組み込む。`vite.config.ts`
+- [electron-vite.org（electron-vite）](https://electron-vite.org/?utm_source=chatgpt.com) → Electron用のビルドツール。main / preload / renderer をまとめて扱う。`electron.vite.config.ts`
+
+https://antigravity.google/auth-success?app=antigravity
+e as any
+
+chrome://inspect/#remote-debugging
+
+[iKora128/velq](https://github.com/iKora128/velq)
 
 [better-auth/better-auth](https://github.com/better-auth/better-auth)
 [auth0/node-jsonwebtoken](https://github.com/auth0/node-jsonwebtoken)

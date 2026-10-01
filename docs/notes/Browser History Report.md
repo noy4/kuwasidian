@@ -1,4 +1,6 @@
+
 [TheSkyC/HistorySync](https://github.com/TheSkyC/HistorySync)
+
 
 
 (search) hook chrome browser event and execute javascript

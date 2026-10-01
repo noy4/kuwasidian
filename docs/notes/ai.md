@@ -18,6 +18,42 @@
 
 ---
 
+
+
+web fetch
+[zcaceres/fetch-mcp](https://github.com/zcaceres/fetch-mcp)
+Firecrawl
+
+agent platform
+[OpenHands/OpenHands](https://github.com/OpenHands/openhands)
+[milind-soni/OpenMausBot](https://github.com/milind-soni/OpenMausBot)
+
+skill
+[JimLiu/baoyu-skills](https://github.com/JimLiu/baoyu-skills)
+[runcomfy-com/skills](https://github.com/runcomfy-com/skills)
+[affaan-m/ECC](https://github.com/affaan-m/ecc)
+[mattpocock/skills](https://github.com/mattpocock/skills)
+[joshuatownsend/ideate](https://github.com/joshuatownsend/ideate)
+
+skill(video)
+[nilbuild/video-demo](https://github.com/nilbuild/video-demo)
+
+skill (visualize)
+[【最注目Skill】Claude社内でも大流行?! 図解スキル『eli5』や話題の『show-me』などを解説します - YouTube](https://www.youtube.com/watch?v=Wg3o5iTBdRI)
+- eli5 [anthropics/claude-plugins-community > eli5](https://github.com/anthropics/claude-plugins-community/blob/main/eli5/skills/eli5/SKILL.md)
+- show-me [humanlayer/skills/show-me](https://github.com/humanlayer/skills/blob/main/plugins/show-me/skills/show-me/SKILL.md)
+- diagram-design [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design)
+[tt-a1i/archify](https://github.com/tt-a1i/archify)
+
+
+
+gateway
+[decolua/9router](https://github.com/decolua/9router)
+
+audio
+[AssemblyAI | AI models to transcribe and understand speech](https://www.assemblyai.com/)
+[最高のAIテキスト読み上げ & 無料のボイスクローン | Fish Audio](https://fish.audio/ja/app/)
+
 note taking
 [bholmesdev/hubble.md](https://github.com/bholmesdev/hubble.md)
 
@@ -36,10 +72,6 @@ tools
 [openclaw/Peekaboo](https://github.com/openclaw/Peekaboo)
 
 
-skill
-[JimLiu/baoyu-skills](https://github.com/JimLiu/baoyu-skills)
-[runcomfy-com/skills](https://github.com/runcomfy-com/skills)
-[affaan-m/ECC](https://github.com/affaan-m/ecc)
 
 leaderboard
 [Kilo - Best AI Coding Models 2026 | Live AI Leaderboard](https://kilo.ai/leaderboard)

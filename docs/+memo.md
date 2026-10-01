@@ -18,10 +18,6 @@
 
 
 
-[zcaceres/fetch-mcp](https://github.com/zcaceres/fetch-mcp)
-Firecrawl
-
-
 [git-van]
 hmr dark mode
 
@@ -36,16 +32,29 @@ new object effect
 
 [voivoi]
 payment
-e as any
 hold audio before start
+browser control
 
 local model
+dictation input
+
+chatgpt access_token
+~/.agents/AGENTS.md
+openai realtime desktop
 
 
-[Wakeword detection | LiveKit Documentation](https://docs.livekit.io/agents/multimodality/audio/wakeword/)
-[livekit/livekit-wakeword](https://github.com/livekit/livekit-wakeword)
-[livekit-examples/hello-wakeword](https://github.com/livekit-examples/hello-wakeword)
+hyperframes
+search history
+
+
+
+[trailhq/Graft](https://github.com/trailhq/graft)
+
 
 [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness)
+[QwenAudio/qwen-audio-agent](https://github.com/QwenAudio/qwen-audio-agent)
+
+[SKI — Voice coding. Let your coding agent talk with you. (Mac, Windows & Linux)](https://heyski.io/)
+[Discover the Best AI Tools and Services - Your Ultimate AI Directory at AIPURE](https://aipure.ai/)
 
 

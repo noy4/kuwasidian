@@ -1,0 +1,6 @@
+- Dynamic Views — [https://obsidian.md/plugins?id=dynamic-views](https://obsidian.md/plugins?id=dynamic-views) （GitHub: [https://github.com/churnish/dynamic-views）](https://github.com/churnish/dynamic-views%EF%BC%89)
+- Gallery Navigator — [https://obsidian.md/plugins?id=gallery-navigator](https://obsidian.md/plugins?id=gallery-navigator) （GitHub: [https://github.com/groundfic/obsidian-gallery-navigator）](https://github.com/groundfic/obsidian-gallery-navigator%EF%BC%89)
+- Notes Explorer — [https://obsidian.md/plugins?id=notes-explorer](https://obsidian.md/plugins?id=notes-explorer)
+- Note Gallery — [https://obsidian.md/plugins?id=note-gallery](https://obsidian.md/plugins?id=note-gallery) （GitHub: [https://github.com/pashashocky/obsidian-note-gallery）](https://github.com/pashashocky/obsidian-note-gallery%EF%BC%89)
+- Note Masonry — [https://github.com/red-nao/obsidian-note-masonry-plugin](https://github.com/red-nao/obsidian-note-masonry-plugin)
+- Notekeeper — [https://github.com/PhilemonChiro/obsidian-notekeeper](https://github.com/PhilemonChiro/obsidian-notekeeper)

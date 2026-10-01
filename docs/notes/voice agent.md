@@ -6,8 +6,14 @@ library
 
 ---
 
-[app]
-[microsoft/skill-recorder](https://github.com/microsoft/skill-recorder)
+wake word
+[Wakeword detection | LiveKit Documentation](https://docs.livekit.io/agents/multimodality/audio/wakeword/)
+[livekit/livekit-wakeword](https://github.com/livekit/livekit-wakeword)
+[livekit-examples/hello-wakeword](https://github.com/livekit-examples/hello-wakeword)
+
+
+dictation
+[Wispr Flow | Effortless Voice Dictation](https://wisprflow.ai/)
 
 [Demos | Utterly Voice](https://utterlyvoice.com/demos)
 [Talon](https://talonvoice.com/)
@@ -18,6 +24,7 @@ https://my-agent-1w94u5.sandbox.livekit.io/
 
 model
 [hexgrad/kokoro](https://github.com/hexgrad/kokoro)
+[fishaudio/fish-speech](https://github.com/fishaudio/fish-speech)
 
 
 [Voice Control]

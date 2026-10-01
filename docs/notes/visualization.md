@@ -16,6 +16,13 @@ Circular Treemap
 
 ---
 
+cli, skills
+[tt-a1i/archify](https://github.com/tt-a1i/archify)
+[magic5644/Graph-It-Live](https://github.com/magic5644/Graph-It-Live)
+
+
+[走りながら考えている自分の頭の中を整理して、みんなと共有する方法｜柴田史郎](https://note.com/4bata/n/ne2c0fdba249b)
+
 [禁断エリアMAP - YouTube](https://www.youtube.com/@kindanarea)
 [The Spread of Writing: Every Year - YouTube](https://www.youtube.com/watch?v=eUpJ4yVCNrI&list=WL&index=3)
 [Explore Voronoi by Visual Capitalist: Data-Driven Visual Stories from Top Creators.](https://www.voronoiapp.com/)
