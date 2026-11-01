@@ -5,7 +5,7 @@
 
 ## 制作
 
-**his** — ブラウザ履歴を集約・閲覧するローカルアプリ。[Website](https://noy4.github.io/his/)
+<img src="https://noy4.github.io/his/icon.png" alt="his" width="40" height="40" /> **his** — ブラウザ履歴を集約・閲覧するローカルアプリ。[Website](https://noy4.github.io/his/)
 
 ## 視聴コンテンツ
 

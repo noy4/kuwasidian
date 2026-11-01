@@ -47,9 +47,6 @@ openai realtime desktop
 
 his
 video
-sites by title
-ogp
-demo sources selected
 
 
 docserve
