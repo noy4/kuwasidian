@@ -4,3 +4,4 @@
 
 
 [Pinokio](https://pinokio.co/)
+[JIZURA 字面](https://852wa.github.io/JIZURA/)

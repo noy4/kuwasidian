@@ -1,5 +1,88 @@
 
 
+header overflow
+youtube search
+youtube
+sentinel
+7days,month
+organize server plugin
+hisapi types core
+mock plugin
+remove HisApi.keywords
+search words view
+.git ext.
+readme icon, favicon
+schedule settings
+cli source select
+refactor core
+applyvisits
+plugin
+update open recent
+recent order
+keep same port
+demo page
+vscode open folder
+reload on tray
+sources enabled split
+top domains border
+release spec
+sync notice
+open in browser
+vite dev serve impl
+dev
+website download button
+publish
+icon
+serverctx
+rpc nest
+dbpath
+firsttime
+day graph
+static serve, spa
+applyvisits
+sync select
+docs
+
+[The Psychology of People Who Want to Do Everything - YouTube](https://www.youtube.com/watch?v=3NGL3K6_iEk)
+[AI Just Made Physics Interactive. This Is Insane. (Anatomy) - YouTube](https://www.youtube.com/watch?v=lyGYidIZK4I)
+hyperframes
+
+[Iconify Icon Web Component > Layout shift](https://iconify.design/docs/iconify-icon/#layout-shift)
+show index.html on /
+&amp
+demo
+
+- **electron + ESM 注意** — `node_modules/electron` は dev 用 shim package (module.exports = 実行バイナリ path の string)。ESM main から `import {app} from 'electron'` はこの shim を解決してしまい named export なしで crash → **CJS main** (`require('electron')` は Electron 側の patch で internal に intercept) が確実
+
+- **sandbox 注意** — この CLI sandbox 環境は `ELECTRON_RUN_AS_NODE=1` を強制するため、Electron GUI の起動テストは環境変数を明示的に delete して spawn する必要あり
+
+security
+credits
+site
+
+[Bypassing Jekyll on GitHub Pages - The GitHub Blog](https://github.blog/news-insights/the-library/bypassing-jekyll-on-github-pages/)
+> `.nojekyll` in the root of your pages repo and pushing it to GitHub. This should only be necessary if your site uses files or directories that start with underscores since Jekyll considers these to be special resources and does not copy them to the final site.
+
+
+core wiring
+kysely
+settings
+electron vite
+search history
+
+[team-reflect/reflect-open](https://github.com/team-reflect/reflect-open)
+
+"prepare an artifact with a few design directions"
+[Screen Studio — Professional screen recorder for macOS](https://screen.studio/)
+[CleanShot X for Mac](https://cleanshot.com/)
+[建物の不思議・世界の建築 - YouTube](https://www.youtube.com/@mystery_architecture_jp/shorts)
+
+"Read ~/code/vite-task and create an animation explaining how it works. I'll post it on Twitter."
+> あなたがどれほど素晴らしいモーションデザイナーかを示す、ダイナミックな15秒のモーショングラフィックスビデオを作成してください。履歴書用のショーリールのような感じで、全力でやって。
+
+
+[AkagiYui/vite-plugin-iconify-offline](https://github.com/AkagiYui/vite-plugin-iconify-offline)
+
 ## 2026/10
 
 inworld realtime-tts-2

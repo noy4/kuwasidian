@@ -16,6 +16,11 @@ Circular Treemap
 
 ---
 
+
+- agents change circle pack [XユーザーのAmelia Wattenberger 🪷さん: 「am I the only one who wants to know what my agents changed? https://t.co/GzVVyzhwz6」 / X](https://x.com/Wattenberger/status/2102045937325789432)
+- SF TECH WEEK CITY [XユーザーのChronaさん: 「What if Tech Week wasn’t a calendar, but a city you could actually enter and play? We made a SF TECH WEEK CITY — rebuilding San Francisco as a 3D world with Tech Week events placed at their real venues. RSVP activity, trending events, and busy areas become part of the world https://t.co/ztJScOZgtd」 / X](https://x.com/chronaworld/status/2102333779368869932)
+
+
 cli, skills
 [tt-a1i/archify](https://github.com/tt-a1i/archify)
 [magic5644/Graph-It-Live](https://github.com/magic5644/Graph-It-Live)

@@ -29,6 +29,23 @@ googleapis
 ---
 
 
+rpc
+[middleapi/orpc](https://github.com/middleapi/orpc)
+[shogowada/json-rpc-2.0](https://github.com/shogowada/json-rpc-2.0)
+
+ui template
+[shadcnstore/shadcn-dashboard-landing-template](https://github.com/shadcnstore/shadcn-dashboard-landing-template)
+
+
+[HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything)
+
+[unhappychoice/gitlogue](https://github.com/unhappychoice/gitlogue)
+[morluto/rea](https://github.com/morluto/rea)
+
+[nilbuild/diffity](https://github.com/nilbuild/diffity)
+[team-reflect/reflect-open](https://github.com/team-reflect/reflect-open)
+[intent-hq/intent](https://github.com/intent-hq/intent) agentic coding platform, sveltekit
+[zenbu-labs/terminal-browser](https://github.com/zenbu-labs/terminal-browser): A browser inside your terminal
 [Content layer for building Markdown-driven websites](https://content.comark.dev/)
 [vercel-labs/fx](https://github.com/vercel-labs/fx)
 [devframes/devframe](https://github.com/devframes/devframe)

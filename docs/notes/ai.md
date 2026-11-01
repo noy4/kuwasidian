@@ -34,6 +34,8 @@ skill
 [affaan-m/ECC](https://github.com/affaan-m/ecc)
 [mattpocock/skills](https://github.com/mattpocock/skills)
 [joshuatownsend/ideate](https://github.com/joshuatownsend/ideate)
+[wheresryan22/anatomy](https://github.com/wheresryan22/anatomy)
+
 
 skill(video)
 [nilbuild/video-demo](https://github.com/nilbuild/video-demo)

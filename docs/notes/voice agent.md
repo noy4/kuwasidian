@@ -6,6 +6,10 @@ library
 
 ---
 
+local
+[How to build a shitty robot](https://mariozechner.at/posts/2026-05-30-shitty-robot/)
+    [badlogic/pibot](https://github.com/badlogic/pibot)
+
 wake word
 [Wakeword detection | LiveKit Documentation](https://docs.livekit.io/agents/multimodality/audio/wakeword/)
 [livekit/livekit-wakeword](https://github.com/livekit/livekit-wakeword)

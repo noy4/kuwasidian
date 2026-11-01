@@ -43,12 +43,28 @@ chatgpt access_token
 openai realtime desktop
 
 
-hyperframes
-search history
+
+
+his
+video
+
+
+docserve
+menu tip, home
+sort
+folder
+
+publish reports
+
+external css update
 
 
 
 
+
+[sandbox-quantum/switch](https://github.com/sandbox-quantum/switch)
+[nightly-labs/openbot](https://github.com/nightly-labs/openbot)
+[CopilotKit/OpenBot](https://github.com/CopilotKit/openbot)
 
 [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness)
 [QwenAudio/qwen-audio-agent](https://github.com/QwenAudio/qwen-audio-agent)
