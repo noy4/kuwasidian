@@ -7,3 +7,6 @@ https://dribbble.com/
 
 [lobe-chat](https://github.com/lobehub/lobe-chat) bento
 [Raycast - Your shortcut to everything](https://www.raycast.com/)
+
+
+[Cosmos](https://www.cosmos.so/)
