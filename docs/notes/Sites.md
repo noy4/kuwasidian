@@ -12,3 +12,7 @@
 
 Touchwaves [Xユーザーのcatnoseさん: 「これ2021年に公開されていて神」 / X](https://x.com/catnose99/status/2094661830908264668)
 [DO-GU](https://do-gu.niwa.dev/)
+
+
+app curation
+[Discover the Best AI Tools and Services - Your Ultimate AI Directory at AIPURE](https://aipure.ai/)

@@ -28,8 +28,15 @@ googleapis
 
 ---
 
+[x18n-dev/x18n](https://github.com/x18n-dev/x18n)
+[antfu/pulls.review](https://github.com/antfu/pulls.review)
+
+devtools
+[vitejs/devtools](https://github.com/vitejs/devtools)
+[devframes/devframe](https://github.com/devframes/devframe)
 
 rpc
+[antfu-collective/birpc](https://github.com/antfu-collective/birpc)
 [middleapi/orpc](https://github.com/middleapi/orpc)
 [shogowada/json-rpc-2.0](https://github.com/shogowada/json-rpc-2.0)
 
@@ -48,7 +55,6 @@ ui template
 [zenbu-labs/terminal-browser](https://github.com/zenbu-labs/terminal-browser): A browser inside your terminal
 [Content layer for building Markdown-driven websites](https://content.comark.dev/)
 [vercel-labs/fx](https://github.com/vercel-labs/fx)
-[devframes/devframe](https://github.com/devframes/devframe)
 
 [Kamran Ahmed](http://kamranahmed.info/)
 guiding user focus

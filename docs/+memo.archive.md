@@ -1,6 +1,95 @@
 
 
 
+docs toc
+[docserve]
+open other servers
+tray check update
+collapsible heading
+toc
+[docserve]
+sort
+folder group
+resize sidebar
+remove running from recent
+sidebar layout
+folder
+icon
+date group
+comp ctx
+react
+
+**2. ステータスバー表示プラグイン（あり）**
+
+| 拡張                                  | 特徴                                 |
+| ----------------------------------- | ---------------------------------- |
+| **Minimal File Path**               | パスをステータスバー表示＋クリックでコピー。デフォルト絶対パス 🥇 |
+| **Current File Path in Status Bar** | 表示＋クリックコピー。ワークスペース内は相対パス           |
+| **File Path Bar**                   | 表示＋クリックでメニュー（コピー等）                 |
+| **Current File Path** (YoshinoriN)  | 絶対/相対・区切り文字を設定可、コピー機能あり            |
+
+**3. 「コピー専用ボタン」をステータスバーに置く** **VSCode Statusbar Commands**（または Better Status Bar）で、任意のコマンドをボタン化できます 🎛️
+
+```
+"statusbarCommands.commands": [
+  {
+    "statusBarText": "$(copy) Copy Path",
+    "command": "workbench.action.files.copyPathOfActiveFile",
+    "tooltipText": "Copy full path of active file"
+  }
+]
+```
+
+パス表示とコピーを1つで済ませたいなら **Minimal File Path**、純粋なコピーボタンだけ欲しいなら **VSCode Statusbar Commands** が最適です。
+
+
+opt+cmd+c
+cmd+k opt+cmd+c
+cmd+k p
+
+persisted
+menu tip
+    home
+    copy
+devframe
+refactor serve
+dock pos
+command palette
+中田　脱力
+
+[Interactive 3D Terrain From a Heightmap | Nicholas Coughlin](https://ncoughlin.com/posts/three-js-heightmap-terrain)
+[akari-video/docs/guides/geo-terrain.ja.md at main · AkariLabs/akari-video](https://github.com/AkariLabs/akari-video/blob/main/docs/guides/geo-terrain.ja.md)
+[Raycast to a Displacement Map - Three.js Tutorials](https://sbcode.net/threejs/raycast-to-displacementmap/)
+
+[深読み地図 - YouTube](https://www.youtube.com/@fukayomi-chizu)
+[四国と九州になぜ橋がない？海を抜いて見てみた - YouTube](https://www.youtube.com/watch?v=3xdIwOjzUL8)
+
+[地図見てたら - YouTube](https://www.youtube.com/@%E5%9C%B0%E5%9B%B3%E8%A6%8B%E3%81%A6%E3%81%9F%E3%82%89/shorts)
+[日本のまわりの海、水を抜いたら日本海だけ空っぽになった - YouTube](https://www.youtube.com/watch?v=JTs9ZHnkyBQ)
+
+vscode open from file
+
+[Discover the Best AI Tools and Services - Your Ultimate AI Directory at AIPURE](https://aipure.ai/)
+
+[[Bug] `gpt-live`: tool results never reach the voice model · Issue #592 · QwenAudio/qwen-audio-agent](https://github.com/QwenAudio/qwen-audio-agent/issues/592)
+
+string_above_max_length: invalid_request_error: Invalid 'item.id':
+string too long. Expected a string with maximum length 32, but got a string with length 36
+
+GPT-Live / OpenAI Realtime は `conversation.item.create` の `item.id` を**最大32文字**に制限している。
+
+[SKI: the voice-first coding harness for your Mac](https://justski.it/)
+[声でパソコンを動かす「現実版Jarvis」はどこまで来たか（2026年版）](https://www.voiceos.com/ja/blog/jarvis-control-your-computer-with-your-voice)
+
+publish reports
+2 repos: local git, public git
+1 repo: public git, ignore local
+
+external css update
+his
+video
+related projects
+close on full
 sites by title
 demo sources selected
 ogp

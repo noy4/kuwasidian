@@ -18,7 +18,19 @@
 
 ---
 
+design
+[nexu-io/open-design](https://github.com/nexu-io/open-design)
 
+openbot
+[nightly-labs/openbot](https://github.com/nightly-labs/openbot)
+[CopilotKit/OpenBot](https://github.com/CopilotKit/openbot)
+
+[sandbox-quantum/switch](https://github.com/sandbox-quantum/switch) ai teammate in chat
+
+harness
+[aicodeking/pandacode](https://github.com/aicodeking/pandacode)
+[pingdotgg/t3code](https://github.com/pingdotgg/t3code)
+[deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness)
 
 web fetch
 [zcaceres/fetch-mcp](https://github.com/zcaceres/fetch-mcp)
@@ -35,6 +47,7 @@ skill
 [mattpocock/skills](https://github.com/mattpocock/skills)
 [joshuatownsend/ideate](https://github.com/joshuatownsend/ideate)
 [wheresryan22/anatomy](https://github.com/wheresryan22/anatomy)
+[aicodeking/leanrea](https://github.com/aicodeking/leanrea)
 
 
 skill(video)

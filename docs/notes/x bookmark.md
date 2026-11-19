@@ -1,8 +1,15 @@
 
+
+video
+- 海外ドラマ紹介動画 [XユーザーのMaki@Sunwood AI Labs.さん: 「私も、海外ドラマの紹介動画を Opus 5.5に作らせてみた！！ プロンプトも貼っておきます！ https://t.co/FI4GUn3jsb」 / X](https://x.com/hAru_mAki_ch/status/2103789217147240824)
+- f1 pv [XユーザーのMaki@Sunwood AI Labs.さん: 「参考にさせてもらって、Opus5.5で作ってみた！！ めっちゃカッコいいCADのF1モデルのPVできたぞ！！ https://t.co/rImqoEdYse」 / X](https://x.com/hAru_mAki_ch/status/2103757205795463577)
+- opus5.5 created video [Xユーザーのハシモトタクマ / FunTechさん: 「Opus5.5の動画制作、工夫次第でここまでいけます 制作期間は3日 https://t.co/f58Vg5msPI」 / X](https://x.com/tkm_hmng8/status/2105255710531674358)
+- [Xユーザーのハシモトタクマ / FunTechさん: 「制作工程ぜんぶ公開しました。 じゃんじゃん真似してみてください！ 前編：https://t.co/FPQBuFyJF7 後編：https://t.co/Mqq5U5gjut」 / X](https://x.com/tkm_hmng8/status/2107414653768974391)
+
+[]
 - "prepare an artifact with a few design directions" [XユーザーのKamran Ahmedさん: 「"prepare an artifact with a few design directions" is probably my most used prompt these days」 / X](https://x.com/nilbuild/status/2104456672630448275)
 - Diffity [XユーザーのKamran Ahmedさん: 「Diffity is now an open-source Mac app 🚀 Review diffs and pull requests with Claude in the loop. Leave comments, then send them to GitHub or Claude to fix. https://t.co/WTYmqLxsEO https://t.co/3tNJTVyqRc」 / X](https://x.com/nilbuild/status/2105394504962601246)
 - 3 skill makers [XユーザーのMatt Pocockさん: 「My top 3 skill makers: - @poteto - @dexhorthy - @emilkowalski Always learn a ton from reading their skills.」 / X](https://x.com/mattpocockuk/status/2105022638368403658)
-- opus5.5 created video [Xユーザーのハシモトタクマ / FunTechさん: 「Opus5.5の動画制作、工夫次第でここまでいけます 制作期間は3日 https://t.co/f58Vg5msPI」 / X](https://x.com/tkm_hmng8/status/2105255710531674358)
 - reflect [XユーザーのReflectさん: 「We built the notes app we always wished Apple Notes was. Beautiful, connected by backlinks, instant to search, and every note is a plain Markdown file your AI agents can read. Reflect Open is out of beta today. Open source, free on Mac, and on iPhone and iPad. https://t.co/h07HRUA0fw」 / X](https://x.com/reflectnotes/status/2105341653468774723)
 - ai-is-still-in-its-terminal-era [XユーザーのAmelia Wattenberger 🪷さん: 「we're back at the command line! there's so much good thinking to mine from from the last time we transitions from terminal -&gt; gui. had some fun writing down a few thoughts would love to hear what you think https://t.co/KIakErMfYh https://t.co/YmsMbnp4Nl」 / X](https://x.com/Wattenberger/status/2105673200894193775)
 - agents change circle pack [XユーザーのAmelia Wattenberger 🪷さん: 「am I the only one who wants to know what my agents changed? https://t.co/GzVVyzhwz6」 / X](https://x.com/Wattenberger/status/2102045937325789432)

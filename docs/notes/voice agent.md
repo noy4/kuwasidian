@@ -1,10 +1,33 @@
 
+research voice (with nimbus)
 library
 [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat)
 
 [Moss | Real-Time Semantic Search for AI Agents](https://www.moss.dev/)
 
 ---
+
+
+SKIの競合サービス一覧です。
+
+1. [Haku](https://terminal.haku.sh/?utm_source=chatgpt.com) - Claude Code・Codex対応 - 音声で指示・音声で返答
+2. [KoeCode](https://koecode.ai/?utm_source=chatgpt.com) - Claude Code対応 - Mac・iPhone連携
+3. [DashVox](https://dashvox.ai/?utm_source=chatgpt.com) - Claude Code・Codex対応 - iPhone・CarPlay・Apple Watch対応
+4. [Voxa](https://voxa.space/?utm_source=chatgpt.com) - Claude Code対応
+5. [Beckon](https://www.heybeckon.ai/?utm_source=chatgpt.com) - Claude Code・Codex・Cursor対応
+6. [Hark](https://github.com/harkharness/hark?utm_source=chatgpt.com) - Claude Code・Codex・Gemini CLI対応 - 音声入力・音声応答 - オープンソース    
+7. [Dodaios](https://github.com/Dodaios/Dodaios?utm_source=chatgpt.com) - Claude Code・Codex対応 - 音声とチャットでPC操作 - オープンソース
+8. [SKI](https://heyski.io/?utm_source=chatgpt.com) - 音声でAIコーディングエージェントを操作
+    
+
+
+voice harness
+[QwenAudio/qwen-audio-agent](https://github.com/QwenAudio/qwen-audio-agent)
+
+app (closed source)
+[SKI: the voice-first coding harness for your Mac](https://justski.it/)
+[声でパソコンを動かす「現実版Jarvis」はどこまで来たか（2026年版）](https://www.voiceos.com/ja/blog/jarvis-control-your-computer-with-your-voice)
+
 
 local
 [How to build a shitty robot](https://mariozechner.at/posts/2026-05-30-shitty-robot/)
