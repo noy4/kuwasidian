@@ -4,6 +4,7 @@ import { withBase } from 'vitepress'
 import { data as sections } from '../../quests/quest.data'
 import QuestClearedIcon from '../../quests/QuestClearedIcon.vue'
 import UpdateCards from '../../recent-updates/UpdateCards.vue'
+import { data as updateData } from '../data/home-updates.data'
 import { data as homeData } from '../data/home.data'
 import HomeSection from './HomeSection.vue'
 
@@ -157,7 +158,7 @@ const quickLinks = [
     </HomeSection>
 
     <HomeSection title="🔄 最近の更新" :link="withBase('/recent-updates/')">
-      <UpdateCards :limit="6" />
+      <UpdateCards :items="updateData" />
     </HomeSection>
   </div>
 </template>

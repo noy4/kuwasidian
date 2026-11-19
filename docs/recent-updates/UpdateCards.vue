@@ -1,9 +1,10 @@
 <script setup lang="ts">
+import type { RecentUpdate } from './recent-updates.util'
 import dayjs from 'dayjs'
 import { computed } from 'vue'
-import { data } from './recent-updates.data'
 
 const props = withDefaults(defineProps<{
+  items: RecentUpdate[]
   limit?: number
   showStatus?: boolean
 }>(), {
@@ -11,7 +12,7 @@ const props = withDefaults(defineProps<{
   showStatus: false,
 })
 
-const updates = computed(() => props.limit > 0 ? data.slice(0, props.limit) : data)
+const updates = computed(() => props.limit > 0 ? props.items.slice(0, props.limit) : props.items)
 
 function formatDate(date: string) {
   return dayjs(date).format('YYYY/MM/DD')
