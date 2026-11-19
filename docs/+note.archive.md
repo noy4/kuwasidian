@@ -1,6 +1,18 @@
 
 
 
+アー写
+ポーズ　男性モデル
+nano-banana
+[[mythical-creature-prompt]]
+
+スタークラフト
+エイジオブエンパイア
+フリーダムハウス　報告書
+ドミニオン
+オレゴントレイル
+
+
 docs toc
 [docserve]
 open other servers
