@@ -5,6 +5,7 @@ import process from 'node:process'
 import matter from 'gray-matter'
 import { minimatch } from 'minimatch'
 import { defineLoader } from 'vitepress'
+import { createMd } from '../.vitepress/markdown'
 import { getSiteConfig } from '../.vitepress/vitepress.extend'
 
 interface Options {
@@ -22,18 +23,19 @@ interface FileRecord {
 type RecentUpdate = FileRecord & {
   title: string
   link: string
+  html: string
 }
 
 declare const data: RecentUpdate[]
 export { data }
 
 export default defineLoader({
-  load() {
-    return getRecentUpdates()
+  async load() {
+    return await getRecentUpdates()
   },
 })
 
-function getRecentUpdates(options: Options = {}): RecentUpdate[] {
+async function getRecentUpdates(options: Options = {}): Promise<RecentUpdate[]> {
   const {
     root = process.argv[3],
     pattern = `${root ? `${root}/` : ''}**/*.md`,
@@ -89,17 +91,27 @@ function getRecentUpdates(options: Options = {}): RecentUpdate[] {
       break
   }
 
+  const md = await createMd()
+
   // convert to recentUpdates
   for (const { date, status, filePath } of targetFiles) {
     let markdown = ''
     if (fs.existsSync(filePath))
       markdown = fs.readFileSync(filePath, 'utf-8')
     const { content, data } = matter(markdown)
+    const firstLine = content.trimStart().split('\n', 1)[0]
     const title = data.title // title in frontmatter
-      || content.match(/^#\s+(.*)/m)?.[1] // h1 in content
+      || firstLine.match(/^#\s+(.*)/)?.[1] // h1 at the top of content
       || basename(filePath.replace(/(\/index)?\.md$/, '')) // file name
-    let page = filePath.replace(`${root ? `${root}/` : ''}`, '')
-    page = siteConfig.rewrites.map[page] || page
+    const relativePath = filePath.replace(`${root ? `${root}/` : ''}`, '')
+    const dir = relativePath.replace(/[^/]*$/, '')
+    const html = data.layout
+      ? ''
+      : (await md.renderAsync(content)).replace(
+          /(<img[^>]*\ssrc=")(?!https?:|data:|\/)([^"]*)"/g,
+          (_, prefix, src) => `${prefix}${siteConfig.site.base}${dir}${src.replace(/^\.\//, '')}"`,
+        )
+    const page = siteConfig.rewrites.map[relativePath] || relativePath
     const link = `${siteConfig.site.base}${page.replace(/(index)?\.md$/, '')}`
     recentUpdates.push({
       date,
@@ -107,6 +119,7 @@ function getRecentUpdates(options: Options = {}): RecentUpdate[] {
       filePath,
       title,
       link,
+      html,
     })
   }
 

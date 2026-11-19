@@ -209,7 +209,6 @@ function sidebar(): DefaultTheme.Sidebar {
       items: [
         { text: '📄 ブログ', link: '/blog/' },
         { text: '🌏 Earth', link: '/earth/' },
-        { text: '🔄 最近の更新', link: '/recent-updates/' },
         {
           text: '👤 自分',
           items: [
@@ -241,6 +240,7 @@ function sidebar(): DefaultTheme.Sidebar {
         },
         {
           text: '🗒️ その他メモ',
+          link: '/notes/',
           collapsed: true,
           items: autoSidebar('notes'),
         },
