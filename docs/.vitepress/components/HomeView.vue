@@ -21,8 +21,8 @@ const reports = homeData.reports.slice(0, 3)
 const quickLinks = [
   { text: '✏️ メモ', link: '/+note' },
   { text: '⚔️ クエスト', link: '/quests/' },
+  { text: '📅 桑記', link: '/monthly-reports/' },
   { text: '📄 ブログ', link: '/blog/' },
-  { text: '🔄 最近の更新', link: '/recent-updates/' },
 ]
 </script>
 
@@ -110,11 +110,7 @@ const quickLinks = [
       </p>
     </HomeSection>
 
-    <HomeSection
-      title="📅 桑記"
-      :link="reports[0] ? withBase(reports[0].link) : undefined"
-      link-text="最新を読む →"
-    >
+    <HomeSection title="📅 桑記" :link="withBase('/monthly-reports/')">
       <div v-if="reports.length" class="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-2">
         <a
           v-for="report in reports"

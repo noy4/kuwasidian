@@ -188,6 +188,7 @@ function sidebar(): DefaultTheme.Sidebar {
         { text: '⚔️ クエスト', link: '/quests/' },
         {
           text: '📅 桑記（月次レポート）',
+          link: '/monthly-reports/',
           collapsed: true,
           items: autoSidebar('monthly-reports', {
             desc: true,
