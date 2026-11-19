@@ -54,8 +54,8 @@ function getRecentUpdates(options: Options = {}): RecentUpdate[] {
     M       docs/.vitepress/utils.ts
 
     2025-06-26 11:09:41 +0900
-    M       docs/+memo.archive.md
-    M       docs/+memo.md
+    M       docs/+note.archive.md
+    M       docs/+note.md
   */
 
   const allFiles: FileRecord[] = []

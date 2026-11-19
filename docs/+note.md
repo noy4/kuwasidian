@@ -1,5 +1,5 @@
-[[+memo.archive]]
-[[+memo.sub]]
+[[+note.archive]]
+[[+note.sub]]
 
 [[visualization]]
 

@@ -43,7 +43,7 @@ export default withMermaid(defineConfig({
   base: siteBase,
   cleanUrls: true,
   rewrites: {
-    '\\+memo.md': 'index.md',
+    '\\+note.md': 'index.md',
   },
   srcExclude: defaultExcludePattern,
   ignoreDeadLinks: true,
