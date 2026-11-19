@@ -4,6 +4,7 @@ import { withBase } from 'vitepress'
 import { data as sections } from '../../quests/quest.data'
 import QuestClearedIcon from '../../quests/QuestClearedIcon.vue'
 import UpdateCards from '../../recent-updates/UpdateCards.vue'
+import WorksView from '../../works/WorksView.vue'
 import { data as updateData } from '../data/home-updates.data'
 import { data as homeData } from '../data/home.data'
 import HomeSection from './HomeSection.vue'
@@ -23,6 +24,7 @@ const reports = homeData.reports.slice(0, 3)
 const quickLinks = [
   { text: '✏️ メモ', link: '/+note' },
   { text: '⚔️ クエスト', link: '/quests/' },
+  { text: '✨ つくったもの', link: '/works/' },
   { text: '📅 桑記', link: '/monthly-reports/' },
   { text: '📄 ブログ', link: '/blog/' },
 ]
@@ -114,6 +116,10 @@ const quickLinks = [
       <p v-else class="text-sm text-[var(--vp-c-text-2)] my-0!">
         クリア済みのクエストはありません。
       </p>
+    </HomeSection>
+
+    <HomeSection title="✨ つくったもの" :link="withBase('/works/')">
+      <WorksView />
     </HomeSection>
 
     <HomeSection title="📅 桑記" :link="withBase('/monthly-reports/')">

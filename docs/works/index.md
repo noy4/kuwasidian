@@ -8,4 +8,6 @@ lastUpdated: false
 import WorksView from './WorksView.vue'
 </script>
 
-<WorksView />
+<div class="mt-6">
+  <WorksView />
+</div>

@@ -25,7 +25,7 @@ function iconSrc(icon?: string) {
 </script>
 
 <template>
-  <div class="grid grid-cols-[repeat(auto-fill,minmax(220px,1fr))] gap-2 mt-6">
+  <div class="grid grid-cols-[repeat(auto-fill,minmax(220px,1fr))] gap-2">
     <div
       v-for="work in works"
       :key="work.title"
