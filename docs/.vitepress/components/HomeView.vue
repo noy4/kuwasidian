@@ -67,7 +67,11 @@ const quickLinks = [
             <div class="text-5xl pt-1">
               {{ quest.icon }}
             </div>
-            <Badge text="進行中" class="absolute top-0 right-0" />
+            <Badge
+              v-if="quest.status === 'active'"
+              text="進行中"
+              class="absolute top-0 right-0"
+            />
           </div>
           <div class="mt-3 font-semibold text-sm text-[var(--vp-c-text-1)]">
             {{ quest.title }}
