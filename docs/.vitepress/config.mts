@@ -42,9 +42,6 @@ export default withMermaid(defineConfig({
   ],
   base: siteBase,
   cleanUrls: true,
-  rewrites: {
-    '\\+note.md': 'index.md',
-  },
   srcExclude: defaultExcludePattern,
   ignoreDeadLinks: true,
   lastUpdated: true,
@@ -78,6 +75,10 @@ export default withMermaid(defineConfig({
     ],
     search: {
       provider: 'local',
+    },
+    footer: {
+      message: 'Kuwasidian — 彼の Obsidian（メモアプリ）のメモ',
+      copyright: '© 2026 noy4',
     },
   },
 
@@ -183,7 +184,7 @@ function sidebar(): DefaultTheme.Sidebar {
   return [
     {
       items: [
-        { text: '✏️ メモ', link: '/' },
+        { text: '✏️ メモ', link: '/+note' },
         { text: '⚔️ クエスト', link: '/quests/' },
         {
           text: '📅 桑記（月次レポート）',
