@@ -56,6 +56,8 @@
 
 クリア済 {dateHeader: cleared}
 ---
+- 🕘 電子の轍; ブラウザ履歴を集約・可視化するローカルアプリの作成; [his](https://noy4.github.io/his/)。デスクトップアプリとしてリリース。ブラウザ履歴を集約・可視化できるようにする; cleared: 2026/10/31
+- 🖼️ 展観セヨ; AI製HTMLのフォルダをライブギャラリー化する; [docserve](https://noy4.github.io/docserve/)。macOSアプリ・CLI・VS Code拡張をリリース（npm公開・Marketplace掲載）。HTML群を一覧表示し、変更をライブリロード; cleared: 2026/09/30
 - 🪩 弾ける銀玉; パチンコをする; 総収支-166,000円; cleared: 2026/08/23
 - 🚴 自転車漕いでくよ; 自転車で遠出; 愛媛→大阪（淡路島経由）
 Brompton
