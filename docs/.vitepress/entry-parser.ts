@@ -1,15 +1,16 @@
-// Entry Format
+// Entry format
 //
-// **Example**:
+// Example:
 // Entries {hidden: true}
 // ---
 // - 🎙️ Chant; Objective; Description; 2026/04/28; cleared: 2026/04/29
 //
-// **Rules**:
-// - Sections: Delimited by H2 (title followed by `-` line). Optional props: `Title {key: value; ...}`
-// - Entries: `- icon + title; objective; description; ...metadata`. Starts with '- ', semicolon-delimited, can span multiple lines.
-// - Metadata: `key: value` pairs. Bare dates are treated as added date.
-// - `render` を渡すと description がHTML化される（未指定なら生テキスト）
+// Rules:
+// - Sections: a title line followed by a `---` underline. Optional props: `Title {key: value; ...}`
+// - Entries: `- part; part; ...` (semicolon separated, may span multiple lines)
+// - Part parsers: register handlers by part index in `partParsers`
+// - Unspecified indexes are parsed as metadata (`parseMetadata`)
+// - Metadata: `key: value` pairs; a bare value is treated as the added date
 
 import dedent from 'dedent'
 
@@ -19,18 +20,48 @@ export interface EntrySection {
   [key: string]: string | Entry[] | undefined
 }
 
-export interface Entry {
-  icon?: string
-  title: string
-  objective?: string
-  description?: string
-  [key: string]: string | undefined
+export type Entry = Record<string, string | undefined>
+export type PartParser = (part: string) => Partial<Entry> | undefined
+
+export interface ParseOptions {
+  partParsers?: Record<number, PartParser>
 }
+
+export const parseIconTitle: PartParser = (part) => {
+  const m = part.match(/^(\S+)\s+(\S.*)$/)
+  return m ? { icon: m[1], title: m[2] } : { title: part }
+}
+
+export const parseTitle: PartParser = part => ({ title: part })
+export const parseObjective: PartParser = part => ({ objective: part })
+
+export function createDescriptionParser(
+  render?: (content: string) => string,
+): PartParser {
+  return (part) => {
+    const text = dedent(part)
+    return { description: render ? render(text) : text }
+  }
+}
+
+const parseKeyValue: PartParser = (part) => {
+  // `key: value` pair
+  const m = part.match(/^(\w+):\s*(\S.*)$/)
+  return m ? { [m[1]]: m[2] } : undefined
+}
+
+export const parseAddedDate: PartParser = part =>
+  /^\d{4}[/-]\d{1,2}[/-]\d{1,2}$/.test(part) ? { added: part } : undefined
+
+export const parseMetadata: PartParser = part =>
+  parseKeyValue(part) ?? parseAddedDate(part)
 
 export function parseEntries(
   src: string,
-  render?: (content: string) => string,
+  options: ParseOptions = {},
 ): EntrySection[] {
+  const partParsers = options.partParsers ?? {}
+
   const sections = src
     // split by section title
     .split(/(?=^.+\n-+$)/m)
@@ -64,11 +95,12 @@ export function parseEntries(
       // parse entry blocks (- separated, only lines with ; are new entries)
       const blocks = sectionContent.trim()
         .split(/(?=^- .*;)/m)
-        .filter(b => b.trim())
+        .map(b => b.trim().replace(/^- /, ''))
+        .filter(b => b)
 
       return {
         title: sectionTitle,
-        items: blocks.map(block => parseEntry(block, render)),
+        items: blocks.map(block => parseEntry(block, partParsers)),
         ...props,
       }
     })
@@ -77,38 +109,17 @@ export function parseEntries(
 
 function parseEntry(
   block: string,
-  render?: (content: string) => string,
+  partParsers: Record<number, PartParser>,
 ): Entry {
   const parts = block.split(';').map(p => p.trim())
-  const [titlePart, objective, descriptionPart = '', ...metaParts] = parts
+  const entry: Entry = { title: '' }
 
-  // get icon and title
-  const iconTitle = (titlePart || '').replace(/^- /, '')
-  const regex_icon_title = /^(\S+)\s+(\S.*)$/
-  const [, icon, title] = iconTitle.match(regex_icon_title) || []
+  parts.forEach((part, index) => {
+    const parser = partParsers[index] ?? parseMetadata
+    const parsed = parser(part)
+    if (parsed)
+      Object.assign(entry, parsed)
+  })
 
-  // description
-  let description = dedent(descriptionPart)
-  description = render?.(description) || description
-
-  // parse metadata
-  let defaultMeta: string | undefined
-  const metadata: Record<string, string> = {}
-  for (const part of metaParts) {
-    const regex_key_value = /^(\w+):\s*(\S.*)$/
-    const kv = part.match(regex_key_value)
-    if (kv)
-      metadata[kv[1]] = kv[2].trim()
-    else
-      defaultMeta = part
-  }
-
-  return {
-    icon,
-    title,
-    objective,
-    description,
-    ...metadata,
-    added: metadata.added || defaultMeta,
-  }
+  return entry
 }
