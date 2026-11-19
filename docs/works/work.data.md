@@ -1,0 +1,2 @@
+- https://noy4.github.io/his/icon.png his; ブラウザ履歴を集約・可視化するデスクトップアプリ; ブラウザ履歴を集約し、検索・可視化できるようにする; url: https://noy4.github.io/his/; released: 2026/10/31
+- https://noy4.github.io/docserve/assets/favicon.svg docserve; AI製HTMLのフォルダをライブギャラリー化するローカルアプリ; macOSアプリ・CLI・VS Code拡張（npm公開・Marketplace掲載）; url: https://noy4.github.io/docserve/; released: 2026/09/30

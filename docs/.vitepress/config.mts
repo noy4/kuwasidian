@@ -186,6 +186,7 @@ function sidebar(): DefaultTheme.Sidebar {
       items: [
         { text: '✏️ メモ', link: '/+note' },
         { text: '⚔️ クエスト', link: '/quests/' },
+        { text: '✨ つくったもの', link: '/works/' },
         {
           text: '📅 桑記（月次レポート）',
           link: '/monthly-reports/',
